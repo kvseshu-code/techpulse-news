@@ -1,1 +1,2853 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+  <base target="_top">
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    TechPulse — Technology & Gaming News
+  </title>
+
+
+  <style>
+
+    :root {
+
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --header: #0b1220;
+      --soft: #eef4ff;
+      --shadow:
+        0 8px 30px rgba(15,23,42,.07);
+
+    }
+
+
+    body.dark {
+
+      --bg: #0f172a;
+      --card: #172033;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #263247;
+      --soft: #1e293b;
+      --header: #020617;
+      --shadow:
+        0 8px 30px rgba(0,0,0,.25);
+
+    }
+
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+
+    body {
+
+      font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        var(--bg);
+
+      color:
+        var(--text);
+
+      line-height:
+        1.5;
+
+      transition:
+        background .2s,
+        color .2s;
+
+    }
+
+
+    /* =================================================
+       HEADER
+       ================================================= */
+
+    header {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+      background:
+        var(--header);
+
+      color: white;
+
+      box-shadow:
+        0 4px 20px
+        rgba(0,0,0,.18);
+
+    }
+
+
+    .header-main {
+
+      max-width: 1350px;
+
+      margin: auto;
+
+      padding: 15px 20px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+    }
+
+
+    .brand {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 11px;
+
+      min-width: max-content;
+
+    }
+
+
+    .brand-icon {
+
+      width: 40px;
+
+      height: 40px;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #2563eb,
+          #7c3aed
+        );
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 20px;
+
+      font-weight: 900;
+
+    }
+
+
+    .brand-name {
+
+      font-size: 23px;
+
+      font-weight: 900;
+
+      letter-spacing: -.5px;
+
+    }
+
+
+    .brand-name span {
+
+      color: #60a5fa;
+
+    }
+
+
+    .main-nav {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 4px;
+
+      overflow-x: auto;
+
+    }
+
+
+    .main-nav button {
+
+      border: 0;
+
+      background: transparent;
+
+      color: #cbd5e1;
+
+      padding: 9px 13px;
+
+      border-radius: 8px;
+
+      cursor: pointer;
+
+      white-space: nowrap;
+
+      font-size: 14px;
+
+    }
+
+
+    .main-nav button:hover,
+    .main-nav button.active {
+
+      background:
+        #1e293b;
+
+      color: white;
+
+    }
+
+
+    .header-actions {
+
+      display: flex;
+
+      gap: 8px;
+
+      min-width: max-content;
+
+    }
+
+
+    .icon-btn {
+
+      width: 38px;
+
+      height: 38px;
+
+      border: 1px solid #334155;
+
+      background: #111827;
+
+      color: white;
+
+      border-radius: 9px;
+
+      cursor: pointer;
+
+      font-size: 16px;
+
+    }
+
+
+    .icon-btn:hover {
+
+      background: #1e293b;
+
+    }
+
+
+    /* =================================================
+       SUB NAV
+       ================================================= */
+
+    .subnav {
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.08);
+
+      background:
+        rgba(2,6,23,.35);
+
+    }
+
+
+    .subnav-inner {
+
+      max-width: 1350px;
+
+      margin: auto;
+
+      padding: 9px 20px;
+
+      display: flex;
+
+      gap: 7px;
+
+      overflow-x: auto;
+
+    }
+
+
+    .subnav button {
+
+      border: 0;
+
+      background:
+        transparent;
+
+      color: #94a3b8;
+
+      padding: 6px 10px;
+
+      border-radius: 7px;
+
+      white-space: nowrap;
+
+      cursor: pointer;
+
+      font-size: 12px;
+
+    }
+
+
+    .subnav button:hover,
+    .subnav button.active {
+
+      background:
+        #1e293b;
+
+      color: white;
+
+    }
+
+
+    /* =================================================
+       CONTAINER
+       ================================================= */
+
+    .container {
+
+      max-width: 1350px;
+
+      margin: auto;
+
+      padding:
+        28px 20px 70px;
+
+    }
+
+
+    /* =================================================
+       HERO
+       ================================================= */
+
+    .hero {
+
+      display: grid;
+
+      grid-template-columns:
+        1.7fr 1fr;
+
+      gap: 20px;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .hero-main {
+
+      min-height: 270px;
+
+      border-radius: 18px;
+
+      padding: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0f172a,
+          #1e3a8a,
+          #312e81
+        );
+
+      color: white;
+
+      position: relative;
+
+      overflow: hidden;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: flex-end;
+
+    }
+
+
+    .hero-main::before {
+
+      content: "";
+
+      position: absolute;
+
+      width: 260px;
+
+      height: 260px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255,255,255,.08);
+
+      right: -90px;
+
+      top: -90px;
+
+    }
+
+
+    .hero-label {
+
+      display: inline-flex;
+
+      width: max-content;
+
+      background:
+        rgba(255,255,255,.15);
+
+      border: 1px solid
+        rgba(255,255,255,.2);
+
+      padding: 5px 9px;
+
+      border-radius: 7px;
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      margin-bottom: 12px;
+
+    }
+
+
+    .hero-title {
+
+      position: relative;
+
+      font-size: 28px;
+
+      line-height: 1.2;
+
+      max-width: 800px;
+
+      margin-bottom: 10px;
+
+    }
+
+
+    .hero-meta {
+
+      color:
+        #cbd5e1;
+
+      font-size: 12px;
+
+    }
+
+
+    .hero-side {
+
+      display: grid;
+
+      grid-template-rows:
+        1fr 1fr;
+
+      gap: 20px;
+
+    }
+
+
+    .quick-card {
+
+      background:
+        var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 16px;
+
+      padding: 22px;
+
+      box-shadow:
+        var(--shadow);
+
+      cursor: pointer;
+
+    }
+
+
+    .quick-card:hover {
+
+      transform:
+        translateY(-2px);
+
+    }
+
+
+    .quick-label {
+
+      color:
+        var(--primary);
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      margin-bottom: 7px;
+
+    }
+
+
+    .quick-title {
+
+      font-weight: 750;
+
+      line-height: 1.3;
+
+    }
+
+
+    /* =================================================
+       TITLE BAR
+       ================================================= */
+
+    .section-heading {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 15px;
+
+      margin:
+        30px 0 15px;
+
+    }
+
+
+    .section-heading h2 {
+
+      font-size: 22px;
+
+    }
+
+
+    .section-heading span {
+
+      color:
+        var(--muted);
+
+      font-size: 12px;
+
+    }
+
+
+    /* =================================================
+       CONTROLS
+       ================================================= */
+
+    .controls {
+
+      display: flex;
+
+      gap: 10px;
+
+      margin-bottom: 20px;
+
+      flex-wrap: wrap;
+
+    }
+
+
+    .search-box {
+
+      flex: 1;
+
+      min-width: 240px;
+
+      position: relative;
+
+    }
+
+
+    .search-box input {
+
+      width: 100%;
+
+      padding:
+        12px 15px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 11px;
+
+      background:
+        var(--card);
+
+      color:
+        var(--text);
+
+      outline: none;
+
+      font-size: 14px;
+
+    }
+
+
+    .search-box input:focus {
+
+      border-color:
+        var(--primary);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(37,99,235,.12);
+
+    }
+
+
+    .refresh-btn {
+
+      border: 0;
+
+      background:
+        var(--primary);
+
+      color: white;
+
+      padding:
+        11px 17px;
+
+      border-radius: 10px;
+
+      cursor: pointer;
+
+      font-weight: 700;
+
+    }
+
+
+    .refresh-btn:hover {
+
+      background:
+        var(--primary-dark);
+
+    }
+
+
+    .refresh-btn:disabled {
+
+      opacity: .65;
+
+      cursor: wait;
+
+    }
+
+
+    /* =================================================
+       STATUS
+       ================================================= */
+
+    .status-bar {
+
+      background:
+        var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 11px;
+
+      padding:
+        11px 14px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      margin-bottom: 20px;
+
+      color:
+        var(--muted);
+
+      font-size: 12px;
+
+    }
+
+
+    .status-left {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+    }
+
+
+    .status-dot {
+
+      width: 8px;
+
+      height: 8px;
+
+      background: #22c55e;
+
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 0 4px
+        rgba(34,197,94,.12);
+
+    }
+
+
+    /* =================================================
+       NEWS GRID
+       ================================================= */
+
+    .news-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fill,
+          minmax(
+            285px,
+            1fr
+          )
+        );
+
+      gap: 20px;
+
+    }
+
+
+    .article {
+
+      background:
+        var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 15px;
+
+      overflow: hidden;
+
+      display: flex;
+
+      flex-direction: column;
+
+      min-width: 0;
+
+      box-shadow:
+        0 3px 14px
+        rgba(15,23,42,.035);
+
+      transition:
+        transform .2s,
+        box-shadow .2s;
+
+    }
+
+
+    .article:hover {
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .article-image-wrap {
+
+      height: 185px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1e293b,
+          #334155
+        );
+
+      position: relative;
+
+      overflow: hidden;
+
+    }
+
+
+    .article-image {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+
+    }
+
+
+    .image-placeholder {
+
+      width: 100%;
+
+      height: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      color: white;
+
+      font-size: 42px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #172033,
+          #334155
+        );
+
+    }
+
+
+    .new-badge {
+
+      position: absolute;
+
+      top: 10px;
+
+      left: 10px;
+
+      background:
+        #16a34a;
+
+      color: white;
+
+      padding:
+        4px 7px;
+
+      border-radius: 6px;
+
+      font-size: 9px;
+
+      font-weight: 900;
+
+      letter-spacing: .5px;
+
+    }
+
+
+    .article-body {
+
+      padding: 17px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      flex: 1;
+
+    }
+
+
+    .article-category {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 10px;
+
+      margin-bottom: 8px;
+
+    }
+
+
+    .category-badge {
+
+      color:
+        var(--primary);
+
+      background:
+        var(--soft);
+
+      padding:
+        4px 7px;
+
+      border-radius: 6px;
+
+      font-size: 10px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: .3px;
+
+    }
+
+
+    .article-title {
+
+      font-size: 17px;
+
+      line-height: 1.35;
+
+      margin-bottom: 8px;
+
+    }
+
+
+    .article-title a {
+
+      color:
+        var(--text);
+
+      text-decoration: none;
+
+    }
+
+
+    .article-title a:hover {
+
+      color:
+        var(--primary);
+
+    }
+
+
+    .article-description {
+
+      color:
+        var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.55;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .article-footer {
+
+      margin-top: auto;
+
+      padding-top: 11px;
+
+      border-top:
+        1px solid var(--border);
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 10px;
+
+      align-items: center;
+
+    }
+
+
+    .source-name {
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      color:
+        var(--muted);
+
+    }
+
+
+    .article-time {
+
+      font-size: 10px;
+
+      color:
+        var(--muted);
+
+      white-space: nowrap;
+
+    }
+
+
+    /* =================================================
+       LOADING
+       ================================================= */
+
+    .loading {
+
+      padding: 70px 20px;
+
+      text-align: center;
+
+      color:
+        var(--muted);
+
+    }
+
+
+    .spinner {
+
+      width: 42px;
+
+      height: 42px;
+
+      margin:
+        0 auto 15px;
+
+      border:
+        4px solid var(--border);
+
+      border-top-color:
+        var(--primary);
+
+      border-radius: 50%;
+
+      animation:
+        spin .8s linear infinite;
+
+    }
+
+
+    @keyframes spin {
+
+      to {
+
+        transform:
+          rotate(360deg);
+
+      }
+
+    }
+
+
+    /* =================================================
+       EMPTY
+       ================================================= */
+
+    .empty {
+
+      background:
+        var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 15px;
+
+      padding: 60px 20px;
+
+      text-align: center;
+
+      color:
+        var(--muted);
+
+    }
+
+
+    .empty-icon {
+
+      font-size: 42px;
+
+      margin-bottom: 10px;
+
+    }
+
+
+    /* =================================================
+       FOOTER
+       ================================================= */
+
+    footer {
+
+      margin-top: 60px;
+
+      border-top:
+        1px solid var(--border);
+
+      padding:
+        25px 20px;
+
+      color:
+        var(--muted);
+
+      text-align: center;
+
+      font-size: 12px;
+
+    }
+
+
+    /* =================================================
+       RESPONSIVE
+       ================================================= */
+
+    @media (
+      max-width: 950px
+    ) {
+
+      .hero {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+    @media (
+      max-width: 720px
+    ) {
+
+      .header-main {
+
+        flex-wrap: wrap;
+
+      }
+
+
+      .main-nav {
+
+        width: 100%;
+
+        order: 3;
+
+      }
+
+
+      .hero-main {
+
+        min-height: 250px;
+
+        padding: 23px;
+
+      }
+
+
+      .hero-title {
+
+        font-size: 23px;
+
+      }
+
+
+      .news-grid {
+
+        grid-template-columns:
+          repeat(
+            auto-fill,
+            minmax(
+              250px,
+              1fr
+            )
+          );
+
+      }
+
+    }
+
+
+    @media (
+      max-width: 480px
+    ) {
+
+      .container {
+
+        padding:
+          20px 13px 50px;
+
+      }
+
+
+      .brand-name {
+
+        font-size: 20px;
+
+      }
+
+
+      .hero-side {
+
+        grid-template-rows:
+          auto;
+
+      }
+
+
+      .news-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .status-bar {
+
+        align-items:
+          flex-start;
+
+        gap: 8px;
+
+        flex-direction:
+          column;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =================================================
+       HEADER
+       ================================================= -->
+
+  <header>
+
+    <div class="header-main">
+
+
+      <div class="brand">
+
+        <div class="brand-icon">
+          TP
+        </div>
+
+        <div class="brand-name">
+          Tech<span>Pulse</span>
+        </div>
+
+      </div>
+
+
+      <nav class="main-nav">
+
+        <button
+          class="active"
+          onclick="selectMainCategory('All', this)"
+        >
+          All
+        </button>
+
+        <button
+          onclick="selectMainCategory('Technology', this)"
+        >
+          Technology
+        </button>
+
+        <button
+          onclick="selectMainCategory('Gaming', this)"
+        >
+          Gaming
+        </button>
+
+      </nav>
+
+
+      <div class="header-actions">
+
+        <button
+          class="icon-btn"
+          id="themeButton"
+          onclick="toggleTheme()"
+          title="Toggle theme"
+        >
+          ☾
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="subnav">
+
+      <div
+        class="subnav-inner"
+        id="subcategoryNav"
+      >
+
+        <button
+          class="active"
+          onclick="selectSubcategory('All', this)"
+        >
+          All Topics
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =================================================
+       MAIN
+       ================================================= -->
+
+  <main class="container">
+
+
+    <!-- HERO -->
+
+    <section
+      class="hero"
+      id="heroSection"
+    >
+
+      <div
+        class="hero-main"
+        id="heroMain"
+      >
+
+        <div class="hero-label">
+          Latest
+        </div>
+
+        <div class="hero-title">
+          Loading the latest stories...
+        </div>
+
+        <div class="hero-meta">
+          TechPulse
+        </div>
+
+      </div>
+
+
+      <div
+        class="hero-side"
+        id="heroSide"
+      >
+
+        <div class="quick-card">
+          <div class="quick-label">
+            Technology
+          </div>
+
+          <div class="quick-title">
+            Loading...
+          </div>
+        </div>
+
+
+        <div class="quick-card">
+          <div class="quick-label">
+            Gaming
+          </div>
+
+          <div class="quick-title">
+            Loading...
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SECTION -->
+
+    <div class="section-heading">
+
+      <div>
+
+        <h2 id="sectionTitle">
+          Latest News
+        </h2>
+
+        <span id="sectionSubtitle">
+          Fresh technology and gaming stories
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+      <div class="search-box">
+
+        <input
+          id="search"
+          type="search"
+          placeholder="Search technology, gaming, topics..."
+          oninput="applyFilters()"
+        >
+
+      </div>
+
+
+      <button
+        class="refresh-btn"
+        id="refreshButton"
+        onclick="manualRefresh()"
+      >
+        ↻ Refresh
+      </button>
+
+    </div>
+
+
+    <!-- STATUS -->
+
+    <div class="status-bar">
+
+      <div class="status-left">
+
+        <span class="status-dot"></span>
+
+        <span id="statusText">
+          Loading latest news...
+        </span>
+
+      </div>
+
+
+      <div id="articleCount">
+        0 articles
+      </div>
+
+    </div>
+
+
+    <!-- NEWS -->
+
+    <section
+      id="newsContainer"
+    >
+
+      <div class="loading">
+
+        <div class="spinner"></div>
+
+        Loading latest news...
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =================================================
+       FOOTER
+       ================================================= -->
+
+  <footer>
+
+    <div>
+      © <span id="year"></span> TechPulse
+    </div>
+
+    <div style="margin-top:6px;">
+      Headlines and excerpts are provided for news discovery.
+      Full stories remain with their original publishers.
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    /* =================================================
+       STATE
+       ================================================= */
+
+    let allArticles = [];
+
+    let currentMainCategory = 'All';
+
+    let currentSubcategory = 'All';
+
+    let lastUpdatedAt = null;
+
+    let knownArticleIds =
+      new Set();
+
+
+    const SUBCATEGORIES = {
+
+      Technology: [
+
+        'All Topics',
+        'Artificial Intelligence',
+        'Smartphones & Mobile',
+        'Cybersecurity',
+        'Cloud & Infrastructure',
+        'Software & Applications',
+        'Hardware & Devices',
+        'Internet & Web',
+        'Emerging Technology',
+        'Science & Innovation',
+        'Business & Technology'
+
+      ],
+
+      Gaming: [
+
+        'All Topics',
+        'PC Gaming',
+        'Console Gaming',
+        'Mobile Gaming',
+        'Game Releases',
+        'Gaming Hardware',
+        'Esports',
+        'Game Development',
+        'Gaming Industry',
+        'Gaming Updates',
+        'Reviews & Features'
+
+      ],
+
+      All: [
+
+        'All Topics'
+
+      ]
+
+    };
+
+
+    /* =================================================
+       INITIALIZATION
+       ================================================= */
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      function() {
+
+        document.getElementById(
+          'year'
+        ).textContent =
+          new Date().getFullYear();
+
+
+        loadSavedTheme();
+
+
+        buildSubcategoryNav();
+
+
+        loadNews(false);
+
+
+        /*
+         * Browser checks every 2 minutes.
+         *
+         * It does NOT force the server to
+         * download all RSS feeds every time.
+         *
+         * The Apps Script cache controls
+         * backend freshness.
+         */
+
+        setInterval(
+          function() {
+
+            loadNews(false);
+
+          },
+          2 * 60 * 1000
+        );
+
+
+        /*
+         * Update relative times every minute.
+         */
+
+        setInterval(
+          function() {
+
+            refreshVisibleTimes();
+
+          },
+          60 * 1000
+        );
+
+      }
+    );
+
+
+    /* =================================================
+       LOAD NEWS
+       ================================================= */
+
+    function loadNews(
+      forceRefresh
+    ) {
+
+      const status =
+        document.getElementById(
+          'statusText'
+        );
+
+
+      status.textContent =
+        forceRefresh
+          ? 'Refreshing latest news...'
+          : 'Checking for latest news...';
+
+
+      google.script.run
+
+        .withSuccessHandler(
+          function(response) {
+
+            if (
+              !response ||
+              !response.success
+            ) {
+
+              showError(
+                response &&
+                response.error
+                  ? response.error
+                  : 'Unable to load news.'
+              );
+
+              return;
+
+            }
+
+
+            const previousIds =
+              new Set(
+                allArticles.map(
+                  function(article) {
+
+                    return article.id;
+
+                  }
+                )
+              );
+
+
+            allArticles =
+              response.articles || [];
+
+
+            lastUpdatedAt =
+              response.updatedAt;
+
+
+            allArticles.forEach(
+              function(article) {
+
+                knownArticleIds.add(
+                  article.id
+                );
+
+              }
+            );
+
+
+            renderHero();
+
+
+            applyFilters();
+
+
+            const newCount =
+              allArticles.filter(
+                function(article) {
+
+                  return (
+                    !previousIds.has(
+                      article.id
+                    )
+                  );
+
+                }
+              ).length;
+
+
+            status.textContent =
+              newCount > 0 &&
+              previousIds.size > 0
+                ? newCount +
+                  ' new story' +
+                  (
+                    newCount === 1
+                      ? ''
+                      : 'ies'
+                  ) +
+                  ' found • Updated ' +
+                  formatTime(
+                    response.updatedAt
+                  )
+                : 'News updated ' +
+                  formatTime(
+                    response.updatedAt
+                  );
+
+          }
+        )
+
+        .withFailureHandler(
+          function(error) {
+
+            showError(
+              error &&
+              error.message
+                ? error.message
+                : 'Unable to connect to news service.'
+            );
+
+          }
+        )
+
+        .getNews(
+          forceRefresh
+        );
+
+    }
+
+
+    /* =================================================
+       MANUAL REFRESH
+       ================================================= */
+
+    function manualRefresh() {
+
+      const button =
+        document.getElementById(
+          'refreshButton'
+        );
+
+
+      button.disabled = true;
+
+      button.textContent =
+        'Refreshing...';
+
+
+      loadNews(true);
+
+
+      setTimeout(
+        function() {
+
+          button.disabled =
+            false;
+
+          button.textContent =
+            '↻ Refresh';
+
+        },
+        2500
+      );
+
+    }
+
+
+    /* =================================================
+       MAIN CATEGORY
+       ================================================= */
+
+    function selectMainCategory(
+      category,
+      button
+    ) {
+
+      currentMainCategory =
+        category;
+
+
+      currentSubcategory =
+        'All';
+
+
+      document
+        .querySelectorAll(
+          '.main-nav button'
+        )
+        .forEach(
+          function(btn) {
+
+            btn.classList.remove(
+              'active'
+            );
+
+          }
+        );
+
+
+      if (button) {
+
+        button.classList.add(
+          'active'
+        );
+
+      }
+
+
+      buildSubcategoryNav();
+
+
+      updateSectionTitle();
+
+
+      applyFilters();
+
+    }
+
+
+    /* =================================================
+       SUBCATEGORY
+       ================================================= */
+
+    function selectSubcategory(
+      category,
+      button
+    ) {
+
+      currentSubcategory =
+        category === 'All Topics'
+          ? 'All'
+          : category;
+
+
+      document
+        .querySelectorAll(
+          '.subnav button'
+        )
+        .forEach(
+          function(btn) {
+
+            btn.classList.remove(
+              'active'
+            );
+
+          }
+        );
+
+
+      if (button) {
+
+        button.classList.add(
+          'active'
+        );
+
+      }
+
+
+      updateSectionTitle();
+
+
+      applyFilters();
+
+    }
+
+
+    /* =================================================
+       BUILD SUBCATEGORY NAV
+       ================================================= */
+
+    function buildSubcategoryNav() {
+
+      const nav =
+        document.getElementById(
+          'subcategoryNav'
+        );
+
+
+      const categories =
+        SUBCATEGORIES[
+          currentMainCategory
+        ] ||
+        SUBCATEGORIES.All;
+
+
+      nav.innerHTML =
+        categories
+          .map(
+            function(category, index) {
+
+              const value =
+                category === 'All Topics'
+                  ? 'All'
+                  : category;
+
+
+              return `
+
+                <button
+                  class="${
+                    (
+                      (
+                        index === 0 &&
+                        currentSubcategory === 'All'
+                      ) ||
+                      currentSubcategory === value
+                    )
+                      ? 'active'
+                      : ''
+                  }"
+                  onclick="selectSubcategory(
+                    '${escapeJs(value)}',
+                    this
+                  )"
+                >
+                  ${escapeHtml(category)}
+                </button>
+
+              `;
+
+            }
+          )
+          .join('');
+
+    }
+
+
+    /* =================================================
+       FILTER
+       ================================================= */
+
+    function applyFilters() {
+
+      const search =
+        document.getElementById(
+          'search'
+        )
+        .value
+        .toLowerCase()
+        .trim();
+
+
+      const filtered =
+        allArticles.filter(
+          function(article) {
+
+            const mainMatch =
+              currentMainCategory ===
+              'All' ||
+              article.mainCategory ===
+              currentMainCategory;
+
+
+            const subMatch =
+              currentSubcategory ===
+              'All' ||
+              article.category ===
+              currentSubcategory;
+
+
+            const searchMatch =
+              !search ||
+              (
+                article.title +
+                ' ' +
+                article.description +
+                ' ' +
+                article.category +
+                ' ' +
+                article.mainCategory +
+                ' ' +
+                article.source
+              )
+              .toLowerCase()
+              .includes(search);
+
+
+            return (
+              mainMatch &&
+              subMatch &&
+              searchMatch
+            );
+
+          }
+        );
+
+
+      renderNews(
+        filtered
+      );
+
+    }
+
+
+    /* =================================================
+       RENDER NEWS
+       ================================================= */
+
+    function renderNews(
+      articles
+    ) {
+
+      const container =
+        document.getElementById(
+          'newsContainer'
+        );
+
+
+      document.getElementById(
+        'articleCount'
+      ).textContent =
+        articles.length +
+        (
+          articles.length === 1
+            ? ' article'
+            : ' articles'
+        );
+
+
+      if (!articles.length) {
+
+        container.innerHTML = `
+
+          <div class="empty">
+
+            <div class="empty-icon">
+              🔎
+            </div>
+
+            <h3>
+              No stories found
+            </h3>
+
+            <p>
+              Try another topic or search term.
+            </p>
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      container.innerHTML = `
+
+        <div class="news-grid">
+
+          ${
+            articles
+              .map(
+                createArticleCard
+              )
+              .join('')
+          }
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* =================================================
+       ARTICLE CARD
+       ================================================= */
+
+    function createArticleCard(
+      article
+    ) {
+
+      const isNew =
+        lastUpdatedAt &&
+        (
+          Date.now() -
+          new Date(
+            article.published
+          ).getTime()
+        ) <
+        2 * 60 * 60 * 1000;
+
+
+      const placeholder =
+        article.mainCategory ===
+        'Gaming'
+          ? '🎮'
+          : '⚡';
+
+
+      let imageHtml = `
+
+        <div class="image-placeholder">
+
+          ${placeholder}
+
+        </div>
+
+      `;
+
+
+      if (
+        article.image
+      ) {
+
+        imageHtml = `
+
+          <img
+            class="article-image"
+            src="${escapeHtml(article.image)}"
+            alt=""
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+
+          <div
+            class="image-placeholder"
+            style="display:none;"
+          >
+            ${placeholder}
+          </div>
+
+        `;
+
+      }
+
+
+      return `
+
+        <article class="article">
+
+          <div class="article-image-wrap">
+
+            ${imageHtml}
+
+            ${
+              isNew
+                ? `
+                  <span class="new-badge">
+                    NEW
+                  </span>
+                `
+                : ''
+            }
+
+          </div>
+
+
+          <div class="article-body">
+
+            <div class="article-category">
+
+              <span class="category-badge">
+                ${escapeHtml(
+                  article.category
+                )}
+              </span>
+
+            </div>
+
+
+            <h3 class="article-title">
+
+              <a
+                href="${escapeHtml(article.url)}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+                ${escapeHtml(
+                  article.title
+                )}
+
+              </a>
+
+            </h3>
+
+
+            <p class="article-description">
+
+              ${escapeHtml(
+                article.description ||
+                'Read the latest story from the original publisher.'
+              )}
+
+            </p>
+
+
+            <div class="article-footer">
+
+              <span class="source-name">
+
+                ${escapeHtml(
+                  article.source
+                )}
+
+              </span>
+
+
+              <span
+                class="article-time"
+                data-time="${escapeHtml(
+                  article.published
+                )}"
+              >
+
+                ${formatRelativeTime(
+                  article.published
+                )}
+
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      `;
+
+    }
+
+
+    /* =================================================
+       HERO
+       ================================================= */
+
+    function renderHero() {
+
+      if (
+        !allArticles.length
+      ) {
+
+        return;
+
+      }
+
+
+      const latest =
+        allArticles[0];
+
+
+      const technology =
+        allArticles.find(
+          function(article) {
+
+            return (
+              article.mainCategory ===
+              'Technology'
+            );
+
+          }
+        );
+
+
+      const gaming =
+        allArticles.find(
+          function(article) {
+
+            return (
+              article.mainCategory ===
+              'Gaming'
+            );
+
+          }
+        );
+
+
+      const hero =
+        document.getElementById(
+          'heroMain'
+        );
+
+
+      hero.innerHTML = `
+
+        <div class="hero-label">
+          Fresh Story
+        </div>
+
+        <div class="hero-title">
+
+          ${escapeHtml(
+            latest.title
+          )}
+
+        </div>
+
+        <div class="hero-meta">
+
+          ${escapeHtml(
+            latest.category
+          )}
+          •
+          ${escapeHtml(
+            latest.source
+          )}
+          •
+          ${formatRelativeTime(
+            latest.published
+          )}
+
+        </div>
+
+      `;
+
+
+      const side =
+        document.getElementById(
+          'heroSide'
+        );
+
+
+      side.innerHTML = `
+
+        ${createQuickHeroCard(
+          'Technology',
+          technology
+        )}
+
+        ${createQuickHeroCard(
+          'Gaming',
+          gaming
+        )}
+
+      `;
+
+    }
+
+
+    /* =================================================
+       QUICK HERO CARD
+       ================================================= */
+
+    function createQuickHeroCard(
+      label,
+      article
+    ) {
+
+      if (!article) {
+
+        return `
+
+          <div class="quick-card">
+
+            <div class="quick-label">
+              ${label}
+            </div>
+
+            <div class="quick-title">
+              No current story available.
+            </div>
+
+          </div>
+
+        `;
+
+      }
+
+
+      return `
+
+        <div
+          class="quick-card"
+          onclick="openArticle('${escapeJs(
+            article.url
+          )}')"
+        >
+
+          <div class="quick-label">
+            ${label}
+          </div>
+
+          <div class="quick-title">
+
+            ${escapeHtml(
+              article.title
+            )}
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* =================================================
+       SECTION TITLE
+       ================================================= */
+
+    function updateSectionTitle() {
+
+      let title =
+        'Latest News';
+
+
+      if (
+        currentMainCategory !==
+        'All'
+      ) {
+
+        title =
+          currentMainCategory;
+
+      }
+
+
+      if (
+        currentSubcategory !==
+        'All'
+      ) {
+
+        title =
+          currentSubcategory;
+
+      }
+
+
+      document.getElementById(
+        'sectionTitle'
+      ).textContent =
+        title;
+
+
+      document.getElementById(
+        'sectionSubtitle'
+      ).textContent =
+        'Fresh stories updated automatically';
+
+    }
+
+
+    /* =================================================
+       RELATIVE TIME
+       ================================================= */
+
+    function formatRelativeTime(
+      value
+    ) {
+
+      const date =
+        new Date(value);
+
+
+      if (
+        isNaN(
+          date.getTime()
+        )
+      ) {
+
+        return 'Recently';
+
+      }
+
+
+      const seconds =
+        Math.floor(
+          (
+            Date.now() -
+            date.getTime()
+          ) / 1000
+        );
+
+
+      if (
+        seconds < 60
+      ) {
+
+        return 'Just now';
+
+      }
+
+
+      const minutes =
+        Math.floor(
+          seconds / 60
+        );
+
+
+      if (
+        minutes < 60
+      ) {
+
+        return minutes +
+          ' min ago';
+
+      }
+
+
+      const hours =
+        Math.floor(
+          minutes / 60
+        );
+
+
+      if (
+        hours < 24
+      ) {
+
+        return hours +
+          ' hr ago';
+
+      }
+
+
+      const days =
+        Math.floor(
+          hours / 24
+        );
+
+
+      if (
+        days === 1
+      ) {
+
+        return 'Yesterday';
+
+      }
+
+
+      return days +
+        ' days ago';
+
+    }
+
+
+    /* =================================================
+       SERVER UPDATE TIME
+       ================================================= */
+
+    function formatTime(
+      value
+    ) {
+
+      const date =
+        new Date(value);
+
+
+      if (
+        isNaN(
+          date.getTime()
+        )
+      ) {
+
+        return 'recently';
+
+      }
+
+
+      return date.toLocaleTimeString(
+        undefined,
+        {
+          hour: 'numeric',
+          minute: '2-digit'
+        }
+      );
+
+    }
+
+
+    /* =================================================
+       REFRESH VISIBLE TIMES
+       ================================================= */
+
+    function refreshVisibleTimes() {
+
+      document
+        .querySelectorAll(
+          '.article-time'
+        )
+        .forEach(
+          function(element) {
+
+            const value =
+              element.dataset.time;
+
+
+            if (value) {
+
+              element.textContent =
+                formatRelativeTime(
+                  value
+                );
+
+            }
+
+          }
+        );
+
+    }
+
+
+    /* =================================================
+       ERROR
+       ================================================= */
+
+    function showError(
+      message
+    ) {
+
+      document.getElementById(
+        'statusText'
+      ).textContent =
+        'News service temporarily unavailable';
+
+
+      document.getElementById(
+        'newsContainer'
+      ).innerHTML = `
+
+        <div class="empty">
+
+          <div class="empty-icon">
+            ⚠️
+          </div>
+
+          <h3>
+            Unable to load news
+          </h3>
+
+          <p>
+            ${escapeHtml(message)}
+          </p>
+
+          <br>
+
+          <button
+            class="refresh-btn"
+            onclick="manualRefresh()"
+          >
+            Try Again
+          </button>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* =================================================
+       OPEN ARTICLE
+       ================================================= */
+
+    function openArticle(
+      url
+    ) {
+
+      if (
+        /^https?:\/\//i.test(url)
+      ) {
+
+        window.open(
+          url,
+          '_blank',
+          'noopener,noreferrer'
+        );
+
+      }
+
+    }
+
+
+    /* =================================================
+       DARK MODE
+       ================================================= */
+
+    function toggleTheme() {
+
+      document.body.classList.toggle(
+        'dark'
+      );
+
+
+      const dark =
+        document.body.classList.contains(
+          'dark'
+        );
+
+
+      localStorage.setItem(
+        'techpulse-theme',
+        dark
+          ? 'dark'
+          : 'light'
+      );
+
+
+      document.getElementById(
+        'themeButton'
+      ).textContent =
+        dark
+          ? '☀'
+          : '☾';
+
+    }
+
+
+    /* =================================================
+       LOAD THEME
+       ================================================= */
+
+    function loadSavedTheme() {
+
+      const saved =
+        localStorage.getItem(
+          'techpulse-theme'
+        );
+
+
+      if (
+        saved === 'dark'
+      ) {
+
+        document.body.classList.add(
+          'dark'
+        );
+
+
+        document.getElementById(
+          'themeButton'
+        ).textContent =
+          '☀';
+
+      }
+
+    }
+
+
+    /* =================================================
+       ESCAPE HTML
+       ================================================= */
+
+    function escapeHtml(
+      value
+    ) {
+
+      return String(
+        value || ''
+      )
+      .replace(
+        /&/g,
+        '&amp;'
+      )
+      .replace(
+        /</g,
+        '&lt;'
+      )
+      .replace(
+        />/g,
+        '&gt;'
+      )
+      .replace(
+        /"/g,
+        '&quot;'
+      )
+      .replace(
+        /'/g,
+        '&#039;'
+      );
+
+    }
+
+
+    /* =================================================
+       ESCAPE JAVASCRIPT
+       ================================================= */
+
+    function escapeJs(
+      value
+    ) {
+
+      return String(
+        value || ''
+      )
+      .replace(
+        /\\/g,
+        '\\\\'
+      )
+      .replace(
+        /'/g,
+        "\\'"
+      )
+      .replace(
+        /\r/g,
+        '\\r'
+      )
+      .replace(
+        /\n/g,
+        '\\n'
+      );
+
+    }
+
+  </script>
+
+</body>
+
+</html>
