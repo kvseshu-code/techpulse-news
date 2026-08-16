@@ -1,1 +1,121 @@
+name: Update Technology & Gaming News
 
+on:
+  schedule:
+    # Run every 15 minutes
+    - cron: "*/15 * * * *"
+
+  workflow_dispatch:
+
+  push:
+    paths:
+      - "fetch_news.py"
+      - ".github/workflows/update-news.yml"
+
+permissions:
+  contents: write
+
+jobs:
+
+  update-news:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ------------------------------------------
+      # STEP 1 — Checkout repository
+      # ------------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+
+      # ------------------------------------------
+      # STEP 2 — Setup Python
+      # ------------------------------------------
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+
+      # ------------------------------------------
+      # STEP 3 — Install dependencies
+      # ------------------------------------------
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+
+      # ------------------------------------------
+      # STEP 4 — Run news fetcher
+      # ------------------------------------------
+
+      - name: Fetch latest news
+        run: |
+          python fetch_news.py
+
+
+      # ------------------------------------------
+      # STEP 5 — Check generated news.json
+      # ------------------------------------------
+
+      - name: Check news.json
+        run: |
+          if [ ! -f news.json ]; then
+            echo "ERROR: news.json was not created."
+            exit 1
+          fi
+
+          echo "news.json successfully created."
+
+          python - <<'PY'
+          import json
+
+          with open("news.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          articles = data.get("articles", [])
+
+          print("Articles:", len(articles))
+          print("Updated:", data.get("updatedAt"))
+
+          if not isinstance(articles, list):
+              raise SystemExit("ERROR: articles is not a list.")
+
+          if len(articles) == 0:
+              print("WARNING: No articles were returned.")
+          PY
+
+
+      # ------------------------------------------
+      # STEP 6 — Commit updated news
+      # ------------------------------------------
+
+      - name: Commit updated news
+        run: |
+
+          git config user.name "TechPulse News Bot"
+
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add news.json
+
+          if git diff --cached --quiet; then
+
+            echo "No news changes detected."
+
+          else
+
+            git commit -m "Update latest technology and gaming news"
+
+            git push
+
+          fi
