@@ -1,306 +1,815 @@
 #!/usr/bin/env python3
-"""
-fetch_news.py — TechPulse news pipeline
-
-    RSS/API sources
-        |
-        v
-    Fetch + parse each feed (feedparser)
-        |
-        v
-    Normalize into a common article shape
-        |
-        v
-    Remove duplicates (by URL, then by normalized title)
-        |
-        v
-    Categorize (by source feed) + auto-tag (by keyword)
-        |
-        v
-    Sort by published date (newest first)
-        |
-        v
-    Compute simple "trending" flags
-        |
-        v
-    Write news.json (with per-source fetch status + last_updated)
-
-Runs standalone (`python scripts/fetch_news.py`) or via the GitHub Actions
-workflow in .github/workflows/update-news.yml on a schedule.
-
-Design goals (matches the brief this replaces):
-  - No database. news.json IS the database.
-  - One broken feed should never break the whole run — every fetch is
-    wrapped and failures are skipped + logged into news.json's "sources"
-    block, so the frontend can show feed health if it wants to.
-  - Sources are declared in one place (SOURCES below) so adding/removing
-    a feed is a one-line change, no other code to touch.
-"""
 
 import json
-import re
-import sys
-import time
 import hashlib
-import datetime as dt
-from urllib.parse import urlparse
+import html
+import re
+import time
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
 
 import feedparser
+import requests
+from bs4 import BeautifulSoup
 
-# ---------------------------------------------------------------------------
-# STEP 15 (from the original plan): sources live in one config block.
-# Add/remove/disable feeds here without touching any other code.
-# Each source: name, feed URL, category, and optional weight (higher =
-# shown first when scores tie). Verify these periodically — RSS URLs do
-# occasionally move.
-# ---------------------------------------------------------------------------
-SOURCES = [
-    # -- Technology --------------------------------------------------------
-    {"name": "TechCrunch",   "url": "https://techcrunch.com/feed/",                     "category": "Technology"},
-    {"name": "The Verge",    "url": "https://www.theverge.com/rss/index.xml",           "category": "Technology"},
-    {"name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index",  "category": "Technology"},
-    {"name": "Wired",        "url": "https://www.wired.com/feed/rss",                   "category": "Technology"},
-    {"name": "ZDNET",        "url": "https://www.zdnet.com/news/rss.xml",               "category": "Technology"},
 
-    # -- Gaming --------------------------------------------------------
-    {"name": "IGN",          "url": "https://feeds.ign.com/ign/all",                    "category": "Gaming"},
-    {"name": "GameSpot",     "url": "https://www.gamespot.com/feeds/news/",             "category": "Gaming"},
-    {"name": "PC Gamer",     "url": "https://www.pcgamer.com/rss/",                     "category": "Gaming"},
-    {"name": "Eurogamer",    "url": "https://www.eurogamer.net/feed",                   "category": "Gaming"},
+OUTPUT_FILE = Path("news.json")
+
+MAX_TOTAL_ARTICLES = 150
+MAX_PER_FEED = 30
+REQUEST_TIMEOUT = 20
+
+USER_AGENT = (
+    "TechPulseNewsBot/1.0 "
+    "(RSS news aggregation)"
+)
+
+
+FEEDS = [
+
+    {
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "mainCategory": "Technology",
+        "category": "Technology"
+    },
+
+    {
+        "url": "https://www.wired.com/feed/rss",
+        "mainCategory": "Technology",
+        "category": "Technology"
+    },
+
+    {
+        "url": "https://www.zdnet.com/news/rss.xml",
+        "mainCategory": "Technology",
+        "category": "Technology"
+    },
+
+    {
+        "url": "https://www.techradar.com/rss",
+        "mainCategory": "Technology",
+        "category": "Technology"
+    },
+
+    {
+        "url": "https://www.tomshardware.com/feeds/all",
+        "mainCategory": "Technology",
+        "category": "Hardware & Devices"
+    },
+
+    {
+        "url": "https://www.androidauthority.com/feed",
+        "mainCategory": "Technology",
+        "category": "Smartphones & Mobile"
+    },
+
+    {
+        "url": "https://www.pcgamer.com/rss/",
+        "mainCategory": "Gaming",
+        "category": "PC Gaming"
+    },
+
+    {
+        "url": "https://www.gamespot.com/feeds/news/",
+        "mainCategory": "Gaming",
+        "category": "Gaming Updates"
+    },
+
+    {
+        "url": "https://www.eurogamer.net/feed",
+        "mainCategory": "Gaming",
+        "category": "Gaming Updates"
+    },
+
+    {
+        "url": "https://www.polygon.com/rss/index.xml",
+        "mainCategory": "Gaming",
+        "category": "Gaming Updates"
+    }
+
 ]
 
-# ---------------------------------------------------------------------------
-# STEP 12: keyword-based sub-tagging on top of the per-feed category.
-# An article can pick up extra tags beyond its main category, e.g. a
-# TechCrunch (Technology) article that mentions "OpenAI" also gets "AI".
-# Order matters a little (first match found per keyword group wins for
-# display purposes) but all matching tags are kept.
-# ---------------------------------------------------------------------------
-KEYWORD_TAGS = [
-    ("AI",            [r"\bai\b", r"artificial intelligence", r"chatgpt", r"openai", r"gemini", r"\bclaude\b", r"llm\b"]),
-    ("Cybersecurity", [r"cybersecurity", r"data breach", r"ransomware", r"vulnerabilit", r"exploit", r"malware", r"hack(ed|er|ing)?"]),
-    ("Cloud",         [r"\bcloud\b", r"\baws\b", r"azure", r"google cloud"]),
-    ("PlayStation",   [r"playstation", r"\bps5\b", r"\bps4\b", r"sony interactive"]),
-    ("Xbox",          [r"\bxbox\b", r"microsoft gaming"]),
-    ("Nintendo",      [r"nintendo", r"switch"]),
-]
 
-MAX_ARTICLES_PER_CATEGORY = 60   # Step 16-style cap, keeps news.json small
-FETCH_TIMEOUT_SECONDS = 15
-REQUEST_HEADERS = {
-    "User-Agent": "TechPulseBot/1.0 (+https://kvseshu-code.github.io/techpulse-news/)"
-}
+session = requests.Session()
+
+session.headers.update({
+    "User-Agent": USER_AGENT,
+    "Accept": (
+        "application/rss+xml, "
+        "application/atom+xml, "
+        "application/xml, "
+        "text/xml, "
+        "*/*"
+    )
+})
 
 
-def normalize_title(title: str) -> str:
-    """Lowercase, strip punctuation/whitespace so near-duplicate titles
-    from different publishers still collide for dedup purposes."""
-    t = title.lower()
-    t = re.sub(r"[^a-z0-9\s]", " ", t)
-    t = re.sub(r"\s+", " ", t).strip()
-    return t
+def clean_text(value):
+
+    if not value:
+        return ""
+
+    value = html.unescape(str(value))
+
+    soup = BeautifulSoup(
+        value,
+        "html.parser"
+    )
+
+    text = soup.get_text(
+        " ",
+        strip=True
+    )
+
+    return re.sub(
+        r"\s+",
+        " ",
+        text
+    ).strip()
 
 
-def article_id(url: str, title: str) -> str:
-    """Stable short ID for an article, used as a dedup key and a DOM id
-    on the frontend."""
-    basis = (url or "") + "|" + normalize_title(title)
-    return hashlib.sha1(basis.encode("utf-8")).hexdigest()[:16]
+def parse_date(entry):
+
+    for value in [
+        entry.get("published"),
+        entry.get("updated"),
+        entry.get("created")
+    ]:
+
+        if not value:
+            continue
+
+        try:
+
+            dt = parsedate_to_datetime(
+                str(value)
+            )
+
+            if dt.tzinfo is None:
+                dt = dt.replace(
+                    tzinfo=timezone.utc
+                )
+
+            return (
+                dt.astimezone(
+                    timezone.utc
+                )
+                .isoformat()
+                .replace("+00:00", "Z")
+            )
+
+        except Exception:
+            pass
 
 
-def best_image(entry) -> str:
-    """feedparser entries expose images in several different shapes
-    depending on the publisher's feed format. Try the common ones."""
-    media = entry.get("media_content") or entry.get("media_thumbnail")
-    if media and isinstance(media, list) and media[0].get("url"):
-        return media[0]["url"]
+    for field in [
+        "published_parsed",
+        "updated_parsed",
+        "created_parsed"
+    ]:
 
-    if entry.get("links"):
-        for link in entry["links"]:
-            if link.get("type", "").startswith("image/") and link.get("href"):
-                return link["href"]
+        parsed = entry.get(field)
 
-    # Some feeds embed an <img> in the summary HTML.
-    summary = entry.get("summary", "") or ""
-    m = re.search(r'<img[^>]+src="([^"]+)"', summary)
-    if m:
-        return m.group(1)
+        if parsed:
+
+            try:
+
+                timestamp = time.mktime(
+                    parsed
+                )
+
+                dt = datetime.fromtimestamp(
+                    timestamp,
+                    tz=timezone.utc
+                )
+
+                return (
+                    dt.isoformat()
+                    .replace("+00:00", "Z")
+                )
+
+            except Exception:
+                pass
+
+
+    return (
+        datetime.now(timezone.utc)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
+
+
+def create_id(url, title):
+
+    raw = (
+        str(url).strip()
+        + "|"
+        + str(title).strip().lower()
+    )
+
+    digest = hashlib.sha256(
+        raw.encode("utf-8")
+    ).hexdigest()[:20]
+
+    return "techpulse-" + digest
+
+
+def get_source_name(feed, entry):
+
+    source = ""
+
+    source_data = entry.get(
+        "source"
+    )
+
+    if isinstance(
+        source_data,
+        dict
+    ):
+
+        source = (
+            source_data.get("title")
+            or ""
+        )
+
+    if not source:
+
+        feed_info = feed.get(
+            "feed",
+            {}
+        )
+
+        source = (
+            feed_info.get("title")
+            or ""
+        )
+
+    return (
+        clean_text(source)
+        or
+        "News Source"
+    )
+
+
+def get_image(entry):
+
+    media_content = entry.get(
+        "media_content",
+        []
+    )
+
+    for media in media_content:
+
+        if isinstance(
+            media,
+            dict
+        ):
+
+            url = media.get("url")
+
+            if url and (
+                url.startswith("http://")
+                or
+                url.startswith("https://")
+            ):
+
+                return url
+
+
+    media_thumbnail = entry.get(
+        "media_thumbnail",
+        []
+    )
+
+    for media in media_thumbnail:
+
+        if isinstance(
+            media,
+            dict
+        ):
+
+            url = media.get("url")
+
+            if url:
+                return url
+
+
+    for enclosure in entry.get(
+        "enclosures",
+        []
+    ):
+
+        if not isinstance(
+            enclosure,
+            dict
+        ):
+            continue
+
+        url = (
+            enclosure.get("href")
+            or
+            enclosure.get("url")
+        )
+
+        mime = str(
+            enclosure.get(
+                "type",
+                ""
+            )
+        ).lower()
+
+        if (
+            url
+            and
+            (
+                "image" in mime
+                or
+                re.search(
+                    r"\.(jpg|jpeg|png|webp)(\?|$)",
+                    url,
+                    re.I
+                )
+            )
+        ):
+
+            return url
+
 
     return ""
 
 
-def clean_summary(entry) -> str:
-    raw = entry.get("summary", "") or entry.get("description", "") or ""
-    text = re.sub(r"<[^>]+>", " ", raw)      # strip HTML tags
-    text = re.sub(r"\s+", " ", text).strip()
-    return text[:280]
+def detect_category(
+    title,
+    description,
+    default_category,
+    main_category
+):
+
+    text = (
+        f"{title} "
+        f"{description}"
+    ).lower()
 
 
-def parse_published(entry) -> str:
-    """Return an ISO-8601 UTC timestamp string. Falls back to 'now' if
-    the feed doesn't provide a parseable date, so bad dates never crash
-    the sort step."""
-    for key in ("published_parsed", "updated_parsed"):
-        val = entry.get(key)
-        if val:
-            try:
-                return dt.datetime(*val[:6], tzinfo=dt.timezone.utc).isoformat()
-            except Exception:
-                pass
-    return dt.datetime.now(dt.timezone.utc).isoformat()
+    if main_category == "Gaming":
+
+        if any(
+            x in text
+            for x in [
+                "pc gaming",
+                "steam",
+                "gaming pc",
+                "graphics card",
+                "gpu"
+            ]
+        ):
+            return "PC Gaming"
 
 
-def tag_article(title: str, summary: str) -> list:
-    haystack = (title + " " + summary).lower()
-    tags = []
-    for tag, patterns in KEYWORD_TAGS:
-        if any(re.search(p, haystack) for p in patterns):
-            tags.append(tag)
-    return tags
+        if any(
+            x in text
+            for x in [
+                "mobile game",
+                "mobile gaming",
+                "android game",
+                "ios game"
+            ]
+        ):
+            return "Mobile Gaming"
 
 
-def fetch_source(source: dict) -> tuple:
-    """Fetch + parse one feed. Returns (articles, status_dict).
-    Never raises — a failed source just returns an empty list and a
-    status block recording the error, per Step 18/19 (one bad feed
-    should never take down the whole site)."""
-    status = {
-        "name": source["name"],
-        "url": source["url"],
-        "category": source["category"],
-        "ok": False,
-        "article_count": 0,
-        "error": None,
-        "checked_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-    }
-    articles = []
+        if any(
+            x in text
+            for x in [
+                "esports",
+                "esport",
+                "tournament"
+            ]
+        ):
+            return "Esports"
+
+
+        if any(
+            x in text
+            for x in [
+                "release",
+                "launch",
+                "released"
+            ]
+        ):
+            return "Game Releases"
+
+
+        if any(
+            x in text
+            for x in [
+                "hardware",
+                "controller",
+                "headset",
+                "console"
+            ]
+        ):
+            return "Gaming Hardware"
+
+
+        return default_category or "Gaming Updates"
+
+
+    if any(
+        x in text
+        for x in [
+            "artificial intelligence",
+            "machine learning",
+            "generative ai",
+            "chatbot",
+            "large language model"
+        ]
+    ):
+        return "Artificial Intelligence"
+
+
+    if any(
+        x in text
+        for x in [
+            "cybersecurity",
+            "cyber security",
+            "malware",
+            "ransomware",
+            "vulnerability",
+            "security flaw",
+            "zero-day"
+        ]
+    ):
+        return "Cybersecurity"
+
+
+    if any(
+        x in text
+        for x in [
+            "cloud computing",
+            "cloud infrastructure",
+            "kubernetes",
+            "container",
+            "serverless",
+            "data center"
+        ]
+    ):
+        return "Cloud & Infrastructure"
+
+
+    if any(
+        x in text
+        for x in [
+            "iphone",
+            "android",
+            "smartphone",
+            "mobile phone"
+        ]
+    ):
+        return "Smartphones & Mobile"
+
+
+    if any(
+        x in text
+        for x in [
+            "laptop",
+            "processor",
+            "cpu",
+            "gpu",
+            "graphics card",
+            "hardware",
+            "monitor",
+            "ssd"
+        ]
+    ):
+        return "Hardware & Devices"
+
+
+    if any(
+        x in text
+        for x in [
+            "software",
+            "application",
+            "app",
+            "browser",
+            "operating system"
+        ]
+    ):
+        return "Software & Applications"
+
+
+    return default_category or "Technology"
+
+
+def fetch_feed(config):
+
+    url = config["url"]
+
+    print(f"Fetching: {url}")
+
     try:
-        parsed = feedparser.parse(source["url"], request_headers=REQUEST_HEADERS)
-        if parsed.bozo and not parsed.entries:
-            raise RuntimeError(str(parsed.get("bozo_exception", "unknown parse error")))
 
-        for entry in parsed.entries:
-            title = (entry.get("title") or "").strip()
-            link = (entry.get("link") or "").strip()
-            if not title or not link:
+        response = session.get(
+            url,
+            timeout=REQUEST_TIMEOUT
+        )
+
+        response.raise_for_status()
+
+        feed = feedparser.parse(
+            response.content
+        )
+
+        articles = []
+
+        for entry in feed.entries[
+            :MAX_PER_FEED
+        ]:
+
+            title = clean_text(
+                entry.get(
+                    "title",
+                    ""
+                )
+            )
+
+            if not title:
                 continue
 
-            summary = clean_summary(entry)
-            published = parse_published(entry)
-            tags = tag_article(title, summary)
 
-            articles.append({
-                "id": article_id(link, title),
+            article_url = str(
+                entry.get(
+                    "link",
+                    ""
+                )
+            ).strip()
+
+
+            if not (
+                article_url.startswith(
+                    "http://"
+                )
+                or
+                article_url.startswith(
+                    "https://"
+                )
+            ):
+                continue
+
+
+            description = clean_text(
+                entry.get(
+                    "summary",
+                    ""
+                )
+                or
+                entry.get(
+                    "description",
+                    ""
+                )
+            )
+
+
+            if len(description) > 350:
+
+                description = (
+                    description[:347]
+                    + "..."
+                )
+
+
+            article = {
+
+                "id": create_id(
+                    article_url,
+                    title
+                ),
+
                 "title": title,
-                "description": summary,
-                "url": link,
-                "image": best_image(entry),
-                "source": source["name"],
-                "category": source["category"],
-                "tags": tags,
-                "published": published,
-                "domain": urlparse(link).netloc.replace("www.", ""),
-            })
 
-        status["ok"] = True
-        status["article_count"] = len(articles)
-    except Exception as exc:  # noqa: BLE001 - intentionally broad, feeds fail in many ways
-        status["error"] = f"{type(exc).__name__}: {exc}"
+                "description": description,
 
-    return articles, status
+                "url": article_url,
+
+                "image": get_image(
+                    entry
+                ),
+
+                "category": detect_category(
+                    title,
+                    description,
+                    config.get(
+                        "category",
+                        "Technology"
+                    ),
+                    config[
+                        "mainCategory"
+                    ]
+                ),
+
+                "mainCategory": config[
+                    "mainCategory"
+                ],
+
+                "source": get_source_name(
+                    feed,
+                    entry
+                ),
+
+                "published": parse_date(
+                    entry
+                )
+
+            }
+
+            articles.append(
+                article
+            )
 
 
-def dedupe(articles: list) -> list:
-    """STEP 11: collapse duplicate/near-duplicate stories. Two passes -
-    exact URL match first (cheapest, catches syndicated copies), then
-    normalized-title match (catches the same story covered by multiple
-    outlets with slightly different URLs)."""
+        print(
+            f"  Found {len(articles)} articles"
+        )
+
+        return articles
+
+
+    except Exception as error:
+
+        print(
+            f"  Feed failed: {error}"
+        )
+
+        return []
+
+
+def deduplicate(articles):
+
     seen_urls = set()
+
     seen_titles = set()
-    unique = []
-    for art in articles:
-        norm_title = normalize_title(art["title"])
-        if art["url"] in seen_urls or norm_title in seen_titles:
-            continue
-        seen_urls.add(art["url"])
-        seen_titles.add(norm_title)
-        unique.append(art)
-    return unique
+
+    result = []
 
 
-def compute_trending(articles: list, window_hours: int = 18, min_sources: int = 2) -> set:
-    """STEP 14 (simple version, no DB): a normalized title cluster that's
-    covered by multiple distinct sources within a recent time window is
-    "trending". Returns a set of article ids to flag."""
-    now = dt.datetime.now(dt.timezone.utc)
-    clusters = {}
-    for art in articles:
-        try:
-            published = dt.datetime.fromisoformat(art["published"])
-        except Exception:
-            continue
-        if (now - published).total_seconds() > window_hours * 3600:
-            continue
-        key = normalize_title(art["title"])[:60]  # loose clustering key
-        clusters.setdefault(key, set()).add(art["source"])
+    for article in articles:
 
-    trending_ids = set()
-    for art in articles:
-        key = normalize_title(art["title"])[:60]
-        if len(clusters.get(key, [])) >= min_sources:
-            trending_ids.add(art["id"])
-    return trending_ids
+        url_key = (
+            article["url"]
+            .strip()
+            .lower()
+        )
+
+
+        title_key = re.sub(
+            r"\s+",
+            " ",
+            re.sub(
+                r"[^a-z0-9]+",
+                " ",
+                article["title"].lower()
+            )
+        ).strip()
+
+
+        if url_key in seen_urls:
+            continue
+
+
+        if title_key in seen_titles:
+            continue
+
+
+        seen_urls.add(
+            url_key
+        )
+
+        seen_titles.add(
+            title_key
+        )
+
+        result.append(
+            article
+        )
+
+
+    return result
 
 
 def main():
-    started = time.time()
+
+    print("")
+    print(
+        "=========================================="
+    )
+    print(
+        "       TECHPULSE NEWS FETCHER"
+    )
+    print(
+        "=========================================="
+    )
+    print("")
+
+
     all_articles = []
-    source_statuses = []
 
-    for source in SOURCES:
-        articles, status = fetch_source(source)
-        all_articles.extend(articles)
-        source_statuses.append(status)
-        flag = "OK " if status["ok"] else "FAIL"
-        print(f"[{flag}] {source['name']:<14} {status['article_count']:>3} articles  {status['error'] or ''}")
 
-    all_articles = dedupe(all_articles)
-    all_articles.sort(key=lambda a: a["published"], reverse=True)
+    for config in FEEDS:
 
-    trending_ids = compute_trending(all_articles)
-    for art in all_articles:
-        art["trending"] = art["id"] in trending_ids
+        articles = fetch_feed(
+            config
+        )
 
-    # Cap per category so news.json doesn't grow unbounded over time.
-    capped = []
-    per_category_count = {}
-    for art in all_articles:
-        cat = art["category"]
-        per_category_count[cat] = per_category_count.get(cat, 0) + 1
-        if per_category_count[cat] <= MAX_ARTICLES_PER_CATEGORY:
-            capped.append(art)
+        all_articles.extend(
+            articles
+        )
+
+
+    print("")
+
+    print(
+        "Before deduplication:",
+        len(all_articles)
+    )
+
+
+    all_articles = deduplicate(
+        all_articles
+    )
+
+
+    print(
+        "After deduplication:",
+        len(all_articles)
+    )
+
+
+    all_articles.sort(
+        key=lambda article:
+            article.get(
+                "published",
+                ""
+            ),
+        reverse=True
+    )
+
+
+    all_articles = all_articles[
+        :MAX_TOTAL_ARTICLES
+    ]
+
+
+    updated_at = (
+        datetime.now(
+            timezone.utc
+        )
+        .isoformat()
+        .replace(
+            "+00:00",
+            "Z"
+        )
+    )
+
 
     output = {
+
         "success": True,
-        "last_updated": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "article_count": len(capped),
-        "fetch_duration_seconds": round(time.time() - started, 2),
-        "sources": source_statuses,
-        "articles": capped,
+
+        "updatedAt": updated_at,
+
+        "total": len(
+            all_articles
+        ),
+
+        "articles": all_articles
+
     }
 
-    with open("news.json", "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
 
-    ok_count = sum(1 for s in source_statuses if s["ok"])
-    print(f"\nWrote news.json — {len(capped)} articles from {ok_count}/{len(SOURCES)} sources "
-          f"in {output['fetch_duration_seconds']}s")
+    OUTPUT_FILE.write_text(
+        json.dumps(
+            output,
+            ensure_ascii=False,
+            indent=2
+        ),
+        encoding="utf-8"
+    )
 
-    # Non-zero exit only if EVERY source failed - a partial failure should
-    # still let the workflow commit whatever news we did get.
-    if ok_count == 0:
-        print("ERROR: every source failed - not overwriting news.json with an empty result.", file=sys.stderr)
-        sys.exit(1)
+
+    print("")
+    print(
+        "news.json created successfully."
+    )
+    print(
+        "Total articles:",
+        len(all_articles)
+    )
+    print(
+        "Updated:",
+        updated_at
+    )
+    print("")
 
 
 if __name__ == "__main__":
