@@ -2,14 +2,11 @@ name: Update Technology & Gaming News
 
 on:
 
-  # Automatically run every 15 minutes
   schedule:
     - cron: "*/15 * * * *"
 
-  # Allow manual execution from GitHub Actions
   workflow_dispatch:
 
-  # Run when the news-fetching code or workflow changes
   push:
     paths:
       - "scripts/fetch_news.py"
@@ -19,7 +16,6 @@ on:
 permissions:
   contents: write
 
-
 jobs:
 
   update-news:
@@ -28,17 +24,17 @@ jobs:
 
     steps:
 
-      # ==================================================
-      # 1. CHECKOUT REPOSITORY
-      # ==================================================
+      # ============================================
+      # 1. CHECKOUT
+      # ============================================
 
       - name: Checkout repository
         uses: actions/checkout@v5
 
 
-      # ==================================================
+      # ============================================
       # 2. SETUP PYTHON
-      # ==================================================
+      # ============================================
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -47,9 +43,9 @@ jobs:
           cache: "pip"
 
 
-      # ==================================================
+      # ============================================
       # 3. SHOW PYTHON VERSION
-      # ==================================================
+      # ============================================
 
       - name: Show Python version
         run: |
@@ -57,9 +53,9 @@ jobs:
           pip --version
 
 
-      # ==================================================
+      # ============================================
       # 4. INSTALL DEPENDENCIES
-      # ==================================================
+      # ============================================
 
       - name: Install dependencies
         run: |
@@ -67,23 +63,17 @@ jobs:
           python -m pip install --upgrade pip
 
           if [ -f requirements.txt ]; then
-
             echo "Installing requirements.txt"
-
             python -m pip install -r requirements.txt
-
           else
-
             echo "ERROR: requirements.txt not found."
-
             exit 1
-
           fi
 
 
-      # ==================================================
-      # 5. VERIFY FEEDPARSER
-      # ==================================================
+      # ============================================
+      # 5. VERIFY DEPENDENCIES
+      # ============================================
 
       - name: Verify Python dependencies
         run: |
@@ -101,19 +91,16 @@ jobs:
           PY
 
 
-      # ==================================================
+      # ============================================
       # 6. CHECK FETCH SCRIPT
-      # ==================================================
+      # ============================================
 
       - name: Check fetch_news.py
         run: |
 
           if [ ! -f scripts/fetch_news.py ]; then
-
             echo "ERROR: scripts/fetch_news.py not found."
-
             exit 1
-
           fi
 
           echo "fetch_news.py found."
@@ -121,9 +108,9 @@ jobs:
           ls -lh scripts/fetch_news.py
 
 
-      # ==================================================
+      # ============================================
       # 7. RUN NEWS FETCHER
-      # ==================================================
+      # ============================================
 
       - name: Run news fetcher
         run: |
@@ -133,41 +120,28 @@ jobs:
           python -u scripts/fetch_news.py
 
 
-      # ==================================================
-      # 8. CHECK DATA DIRECTORY
-      # ==================================================
-
-      - name: Check generated files
-        run: |
-
-          echo "Repository structure after fetch:"
-
-          find . -maxdepth 3 -type f | sort
-
-
-      # ==================================================
-      # 9. VALIDATE NEWS JSON
-      # ==================================================
+      # ============================================
+      # 8. VALIDATE NEWS JSON
+      # ============================================
 
       - name: Validate news.json
         run: |
 
-          if [ ! -f data/news.json ]; then
+          if [ ! -f news.json ]; then
 
-            echo "ERROR: data/news.json was not created."
+            echo "ERROR: news.json was not created."
 
             exit 1
 
           fi
 
-          echo "data/news.json found."
+          echo "news.json found."
 
           python - <<'PY'
 
           import json
-          import os
 
-          file_path = "data/news.json"
+          file_path = "news.json"
 
           with open(
               file_path,
@@ -202,9 +176,9 @@ jobs:
           PY
 
 
-      # ==================================================
-      # 10. SHOW NEWS FILE
-      # ==================================================
+      # ============================================
+      # 9. SHOW NEWS FILE
+      # ============================================
 
       - name: Show news.json status
         run: |
@@ -217,12 +191,12 @@ jobs:
 
           echo "News file:"
 
-          ls -lh data/news.json
+          ls -lh news.json
 
 
-      # ==================================================
-      # 11. COMMIT UPDATED NEWS
-      # ==================================================
+      # ============================================
+      # 10. COMMIT UPDATED NEWS
+      # ============================================
 
       - name: Commit updated news
         run: |
@@ -231,11 +205,11 @@ jobs:
 
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/news.json
+          git add news.json
 
           if git diff --cached --quiet; then
 
-            echo "No changes detected in data/news.json."
+            echo "No changes detected in news.json."
 
           else
 
