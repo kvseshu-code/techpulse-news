@@ -441,8 +441,7 @@ def fetch_feed(source):
 
     response.raise_for_status()
 
-    parsed =
-        feedparser.parse(
+    parsed = feedparser.parse(
             response.content
         )
 
