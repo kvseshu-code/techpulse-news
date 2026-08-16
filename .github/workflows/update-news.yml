@@ -3,24 +3,31 @@ name: Update Technology & Gaming News
 on:
 
   schedule:
+
     - cron: "*/15 * * * *"
 
   workflow_dispatch:
 
   push:
+
     paths:
+
       - "scripts/fetch_news.py"
       - "requirements.txt"
       - ".github/workflows/update-news.yml"
 
+
 permissions:
+
   contents: write
+
 
 jobs:
 
   update-news:
 
     runs-on: ubuntu-latest
+
 
     steps:
 
@@ -29,7 +36,12 @@ jobs:
       # ============================================
 
       - name: Checkout repository
+
         uses: actions/checkout@v5
+
+        with:
+
+          fetch-depth: 0
 
 
       # ============================================
@@ -37,9 +49,13 @@ jobs:
       # ============================================
 
       - name: Setup Python
+
         uses: actions/setup-python@v6
+
         with:
+
           python-version: "3.12"
+
           cache: "pip"
 
 
@@ -48,8 +64,11 @@ jobs:
       # ============================================
 
       - name: Show Python version
+
         run: |
+
           python --version
+
           pip --version
 
 
@@ -58,17 +77,12 @@ jobs:
       # ============================================
 
       - name: Install dependencies
+
         run: |
 
           python -m pip install --upgrade pip
 
-          if [ -f requirements.txt ]; then
-            echo "Installing requirements.txt"
-            python -m pip install -r requirements.txt
-          else
-            echo "ERROR: requirements.txt not found."
-            exit 1
-          fi
+          python -m pip install -r requirements.txt
 
 
       # ============================================
@@ -76,6 +90,7 @@ jobs:
       # ============================================
 
       - name: Verify Python dependencies
+
         run: |
 
           python - <<'PY'
@@ -84,24 +99,39 @@ jobs:
           import requests
           import bs4
 
-          print("feedparser:", feedparser.__version__)
-          print("requests:", requests.__version__)
-          print("BeautifulSoup: OK")
+          print(
+              "feedparser:",
+              feedparser.__version__
+          )
+
+          print(
+              "requests:",
+              requests.__version__
+          )
+
+          print(
+              "BeautifulSoup: OK"
+          )
 
           PY
 
 
       # ============================================
-      # 6. CHECK FETCH SCRIPT
+      # 6. CHECK FETCHER
       # ============================================
 
-      - name: Check fetch_news.py
+      - name: Check fetch script
+
         run: |
 
           if [ ! -f scripts/fetch_news.py ]; then
+
             echo "ERROR: scripts/fetch_news.py not found."
+
             exit 1
+
           fi
+
 
           echo "fetch_news.py found."
 
@@ -113,9 +143,10 @@ jobs:
       # ============================================
 
       - name: Run news fetcher
+
         run: |
 
-          echo "Starting fetch_news.py..."
+          echo "Starting TechPulse news fetcher..."
 
           python -u scripts/fetch_news.py
 
@@ -125,6 +156,7 @@ jobs:
       # ============================================
 
       - name: Validate news.json
+
         run: |
 
           if [ ! -f news.json ]; then
@@ -135,59 +167,131 @@ jobs:
 
           fi
 
-          echo "news.json found."
 
           python - <<'PY'
 
           import json
 
-          file_path = "news.json"
+          from pathlib import Path
 
-          with open(
-              file_path,
+
+          file_path = Path("news.json")
+
+
+          with file_path.open(
               "r",
               encoding="utf-8"
-          ) as f:
+          ) as file:
 
-              data = json.load(f)
+              data = json.load(file)
 
-          print("JSON validation successful.")
+
+          if not isinstance(data, dict):
+
+              raise SystemExit(
+                  "news.json must contain a JSON object."
+              )
+
+
+          if data.get("success") is not True:
+
+              raise SystemExit(
+                  "news.json success flag is not true."
+              )
+
+
+          articles =
+              data.get(
+                  "articles",
+                  []
+              )
+
+
+          if not isinstance(
+              articles,
+              list
+          ):
+
+              raise SystemExit(
+                  "articles must be an array."
+              )
+
+
+          if len(articles) == 0:
+
+              raise SystemExit(
+                  "news.json contains zero articles."
+              )
+
+
+          required_fields = [
+
+              "id",
+              "title",
+              "description",
+              "url",
+              "category",
+              "mainCategory",
+              "source",
+              "published"
+
+          ]
+
+
+          for index, article in enumerate(
+              articles
+          ):
+
+              for field in required_fields:
+
+                  if field not in article:
+
+                      raise SystemExit(
+                          f"Article {index} "
+                          f"is missing: {field}"
+                      )
+
+
+          print(
+              "JSON validation successful."
+          )
+
 
           print(
               "Updated:",
               data.get("updatedAt")
           )
 
+
           print(
               "Total:",
               data.get("total")
           )
 
+
           print(
               "Articles:",
-              len(
-                  data.get(
-                      "articles",
-                      []
-                  )
-              )
+              len(articles)
           )
 
           PY
 
 
       # ============================================
-      # 9. SHOW NEWS FILE
+      # 9. SHOW NEWS STATUS
       # ============================================
 
-      - name: Show news.json status
+      - name: Show news status
+
         run: |
 
           echo "Git status:"
 
           git status --short
 
+
           echo ""
+
 
           echo "News file:"
 
@@ -195,17 +299,23 @@ jobs:
 
 
       # ============================================
-      # 10. COMMIT UPDATED NEWS
+      # 10. COMMIT NEWS
       # ============================================
 
       - name: Commit updated news
+
         run: |
 
-          git config user.name "TechPulse News Bot"
+          git config user.name \
+            "TechPulse News Bot"
 
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
 
           git add news.json
+
 
           if git diff --cached --quiet; then
 
