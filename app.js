@@ -1,1164 +1,813 @@
-/*
- * ============================================================
- * TECHPULSE
- * Frontend News Application
- *
- * GitHub Pages version
- *
- * Data source:
- *     news.json
- *
- * No Google Apps Script
- * No google.script.run
- * No traditional database
- * ============================================================
- */
+/* =========================================================
+   TECHPULSE NEWS ENGINE
+   GitHub JSON Frontend
+   ========================================================= */
 
-'use strict';
+const NEWS_JSON_URL =
+  "https://raw.githubusercontent.com/kvseshu-code/techpulse-news/main/news.json";
 
 
-/* ============================================================
-   CONFIGURATION
-   ============================================================ */
+const AUTO_REFRESH_INTERVAL =
+  5 * 60 * 1000; // 5 minutes
 
-const CONFIG = {
-
-    NEWS_FILE: './news.json',
-
-    // Check for a new news.json every 2 minutes.
-    REFRESH_INTERVAL: 2 * 60 * 1000,
-
-    // Cache-busting parameter.
-    CACHE_BUST: true
-
-};
-
-
-/* ============================================================
-   APPLICATION STATE
-   ============================================================ */
 
 let allArticles = [];
 
-let currentCategory = 'All';
+let currentCategory = "All";
 
 let lastUpdated = null;
 
-let refreshTimer = null;
 
-let isLoading = false;
-
-
-/* ============================================================
-   INITIALIZATION
-   ============================================================ */
+/* =========================================================
+   INITIAL LOAD
+   ========================================================= */
 
 document.addEventListener(
-    'DOMContentLoaded',
-    function () {
-
-        initializeApplication();
-
-    }
-);
-
-
-/* ============================================================
-   INITIALIZE APPLICATION
-   ============================================================ */
-
-function initializeApplication() {
+  "DOMContentLoaded",
+  function () {
 
     loadNews();
 
     startAutomaticRefresh();
 
-    setupVisibilityRefresh();
+  }
+);
 
-}
 
-
-/* ============================================================
-   LOAD NEWS
-   ============================================================ */
+/* =========================================================
+   LOAD NEWS FROM GITHUB
+   ========================================================= */
 
 async function loadNews() {
 
-    if (isLoading) {
+  setStatus(
+    "Fetching latest news..."
+  );
 
-        return;
+
+  try {
+
+    /*
+     * Cache-busting parameter.
+     *
+     * This prevents the browser from
+     * showing an older cached JSON file.
+     */
+
+    const url =
+      NEWS_JSON_URL +
+      "?t=" +
+      Date.now();
+
+
+    const response =
+      await fetch(
+        url,
+        {
+          cache: "no-store"
+        }
+      );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "HTTP " +
+        response.status
+      );
 
     }
 
 
-    isLoading = true;
+    const data =
+      await response.json();
+
+
+    if (
+      !data ||
+      !Array.isArray(
+        data.articles
+      )
+    ) {
+
+      throw new Error(
+        "Invalid news.json format"
+      );
+
+    }
+
+
+    allArticles =
+      data.articles;
+
+
+    lastUpdated =
+      data.updatedAt ||
+      null;
+
+
+    /*
+     * Sort newest first.
+     */
+
+    allArticles.sort(
+      function (a, b) {
+
+        return (
+          new Date(
+            b.published
+          ).getTime()
+          -
+          new Date(
+            a.published
+          ).getTime()
+        );
+
+      }
+    );
 
 
     setStatus(
-        'Checking for the latest news...',
-        false
+      "News updated " +
+      formatRelativeTime(
+        lastUpdated
+      )
     );
-
-
-    try {
-
-        const newsUrl =
-            buildNewsUrl();
-
-
-        const response =
-            await fetch(
-                newsUrl,
-                {
-                    method: 'GET',
-
-                    cache: 'no-store',
-
-                    headers: {
-                        'Cache-Control':
-                            'no-cache'
-                    }
-                }
-            );
-
-
-        if (!response.ok) {
-
-            throw new Error(
-                'News file returned HTTP ' +
-                response.status
-            );
-
-        }
-
-
-        const data =
-            await response.json();
-
-
-        validateNewsResponse(
-            data
-        );
-
-
-        allArticles =
-            Array.isArray(
-                data.articles
-            )
-                ? data.articles
-                : [];
-
-
-        lastUpdated =
-            data.updatedAt ||
-            null;
-
-
-        sortArticles();
-
-
-        applyFilters();
-
-
-        updateStatus(
-            data
-        );
-
-
-    } catch (error) {
-
-        console.error(
-            'News loading error:',
-            error
-        );
-
-
-        showError(
-            error.message ||
-            'Unable to load the latest news.'
-        );
-
-    } finally {
-
-        isLoading = false;
-
-    }
-
-}
-
-
-/* ============================================================
-   BUILD NEWS URL
-   ============================================================ */
-
-function buildNewsUrl() {
-
-    let url =
-        CONFIG.NEWS_FILE;
-
-
-    if (
-        CONFIG.CACHE_BUST
-    ) {
-
-        const separator =
-            url.indexOf('?') === -1
-                ? '?'
-                : '&';
-
-
-        url +=
-            separator +
-            '_=' +
-            Date.now();
-
-    }
-
-
-    return url;
-
-}
-
-
-/* ============================================================
-   VALIDATE RESPONSE
-   ============================================================ */
-
-function validateNewsResponse(
-    data
-) {
-
-    if (
-        !data ||
-        typeof data !== 'object'
-    ) {
-
-        throw new Error(
-            'Invalid news data.'
-        );
-
-    }
-
-
-    if (
-        data.success === false
-    ) {
-
-        throw new Error(
-            data.error ||
-            'News engine returned an error.'
-        );
-
-    }
-
-
-    if (
-        !Array.isArray(
-            data.articles
-        )
-    ) {
-
-        throw new Error(
-            'No article list found.'
-        );
-
-    }
-
-}
-
-
-/* ============================================================
-   SORT ARTICLES
-   ============================================================ */
-
-function sortArticles() {
-
-    allArticles.sort(
-        function (
-            first,
-            second
-        ) {
-
-            const firstTime =
-                new Date(
-                    first.published ||
-                    0
-                ).getTime();
-
-
-            const secondTime =
-                new Date(
-                    second.published ||
-                    0
-                ).getTime();
-
-
-            return (
-                secondTime -
-                firstTime
-            );
-
-        }
-    );
-
-}
-
-
-/* ============================================================
-   AUTOMATIC REFRESH
-   ============================================================ */
-
-function startAutomaticRefresh() {
-
-    if (
-        refreshTimer
-    ) {
-
-        clearInterval(
-            refreshTimer
-        );
-
-    }
-
-
-    refreshTimer =
-        setInterval(
-            function () {
-
-                loadNews();
-
-            },
-            CONFIG.REFRESH_INTERVAL
-        );
-
-}
-
-
-/* ============================================================
-   REFRESH WHEN USER RETURNS
-   ============================================================ */
-
-function setupVisibilityRefresh() {
-
-    document.addEventListener(
-        'visibilitychange',
-        function () {
-
-            if (
-                document.visibilityState ===
-                'visible'
-            ) {
-
-                loadNews();
-
-            }
-
-        }
-    );
-
-}
-
-
-/* ============================================================
-   MANUAL REFRESH
-   ============================================================ */
-
-function manualRefresh() {
-
-    const button =
-        document.querySelector(
-            '.refresh'
-        );
-
-
-    if (button) {
-
-        button.disabled =
-            true;
-
-        button.textContent =
-            'Refreshing...';
-
-    }
-
-
-    loadNews()
-        .finally(
-            function () {
-
-                if (button) {
-
-                    button.disabled =
-                        false;
-
-                    button.textContent =
-                        '↻ Refresh';
-
-                }
-
-            }
-        );
-
-}
-
-
-/* ============================================================
-   CATEGORY
-   ============================================================ */
-
-function setCategory(
-    category,
-    button
-) {
-
-    currentCategory =
-        category;
-
-
-    document
-        .querySelectorAll(
-            'nav button'
-        )
-        .forEach(
-            function (btn) {
-
-                btn.classList.remove(
-                    'active'
-                );
-
-            }
-        );
-
-
-    if (button) {
-
-        button.classList.add(
-            'active'
-        );
-
-    }
 
 
     applyFilters();
 
+
+  } catch (error) {
+
+    console.error(
+      "News loading error:",
+      error
+    );
+
+
+    setStatus(
+      "Unable to load latest news"
+    );
+
+
+    showError(
+      error.message ||
+      "Unable to load news."
+    );
+
+  }
+
 }
 
 
-/* ============================================================
-   FILTER ARTICLES
-   ============================================================ */
+/* =========================================================
+   AUTOMATIC REFRESH
+   ========================================================= */
+
+function startAutomaticRefresh() {
+
+  setInterval(
+    function () {
+
+      loadNews();
+
+    },
+    AUTO_REFRESH_INTERVAL
+  );
+
+}
+
+
+/* =========================================================
+   MANUAL REFRESH
+   ========================================================= */
+
+function manualRefresh() {
+
+  const button =
+    document.querySelector(
+      ".refresh"
+    );
+
+
+  if (button) {
+
+    button.disabled =
+      true;
+
+    button.textContent =
+      "Refreshing...";
+
+  }
+
+
+  loadNews()
+    .finally(
+      function () {
+
+        setTimeout(
+          function () {
+
+            if (button) {
+
+              button.disabled =
+                false;
+
+              button.textContent =
+                "↻ Refresh";
+
+            }
+
+          },
+          500
+        );
+
+      }
+    );
+
+}
+
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+function setCategory(
+  category,
+  button
+) {
+
+  currentCategory =
+    category;
+
+
+  document
+    .querySelectorAll(
+      "nav button"
+    )
+    .forEach(
+      function (btn) {
+
+        btn.classList.remove(
+          "active"
+        );
+
+      }
+    );
+
+
+  if (button) {
+
+    button.classList.add(
+      "active"
+    );
+
+  }
+
+
+  applyFilters();
+
+}
+
+
+/* =========================================================
+   SEARCH + CATEGORY FILTER
+   ========================================================= */
 
 function applyFilters() {
 
-    const searchElement =
-        document.getElementById(
-            'search'
-        );
-
-
-    const search =
-        searchElement
-            ? searchElement.value
-                .toLowerCase()
-                .trim()
-            : '';
-
-
-    const filtered =
-        allArticles.filter(
-            function (article) {
-
-                const articleCategory =
-                    article.category ||
-                    article.mainCategory ||
-                    'Technology';
-
-
-                const categoryMatch =
-                    currentCategory ===
-                    'All' ||
-                    articleCategory ===
-                    currentCategory ||
-                    article.mainCategory ===
-                    currentCategory;
-
-
-                const searchableText =
-                    (
-                        (article.title ||
-                            '') +
-                        ' ' +
-                        (article.description ||
-                            '') +
-                        ' ' +
-                        (article.source ||
-                            '') +
-                        ' ' +
-                        (article.category ||
-                            '')
-                    )
-                    .toLowerCase();
-
-
-                const searchMatch =
-                    !search ||
-                    searchableText.includes(
-                        search
-                    );
-
-
-                return (
-                    categoryMatch &&
-                    searchMatch
-                );
-
-            }
-        );
-
-
-    renderNews(
-        filtered
+  const searchElement =
+    document.getElementById(
+      "search"
     );
+
+
+  const search =
+    searchElement
+      ? searchElement.value
+          .toLowerCase()
+          .trim()
+      : "";
+
+
+  const filtered =
+    allArticles.filter(
+      function (article) {
+
+        const categoryMatch =
+          currentCategory === "All" ||
+          article.mainCategory ===
+            currentCategory ||
+          article.category ===
+            currentCategory;
+
+
+        const searchableText =
+          (
+            (article.title || "") +
+            " " +
+            (article.description || "") +
+            " " +
+            (article.source || "") +
+            " " +
+            (article.category || "")
+          )
+          .toLowerCase();
+
+
+        const searchMatch =
+          !search ||
+          searchableText.includes(
+            search
+          );
+
+
+        return (
+          categoryMatch &&
+          searchMatch
+        );
+
+      }
+    );
+
+
+  renderNews(
+    filtered
+  );
 
 }
 
 
-/* ============================================================
+/* =========================================================
    RENDER NEWS
-   ============================================================ */
+   ========================================================= */
 
 function renderNews(
-    articles
+  articles
 ) {
 
-    const container =
-        document.getElementById(
-            'newsContainer'
-        );
-
-
-    if (!container) {
-
-        return;
-
-    }
-
-
-    updateArticleCount(
-        articles.length
+  const container =
+    document.getElementById(
+      "newsContainer"
     );
 
 
-    if (
-        !articles.length
-    ) {
-
-        container.innerHTML = `
-
-            <div class="message">
-
-                <h3>
-                    No news found
-                </h3>
-
-                <p>
-                    Try another category or search term.
-                </p>
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-
-    container.innerHTML = `
-
-        <div class="news-grid">
-
-            ${articles
-                .map(
-                    createArticleCard
-                )
-                .join('')}
-
-        </div>
-
-    `;
-
-}
-
-
-/* ============================================================
-   CREATE ARTICLE CARD
-   ============================================================ */
-
-function createArticleCard(
-    article
-) {
-
-    const category =
-        article.category ||
-        article.mainCategory ||
-        'Technology';
-
-
-    const image =
-        article.image ||
-        '';
-
-
-    const title =
-        article.title ||
-        'Untitled article';
-
-
-    const description =
-        article.description ||
-        'Read the latest story.';
-
-
-    const source =
-        article.source ||
-        'News Source';
-
-
-    const url =
-        article.url ||
-        '#';
-
-
-    const published =
-        article.published ||
-        '';
-
-
-    const icon =
-        category === 'Gaming'
-            ? '🎮'
-            : '⚡';
-
-
-    let imageHtml = '';
-
-
-    if (image) {
-
-        imageHtml = `
-
-            <img
-                class="article-image"
-                src="${escapeHtml(image)}"
-                alt=""
-                loading="lazy"
-                referrerpolicy="no-referrer"
-                onerror="handleImageError(this)"
-            >
-
-            <div
-                class="image-placeholder"
-                style="display:none;"
-            >
-                ${icon}
-            </div>
-
-        `;
-
-    } else {
-
-        imageHtml = `
-
-            <div class="image-placeholder">
-
-                ${icon}
-
-            </div>
-
-        `;
-
-    }
-
-
-    return `
-
-        <article
-            class="article"
-            data-id="${escapeHtml(
-                article.id || ''
-            )}"
-        >
-
-            ${imageHtml}
-
-
-            <div class="article-content">
-
-                <div class="category">
-
-                    ${escapeHtml(
-                        category
-                    )}
-
-                </div>
-
-
-                <h2 class="article-title">
-
-                    <a
-                        href="${escapeHtml(url)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-
-                        ${escapeHtml(title)}
-
-                    </a>
-
-                </h2>
-
-
-                <p class="description">
-
-                    ${escapeHtml(
-                        description
-                    )}
-
-                </p>
-
-
-                <div class="article-footer">
-
-                    <span class="source">
-
-                        ${escapeHtml(source)}
-
-                    </span>
-
-
-                    <span class="date">
-
-                        ${formatDate(
-                            published
-                        )}
-
-                    </span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    `;
-
-}
-
-
-/* ============================================================
-   IMAGE ERROR
-   ============================================================ */
-
-function handleImageError(
-    image
-) {
-
-    if (!image) {
-
-        return;
-
-    }
-
-
-    image.style.display =
-        'none';
-
-
-    const placeholder =
-        image.nextElementSibling;
-
-
-    if (
-        placeholder
-    ) {
-
-        placeholder.style.display =
-            'flex';
-
-    }
-
-}
-
-
-/* ============================================================
-   STATUS
-   ============================================================ */
-
-function updateStatus(
-    data
-) {
-
-    const updated =
-        data.updatedAt ||
-        lastUpdated;
-
-
-    const articleTotal =
-        Array.isArray(
-            data.articles
-        )
-            ? data.articles.length
-            : 0;
-
-
-    const statusText =
-        document.getElementById(
-            'statusText'
-        );
-
-
-    if (
-        statusText
-    ) {
-
-        statusText.textContent =
-            'News updated ' +
-            formatRelativeTime(
-                updated
-            );
-
-    }
-
-
-    updateArticleCount(
-        articleTotal
-    );
-
-}
-
-
-/* ============================================================
-   STATUS MESSAGE
-   ============================================================ */
-
-function setStatus(
-    message,
-    error
-) {
-
-    const statusText =
-        document.getElementById(
-            'statusText'
-        );
-
-
-    if (
-        statusText
-    ) {
-
-        statusText.textContent =
-            message;
-
-    }
-
-
-    const dot =
-        document.querySelector(
-            '.status-dot'
-        );
-
-
-    if (
-        dot
-    ) {
-
-        dot.style.background =
-            error
-                ? '#ef4444'
-                : '#22c55e';
-
-    }
-
-}
-
-
-/* ============================================================
-   ARTICLE COUNT
-   ============================================================ */
-
-function updateArticleCount(
-    count
-) {
-
-    const element =
-        document.getElementById(
-            'articleCount'
-        );
-
-
-    if (!element) {
-
-        return;
-
-    }
-
-
-    element.textContent =
-        count +
-        (
-            count === 1
-                ? ' article'
-                : ' articles'
-        );
-
-}
-
-
-/* ============================================================
-   ERROR
-   ============================================================ */
-
-function showError(
-    message
-) {
-
-    setStatus(
-        'Unable to update news',
-        true
+  const count =
+    document.getElementById(
+      "articleCount"
     );
 
 
-    const container =
-        document.getElementById(
-            'newsContainer'
-        );
+  if (count) {
+
+    count.textContent =
+      articles.length +
+      (
+        articles.length === 1
+          ? " article"
+          : " articles"
+      );
+
+  }
 
 
-    if (!container) {
+  if (!articles.length) {
 
-        return;
+    if (container) {
 
-    }
-
-
-    // Do not destroy existing news if
-    // a background refresh fails.
-
-    if (
-        allArticles.length > 0
-    ) {
-
-        return;
-
-    }
-
-
-    container.innerHTML = `
+      container.innerHTML = `
 
         <div class="message">
 
-            <h3>
-                Unable to load news
-            </h3>
+          <h3>
+            No news found
+          </h3>
 
-            <p>
-                ${escapeHtml(
-                    message
-                )}
-            </p>
-
-            <br>
-
-            <button
-                class="refresh"
-                onclick="manualRefresh()"
-            >
-                Try Again
-            </button>
+          <p>
+            Try another category or search term.
+          </p>
 
         </div>
 
+      `;
+
+    }
+
+    return;
+
+  }
+
+
+  if (container) {
+
+    container.innerHTML = `
+
+      <div class="news-grid">
+
+        ${articles
+          .map(
+            createArticleCard
+          )
+          .join("")}
+
+      </div>
+
     `;
 
+  }
+
 }
 
 
-/* ============================================================
+/* =========================================================
+   CREATE ARTICLE CARD
+   ========================================================= */
+
+function createArticleCard(
+  article
+) {
+
+  const category =
+    article.category ||
+    article.mainCategory ||
+    "Technology";
+
+
+  const icon =
+    category
+      .toLowerCase()
+      .includes("gaming")
+      ? "🎮"
+      : "⚡";
+
+
+  let imageHTML;
+
+
+  if (article.image) {
+
+    imageHTML = `
+
+      <img
+        class="article-image"
+        src="${escapeHtml(article.image)}"
+        alt=""
+        loading="lazy"
+        onerror="
+          this.style.display='none';
+          this.nextElementSibling.style.display='flex';
+        "
+      >
+
+      <div
+        class="image-placeholder"
+        style="display:none;"
+      >
+        ${icon}
+      </div>
+
+    `;
+
+  } else {
+
+    imageHTML = `
+
+      <div class="image-placeholder">
+        ${icon}
+      </div>
+
+    `;
+
+  }
+
+
+  return `
+
+    <article class="article">
+
+      ${imageHTML}
+
+      <div class="article-content">
+
+        <div class="category">
+
+          ${escapeHtml(category)}
+
+        </div>
+
+
+        <h2 class="article-title">
+
+          <a
+            href="${escapeHtml(article.url || "#")}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            ${escapeHtml(
+              article.title ||
+              "Untitled news"
+            )}
+
+          </a>
+
+        </h2>
+
+
+        <p class="description">
+
+          ${escapeHtml(
+            article.description ||
+            "Read the latest technology and gaming news."
+          )}
+
+        </p>
+
+
+        <div class="article-footer">
+
+          <span class="source">
+
+            ${escapeHtml(
+              article.source ||
+              "TechPulse"
+            )}
+
+          </span>
+
+
+          <span class="date">
+
+            ${formatDate(
+              article.published
+            )}
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  `;
+
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+function setStatus(
+  message
+) {
+
+  const status =
+    document.getElementById(
+      "statusText"
+    );
+
+
+  if (status) {
+
+    status.textContent =
+      message;
+
+  }
+
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+function showError(
+  message
+) {
+
+  const container =
+    document.getElementById(
+      "newsContainer"
+    );
+
+
+  if (!container) {
+
+    return;
+
+  }
+
+
+  container.innerHTML = `
+
+    <div class="message">
+
+      <h3>
+        Unable to load news
+      </h3>
+
+      <p>
+        ${escapeHtml(
+          message
+        )}
+      </p>
+
+      <br>
+
+      <button
+        class="refresh"
+        onclick="manualRefresh()"
+      >
+        Try Again
+      </button>
+
+    </div>
+
+  `;
+
+}
+
+
+/* =========================================================
    DATE FORMAT
-   ============================================================ */
+   ========================================================= */
 
 function formatDate(
-    value
+  value
 ) {
 
-    const date =
-        new Date(value);
+  if (!value) {
+
+    return "";
+
+  }
 
 
-    if (
-        isNaN(
-            date.getTime()
-        )
-    ) {
+  const date =
+    new Date(value);
 
-        return '';
 
+  if (
+    isNaN(
+      date.getTime()
+    )
+  ) {
+
+    return "";
+
+  }
+
+
+  return date.toLocaleString(
+    undefined,
+    {
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit"
     }
-
-
-    return date.toLocaleString(
-        undefined,
-        {
-            month: 'short',
-            day: 'numeric',
-            hour: 'numeric',
-            minute: '2-digit'
-        }
-    );
+  );
 
 }
 
 
-/* ============================================================
-   RELATIVE / UPDATED TIME
-   ============================================================ */
+/* =========================================================
+   RELATIVE / UPDATE TIME
+   ========================================================= */
 
 function formatRelativeTime(
-    value
+  value
 ) {
 
-    if (!value) {
+  if (!value) {
 
-        return 'recently';
+    return "recently";
 
-    }
-
-
-    const date =
-        new Date(value);
+  }
 
 
-    if (
-        isNaN(
-            date.getTime()
-        )
-    ) {
-
-        return 'recently';
-
-    }
+  const date =
+    new Date(value);
 
 
-    const now =
-        Date.now();
+  if (
+    isNaN(
+      date.getTime()
+    )
+  ) {
+
+    return "recently";
+
+  }
 
 
-    const difference =
-        Math.max(
-            0,
-            now -
-            date.getTime()
-        );
+  const diff =
+    Date.now() -
+    date.getTime();
 
+
+  if (diff < 60000) {
+
+    return "just now";
+
+  }
+
+
+  if (
+    diff <
+    60 * 60000
+  ) {
 
     const minutes =
-        Math.floor(
-            difference /
-            60000
-        );
+      Math.floor(
+        diff /
+        60000
+      );
+
+    return (
+      minutes +
+      (
+        minutes === 1
+          ? " minute ago"
+          : " minutes ago"
+      )
+    );
+
+  }
 
 
-    if (
-        minutes < 1
-    ) {
-
-        return 'just now';
-
-    }
-
-
-    if (
-        minutes < 60
-    ) {
-
-        return (
-            minutes +
-            (
-                minutes === 1
-                    ? ' minute ago'
-                    : ' minutes ago'
-            )
-        );
-
-    }
-
+  if (
+    diff <
+    24 * 60 * 60000
+  ) {
 
     const hours =
-        Math.floor(
-            minutes / 60
-        );
+      Math.floor(
+        diff /
+        (
+          60 *
+          60000
+        )
+      );
 
-
-    if (
-        hours < 24
-    ) {
-
-        return (
-            hours +
-            (
-                hours === 1
-                    ? ' hour ago'
-                    : ' hours ago'
-            )
-        );
-
-    }
-
-
-    return date.toLocaleString(
-        undefined,
-        {
-            month: 'short',
-            day: 'numeric',
-            hour: 'numeric',
-            minute: '2-digit'
-        }
+    return (
+      hours +
+      (
+        hours === 1
+          ? " hour ago"
+          : " hours ago"
+      )
     );
+
+  }
+
+
+  return date.toLocaleString(
+    undefined,
+    {
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit"
+    }
+  );
 
 }
 
 
-/* ============================================================
+/* =========================================================
    ESCAPE HTML
-   ============================================================ */
+   ========================================================= */
 
 function escapeHtml(
-    value
+  value
 ) {
 
-    return String(
-        value || ''
+  return String(
+    value || ""
+  )
+    .replace(
+      /&/g,
+      "&amp;"
     )
     .replace(
-        /&/g,
-        '&amp;'
+      /</g,
+      "&lt;"
     )
     .replace(
-        /</g,
-        '&lt;'
+      />/g,
+      "&gt;"
     )
     .replace(
-        />/g,
-        '&gt;'
+      /"/g,
+      "&quot;"
     )
     .replace(
-        /"/g,
-        '&quot;'
-    )
-    .replace(
-        /'/g,
-        '&#039;'
+      /'/g,
+      "&#039;"
     );
 
 }
