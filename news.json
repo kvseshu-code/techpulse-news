@@ -1,9 +1,22 @@
 {
   "success": true,
-  "updatedAt": "2026-08-16T21:57:23.795185+00:00",
-  "serverTime": "2026-08-16T21:57:23.795185+00:00",
+  "updatedAt": "2026-08-16T21:58:00.444457+00:00",
+  "serverTime": "2026-08-16T21:58:00.444457+00:00",
   "total": 120,
   "articles": [
+    {
+      "id": "news_968e2ab8400f33b5",
+      "title": "OpenAI reportedly disbanded its preparedness team",
+      "description": "According to the Financial Times, OpenAI disbanded its preparedness team at the end of last month. The job of the preparedness team was to assess if models posed serious risks and develop ways to mitigate those risks. (You know, like the...",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+      "image": "",
+      "source": "The Verge",
+      "sourceWebsite": "https://www.theverge.com/",
+      "mainCategory": "Technology",
+      "category": "Emerging Technology",
+      "published": "2026-08-16T21:32:56+00:00",
+      "publishedTimestamp": 1786915976000
+    },
     {
       "id": "news_79f0514ed68601ec",
       "title": "Turn on these settings to protect your Android phone from theft",
@@ -42,6 +55,19 @@
       "category": "Emerging Technology",
       "published": "2026-08-16T20:32:01+00:00",
       "publishedTimestamp": 1786912321000
+    },
+    {
+      "id": "news_5d31335a9d5e4a4f",
+      "title": "Open Mike Eagle and Kenny Segal crafted a hip hop breakup masterpiece",
+      "description": "\"Breakups are… tough.\" It's the opening lines of an interlude towards the end of DOOMED! Called \"It Happens in Every Universe.\" It's also basically the thesis of the entire record. It's no grand revelation, but it's a well-trodden subject...",
+      "url": "https://www.theverge.com/entertainment/980799/open-mike-eagle-and-kenny-segal-doomed-review",
+      "image": "",
+      "source": "The Verge",
+      "sourceWebsite": "https://www.theverge.com/",
+      "mainCategory": "Technology",
+      "category": "Emerging Technology",
+      "published": "2026-08-16T20:31:37+00:00",
+      "publishedTimestamp": 1786912297000
     },
     {
       "id": "news_2e5f2edc50be63be",
@@ -1535,32 +1561,6 @@
       "sourceWebsite": "https://www.theverge.com/",
       "mainCategory": "Technology",
       "category": "Emerging Technology",
-      "published": "2026-08-15T15:00:00+00:00",
-      "publishedTimestamp": 1786806000000
-    },
-    {
-      "id": "news_13a577cb68114b0e",
-      "title": "RPG companions need to be hateable, otherwise nobody's going to love them",
-      "description": "You're in this together.",
-      "url": "https://www.pcgamer.com/games/rpg/rpg-companions-need-to-be-hateable-otherwise-nobodys-going-to-love-them/",
-      "image": "https://cdn.mos.cms.futurecdn.net/dFPBrCWhohBSdguUW7hAi9-1280-80.png",
-      "source": "PC Gamer",
-      "sourceWebsite": "https://www.pcgamer.com/",
-      "mainCategory": "Gaming",
-      "category": "Gaming Updates",
-      "published": "2026-08-15T15:00:00+00:00",
-      "publishedTimestamp": 1786806000000
-    },
-    {
-      "id": "news_b0bada9f1901d792",
-      "title": "Lanterns creators say the show \"transcends\" fan service and is about \"bringing out the visions\" of Green Lantern comic book writers",
-      "description": "Damon Lindelof and Tom King talk bringing Hal and John's comic book origins to the forefront",
-      "url": "https://www.gamesradar.com/entertainment/dc-tv-shows/lanterns-creators-say-the-show-transcends-fan-service-and-is-about-bringing-out-the-visions-of-green-lantern-comic-book-writers/",
-      "image": "https://cdn.mos.cms.futurecdn.net/pRReyhSfiTx2QaWRyV7hDN-1280-80.jpg",
-      "source": "GamesRadar+",
-      "sourceWebsite": "https://www.gamesradar.com/",
-      "mainCategory": "Gaming",
-      "category": "Gaming Updates",
       "published": "2026-08-15T15:00:00+00:00",
       "publishedTimestamp": 1786806000000
     }
