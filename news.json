@@ -1,120 +1,274 @@
 {
   "success": true,
-  "updatedAt": "2026-08-16T23:35:17.715125Z",
-  "total": 150,
+  "updatedAt": "2026-08-16T23:36:23.930220+00:00",
+  "total": 180,
   "articles": [
     {
-      "id": "techpulse-fcc82832268015bfdbe4",
+      "id": "techpulse-7680f4863cdd5c2b74d4",
       "title": "The US Army is opening up its training centers for private firms to test out new drones",
       "description": "The US Army is opening military ranges to private drone companies, allowing them to test systems under realistic battlefield conditions.",
       "url": "https://www.techradar.com/pro/the-us-army-is-opening-up-its-training-centers-for-private-firms-to-test-out-new-drones",
       "image": "https://cdn.mos.cms.futurecdn.net/quHoj4Fv2LWEqUpfwxRZik-1280-80.png",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T23:25:00Z"
+      "published": "2026-08-16T23:25:00+00:00"
     },
     {
-      "id": "techpulse-5050b573d9b80932c8bf",
+      "id": "techpulse-f511481ee76b5e5ee1ef",
+      "title": "Building AI Prompt Lab with Java 21, Spring Boot and React 19",
+      "description": "AI Prompt Lab is a full-stack application I built around a simple idea: managing reusable AI prompts should feel like working with any other structured application asset, rather than keeping them scattered across notes, text files or chat histories. The project combines Java 21, Spring Boot, React 19, TypeScript...",
+      "url": "https://dev.to/certosinolab/building-ai-prompt-lab-with-java-21-spring-boot-and-react-19-46p8",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:20:00+00:00"
+    },
+    {
+      "id": "techpulse-31a34911f7890b2684e8",
+      "title": "AI Can Find the Failure. Who Decides What the Fix Should Be?",
+      "description": "AI is changing accessibility remediation fast. It can find common WCAG failures, explain them, and increasingly write the fix. That's real, and it's useful. But finding a failure is not the same as deciding what the fix should be. The gap is easy to miss because it doesn't always produce an obviously wrong answer...",
+      "url": "https://dev.to/praiztech/ai-can-find-the-failure-who-decides-what-the-fix-should-be-18o5",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:14:58+00:00"
+    },
+    {
+      "id": "techpulse-fe73979ab4c07d5981ce",
+      "title": "Linux 7.2 brings cache-aware scheduling, faster ext4 and Btrfs",
+      "description": "Linux kernel 7.2 has been released, adding cache-aware scheduling, ext4 filesystem performance boosts and a slew of new and improved hardware drivers for laptops and peripherals. A merge widow record was also set during the 9-week development cycle, with more than 2,100 individual contributors involved. AI, obviously...",
+      "url": "https://www.omgubuntu.co.uk/2026/08/linux-7-2-cache-aware-scheduling-ext4-btrfs",
+      "image": "https://i0.wp.com/www.omgubuntu.co.uk/wp-content/uploads/2026/08/linux-kernel-7-2-tux.webp?resize=406%2C232&amp;ssl=1",
+      "category": "Linux & Open Source",
+      "mainCategory": "Technology",
+      "source": "OMG! Ubuntu",
+      "published": "2026-08-16T23:04:44+00:00"
+    },
+    {
+      "id": "techpulse-cbb58edcf954c79fcdd9",
+      "title": "How VIDRAFT Hit 510.58 TPS on Gemma-4: A Deep Dive into \"The First Gemma Challenge\" Win",
+      "description": "How VIDRAFT Hit 510.58 TPS on Gemma-4: A Deep Dive into \"The First Gemma Challenge\" Win TL;DR: VIDRAFT topped \"The First Gemma Challenge\" leaderboard with a verified 510.58 tokens-per-second (TPS) score on google/gemma-4-E4B-it using a single NVIDIA A10G GPU — while a rival submission posted a faster raw number but...",
+      "url": "https://dev.to/ai_openfree_b23025ef075cf/how-vidraft-hit-51058-tps-on-gemma-4-a-deep-dive-into-the-first-gemma-challenge-win-15j6",
+      "image": "",
+      "category": "Hardware & Devices",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:01:27+00:00"
+    },
+    {
+      "id": "techpulse-03cf4d3fe8e6296acee1",
+      "title": "I built a content recommender as a graph, and it found similarities I wasn't looking for",
+      "description": "Most beginner recommendation projects are a dictionary lookup. You type \"comedy\", it returns the comedy list. That works, and it is also the reason those projects are forgettable: a dictionary can tell you what is similar, but it can never tell you what is interestingly different . I wanted the second thing. So I...",
+      "url": "https://dev.to/mbadr3227sys/i-built-a-content-recommender-as-a-graph-and-it-found-similarities-i-wasnt-looking-for-3kj7",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:01:05+00:00"
+    },
+    {
+      "id": "techpulse-cce5c8b362e130aa8439",
       "title": "After 10 Years, Tom Cruise's Forgotten 118-Minute Mystery-Thriller Is Back on Free Streaming",
       "description": "Prime Video's Reacher owes everything to this underrated Tom Cruise thriller",
       "url": "https://www.polygon.com/tubi-movies-august-2026-jack-reacher/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/mcdjare_ec021.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T23:00:12Z"
+      "published": "2026-08-16T23:00:12+00:00"
     },
     {
-      "id": "techpulse-ffa22b812bc6d4450cec",
+      "id": "techpulse-a39db70838c3f8a52b4e",
+      "title": "Shipping Assumptions: A Reliability Stack for AI-Generated Code",
+      "description": "The code looked good. It linted cleanly. The shallow tests passed. Everyone felt— vibed —that we had built the right thing. Then the edge case appeared in production. The developer treated it as normal operating procedure: bugs happen, tickets arrive, patches ship. QA was asked why they had not caught it. But QA never...",
+      "url": "https://dev.to/copyleftdev/shipping-assumptions-a-reliability-stack-for-ai-generated-code-3p9f",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:56:25+00:00"
+    },
+    {
+      "id": "techpulse-7f4669b61238935251b3",
+      "title": "Designing an Honest “Unlimited” Generative AI Product: Credits, Queues, and Fair Use",
+      "description": "Disclosure: I am building Donatello.studio . This article describes the product and systems principles behind our access model; it is not an independent review. Generative AI products have an uncomfortable cost structure. A text request may be inexpensive, while a long video or a complete song can consume orders of...",
+      "url": "https://dev.to/abrahamaragon91/designing-an-honest-unlimited-generative-ai-product-credits-queues-and-fair-use-15li",
+      "image": "",
+      "category": "Artificial Intelligence",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:50:54+00:00"
+    },
+    {
+      "id": "techpulse-32a5cb39d854881a27f3",
       "title": "Russian body, Desi brain: How India is turning the Su-30MKI into a lethal stealth hunter",
       "description": "India is developing the Virupaksha radar for its Su-30MKI fleet, potentially giving the Russian-designed fighter much stronger long-range detection capabilities.",
       "url": "https://www.techradar.com/pro/russian-body-desi-brain-how-india-is-turning-the-su-30mki-into-a-lethal-stealth-hunter",
       "image": "https://cdn.mos.cms.futurecdn.net/xzwgQSCgXYYNgXDYHy2uUR-1280-80.png",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T22:50:00Z"
+      "published": "2026-08-16T22:50:00+00:00"
     },
     {
-      "id": "techpulse-ea08ba781be28a330b01",
+      "id": "techpulse-b3317c2c45c0cbc26549",
+      "title": "Why I'm Building an Engineering Publishing Platform",
+      "description": "Over the past several months, I've made a commitment to write more. Not because I want to become a content creator, but because I've come to appreciate how much engineering knowledge quietly disappears every day. Architecture discussions end when the meeting is over. Production incidents become stories that fade with...",
+      "url": "https://dev.to/mgmaster24/why-im-building-an-engineering-publishing-platform-2mj3",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:45:49+00:00"
+    },
+    {
+      "id": "techpulse-6d0136658e9ce488478a",
       "title": "US Air Force wants AI help to keep its Minuteman III nukes ticking until they're 66, or maybe 80",
       "description": "The US Air Force wants AI to unify Minuteman III data as Sentinel delays could extend missile service toward 80 years.",
       "url": "https://www.techradar.com/pro/us-air-force-wants-ai-help-to-keep-its-minuteman-iii-nukes-ticking-until-theyre-66-or-maybe-80",
       "image": "https://cdn.mos.cms.futurecdn.net/fcEzXYk9yUxzJETRVZkXmR-1280-80.jpg",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T22:40:00Z"
+      "published": "2026-08-16T22:40:00+00:00"
     },
     {
-      "id": "techpulse-8bb0368bd862665c7839",
+      "id": "techpulse-d49fecab7a32eeb7e278",
+      "title": "Unhandled Events, Not Broken States, Are What Kill Your State Machine",
+      "description": "You probably test a state machine by walking the paths you believe are legal: an order moves from pending to paid, then to shipped, and finally to delivered. That test passes and tells you very little, because the failures that actually freeze a service tend to come from the cells you never filled in. A missing...",
+      "url": "https://dev.to/codepy_1473/unhandled-events-not-broken-states-are-what-kill-your-state-machine-4dl6",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:39:50+00:00"
+    },
+    {
+      "id": "techpulse-034f7c9fde8faefc290c",
+      "title": "You can't trust assembly an AI wrote. Here's the 3-command gate.",
+      "description": "✨ Disclosure: this tutorial was drafted with AI assistance. Every technical claim is verified and source-traced in the linked repository. AI assistants are confident about assembly — and wrong in specific, repeatable ways. They invent mnemonics that do not exist, flip AT&T/Intel operand order, silently drop...",
+      "url": "https://dev.to/trothbyte/you-cant-trust-assembly-an-ai-wrote-heres-the-3-command-gate-4ige",
+      "image": "",
+      "category": "Artificial Intelligence",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:29:09+00:00"
+    },
+    {
+      "id": "techpulse-c8bd92865ce95d26e3b8",
+      "title": "Anthropic confirms Claude is down in major outage affecting multiple services",
+      "description": "Claude is experiencing a major outage, with users reporting login problems and degraded performance across several Anthropic services. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-16T22:28:57+00:00"
+    },
+    {
+      "id": "techpulse-d5f206f632fa980d49eb",
+      "title": "We catalogued 55+ AI-agent failures in low-level code — and shipped 124 verified skills to fix them",
+      "description": "✨ Disclosure: this article was drafted with AI assistance. Every technical claim in it is source-traced in the linked repository ( registry/claims.yaml , 177 primary sources). The failure classes below come from real, documented incidents — not vibes. AI coding agents are excellent at boilerplate and unreliable at...",
+      "url": "https://dev.to/trothbyte/we-catalogued-55-ai-agent-failures-in-low-level-code-and-shipped-124-verified-skills-to-fix-them-369l",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:26:06+00:00"
+    },
+    {
+      "id": "techpulse-6ed9a722fee34f524ef9",
       "title": "'Spider-Man: Brand New Day' Hits $2 Billion at the Box Office",
       "description": "Marvel's latest Spider-Man movie keeps breaking records, hitting $2 billion in less than 3 weeks. Could it be Marvel's first $3 billion movie?",
       "url": "https://www.polygon.com/spider-man-brand-new-day-2-billion-box-office/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/spider-man-brand-new-day-tom-holland.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T22:22:30Z"
+      "published": "2026-08-16T22:22:30+00:00"
     },
     {
-      "id": "techpulse-49f5e816cf71301a6f73",
+      "id": "techpulse-3ba76d222095988c8870",
+      "title": "So, I Vibe Coded A Way Out, Again.",
+      "description": "A while ago I wrote an article asking When Is 100% Vibe Coding OK? . My conclusion was that it works when the human already owns the invariants. If you know the problem is solvable, understand the constraints, and have a reliable way to verify the output, AI can be a fantastic accelerator. Apparently I decided to test...",
+      "url": "https://dev.to/realvorl/so-i-vibe-coded-a-way-out-again-heb",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fcqidw6vv9lvwl7yo5dhx.png",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:18:46+00:00"
+    },
+    {
+      "id": "techpulse-2357e74f2e5e3079ee44",
+      "title": "PawPal is your New Dog's AI Sidekick 🐶⭐",
+      "description": "What I Built Bringing a new dog home is exciting... and also confusing. Why are they crying? Why are they hiding? Why won't they eat? Why are they biting my feet? 😭 I built PawPal, a playful AI companion for new dog owners that helps turn those confusing moments into simple, reassuring guidance. I especially wanted...",
+      "url": "https://dev.to/ishikathakur7802/pawpal-is-your-new-dogs-ai-sidekick-3bc8",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T22:13:40+00:00"
+    },
+    {
+      "id": "techpulse-8f7f8af87d448e81247b",
       "title": "Mahershala Ali’s 'Blade' Is Dead, But His Forgotten 4-Part Sci-Fi Masterpiece Is Free on Streaming",
       "description": "You can still watch the actor play a superhero in his breakout role",
       "url": "https://www.polygon.com/4400-mahershala-ali-free-streaming-tubi/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/l-intro-1621971205.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T22:00:12Z"
+      "published": "2026-08-16T22:00:12+00:00"
     },
     {
-      "id": "techpulse-c0e6f349b91e1da2b7c5",
+      "id": "techpulse-536879b708a9ea5ec2a7",
       "title": "Quote of the day by Elon Musk: '[The Tesla Bot] has the potential to be a generalized substitute for human labor over time' — a bold prediction on the future of work",
       "description": "Although humanoid robots aren't anywhere near ready for real-world deployment, tech execs like Musk are adamant they're coming for our jobs",
       "url": "https://www.techradar.com/pro/quote-of-the-day-by-elon-musk-the-tesla-bot-has-the-potential-to-be-a-generalized-substitute-for-human-labor-over-time-a-bold-prediction-on-the-future-of-work",
       "image": "https://cdn.mos.cms.futurecdn.net/NeZG4kETUZiKFU3BncbPsV-1280-80.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T22:00:00Z"
+      "published": "2026-08-16T22:00:00+00:00"
     },
     {
-      "id": "techpulse-57eb9a865355d884eb61",
+      "id": "techpulse-9a253aa949b51d8a251c",
       "title": "The Last House review: this tedious thriller is the worst Netflix movie of the year, and it's nothing like the trailer promised",
       "description": "The Last House had all the ingredients for an effective thriller movie but the result was nothing like I'd expected.",
       "url": "https://www.techradar.com/streaming/netflix/the-last-house-review-this-tedious-thriller-is-the-worst-netflix-movie-of-the-year-and-its-nothing-like-the-trailer-promised",
       "image": "https://cdn.mos.cms.futurecdn.net/oaNA4KxtN6MDs6S5WQUo9a-1280-80.jpg",
-      "category": "Technology",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T21:00:00Z"
+      "published": "2026-08-16T21:00:00+00:00"
     },
     {
-      "id": "techpulse-71e1c634d7b280c0c4b6",
+      "id": "techpulse-0364c89f6690a421e0f3",
       "title": "The Pentagon's next big project is hypersonic scramjet cruise missiles able to evade enemy interceptors",
       "description": "DARPA is seeking a survivable hypersonic scramjet missile capable of confronting sophisticated air defenses while covering missions reaching 2,000 nautical miles.",
       "url": "https://www.techradar.com/pro/the-pentagons-next-big-project-is-hypersonic-scramjet-cruise-missiles-able-to-evade-enemy-interceptors",
       "image": "https://cdn.mos.cms.futurecdn.net/bFN23MznAqSXFFMSyVPdjJ-1280-80.png",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T20:30:00Z"
+      "published": "2026-08-16T20:30:00+00:00"
     },
     {
-      "id": "techpulse-728092d5b9eec299bb3c",
+      "id": "techpulse-4e80d0442289eb4e9b69",
       "title": "8 Years Later, Marvel Tokon Team's Amazing Dragon Ball Fighting Game Still Holds Up",
       "description": "Marvel Tokon features a brand-new 4v4 fighting system. But if you want a classic 3v3 tag fighter, Dragon Ball FighterZ has everything you need.",
       "url": "https://www.polygon.com/dragon-ball-fighterz-recommendation-marvel-tokon-arc-system-works/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dragon-ball-fighterz-ss4-goku-screen-2.jpg",
-      "category": "Gaming Updates",
+      "category": "Reviews & Features",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T20:00:12Z"
+      "published": "2026-08-16T20:00:12+00:00"
     },
     {
-      "id": "techpulse-693b0abad125d7517864",
+      "id": "techpulse-92efa216e0d7fcc8aea6",
       "title": "Kioxia showcases the world’s fastest SSD with mind-blowing 10M IOPS and a staggering 50 DWPD endurance",
       "description": "Kioxia's GP1 reaches 10 million IOPS with PCIe 6.0, targeting AI workloads while future versions aim for 100 million.",
       "url": "https://www.techradar.com/pro/kioxia-showcases-the-worlds-fastest-ssd-with-mind-blowing-10m-iops-and-a-staggering-50-dwpd-endurance",
@@ -122,10 +276,21 @@
       "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T19:05:00Z"
+      "published": "2026-08-16T19:05:00+00:00"
     },
     {
-      "id": "techpulse-c772b480ce5eaf8b25b6",
+      "id": "techpulse-e40efa0439bb292044e1",
+      "title": "All 1 of 3 94+ GOTG or FUTTIES T1-T3 Icon or Hero Player Pick SBC rewards",
+      "description": "Doing this endlessly! The post All 1 of 3 94+ GOTG or FUTTIES T1-T3 Icon or Hero Player Pick SBC rewards appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/all-1-of-3-94-gotg-or-futties-t1-t3-icon-or-hero-player-pick-sbc-rewards/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T19:04:47+00:00"
+    },
+    {
+      "id": "techpulse-42827a0406735517f055",
       "title": "'Fatal Fury: City of the Wolves Revenge Edition' Makes It Easy To Get All Of The Street Fighter Rival's DLC",
       "description": "Fatal Fury: City of the Wolves Revenge Edition nets you the first 34 fighters released for SNK's latest Street Fighter 6-rivaling fighting game",
       "url": "https://www.polygon.com/fatal-fury-revenge-edition/",
@@ -133,65 +298,87 @@
       "category": "Game Releases",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T19:00:12Z"
+      "published": "2026-08-16T19:00:12+00:00"
     },
     {
-      "id": "techpulse-a641dcd67bd82afafb46",
+      "id": "techpulse-836fe53485d8a983d897",
       "title": "Gerard Butler's 109-Minute Sci-Fi Disaster Movie Masterpiece Officially Arrives on Free Streaming",
       "description": "While it may be one of the dumbest disaster sci-fi movies, Geostorm is still a rare distillation of everything that makes Gerard Butler great.",
       "url": "https://www.polygon.com/gerard-butler-geostorm-streaming-tubi/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/mcdgeos_ec021.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T19:00:12Z"
+      "published": "2026-08-16T19:00:12+00:00"
     },
     {
-      "id": "techpulse-5646c5581c45d74f7304",
+      "id": "techpulse-0cdc0f60a897f3005c51",
       "title": "4 of the most detailed and sonically stellar elite hi-fi speakers I heard Audio at Audio Advice Live",
       "description": "This year's Audio Advice Live has brought with it some of the best new stereo speakers from Bowers & Wilkins, Focal, Klipsch, and JBL, redefining what a great HiFi speaker is.",
       "url": "https://www.techradar.com/audio/speakers/4-of-the-most-detailed-and-sonically-stellar-elite-hi-fi-speakers-i-heard-audio-at-audio-advice-live",
       "image": "https://cdn.mos.cms.futurecdn.net/dsdhQ9xe76sC55VRKYc3HX-1280-80.jpg",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T19:00:00Z"
+      "published": "2026-08-16T19:00:00+00:00"
     },
     {
-      "id": "techpulse-fcae6a8b4ad595d39c74",
+      "id": "techpulse-4e3927f2e8d71522194c",
+      "title": "Best players for the FC 26 The 12th Man Evolution",
+      "description": "Starting to starters! The post Best players for the FC 26 The 12th Man Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-the-fc-26-the-12th-man-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T18:20:01+00:00"
+    },
+    {
+      "id": "techpulse-baf153bc0d0404d50bf7",
+      "title": "Halo: Campaign Evolved reportedly outsourced the ‘majority’ of its development, and it may only get worse from here",
+      "description": "Big yikes. The post Halo: Campaign Evolved reportedly outsourced the ‘majority’ of its development, and it may only get worse from here appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/halo-outsourcing-majority-of-development/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T18:09:33+00:00"
+    },
+    {
+      "id": "techpulse-5925eb87c585a713c69b",
       "title": "I plunged into Subnautica 2 Early Access and can't wait to go deeper",
       "description": "I dipped my toes in Subnautica 2’s early access but now want to sink into it.",
       "url": "https://www.techradar.com/gaming/i-plunged-into-subnautica-2-early-access-and-cant-wait-to-go-deeper",
       "image": "https://cdn.mos.cms.futurecdn.net/6PCTAtBfe7sVS2Gu3sFPEh-1280-80.jpg",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T18:05:00Z"
+      "published": "2026-08-16T18:05:00+00:00"
     },
     {
-      "id": "techpulse-a720d3926ad1aaec182c",
+      "id": "techpulse-7d641d07f17dfdb99155",
       "title": "After 52 Years, Wolverine's Best Quote Is Still One Of The Greatest Lines In X-Men History",
       "description": "He's short, angry, hairy, and murderous, but Wolverine has got some wisdom to share",
       "url": "https://www.polygon.com/wolverine-best-quote-x-men/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7836425/wolverine.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T18:00:12Z"
+      "published": "2026-08-16T18:00:12+00:00"
     },
     {
-      "id": "techpulse-9c7abb54c62d4d67541f",
+      "id": "techpulse-f701d39c639bf5f900b8",
       "title": "Sony Bravia 7 II vs Samsung R95H: which RGB TV wins, and does either model topple OLED? I tested them side-by-side to find out",
       "description": "As more RGB TVs become available, I decided to test the Sony Bravia 7 II next to the Samsung R95H — but which one is the better buy?",
       "url": "https://www.techradar.com/televisions/sony-bravia-7-ii-vs-samsung-r95h-which-rgb-tv-wins-and-does-either-model-topple-oled-i-tested-them-side-by-side-to-find-out",
       "image": "https://cdn.mos.cms.futurecdn.net/L7f3MJEdrAjp3rGostQTsk-1280-80.jpg",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T18:00:00Z"
+      "published": "2026-08-16T18:00:00+00:00"
     },
     {
-      "id": "techpulse-99d8cfbaade3a1fb7579",
+      "id": "techpulse-5643ca1981d9d94cf9e0",
       "title": "League of Legends YouTuber unearths the original investor pitch from when the game was called Onslaught: War of the Immortals",
       "description": "Back when the game was seemingly 6v6, Sion had a beard, and the story revolved around \"an antichrist of sorts.\"",
       "url": "https://www.pcgamer.com/games/moba/league-of-legends-youtuber-unearths-the-original-investor-pitch-from-when-the-game-was-called-onslaught-war-of-the-immortals/",
@@ -199,43 +386,65 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T17:42:47Z"
+      "published": "2026-08-16T17:42:47+00:00"
     },
     {
-      "id": "techpulse-0339a6a03368b4ce9436",
+      "id": "techpulse-f7c5cc7e808a230ac868",
       "title": "Saber Interactive finally adds an AI disclaimer to Rideshare Stimulator's Steam page",
-      "description": "Amid the row between Saber Interactive CEO Matthew Karch and former writer Stella Sacco after he said he'd have \"been happy to replace\" her with AI, the studio has finally added the AI disclaimer to Rideshare Stimulator's Steam page that had been conspicuously missing since the game first went live for wishlisting on 30th July. Read more",
+      "description": "Amid the row between Saber Interactive CEO Matthew Karch and former writer Stella Sacco after he said he'd have \"been happy to replace\" her with AI, the studio has finally added the AI disclaimer to Rideshare Stimulator's Steam page that had been conspicuously missing since the game first went live for wishlisting on...",
       "url": "https://www.eurogamer.net/saber-rideshare-stimulator-steam-ai-disclaimer",
       "image": "https://assetsio.gnwcdn.com/Screenshot-2026-08-16-at-18.13.56.png?width=690&quality=85&format=jpg&auto=webp",
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-16T17:34:21Z"
+      "published": "2026-08-16T17:34:21+00:00"
     },
     {
-      "id": "techpulse-33956a100d4d68775028",
+      "id": "techpulse-576c68c10c7b2558a0c6",
+      "title": "Best players for FC 26 Guard Duty Evolution",
+      "description": "Keeping the backline secured! The post Best players for FC 26 Guard Duty Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-fc-26-guard-duty-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T17:33:29+00:00"
+    },
+    {
+      "id": "techpulse-a3a3f22ca9a544228eaf",
+      "title": "Get ready to roleplay in Night City: Cyberpunk 2077’s multiplayer mod is making tremendous progress",
+      "description": "Cyberpunk multiplayer could finally become reality. The post Get ready to roleplay in Night City: Cyberpunk 2077’s multiplayer mod is making tremendous progress appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/cyberpunk-multiplayer-mod-progress/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T17:32:04+00:00"
+    },
+    {
+      "id": "techpulse-429520e2b3307fcd729d",
+      "title": "Large-scale DDoS attacks disrupted Threema secure messaging service",
+      "description": "Multiple distributed denial-of-service (DDoS) attacks targeted the Threema secure messaging service earlier this week, causing severe disruptions to communications. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/large-scale-ddos-attacks-disrupted-threema-secure-messaging-service/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-16T17:29:52+00:00"
+    },
+    {
+      "id": "techpulse-111dbbec801d20a5e093",
       "title": "Resonance: A Plague Tale Legacy’s Developer Walked an Unexpected Path to Success",
       "description": "Before it established itself as an awards-darling with A Plague Tale, Asobo Studio cut its teeth in the wild west of licensed games.",
       "url": "https://www.polygon.com/asobo-studio-plague-tale-ratatouille/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/ratatouille-holding-cheese.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T17:00:12Z"
+      "published": "2026-08-16T17:00:12+00:00"
     },
     {
-      "id": "techpulse-20d63f1a299c6060461d",
-      "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
-      "description": "The legendary game designer guides us through the games on his PC.",
-      "url": "https://www.pcgamer.com/gaming-industry/david-brevik-creator-of-diablo-reveals-the-worst-ending-to-any-game-hes-played-but-i-really-love-the-game-its-amazing/",
-      "image": "https://cdn.mos.cms.futurecdn.net/uh26LEAoSbJah73QhMhjRH-1280-80.jpg",
-      "category": "PC Gaming",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-16T17:00:00Z"
-    },
-    {
-      "id": "techpulse-ff591b5fc641f3eb0f59",
+      "id": "techpulse-92e39ae5d2f75efbcad6",
       "title": "Where's the weirdest place you've heard videogame music?",
       "description": "Why does hearing it in public places feel so… wrong?",
       "url": "https://www.pcgamer.com/games/wheres-the-weirdest-place-youve-heard-videogame-music/",
@@ -243,54 +452,87 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T17:00:00Z"
+      "published": "2026-08-16T17:00:00+00:00"
     },
     {
-      "id": "techpulse-ec2a7f650b0d0e210be2",
+      "id": "techpulse-cbeeb71a93ac672b98bd",
+      "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
+      "description": "The legendary game designer guides us through the games on his PC.",
+      "url": "https://www.pcgamer.com/gaming-industry/david-brevik-creator-of-diablo-reveals-the-worst-ending-to-any-game-hes-played-but-i-really-love-the-game-its-amazing/",
+      "image": "https://cdn.mos.cms.futurecdn.net/uh26LEAoSbJah73QhMhjRH-1280-80.jpg",
+      "category": "PC Gaming",
+      "mainCategory": "Gaming",
+      "source": "PCGamer latest",
+      "published": "2026-08-16T17:00:00+00:00"
+    },
+    {
+      "id": "techpulse-92a496e2be3c7a8abb2a",
+      "title": "Saber CEO apologizes to Rideshare Stimulator lead dev after outburst but still sneaks in a jab at a former Valve writer",
+      "description": "The drama concludes. The post Saber CEO apologizes to Rideshare Stimulator lead dev after outburst but still sneaks in a jab at a former Valve writer appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/saber-ceo-apology/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T16:56:46+00:00"
+    },
+    {
+      "id": "techpulse-1c6f4aafd7bfa2428d13",
       "title": "Matthew McConaughey explains why he turned down the role of Joel in The Last of Us",
       "description": "Matthew McConaughey has explained why he ultimately passed on playing Joel in HBO's The Last of Us – a role that, of course, went to Pedro Pascal instead. Read more",
       "url": "https://www.eurogamer.net/matthew-mcconaughey-last-of-us-joel-turned-down",
       "image": "https://assetsio.gnwcdn.com/Pedro-Pascal-as-Joel-in-The-Last-of-Us.-He-is-holding-a-guitar-on-his-porch_8VtlBhU.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-16T16:52:07Z"
+      "published": "2026-08-16T16:52:07+00:00"
     },
     {
-      "id": "techpulse-8fe0ace9051e01bf69ab",
+      "id": "techpulse-f07df37a9f63c2f2ca2a",
       "title": "'Persona 5' And More Iconic Games Will Dominate The Next Season Of Fortnite",
       "description": "Fortnite Chapter 7 Season 4: Override begins on August 20 and is full of gaming crossovers with Sonic, Persona 5, Crash Bandicoot, Spyro, and more",
       "url": "https://www.polygon.com/fortnite-override-season-trailer/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/fortnite-persona-5-sonic.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T16:35:50Z"
+      "published": "2026-08-16T16:35:50+00:00"
     },
     {
-      "id": "techpulse-84ad4477278488c0e7a8",
+      "id": "techpulse-09cdfd3672e0f720af29",
       "title": "Kingdom Hearts creator Tetsuya Nomura teases his role in the new anime series, tells fans to \"let your imagination run wild\"",
       "description": "Kingdom Hearts creator Tetsuya Nomura has addressed the newly announced Kingdom Hearts anime series directly for the first time, though he's giving away very little. Read more",
       "url": "https://www.eurogamer.net/kingdom-hearts-nomura-anime-series-tease-d23",
       "image": "https://assetsio.gnwcdn.com/Screenshot-2026-08-15-at-11.52.30.png?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-16T16:22:47Z"
+      "published": "2026-08-16T16:22:47+00:00"
     },
     {
-      "id": "techpulse-98d3551bddcf2d502798",
+      "id": "techpulse-57efaf7e2da5c3b142e8",
+      "title": "How to solve task does not count bug in Low-Budget Repairs?",
+      "description": "Don't be discouraged! The post How to solve task does not count bug in Low-Budget Repairs? appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/how-to-solve-task-does-not-count-bug-in-low-budget-repairs/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/ss_36db3ba6633f7950e1db1139401e0a565a3fbeb2.1920x1080.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T16:16:23+00:00"
+    },
+    {
+      "id": "techpulse-e43cbc371ab54bc87396",
       "title": "Russia's accelerating Starlink rival development means that war in space is not just probable; it's inevitable",
       "description": "Rapidly-expanding Rassvet raises concerns about stronger drone communications and forcing Ukraine to consider responses beyond conventional battlefield defenses.",
       "url": "https://www.techradar.com/pro/russias-accelerating-starlink-rival-development-means-that-war-in-space-is-not-just-probable-its-inevitable",
       "image": "https://cdn.mos.cms.futurecdn.net/9Km7ky9AU7NcrTGcdP5ZTe-1280-80.jpg",
-      "category": "Technology",
+      "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T16:05:00Z"
+      "published": "2026-08-16T16:05:00+00:00"
     },
     {
-      "id": "techpulse-c4b3ca027fe9dd50024b",
+      "id": "techpulse-c6fd8dcf1f04a6b82464",
       "title": "The next big videogame TV adaptation is a Kingdom Hearts anime",
       "description": "In it, the Three Caballeros will fight Bahamut. I'm kidding, but I can't imagine I'm that far off.",
       "url": "https://www.pcgamer.com/movies-tv/the-next-big-videogame-tv-adaptation-is-a-kingdom-hearts-anime/",
@@ -298,32 +540,32 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T16:00:41Z"
+      "published": "2026-08-16T16:00:41+00:00"
     },
     {
-      "id": "techpulse-cfe8151e6e9f7ce156cb",
+      "id": "techpulse-5994426e6c5d9a5956aa",
       "title": "Netflix Games’ Latest Pivot Is a Reminder of Its Messy Past",
       "description": "Netflix’s decision to shut down two video game studios continues its messy five-year attempt to find its niche in a crowded industry.",
       "url": "https://www.polygon.com/netflix-night-school-studio-closure-analysis/",
       "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/netflix-games-minigolf.jpg",
-      "category": "Gaming Updates",
+      "category": "Gaming Industry",
       "mainCategory": "Gaming",
       "source": "Polygon.com",
-      "published": "2026-08-16T16:00:12Z"
+      "published": "2026-08-16T16:00:12+00:00"
     },
     {
-      "id": "techpulse-a558cf82482043b13863",
+      "id": "techpulse-3863b1f7964f5cad86c8",
       "title": "'I can't think of a better pancake lens for Nikon and Sony cameras': I used Viltrox’s new 26mm f/2.8 full-frame lens every day for a month — at half the price of Nikon's version, it's unbeatable value",
       "description": "For its size, quality and price, I can't think of a better pancake lens for Nikon and Sony cameras than the new Viltrox AF 26mm F2.8 EVO",
       "url": "https://www.techradar.com/cameras/camera-lenses/viltrox-af-26mm-f2-8-evo-lens-review",
       "image": "https://cdn.mos.cms.futurecdn.net/DExb9w9cPzsMiTbzmC6srG-1280-80.jpg",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T16:00:00Z"
+      "published": "2026-08-16T16:00:00+00:00"
     },
     {
-      "id": "techpulse-3eb2c6457838c21fa000",
+      "id": "techpulse-0523a500e62c19c859a5",
       "title": "Iron Nest is the best 'Battleship' game I've played in years—and it doesn't even have boats",
       "description": "Use your smarts to locate enemies and meticulously plot firing solutions.",
       "url": "https://www.pcgamer.com/games/sim/iron-nest-is-the-best-battleship-game-ive-played-in-years-and-it-doesnt-even-have-boats/",
@@ -331,21 +573,21 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T16:00:00Z"
+      "published": "2026-08-16T16:00:00+00:00"
     },
     {
-      "id": "techpulse-95b0368ba75f56796aca",
+      "id": "techpulse-0f40109c15bcbf329ee4",
       "title": "Halloween: The Game will get a digital release in New Zealand after all",
       "description": "Halloween: The Game will get a digital release in New Zealand after all, despite initially being lumped in with Australia's classification refusal. Read more",
       "url": "https://www.eurogamer.net/halloween-the-game-new-zealand-digital-release-update",
       "image": "https://assetsio.gnwcdn.com/halloween-2026-game-steam-promo-art.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Game Releases",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-16T15:36:15Z"
+      "published": "2026-08-16T15:36:15+00:00"
     },
     {
-      "id": "techpulse-310ce253fac1be34993d",
+      "id": "techpulse-732fd1071ba5d326291f",
       "title": "The Pixel's new 'HiLight' reminds me of the golden days of Android phones",
       "description": "Google's new LED feature on the Pixel 11 Pro models pays homage to classic notification LEDs, but so far it's subtle.",
       "url": "https://www.zdnet.com/article/google-pixel-11-pro-hilight-feature-android-golden-days/",
@@ -353,43 +595,43 @@
       "category": "Smartphones & Mobile",
       "mainCategory": "Technology",
       "source": "Latest news",
-      "published": "2026-08-16T15:30:42Z"
+      "published": "2026-08-16T15:30:42+00:00"
     },
     {
-      "id": "techpulse-1891b670b576006c9f2b",
-      "title": "This portable, external CD/DVD drive comes with a 2.5-inch SATA and an SD Card slot for just $26 — Save 10% on a modern essential for keeping physical media alive",
-      "description": "If you have a bunch of old CDs or DVDs lying around and want something quick and simple to access them, this external drive can get the job done for you for less than $30 while offering extra features that would make it useful in your day-to-day PC usage.",
-      "url": "https://www.tomshardware.com/pc-components/this-portable-external-cd-dvd-drive-comes-with-a-2-5-inch-sata-and-an-sd-card-slot-for-just-usd26-save-10-percent-on-a-modern-essential-for-keeping-physical-media-alive",
-      "image": "https://cdn.mos.cms.futurecdn.net/mhrcZUYizqR2cDyF8nVh83-1280-80.jpg",
-      "category": "Hardware & Devices",
+      "id": "techpulse-0eedf1c03756dce0bc5f",
+      "title": "New AmnesiaStealer macOS malware hijacks browser sessions via remote control",
+      "description": "A new information-stealing malware called AmnesiaStealer, which targets macOS users via ClickFix attacks, includes a streaming module that allows the attacker to interactively control the victim's web browser. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/",
+      "image": "",
+      "category": "Internet & Web",
       "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T15:18:31Z"
+      "source": "BleepingComputer",
+      "published": "2026-08-16T15:07:44+00:00"
     },
     {
-      "id": "techpulse-bbae745cf05e0de7f3ca",
+      "id": "techpulse-0d463837ef41524b9b9f",
       "title": "Saber CEO Matthew Karch apologises to writer he said he'd have \"been happy to replace\" with AI",
       "description": "Saber Interactive CEO Matthew Karch has apologised to Stella Sacco, the writer at the centre of the Rideshare Stimulator AI controversy , after publicly saying he'd have been \"happy to replace her with AI\". Read more",
       "url": "https://www.eurogamer.net/saber-ceo-karch-apologises-stella-sacco",
       "image": "https://assetsio.gnwcdn.com/rideshare-saber-sacco.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-16T15:04:33Z"
+      "published": "2026-08-16T15:04:33+00:00"
     },
     {
-      "id": "techpulse-c9e8dc74e8da83a60a49",
+      "id": "techpulse-409205fccf4bae7e5941",
       "title": "What DisplayHDR True Black 1400 means for the future of gaming and productivity monitors",
       "description": "The latest DisplayHDR True Black 1400 standard brings 1,400 nits peak brightness to OLED displays, a level that was previously only possible with niche and heavy backlit panels. As tandem OLED gets cheaper, here's how things could change for the better.",
       "url": "https://www.techradar.com/computing/monitors/what-displayhdr-true-black-1400-means-for-the-future-of-gaming-and-productivity-displays",
       "image": "https://cdn.mos.cms.futurecdn.net/XCKeuTcXtwVcoaCHjScioD-1280-80.jpg",
       "category": "Hardware & Devices",
-      "mainCategory": "Technology",
+      "mainCategory": "Gaming",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T15:00:00Z"
+      "published": "2026-08-16T15:00:00+00:00"
     },
     {
-      "id": "techpulse-6135ec8485e41e85b419",
+      "id": "techpulse-2787262a232219371ffb",
       "title": "Marvel Tōkon's simple but effective combo trials are an elegant tutorial solution that I wish more fighting games had",
       "description": "Make me use my noggin, please.",
       "url": "https://www.pcgamer.com/games/fighting/marvel-tokons-simple-but-effective-combo-trials-are-an-elegant-tutorial-solution-that-i-wish-more-fighting-games-had/",
@@ -397,10 +639,10 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T15:00:00Z"
+      "published": "2026-08-16T15:00:00+00:00"
     },
     {
-      "id": "techpulse-971e07616d440e295921",
+      "id": "techpulse-c29fe9bbb2762eadcc6c",
       "title": "I played the economic simulator that could 'make a convert out of Karl Marx himself' to see if it could convert me",
       "description": "Though I'm not Karl Marx, just in case you're confused.",
       "url": "https://www.pcgamer.com/games/sim/i-played-the-economic-simulator-that-could-make-a-convert-out-of-karl-marx-himself-to-see-if-it-could-convert-me/",
@@ -408,32 +650,10 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T15:00:00Z"
+      "published": "2026-08-16T15:00:00+00:00"
     },
     {
-      "id": "techpulse-72d3ab954df0233de5a9",
-      "title": "Dell CEO unveils new 'Dude, you’re getting a Dell (AI server rack)' video — PC maker recycles famous PC ad campaign to tout its new AI data center products",
-      "description": "Dell has created a humorous AI-era update to its iconic early-2000s 'Dude, you’re getting a Dell' series of commercials.",
-      "url": "https://www.tomshardware.com/tech-industry/dude-youre-getting-a-dell-ai-server-rack-dell-recycles-famous-ad-campaign-to-appeal-to-its-new-ai-overlords",
-      "image": "https://cdn.mos.cms.futurecdn.net/qNLSbEXKXkscRUkoA6zB4F-1280-80.jpg",
-      "category": "Cloud & Infrastructure",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T14:31:33Z"
-    },
-    {
-      "id": "techpulse-ae5c2a1aac3a78910cfd",
-      "title": "Maker compresses a 2.9MB song by 1000x and prints it on paper as eight QR codes — 21KB song is two minutes long, requires a neural network for playback",
-      "description": "The open-source codec Meta released in 2022 converts a waveform into discrete tokens that a matching decoder turns back into audio.",
-      "url": "https://www.tomshardware.com/tech-industry/maker-compresses-a-2-9mb-song-1000-times-with-metas-ai-codec-and-prints-it-on-paper-as-eight-qr-codes",
-      "image": "https://cdn.mos.cms.futurecdn.net/4JwLzCyNBmPwoKZfyLrjd-1280-80.png",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T14:22:36Z"
-    },
-    {
-      "id": "techpulse-03a62145b873b9ec4116",
+      "id": "techpulse-93a2216f2ed8e3b97af0",
       "title": "The Quake community simply cannot stop delivering, having just released a 22-map 'Deathmatch Jam' to celebrate the shooter's 30th birthday",
       "description": "Frag your friends to mark three decades of Quake.",
       "url": "https://www.pcgamer.com/games/fps/the-quake-community-simply-cannot-stop-delivering-having-just-released-a-22-map-deathmatch-jam-to-celebrate-the-shooters-30th-birthday/",
@@ -441,142 +661,87 @@
       "category": "Game Releases",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T14:09:31Z"
+      "published": "2026-08-16T14:09:31+00:00"
     },
     {
-      "id": "techpulse-c11f088791b53a0a6f5c",
+      "id": "techpulse-6e824abb05c26560f971",
       "title": "The hidden cost of the RAM crisis: why memory prices might not be your only PC upgrade worry",
       "description": "Upgrading your PC often means buying more than just expensive RAM, especially if compatibility issues are in play.",
       "url": "https://www.techradar.com/computing/memory/the-hidden-cost-of-the-ram-crisis-why-memory-prices-might-not-be-your-only-pc-upgrade-worry",
       "image": "https://cdn.mos.cms.futurecdn.net/nKpyMkjn7WBTUvTgkLL4g5-1280-80.jpg",
-      "category": "Technology",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T14:00:00Z"
+      "published": "2026-08-16T14:00:00+00:00"
     },
     {
-      "id": "techpulse-1753ee9ddd573924aebf",
-      "title": "Ukraine built a $48,000 long-range drone after covertly snapping Chinese factory photos, clone destroys Russian Tu-95 bomber — attack drone has 2,000 km range, country builds 6,000 flying-wing drones a year",
-      "description": "The drone that destroyed a Tupolev Tu-95MS strategic bomber at Russia's Engels-2 air base last month turns out to be the MICH 2000.",
-      "url": "https://www.tomshardware.com/tech-industry/drones/ukraine-destroys-tu-95-bomber-using-48000-chinese-drone-clone",
-      "image": "https://cdn.mos.cms.futurecdn.net/W4bNjvtdxZJqKsG4ybdwT7-1280-80.jpg",
-      "category": "Software & Applications",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T13:20:00Z"
-    },
-    {
-      "id": "techpulse-9caedc77f9800fbe6508",
+      "id": "techpulse-ae83b46892311a5a72ba",
       "title": "What is the release date for Reacher season 4 episode 4 on Prime Video?",
       "description": "A political espionage plot threatens to uncover dark secrets in the CIA... if Reacher gets his way. But when does Reacher season 4 episode 4 arrive on Prime Video?",
       "url": "https://www.techradar.com/streaming/amazon-prime-video/reacher-season-4-episode-4-release-date-time",
       "image": "https://cdn.mos.cms.futurecdn.net/EUYwoxagiMFnH7qCLHcWyP-1280-80.jpg",
-      "category": "Technology",
+      "category": "Game Releases",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T13:00:00Z"
+      "published": "2026-08-16T13:00:00+00:00"
     },
     {
-      "id": "techpulse-05be32dd9e9bd4455b5d",
+      "id": "techpulse-3c17c34fedbe87e80541",
       "title": "How to watch Burnley vs West Ham: Live streams and TV channels for the EFL Championship 2026/27 game",
       "description": "All the ways to watch Burnley vs West Ham live streams from anywhere, with the EFL Championship favourites set for a blockbuster encounter at Turf Moor.",
       "url": "https://www.techradar.com/how-to-watch/football/burnley-vs-west-ham-efl-championship-2026-27",
       "image": "https://cdn.mos.cms.futurecdn.net/5Q97LpCC4JHTPm3WJn5PtJ-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
+      "category": "Hardware & Devices",
+      "mainCategory": "Gaming",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T13:00:00Z"
+      "published": "2026-08-16T13:00:00+00:00"
     },
     {
-      "id": "techpulse-c824ca39986bd8fbb734",
+      "id": "techpulse-7d51b6cc64e9d0c1c729",
       "title": "Is the new Water Cyber Shield Act too little, too late, and can a cyber group do it better? The experts weigh in",
       "description": "Numerous recent attacks are prompting Congress to do something",
       "url": "https://www.techradar.com/pro/security/is-the-new-water-cyber-shield-act-too-little-too-late-and-can-a-cyber-group-do-it-better-the-experts-weigh-in",
       "image": "https://cdn.mos.cms.futurecdn.net/ZtdYh6C8PhDP5njg8EtK6M-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T13:00:00Z"
-    },
-    {
-      "id": "techpulse-a3355400e0096b6833b0",
-      "title": "Critical macOS Screen Sharing flaw gives attackers remote root access — CISA bumps bug to 9.8 severity following active Monero cryptojacking attacks",
-      "description": "The Dutch National Cyber Security Centre (NCSC-NL) says that attackers are actively exploiting CVE-2026-65400, an authentication bypass in macOS Screen Sharing.",
-      "url": "https://www.tomshardware.com/tech-industry/cyber-security/macos-screen-sharing-flaw-exploited-to-root-macs-and-plant-monero-miners",
-      "image": "https://cdn.mos.cms.futurecdn.net/oP4PrsunH4mjQz37TZeD23-1280-80.jpg",
-      "category": "Cybersecurity",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T13:00:00Z"
-    },
-    {
-      "id": "techpulse-d641a8816fc472ab03c3",
-      "title": "Google reportedly taps AMD to design next-generation TPU — hybrid AI ASIC could integrate on-package CPU cores for reinforcement learning",
-      "description": "Google may be building a TPU with on-package CPU cores specifically for agentic and reinforced learning workloads, according to a rumor.",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-reportedly-taps-amd-to-design-next-generation-tpu-hybrid-ai-asic-could-integrate-on-package-cpu-cores-for-reinforcement-learning",
-      "image": "https://cdn.mos.cms.futurecdn.net/9yjpJGx28XVepArU3M5vBD-1280-80.jpg",
       "category": "Hardware & Devices",
       "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T12:40:00Z"
+      "source": "Latest from TechRadar",
+      "published": "2026-08-16T13:00:00+00:00"
     },
     {
-      "id": "techpulse-2b00afec46af181cf33b",
+      "id": "techpulse-efde60421ccc9e24da61",
       "title": "Gemini now lets you turn off the visible watermark on your AI creations — here's how to do it, and how your content is still flagged as AI",
       "description": "Now you can choose whether or not images, video, and music created through the Gemini app will have watermarks.",
       "url": "https://www.techradar.com/ai-platforms-assistants/gemini/gemini-now-lets-you-turn-off-the-visible-watermark-on-your-ai-creations-heres-how-to-do-it-and-how-your-content-is-still-flagged-as-ai",
       "image": "https://cdn.mos.cms.futurecdn.net/egDwtcRA3xJ4GVtrJaacxf-1280-80.jpg",
-      "category": "Software & Applications",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T12:30:00Z"
+      "published": "2026-08-16T12:30:00+00:00"
     },
     {
-      "id": "techpulse-650f30513c21ff4b3606",
-      "title": "Intel says it will launch new core with Nova Lake on desktop first, not in data center — VP Robert Hallock hopes enthusiasts ‘do the math’ compared to AMD",
-      "description": "Intel’s Robert Hallock says he hopes enthusiasts “do the math” compared to AMD, highlighting that the company’s new core architecture will release in consumer processors before the data center.",
-      "url": "https://www.tomshardware.com/pc-components/cpus/intel-says-it-will-launch-new-core-with-nova-lake-on-desktop-first-not-in-data-center-vp-robert-hallock-hopes-enthusiasts-do-the-math-compared-to-amd",
-      "image": "https://cdn.mos.cms.futurecdn.net/y2RQSvgVAG6nfudaaDBx2e-1280-80.jpg",
-      "category": "Cloud & Infrastructure",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T12:10:00Z"
+      "id": "techpulse-054f0baab415f6774816",
+      "title": "The Sinking City 2 release countdown: Exact date and time",
+      "description": "Save the sinking city! The post The Sinking City 2 release countdown: Exact date and time appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/the-sinking-city-2-release-countdown-exact-date-and-time/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T12:29:39+00:00"
     },
     {
-      "id": "techpulse-4266f7be7829c4fb3d35",
-      "title": "I’ve used Feedly for a decade, but these 2 minimal Android apps finally replaced it",
-      "description": "Two free RSS readers, zero algorithms, and one very slow cup of coffee.",
-      "url": "https://www.androidauthority.com/feedly-alternatives-android-app-replacements-3695670/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/DSC00304.jpeg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-16T12:00:57Z"
-    },
-    {
-      "id": "techpulse-48d5054af5928858a60c",
+      "id": "techpulse-1cbcb967972d0bbb753d",
       "title": "I hike for a living, and these are the 5 best GPS watches I've tested on real mountains — including Everest — from Garmin, Suunto, Coros & more",
       "description": "As a professional hiker and adventure journalist, these are the GPS watches I recommend.",
       "url": "https://www.techradar.com/health-fitness/i-hike-for-a-living-and-these-are-the-5-best-gps-watches-ive-tested-on-real-mountains-including-everest-from-garmin-suunto-coros-and-more",
       "image": "https://cdn.mos.cms.futurecdn.net/JLhBeGdKuFbCvaZoNob3Ak-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T12:00:00Z"
-    },
-    {
-      "id": "techpulse-0dd255cab9275f8f1639",
-      "title": "3D-printed sound-powered jet engines propel micro drones — fliers are completely silent; researchers use ultrasonic frequencies to drive 12,000-RPM silent hovering fliers",
-      "description": "A specially shaped 3D-printed resonator can make air shoot out of its nozzle and provide thrust when it hit with the proper frequency. While the prototypes don't deliver practical levels of thrust yet, they show proof that the concept works.",
-      "url": "https://www.tomshardware.com/3d-printing/3d-printed-sound-powered-jet-engines-propel-micro-drones-fliers-are-completely-silent-researchers-use-ultrasonic-frequencies-to-drive-12-000-rpm-silent-hovering-fliers",
-      "image": "https://cdn.mos.cms.futurecdn.net/vpqKNTuePoqSJYQ6Zuwfvk-1280-80.png",
       "category": "Hardware & Devices",
       "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T11:50:00Z"
+      "source": "Latest from TechRadar",
+      "published": "2026-08-16T12:00:00+00:00"
     },
     {
-      "id": "techpulse-8c36c41e1d13b1ed79bc",
+      "id": "techpulse-9e42b4f26715c31823e1",
       "title": "You could win a slice of €30,000 by building the best mod for Mount & Blade 2's controversial seafaring expansion",
       "description": "War Sails finally gets modding tools of its own.",
       "url": "https://www.pcgamer.com/games/rpg/you-could-win-a-slice-of-eur30-000-by-building-the-best-mod-for-mount-and-blade-2s-controversial-seafaring-expansion/",
@@ -584,120 +749,54 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T11:49:24Z"
+      "published": "2026-08-16T11:49:24+00:00"
     },
     {
-      "id": "techpulse-9a1bea7263f1e7ee08e5",
-      "title": "3D-printing enthusiast creates ‘Flock Sock’ to blind controversial cameras, shares design — slip-on cover attaches to broom handle to make it easy to put on devices placed on traffic and streetlights",
-      "description": "SquidInk created a 3D-printing model that would allow anyone to build an easy-to-install \"protective cover\" for Flock cameras. The \"Flock Sock\" slips on these devices in seconds using a broom handle, although it must be noted that adding this \"accessory\" can you into trouble.",
-      "url": "https://www.tomshardware.com/3d-printing/3d-printing-enthusiast-creates-flock-sock-camera-blind-slip-on-cover-attaches-to-broom-handle-to-make-it-easy-to-put-on-devices-placed-on-traffic-and-streetlights",
-      "image": "https://cdn.mos.cms.futurecdn.net/CeMsRHMDpdmXhCDn3eWKMk-1280-80.png",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T11:30:00Z"
-    },
-    {
-      "id": "techpulse-9be4008162ebf78110a1",
-      "title": "The PC age began 45 years ago with the breakthrough Intel 8088 processor — 8-bit bus fueled 45 years of x86 dominance",
-      "description": "45 years ago, in August 1981, the PC age began in earnest with the launch of the IBM PC Model 5150. At its heart was the Intel 8088 microprocessor.",
-      "url": "https://www.tomshardware.com/pc-components/cpus/the-pc-age-began-45-years-ago-with-the-breakthrough-intel-8088-processor-8-bit-bus-fueled-45-years-of-x86-dominance",
-      "image": "https://cdn.mos.cms.futurecdn.net/BCu95DDo8DrQU2evs7MkKo-1280-80.png",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T11:20:00Z"
-    },
-    {
-      "id": "techpulse-66bbcfaee45a16a49b87",
-      "title": "Modern OLEDs are just as vulnerable to burn-in as 2017 panels in 10,000-hour test — twice the brightness and 27% efficiency gains offer crucial headroom",
-      "description": "Rtings.com's latest update on their Accelerated Longevity Test shows that modern OLED TVs don't offer a clear advantage over older models in terms of burn-in since both show similar image retention after 10,000 hours of simulated usage. However, the new OLEDs are much brighter and consume much less power in the process.",
-      "url": "https://www.tomshardware.com/monitors/modern-oled-tvs-are-just-as-susceptible-to-burn-in-as-older-models-but-theyre-much-brighter-longevity-test-highlights-luminance-headroom-and-efficiency-as-mitigations",
-      "image": "https://cdn.mos.cms.futurecdn.net/S4aeQqPLcGQpBjUhj3h8jR-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T11:10:00Z"
-    },
-    {
-      "id": "techpulse-b7b49d5595e8a8dad052",
-      "title": "xTool M2 color craft laser and engraver review: Improved print head and positioning cameras at a lower price",
-      "description": "The M2 is xTool’s second take on an all-in-one craft tool in a box. It isn’t just an iterative update to the M1 Ultra, the new M2 color craft laser and engraver thoroughly remixes the offering by adding cameras, air assist, CMYK print, and more.",
-      "url": "https://www.tomshardware.com/maker-stem/xtool-m2-color-craft-laser-and-engraver-review",
-      "image": "https://cdn.mos.cms.futurecdn.net/RTPKWrYwAagKZ4wW7QtMZ3-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T11:05:00Z"
-    },
-    {
-      "id": "techpulse-11e46a39283b4807138d",
-      "title": "5 lost smartphone features that need to make a comeback in 2026",
-      "description": "Some features need to come back.",
-      "url": "https://www.androidauthority.com/5-lost-smartphone-features-need-comeback-2026-3695617/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/LG-V20-on-desk-scaled.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-16T11:00:38Z"
-    },
-    {
-      "id": "techpulse-348b6750ab2516955a1f",
+      "id": "techpulse-135ee12679bd53a2531f",
       "title": "Samsung Galaxy Z Fold8 and Galaxy Z Fold8 Ultra Review: The Right Shape",
       "description": "Nearly a decade after its debut, Samsung’s Galaxy Fold finally comes into its own.",
       "url": "https://www.wired.com/review/samsung-galaxy-z-fold8-and-z-fold8-ultra/",
       "image": "https://media.wired.com/photos/6a7fe9a3cf7e32811238974b/master/pass/Samsung-Galaxy-Z-Fold8-Ultra-(left)-and-Z-Fold8-(right)-SOURCE-Julian-Chokkattu.jpg",
-      "category": "Technology",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T11:00:00Z"
+      "published": "2026-08-16T11:00:00+00:00"
     },
     {
-      "id": "techpulse-f7d27d776a8909843358",
+      "id": "techpulse-36352a816f2222625acc",
       "title": "Astronomers Discover the Existence of a Black Hole Star",
       "description": "An object observed by the James Webb Space Telescope lends credence to a strange explanation for the mysterious red spots in the early universe.",
       "url": "https://www.wired.com/story/black-hole-stars-are-becoming-less-hypothetical/",
       "image": "https://media.wired.com/photos/6a7f4c716a3123db993a937f/master/pass/MIT-BlackHoleStar-01-press_0.jpg",
-      "category": "Technology",
+      "category": "Internet & Web",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T11:00:00Z"
+      "published": "2026-08-16T11:00:00+00:00"
     },
     {
-      "id": "techpulse-b4fac5a7e02415ee4079",
+      "id": "techpulse-287d569e4ee0181c3da9",
       "title": "I’ve been testing these cheap open earbuds for weeks, and they have me wondering why you’d spend more on expensive rivals from Shokz and Bose",
       "description": "The Baseus Bowie MC2 undercut most rival open-style earbuds, but don't miss out on any major features.",
       "url": "https://www.techradar.com/audio/wireless-headphones/ive-been-testing-these-cheap-open-earbuds-for-weeks-and-they-have-me-wondering-why-youd-spend-more-on-expensive-rivals-from-shokz-and-bose",
       "image": "https://cdn.mos.cms.futurecdn.net/8e77SvJJ7bpNmaz9WU3TAE-1280-80.jpg",
-      "category": "Technology",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T11:00:00Z"
+      "published": "2026-08-16T11:00:00+00:00"
     },
     {
-      "id": "techpulse-f7379561c56131171464",
+      "id": "techpulse-34292024e48fd1898777",
       "title": "How to watch Community Shield 2026: FREE live streams, team news and TV channels for Arsenal vs Man City",
       "description": "All the ways to watch Community Shield 2026 live streams online from anywhere, with Arsenal vs Man City set to light up the Millennium Stadium in Cardiff.",
       "url": "https://www.techradar.com/how-to-watch/football/hcommunity-shield-2026-arsenal-vs-man-city",
       "image": "https://cdn.mos.cms.futurecdn.net/KBWtzJyNCXPFKWsTgm2U8e-1280-80.jpg",
-      "category": "Technology",
+      "category": "Game Development",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T11:00:00Z"
+      "published": "2026-08-16T11:00:00+00:00"
     },
     {
-      "id": "techpulse-f50f0103d09662e5447d",
-      "title": "Thieves swap RTX 5080 GPUs for RTX 3060s in Chinese gaming hotels — rogue 'downgrades' go unnoticed until sudden blackout exposes $12,000 heist",
-      "description": "Two thieves in China have been arrested after they were caught stealing high-end GPUs from gaming hotels. They'd check into rooms with RTX 5080s, replace them with RTX 3060s that looked similar, and no one noticed the performance difference.",
-      "url": "https://www.tomshardware.com/pc-components/gpus/thieves-swap-rtx-5080-gpus-for-rtx-3060s-in-chinese-gaming-hotels-rogue-downgrades-go-unnoticed-until-sudden-blackout-exposes-usd12-000-heist",
-      "image": "https://cdn.mos.cms.futurecdn.net/ZPAAD8bdckpKYhaeuQ8RtM-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T10:50:00Z"
-    },
-    {
-      "id": "techpulse-2db8cfb3b4f37aaf778b",
+      "id": "techpulse-eca07c8ad23a122b7bab",
       "title": "Google Pixel 11 Pro vs. Apple iPhone 17 Pro: How the new Pixel competes with its biggest rival",
       "description": "I've tested both phones, and they're neck and neck. Here's where they each succeed (and have room for improvement).",
       "url": "https://www.zdnet.com/article/google-pixel-11-pro-vs-apple-iphone-17-pro/",
@@ -705,65 +804,54 @@
       "category": "Smartphones & Mobile",
       "mainCategory": "Technology",
       "source": "Latest news",
-      "published": "2026-08-16T10:45:00Z"
+      "published": "2026-08-16T10:45:00+00:00"
     },
     {
-      "id": "techpulse-c6f3d29a6b59982c8b7b",
+      "id": "techpulse-138a3a6b7ff7529a3c50",
       "title": "It’s Never Too Early to Start Planning for the Next Two Solar Eclipses",
       "description": "In 2027 and 2028, there will be two spectacular, long-duration solar eclipses. Here’s what you need to know about them.",
       "url": "https://www.wired.com/story/its-never-too-early-to-start-planning-for-the-next-two-solar-eclipses/",
       "image": "https://media.wired.com/photos/6a7f8642da25b3d4e0e8cd40/master/pass/2289797347",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T10:30:00Z"
+      "published": "2026-08-16T10:30:00+00:00"
     },
     {
-      "id": "techpulse-d842ed0f49211c8cab7d",
+      "id": "techpulse-9d8d15f6496240488d31",
       "title": "Someone Finally Fixed Installing Apps on a Mac",
       "description": "The installation utility EasyDMG makes it so you never drag and drop an icon again.",
       "url": "https://www.wired.com/story/easydmg-finally-fixed-installing-apps-on-a-mac/",
       "image": "https://media.wired.com/photos/6a7faa218588d7c31b9a75f5/master/pass/Someone-Fixed-App-Install-Mac-Gear.jpg",
-      "category": "Software & Applications",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T10:30:00Z"
+      "published": "2026-08-16T10:30:00+00:00"
     },
     {
-      "id": "techpulse-1344bad8a55fa438a5ae",
+      "id": "techpulse-699494922bdcda120279",
       "title": "TerraMow V1000 Review: Show Your Lawn Some Love",
       "description": "With automatic mapping, Spot Mode functionality, and smart AI cameras, the TerraMow V1000 is the complete package.",
       "url": "https://www.wired.com/review/terramow-v1000/",
       "image": "https://media.wired.com/photos/6a7ff7548a0e705c26e119a3/master/pass/Review--TerraMow-V1000.jpg",
-      "category": "Software & Applications",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T10:30:00Z"
+      "published": "2026-08-16T10:30:00+00:00"
     },
     {
-      "id": "techpulse-315030014fe1de7a46a5",
-      "title": "Ex-farm bureau chief invites AI data center developers to buy his land —argues blocked $6.3B project will just move to willing neighbors, defies 500-jurisdiction moratorium wave and 70% public opposition",
-      "description": "Blake Hurst spent a decade running the state's largest farm lobby. Now he's publicly courting the developers his neighbors froze out.",
-      "url": "https://www.tomshardware.com/tech-industry/data-centers/former-missouri-farm-bureau-president-offers-his-farm-for-a-data-center",
-      "image": "https://cdn.mos.cms.futurecdn.net/SN2jKEsMGBRYWHAepcoQE7-1280-80.jpg",
-      "category": "Cloud & Infrastructure",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T10:30:00Z"
-    },
-    {
-      "id": "techpulse-89052ac68a99ecabeb5a",
+      "id": "techpulse-8a6eb2c90bed96f50e03",
       "title": "Google Pixel 11 vs. Pixel 9: Why I'm considering the upgrade this year",
       "description": "If you didn't upgrade last year (or the year before), there's a good case to be made for the new Pixel 11.",
       "url": "https://www.zdnet.com/article/google-pixel-11-vs-pixel-9/",
       "image": "",
-      "category": "Technology",
+      "category": "Software & Applications",
       "mainCategory": "Technology",
       "source": "Latest news",
-      "published": "2026-08-16T10:15:45Z"
+      "published": "2026-08-16T10:15:45+00:00"
     },
     {
-      "id": "techpulse-793fe357a8a73665b626",
+      "id": "techpulse-925286c157a906020831",
       "title": "Wildfire smoke now bigger prenatal threat than human sources of air pollution",
       "description": "Regulations reduced prenatal exposure to harmful emissions, but wildfire smoke is erasing gains.",
       "url": "https://arstechnica.com/science/2026/08/wildfire-smoke-now-bigger-prenatal-threat-than-human-sources-of-air-pollution/",
@@ -771,54 +859,32 @@
       "category": "Technology",
       "mainCategory": "Technology",
       "source": "Ars Technica - All content",
-      "published": "2026-08-16T10:00:59Z"
+      "published": "2026-08-16T10:00:59+00:00"
     },
     {
-      "id": "techpulse-c74053eef3c9c9288c78",
-      "title": "8 Google Chrome flags that fix the browser’s most annoying issues",
-      "description": "Fix what Chrome gets wrong.",
-      "url": "https://www.androidauthority.com/best-google-chrome-flags-2026-3698138/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2023/11/Google-Chrome-Flags-page-running-on-Chromebook-stock-photo.jpg",
-      "category": "Software & Applications",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-16T10:00:49Z"
-    },
-    {
-      "id": "techpulse-4f27150541995e693423",
+      "id": "techpulse-9451e7f3da628031c61c",
       "title": "Inside the Experimental Traps Scientists Set for Ghostly Neutrinos",
       "description": "Observatories have been built in mines, deep under the Antarctic ice sheet, and elsewhere in an effort to detect the fleeting particles.",
       "url": "https://www.wired.com/story/inside-experimental-traps-scientists-set-for-neutrinos/",
       "image": "https://media.wired.com/photos/6a7f5742e58619d89d48cc8a/master/pass/Super-Kaminokande-cr-Kamioka-Observatory,-ICRR-(Institute-for-Cosmic-Ray-Research),-The-University-of-Tokyo.jpg",
-      "category": "Technology",
+      "category": "Science & Innovation",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T10:00:00Z"
+      "published": "2026-08-16T10:00:00+00:00"
     },
     {
-      "id": "techpulse-35a68cb7537107878a7f",
+      "id": "techpulse-0faae08bfa3a2bb07257",
       "title": "Think Flock is bad? This new tech is coming to link license plates with your phone — and it could be another death knell for privacy",
       "description": "New SignalTrace tech is designed to help in crime investigations, but there are questions about privacy.",
       "url": "https://www.techradar.com/vehicle-tech/think-flock-is-bad-this-new-tech-is-coming-to-link-license-plates-with-your-phone-and-it-could-be-more-bad-news-for-privacy",
       "image": "https://cdn.mos.cms.futurecdn.net/pL2q9UQxR693vxD6QSYcd-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T10:00:00Z"
-    },
-    {
-      "id": "techpulse-af1db1e5e44aca3ac121",
-      "title": "Ukrainian drone regiment ‘decimates’ 3,500-strong U.S. armored brigade combat team in war game — High drone kill-rate forced continuous 'respawns,' reveals shortcomings in American response as drones easily spotted and destroyed tanks and armored vehicles",
-      "description": "The 3rd Brigade Combat Team (3rd BCT) of the 1st Cavalry Division was defeated in military exercises by the opposing force, which included a regiment of Ukrainian drone operators. Even though the 3rd BCT had tanks, other armor, and anti-drone units, they were no match for Ukrainian drones that easily spotted and \"destroyed\" them.",
-      "url": "https://www.tomshardware.com/tech-industry/drones/ukrainian-drone-regiment-decimates-3-500-strong-u-s-armored-brigade-combat-team-in-war-game-reveals-shortcomings-in-american-response-as-drones-easily-spotted-and-destroyed-tanks-and-heavy-armored-vehicles",
-      "image": "https://cdn.mos.cms.futurecdn.net/dzh32tXeHa6C5hDgEq5SEo-1280-80.png",
       "category": "Hardware & Devices",
       "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T10:00:00Z"
+      "source": "Latest from TechRadar",
+      "published": "2026-08-16T10:00:00+00:00"
     },
     {
-      "id": "techpulse-3440269f2e8105e45b96",
+      "id": "techpulse-2bd562631259f5de3e7a",
       "title": "Kingdom Hearts 4 finally has a release window, and it's sooner than I expected",
       "description": "A firm release date remains elusive, however.",
       "url": "https://www.pcgamer.com/games/rpg/kingdom-hearts-4-finally-has-a-release-window-and-its-sooner-than-i-expected/",
@@ -826,54 +892,32 @@
       "category": "Game Releases",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T09:56:25Z"
+      "published": "2026-08-16T09:56:25+00:00"
     },
     {
-      "id": "techpulse-45445ff76a03af4f9e5b",
+      "id": "techpulse-b8279c1c04fba9bccba2",
       "title": "The Best Cat Water Fountains of 2026: Petlibro, Petkit, Oneisall",
       "description": "Ensuring your cat stays hydrated is one of the best ways to keep your pet healthy. The right pet water fountain can help.",
       "url": "https://www.wired.com/gallery/best-cat-water-fountains/",
       "image": "https://media.wired.com/photos/6a8007d2a5a41ea93847b302/master/pass/I-Tested-the-Best-Cat-Water-Fountains%E2%80%94These-Are-Worth-Buying.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-16T09:33:00Z"
+      "published": "2026-08-16T09:33:00+00:00"
     },
     {
-      "id": "techpulse-c45f4d5d310337c081aa",
-      "title": "Rogue iOS developer creates app that simulates messages sent by carrier pigeon; messages only travel at 100mph — LA to NYC correspondence takes 22 hours to deliver; virtual birds can get distracted or even lost",
-      "description": "Carrier Pidge slows down your electronic communications to a more natural speed.",
-      "url": "https://www.tomshardware.com/software/applications/rogue-ios-developer-creates-app-that-simulates-messages-sent-by-carrier-pigeon-messages-only-travel-at-100mph-la-to-nyc-correspondence-takes-22-hours-to-deliver-virtual-birds-can-get-distracted-or-even-lost",
-      "image": "https://cdn.mos.cms.futurecdn.net/3ZFcbD7pLmME7gcxhjADw6-1280-80.jpg",
-      "category": "Software & Applications",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-16T09:30:00Z"
-    },
-    {
-      "id": "techpulse-7fb86a177399cafd745f",
-      "title": "Your Samsung phone has a hidden Settings shortcut menu — here’s how to enable it",
-      "description": "A one-time setup that saves you time every day.",
-      "url": "https://www.androidauthority.com/samsung-phone-hidden-settings-shortcuts-how-to-use-3696140/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/settings-shortcuts-trick-on-galaxy-phones-3.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-16T09:00:07Z"
-    },
-    {
-      "id": "techpulse-181dd30263933415480c",
+      "id": "techpulse-d2c11804564296ff4503",
       "title": "‘Groundbreaking technology often enters the market at a premium before scaling’: Touch-sensitive e-skin could soon be commonplace in robotics",
       "description": "Ultra-thin, highly sensitive electronic skin could plug this major robotics gap – edge processing could improve latency.",
       "url": "https://www.techradar.com/pro/groundbreaking-technology-often-enters-the-market-at-a-premium-before-scaling-touch-sensitive-e-skin-could-soon-be-commonplace-in-robotics",
       "image": "https://cdn.mos.cms.futurecdn.net/oKL6AAKzCE6tNmSqKv7ZoM-1280-80.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T09:00:00Z"
+      "published": "2026-08-16T09:00:00+00:00"
     },
     {
-      "id": "techpulse-906ab86197ffddb1fe42",
+      "id": "techpulse-d03209c6c383864f09ff",
       "title": "Why do so many AI chatbots call themselves Nova? I asked ChatGPT, Claude, Gemini and more to name themselves",
       "description": "Users and alignment researchers have found that there’s a common name that most chatbots pick, guess which one went for it straight away?",
       "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/why-do-so-many-ai-chatbots-call-themselves-nova-i-asked-chatgpt-claude-gemini-and-more-to-name-themselves",
@@ -881,65 +925,32 @@
       "category": "Artificial Intelligence",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T09:00:00Z"
+      "published": "2026-08-16T09:00:00+00:00"
     },
     {
-      "id": "techpulse-8da49cde462eeac0a5aa",
+      "id": "techpulse-8f15bfea8d6c57461192",
+      "title": "Best teams in JoJo’s Bizarre Adventure: Golden Spirit",
+      "description": "Teamwork is ultimate! The post Best teams in JoJo’s Bizarre Adventure: Golden Spirit appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-teams-in-jojos-bizarre-adventure-golden-spirit/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/223.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-16T08:05:32+00:00"
+    },
+    {
+      "id": "techpulse-b3491a514d474c61042f",
       "title": "3 places you can't install plug-in solar panels — the new planning rules that could ruin your grand designs for your balcony",
       "description": "If your planned location doesn't qualify as \"permitted development\" then you'll need to apply for planning permission before getting started.",
       "url": "https://www.techradar.com/home/3-places-you-cant-install-plug-in-solar-panels-the-new-planning-rules-that-could-ruin-your-grand-designs-for-your-balcony",
       "image": "https://cdn.mos.cms.futurecdn.net/K8N6WcQTEVfbFoGB4dfhVK-1280-80.jpg",
-      "category": "Software & Applications",
+      "category": "Hardware & Devices",
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
-      "published": "2026-08-16T08:00:00Z"
+      "published": "2026-08-16T08:00:00+00:00"
     },
     {
-      "id": "techpulse-725021ed3a67ecde6461",
-      "title": "Want delicious lattes the easy way? I'm a certified barista, and these are the top 3 milk frothers I recommend for perfect results every time",
-      "description": "Whether you prefer dairy or plant-based milk, an electric milk frother is your shortcut to perfect cappuccinos and lattes.",
-      "url": "https://www.techradar.com/home/coffee-machines/want-delicious-lattes-the-easy-way-im-a-certified-barista-and-these-are-the-top-3-milk-frothers-i-recommend-for-perfect-results-every-time",
-      "image": "https://cdn.mos.cms.futurecdn.net/NDhKUfowGZ6terxbZpESoH-1280-80.jpg",
-      "category": "Software & Applications",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T07:00:00Z"
-    },
-    {
-      "id": "techpulse-f3b55c2467587016277b",
-      "title": "Photoroom AI photo editor review: A one-click wonder for making product shots unmissable on your ecommerce store",
-      "description": "With an emphasis on the pro-side of photo editing now, Photoroom is designed for anyone running an online business looking to make product images more enticing.",
-      "url": "https://www.techradar.com/pro/software-services/photoroom-ai-photo-editor-review",
-      "image": "https://cdn.mos.cms.futurecdn.net/3o4tuuDeYMus862SH7Cpon-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T06:10:00Z"
-    },
-    {
-      "id": "techpulse-03ac9d4eb681961eabe7",
-      "title": "From styling your hair to drying your socks — 5 ways to use your portable fan in between heatwaves",
-      "description": "Don't toss your fan in a drawer when the temperature eventually starts to drop a little — it can do so much more than just keep you cool.",
-      "url": "https://www.techradar.com/home/air-quality/from-styling-your-hair-to-drying-your-socks-5-ways-to-use-your-portable-fan-in-between-heatwaves",
-      "image": "https://cdn.mos.cms.futurecdn.net/XRh4NTVRhjgreVk3y4G9Li-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T06:00:00Z"
-    },
-    {
-      "id": "techpulse-b95d16ce752136f7e801",
-      "title": "‘Never get blindsided by an empty battery’: I was pleased with the OnePlus Nord CE5's performance and camera, but its battery life is the part that truly impressed me in real-world testing",
-      "description": "The Nord CE5 outperforms some rival affordable phones in terms of performance and photography — but it's the battery life that really sets it apart.",
-      "url": "https://www.techradar.com/phones/oneplus-phones/never-get-blindsided-by-an-empty-battery-i-was-pleased-with-the-oneplus-nord-ce5s-performance-and-camera-but-its-battery-life-can-outlast-many-flagships-on-the-market",
-      "image": "https://cdn.mos.cms.futurecdn.net/DMXSArjREibGEcBy9SdJL3-1280-80.jpg",
-      "category": "Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T05:00:00Z"
-    },
-    {
-      "id": "techpulse-64560a10c69fecf58297",
+      "id": "techpulse-69c8304e0c392e9269f3",
       "title": "Poll: Do you turn your PC off at night?",
       "description": "Sleep mode counts as leaving it on.",
       "url": "https://www.pcgamer.com/hardware/poll-do-you-turn-your-pc-off-at-night/",
@@ -947,21 +958,10 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-16T04:53:38Z"
+      "published": "2026-08-16T04:53:38+00:00"
     },
     {
-      "id": "techpulse-e3d0b3621e70d622e02c",
-      "title": "I'm an Apple Watch die-hard — here are my picks for the 10 best Apple Watch faces of 2026 so far",
-      "description": "Do you prefer analog style, liquid glass or cartoon characters on your watch? These are the 10 best Apple Watch faces of 2026 so far.",
-      "url": "https://www.techradar.com/health-fitness/smartwatches/im-an-apple-watch-die-hard-here-are-my-picks-for-the-10-best-apple-watch-faces-of-2026-so-far",
-      "image": "https://cdn.mos.cms.futurecdn.net/A8eYe2LioHzL29jk4MNGVV-1280-80.jpg",
-      "category": "Software & Applications",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T04:00:00Z"
-    },
-    {
-      "id": "techpulse-57e4196b6f3dc2796fa8",
+      "id": "techpulse-fcc0763acea6f7621500",
       "title": "Saber's AI Rideshare Stimulator controversy almost closes on high note with CEO apology, then he calls Portal scribe who mocked him an 'unsuccessful writer'",
       "description": "Why are you making me write this stuff?",
       "url": "https://www.pcgamer.com/gaming-industry/sabers-ai-rideshare-stimulator-controversy-almost-closes-on-high-note-with-ceo-apology-then-he-calls-portal-scribe-who-mocked-him-an-unsuccessful-writer/",
@@ -969,10 +969,10 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T22:36:19Z"
+      "published": "2026-08-15T22:36:19+00:00"
     },
     {
-      "id": "techpulse-b72ee3cc6bbfc8421d47",
+      "id": "techpulse-5496e7be1526e914a270",
       "title": "VisionQuest trailer kicks off Disney's D23 fan event",
       "description": "Also: Ahsoka S2 teaser, Doomsday trailer, news about MCU's X-Men and Star Wars: Starfighter",
       "url": "https://arstechnica.com/culture/2026/08/visionquest-trailer-kicks-off-disneys-d23-fan-event/",
@@ -980,21 +980,21 @@
       "category": "Technology",
       "mainCategory": "Technology",
       "source": "Ars Technica - All content",
-      "published": "2026-08-15T21:21:27Z"
+      "published": "2026-08-15T21:21:27+00:00"
     },
     {
-      "id": "techpulse-af2ca6d64952b3627d33",
-      "title": "Grab this RTX 5070 gaming PC for just $1,499, saving $600 off list price — Acer Nitro 85 prebuilt comes with 16GB of RAM, Core Ultra 7 265F, and a 1TB PCIe 4.0 SSD",
-      "description": "The Acer Nitro 85 gaming desktop is currently on sale for $1,499, which is $600 off its regular price for a PC that would otherwise cost you $2,000 to spec out yourself.",
-      "url": "https://www.tomshardware.com/desktops/gaming-pcs/grab-this-rtx-5070-gaming-pc-for-just-usd1-499-saving-usd600-off-list-price-acer-nitro-85-prebuilt-comes-with-16gb-of-ram-core-ultra-7-265f-and-a-1tb-pcie-4-0-ssd",
-      "image": "https://cdn.mos.cms.futurecdn.net/T3sdAdqoanvRTufHDp5RRH-1280-80.png",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T20:53:34Z"
+      "id": "techpulse-9f45d51e7c98bdb16b49",
+      "title": "Best players to use in FC 26 Face Value Evolution",
+      "description": "What's in a face! The post Best players to use in FC 26 Face Value Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-to-use-in-fc-26-face-value-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T20:42:16+00:00"
     },
     {
-      "id": "techpulse-ace0d6c4c4eb09278df0",
+      "id": "techpulse-a409630ed7eb31acdcbf",
       "title": "Matthew McConaughey could have played Joel in The Last of Us, but says 'it just wasn't for me at the time'",
       "description": "Pedro Pascal did a great job, but you can see it, right?",
       "url": "https://www.pcgamer.com/movies-tv/matthew-mcconaughey-could-have-played-joel-in-the-last-of-us-but-says-it-just-wasnt-for-me-at-the-time/",
@@ -1002,10 +1002,32 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T19:57:04Z"
+      "published": "2026-08-15T19:57:04+00:00"
     },
     {
-      "id": "techpulse-1233fc300dc435121c86",
+      "id": "techpulse-53da1aeab6cdf5213e51",
+      "title": "Can we stop delisting original games to force remasters?",
+      "description": "Greed is not so good. The post Can we stop delisting original games to force remasters? appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/can-we-stop-delisting-original-games-to-force-remasters/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2024/11/Warcraft-3-Reforged-2.0.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T19:47:22+00:00"
+    },
+    {
+      "id": "techpulse-b90c3e0cf134984054b6",
+      "title": "SANDUSTRY Logistics and Transportation guide",
+      "description": "Shifting the products! The post SANDUSTRY Logistics and Transportation guide appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/sandustry-logistics-and-transportation-guide/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/3781669041_preview_SNDY_Beginners_Guide_2.3_Filters.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T19:43:53+00:00"
+    },
+    {
+      "id": "techpulse-0747648970eec087cd6b",
       "title": "Simpsons creator Matt Groening implies that a Hit & Run remaster is coming, current showrunner hastily disputes",
       "description": "Stonecutters-level opsec.",
       "url": "https://www.pcgamer.com/games/action/simpsons-creator-matt-groening-implies-that-a-hit-and-run-remaster-is-coming-current-showrunner-hastily-disputes/",
@@ -1013,21 +1035,43 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T18:17:42Z"
+      "published": "2026-08-15T18:17:42+00:00"
     },
     {
-      "id": "techpulse-1a684b22a579c7b64a6a",
-      "title": "The Airseekers Tron is an impressive mulching robot mower with a couple of frustrating flaws",
-      "description": "The Airseekers Tron is a resilient mower that cuts and mulches, but it's a little rough around the edges.",
-      "url": "https://www.androidauthority.com/airseekers-tron-review-3686518/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/07/Airseekers-Tron-side.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T18:00:12Z"
+      "id": "techpulse-5bd032bc17939924faa3",
+      "title": "The greatest Simpsons game of all time is coming back",
+      "description": "Bigger than the announcement of a new Simpsons movie The post The greatest Simpsons game of all time is coming back appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/the-greatest-simpsons-game-of-all-time-is-coming-back/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T17:42:43+00:00"
     },
     {
-      "id": "techpulse-7be14aa0978598f90000",
+      "id": "techpulse-bf2a5e1f39d3f83f93fb",
+      "title": "Best players for FC 26 Fidget Spinner Evolution",
+      "description": "Time to frustrate defenders! The post Best players for FC 26 Fidget Spinner Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-fc-26-fidget-spinner-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T17:31:33+00:00"
+    },
+    {
+      "id": "techpulse-4446996d53412d91e3f2",
+      "title": "Rideshare Stimulator admits to AI use on Steam after Saber CEO gloated over replacing its writer with ChatGPT",
+      "description": "Turns out that a lot of the game is AI-generated. The post Rideshare Stimulator admits to AI use on Steam after Saber CEO gloated over replacing its writer with ChatGPT appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/rideshare-stimulator-ai-note/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/rideshare-stimulator-2.jpg?resize=1024%2C576",
+      "category": "PC Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T17:11:47+00:00"
+    },
+    {
+      "id": "techpulse-e2e1a3b2aa1ae3c6b143",
       "title": "Witcher 3 designer says it wasn't easy to convince players its NPC simulation wasn't 'just fakery': 'People nowadays are interested in those kinds of details, and it really came to haunt us'",
       "description": "\"Today, if you said 'give me a Witcher 3 village that has eight houses', I could give you that in two hours.\"",
       "url": "https://www.pcgamer.com/games/the-witcher/witcher-3-designer-says-it-wasnt-easy-to-convince-players-its-npc-simulation-wasnt-just-fakery-people-nowadays-are-interested-in-those-kinds-of-details-and-it-really-came-to-haunt-us/",
@@ -1035,21 +1079,32 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T17:04:02Z"
+      "published": "2026-08-15T17:04:02+00:00"
     },
     {
-      "id": "techpulse-b7a83ccd397ce3d4d433",
+      "id": "techpulse-35143d27ec5886dab360",
+      "title": "Best players for FC 26 Instant Magnet Evolution",
+      "description": "Magnetic! The post Best players for FC 26 Instant Magnet Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-fc-26-instant-magnet-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T17:01:04+00:00"
+    },
+    {
+      "id": "techpulse-1b9e96c70a1091211c8c",
       "title": "Simpsons creator Matt Groening seemingly lets slip that Hit & Run is coming back",
       "description": "Simpsons creator Matt Groening may have just let slip that a Hit & Run comeback is on the way. Read more",
       "url": "https://www.eurogamer.net/simpsons-hit-and-run-groening-d23-tease",
       "image": "https://assetsio.gnwcdn.com/OOgTcp23xRHycNyLw2Zdyj0nrVKNWh.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T16:56:47Z"
+      "published": "2026-08-15T16:56:47+00:00"
     },
     {
-      "id": "techpulse-c3d7d6c355454c46fde7",
+      "id": "techpulse-2ff5da3b863331ce80d1",
       "title": "I got so freaked out by the fact that Gordon Freeman is canonically 27 that I decided to find out how old all the other classic FPS protagonists are, and it didn't make me feel better",
       "description": "Time, Dr Freeman?",
       "url": "https://www.pcgamer.com/games/fps/i-got-so-freaked-out-by-the-fact-that-gordon-freeman-is-canonically-27-that-i-decided-to-find-out-how-old-all-the-other-classic-fps-protagonists-are-and-it-didnt-make-me-feel-better/",
@@ -1057,21 +1112,21 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T16:32:47Z"
+      "published": "2026-08-15T16:32:47+00:00"
     },
     {
-      "id": "techpulse-152fd5b5efcaff33e7a7",
+      "id": "techpulse-3988d113e334588faa8b",
       "title": "Killing PlayStation discs could make PS Store games cheaper, according to a former Square Enix exec",
       "description": "A former Square Enix exec believes that PS Store prices could actually come down as a result of Sony's decision to end all physical media on PlayStation. Read more",
       "url": "https://www.eurogamer.net/ps-store-prices-cheaper-disc-production-end",
       "image": "https://assetsio.gnwcdn.com/sony-ps5-discs.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Console Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T16:21:22Z"
+      "published": "2026-08-15T16:21:22+00:00"
     },
     {
-      "id": "techpulse-825b986ebf5f817133be",
+      "id": "techpulse-30f9f66cfae9166a83b4",
       "title": "EverQuest Legends is the only MMO that could hook me in 2026",
       "description": "Admittedly, I am a very specific type of guy.",
       "url": "https://www.pcgamer.com/games/mmo/everquest-legends-is-the-only-mmo-that-could-hook-me-in-2026/",
@@ -1079,10 +1134,21 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T16:00:00Z"
+      "published": "2026-08-15T16:00:00+00:00"
     },
     {
-      "id": "techpulse-b704ddae84ceabbde6d7",
+      "id": "techpulse-a67c6049315cbde02af0",
+      "title": "All room and safe codes in Low-Budget Repairs",
+      "description": "Unraveling the secrets! The post All room and safe codes in Low-Budget Repairs appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/all-room-and-safe-codes-in-low-budget-repairs/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/MixCollage-15-Aug-2026-08-50-PM-2221.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T15:57:39+00:00"
+    },
+    {
+      "id": "techpulse-12089a85a49f446819bb",
       "title": "Ukraine strikes major Russian rocket factory with cruise missiles",
       "description": "\"Flamingo missiles were used. A good achievement.\"",
       "url": "https://arstechnica.com/space/2026/08/ukraine-strikes-major-russian-rocket-factory-with-cruise-missiles/",
@@ -1090,21 +1156,10 @@
       "category": "Technology",
       "mainCategory": "Technology",
       "source": "Ars Technica - All content",
-      "published": "2026-08-15T15:46:05Z"
+      "published": "2026-08-15T15:46:05+00:00"
     },
     {
-      "id": "techpulse-f444dda42fb1f70990ce",
-      "title": "Peer-reviewed study of 443,000 Backblaze hard drives ranks HGST most reliable and Toshiba the least — Analysis of 1.66 million drive-years finds Seagate and Toshiba HDDs fail at roughly twice the rate of WD and HGST",
-      "description": "Backblaze's quarterly reports compare whichever drives are available at the time.",
-      "url": "https://www.tomshardware.com/pc-components/hdds/peer-reviewed-study-of-443000-backblaze-drivers-ranks-hgst-most-reliable-and-toshiba-least",
-      "image": "https://cdn.mos.cms.futurecdn.net/KCkcPUkkLXLzriAGq9iUrg-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T15:30:10Z"
-    },
-    {
-      "id": "techpulse-c6458257aebec0aa9f27",
+      "id": "techpulse-46d367ba608f6c3e8e9e",
       "title": "Star Wars: The Old Republic hopes to recapture the 'classic' experience with difficulty options and a new way to start from scratch",
       "description": "Venture characters seem inspired by the seasonal and ironman modes found in ARPGs.",
       "url": "https://www.pcgamer.com/games/mmo/star-wars-the-old-republic-hopes-to-recapture-the-classic-experience-with-difficulty-options-and-a-new-way-to-start-from-scratch/",
@@ -1112,21 +1167,21 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T15:18:09Z"
+      "published": "2026-08-15T15:18:09+00:00"
     },
     {
-      "id": "techpulse-57780e9e16cab909a251",
-      "title": "Futuristic mosquito-zapping laser now available to buy, video shows device in action — tiny device shoots down bugs like a personal air defense system, but costs $1,000",
-      "description": "This anti-mosquito air defense laser system has successfully passed the crowdfunding stage and is now readily available on the market. It costs around $1,000, but it will be money well spent if it can defend your home from mosquito-borne diseases.",
-      "url": "https://www.tomshardware.com/peripherals/futuristic-mosquito-zapping-laser-now-available-to-buy-video-shows-device-in-action-tiny-device-shoots-down-bugs-like-a-personal-air-defense-system-but-costs-usd1-000",
-      "image": "https://cdn.mos.cms.futurecdn.net/aqBCxLdt3Jt4mezgLaHHdk-1280-80.jpg",
-      "category": "Software & Applications",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T15:04:47Z"
+      "id": "techpulse-b0dbac45b6a65a100d63",
+      "title": "JoJo’s Bizarre Adventure: Golden Spirit character tier list",
+      "description": "Surprisingly, good! The post JoJo’s Bizarre Adventure: Golden Spirit character tier list appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/jojos-bizarre-adventure-golden-spirit-character-tier-list/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T15:12:55+00:00"
     },
     {
-      "id": "techpulse-d12bfac184328077c00e",
+      "id": "techpulse-4c31b8337cb5e59f98fd",
       "title": "RPG companions need to be hateable, otherwise nobody's going to love them",
       "description": "You're in this together.",
       "url": "https://www.pcgamer.com/games/rpg/rpg-companions-need-to-be-hateable-otherwise-nobodys-going-to-love-them/",
@@ -1134,32 +1189,21 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T15:00:00Z"
+      "published": "2026-08-15T15:00:00+00:00"
     },
     {
-      "id": "techpulse-034020df25d394ad755d",
-      "title": "Grab this Nvidia RTX 5070 Ti gaming PC for $2,099 before it sells out —prebuilt powerhouse includes a Core Ultra 7 265KF, 32GB RAM, 1TB SSD",
-      "description": "The Acer Predator Orion 6000 gaming desktop is currently on sale for $2,099, $700 off its regular price.",
-      "url": "https://www.tomshardware.com/desktops/gaming-pcs/grab-this-nvidia-rtx-5070-ti-gaming-pc-for-usd2-099-before-it-sells-out-prebuilt-powerhouse-includes-a-core-ultra-7-265kf-32gb-ram-1tb-ssd",
-      "image": "https://cdn.mos.cms.futurecdn.net/9FXuiJrxHMLsNnXFXsNxwe-1280-80.jpg",
-      "category": "Hardware & Devices",
+      "id": "techpulse-4f795a4e785155115209",
+      "title": "New Evooo1Bot Linux botnet turns routers into traffic relay nodes",
+      "description": "A new Mirai-based modular Linux botnet malware called Evooo1Bot has been targeting internet-facing gateway devices, turning them into SOCKS5 traffic relay nodes. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
+      "image": "",
+      "category": "Cybersecurity",
       "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T14:23:36Z"
+      "source": "BleepingComputer",
+      "published": "2026-08-15T14:14:38+00:00"
     },
     {
-      "id": "techpulse-02e0f81027e23fbe7c85",
-      "title": "Nvidia turns $5B Intel stock bet into $30B windfall — filing reveals new $21B SpaceX stake and complete exit from Arm stock",
-      "description": "Nvidia quietly makes strategic and financial investments in clients, partners, and suppliers: CoreWeave, Coherent, Intel, Nokia, and SpaceX.",
-      "url": "https://www.tomshardware.com/tech-industry/nvidia-turns-usd5b-intel-stock-bet-into-usd30b-windfall-filing-reveals-new-usd21b-spacex-stake-and-complete-exit-from-arm-stock",
-      "image": "https://cdn.mos.cms.futurecdn.net/Kjestg9jiuvnbE868dhwjf-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T14:16:35Z"
-    },
-    {
-      "id": "techpulse-147a33aefddde0fe436b",
+      "id": "techpulse-87989bb10590e60d8937",
       "title": "The bigwigs who want AI-generated NPCs and writing think you're too dumb to appreciate a good story—don't prove them right",
       "description": "The delight's in the details.",
       "url": "https://www.pcgamer.com/gaming-industry/game-development/the-bigwigs-who-want-ai-generated-npcs-and-writing-think-youre-too-dumb-to-appreciate-a-good-story-dont-prove-them-right/",
@@ -1167,10 +1211,10 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T14:00:00Z"
+      "published": "2026-08-15T14:00:00+00:00"
     },
     {
-      "id": "techpulse-5194f94f5d2c9983fc03",
+      "id": "techpulse-015b501ef2e7e734f91f",
       "title": "This Solitaire game is so tiny it can load from a QR code, which is just what I need in the age of massive games and expensive storage",
       "description": "TinySol is a mini marvel.",
       "url": "https://www.pcgamer.com/games/this-solitaire-game-is-so-tiny-it-can-load-from-a-qr-code-which-is-just-what-i-need-in-the-age-of-massive-games-and-expensive-storage/",
@@ -1178,98 +1222,32 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T13:31:09Z"
+      "published": "2026-08-15T13:31:09+00:00"
     },
     {
-      "id": "techpulse-83a5a9cc661a3c45393a",
-      "title": "Devs blame Windows for VLC media player bug that causes 33-second delay when playing MP3 files — creators allege Microsoft Defender blocking plugin cache is to blame",
-      "description": "VLC developers say a Windows 11 issue involving Microsoft Defender can interfere with the media player's plugin cache and cause unusually long playback delays.",
-      "url": "https://www.tomshardware.com/software/windows/vlc-media-player-bug-reportedly-causes-33-second-delay-when-playing-mp3-files-on-windows-developers-say-microsoft-defender-is-to-blame",
-      "image": "https://cdn.mos.cms.futurecdn.net/eEtLR2fZ2Wuz7PEoxUuNKk-1280-80.png",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T13:30:00Z"
+      "id": "techpulse-71713e4ab2dc6bd5d4a8",
+      "title": "Best players for FC 26 Creative License Evolution",
+      "description": "Creativity for the endgame! The post Best players for FC 26 Creative License Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-fc-26-creative-license-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T12:55:09+00:00"
     },
     {
-      "id": "techpulse-1bbdc8a2c9be59367309",
-      "title": "AMD Ryzen 7 7700X3D vs Ryzen 7 7800X3D faceoff — seeing double with Zen 4 X3D",
-      "description": "AMD's Ryzen 7 7700X3D takes on the old favorite across performance, pricing, and power consumption.",
-      "url": "https://www.tomshardware.com/pc-components/cpus/amd-ryzen-7-7700x3d-vs-ryzen-7-7800x3d-faceoff",
-      "image": "https://cdn.mos.cms.futurecdn.net/iGUrvDhRU5YYFG3fRoMf5G-1280-80.png",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T13:25:00Z"
+      "id": "techpulse-558783837b9b1d046482",
+      "title": "Anime Origins Tier List – Best Units & Traits",
+      "description": "All units in Anime Origins ranked! The post Anime Origins Tier List – Best Units & Traits appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/anime-origins-tier-list/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/anime-origins-madaro.png?resize=90%2C90",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T11:50:30+00:00"
     },
     {
-      "id": "techpulse-7fb5554c752d93084ecc",
-      "title": "White House authorizes private companies to launch 'hack-back' cyberattacks that destroy data and systems, targeting foreign cybercrime organizations — vetted organizations can now conduct offensive cyber operations",
-      "description": "President Trump signed a memorandum on August 12 establishing the first U.S. program that lets vetted private companies conduct offensive cyber operations.",
-      "url": "https://www.tomshardware.com/tech-industry/cyber-security/white-house-authorizes-private-companies-to-hack-foreign-cybercrime-groups",
-      "image": "https://cdn.mos.cms.futurecdn.net/hTfKM8rHjtxfhQ4vqVziJj-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T13:00:00Z"
-    },
-    {
-      "id": "techpulse-ad8265e6a7f31d2f0e99",
-      "title": "This week on Tom's Hardware Premium: August 14, 2026 — Testing the BC-250, our interview with Intel's Robert Hallock, and a big week for optical",
-      "description": "This week, we tested AMD's BC-250 in gaming workloads, published an unredacted interview with an AMD executive, and published a slew of articles surrounding a new flashpoint in the ongoing AI buildout: optical interconnects.",
-      "url": "https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-august-14-2026-testing-the-bc-250-our-interview-with-intels-robert-hallock-and-a-big-week-for-optical",
-      "image": "https://cdn.mos.cms.futurecdn.net/jq3f9gJdDJqZFw6FQjz6MV-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T12:30:00Z"
-    },
-    {
-      "id": "techpulse-61f057b894700ba917c8",
-      "title": "US Navy 3D prints combat-ready drones and 1,000+ parts aboard aircraft carrier during exercise — containerized factory fabricated 80-mph FPVs and critical spares despite rough seas and 12-foot waves",
-      "description": "During a two-week journey to Hawaii, a containerized factory aboard the USS Essex 3D-printed a dozen flight-ready drones, as well as over 1,000 parts including vital spares for Apache helicopters.",
-      "url": "https://www.tomshardware.com/tech-industry/drones/flight-ready-drones-3d-printed-and-built-on-aircraft-carrier-during-us-navy-exercise-a-containerized-factory-on-uss-essex-functioned-despite-rough-seas-and-12-foot-waves",
-      "image": "https://cdn.mos.cms.futurecdn.net/Luj36xhhRoF9q4QmFCSd4k-1280-80.jpg",
-      "category": "Cloud & Infrastructure",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T12:10:00Z"
-    },
-    {
-      "id": "techpulse-7ab52f9c5afa4e600bbb",
-      "title": "Ocypus Sigma L36 Pro Review: How is this LCD AIO so cheap?",
-      "description": "The Ocypus Sigma L36 Pro is a high-performance AIO that includes a fancy 3.5-inch display and a low price tag. We’ve tested this liquid cooler paired with AMD’s Ryzen 9 9950X3D CPU to benchmark thermal efficiency.",
-      "url": "https://www.tomshardware.com/pc-components/liquid-cooling/ocypus-sigma-l36-pro-review",
-      "image": "https://cdn.mos.cms.futurecdn.net/huAfFkKktdTNS2YtSeUeBb-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T12:05:00Z"
-    },
-    {
-      "id": "techpulse-c1376142514935a572ec",
-      "title": "Thinking of buying the base Pixel 11? Here are 6 Pro camera features you’ll miss",
-      "description": "If you're a camera buff, the regular Pixel 11 may not be the best choice.",
-      "url": "https://www.androidauthority.com/missing-camera-features-pixel-11-3695959/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/google-pixel-11-hands-on-4-scaled.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T12:00:50Z"
-    },
-    {
-      "id": "techpulse-70ad8059ee9b74b3287f",
-      "title": "SK hynix runs out of replacement SSDs and defaults to original purchase price refunds — fine-print warranty clause shortchanges buyers as drive prices double",
-      "description": "A Redditor reports a case in which SK hynix reportedly offers a refund for a malfunctioning SSD at the original purchase price instead of a direct replacement.",
-      "url": "https://www.tomshardware.com/pc-components/ssds/sk-hynix-is-allegedly-out-of-replacement-ssds-for-warranty-returns-chipmakers-original-price-refund-leaves-buyers-stranded-in-the-storage-shortage",
-      "image": "https://cdn.mos.cms.futurecdn.net/hbdFPJkYKjFjUcuqoKczAK-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T11:50:00Z"
-    },
-    {
-      "id": "techpulse-d3f3b3fbab237017fee6",
+      "id": "techpulse-aefd1c14d613fedcc66f",
       "title": "You can now play the secret best immersive sim in coop thanks to this mod",
       "description": "Prey Coop lets you play Arkane's System Shock successor with up to 16 other players.",
       "url": "https://www.pcgamer.com/games/sim/you-can-now-play-the-secret-best-immersive-sim-in-coop-thanks-to-this-mod/",
@@ -1277,32 +1255,32 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T11:42:32Z"
+      "published": "2026-08-15T11:42:32+00:00"
     },
     {
-      "id": "techpulse-a380ee23957302c4d3ba",
-      "title": "Intel says PC market is ‘a tale of two kingdoms’ with mainstream ‘taking a beating’ — VP suggests a split between mainstream and enthusiast sockets across the industry",
-      "description": "Intel VP Robert Hallock suggests the PC industry is going to see a split between mainstream and enthusiast sockets if current market conditions don’t let up.",
-      "url": "https://www.tomshardware.com/pc-components/cpus/intel-says-pc-market-is-a-tale-of-two-kingdoms-with-mainstream-taking-a-beating-vp-suggests-a-split-between-mainstream-and-enthusiast-sockets-across-the-industry",
-      "image": "https://cdn.mos.cms.futurecdn.net/s29ZEjXh8Q6JZBjqFRTv3-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T11:30:00Z"
+      "id": "techpulse-22db365e6c20037f95ca",
+      "title": "Best players for FC 26 Pocket Inspector Evolution",
+      "description": "Field inspection! The post Best players for FC 26 Pocket Inspector Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-fc-26-pocket-inspector-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-15T11:38:01+00:00"
     },
     {
-      "id": "techpulse-0d8df4d12f4d6bcb086f",
+      "id": "techpulse-33673f81f9d510812d4f",
       "title": "Kingdom Hearts 4's first new world is inspired by Pixar's Coco",
       "description": "Alongside its Kingdom Hearts 4 release window and its Kingdom Hearts anime series announcement, Disney used Friday's D23 Entertainment Showcase to confirm the first new world for Kingdom Hearts 4 : one inspired by Pixar's Coco. Read more",
       "url": "https://www.eurogamer.net/kingdom-hearts-4-coco-world",
       "image": "https://assetsio.gnwcdn.com/Screenshot-2026-08-15-at-12.15.57.png?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Game Releases",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T11:29:23Z"
+      "published": "2026-08-15T11:29:23+00:00"
     },
     {
-      "id": "techpulse-8beae959f833ef6fed30",
+      "id": "techpulse-807b15576d091bc65f1c",
       "title": "So much solar: Digging into the list of every US power plant that went online this year",
       "description": "Utility-scale solar leads by a mile, followed by batteries. Fossil fuels, not so much.",
       "url": "https://arstechnica.com/science/2026/08/so-much-solar-digging-into-the-list-of-every-us-power-plant-that-went-online-this-year/",
@@ -1310,65 +1288,43 @@
       "category": "Technology",
       "mainCategory": "Technology",
       "source": "Ars Technica - All content",
-      "published": "2026-08-15T11:09:57Z"
+      "published": "2026-08-15T11:09:57+00:00"
     },
     {
-      "id": "techpulse-cd851fd3ab4ca3dcff69",
+      "id": "techpulse-62d3c783159198da3be2",
       "title": "Kingdom Hearts is getting its own anime series on Disney+ and Disney Channel",
       "description": "A Kingdom Hearts animated show is on the way. Read more",
       "url": "https://www.eurogamer.net/kingdom-hearts-animated-series",
       "image": "https://assetsio.gnwcdn.com/Screenshot-2026-08-15-at-11.52.30.png?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T11:05:39Z"
+      "published": "2026-08-15T11:05:39+00:00"
     },
     {
-      "id": "techpulse-006ba81885c5a7cff85f",
-      "title": "Is the Pixel 11’s Tensor G6 actually a good upgrade from the G5? I crunched the numbers",
-      "description": "Tensor G6 isn't chasing benchmark glory. Here's what Google's new chip is really prioritizing.",
-      "url": "https://www.androidauthority.com/tensor-g6-deep-dive-3695968/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/google-pixel-11-series-hands-on-tensor-g6-4-scaled.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T11:00:22Z"
-    },
-    {
-      "id": "techpulse-d6c6a51f780185f4b1ac",
+      "id": "techpulse-b7ef7f5f0536bd0057c8",
       "title": "Retrospec Joe Rev 2 Review (2026): Putting the ‘Joy’ in Joyride",
       "description": "This affordable electric BMX delighted my entire family, even if its range, ride comfort, and actual BMX abilities are limited.",
       "url": "https://www.wired.com/review/retrospec-joe-rev-2/",
       "image": "https://media.wired.com/photos/6a7fd146fe52d9e2e42b1a35/master/pass/Review--Retrospec-Joe-Rev-2.jpg",
-      "category": "Technology",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T11:00:00Z"
+      "published": "2026-08-15T11:00:00+00:00"
     },
     {
-      "id": "techpulse-685e409df90232bc80b6",
+      "id": "techpulse-e918473035a38aec1d44",
       "title": "This Beautifully Weird Necklace Is Secretly a USB Drive",
       "description": "Noware’s Puff necklace whimsically reimagines flash drives, turning something functional into personalized jewelry.",
       "url": "https://www.wired.com/story/this-beautifully-weird-necklace-is-secretly-a-usb-drive/",
       "image": "https://media.wired.com/photos/6a7c1ff5b6f093068a6a7f95/master/pass/PUFF_CHAINS.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T11:00:00Z"
+      "published": "2026-08-15T11:00:00+00:00"
     },
     {
-      "id": "techpulse-cf68d74b9fbcb7514bda",
-      "title": "Engineer used 360-degree cam hidden in bag of snacks in attempt to steal DRAM process tech for China — IT security team pinpointed perp due to camera's leaky wireless signals",
-      "description": "Nanya engineer tried to steal DRAM process technology, manufacturing methods to pass them to a Chinese rival and get a higher-paid job, but gets caught and now faces time in prison.",
-      "url": "https://www.tomshardware.com/pc-components/dram/nanya-engineer-used-360-degree-cam-hidden-in-snacks-in-attempt-to-steal-dram-process-tech-for-china-it-security-team-pinpointed-perp-due-to-cameras-leaky-wireless-signals",
-      "image": "https://cdn.mos.cms.futurecdn.net/vnqdtRupVqWHAik43ZWctH-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from Tom's Hardware",
-      "published": "2026-08-15T11:00:00Z"
-    },
-    {
-      "id": "techpulse-5aef5cf0af6bd1616d22",
+      "id": "techpulse-88f14ac9a275ea100895",
       "title": "Kingdom Hearts 4 finally has a release window, if not quite a firm release date",
       "description": "Kingdom Hearts 4 finally has a release window – late 2027. Read more",
       "url": "https://www.eurogamer.net/kingdom-hearts-release-window-2027",
@@ -1376,197 +1332,164 @@
       "category": "Game Releases",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T10:42:49Z"
+      "published": "2026-08-15T10:42:49+00:00"
     },
     {
-      "id": "techpulse-24ebd1e3e99ec1c3437d",
+      "id": "techpulse-c9aecd7ec6aecf3cc60b",
       "title": "Stalker 2's imminent free update aims to make the sequel more atmospheric and less relentlessly hostile: 'The Zone isn't one constant gunfight'",
       "description": "The patch releases next week alongside the sequel's first story expansion.",
       "url": "https://www.pcgamer.com/games/fps/stalker-2s-imminent-free-update-aims-to-make-the-sequel-more-atmospheric-and-less-relentlessly-hostile-the-zone-isnt-one-constant-gunfight/",
       "image": "https://cdn.mos.cms.futurecdn.net/qRDzyoDARaw6mviL7T22YQ-1280-80.jpg",
-      "category": "Game Releases",
+      "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-15T10:35:01Z"
+      "published": "2026-08-15T10:35:01+00:00"
     },
     {
-      "id": "techpulse-d5aa940a4cc54457f851",
-      "title": "5 Android phones you should buy instead of the Motorola Edge (2026)",
-      "description": "The Motorola Edge doesn't exist in a bubble, so let's see what else is out there.",
-      "url": "https://www.androidauthority.com/motorola-edge-2026-alternatives-3695520/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/06/Motorola-Edge-2026-against-rock-scaled.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T10:30:45Z"
-    },
-    {
-      "id": "techpulse-49cad4629295d41e6156",
+      "id": "techpulse-2d212e6caccf03df281c",
       "title": "Instapaper, the Original Read-It-Later App, Just Got a Huge Upgrade",
       "description": "New fonts, better customization, and a whole new layout all make it worth dusting off your Instapaper account.",
       "url": "https://www.wired.com/story/instapaper-the-original-read-it-later-app-just-got-a-huge-upgrade/",
       "image": "https://media.wired.com/photos/6a7db74dacd30154034861b1/master/pass/GettyImages-1834553817.jpg",
-      "category": "Software & Applications",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T10:30:00Z"
+      "published": "2026-08-15T10:30:00+00:00"
     },
     {
-      "id": "techpulse-9f884fe70db28f1b8dac",
+      "id": "techpulse-de8205dc584a2630175c",
       "title": "6 Best Apple Watch Accessories to Upgrade Your Watch (2026)",
       "description": "These are the Apple Watch accessories I recommend adding to your setup.",
       "url": "https://www.wired.com/story/best-apple-watch-accessories/",
       "image": "https://media.wired.com/photos/6a7f6ff26bd52faf6a82c1a6/master/pass/The-Best-Apple-Watch-Accessories-I%E2%80%99d-Recommend-to-Any-Owner.jpg",
-      "category": "Software & Applications",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T10:30:00Z"
+      "published": "2026-08-15T10:30:00+00:00"
     },
     {
-      "id": "techpulse-87a343ea1be6b615ba76",
+      "id": "techpulse-116220695a6de01fb72b",
       "title": "Auk Mini 2 Indoor Smart Garden Review: Better Where It Counts",
       "description": "Auk’s Mini 2 improves on the original model with better lights, a sleeker design, and fun new colors.",
       "url": "https://www.wired.com/review/auk-mini-2-indoor-smart-garden/",
       "image": "https://media.wired.com/photos/6a7fceff7f588ccda7affea1/master/pass/Review--Auk-Mini-2-Indoor-Smart-Garden.jpg",
-      "category": "Technology",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T10:01:00Z"
+      "published": "2026-08-15T10:01:00+00:00"
     },
     {
-      "id": "techpulse-4dabcd251d37997304de",
-      "title": "The Home Speaker is the wrong $99 Google Home gadget to buy in 2026",
-      "description": "I still wouldn't trade my original Nest Hub for the new Home Speaker.",
-      "url": "https://www.androidauthority.com/google-home-speaker-nest-display-comparison-3696291/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/07/google-nest-hub-google-home-speaker-hero-2-scaled.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T10:00:53Z"
-    },
-    {
-      "id": "techpulse-1ca27f15066320033ffc",
+      "id": "techpulse-9c2ac6ff8850cb208514",
       "title": "No space for bookshelf speakers? The Victrola Soundstage sits neatly under my turntable",
       "description": "The Victrola Soundstage is ideal for those who want to build their vinyl system up rather than out, with plenty of digital and analog connections for every kind of listener.",
       "url": "https://www.zdnet.com/article/victrola-soundstage-review/",
       "image": "",
-      "category": "Technology",
+      "category": "Software & Applications",
       "mainCategory": "Technology",
       "source": "Latest news",
-      "published": "2026-08-15T10:00:42Z"
+      "published": "2026-08-15T10:00:42+00:00"
     },
     {
-      "id": "techpulse-c81a4c574266920a02f6",
+      "id": "techpulse-5788cdcfa4ac2c1ed371",
       "title": "Zyzz Was the Original Looksmaxxer. His Rise and Untimely Death Feel More Relevant Than Ever",
       "description": "A new Apple documentary explores the life of Aziz “Zyzz” Shavershian, who rocketed to internet fame in an age before influencers, then died at age 22 in 2011.",
       "url": "https://www.wired.com/story/a-young-bodybuilders-rise-preceded-the-looksmaxxing-movement-his-legacy-feels-more-relevant-than-ever/",
       "image": "https://media.wired.com/photos/6a7f4abe3fe13c1d3993e979/master/pass/Zyzz.jpeg",
-      "category": "Software & Applications",
+      "category": "Internet & Web",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T10:00:00Z"
+      "published": "2026-08-15T10:00:00+00:00"
     },
     {
-      "id": "techpulse-a407e1bbb14c6f837c6d",
+      "id": "techpulse-055081af890f54c246b5",
       "title": "5 Best Apple Watch Bands: Nike, Nomad, and Hermés (2026)",
       "description": "We’ve been testing bands since the first Apple Watch launched in 2015. From silicone sports straps to leather bands, I’ve rounded up the best for every occasion.",
       "url": "https://www.wired.com/story/best-apple-watch-bands/",
       "image": "https://media.wired.com/photos/6a7fc3b58588d7c31b9a75fb/master/pass/I-Tested-the-Best-Apple-Watch-Bands-for-Every-Occasion.jpg",
-      "category": "Software & Applications",
+      "category": "Game Releases",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T09:33:00Z"
+      "published": "2026-08-15T09:33:00+00:00"
     },
     {
-      "id": "techpulse-fccb2809acbcbbe3150b",
-      "title": "Pixel 11 or Pixel 10a? Here’s why the Pixel 11 really is worth $400 more",
-      "description": "The Pixel 11 really is worth splurging for.",
-      "url": "https://www.androidauthority.com/pixel-11-vs-pixel-10a-3696152/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/google-pixel-11-vs-pixel-10a-scaled.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T09:30:56Z"
-    },
-    {
-      "id": "techpulse-4f5961ae9035764b6af7",
+      "id": "techpulse-95d57b35c71493e4df36",
       "title": "Puerto Rico Is Rationing Water. It Could’ve Avoided It by Harvesting Rainwater",
       "description": "The island could capture billions of gallons of water a year if it implemented systems to catch it as it falls from the sky.",
       "url": "https://www.wired.com/story/puerto-rico-is-rationing-water-it-could-avoid-it-by-harvesting-rainwater/",
       "image": "https://media.wired.com/photos/6a7b0a106ed444fad7830ba5/master/pass/GettyImages-2288530142.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T09:30:00Z"
+      "published": "2026-08-15T09:30:00+00:00"
     },
     {
-      "id": "techpulse-64452d75355bbd6d05ac",
-      "title": "I tried 2 popular Flighty alternatives for Android, but there’s only one I’d pick",
-      "description": "Android finally has some genuinely great Flighty alternatives.",
-      "url": "https://www.androidauthority.com/i-tried-two-flighty-alternatives-android-3696341/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/flight-tracking-app-android-1.jpg",
-      "category": "Smartphones & Mobile",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-15T09:00:17Z"
-    },
-    {
-      "id": "techpulse-d44e6d29ea4792fb587e",
+      "id": "techpulse-da05268b37c3488cfe41",
       "title": "Amazon Can Use Your Twitch Content to Train Its AI—Unless You Opt Out",
       "description": "When Twitch announced that streamers could opt out, thousands of users questioned why their content was being used to train AI models in the first place.",
       "url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
       "image": "https://media.wired.com/photos/6a7f62de9dba743672684be2/master/pass/GettyImages-1305224058-edited.jpg",
-      "category": "Technology",
+      "category": "Artificial Intelligence",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T09:00:00Z"
+      "published": "2026-08-15T09:00:00+00:00"
     },
     {
-      "id": "techpulse-0c2148e2bd9b14c80c23",
+      "id": "techpulse-560ad0a3fc752a21ac60",
       "title": "Rusty Lake is back with another belter, so I get to shout about the overlooked puzzle series all over again",
-      "description": "I wiggle a cloud and the lake goes dark, revealing patterns among the stars. I poke a cat and pick up its sick so I can glue back together a chair. I place fly eggs on grilled fish to sate my master's guests, and I snip open a sutured wound to release the writhing thing inside. I hunt sport with my shotgun from the brow of a hill, some of them o...",
+      "description": "I wiggle a cloud and the lake goes dark, revealing patterns among the stars. I poke a cat and pick up its sick so I can glue back together a chair. I place fly eggs on grilled fish to sate my master's guests, and I snip open a sutured wound to release the writhing thing inside. I hunt sport with my shotgun from the...",
       "url": "https://www.eurogamer.net/rusty-lake-servant-of-the-lake-now-playing",
       "image": "https://assetsio.gnwcdn.com/rusty-lake-servant-header.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Game Releases",
+      "category": "Gaming",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T09:00:00Z"
+      "published": "2026-08-15T09:00:00+00:00"
     },
     {
-      "id": "techpulse-80180e58a2cc40cca789",
+      "id": "techpulse-47973a102143e0cf397e",
       "title": "What we've been playing - \"My Switch 2 sits watching me from my desk like the Green Goblin mask\"",
-      "description": "Hello and welcome back to our regular feature where we write a little about the games we've been playing. This week, we all melt into puddles by our computers, but Dom also devotes themself to the new Fire Emblem; Connor gets enthusiastic about new fighting game on the block, Marvel T&omacrkon Chris can't stop thinking about the Star Wars XCOM-l...",
+      "description": "Hello and welcome back to our regular feature where we write a little about the games we've been playing. This week, we all melt into puddles by our computers, but Dom also devotes themself to the new Fire Emblem; Connor gets enthusiastic about new fighting game on the block, Marvel T&omacrkon Chris can't stop...",
       "url": "https://www.eurogamer.net/what-weve-been-playing-switch-2-green-goblin-mask",
       "image": "https://assetsio.gnwcdn.com/green-goblin-spider-man.jpg?width=690&quality=85&format=jpg&auto=webp",
-      "category": "Gaming Updates",
+      "category": "Reviews & Features",
       "mainCategory": "Gaming",
       "source": "Eurogamer.net Latest Articles Feed",
-      "published": "2026-08-15T07:00:00Z"
+      "published": "2026-08-15T07:00:00+00:00"
     },
     {
-      "id": "techpulse-d7504b64d4a229eefdb4",
+      "id": "techpulse-0d034eb40bae011d4ed3",
       "title": "Google Workspace Promo Codes: 14% Off for August 2026",
       "description": "Boost your productivity and save with exclusive Google Workspace coupons from WIRED. Get up to 14% off plans for three months, including Starter, Standard, and Plus tiers.",
       "url": "https://www.wired.com/story/google-workspace-promo-code/",
       "image": "https://media.wired.com/photos/67b63b967f8fc45af4896200/master/pass/WIRED-Coupons-R2_7.png",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-15T05:00:00Z"
+      "published": "2026-08-15T05:00:00+00:00"
     },
     {
-      "id": "techpulse-687a9a4e17699a369bce",
+      "id": "techpulse-1e8f87d5ff253cdaf644",
+      "title": "How Anthropic plans to watermark Claude's AI-generated text",
+      "description": "It could soon become easier to identify AI-generated content, even if it's not the usual \"It's Not X, it's Y\" type of post you'd come across on LinkedIn and other socials. [...]",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/how-anthropic-plans-to-watermark-claudes-ai-generated-text/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-14T23:24:17+00:00"
+    },
+    {
+      "id": "techpulse-ad13a9ef3ae3ef1d7308",
       "title": "Before Grand Theft Auto Online, GTA 4's multiplayer added 'glorious chaos' to the open world sandbox",
       "description": "Liberty City, Liberty City: so big they reviewed it twice. This time: multiplayer.",
       "url": "https://www.pcgamer.com/games/grand-theft-auto/before-grand-theft-auto-online-gta-4s-multiplayer-added-glorious-chaos-to-the-open-world-sandbox/",
       "image": "https://cdn.mos.cms.futurecdn.net/VHsCh9gyFNLCGkCCevaFXT-1280-80.jpg",
-      "category": "PC Gaming",
+      "category": "Reviews & Features",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-14T23:11:11Z"
+      "published": "2026-08-14T23:11:11+00:00"
     },
     {
-      "id": "techpulse-710ecbd75e17ab57d01b",
+      "id": "techpulse-c6784e27adf834f3dc40",
       "title": "Disney says that Kingdom Hearts is now a 'billion dollar franchise'",
       "description": "Sora can finally afford normal person shoes.",
       "url": "https://www.pcgamer.com/games/rpg/disney-says-that-kingdom-hearts-is-now-a-billion-dollar-franchise/",
@@ -1574,84 +1497,491 @@
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
-      "published": "2026-08-14T22:45:13Z"
+      "published": "2026-08-14T22:45:13+00:00"
     },
     {
-      "id": "techpulse-1528b0e9cf789af254f7",
-      "title": "Modding the Khajiit lands into Oblivion is still the cat's meow",
-      "description": "Elsweyr the Deserts of Anequina stands the test of time.",
-      "url": "https://www.pcgamer.com/games/the-elder-scrolls/modding-the-khajiit-lands-into-oblivion-is-still-the-cats-meow/",
-      "image": "https://cdn.mos.cms.futurecdn.net/xto5MwozJtZMd7JE4Dv2uS-1280-80.jpg",
-      "category": "PC Gaming",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-14T21:47:31Z"
-    },
-    {
-      "id": "techpulse-f3e76207dc5bb3f41a2b",
+      "id": "techpulse-e222a5126b0786c9f851",
       "title": "New York City Lawmakers Push to ‘Ban the Scan’ at MSG",
       "description": "At a press conference outside Madison Square Garden, politicians, musicians, and privacy advocates argued for tighter restrictions on how public venues deploy biometric surveillance.",
       "url": "https://www.wired.com/story/new-york-city-lawmakers-push-to-ban-the-scan-at-msg/",
       "image": "https://media.wired.com/photos/6a7e4a6728f891277df706a0/master/pass/MSG-Surveillance-Protests-2196667317.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-14T21:43:17Z"
+      "published": "2026-08-14T21:43:17+00:00"
     },
     {
-      "id": "techpulse-db78d71f9f32765d83ed",
-      "title": "The US government wants private companies to start hacking the hackers",
-      "description": "The Trump administration is set to allow cybersecurity firms to fight fire with fire.",
-      "url": "https://www.androidauthority.com/us-cybersecurity-companies-to-conduct-cyberattacks-3699039/",
-      "image": "https://www.androidauthority.com/wp-content/uploads/2026/01/Lenovo-ThinkBook-Plus-Gen-7-Auto-Twist-keyboard-and-hinge.jpg",
-      "category": "Cybersecurity",
-      "mainCategory": "Technology",
-      "source": "Android Authority",
-      "published": "2026-08-14T21:42:39Z"
-    },
-    {
-      "id": "techpulse-e058fabc42644f72b863",
-      "title": "Here's a first for Call of Duty: The Modern Warfare 4 beta will have a campaign mission and Warzone stuff",
-      "description": "A double-stuffed beta.",
-      "url": "https://www.pcgamer.com/games/call-of-duty/heres-a-first-for-call-of-duty-the-modern-warfare-4-beta-will-have-a-campaign-mission-and-warzone-stuff/",
-      "image": "https://cdn.mos.cms.futurecdn.net/Mfm9mvTkJtZyWkoMKJxXtX-1280-80.jpg",
-      "category": "PC Gaming",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-14T21:29:32Z"
-    },
-    {
-      "id": "techpulse-a6949d3357f66effbe49",
+      "id": "techpulse-768301e9853053a55bf8",
       "title": "The Best Movies to Stream This Month (August 2026)",
       "description": "Avatar Aang, Heartstopper Forever, and Exit 8 are among the films deserving of your eyeballs this month.",
       "url": "https://www.wired.com/story/the-8-best-movies-to-stream-right-now/",
       "image": "https://media.wired.com/photos/6a7f4df328f891277df71355/master/pass/Movie-Guide-Avatar-Aang-Culture-MCDAVAA_I8007.jpg",
-      "category": "Technology",
+      "category": "Emerging Technology",
       "mainCategory": "Technology",
       "source": "WIRED",
-      "published": "2026-08-14T21:18:21Z"
+      "published": "2026-08-14T21:18:21+00:00"
     },
     {
-      "id": "techpulse-28038e4864aac606a066",
-      "title": "WoW's haunted: Players report that their disconnected friends' characters are starting to play the game on their own",
-      "description": "Who's playing when the player isn't?",
-      "url": "https://www.pcgamer.com/games/world-of-warcraft/wows-haunted-players-report-that-their-disconnected-friends-characters-are-starting-to-play-the-game-on-their-own/",
-      "image": "https://cdn.mos.cms.futurecdn.net/NMkcWYnUiW6Fr8h3UReQXR-1280-80.png",
-      "category": "PC Gaming",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-14T21:17:15Z"
+      "id": "techpulse-a95e0ea2a81c92a5cb91",
+      "title": "The Next Big Influencer Is This 4-Foot-Tall Robot From China",
+      "description": "The Unitree G1 has found online fame as a relatively affordable robot that can charm a crowd. But can it ever hold down a real job?",
+      "url": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
+      "image": "https://media.wired.com/photos/6a7e3d7b0f200c034ba14a12/master/pass/Made-In-China-Made-in-China-Unitree-Robots-Americans-Love-Business.jpg",
+      "category": "Emerging Technology",
+      "mainCategory": "Technology",
+      "source": "WIRED",
+      "published": "2026-08-14T20:59:03+00:00"
     },
     {
-      "id": "techpulse-6abaa2612c0dcaa0b671",
-      "title": "Thimbleweed Park 2 is happening because Ron Gilbert's friend knows a rich guy who's a big fan of the original and wanted more",
-      "description": "For once, the \"wealthy benefactor on the internet wants to give you money\" story is actually real.",
-      "url": "https://www.pcgamer.com/games/adventure/thimbleweed-park-2-is-happening-because-ron-gilberts-friend-knows-a-rich-guy-whos-a-big-fan-of-the-original-and-wanted-more/",
-      "image": "https://cdn.mos.cms.futurecdn.net/j5piTstGQrk5jrUe6VGyeW-1280-80.jpg",
+      "id": "techpulse-7360dd139c9010aa596e",
+      "title": "Best players for FC 26 Class on Grass Evolution",
+      "description": "Class indeed! The post Best players for FC 26 Class on Grass Evolution appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-players-for-fc-26-class-on-grass-evolution/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-14T20:57:20+00:00"
+    },
+    {
+      "id": "techpulse-18778e01e42ae13223db",
+      "title": "Disney touts ‘core pillar’ games like Kingdom Hearts and Marvel Rivals as crucial for its ‘next chapter’",
+      "description": "It's everywhere, it's everything, it's Disney. The post Disney touts ‘core pillar’ games like Kingdom Hearts and Marvel Rivals as crucial for its ‘next chapter’ appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/disney-games-kingdom-hearts-marvel-rivals-crucial-next-chapter/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2025/03/marvel_rivals_group.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-14T20:18:03+00:00"
+    },
+    {
+      "id": "techpulse-109aa7c61825c2b91dbd",
+      "title": "Best team to use in Path of Idle: Old Gods Rising",
+      "description": "Teamwork is dreamwork! The post Best team to use in Path of Idle: Old Gods Rising appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-team-to-use-in-path-of-idle-old-gods-rising/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/4243990_20260815005659_1.png?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-14T19:50:43+00:00"
+    },
+    {
+      "id": "techpulse-ac577e7436b272e98696",
+      "title": "The world’s most technical shooter is back from the dead, and it feels like a fever dream",
+      "description": "Here we go againz. The post The world’s most technical shooter is back from the dead, and it feels like a fever dream appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/the-worlds-most-technical-shooter-is-back-from-the-dead-and-it-feels-like-a-fever-dream/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-14T19:40:23+00:00"
+    },
+    {
+      "id": "techpulse-dbf321e18829f6add332",
+      "title": "Rideshare Stimulator Outlines AI Usage After Contentious Exchange With Ex-Writer",
+      "description": "After Saber Interactive unveiled its upcoming title Rideshare Stimulater , former lead writer Stella Sacco came forward and said that she had been replaced by ChatGPT during development. Saber CEO Matthew Karch denied Sacco's allegation that she had been replaced by AI, but the company has now shared previously...",
+      "url": "https://www.gamespot.com/articles/rideshare-stimulator-outlines-ai-usage-after-contentious-exchange-with-ex-writer/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/Rideshare-Stimulator.jpg?w=300",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T19:33:38+00:00"
+    },
+    {
+      "id": "techpulse-b4ed355a66a3781f097b",
+      "title": "Vulnerability giving attackers full control of Macs is under active exploitation",
+      "description": "Screen-sharing bug lets remote hackers log in without a password.",
+      "url": "https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/macbook-pro-1152x648.jpg",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T18:32:14+00:00"
+    },
+    {
+      "id": "techpulse-61a8cd8a4991251edfa6",
+      "title": "Hackers arrested over €30M bank fraud exploiting service provider flaw",
+      "description": "Four cybercriminals were arrested in Brazil, and three others were charged in Europe over allegations that they exploited a vulnerability at a service provider, allowing them to withdraw funds from Commerzbank customers' bank accounts. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-arrested-over-30m-bank-fraud-exploiting-service-provider-flaw/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-14T18:04:26+00:00"
+    },
+    {
+      "id": "techpulse-d8078dd9eeb2af31a9c3",
+      "title": "First test flight of largest all-electric aircraft used just $5 of electricity",
+      "description": "Airline-backed venture aims to develop a hybrid-electric commercial aircraft.",
+      "url": "https://arstechnica.com/gadgets/2026/08/first-test-flight-of-largest-all-electric-aircraft-used-just-5-of-electricity/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/x1-632-1152x648.jpg",
+      "category": "Technology",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T18:00:23+00:00"
+    },
+    {
+      "id": "techpulse-9ca1723cef247120fd3c",
+      "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+      "description": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
+      "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-1793608536-1152x648.jpg",
+      "category": "Artificial Intelligence",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T17:26:53+00:00"
+    },
+    {
+      "id": "techpulse-17f4e5921894f728e73a",
+      "title": "Halo: Campaign Evolved Will Look Way Better Soon",
+      "description": "Halo: Campaign Evolved is set to receive its first major patch next week, one that will give players more control over the game's visuals as well as make improvements to Jackals and Sgt. Johnson. As outlined by the Halo Support X account , a patch coming sometime next week will fix a few pain points for players of...",
+      "url": "https://www.gamespot.com/articles/halo-campaign-evolved-will-look-way-better-soon/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/Halo-Campaign-Evolved-Will-Look-Better-Soon.jpg?w=300",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T17:20:58+00:00"
+    },
+    {
+      "id": "techpulse-f5c0f4bc97b5061510ad",
+      "title": "State judge orders Kalshi to stop offering sports bets and other wagers",
+      "description": "Kalshi ordered to stop offering bets in Washington, must implement geofencing.",
+      "url": "https://arstechnica.com/tech-policy/2026/08/state-judge-orders-kalshi-to-stop-offering-sports-bets-and-other-wagers/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/kalshi-app-1152x648-1786725211.jpg",
+      "category": "Technology",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T17:13:14+00:00"
+    },
+    {
+      "id": "techpulse-032dd249ad4a6a344b99",
+      "title": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider",
+      "description": "\"We don't have access to the data on the hardware/servers,\" Iron Mountain told Ars.",
+      "url": "https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2269291893-1024x648.jpg",
+      "category": "Cloud & Infrastructure",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T17:03:54+00:00"
+    },
+    {
+      "id": "techpulse-9568dc3acd551e53490b",
+      "title": "Google Meet can take notes for your in-person meetings now - here's how it works",
+      "description": "Google's Gemini-driven meeting software can now save a transcript, send it to Google Drive, and email you a copy.",
+      "url": "https://www.zdnet.com/article/google-meet-take-notes-in-person-meetings-how-it-works/",
+      "image": "",
+      "category": "Software & Applications",
+      "mainCategory": "Technology",
+      "source": "Latest news",
+      "published": "2026-08-14T16:54:29+00:00"
+    },
+    {
+      "id": "techpulse-6cfddd358d359f7d3452",
+      "title": "Policy experts: Europe stuck between \"rock and a hard place\" on launch",
+      "description": "It turns out that the economics of rocket reuse are pretty, pretty good.",
+      "url": "https://arstechnica.com/space/2026/08/policy-experts-europe-stuck-between-rock-and-a-hard-place-on-launch/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/12/23802552292_6407c7a06f_k-1152x648.jpg",
+      "category": "Game Releases",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T16:29:21+00:00"
+    },
+    {
+      "id": "techpulse-308843403f274ac5ed70",
+      "title": "I tested an Android app that lets anyone fight censorship - and shows your impact in real time",
+      "description": "Most apps make our personal lives easier. This one helps the oppressed communicate by turning your phone into a Tor proxy. No technical knowledge needed.",
+      "url": "https://www.zdnet.com/article/snowflake-volunteer-censorship-fighting-android-app-tor/",
+      "image": "",
+      "category": "Smartphones & Mobile",
+      "mainCategory": "Technology",
+      "source": "Latest news",
+      "published": "2026-08-14T16:15:34+00:00"
+    },
+    {
+      "id": "techpulse-151bc530e6b403a7df2c",
+      "title": "Ars Live recap: How can we stop publishers from killing their own games?",
+      "description": "The Stop Killing Games movement faces an uphill battle.",
+      "url": "https://arstechnica.com/gaming/2026/08/ars-live-recap-how-can-we-stop-publishers-from-killing-their-own-games/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/3408519540_a597fef749_k-1152x648.jpg",
+      "category": "Gaming Industry",
+      "mainCategory": "Gaming",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T16:11:37+00:00"
+    },
+    {
+      "id": "techpulse-641143b1da45bb89d52e",
+      "title": "Apple is warning users of new spyware attacks - what to do if you're a target",
+      "description": "New spyware attacks are aimed at journalists, activists, politicians, diplomats, and others. Here's how Apple is notifying them and what they should do - after turning on Lockdown Mode.",
+      "url": "https://www.zdnet.com/article/apple-warns-targetted-spyware-attacks-what-to-do/",
+      "image": "",
+      "category": "Software & Applications",
+      "mainCategory": "Technology",
+      "source": "Latest news",
+      "published": "2026-08-14T16:08:11+00:00"
+    },
+    {
+      "id": "techpulse-7d1ee81310fa48faefd1",
+      "title": "Add multiple picture widgets to your Ubuntu desktop",
+      "description": "If you remember that desktop picture widget for GNOME I wrote about last year, but found it a bit too basic for your personalisation preferences, you weren’t alone. Another user felt it could lacked enough flexibility, so forked and improved it. Picture Desktop Widget Remake improves on the original. It lets add...",
+      "url": "https://www.omgubuntu.co.uk/2026/08/desktop-picture-frame-widget-ubuntu",
+      "image": "https://i0.wp.com/www.omgubuntu.co.uk/wp-content/uploads/2026/08/gnome-picture-widget.webp?resize=406%2C232&amp;ssl=1",
+      "category": "Linux & Open Source",
+      "mainCategory": "Technology",
+      "source": "OMG! Ubuntu",
+      "published": "2026-08-14T16:02:49+00:00"
+    },
+    {
+      "id": "techpulse-0ecd96b224378b7e3828",
+      "title": "ChatGPT's new Computer History tracks your Mac activity to create a timeline - but should you let it?",
+      "description": "Rolling out to ChatGPT's Mac app, Computer History creates a timeline from your activities across the apps and websites you use on your Mac. Is that a privacy risk?",
+      "url": "https://www.zdnet.com/article/chatgpt-computer-history/",
+      "image": "",
+      "category": "Internet & Web",
+      "mainCategory": "Technology",
+      "source": "Latest news",
+      "published": "2026-08-14T16:00:16+00:00"
+    },
+    {
+      "id": "techpulse-552e0cb2b91218fc1331",
+      "title": "Dell XPS 13 review: The first budget laptop to rival Neo raises the bar for all PCs",
+      "description": "The Dell XPS 13 flaunts build quality rarely seen at this price point, but not without trade-offs.",
+      "url": "https://www.zdnet.com/article/dell-xps-13-spotlight/",
+      "image": "",
+      "category": "Hardware & Devices",
+      "mainCategory": "Technology",
+      "source": "Latest news",
+      "published": "2026-08-14T16:00:00+00:00"
+    },
+    {
+      "id": "techpulse-6c81b2b0a34522e9362b",
+      "title": "Watch God Of War Laufey Star Smash The Last Of Us Golf Club Prop On Her First Day",
+      "description": "Deborah Ann Woll plays Faye in the upcoming PS5 game God of War Laufey , and she had quite a memorable first day on set. At San Diego Comic-Con recently, she shared a story about how, on her very first day, she broke a famous prop from The Last of Us due to her strength and tenacity--only she didn't know the...",
+      "url": "https://www.gamespot.com/articles/watch-god-of-war-laufey-star-smash-the-last-of-us-golf-club-prop-on-her-first-day/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/Golf-of-War-Laufey.jpg?w=300",
+      "category": "Console Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T15:48:43+00:00"
+    },
+    {
+      "id": "techpulse-bc893a3c2a071849c180",
+      "title": "Judge gives Google one week to fix \"anticompetitive\" app store download in Google Play",
+      "description": "Third-party app stores are about to become more visible in Google Play.",
+      "url": "https://arstechnica.com/gadgets/2026/08/google-ordered-to-make-it-easier-to-download-alternative-android-app-stores/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/play-store-1152x648.jpg",
+      "category": "Technology",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T15:46:40+00:00"
+    },
+    {
+      "id": "techpulse-68e63e5da4ee7b0d782e",
+      "title": "R-rated director's cut of X-Files film restores Chris Carter's original horror vision",
+      "description": "Chris Carter chats with Ars about the film he originally wanted to make—and why it's more relevant than ever.",
+      "url": "https://arstechnica.com/culture/2026/08/r-rated-directors-cut-of-x-files-film-restores-chris-carters-original-horror-vision/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/xfilesTOP-ALT-1152x648.jpg",
+      "category": "Technology",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T15:18:22+00:00"
+    },
+    {
+      "id": "techpulse-3ce4a578d050a8df7a2c",
+      "title": "Taylor Farms' connections to Trump admin spurs probe into Cyclospora response",
+      "description": "Senator Warren questions whether Taylor Farms' influence swayed Trump admin.",
+      "url": "https://arstechnica.com/health/2026/08/taylor-farms-connections-to-trump-admin-spurs-probe-into-cyclospora-response/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2285922416-1152x648.jpg",
+      "category": "Technology",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T15:03:16+00:00"
+    },
+    {
+      "id": "techpulse-b904445f36e36e60532c",
+      "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
+      "description": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
+      "url": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
+      "image": "https://media.wired.com/photos/6a7e0548f5b7635ce53f5f77/master/pass/Backchannel-Tim-Orielly-Business.jpg",
+      "category": "Linux & Open Source",
+      "mainCategory": "Technology",
+      "source": "WIRED",
+      "published": "2026-08-14T15:00:00+00:00"
+    },
+    {
+      "id": "techpulse-94dfc8416a430d4f5913",
+      "title": "Hackers exploit macOS Screen Sharing flaw to deploy Monero miner",
+      "description": "The Netherlands' National Cyber Security Centre (NCSC) is warning that hackers are actively exploiting a macOS authentication bypass vulnerability after public exploit code emerged. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-14T14:59:55+00:00"
+    },
+    {
+      "id": "techpulse-36998c72c792af7943f1",
+      "title": "Roblox Is Now The Target Of A Congressional Investigation: “Children Are Hurting”",
+      "description": "US Senators Josh Hawley and Dick Durbin have announced that Roblox will be the subject of a congressional investigation amid claims that the gaming platform is a threat to child safety. \"You trumpet Roblox as a safe digital playground for children as young as five,\" the pair wrote in an open letter. \"But the public...",
+      "url": "https://www.gamespot.com/articles/roblox-is-now-the-target-of-a-congressional-investigation-children-are-hurting/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/Roblox.jpg?w=300",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T14:49:40+00:00"
+    },
+    {
+      "id": "techpulse-641af39f6a4f4df62c05",
+      "title": "Call Of Duty: Modern Warfare 4 Beta Will Do Something No Previous CoD Beta Has",
+      "description": "Activision has announced that the upcoming Call of Duty: Modern Warfare 4 beta will have more than just multiplayer content. The MW4 beta will also include access to the campaign mission, Entrenched, along with the upcoming Warzone mode, Resurgence Zodiac . Activision will show off some of this content during the Call...",
+      "url": "https://www.gamespot.com/articles/call-of-duty-modern-warfare-4-beta-will-do-something-no-previous-cod-beta-has/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/CODNew-Large.jpeg?w=300",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T14:48:08+00:00"
+    },
+    {
+      "id": "techpulse-3b7c25d68201784318cb",
+      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+      "description": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
+      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285566787-1152x648.jpg",
+      "category": "Technology",
+      "mainCategory": "Technology",
+      "source": "Ars Technica - All content",
+      "published": "2026-08-14T14:27:14+00:00"
+    },
+    {
+      "id": "techpulse-27b1ca1c071b3ee8816e",
+      "title": "Disney Has 9 Gaming Franchises That Have Generated $1 Billion+ At Retail, Including Kingdom Hearts",
+      "description": "Disney has outlined just how powerful and important video games are to the company's future. In a blog post ahead of D23-- where Kingdom Hearts news is expected --the company's gaming boss, Sean Shoptaw, revealed that games are now a \"fundamental part of the broader entertainment landscape.\" He said Disney has reaped...",
+      "url": "https://www.gamespot.com/articles/disney-has-9-gaming-franchises-that-have-generated-1-billion-at-retail-including-kingdom-hearts/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/DISGames-1.png?w=300",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T14:26:23+00:00"
+    },
+    {
+      "id": "techpulse-276b1cbebb99f97f0b90",
+      "title": "UK video game industry charity football match raises over £63,000 for physically disabled gamers",
+      "description": "Video game charity SpecialEffect has once again hosted its One Big Game football event, bringing developers from all across the UK games industry together to raise money for a good cause. And with the event now over, more than £63,000 has been raised to help support physically disabled gamers. Read more",
+      "url": "https://www.eurogamer.net/special-effect-big-football-match-charity-50000",
+      "image": "https://assetsio.gnwcdn.com/specialeffect_boy_header.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Eurogamer.net Latest Articles Feed",
+      "published": "2026-08-14T14:21:11+00:00"
+    },
+    {
+      "id": "techpulse-e9c793197a397dee7e1a",
+      "title": "Compulsion Games becomes publisher of South of Midnight on Steam, suggesting departure from Xbox amid major restructuring is now complete",
+      "description": "Developer Compulsion Games is now listed as the publisher of its beautiful, musical action adventure game South of Midnight on Steam, suggesting that its full detachment from the Xbox division is complete. Read more",
+      "url": "https://www.eurogamer.net/compulsion-games-south-of-midnight-publisher-xbox-restructuring",
+      "image": "https://assetsio.gnwcdn.com/south-of-midnight_FEBooHb.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Eurogamer.net Latest Articles Feed",
+      "published": "2026-08-14T14:17:44+00:00"
+    },
+    {
+      "id": "techpulse-a4e7f22e6d871f438960",
+      "title": "The Modern Attack Chain: Rethinking Google Workspace Security in the Age of AI",
+      "description": "Google Workspace attacks do not always begin with phishing. Stolen OAuth tokens can provide another path into Gmail, Drive, and connected systems. Material Security explains why organizations need defenses that cover the entire Workspace attack chain. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/the-modern-attack-chain-rethinking-google-workspace-security-in-the-age-of-ai/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-14T14:00:10+00:00"
+    },
+    {
+      "id": "techpulse-23e4db4004f5a32c1f50",
+      "title": "Max severity SAP Commerce Cloud flaw now targeted in attacks",
+      "description": "A maximum-severity SAP Commerce Cloud remote code execution vulnerability patched three days ago is already being targeted in attacks, according to threat intelligence company Defused. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-14T13:45:18+00:00"
+    },
+    {
+      "id": "techpulse-54490659c9150e2a967b",
+      "title": "High On Life Is Coming To VR, And Yes, You Can Stroke Your Weird Guns",
+      "description": "High on Life is coming to a new platform, as the irreverent first-person shooter with talking alien guns is getting a VR port. Announced during the VR Games Showcase, this new version of High on Life will launch for Meta Quest, PlayStation VR2, and SteamVR headsets in 2027. Originally developed by Squanch Games, the...",
+      "url": "https://www.gamespot.com/articles/high-on-life-is-coming-to-vr-and-yes-you-can-stroke-your-weird-guns/",
+      "image": "https://www.gamespot.com/wp-content/uploads/original/1601/16018044/4077494-high-on-life-gun.jpg?w=300",
       "category": "PC Gaming",
       "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-14T21:15:48Z"
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T13:31:58+00:00"
+    },
+    {
+      "id": "techpulse-77e2223dbf6704ffc8e9",
+      "title": "Nintendo announces Pokémon Pokopia has sold over 5m copies, meaning that roughly one in four Switch 2 users now owns the game",
+      "description": "It looks like we've got another massive Pokémon-flavoured hit on our hands. Nintendo and The Pokémon Company have confirmed that Pokémon Pokopia has sold more than five million units globally - a pretty impressive number given the game has been out for \"just over four months\". These sales include both physical and...",
+      "url": "https://www.eurogamer.net/pokemon-pokopia-5m-sales",
+      "image": "https://assetsio.gnwcdn.com/pokopia-header.jpg?width=690&quality=85&format=jpg&auto=webp",
+      "category": "Console Gaming",
+      "mainCategory": "Gaming",
+      "source": "Eurogamer.net Latest Articles Feed",
+      "published": "2026-08-14T13:19:08+00:00"
+    },
+    {
+      "id": "techpulse-7fe53bc3ef157d3e16c9",
+      "title": "2011 Lord Of The Rings Game Didn’t Get A “Fair Shake” Launching Near Skyrim, Former WB Boss Says",
+      "description": "Christian Allen, who was on the leadership team at Warner Bros. Games when 2011's The Lord of the Rings: War in the North came out, has commented on the recent re-release , saying he's happy the game is coming back because it didn't get a \"fair shake\" upon its original release. Why's that? He said he \"argued...",
+      "url": "https://www.gamespot.com/articles/2011-lord-of-the-rings-game-didnt-get-a-fair-shake-launching-near-skyrim-former-wb-boss-says/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/warinthenorth.jpg?w=300",
+      "category": "Game Releases",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T13:13:35+00:00"
+    },
+    {
+      "id": "techpulse-ecc1f6e6c527e2ab0e23",
+      "title": "2K Games Is Making A New Sports Franchise, And All Signs Point To Soccer",
+      "description": "2K Games has announced the formation of Small Axe Studios, a new developer that it says will be focused on building a new \"blockbuster\" sports franchise. While the publisher--which is owned by Take-Two Interactive--has commented which sport will be joining its other franchises, it looks like 2K might be taking on EA's...",
+      "url": "https://www.gamespot.com/articles/2k-games-is-making-a-new-sports-franchise-and-all-signs-point-to-soccer/",
+      "image": "https://www.gamespot.com/wp-content/uploads/2026/08/Small-Axe.jpg?w=300",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "GameSpot - All News",
+      "published": "2026-08-14T12:14:28+00:00"
+    },
+    {
+      "id": "techpulse-7b19601eb51ff90b10a7",
+      "title": "Understanding the Role of Latent Space in Machine Learning Models",
+      "description": "In this article, you will learn what latent spaces are and how they serve three distinct roles — descriptive, generative, and predictive — across a...",
+      "url": "https://machinelearningmastery.com/understanding-the-role-of-latent-space-in-machine-learning-models/",
+      "image": "https://machinelearningmastery.com/wp-content/uploads/2026/08/mlm-understanding-the-role-of-latent-space-in-machine-learning-models-feature.png",
+      "category": "Artificial Intelligence",
+      "mainCategory": "Technology",
+      "source": "MachineLearningMastery.com",
+      "published": "2026-08-14T12:00:23+00:00"
+    },
+    {
+      "id": "techpulse-6e395c55eaca9e380d98",
+      "title": "Best Wireless Chargers (2026): My Picks After Testing 100+",
+      "description": "Stop fumbling for cables in the dark. These WIRED-tested stands and pads will take the hassle out of refueling your phone, wireless earbuds, and watch.",
+      "url": "https://www.wired.com/gallery/best-wireless-chargers/",
+      "image": "https://media.wired.com/photos/6a0f6f4c9c4f912eb7592888/master/pass/Best%20Wireless%20Chargers%20top%20art%20052026%20SOURCE%20Amazon-Nomad%20Goods.jpg",
+      "category": "Emerging Technology",
+      "mainCategory": "Technology",
+      "source": "WIRED",
+      "published": "2026-08-14T12:00:00+00:00"
+    },
+    {
+      "id": "techpulse-82b2cece2bc793b99246",
+      "title": "Shell investigates 'potential incident' after Clop data theft claims",
+      "description": "Oil giant Shell has confirmed it is investigating a potential security incident after the Clop ransomware gang claimed it stole 89GB of data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/shell-investigates-potential-incident-after-clop-data-theft-claims/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-14T11:55:45+00:00"
     }
   ]
 }
