@@ -48,7 +48,7 @@ jobs:
       - name: Run news fetcher
         run: |
           echo "Starting fetch_news.py..."
-          python -u fetch_news.py
+          python -u scripts/fetch_news.py
 
       - name: Validate news.json
         run: |
