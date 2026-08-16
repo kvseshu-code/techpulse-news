@@ -1,9 +1,22 @@
 {
   "success": true,
-  "updatedAt": "2026-08-16T21:58:00.444457+00:00",
-  "serverTime": "2026-08-16T21:58:00.444457+00:00",
+  "updatedAt": "2026-08-16T22:00:15.630232+00:00",
+  "serverTime": "2026-08-16T22:00:15.630232+00:00",
   "total": 120,
   "articles": [
+    {
+      "id": "news_99ef33fc385f9c90",
+      "title": "Mahershala Ali’s 'Blade' Is Dead, But His Forgotten 4-Part Sci-Fi Masterpiece Is Free on Streaming",
+      "description": "You can still watch the actor play a superhero in his breakout role",
+      "url": "https://www.polygon.com/4400-mahershala-ali-free-streaming-tubi/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/l-intro-1621971205.jpg",
+      "source": "Polygon",
+      "sourceWebsite": "https://www.polygon.com/",
+      "mainCategory": "Gaming",
+      "category": "Gaming Updates",
+      "published": "2026-08-16T22:00:12+00:00",
+      "publishedTimestamp": 1786917612000
+    },
     {
       "id": "news_968e2ab8400f33b5",
       "title": "OpenAI reportedly disbanded its preparedness team",
@@ -278,19 +291,6 @@
       "publishedTimestamp": 1786899612000
     },
     {
-      "id": "news_d4e4ee7d1959b380",
-      "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
-      "description": "The legendary game designer guides us through the games on his PC.",
-      "url": "https://www.pcgamer.com/gaming-industry/david-brevik-creator-of-diablo-reveals-the-worst-ending-to-any-game-hes-played-but-i-really-love-the-game-its-amazing/",
-      "image": "https://cdn.mos.cms.futurecdn.net/uh26LEAoSbJah73QhMhjRH-1280-80.jpg",
-      "source": "PC Gamer",
-      "sourceWebsite": "https://www.pcgamer.com/",
-      "mainCategory": "Gaming",
-      "category": "Game Development",
-      "published": "2026-08-16T17:00:00+00:00",
-      "publishedTimestamp": 1786899600000
-    },
-    {
       "id": "news_f32f5acf1ce87175",
       "title": "Where's the weirdest place you've heard videogame music?",
       "description": "Why does hearing it in public places feel so… wrong?",
@@ -300,6 +300,19 @@
       "sourceWebsite": "https://www.pcgamer.com/",
       "mainCategory": "Gaming",
       "category": "Gaming Updates",
+      "published": "2026-08-16T17:00:00+00:00",
+      "publishedTimestamp": 1786899600000
+    },
+    {
+      "id": "news_d4e4ee7d1959b380",
+      "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
+      "description": "The legendary game designer guides us through the games on his PC.",
+      "url": "https://www.pcgamer.com/gaming-industry/david-brevik-creator-of-diablo-reveals-the-worst-ending-to-any-game-hes-played-but-i-really-love-the-game-its-amazing/",
+      "image": "https://cdn.mos.cms.futurecdn.net/uh26LEAoSbJah73QhMhjRH-1280-80.jpg",
+      "source": "PC Gamer",
+      "sourceWebsite": "https://www.pcgamer.com/",
+      "mainCategory": "Gaming",
+      "category": "Game Development",
       "published": "2026-08-16T17:00:00+00:00",
       "publishedTimestamp": 1786899600000
     },
@@ -549,19 +562,6 @@
       "category": "Hardware & Devices",
       "published": "2026-08-16T14:56:40+00:00",
       "publishedTimestamp": 1786892200000
-    },
-    {
-      "id": "news_4a053b4b47b6e021",
-      "title": "Ron Gilbert Says Making Another 'Monkey Island' Game Would Be \"Really Complicated\"",
-      "description": "Ron Gilbert would have to deal with a lot of big companies to make a new Monkey Island, but he doesn't have to for Thimbleweed Park 2",
-      "url": "https://www.polygon.com/no-new-monkey-island-ron-gilbert/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24028287/money_island_head.jpg",
-      "source": "Polygon",
-      "sourceWebsite": "https://www.polygon.com/",
-      "mainCategory": "Gaming",
-      "category": "Gaming Updates",
-      "published": "2026-08-16T14:55:59+00:00",
-      "publishedTimestamp": 1786892159000
     },
     {
       "id": "news_c5469f174677124a",
