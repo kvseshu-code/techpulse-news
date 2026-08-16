@@ -1,8 +1,8 @@
 {
   "success": true,
-  "last_updated": "2026-08-16T23:12:28.912940+00:00",
+  "last_updated": "2026-08-16T23:12:48.316059+00:00",
   "article_count": 120,
-  "fetch_duration_seconds": 2.36,
+  "fetch_duration_seconds": 2.16,
   "sources": [
     {
       "name": "TechCrunch",
@@ -11,7 +11,7 @@
       "ok": true,
       "article_count": 20,
       "error": null,
-      "checked_at": "2026-08-16T23:12:26.553457+00:00"
+      "checked_at": "2026-08-16T23:12:46.155260+00:00"
     },
     {
       "name": "The Verge",
@@ -20,7 +20,7 @@
       "ok": true,
       "article_count": 10,
       "error": null,
-      "checked_at": "2026-08-16T23:12:26.626741+00:00"
+      "checked_at": "2026-08-16T23:12:46.214123+00:00"
     },
     {
       "name": "Ars Technica",
@@ -29,7 +29,7 @@
       "ok": true,
       "article_count": 20,
       "error": null,
-      "checked_at": "2026-08-16T23:12:26.756453+00:00"
+      "checked_at": "2026-08-16T23:12:46.300327+00:00"
     },
     {
       "name": "Wired",
@@ -38,7 +38,7 @@
       "ok": true,
       "article_count": 50,
       "error": null,
-      "checked_at": "2026-08-16T23:12:26.883011+00:00"
+      "checked_at": "2026-08-16T23:12:46.481220+00:00"
     },
     {
       "name": "ZDNET",
@@ -47,7 +47,7 @@
       "ok": false,
       "article_count": 0,
       "error": "RuntimeError: <unknown>:3:0: XML or text declaration not at start of entity",
-      "checked_at": "2026-08-16T23:12:27.077790+00:00"
+      "checked_at": "2026-08-16T23:12:46.573951+00:00"
     },
     {
       "name": "IGN",
@@ -56,7 +56,7 @@
       "ok": true,
       "article_count": 20,
       "error": null,
-      "checked_at": "2026-08-16T23:12:27.146754+00:00"
+      "checked_at": "2026-08-16T23:12:46.619044+00:00"
     },
     {
       "name": "GameSpot",
@@ -65,7 +65,7 @@
       "ok": true,
       "article_count": 30,
       "error": null,
-      "checked_at": "2026-08-16T23:12:27.472701+00:00"
+      "checked_at": "2026-08-16T23:12:46.947676+00:00"
     },
     {
       "name": "PC Gamer",
@@ -74,7 +74,7 @@
       "ok": true,
       "article_count": 50,
       "error": null,
-      "checked_at": "2026-08-16T23:12:27.785320+00:00"
+      "checked_at": "2026-08-16T23:12:47.318534+00:00"
     },
     {
       "name": "Eurogamer",
@@ -83,7 +83,7 @@
       "ok": true,
       "article_count": 100,
       "error": null,
-      "checked_at": "2026-08-16T23:12:28.552694+00:00"
+      "checked_at": "2026-08-16T23:12:47.937624+00:00"
     }
   ],
   "articles": [
