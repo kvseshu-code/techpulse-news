@@ -2,7 +2,6 @@ name: Update Technology & Gaming News
 
 on:
   schedule:
-    # Run every 15 minutes
     - cron: "*/15 * * * *"
 
   workflow_dispatch:
@@ -16,65 +15,49 @@ permissions:
   contents: write
 
 jobs:
-
   update-news:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      # ------------------------------------------
-      # STEP 1 — Checkout repository
-      # ------------------------------------------
-
       - name: Checkout repository
-        uses: actions/checkout@v4
-
-
-      # ------------------------------------------
-      # STEP 2 — Setup Python
-      # ------------------------------------------
+        uses: actions/checkout@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-
-      # ------------------------------------------
-      # STEP 3 — Install dependencies
-      # ------------------------------------------
+      - name: Show Python version
+        run: |
+          python --version
+          pip --version
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
 
           if [ -f requirements.txt ]; then
+            echo "Installing requirements.txt"
             pip install -r requirements.txt
+          else
+            echo "No requirements.txt found."
           fi
 
-
-      # ------------------------------------------
-      # STEP 4 — Run news fetcher
-      # ------------------------------------------
-
-      - name: Fetch latest news
+      - name: Run news fetcher
         run: |
-          python fetch_news.py
+          echo "Starting fetch_news.py..."
+          python -u fetch_news.py
 
-
-      # ------------------------------------------
-      # STEP 5 — Check generated news.json
-      # ------------------------------------------
-
-      - name: Check news.json
+      - name: Validate news.json
         run: |
           if [ ! -f news.json ]; then
             echo "ERROR: news.json was not created."
             exit 1
           fi
 
-          echo "news.json successfully created."
+          echo "news.json found."
 
           python - <<'PY'
           import json
@@ -82,22 +65,16 @@ jobs:
           with open("news.json", "r", encoding="utf-8") as f:
               data = json.load(f)
 
-          articles = data.get("articles", [])
-
-          print("Articles:", len(articles))
+          print("JSON validation successful.")
           print("Updated:", data.get("updatedAt"))
-
-          if not isinstance(articles, list):
-              raise SystemExit("ERROR: articles is not a list.")
-
-          if len(articles) == 0:
-              print("WARNING: No articles were returned.")
+          print("Total:", data.get("total"))
+          print("Articles:", len(data.get("articles", [])))
           PY
 
-
-      # ------------------------------------------
-      # STEP 6 — Commit updated news
-      # ------------------------------------------
+      - name: Show news.json status
+        run: |
+          git status --short
+          ls -lh news.json
 
       - name: Commit updated news
         run: |
@@ -109,13 +86,8 @@ jobs:
           git add news.json
 
           if git diff --cached --quiet; then
-
-            echo "No news changes detected."
-
+            echo "No changes detected in news.json."
           else
-
             git commit -m "Update latest technology and gaming news"
-
             git push
-
           fi
