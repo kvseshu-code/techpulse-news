@@ -1,10 +1,14 @@
+'use strict';
+
+
 /* =========================================================
-   TECHPULSE — GitHub Pages Frontend
-   Loads news from news.json
-   No Google Apps Script dependency
+   CONFIGURATION
    ========================================================= */
 
-'use strict';
+const NEWS_FILE = './news.json';
+
+const AUTO_REFRESH_INTERVAL =
+  2 * 60 * 1000;
 
 
 /* =========================================================
@@ -18,13 +22,6 @@ let currentMainCategory = 'All';
 let currentSubcategory = 'All';
 
 let lastUpdatedAt = null;
-
-let knownArticleIds = new Set();
-
-
-const NEWS_FILE = './news.json';
-
-const AUTO_REFRESH_INTERVAL = 2 * 60 * 1000;
 
 
 /* =========================================================
@@ -95,13 +92,18 @@ document.addEventListener(
 
     loadSavedTheme();
 
+    setupEvents();
+
     buildSubcategoryNav();
+
+    updateSectionTitle();
 
     loadNews(true);
 
 
     /*
-     * Check for updated news every 2 minutes.
+     * Browser automatically checks for
+     * updated news every two minutes.
      */
 
     setInterval(
@@ -115,20 +117,93 @@ document.addEventListener(
 
 
     /*
-     * Update relative article times every minute.
+     * Update relative article times
+     * every minute.
      */
 
     setInterval(
-      function () {
-
-        refreshVisibleTimes();
-
-      },
+      refreshVisibleTimes,
       60 * 1000
     );
 
   }
 );
+
+
+/* =========================================================
+   EVENTS
+   ========================================================= */
+
+function setupEvents() {
+
+  document
+    .querySelectorAll(
+      '.main-nav button'
+    )
+    .forEach(
+      function (button) {
+
+        button.addEventListener(
+          'click',
+          function () {
+
+            selectMainCategory(
+              button.dataset.mainCategory,
+              button
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+  const search =
+    document.getElementById(
+      'search'
+    );
+
+  if (search) {
+
+    search.addEventListener(
+      'input',
+      applyFilters
+    );
+
+  }
+
+
+  const refreshButton =
+    document.getElementById(
+      'refreshButton'
+    );
+
+  if (refreshButton) {
+
+    refreshButton.addEventListener(
+      'click',
+      manualRefresh
+    );
+
+  }
+
+
+  const themeButton =
+    document.getElementById(
+      'themeButton'
+    );
+
+  if (themeButton) {
+
+    themeButton.addEventListener(
+      'click',
+      toggleTheme
+    );
+
+  }
+
+}
 
 
 /* =========================================================
@@ -139,44 +214,27 @@ async function loadNews(
   forceRefresh = false
 ) {
 
-  const status =
-    document.getElementById(
-      'statusText'
-    );
-
-
-  if (status) {
-
-    status.textContent =
-      forceRefresh
-        ? 'Loading latest news...'
-        : 'Checking for latest news...';
-
-  }
+  setStatus(
+    forceRefresh
+      ? 'Loading latest news...'
+      : 'Checking for latest news...',
+    false
+  );
 
 
   try {
 
-    /*
-     * Cache busting is used during refresh.
-     *
-     * This prevents the browser from
-     * continuously displaying an old
-     * cached news.json.
-     */
-
-    const cacheParameter =
-      '?t=' + Date.now();
-
-
     const response =
       await fetch(
-        NEWS_FILE + cacheParameter,
+        NEWS_FILE +
+        '?t=' +
+        Date.now(),
         {
           method: 'GET',
           cache: 'no-store',
           headers: {
-            'Accept': 'application/json'
+            'Accept':
+              'application/json'
           }
         }
       );
@@ -233,21 +291,6 @@ async function loadNews(
       new Date().toISOString();
 
 
-    allArticles.forEach(
-      function (article) {
-
-        knownArticleIds.add(
-          article.id
-        );
-
-      }
-    );
-
-
-    /*
-     * Sort newest first.
-     */
-
     allArticles.sort(
       function (a, b) {
 
@@ -282,34 +325,34 @@ async function loadNews(
       ).length;
 
 
-    if (status) {
+    if (
+      previousIds.size > 0 &&
+      newCount > 0
+    ) {
 
-      if (
-        previousIds.size > 0 &&
-        newCount > 0
-      ) {
+      setStatus(
+        newCount +
+        (
+          newCount === 1
+            ? ' new story'
+            : ' new stories'
+        ) +
+        ' found • Updated ' +
+        formatTime(
+          lastUpdatedAt
+        ),
+        false
+      );
 
-        status.textContent =
-          newCount +
-          (
-            newCount === 1
-              ? ' new story'
-              : ' new stories'
-          ) +
-          ' found • Updated ' +
-          formatTime(
-            lastUpdatedAt
-          );
+    } else {
 
-      } else {
-
-        status.textContent =
-          'News updated ' +
-          formatTime(
-            lastUpdatedAt
-          );
-
-      }
+      setStatus(
+        'News updated ' +
+        formatTime(
+          lastUpdatedAt
+        ),
+        false
+      );
 
     }
 
@@ -318,6 +361,12 @@ async function loadNews(
     console.error(
       'TechPulse news error:',
       error
+    );
+
+
+    setStatus(
+      'News service temporarily unavailable',
+      true
     );
 
 
@@ -332,7 +381,7 @@ async function loadNews(
 
 
 /* =========================================================
-   NORMALIZE ARTICLES
+   NORMALIZE
    ========================================================= */
 
 function normalizeArticles(
@@ -342,12 +391,6 @@ function normalizeArticles(
   return articles
     .map(
       function (article, index) {
-
-        const published =
-          article.published ||
-          article.pubDate ||
-          new Date().toISOString();
-
 
         const title =
           article.title ||
@@ -360,25 +403,30 @@ function normalizeArticles(
           '#';
 
 
-        const id =
-          article.id ||
-          createArticleId(
-            title,
-            url,
-            published,
-            index
-          );
+        const published =
+          article.published ||
+          article.pubDate ||
+          new Date().toISOString();
 
 
         return {
 
-          id: String(id),
+          id:
+            String(
+              article.id ||
+              createArticleId(
+                title,
+                url,
+                published,
+                index
+              )
+            ),
 
           title:
             String(title),
 
           description:
-            String(
+            cleanText(
               article.description ||
               'Read the latest story from the original publisher.'
             ),
@@ -395,7 +443,7 @@ function normalizeArticles(
           category:
             String(
               article.category ||
-              'General'
+              'Technology'
             ),
 
           mainCategory:
@@ -409,7 +457,7 @@ function normalizeArticles(
           source:
             String(
               article.source ||
-              'TechPulse'
+              'News Source'
             ),
 
           published:
@@ -424,7 +472,7 @@ function normalizeArticles(
 
 
 /* =========================================================
-   CREATE ARTICLE ID
+   ARTICLE ID
    ========================================================= */
 
 function createArticleId(
@@ -476,7 +524,7 @@ function createArticleId(
 
 
 /* =========================================================
-   DETECT MAIN CATEGORY
+   CATEGORY DETECTION
    ========================================================= */
 
 function detectMainCategory(
@@ -496,11 +544,9 @@ function detectMainCategory(
     'game',
     'games',
     'esports',
-    'playstation',
-    'xbox',
-    'nintendo',
-    'steam',
-    'pc gaming'
+    'console',
+    'pc gaming',
+    'mobile gaming'
 
   ];
 
@@ -521,48 +567,6 @@ function detectMainCategory(
 
 
   return 'Technology';
-
-}
-
-
-/* =========================================================
-   MANUAL REFRESH
-   ========================================================= */
-
-function manualRefresh() {
-
-  const button =
-    document.getElementById(
-      'refreshButton'
-    );
-
-
-  if (button) {
-
-    button.disabled = true;
-
-    button.textContent =
-      'Refreshing...';
-
-  }
-
-
-  loadNews(true)
-    .finally(
-      function () {
-
-        if (button) {
-
-          button.disabled =
-            false;
-
-          button.textContent =
-            '↻ Refresh';
-
-        }
-
-      }
-    );
 
 }
 
@@ -664,7 +668,7 @@ function selectSubcategory(
 
 
 /* =========================================================
-   BUILD SUBCATEGORY NAV
+   BUILD SUBCATEGORY
    ========================================================= */
 
 function buildSubcategoryNav() {
@@ -705,22 +709,17 @@ function buildSubcategoryNav() {
 
           const active =
             (
-              (
-                index === 0 &&
-                currentSubcategory === 'All'
-              ) ||
-              currentSubcategory === value
-            );
+              index === 0 &&
+              currentSubcategory === 'All'
+            ) ||
+            currentSubcategory === value;
 
 
           return `
 
             <button
               class="${active ? 'active' : ''}"
-              onclick="selectSubcategory(
-                '${escapeJs(value)}',
-                this
-              )"
+              data-subcategory="${escapeHtml(value)}"
             >
               ${escapeHtml(category)}
             </button>
@@ -730,6 +729,27 @@ function buildSubcategoryNav() {
         }
       )
       .join('');
+
+
+  nav
+    .querySelectorAll('button')
+    .forEach(
+      function (button) {
+
+        button.addEventListener(
+          'click',
+          function () {
+
+            selectSubcategory(
+              button.dataset.subcategory,
+              button
+            );
+
+          }
+        );
+
+      }
+    );
 
 }
 
@@ -772,19 +792,17 @@ function applyFilters() {
           currentSubcategory;
 
 
-        const searchText = (
-
-          article.title +
-          ' ' +
-          article.description +
-          ' ' +
-          article.category +
-          ' ' +
-          article.mainCategory +
-          ' ' +
-          article.source
-
-        ).toLowerCase();
+        const searchText =
+          (
+            article.title +
+            ' ' +
+            article.description +
+            ' ' +
+            article.category +
+            ' ' +
+            article.mainCategory
+          )
+          .toLowerCase();
 
 
         const searchMatch =
@@ -866,7 +884,7 @@ function renderNews(
         </h3>
 
         <p>
-          Try another topic or search term.
+          Try another category or search term.
         </p>
 
       </div>
@@ -913,10 +931,8 @@ function createArticleCard(
 
   const isNew =
     !isNaN(publishedTime) &&
-    (
-      Date.now() -
-      publishedTime
-    ) <
+    Date.now() -
+    publishedTime <
     2 * 60 * 60 * 1000;
 
 
@@ -930,9 +946,7 @@ function createArticleCard(
   let imageHtml = `
 
     <div class="image-placeholder">
-
       ${placeholder}
-
     </div>
 
   `;
@@ -953,7 +967,10 @@ function createArticleCard(
         alt=""
         loading="lazy"
         referrerpolicy="no-referrer"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        onerror="
+          this.style.display='none';
+          this.nextElementSibling.style.display='flex';
+        "
       >
 
       <div
@@ -1162,6 +1179,16 @@ function renderHero() {
 
     `;
 
+
+    hero.onclick =
+      function () {
+
+        openArticle(
+          latest.url
+        );
+
+      };
+
   }
 
 
@@ -1193,7 +1220,7 @@ function renderHero() {
 
 
 /* =========================================================
-   QUICK HERO CARD
+   QUICK CARD
    ========================================================= */
 
 function createQuickHeroCard(
@@ -1226,9 +1253,7 @@ function createQuickHeroCard(
 
     <div
       class="quick-card"
-      onclick="openArticle('${escapeJs(
-        article.url
-      )}')"
+      data-url="${escapeHtml(article.url)}"
     >
 
       <div class="quick-label">
@@ -1239,6 +1264,20 @@ function createQuickHeroCard(
 
         ${escapeHtml(
           article.title
+        )}
+
+      </div>
+
+      <div class="quick-meta">
+
+        ${escapeHtml(
+          article.source
+        )}
+
+        •
+
+        ${formatRelativeTime(
+          article.published
         )}
 
       </div>
@@ -1344,18 +1383,7 @@ function formatRelativeTime(
     );
 
 
-  if (
-    seconds < 0
-  ) {
-
-    return 'Just now';
-
-  }
-
-
-  if (
-    seconds < 60
-  ) {
+  if (seconds < 60) {
 
     return 'Just now';
 
@@ -1368,9 +1396,7 @@ function formatRelativeTime(
     );
 
 
-  if (
-    minutes < 60
-  ) {
+  if (minutes < 60) {
 
     return (
       minutes +
@@ -1386,9 +1412,7 @@ function formatRelativeTime(
     );
 
 
-  if (
-    hours < 24
-  ) {
+  if (hours < 24) {
 
     return (
       hours +
@@ -1404,9 +1428,7 @@ function formatRelativeTime(
     );
 
 
-  if (
-    days === 1
-  ) {
+  if (days === 1) {
 
     return 'Yesterday';
 
@@ -1422,7 +1444,7 @@ function formatRelativeTime(
 
 
 /* =========================================================
-   SERVER / JSON UPDATE TIME
+   TIME
    ========================================================= */
 
 function formatTime(
@@ -1456,7 +1478,7 @@ function formatTime(
 
 
 /* =========================================================
-   REFRESH VISIBLE TIMES
+   VISIBLE TIMES
    ========================================================= */
 
 function refreshVisibleTimes() {
@@ -1495,11 +1517,12 @@ function refreshVisibleTimes() {
 
 
 /* =========================================================
-   ERROR
+   STATUS
    ========================================================= */
 
-function showError(
-  message
+function setStatus(
+  message,
+  error
 ) {
 
   const status =
@@ -1508,13 +1531,39 @@ function showError(
     );
 
 
+  const dot =
+    document.getElementById(
+      'statusDot'
+    );
+
+
   if (status) {
 
     status.textContent =
-      'News service temporarily unavailable';
+      message;
 
   }
 
+
+  if (dot) {
+
+    dot.classList.toggle(
+      'error',
+      Boolean(error)
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+function showError(
+  message
+) {
 
   const container =
     document.getElementById(
@@ -1549,7 +1598,7 @@ function showError(
 
       <button
         class="refresh-btn"
-        onclick="manualRefresh()"
+        id="retryButton"
       >
         Try Again
       </button>
@@ -1557,6 +1606,64 @@ function showError(
     </div>
 
   `;
+
+
+  const retry =
+    document.getElementById(
+      'retryButton'
+    );
+
+
+  if (retry) {
+
+    retry.addEventListener(
+      'click',
+      manualRefresh
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   MANUAL REFRESH
+   ========================================================= */
+
+function manualRefresh() {
+
+  const button =
+    document.getElementById(
+      'refreshButton'
+    );
+
+
+  if (button) {
+
+    button.disabled = true;
+
+    button.textContent =
+      'Refreshing...';
+
+  }
+
+
+  loadNews(true)
+    .finally(
+      function () {
+
+        if (button) {
+
+          button.disabled =
+            false;
+
+          button.textContent =
+            '↻ Refresh';
+
+        }
+
+      }
+    );
 
 }
 
@@ -1582,6 +1689,35 @@ function openArticle(
   }
 
 }
+
+
+/* =========================================================
+   QUICK CARD CLICK HANDLER
+   ========================================================= */
+
+document.addEventListener(
+  'click',
+  function (event) {
+
+    const card =
+      event.target.closest(
+        '.quick-card[data-url]'
+      );
+
+
+    if (!card) {
+
+      return;
+
+    }
+
+
+    openArticle(
+      card.dataset.url
+    );
+
+  }
+);
 
 
 /* =========================================================
@@ -1619,26 +1755,42 @@ function toggleTheme() {
   }
 
 
+  updateThemeButton();
+
+}
+
+
+/* =========================================================
+   THEME
+   ========================================================= */
+
+function updateThemeButton() {
+
   const button =
     document.getElementById(
       'themeButton'
     );
 
 
-  if (button) {
+  if (!button) {
 
-    button.textContent =
-      dark
-        ? '☀'
-        : '☾';
+    return;
 
   }
+
+
+  button.textContent =
+    document.body.classList.contains(
+      'dark'
+    )
+      ? '☀'
+      : '☾';
 
 }
 
 
 /* =========================================================
-   LOAD SAVED THEME
+   LOAD THEME
    ========================================================= */
 
 function loadSavedTheme() {
@@ -1668,21 +1820,42 @@ function loadSavedTheme() {
       'dark'
     );
 
-
-    const button =
-      document.getElementById(
-        'themeButton'
-      );
-
-
-    if (button) {
-
-      button.textContent =
-        '☀';
-
-    }
-
   }
+
+
+  updateThemeButton();
+
+}
+
+
+/* =========================================================
+   CLEAN TEXT
+   ========================================================= */
+
+function cleanText(
+  value
+) {
+
+  const temporary =
+    document.createElement(
+      'div'
+    );
+
+
+  temporary.innerHTML =
+    String(value || '');
+
+
+  return (
+    temporary.textContent ||
+    temporary.innerText ||
+    ''
+  )
+    .replace(
+      /\s+/g,
+      ' '
+    )
+    .trim();
 
 }
 
@@ -1719,39 +1892,6 @@ function escapeHtml(
     .replace(
       /'/g,
       '&#039;'
-    );
-
-}
-
-
-/* =========================================================
-   ESCAPE JAVASCRIPT
-   ========================================================= */
-
-function escapeJs(
-  value
-) {
-
-  return String(
-    value == null
-      ? ''
-      : value
-  )
-    .replace(
-      /\\/g,
-      '\\\\'
-    )
-    .replace(
-      /'/g,
-      "\\'"
-    )
-    .replace(
-      /\r/g,
-      '\\r'
-    )
-    .replace(
-      /\n/g,
-      '\\n'
     );
 
 }
