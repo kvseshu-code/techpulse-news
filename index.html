@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -13,13 +15,20 @@
     content="TechPulse — Technology, AI, Cybersecurity, Gaming and Space news."
   >
 
+  <meta
+    name="theme-color"
+    content="#07111f"
+  >
+
   <title>TechPulse — Technology & Gaming News</title>
 
   <link
     rel="stylesheet"
     href="style.css"
   >
+
 </head>
+
 
 <body>
 
@@ -46,11 +55,17 @@
       </a>
 
 
-      <nav class="main-nav">
+      <!-- DESKTOP NAVIGATION -->
+
+      <nav
+        class="main-nav"
+        aria-label="Main navigation"
+      >
 
         <button
           class="nav-link active"
           data-category="All"
+          data-i18n="all"
         >
           All
         </button>
@@ -58,6 +73,7 @@
         <button
           class="nav-link"
           data-category="Technology"
+          data-i18n="technology"
         >
           Technology
         </button>
@@ -65,6 +81,7 @@
         <button
           class="nav-link"
           data-category="AI"
+          data-i18n="ai"
         >
           AI
         </button>
@@ -72,6 +89,7 @@
         <button
           class="nav-link"
           data-category="Cybersecurity"
+          data-i18n="cybersecurity"
         >
           Cybersecurity
         </button>
@@ -79,6 +97,7 @@
         <button
           class="nav-link"
           data-category="Gaming"
+          data-i18n="gaming"
         >
           Gaming
         </button>
@@ -86,6 +105,7 @@
         <button
           class="nav-link"
           data-category="Space"
+          data-i18n="space"
         >
           Space
         </button>
@@ -93,7 +113,24 @@
       </nav>
 
 
+      <!-- HEADER ACTIONS -->
+
       <div class="header-actions">
+
+        <select
+          id="languageSelect"
+          class="language-select"
+          aria-label="Select language"
+        >
+
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="te">తెలుగు</option>
+          <option value="ta">தமிழ்</option>
+          <option value="kn">ಕನ್ನಡ</option>
+
+        </select>
+
 
         <button
           id="themeToggle"
@@ -102,6 +139,65 @@
           title="Toggle theme"
         >
           ☾
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- MOBILE CATEGORY NAVIGATION -->
+
+    <div class="mobile-category-bar">
+
+      <div class="container mobile-category-scroll">
+
+        <button
+          class="mobile-category active"
+          data-category="All"
+          data-i18n="all"
+        >
+          All
+        </button>
+
+        <button
+          class="mobile-category"
+          data-category="Technology"
+          data-i18n="technology"
+        >
+          Technology
+        </button>
+
+        <button
+          class="mobile-category"
+          data-category="AI"
+          data-i18n="ai"
+        >
+          AI
+        </button>
+
+        <button
+          class="mobile-category"
+          data-category="Cybersecurity"
+          data-i18n="cybersecurity"
+        >
+          Cybersecurity
+        </button>
+
+        <button
+          class="mobile-category"
+          data-category="Gaming"
+          data-i18n="gaming"
+        >
+          Gaming
+        </button>
+
+        <button
+          class="mobile-category"
+          data-category="Space"
+          data-i18n="space"
+        >
+          Space
         </button>
 
       </div>
@@ -126,44 +222,86 @@
         <div class="hero-content">
 
           <div class="eyebrow">
+
             <span class="live-dot"></span>
-            LIVE NEWS
+
+            <span data-i18n="liveNews">
+              LIVE NEWS
+            </span>
+
           </div>
+
 
           <h1>
             Stay ahead of
             <span>what's next.</span>
           </h1>
 
-          <p>
+
+          <p data-i18n="heroDescription">
             Technology, AI, cybersecurity, gaming and space
             news — gathered from trusted publishers and
             updated automatically.
           </p>
 
+
+          <div class="hero-actions">
+
+            <button
+              id="heroRefreshButton"
+              class="hero-refresh"
+            >
+              <span>↻</span>
+              <span data-i18n="refreshFeed">
+                Refresh Feed
+              </span>
+            </button>
+
+            <span
+              id="newStoriesBadge"
+              class="new-stories-badge hidden"
+            >
+              New stories available
+            </span>
+
+          </div>
+
         </div>
 
+
+        <!-- FEED STATUS -->
 
         <div class="hero-status">
 
           <div class="status-card">
 
-            <div class="status-label">
-              FEED STATUS
+            <div class="status-icon">
+              ●
             </div>
 
-            <div
-              id="feedStatus"
-              class="status-value"
-            >
-              Connecting...
-            </div>
+            <div>
 
-            <div
-              id="lastUpdated"
-              class="status-time"
-            >
-              Checking latest news
+              <div
+                class="status-label"
+                data-i18n="feedStatus"
+              >
+                FEED STATUS
+              </div>
+
+              <div
+                id="feedStatus"
+                class="status-value"
+              >
+                Connecting...
+              </div>
+
+              <div
+                id="lastUpdated"
+                class="status-time"
+              >
+                Checking latest news
+              </div>
+
             </div>
 
           </div>
@@ -176,7 +314,7 @@
 
 
     <!-- ===================================================
-         SEARCH / CONTROLS
+         CONTROLS
          =================================================== -->
 
     <section class="controls-section">
@@ -185,13 +323,17 @@
 
         <div class="search-wrapper">
 
-          <span class="search-icon">⌕</span>
+          <span class="search-icon">
+            ⌕
+          </span>
 
           <input
             id="searchInput"
             type="search"
             placeholder="Search technology news..."
+            data-i18n-placeholder="searchPlaceholder"
             autocomplete="off"
+            aria-label="Search news"
           >
 
         </div>
@@ -202,11 +344,15 @@
           class="refresh-button"
         >
 
-          <span id="refreshIcon">
+          <span
+            id="refreshIcon"
+          >
             ↻
           </span>
 
-          Refresh
+          <span data-i18n="refresh">
+            Refresh
+          </span>
 
         </button>
 
@@ -227,11 +373,14 @@
 
           <div>
 
-            <p class="section-kicker">
+            <p
+              class="section-kicker"
+              data-i18n="latest"
+            >
               THE LATEST
             </p>
 
-            <h2>
+            <h2 data-i18n="latestNews">
               Latest News
             </h2>
 
@@ -248,6 +397,21 @@
         </div>
 
 
+        <!-- TOP STORIES -->
+
+        <div class="top-stories-heading">
+
+          <div class="top-stories-line"></div>
+
+          <span data-i18n="topStories">
+            TOP STORIES
+          </span>
+
+          <div class="top-stories-line"></div>
+
+        </div>
+
+
         <!-- FEATURED STORY -->
 
         <div
@@ -259,7 +423,7 @@
 
             <div class="loading-spinner"></div>
 
-            <p>
+            <p data-i18n="loadingStory">
               Loading the latest story...
             </p>
 
@@ -279,7 +443,7 @@
 
             <div class="loading-spinner"></div>
 
-            <p>
+            <p data-i18n="loadingNews">
               Loading the latest news...
             </p>
 
@@ -299,11 +463,11 @@
             ◌
           </div>
 
-          <h3>
+          <h3 data-i18n="noStories">
             No stories found
           </h3>
 
-          <p>
+          <p data-i18n="tryAnother">
             Try another search or category.
           </p>
 
@@ -317,7 +481,11 @@
           class="error-state hidden"
         >
 
-          <h3>
+          <div class="error-icon">
+            !
+          </div>
+
+          <h3 data-i18n="unableLoad">
             Unable to load the news
           </h3>
 
@@ -328,6 +496,7 @@
           <button
             id="retryButton"
             class="retry-button"
+            data-i18n="tryAgain"
           >
             Try Again
           </button>
@@ -340,7 +509,7 @@
 
 
     <!-- ===================================================
-         CATEGORY SUMMARY
+         TOPICS
          =================================================== -->
 
     <section class="categories-section">
@@ -351,11 +520,14 @@
 
           <div>
 
-            <p class="section-kicker">
+            <p
+              class="section-kicker"
+              data-i18n="explore"
+            >
               EXPLORE
             </p>
 
-            <h2>
+            <h2 data-i18n="topics">
               Topics
             </h2>
 
@@ -375,7 +547,10 @@
               ◈
             </span>
 
-            <span class="category-name">
+            <span
+              class="category-name"
+              data-i18n="technology"
+            >
               Technology
             </span>
 
@@ -398,7 +573,10 @@
               ✦
             </span>
 
-            <span class="category-name">
+            <span
+              class="category-name"
+              data-i18n="artificialIntelligence"
+            >
               Artificial Intelligence
             </span>
 
@@ -421,7 +599,10 @@
               ◉
             </span>
 
-            <span class="category-name">
+            <span
+              class="category-name"
+              data-i18n="cybersecurity"
+            >
               Cybersecurity
             </span>
 
@@ -444,7 +625,10 @@
               ◆
             </span>
 
-            <span class="category-name">
+            <span
+              class="category-name"
+              data-i18n="gaming"
+            >
               Gaming
             </span>
 
@@ -467,7 +651,10 @@
               ✧
             </span>
 
-            <span class="category-name">
+            <span
+              class="category-name"
+              data-i18n="space"
+            >
               Space
             </span>
 
@@ -490,6 +677,75 @@
 
 
   <!-- =====================================================
+       AUDIO CONTROL BAR
+       ===================================================== -->
+
+  <div
+    id="audioBar"
+    class="audio-bar hidden"
+  >
+
+    <div class="container audio-inner">
+
+      <div class="audio-info">
+
+        <span class="audio-icon">
+          🔊
+        </span>
+
+        <div>
+
+          <strong
+            id="audioTitle"
+          >
+            TechPulse Narration
+          </strong>
+
+          <span
+            id="audioStatus"
+          >
+            Ready
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="audio-controls">
+
+        <button
+          id="audioPlay"
+          class="audio-button primary"
+          title="Play"
+        >
+          ▶
+        </button>
+
+        <button
+          id="audioPause"
+          class="audio-button"
+          title="Pause"
+        >
+          ⏸
+        </button>
+
+        <button
+          id="audioStop"
+          class="audio-button"
+          title="Stop"
+        >
+          ■
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
        FOOTER
        ===================================================== -->
 
@@ -503,7 +759,7 @@
           ⚡ TechPulse
         </div>
 
-        <p>
+        <p data-i18n="footerTagline">
           Technology news, simplified.
         </p>
 
@@ -512,14 +768,14 @@
 
       <div class="footer-note">
 
-        <p>
-          TechPulse provides news discovery and
-          summaries. Full stories remain with their
-          respective publishers.
+        <p data-i18n="footerDescription">
+          TechPulse provides news discovery and summaries.
+          Full stories remain with their respective publishers.
         </p>
 
         <p>
-          © <span id="currentYear"></span>
+          ©
+          <span id="currentYear"></span>
           TechPulse
         </p>
 
@@ -530,11 +786,8 @@
   </footer>
 
 
-  <!-- =====================================================
-       JAVASCRIPT
-       ===================================================== -->
-
   <script src="app.js"></script>
 
 </body>
+
 </html>
