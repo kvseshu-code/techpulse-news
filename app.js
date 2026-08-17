@@ -1,444 +1,1426 @@
-/* TechPulse Master Application Logic — Phase 3 */
+/************************************************************
+ * TECHPULSE FRONTEND
+ ************************************************************/
 
-const CONFIG = {
-  DATA_URL: './news.json',
-  CACHE_KEY: 'techpulse_news_cache',
-  THEME_KEY: 'techpulse_theme',
-  DEBOUNCE_MS: 250
+
+/*
+ * ==========================================================
+ * CONFIGURATION
+ * ==========================================================
+ */
+
+const API_URL =
+  'https://script.google.com/macros/s/AKfycbxcG1zxiqjZ8N1tYlF6kpLVbn597imA2n8W6Zruglk4QF6mbgXrUgTx2msHktYcL-TRwg/exec';
+
+
+const REFRESH_INTERVAL =
+  5 * 60 * 1000;
+
+
+/*
+ * ==========================================================
+ * APPLICATION STATE
+ * ==========================================================
+ */
+
+let allArticles = [];
+
+let currentCategory = 'All';
+
+let isLoading = false;
+
+
+/*
+ * ==========================================================
+ * DOM ELEMENTS
+ * ==========================================================
+ */
+
+const elements = {
+
+  newsGrid:
+    document.getElementById(
+      'newsGrid'
+    ),
+
+  featuredStory:
+    document.getElementById(
+      'featuredStory'
+    ),
+
+  articleCount:
+    document.getElementById(
+      'articleCount'
+    ),
+
+  feedStatus:
+    document.getElementById(
+      'feedStatus'
+    ),
+
+  lastUpdated:
+    document.getElementById(
+      'lastUpdated'
+    ),
+
+  searchInput:
+    document.getElementById(
+      'searchInput'
+    ),
+
+  refreshButton:
+    document.getElementById(
+      'refreshButton'
+    ),
+
+  refreshIcon:
+    document.getElementById(
+      'refreshIcon'
+    ),
+
+  emptyState:
+    document.getElementById(
+      'emptyState'
+    ),
+
+  errorState:
+    document.getElementById(
+      'errorState'
+    ),
+
+  errorMessage:
+    document.getElementById(
+      'errorMessage'
+    ),
+
+  retryButton:
+    document.getElementById(
+      'retryButton'
+    ),
+
+  themeToggle:
+    document.getElementById(
+      'themeToggle'
+    ),
+
+  currentYear:
+    document.getElementById(
+      'currentYear'
+    )
+
 };
 
-// Application State
-let state = {
-  articles: [],
-  filtered: [],
-  mainCategory: 'All',
-  subCategory: 'All',
-  searchQuery: '',
-  trendingFilter: null,
-  language: 'en',
-  speakingArticleId: null
-};
 
-// Subcategories Mapping
-const SUBCATEGORIES = {
-  All: ['All', 'Artificial Intelligence', 'Cybersecurity', 'Cloud & Infrastructure', 'Software & Applications', 'Hardware & Devices', 'Console Gaming', 'Game Releases', 'PC Gaming'],
-  Technology: ['All', 'Artificial Intelligence', 'Cybersecurity', 'Cloud & Infrastructure', 'Software & Applications', 'Hardware & Devices'],
-  Gaming: ['All', 'Console Gaming', 'Game Releases', 'PC Gaming']
-};
+/*
+ * ==========================================================
+ * INITIALIZATION
+ * ==========================================================
+ */
 
-document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
-  setupEventListeners();
-  initSubcategoryNav();
-  loadNewsData();
-  document.getElementById('year').textContent = new Date().getFullYear();
-});
+document.addEventListener(
+  'DOMContentLoaded',
+  function() {
 
-/* =====================================================
-   DATA FETCHING & CACHING
-   ===================================================== */
+    initializeTheme();
 
-async function loadNewsData() {
-  renderLoadingState();
-  try {
-    const response = await fetch(`${CONFIG.DATA_URL}?t=${Date.now()}`);
-    if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
-    const data = await response.json();
-    
-    // Cache payload for offline capability
-    localStorage.setItem(CONFIG.CACHE_KEY, JSON.stringify(data));
-    processNewsData(data);
-  } catch (error) {
-    console.warn('Network fetch failed. Loading local cache fallback:', error);
-    const cached = localStorage.getItem(CONFIG.CACHE_KEY);
-    if (cached) {
-      processNewsData(JSON.parse(cached));
-      updateStatus('Loaded from local cache (Offline)', true);
-    } else {
-      renderErrorState('Unable to load news. Please check your internet connection.');
-    }
-  }
-}
+    setupEventListeners();
 
-function processNewsData(data) {
-  state.articles = data.articles || [];
-  updateStatus(`Updated live • ${data.articles ? data.articles.length : 0} articles available`);
-  renderTrendingTopics(data.trendingTopics || []);
-  applyFilters();
-}
+    updateYear();
 
-function updateStatus(text, isWarning = false) {
-  const statusEl = document.getElementById('statusText');
-  const countEl = document.getElementById('articleCount');
-  if (statusEl) {
-    statusEl.textContent = text;
-    statusEl.style.color = isWarning ? 'var(--danger)' : 'var(--muted)';
-  }
-  if (countEl) countEl.textContent = `${state.filtered.length} articles`;
-}
+    loadNews();
 
-/* =====================================================
-   FILTERING & RENDERING PIPELINE
-   ===================================================== */
+    /*
+     * Background refresh.
+     */
 
-function applyFilters() {
-  let list = [...state.articles];
-
-  // Main Category
-  if (state.mainCategory !== 'All') {
-    list = list.filter(a => a.mainCategory === state.mainCategory);
-  }
-
-  // Subcategory
-  if (state.subCategory !== 'All') {
-    list = list.filter(a => a.category === state.subCategory);
-  }
-
-  // Trending Chip Filter
-  if (state.trendingFilter) {
-    const term = state.trendingFilter.toLowerCase();
-    list = list.filter(a => 
-      (a.keywords && a.keywords.some(k => k.toLowerCase() === term)) ||
-      a.title.toLowerCase().includes(term)
+    setInterval(
+      loadNews,
+      REFRESH_INTERVAL
     );
+
   }
+);
 
-  // Live Search Query
-  if (state.searchQuery) {
-    const q = state.searchQuery.toLowerCase();
-    list = list.filter(a => 
-      a.title.toLowerCase().includes(q) || 
-      a.description.toLowerCase().includes(q) ||
-      (a.source && a.source.toLowerCase().includes(q))
-    );
-  }
 
-  state.filtered = list;
-  updateStatus(`Displaying ${list.length} stories`);
-  renderHeroSection(list);
-  renderNewsGrid(list.slice(3)); // Top 3 populate the Hero section
-}
-
-/* =====================================================
-   UI COMPONENT RENDERING
-   ===================================================== */
-
-function renderHeroSection(articles) {
-  const heroMain = document.getElementById('heroMain');
-  const heroSide = document.getElementById('heroSide');
-  if (!heroMain || !heroSide) return;
-
-  if (!articles.length) {
-    heroMain.style.display = 'none';
-    heroSide.style.display = 'none';
-    return;
-  }
-
-  heroMain.style.display = 'flex';
-  heroSide.style.display = 'grid';
-
-  // Hero Article 1 (Primary Highlight)
-  const topArticle = articles[0];
-  heroMain.onclick = () => window.open(topArticle.url, '_blank', 'noopener,noreferrer');
-  heroMain.querySelector('.hero-label').textContent = topArticle.category || 'Featured';
-  heroMain.querySelector('.hero-title').textContent = topArticle.title;
-  heroMain.querySelector('.hero-summary').textContent = topArticle.description;
-  heroMain.querySelector('.hero-meta').textContent = `${topArticle.source} • ${formatDate(topArticle.published)}`;
-
-  // Hero Side Articles (Positions 2 & 3)
-  const sideArticles = articles.slice(1, 3);
-  heroSide.innerHTML = sideArticles.map(a => `
-    <div class="quick-card" onclick="window.open('${escapeHtml(a.url)}', '_blank', 'noopener,noreferrer')">
-      <div class="quick-label">${escapeHtml(a.category)}</div>
-      <div class="quick-title">${escapeHtml(a.title)}</div>
-    </div>
-  `).join('');
-}
-
-function renderNewsGrid(articles) {
-  const container = document.getElementById('newsContainer');
-  if (!container) return;
-
-  if (!articles.length && state.filtered.length <= 3) {
-    if (!state.filtered.length) {
-      container.innerHTML = `
-        <div class="empty">
-          <div class="empty-icon">🔍</div>
-          <h3>No articles found</h3>
-          <p>Try adjusting your search query or selecting a different category.</p>
-        </div>
-      `;
-    } else {
-      container.innerHTML = ''; // Hero handles the top articles
-    }
-    return;
-  }
-
-  container.innerHTML = `
-    <div class="news-grid">
-      ${articles.map(createArticleCard).join('')}
-    </div>
-  `;
-
-  setupAudioListeners();
-}
-
-function createArticleCard(article) {
-  const isSpeaking = state.speakingArticleId === article.id;
-  const keywordBadges = (article.keywords || [])
-    .slice(0, 2)
-    .map(kw => `<span class="category-badge" style="background:var(--bg);color:var(--text);border:1px solid var(--border);">${escapeHtml(kw)}</span>`)
-    .join(' ');
-
-  return `
-    <article class="article">
-      <div class="article-body">
-        <div class="article-top">
-          <span class="category-badge">${escapeHtml(article.category)}</span>
-          ${article.trending ? '<span class="trending-badge">🔥 Trending</span>' : ''}
-        </div>
-        <h3 class="article-title">
-          <a href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">
-            ${escapeHtml(article.title)}
-          </a>
-        </h3>
-        <p class="article-summary">${escapeHtml(article.description)}</p>
-        <div style="margin-bottom: 10px;">${keywordBadges}</div>
-        <div class="article-meta">
-          <span class="source">${escapeHtml(article.source)}</span>
-          <span class="time">${formatDate(article.published)}</span>
-        </div>
-        <div class="listen-row">
-          <button class="listen-btn speak-btn" data-id="${article.id}" data-title="${escapeHtml(article.title)}" data-desc="${escapeHtml(article.description)}">
-            ${isSpeaking ? '⏹ Stop' : '🔊 Listen'}
-          </button>
-        </div>
-      </div>
-    </article>
-  `;
-}
-
-function renderTrendingTopics(topics) {
-  const container = document.getElementById('trendingStrip');
-  if (!container || !topics.length) return;
-
-  container.innerHTML = topics.map(topic => `
-    <button class="trending-chip ${state.trendingFilter === topic ? 'active' : ''}" data-topic="${escapeHtml(topic)}">
-      #${escapeHtml(topic)}
-    </button>
-  `).join('');
-
-  container.querySelectorAll('.trending-chip').forEach(chip => {
-    chip.addEventListener('click', (e) => {
-      const topic = e.target.getAttribute('data-topic');
-      if (state.trendingFilter === topic) {
-        state.trendingFilter = null;
-      } else {
-        state.trendingFilter = topic;
-      }
-      renderTrendingTopics(topics);
-      applyFilters();
-    });
-  });
-}
-
-/* =====================================================
-   NAVIGATION & THEME CONTROLS
-   ===================================================== */
-
-function initSubcategoryNav() {
-  const container = document.getElementById('subcategoryNav');
-  if (!container) return;
-
-  const currentList = SUBCATEGORIES[state.mainCategory] || SUBCATEGORIES.All;
-  container.innerHTML = currentList.map(sub => `
-    <button class="${state.subCategory === sub ? 'active' : ''}" data-sub="${escapeHtml(sub)}">
-      ${escapeHtml(sub)}
-    </button>
-  `).join('');
-
-  container.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      container.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      state.subCategory = e.target.getAttribute('data-sub');
-      applyFilters();
-    });
-  });
-}
+/*
+ * ==========================================================
+ * EVENT LISTENERS
+ * ==========================================================
+ */
 
 function setupEventListeners() {
-  // Main Category Navigation
-  document.querySelectorAll('.main-nav button').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('.main-nav button').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      state.mainCategory = e.target.getAttribute('data-main-category');
-      state.subCategory = 'All';
-      initSubcategoryNav();
-      applyFilters();
-    });
-  });
 
-  // Debounced Search Input
-  const searchInput = document.getElementById('search');
-  if (searchInput) {
-    let timer;
-    searchInput.addEventListener('input', (e) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        state.searchQuery = e.target.value.trim();
-        applyFilters();
-      }, CONFIG.DEBOUNCE_MS);
-    });
-  }
+  /*
+   * Category navigation.
+   */
 
-  // Refresh Button
-  const refreshBtn = document.getElementById('refreshButton');
-  if (refreshBtn) {
-    refreshBtn.addEventListener('click', async () => {
-      refreshBtn.disabled = true;
-      refreshBtn.textContent = '⏳ Fetching...';
-      await loadNewsData();
-      refreshBtn.disabled = false;
-      refreshBtn.textContent = '↻ Refresh';
-    });
-  }
+  document
+    .querySelectorAll(
+      '[data-category]'
+    )
+    .forEach(
+      function(button) {
 
-  // Theme Toggle
-  const themeBtn = document.getElementById('themeButton');
-  if (themeBtn) {
-    themeBtn.addEventListener('click', toggleTheme);
-  }
+        button.addEventListener(
+          'click',
+          function() {
 
-  // Language Selector
-  const langSelect = document.getElementById('languageSelect');
-  if (langSelect) {
-    langSelect.addEventListener('change', (e) => {
-      state.language = e.target.value;
-      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-    });
-  }
+            const category =
+              button.dataset.category;
+
+            setCategory(
+              category
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+  /*
+   * Search.
+   */
+
+  elements.searchInput
+    .addEventListener(
+      'input',
+      renderFilteredNews
+    );
+
+
+  /*
+   * Refresh.
+   */
+
+  elements.refreshButton
+    .addEventListener(
+      'click',
+      function() {
+
+        loadNews(
+          true
+        );
+
+      }
+    );
+
+
+  /*
+   * Retry.
+   */
+
+  elements.retryButton
+    .addEventListener(
+      'click',
+      function() {
+
+        loadNews(
+          true
+        );
+
+      }
+    );
+
+
+  /*
+   * Theme.
+   */
+
+  elements.themeToggle
+    .addEventListener(
+      'click',
+      toggleTheme
+    );
+
 }
 
-function initTheme() {
-  const savedTheme = localStorage.getItem(CONFIG.THEME_KEY);
-  const themeBtn = document.getElementById('themeButton');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark');
-    if (themeBtn) themeBtn.textContent = '☀️';
-  } else {
-    document.body.classList.remove('dark');
-    if (themeBtn) themeBtn.textContent = '☾';
+
+/*
+ * ==========================================================
+ * LOAD NEWS
+ * ==========================================================
+ */
+
+async function loadNews(
+  manualRefresh = false
+) {
+
+  if (
+    isLoading
+  ) {
+
+    return;
+
   }
+
+
+  if (
+    !API_URL ||
+    API_URL.indexOf(
+      'PASTE_YOUR'
+    ) !== -1
+  ) {
+
+    showError(
+      'Please add your Apps Script Web App URL to app.js.'
+    );
+
+    return;
+
+  }
+
+
+  isLoading = true;
+
+
+  if (
+    manualRefresh
+  ) {
+
+    setRefreshLoading(
+      true
+    );
+
+  }
+
+
+  setFeedStatus(
+    'Updating...'
+  );
+
+
+  hideError();
+
+
+  try {
+
+    const response =
+      await fetch(
+        API_URL,
+        {
+          method: 'GET',
+
+          cache: 'no-store',
+
+          headers: {
+            'Accept':
+              'application/json'
+          }
+        }
+      );
+
+
+    if (
+      !response.ok
+    ) {
+
+      throw new Error(
+        'API returned HTTP ' +
+        response.status
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    if (
+      !data.success
+    ) {
+
+      throw new Error(
+        data.error ||
+        'News API returned an error.'
+      );
+
+    }
+
+
+    if (
+      !Array.isArray(
+        data.articles
+      )
+    ) {
+
+      throw new Error(
+        'Invalid news data received.'
+      );
+
+    }
+
+
+    allArticles =
+      normalizeArticles(
+        data.articles
+      );
+
+
+    setFeedStatus(
+      'Live'
+    );
+
+
+    setLastUpdated(
+      data.updated_at
+    );
+
+
+    renderFilteredNews();
+
+    updateCategoryCounts();
+
+
+  } catch (error) {
+
+    console.error(
+      'TechPulse API error:',
+      error
+    );
+
+
+    setFeedStatus(
+      'Offline'
+    );
+
+
+    showError(
+      error.message ||
+      'Unable to load the latest news.'
+    );
+
+
+  } finally {
+
+    isLoading = false;
+
+
+    if (
+      manualRefresh
+    ) {
+
+      setRefreshLoading(
+        false
+      );
+
+    }
+
+  }
+
 }
+
+
+/*
+ * ==========================================================
+ * NORMALIZE ARTICLES
+ * ==========================================================
+ */
+
+function normalizeArticles(
+  articles
+) {
+
+  return articles
+
+    .filter(
+      function(article) {
+
+        return (
+          article &&
+          article.title &&
+          article.article_url
+        );
+
+      }
+    )
+
+    .map(
+      function(article) {
+
+        return {
+
+          id:
+            article.id || '',
+
+          title:
+            String(
+              article.title
+            ),
+
+          summary:
+            String(
+              article.summary || ''
+            ),
+
+          category:
+            article.category ||
+            'Technology',
+
+          source:
+            article.source ||
+            'News Source',
+
+          published_at:
+            article.published_at,
+
+          article_url:
+            article.article_url,
+
+          image_url:
+            article.image_url ||
+            '',
+
+          language:
+            article.language ||
+            'en',
+
+          collected_at:
+            article.collected_at,
+
+          status:
+            article.status ||
+            'active'
+
+        };
+
+      }
+    )
+
+    .sort(
+      function(a, b) {
+
+        return (
+          new Date(
+            b.published_at
+          ) -
+          new Date(
+            a.published_at
+          )
+        );
+
+      }
+    );
+
+}
+
+
+/*
+ * ==========================================================
+ * FILTER + RENDER
+ * ==========================================================
+ */
+
+function renderFilteredNews() {
+
+  const search =
+    elements.searchInput
+      .value
+      .trim()
+      .toLowerCase();
+
+
+  let filtered =
+    allArticles.filter(
+      function(article) {
+
+        const categoryMatch =
+          currentCategory ===
+          'All' ||
+          article.category ===
+          currentCategory;
+
+
+        if (
+          !categoryMatch
+        ) {
+
+          return false;
+
+        }
+
+
+        if (!search) {
+
+          return true;
+
+        }
+
+
+        const searchable = (
+
+          article.title +
+          ' ' +
+          article.summary +
+          ' ' +
+          article.source +
+          ' ' +
+          article.category
+
+        ).toLowerCase();
+
+
+        return searchable
+          .includes(
+            search
+          );
+
+      }
+    );
+
+
+  updateArticleCount(
+    filtered.length
+  );
+
+
+  if (
+    filtered.length === 0
+  ) {
+
+    elements.featuredStory
+      .innerHTML = '';
+
+    elements.newsGrid
+      .innerHTML = '';
+
+    elements.emptyState
+      .classList.remove(
+        'hidden'
+      );
+
+    return;
+
+  }
+
+
+  elements.emptyState
+    .classList.add(
+      'hidden'
+    );
+
+
+  renderFeatured(
+    filtered[0]
+  );
+
+
+  renderNewsGrid(
+    filtered.slice(1)
+  );
+
+}
+
+
+/*
+ * ==========================================================
+ * FEATURED ARTICLE
+ * ==========================================================
+ */
+
+function renderFeatured(
+  article
+) {
+
+  const image =
+    getImage(
+      article
+    );
+
+
+  elements.featuredStory
+    .innerHTML = `
+
+      <article class="featured-card">
+
+        <div class="featured-image">
+
+          <img
+            src="${escapeAttribute(image)}"
+            alt=""
+            loading="eager"
+            onerror="this.src='${escapeAttribute(
+              createPlaceholder()
+            )}'"
+          >
+
+        </div>
+
+
+        <div class="featured-content">
+
+          <div class="article-meta">
+
+            <span class="category-badge">
+              ${escapeHTML(
+                article.category
+              )}
+            </span>
+
+            <span>
+              ${escapeHTML(
+                article.source
+              )}
+            </span>
+
+            <span>
+              ${formatRelativeTime(
+                article.published_at
+              )}
+            </span>
+
+          </div>
+
+
+          <h3>
+            ${escapeHTML(
+              article.title
+            )}
+          </h3>
+
+
+          <p>
+            ${escapeHTML(
+              article.summary ||
+              'Read the latest story from the original publisher.'
+            )}
+          </p>
+
+
+          <a
+            class="read-link"
+            href="${escapeAttribute(
+              article.article_url
+            )}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Full Story →
+          </a>
+
+        </div>
+
+      </article>
+
+  `;
+
+}
+
+
+/*
+ * ==========================================================
+ * NEWS GRID
+ * ==========================================================
+ */
+
+function renderNewsGrid(
+  articles
+) {
+
+  if (
+    articles.length === 0
+  ) {
+
+    elements.newsGrid
+      .innerHTML = '';
+
+    return;
+
+  }
+
+
+  elements.newsGrid
+    .innerHTML =
+      articles
+        .map(
+          createArticleCard
+        )
+        .join('');
+
+}
+
+
+/*
+ * ==========================================================
+ * ARTICLE CARD
+ * ==========================================================
+ */
+
+function createArticleCard(
+  article
+) {
+
+  const image =
+    getImage(
+      article
+    );
+
+
+  return `
+
+    <article class="news-card">
+
+      <div class="card-image">
+
+        <img
+          src="${escapeAttribute(
+            image
+          )}"
+          alt=""
+          loading="lazy"
+          onerror="this.src='${escapeAttribute(
+            createPlaceholder()
+          )}'"
+        >
+
+      </div>
+
+
+      <div class="card-content">
+
+        <div class="article-meta">
+
+          <span class="category-badge">
+            ${escapeHTML(
+              article.category
+            )}
+          </span>
+
+          <span>
+            ${formatRelativeTime(
+              article.published_at
+            )}
+          </span>
+
+        </div>
+
+
+        <h3 class="card-title">
+
+          ${escapeHTML(
+            article.title
+          )}
+
+        </h3>
+
+
+        <p class="card-summary">
+
+          ${escapeHTML(
+            article.summary ||
+            'Read the full story from the original publisher.'
+          )}
+
+        </p>
+
+
+        <div class="card-footer">
+
+          <span class="source-name">
+
+            ${escapeHTML(
+              article.source
+            )}
+
+          </span>
+
+
+          <a
+            class="card-link"
+            href="${escapeAttribute(
+              article.article_url
+            )}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read →
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  `;
+
+}
+
+
+/*
+ * ==========================================================
+ * CATEGORY
+ * ==========================================================
+ */
+
+function setCategory(
+  category
+) {
+
+  currentCategory =
+    category;
+
+
+  document
+    .querySelectorAll(
+      '.nav-link'
+    )
+    .forEach(
+      function(button) {
+
+        button.classList.toggle(
+          'active',
+          button.dataset.category ===
+          category
+        );
+
+      }
+    );
+
+
+  renderFilteredNews();
+
+}
+
+
+/*
+ * ==========================================================
+ * CATEGORY COUNTS
+ * ==========================================================
+ */
+
+function updateCategoryCounts() {
+
+  const categories = [
+    'Technology',
+    'AI',
+    'Cybersecurity',
+    'Gaming',
+    'Space'
+  ];
+
+
+  categories.forEach(
+    function(category) {
+
+      const count =
+        allArticles.filter(
+          function(article) {
+
+            return (
+              article.category ===
+              category
+            );
+
+          }
+        ).length;
+
+
+      const element =
+        document.getElementById(
+          'count' +
+          category
+        );
+
+
+      if (element) {
+
+        element.textContent =
+          count;
+
+      }
+
+    }
+  );
+
+}
+
+
+/*
+ * ==========================================================
+ * ARTICLE COUNT
+ * ==========================================================
+ */
+
+function updateArticleCount(
+  count
+) {
+
+  elements.articleCount
+    .textContent =
+      count +
+      (
+        count === 1
+          ? ' story'
+          : ' stories'
+      );
+
+}
+
+
+/*
+ * ==========================================================
+ * IMAGE
+ * ==========================================================
+ */
+
+function getImage(
+  article
+) {
+
+  if (
+    article.image_url
+  ) {
+
+    return article.image_url;
+
+  }
+
+
+  return createPlaceholder();
+
+}
+
+
+/*
+ * ==========================================================
+ * PLACEHOLDER IMAGE
+ * ==========================================================
+ */
+
+function createPlaceholder() {
+
+  return (
+    'data:image/svg+xml;charset=UTF-8,' +
+    encodeURIComponent(`
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="800"
+        height="450"
+        viewBox="0 0 800 450"
+      >
+
+        <rect
+          width="800"
+          height="450"
+          fill="#eef0f5"
+        />
+
+        <text
+          x="400"
+          y="225"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          fill="#8b95a7"
+          font-family="Arial"
+          font-size="28"
+          font-weight="700"
+        >
+          TECHPULSE
+        </text>
+
+      </svg>
+
+    `)
+  );
+
+}
+
+
+/*
+ * ==========================================================
+ * RELATIVE TIME
+ * ==========================================================
+ */
+
+function formatRelativeTime(
+  dateValue
+) {
+
+  if (!dateValue) {
+
+    return 'Recently';
+
+  }
+
+
+  const date =
+    new Date(
+      dateValue
+    );
+
+
+  if (
+    isNaN(
+      date.getTime()
+    )
+  ) {
+
+    return 'Recently';
+
+  }
+
+
+  const now =
+    new Date();
+
+
+  const difference =
+    now.getTime() -
+    date.getTime();
+
+
+  const minutes =
+    Math.floor(
+      difference /
+      60000
+    );
+
+
+  if (
+    minutes < 1
+  ) {
+
+    return 'Just now';
+
+  }
+
+
+  if (
+    minutes < 60
+  ) {
+
+    return (
+      minutes +
+      (
+        minutes === 1
+          ? ' min ago'
+          : ' mins ago'
+      )
+    );
+
+  }
+
+
+  const hours =
+    Math.floor(
+      minutes / 60
+    );
+
+
+  if (
+    hours < 24
+  ) {
+
+    return (
+      hours +
+      (
+        hours === 1
+          ? ' hour ago'
+          : ' hours ago'
+      )
+    );
+
+  }
+
+
+  const days =
+    Math.floor(
+      hours / 24
+    );
+
+
+  if (
+    days < 7
+  ) {
+
+    return (
+      days +
+      (
+        days === 1
+          ? ' day ago'
+          : ' days ago'
+      )
+    );
+
+  }
+
+
+  return date.toLocaleDateString(
+    undefined,
+    {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    }
+  );
+
+}
+
+
+/*
+ * ==========================================================
+ * API UPDATED TIME
+ * ==========================================================
+ */
+
+function setLastUpdated(
+  timestamp
+) {
+
+  if (!timestamp) {
+
+    elements.lastUpdated
+      .textContent =
+        'Latest feed available';
+
+    return;
+
+  }
+
+
+  const date =
+    new Date(
+      timestamp
+    );
+
+
+  if (
+    isNaN(
+      date.getTime()
+    )
+  ) {
+
+    elements.lastUpdated
+      .textContent =
+        'Latest feed available';
+
+    return;
+
+  }
+
+
+  elements.lastUpdated
+    .textContent =
+      'Updated ' +
+      date.toLocaleTimeString(
+        undefined,
+        {
+          hour: 'numeric',
+          minute: '2-digit'
+        }
+      );
+
+}
+
+
+/*
+ * ==========================================================
+ * FEED STATUS
+ * ==========================================================
+ */
+
+function setFeedStatus(
+  status
+) {
+
+  elements.feedStatus
+    .textContent =
+      status;
+
+}
+
+
+/*
+ * ==========================================================
+ * REFRESH BUTTON
+ * ==========================================================
+ */
+
+function setRefreshLoading(
+  loading
+) {
+
+  elements.refreshButton
+    .classList.toggle(
+      'loading',
+      loading
+    );
+
+
+  elements.refreshIcon
+    .textContent =
+      loading
+        ? '⟳'
+        : '↻';
+
+}
+
+
+/*
+ * ==========================================================
+ * ERROR
+ * ==========================================================
+ */
+
+function showError(
+  message
+) {
+
+  elements.errorMessage
+    .textContent =
+      message;
+
+
+  elements.errorState
+    .classList.remove(
+      'hidden'
+    );
+
+}
+
+
+function hideError() {
+
+  elements.errorState
+    .classList.add(
+      'hidden'
+    );
+
+}
+
+
+/*
+ * ==========================================================
+ * THEME
+ * ==========================================================
+ */
+
+function initializeTheme() {
+
+  const saved =
+    localStorage.getItem(
+      'techpulse-theme'
+    );
+
+
+  if (
+    saved === 'dark'
+  ) {
+
+    document.body
+      .classList.add(
+        'dark'
+      );
+
+    elements.themeToggle
+      .textContent =
+        '☀';
+
+  }
+
+}
+
 
 function toggleTheme() {
-  const isDark = document.body.classList.toggle('dark');
-  const themeBtn = document.getElementById('themeButton');
-  localStorage.setItem(CONFIG.THEME_KEY, isDark ? 'dark' : 'light');
-  if (themeBtn) themeBtn.textContent = isDark ? '☀️' : '☾';
+
+  const dark =
+    document.body
+      .classList.toggle(
+        'dark'
+      );
+
+
+  localStorage.setItem(
+    'techpulse-theme',
+    dark
+      ? 'dark'
+      : 'light'
+  );
+
+
+  elements.themeToggle
+    .textContent =
+      dark
+        ? '☀'
+        : '☾';
+
 }
 
-/* =====================================================
-   ACCESSIBILITY & TEXT-TO-SPEECH
-   ===================================================== */
 
-function setupAudioListeners() {
-  document.querySelectorAll('.speak-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const articleId = btn.getAttribute('data-id');
-      const title = btn.getAttribute('data-title');
-      const desc = btn.getAttribute('data-desc');
+/*
+ * ==========================================================
+ * YEAR
+ * ==========================================================
+ */
 
-      if (state.speakingArticleId === articleId) {
-        stopSpeech();
-      } else {
-        speakText(articleId, `${title}. ${desc}`);
-      }
-    });
-  });
+function updateYear() {
+
+  elements.currentYear
+    .textContent =
+      new Date()
+        .getFullYear();
+
 }
 
-function speakText(id, text) {
-  if (!('speechSynthesis' in window)) {
-    alert('Speech synthesis is not supported in your browser.');
-    return;
-  }
 
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = state.language || 'en';
+/*
+ * ==========================================================
+ * HTML SAFETY
+ * ==========================================================
+ */
 
-  utterance.onend = () => {
-    state.speakingArticleId = null;
-    applyFilters();
-  };
+function escapeHTML(
+  value
+) {
 
-  utterance.onerror = () => {
-    state.speakingArticleId = null;
-    applyFilters();
-  };
+  return String(
+    value || ''
+  )
 
-  state.speakingArticleId = id;
-  window.speechSynthesis.speak(utterance);
-  applyFilters();
+    .replace(
+      /&/g,
+      '&amp;'
+    )
+
+    .replace(
+      /</g,
+      '&lt;'
+    )
+
+    .replace(
+      />/g,
+      '&gt;'
+    )
+
+    .replace(
+      /"/g,
+      '&quot;'
+    )
+
+    .replace(
+      /'/g,
+      '&#039;'
+    );
+
 }
 
-function stopSpeech() {
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel();
-  }
-  state.speakingArticleId = null;
-  applyFilters();
-}
 
-/* =====================================================
-   HELPER UTILITIES
-   ===================================================== */
+/*
+ * ==========================================================
+ * ATTRIBUTE SAFETY
+ * ==========================================================
+ */
 
-function formatDate(isoStr) {
-  if (!isoStr) return '';
-  const date = new Date(isoStr);
-  const diffMs = Date.now() - date.getTime();
-  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+function escapeAttribute(
+  value
+) {
 
-  if (diffHours < 1) return 'Just now';
-  if (diffHours < 24) return `${diffHours}h ago`;
-  return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-}
+  return escapeHTML(
+    value
+  );
 
-function escapeHtml(str) {
-  return String(str || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
-
-function renderLoadingState() {
-  const container = document.getElementById('newsContainer');
-  if (container) {
-    container.innerHTML = `
-      <div class="loading">
-        <div class="spinner"></div>
-        Loading latest stories...
-      </div>
-    `;
-  }
-}
-
-function renderErrorState(msg) {
-  const container = document.getElementById('newsContainer');
-  if (container) {
-    container.innerHTML = `
-      <div class="empty">
-        <div class="empty-icon">⚠️</div>
-        <h3>Something went wrong</h3>
-        <p>${escapeHtml(msg)}</p>
-      </div>
-    `;
-  }
 }
