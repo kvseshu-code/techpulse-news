@@ -304,35 +304,84 @@ async function loadNews(
 
   try {
 
-    const response =
-      await fetch(
-        API_URL,
-        {
-          method: 'GET',
+   const separator =
+  API_URL.includes('?')
+    ? '&'
+    : '?';
 
-          cache: 'no-store',
-
-          headers: {
-            Accept:
-              'application/json'
-          }
-        }
-      );
+const requestUrl =
+  API_URL +
+  separator +
+  '_=' +
+  Date.now();
 
 
-    if (!response.ok) {
+const response =
+  await fetch(
+    requestUrl,
+    {
+      method: 'GET',
 
-      throw new Error(
-        'API returned HTTP ' +
-        response.status
-      );
+      mode: 'cors',
 
+      cache: 'no-store',
+
+      redirect: 'follow',
+
+      headers: {
+        'Accept':
+          'application/json'
+      }
     }
+  );
 
 
-    const data =
-      await response.json();
+if (
+  !response.ok
+) {
 
+  throw new Error(
+    'News API returned HTTP ' +
+    response.status
+  );
+
+}
+
+
+const text =
+  await response.text();
+
+
+if (!text) {
+
+  throw new Error(
+    'The news API returned an empty response.'
+  );
+
+}
+
+
+let data;
+
+try {
+
+  data =
+    JSON.parse(
+      text
+    );
+
+} catch (jsonError) {
+
+  console.error(
+    'Invalid API response:',
+    text
+  );
+
+  throw new Error(
+    'The news API did not return valid JSON.'
+  );
+
+}
 
     if (!data.success) {
 
