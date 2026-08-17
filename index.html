@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
     content="TechPulse — Technology, AI, Cybersecurity, Gaming and Space news."
   >
 
-  <meta
-    name="theme-color"
-    content="#07111f"
-  >
+  <meta name="theme-color" content="#070b14">
 
-  <title>TechPulse — Technology & Gaming News</title>
+  <title>TechPulse — The Daily Technology Signal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet"
-    href="style.css"
   >
 
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
+
+  <!-- Ambient background -->
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="tech-grid"></div>
 
   <!-- =====================================================
        HEADER
@@ -40,97 +40,52 @@
 
     <div class="container header-inner">
 
-      <a
-        href="#"
-        class="brand"
-        aria-label="TechPulse Home"
-      >
+      <a href="#" class="brand" aria-label="TechPulse Home">
 
-        <span class="brand-icon">⚡</span>
+        <span class="brand-mark">
+          <span class="brand-bolt">ϟ</span>
+        </span>
 
-        <span class="brand-text">
-          Tech<span>Pulse</span>
+        <span class="brand-name">
+          TECH<span>PULSE</span>
         </span>
 
       </a>
 
+      <nav class="main-nav" aria-label="Main navigation">
 
-      <!-- DESKTOP NAVIGATION -->
-
-      <nav
-        class="main-nav"
-        aria-label="Main navigation"
-      >
-
-        <button
-          class="nav-link active"
-          data-category="All"
-          data-i18n="all"
-        >
+        <button class="nav-link active" data-category="All">
           All
         </button>
 
-        <button
-          class="nav-link"
-          data-category="Technology"
-          data-i18n="technology"
-        >
+        <button class="nav-link" data-category="Technology">
           Technology
         </button>
 
-        <button
-          class="nav-link"
-          data-category="AI"
-          data-i18n="ai"
-        >
+        <button class="nav-link" data-category="AI">
           AI
         </button>
 
-        <button
-          class="nav-link"
-          data-category="Cybersecurity"
-          data-i18n="cybersecurity"
-        >
-          Cybersecurity
+        <button class="nav-link" data-category="Cybersecurity">
+          Security
         </button>
 
-        <button
-          class="nav-link"
-          data-category="Gaming"
-          data-i18n="gaming"
-        >
+        <button class="nav-link" data-category="Gaming">
           Gaming
         </button>
 
-        <button
-          class="nav-link"
-          data-category="Space"
-          data-i18n="space"
-        >
+        <button class="nav-link" data-category="Space">
           Space
         </button>
 
       </nav>
 
-
-      <!-- HEADER ACTIONS -->
-
       <div class="header-actions">
 
-        <select
-          id="languageSelect"
-          class="language-select"
-          aria-label="Select language"
-        >
-
-          <option value="en">English</option>
-          <option value="hi">हिन्दी</option>
-          <option value="te">తెలుగు</option>
-          <option value="ta">தமிழ்</option>
-          <option value="kn">ಕನ್ನಡ</option>
-
-        </select>
-
+        <div class="live-indicator">
+          <span class="pulse-dot"></span>
+          LIVE
+        </div>
 
         <button
           id="themeToggle"
@@ -141,66 +96,26 @@
           ☾
         </button>
 
+        <button
+          id="mobileMenuButton"
+          class="mobile-menu-button"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+
       </div>
 
     </div>
 
+    <div id="mobileNav" class="mobile-nav">
 
-    <!-- MOBILE CATEGORY NAVIGATION -->
-
-    <div class="mobile-category-bar">
-
-      <div class="container mobile-category-scroll">
-
-        <button
-          class="mobile-category active"
-          data-category="All"
-          data-i18n="all"
-        >
-          All
-        </button>
-
-        <button
-          class="mobile-category"
-          data-category="Technology"
-          data-i18n="technology"
-        >
-          Technology
-        </button>
-
-        <button
-          class="mobile-category"
-          data-category="AI"
-          data-i18n="ai"
-        >
-          AI
-        </button>
-
-        <button
-          class="mobile-category"
-          data-category="Cybersecurity"
-          data-i18n="cybersecurity"
-        >
-          Cybersecurity
-        </button>
-
-        <button
-          class="mobile-category"
-          data-category="Gaming"
-          data-i18n="gaming"
-        >
-          Gaming
-        </button>
-
-        <button
-          class="mobile-category"
-          data-category="Space"
-          data-i18n="space"
-        >
-          Space
-        </button>
-
-      </div>
+      <button data-category="All">All</button>
+      <button data-category="Technology">Technology</button>
+      <button data-category="AI">AI</button>
+      <button data-category="Cybersecurity">Security</button>
+      <button data-category="Gaming">Gaming</button>
+      <button data-category="Space">Space</button>
 
     </div>
 
@@ -213,93 +128,123 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- ===================================================
+         HERO
+         =================================================== -->
 
     <section class="hero">
 
-      <div class="container hero-inner">
+      <div class="container hero-layout">
 
-        <div class="hero-content">
+        <div class="hero-copy">
 
-          <div class="eyebrow">
-
-            <span class="live-dot"></span>
-
-            <span data-i18n="liveNews">
-              LIVE NEWS
-            </span>
-
+          <div class="hero-label">
+            <span class="signal-line"></span>
+            THE DAILY TECHNOLOGY SIGNAL
           </div>
 
-
           <h1>
-            Stay ahead of
-            <span>what's next.</span>
+            What's next
+            <span>starts here.</span>
           </h1>
 
-
-          <p data-i18n="heroDescription">
-            Technology, AI, cybersecurity, gaming and space
-            news — gathered from trusted publishers and
-            updated automatically.
+          <p>
+            Technology, artificial intelligence, cybersecurity,
+            gaming and space — curated into one continuously
+            refreshed intelligence feed.
           </p>
-
 
           <div class="hero-actions">
 
             <button
-              id="heroRefreshButton"
-              class="hero-refresh"
+              class="primary-cta"
+              onclick="document.getElementById('latest').scrollIntoView({behavior:'smooth'})"
             >
-              <span>↻</span>
-              <span data-i18n="refreshFeed">
-                Refresh Feed
-              </span>
+              Explore latest
+              <span>↗</span>
             </button>
 
-            <span
-              id="newStoriesBadge"
-              class="new-stories-badge hidden"
+            <button
+              class="secondary-cta"
+              onclick="document.getElementById('topics').scrollIntoView({behavior:'smooth'})"
             >
-              New stories available
-            </span>
+              Explore topics
+            </button>
 
           </div>
 
         </div>
 
 
-        <!-- FEED STATUS -->
+        <div class="hero-dashboard">
 
-        <div class="hero-status">
+          <div class="dashboard-card">
 
-          <div class="status-card">
+            <div class="dashboard-top">
 
-            <div class="status-icon">
-              ●
+              <span>FEED TELEMETRY</span>
+
+              <span class="telemetry-status">
+                <span></span>
+                ONLINE
+              </span>
+
             </div>
 
-            <div>
+            <div class="telemetry-main">
 
-              <div
-                class="status-label"
-                data-i18n="feedStatus"
-              >
-                FEED STATUS
+              <div class="telemetry-number" id="telemetryCount">
+                —
               </div>
 
-              <div
-                id="feedStatus"
-                class="status-value"
-              >
-                Connecting...
+              <div class="telemetry-label">
+                STORIES IN SIGNAL
               </div>
 
-              <div
-                id="lastUpdated"
-                class="status-time"
-              >
-                Checking latest news
+            </div>
+
+            <div class="telemetry-bars">
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+              <div>
+                <span></span>
+              </div>
+
+            </div>
+
+            <div class="dashboard-footer">
+
+              <div>
+                <small>STATUS</small>
+                <strong id="feedStatus">CONNECTING</strong>
+              </div>
+
+              <div>
+                <small>UPDATED</small>
+                <strong id="lastUpdated">—</strong>
               </div>
 
             </div>
@@ -314,45 +259,34 @@
 
 
     <!-- ===================================================
-         CONTROLS
+         CONTROL BAR
          =================================================== -->
 
-    <section class="controls-section">
+    <section class="control-section">
 
-      <div class="container controls">
+      <div class="container control-bar">
 
-        <div class="search-wrapper">
+        <div class="search-box">
 
-          <span class="search-icon">
-            ⌕
-          </span>
+          <span>⌕</span>
 
           <input
             id="searchInput"
             type="search"
-            placeholder="Search technology news..."
-            data-i18n-placeholder="searchPlaceholder"
+            placeholder="Search the TechPulse signal..."
             autocomplete="off"
             aria-label="Search news"
           >
 
+          <kbd>⌘ K</kbd>
+
         </div>
 
+        <button id="refreshButton" class="refresh-button">
 
-        <button
-          id="refreshButton"
-          class="refresh-button"
-        >
+          <span id="refreshIcon">↻</span>
 
-          <span
-            id="refreshIcon"
-          >
-            ↻
-          </span>
-
-          <span data-i18n="refresh">
-            Refresh
-          </span>
+          Refresh feed
 
         </button>
 
@@ -362,34 +296,34 @@
 
 
     <!-- ===================================================
-         CONTENT
+         LATEST NEWS
          =================================================== -->
 
-    <section class="news-section">
+    <section id="latest" class="news-section">
 
       <div class="container">
 
-        <div class="section-header">
+        <div class="section-heading">
 
           <div>
 
-            <p
-              class="section-kicker"
-              data-i18n="latest"
-            >
-              THE LATEST
-            </p>
+            <div class="section-index">
+              01 / SIGNAL
+            </div>
 
-            <h2 data-i18n="latestNews">
-              Latest News
+            <h2>
+              Latest intelligence
             </h2>
+
+            <p>
+              The newest stories entering the TechPulse feed.
+            </p>
 
           </div>
 
-
           <div
             id="articleCount"
-            class="article-count"
+            class="story-count"
           >
             Loading...
           </div>
@@ -397,108 +331,64 @@
         </div>
 
 
-        <!-- TOP STORIES -->
+        <!-- FEATURED -->
 
-        <div class="top-stories-heading">
-
-          <div class="top-stories-line"></div>
-
-          <span data-i18n="topStories">
-            TOP STORIES
-          </span>
-
-          <div class="top-stories-line"></div>
-
-        </div>
-
-
-        <!-- FEATURED STORY -->
-
-        <div
-          id="featuredStory"
-          class="featured-story"
-        >
+        <div id="featuredStory" class="featured-story">
 
           <div class="loading-card">
-
             <div class="loading-spinner"></div>
-
-            <p data-i18n="loadingStory">
-              Loading the latest story...
-            </p>
-
+            <span>Scanning the signal...</span>
           </div>
 
         </div>
 
 
-        <!-- NEWS GRID -->
+        <!-- GRID -->
 
-        <div
-          id="newsGrid"
-          class="news-grid"
-        >
+        <div id="newsGrid" class="news-grid">
 
           <div class="loading-state">
 
             <div class="loading-spinner"></div>
 
-            <p data-i18n="loadingNews">
-              Loading the latest news...
-            </p>
+            <span>
+              Loading latest stories...
+            </span>
 
           </div>
 
         </div>
 
 
-        <!-- EMPTY STATE -->
+        <!-- EMPTY -->
 
-        <div
-          id="emptyState"
-          class="empty-state hidden"
-        >
+        <div id="emptyState" class="empty-state hidden">
 
-          <div class="empty-icon">
-            ◌
-          </div>
+          <div class="empty-symbol">⌁</div>
 
-          <h3 data-i18n="noStories">
-            No stories found
-          </h3>
+          <h3>No signal found</h3>
 
-          <p data-i18n="tryAnother">
-            Try another search or category.
+          <p>
+            Try another keyword or explore a different category.
           </p>
 
         </div>
 
 
-        <!-- ERROR STATE -->
+        <!-- ERROR -->
 
-        <div
-          id="errorState"
-          class="error-state hidden"
-        >
+        <div id="errorState" class="error-state hidden">
 
-          <div class="error-icon">
-            !
-          </div>
+          <div class="error-symbol">!</div>
 
-          <h3 data-i18n="unableLoad">
-            Unable to load the news
-          </h3>
+          <h3>Signal interrupted</h3>
 
           <p id="errorMessage">
-            Please try again.
+            Unable to load the latest news.
           </p>
 
-          <button
-            id="retryButton"
-            class="retry-button"
-            data-i18n="tryAgain"
-          >
-            Try Again
+          <button id="retryButton" class="retry-button">
+            Reconnect
           </button>
 
         </div>
@@ -512,23 +402,20 @@
          TOPICS
          =================================================== -->
 
-    <section class="categories-section">
+    <section id="topics" class="topics-section">
 
       <div class="container">
 
-        <div class="section-header">
+        <div class="section-heading compact">
 
           <div>
 
-            <p
-              class="section-kicker"
-              data-i18n="explore"
-            >
-              EXPLORE
-            </p>
+            <div class="section-index">
+              02 / DOMAINS
+            </div>
 
-            <h2 data-i18n="topics">
-              Topics
+            <h2>
+              Explore the signal
             </h2>
 
           </div>
@@ -536,133 +423,138 @@
         </div>
 
 
-        <div class="category-cards">
+        <div class="topic-grid">
 
           <button
-            class="category-card"
+            class="topic-card topic-tech"
             data-category="Technology"
           >
 
-            <span class="category-icon">
-              ◈
-            </span>
+            <span class="topic-number">01</span>
 
-            <span
-              class="category-name"
-              data-i18n="technology"
-            >
+            <span class="topic-icon">◈</span>
+
+            <span class="topic-title">
               Technology
             </span>
 
-            <span
-              id="countTechnology"
-              class="category-count"
-            >
-              0
+            <span class="topic-description">
+              Devices, platforms, software and the infrastructure
+              shaping tomorrow.
+            </span>
+
+            <span class="topic-bottom">
+              <span id="countTechnology">0</span>
+              stories
+              <b>↗</b>
             </span>
 
           </button>
 
 
           <button
-            class="category-card"
+            class="topic-card topic-ai"
             data-category="AI"
           >
 
-            <span class="category-icon">
-              ✦
-            </span>
+            <span class="topic-number">02</span>
 
-            <span
-              class="category-name"
-              data-i18n="artificialIntelligence"
-            >
+            <span class="topic-icon">✦</span>
+
+            <span class="topic-title">
               Artificial Intelligence
             </span>
 
-            <span
-              id="countAI"
-              class="category-count"
-            >
-              0
+            <span class="topic-description">
+              Models, agents, automation and the rapidly evolving
+              AI ecosystem.
+            </span>
+
+            <span class="topic-bottom">
+              <span id="countAI">0</span>
+              stories
+              <b>↗</b>
             </span>
 
           </button>
 
 
           <button
-            class="category-card"
+            class="topic-card topic-security"
             data-category="Cybersecurity"
           >
 
-            <span class="category-icon">
-              ◉
-            </span>
+            <span class="topic-number">03</span>
 
-            <span
-              class="category-name"
-              data-i18n="cybersecurity"
-            >
+            <span class="topic-icon">⬡</span>
+
+            <span class="topic-title">
               Cybersecurity
             </span>
 
-            <span
-              id="countCybersecurity"
-              class="category-count"
-            >
-              0
+            <span class="topic-description">
+              Threats, vulnerabilities, breaches and defensive
+              technology.
+            </span>
+
+            <span class="topic-bottom">
+              <span id="countCybersecurity">0</span>
+              stories
+              <b>↗</b>
             </span>
 
           </button>
 
 
           <button
-            class="category-card"
+            class="topic-card topic-gaming"
             data-category="Gaming"
           >
 
-            <span class="category-icon">
-              ◆
-            </span>
+            <span class="topic-number">04</span>
 
-            <span
-              class="category-name"
-              data-i18n="gaming"
-            >
+            <span class="topic-icon">◆</span>
+
+            <span class="topic-title">
               Gaming
             </span>
 
-            <span
-              id="countGaming"
-              class="category-count"
-            >
-              0
+            <span class="topic-description">
+              Games, consoles, studios, hardware and the culture
+              around interactive entertainment.
+            </span>
+
+            <span class="topic-bottom">
+              <span id="countGaming">0</span>
+              stories
+              <b>↗</b>
             </span>
 
           </button>
 
 
           <button
-            class="category-card"
+            class="topic-card topic-space"
             data-category="Space"
           >
 
-            <span class="category-icon">
-              ✧
-            </span>
+            <span class="topic-number">05</span>
 
-            <span
-              class="category-name"
-              data-i18n="space"
-            >
+            <span class="topic-icon">✧</span>
+
+            <span class="topic-title">
               Space
             </span>
 
-            <span
-              id="countSpace"
-              class="category-count"
-            >
-              0
+            <span class="topic-description">
+              Launches, missions, satellites and humanity's next
+              frontier.
+            </span>
+
+            <span class="topic-bottom">
+              <span id="countSpace">0</span>
+              stories
+              <b>↗</b>
             </span>
 
           </button>
@@ -677,106 +569,52 @@
 
 
   <!-- =====================================================
-       AUDIO CONTROL BAR
-       ===================================================== -->
-
-  <div
-    id="audioBar"
-    class="audio-bar hidden"
-  >
-
-    <div class="container audio-inner">
-
-      <div class="audio-info">
-
-        <span class="audio-icon">
-          🔊
-        </span>
-
-        <div>
-
-          <strong
-            id="audioTitle"
-          >
-            TechPulse Narration
-          </strong>
-
-          <span
-            id="audioStatus"
-          >
-            Ready
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="audio-controls">
-
-        <button
-          id="audioPlay"
-          class="audio-button primary"
-          title="Play"
-        >
-          ▶
-        </button>
-
-        <button
-          id="audioPause"
-          class="audio-button"
-          title="Pause"
-        >
-          ⏸
-        </button>
-
-        <button
-          id="audioStop"
-          class="audio-button"
-          title="Stop"
-        >
-          ■
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- =====================================================
        FOOTER
        ===================================================== -->
 
   <footer class="site-footer">
 
-    <div class="container footer-inner">
+    <div class="container footer-grid">
 
       <div>
 
         <div class="footer-brand">
-          ⚡ TechPulse
+
+          <span>ϟ</span>
+          TECHPULSE
+
         </div>
 
-        <p data-i18n="footerTagline">
-          Technology news, simplified.
+        <p>
+          The daily technology signal.
         </p>
 
       </div>
 
 
-      <div class="footer-note">
+      <div class="footer-system">
 
-        <p data-i18n="footerDescription">
+        <span>
+          SYSTEM STATUS
+        </span>
+
+        <strong>
+          <i></i>
+          OPERATIONAL
+        </strong>
+
+      </div>
+
+
+      <div class="footer-copy">
+
+        <p>
           TechPulse provides news discovery and summaries.
           Full stories remain with their respective publishers.
         </p>
 
         <p>
-          ©
-          <span id="currentYear"></span>
-          TechPulse
+          © <span id="currentYear"></span> TechPulse
         </p>
 
       </div>
@@ -789,5 +627,4 @@
   <script src="app.js"></script>
 
 </body>
-
 </html>
