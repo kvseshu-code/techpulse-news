@@ -1,12 +1,9 @@
 name: Update Technology & Gaming News
 
 on:
-
   schedule:
     - cron: "*/15 * * * *"
-
   workflow_dispatch:
-
   push:
     paths:
       - "scripts/fetch_news.py"
@@ -21,26 +18,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
   update-news:
-
     runs-on: ubuntu-latest
 
     steps:
-
-      # =====================================================
-      # 1. CHECKOUT
-      # =====================================================
-
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 1
-
-
-      # =====================================================
-      # 2. SETUP PYTHON
-      # =====================================================
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -48,30 +33,15 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
-
-      # =====================================================
-      # 3. PYTHON VERSION
-      # =====================================================
-
       - name: Show Python version
         run: |
           python --version
           pip --version
 
-
-      # =====================================================
-      # 4. INSTALL DEPENDENCIES
-      # =====================================================
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
-
-
-      # =====================================================
-      # 5. VERIFY DEPENDENCIES
-      # =====================================================
 
       - name: Verify dependencies
         run: |
@@ -86,58 +56,29 @@ jobs:
           print("All dependencies loaded successfully.")
           PY
 
-
-      # =====================================================
-      # 6. VERIFY FETCHER
-      # =====================================================
-
       - name: Verify fetcher
         run: |
           test -f scripts/fetch_news.py
           echo "fetch_news.py found."
 
-
-      # =====================================================
-      # 7. RUN FETCHER
-      # =====================================================
-
       - name: Fetch latest news
         run: |
           python -u scripts/fetch_news.py
 
-
-      # =====================================================
-      # 8. VALIDATE JSON
-      # =====================================================
-
       - name: Validate news.json
         run: |
-
           test -f news.json
-
           python - <<'PY'
-
           import json
           from datetime import datetime
 
-          with open(
-              "news.json",
-              "r",
-              encoding="utf-8"
-          ) as f:
-
+          with open("news.json", "r", encoding="utf-8") as f:
               data = json.load(f)
 
-          assert data.get("success") is True
-
+          assert data.get("success") is True, "JSON missing success=true"
           articles = data.get("articles")
-
-          assert isinstance(
-              articles,
-              list
-          )
-
-          assert len(articles) > 0
+          assert isinstance(articles, list), "articles is not a list"
+          assert len(articles) > 0, "articles list is empty"
 
           required = [
               "id",
@@ -150,72 +91,38 @@ jobs:
               "published"
           ]
 
-          for index, article in enumerate(
-              articles
-          ):
-
+          for index, article in enumerate(articles):
               for field in required:
-
-                  assert field in article, (
-                      f"Article {index} missing {field}"
-                  )
-
-              assert article["url"].startswith(
-                  ("http://", "https://")
-              )
-
-              assert article["title"].strip()
-
-              assert article["source"].strip()
+                  assert field in article, f"Article {index} missing {field}"
+              assert article["url"].startswith(("http://", "https://")), f"Invalid URL at index {index}"
+              assert article["title"].strip(), f"Empty title at index {index}"
+              assert article["source"].strip(), f"Empty source at index {index}"
 
           print("JSON validation successful.")
           print("Updated:", data.get("updatedAt"))
           print("Total:", data.get("total"))
           print("Technology:", data.get("technologyCount"))
           print("Gaming:", data.get("gamingCount"))
-
           PY
-
-
-      # =====================================================
-      # 9. SHOW STATUS
-      # =====================================================
 
       - name: Show generated news status
         run: |
-
           echo "Git status:"
           git status --short
-
           echo ""
           echo "news.json:"
           ls -lh news.json
 
-
-      # =====================================================
-      # 10. COMMIT ONLY NEWS JSON
-      # =====================================================
-
       - name: Commit updated news
         run: |
-
-          git config user.name \
-            "TechPulse News Bot"
-
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "TechPulse News Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add news.json
 
           if git diff --cached --quiet; then
-
             echo "No changes detected."
-
           else
-
-            git commit \
-              -m "Update latest technology and gaming news"
-
+            git commit -m "Update latest technology and gaming news"
             git push
-
           fi
