@@ -1,1 +1,63 @@
+/* Phase 3 UI Additions */
+.trending-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.75rem 0;
+  margin-bottom: 1.5rem;
+  scrollbar-width: thin;
+}
 
+.trending-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.topic-chip {
+  background: var(--chip-bg, #f0f4f8);
+  color: var(--chip-text, #1e293b);
+  border: 1px solid var(--chip-border, #cbd5e1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.topic-chip:hover,
+.topic-chip.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+}
+
+.tag-chip {
+  font-size: 0.75rem;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.trending-badge {
+  background: #ff4500;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
