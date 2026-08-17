@@ -1,18 +1,260 @@
 {
   "success": true,
-  "updatedAt": "2026-08-17T05:23:12.209492+00:00",
+  "updatedAt": "2026-08-17T08:03:51.405343+00:00",
   "total": 180,
   "articles": [
     {
-      "id": "techpulse-365ad893adb89894cb5b",
-      "title": "Your agent's \"not done\" lies as often as its \"done\"",
-      "description": "There is a well-worn rule for running agents: don't trust the agent when it says it finished. Go look at the artifact. Good rule. We follow it. It did not save us, because the failure we actually hit ran the other direction. Our records said a thing was not done. It had been done four hours and twenty minutes earlier...",
-      "url": "https://dev.to/unmannedops/your-agents-not-done-lies-as-often-as-its-done-1ea2",
+      "id": "techpulse-8bd7a16c4da3f350119f",
+      "title": "DINOTOPIA: Turning a classic book into a video game",
+      "description": "Dinotopia was my FAVORITE thing when I was a kid. It's the story of a lost continent, where a peaceful society of dinosaurs and humans live in harmony. I always wanted a Dinotopia game. What I didn't realize is that... there were already three of them. Today let's look at Dinotopia: The Sunstone Odyssey, Dinotopia...",
+      "url": "https://www.polygon.com/video/dinotopia-turning-a-classic-book-into-a-video-game/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/dinotopia-turning-a-classic-book-into-a-video-game.jpg",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Polygon.com",
+      "published": "2026-08-17T07:58:45+00:00"
+    },
+    {
+      "id": "techpulse-5d949334d717472a9333",
+      "title": "Keeping junk out of programmatic geo pages: an allow list for metro, a block list for districts",
+      "description": "On podbor-minuta.ru we have listing pages grouped by metro station and by district. The idea is simple: every station and every district gets its own page with the new-build apartments near it. These pages are built ahead of time from the database, each with its own URL, title and a real list of apartments. The...",
+      "url": "https://dev.to/numart/keeping-junk-out-of-programmatic-geo-pages-an-allow-list-for-metro-a-block-list-for-districts-4adk",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T05:16:16+00:00"
+      "published": "2026-08-17T07:54:11+00:00"
+    },
+    {
+      "id": "techpulse-6eef696827d23a6a3d0b",
+      "title": "Как мы держим мусор подальше от программных гео-страниц: белый список метро и чёрный список районов",
+      "description": "На podbor-minuta.ru есть страницы-подборки квартир, сгруппированные по метро и по району. Идея простая: у каждой станции метро и у каждого района своя страница со списком новостроек рядом. Такие страницы собираются заранее из базы, у каждой свой адрес, заголовок и реальный список квартир. Проблема была в том, из чего...",
+      "url": "https://dev.to/numart/kak-my-dierzhim-musor-podalshie-ot-proghrammnykh-ghieo-stranits-bielyi-spisok-mietro-i-chiornyi-spisok-raionov-45i5",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:54:11+00:00"
+    },
+    {
+      "id": "techpulse-52e85dd0bf169bce4ffa",
+      "title": "Gaming’s oldest urban legend is Atari’s fault",
+      "description": "Polybius is gaming's oldest urban legend. It's a cursed arcade machine that supposedly caused illness, amnesia... death. Of course, Polybius is just a story. But the legend is so believable because of real shady business dealings: knock-off Atari games, shell corporations, and military propaganda. Jenna Stoeber...",
+      "url": "https://www.polygon.com/video/gaming-s-oldest-urban-legend-is-atari-s-fault/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/gaming-s-oldest-urban-legend-is-atari-s-fault.jpeg",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Polygon.com",
+      "published": "2026-08-17T07:50:40+00:00"
+    },
+    {
+      "id": "techpulse-491bad7ff90769c30161",
+      "title": "Abstract is now LIVE on Formo!",
+      "description": "Original article: https://formo.so/blog/abstract-is-now-live-on-formo We’re excited to announce that Abstract , the cutting-edge Layer 2 blockchain, is now integrated with Formo’s Web3 Form Builder! This new integration enables Abstract developers and Web3 projects to create secure, private, and data-driven forms and...",
+      "url": "https://dev.to/yos/abstract-is-now-live-on-formo-4d0n",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fe158lxqxh6qxuh6s0mky.png",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:48:10+00:00"
+    },
+    {
+      "id": "techpulse-6cda4b9ba7fd37e7dac9",
+      "title": "I Skipped the Apprenticeship. AI Let Me. Production Sent the Bill.",
+      "description": "There is an argument running on this site right now that AI broke the junior developer pipeline. The grunt work was the curriculum, the models ate the grunt work, and nobody is manufacturing seniors anymore. I want to hand that argument a data point, because I am what the other side of it looks like. I am not a...",
+      "url": "https://dev.to/dimb/i-skipped-the-apprenticeship-ai-let-me-production-sent-the-bill-624",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:45:16+00:00"
+    },
+    {
+      "id": "techpulse-ed6447d02e3b20674054",
+      "title": "Privy Wallet Analytics for Crypto and DeFi Apps (2026 Guide)",
+      "description": "Original article: https://formo.so/blog/analytics-crypto-defi-apps-privy Key Takeaways Use Formo with Privy embedded wallets to get enhanced analytics and dashboards, with unified web, product, and onchain analytics on one platform. The Privy and Formo integration works by calling Formo's identify() method inside...",
+      "url": "https://dev.to/yos/privy-wallet-analytics-for-crypto-and-defi-apps-2026-guide-lo1",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fs110b849c3lgkifyn9lj.png",
+      "category": "Internet & Web",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:44:57+00:00"
+    },
+    {
+      "id": "techpulse-d531a8efdea478d46eef",
+      "title": "Why French games have always been way ahead of their time",
+      "description": "France is the second-biggest producer of video games in the world. Franchises like Assassin’s Creed, Dishonored, Life is Strange, and … whatever the hell David Cage is doing, come from French-based companies. So France has had a huge influence on gaming, globally. But what you might not know is how weird and...",
+      "url": "https://www.polygon.com/video/why-french-games-have-always-been-way-ahead-of-their-time/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/why-french-games-have-always-been-way-ahead-of-their-time.jpeg",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Polygon.com",
+      "published": "2026-08-17T07:44:39+00:00"
+    },
+    {
+      "id": "techpulse-8e8fa696778a92e57916",
+      "title": "Securing adoption in the era of shadow AI",
+      "description": "How organizations can reduce shadow AI risks while enabling secure, responsible AI adoption at scale.",
+      "url": "https://www.techradar.com/pro/securing-adoption-in-the-era-of-shadow-ai",
+      "image": "https://cdn.mos.cms.futurecdn.net/qP76MS2BAb7kSuWrvJXXYL-1280-80.jpg",
+      "category": "Hardware & Devices",
+      "mainCategory": "Technology",
+      "source": "Latest from TechRadar",
+      "published": "2026-08-17T07:43:57+00:00"
+    },
+    {
+      "id": "techpulse-8573a677cb1de79ceca8",
+      "title": "Dynamic Embedded Wallet Analytics for Crypto and DeFi Apps",
+      "description": "Original article: https://formo.so/blog/analytics-crypto-defi-apps-dynamic Key Takeaways Use Formo with Dynamic embedded wallets to get enhanced analytics and dashboards, with unified web, product, and onchain analytics on one platform. Dynamic.xyz analytics integration unifies embedded wallet identity with onchain...",
+      "url": "https://dev.to/yos/dynamic-embedded-wallet-analytics-for-crypto-and-defi-apps-h83",
+      "image": "",
+      "category": "Internet & Web",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:42:25+00:00"
+    },
+    {
+      "id": "techpulse-fa240f145f046d793530",
+      "title": "Functional languages are heavily imperative.",
+      "description": "This article will seem full of contradictions. Even writing it feels like a contradiction: Why am I digging through academic Haskell papers from the '90s right in the middle of my AI psychosis moment? Literally, as I write this, I am running my first experiment with an agent delegating tasks to another agent. So why...",
+      "url": "https://dev.to/playfulprogramming/functional-languages-are-heavily-imperative-4c1",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7durxsp38qjbtmu9xxel.png",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:39:18+00:00"
+    },
+    {
+      "id": "techpulse-743a69e2a81fc26b21df",
+      "title": "The hated exploit some developers actually want you to use",
+      "description": "The way game saves are implemented in a game can affect everything from the difficulty, to the narrative, to the gameplay itself. And save scumming, that much-hated exploit that makes it possible to brute-force games like XCOM 2... or avoid consequences in Mass Effect... is now being built into games like Desperadoes...",
+      "url": "https://www.polygon.com/video/the-hated-exploit-some-developers-actually-want-you-to-use/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/the-hated-exploit-some-developers-actually-want-you-to-use.jpeg",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Polygon.com",
+      "published": "2026-08-17T07:37:38+00:00"
+    },
+    {
+      "id": "techpulse-6d86dd93c49735cdd3b4",
+      "title": "Your approval gate is not judgment — it is a lookup you never automated",
+      "description": "We spent two weeks believing our agent org couldn't publish because it lacked the capability . Today we measured it. The capability was there. What stopped it was a rule we had written ourselves. Then we looked at what that rule was actually catching, and it wasn't judgment. It was a database query we had assigned to...",
+      "url": "https://dev.to/unmannedops/your-approval-gate-is-not-judgment-it-is-a-lookup-you-never-automated-160h",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:35:35+00:00"
+    },
+    {
+      "id": "techpulse-d88a6c6e1d48dd805f3b",
+      "title": "Your Agent Audit Trail Is Not Evidence Until You Can Verify It",
+      "description": "An agent log can tell you what the process claims happened. It does not prove that the record is complete, ordered, or unchanged. That distinction matters after a failed deployment, a suspicious tool call, or a customer asking who approved an external side effect. A timestamped JSON file is useful for debugging. It is...",
+      "url": "https://dev.to/zira125/your-agent-audit-trail-is-not-evidence-until-you-can-verify-it-423n",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:35:26+00:00"
+    },
+    {
+      "id": "techpulse-d8133d1fae3cf7e0292f",
+      "title": "Arc Engine: A Game Engine Written in 100% C",
+      "description": "I created a Game engine named Arc engine, its purely written in C What is Arc engine? Arc engine is a Game Engine written purely in C, with amazing features built-in, its in alpha release (0.0.2.8.5) and it have already beaten C++ in some Benchmarks, its features are Strings which C doesn't have built-in, it got an...",
+      "url": "https://dev.to/mohammadyasin_jaberinasr_/arc-engine-a-game-engine-written-in-100-c-4d60",
+      "image": "",
+      "category": "Game Development",
+      "mainCategory": "Gaming",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:34:59+00:00"
+    },
+    {
+      "id": "techpulse-15094eb0abc488644d45",
+      "title": "A Day on a Plate: Hand-Drawn CSS Food Art",
+      "description": "This is a submission for Frontend Challenge - Comfort Food Edition, CSS Art . Inspiration When thinking of \"comfort food,\" I couldn't pick just one dish. To me, ultimate comfort is \"Ghar Ka Khaana\" (home-cooked food), which is less about a specific recipe and more about the comforting rhythm of a day at home. This...",
+      "url": "https://dev.to/ps_h_06d0f0ebbbd80d0648b0/a-day-on-a-plate-hand-drawn-css-food-art-3m3b",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:33:22+00:00"
+    },
+    {
+      "id": "techpulse-e02651d43a444b308496",
+      "title": "I got tired of every dev portfolio looking the same, so I built one styled like a terminal",
+      "description": "Every portfolio template I found was either a generic \"hero + cards\" layout or way too flashy for something that's supposed to show my work, not distract from it. So I built one from scratch — single HTML file, no framework, no build step. The whole thing leans into things developers already know: a terminal window in...",
+      "url": "https://dev.to/arisha_nadeem_1217f478da4/i-got-tired-of-every-dev-portfolio-looking-the-same-so-i-built-one-styled-like-a-terminal-1280",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F7gfw3nvas8gejfdrtf2w.png",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T07:29:20+00:00"
+    },
+    {
+      "id": "techpulse-dee375b9345e77416bb2",
+      "title": "The real reason the Super Mario Bros movie tanked",
+      "description": "The Super Mario Bros. movie is famously bad — so bad it killed the hopes of any good video game movie adaptations for YEARS. Or... so they say. But what if Super Mario Bros. wasn't actually that bad? Jenna digs into the history of the Super Mario Bros. movie and gets the answers about why it's so reviled. And why...",
+      "url": "https://www.polygon.com/video/the-real-reason-the-super-mario-bros-movie-tanked/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/the-real-reason-the-super-mario-bros-movie-tanked.jpeg",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Polygon.com",
+      "published": "2026-08-17T07:28:41+00:00"
+    },
+    {
+      "id": "techpulse-4f6df3f59f88e5c636cc",
+      "title": "Mortal Shell 2 release countdown: Exact date and time",
+      "description": "Sooner or soon! The post Mortal Shell 2 release countdown: Exact date and time appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/mortal-shell-2-release-countdown-exact-date-and-time/",
+      "image": "",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-17T07:26:26+00:00"
+    },
+    {
+      "id": "techpulse-d3356e2a21525de32737",
+      "title": "Sekiro and a brief history of spraying blood all over the darn place",
+      "description": "It's spray day and we're making a big deposit at the blood bank. Here's why Sekiro: Shadows Die Twice borrows its iconic blood spray from Kurosawa and other samurai movies.",
+      "url": "https://www.polygon.com/video/sekiro-and-a-brief-history-of-spraying-blood-all-over-the-darn-place/",
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/sekiro-and-a-brief-history-of-spraying-blood-all-over-the-darn-place.jpg",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Polygon.com",
+      "published": "2026-08-17T07:18:28+00:00"
+    },
+    {
+      "id": "techpulse-c1787b95811fe7d51a9f",
+      "title": "Lanterns episode 1 makes an incredibly bold storytelling choice that I didn't see coming — and now I've got a wild theory about one of the new HBO Max show's dual timelines",
+      "description": "Lanterns' debut episode makes a fearless storytelling decision that'll shock viewers and spark a fierce debate among DC comic book fans.",
+      "url": "https://www.techradar.com/streaming/hbo-max/lanterns-episode-1-ending-explained",
+      "image": "https://cdn.mos.cms.futurecdn.net/HZmiwPkSottPfa58ed7cpZ-1280-80.jpg",
+      "category": "Hardware & Devices",
+      "mainCategory": "Technology",
+      "source": "Latest from TechRadar",
+      "published": "2026-08-17T07:00:00+00:00"
+    },
+    {
+      "id": "techpulse-9d410fa47d2395f4abfc",
+      "title": "The Elder Scrolls 6 is probably subtitled Sentinel, and there's been an easter egg in Starfield hinting at it this whole time",
+      "description": "I was hoping for \"Dominion\" but I'm OK with this.",
+      "url": "https://www.pcgamer.com/games/rpg/the-elder-scrolls-6-is-probably-subtitled-sentinel-and-theres-been-an-easter-egg-in-starfield-hinting-at-it-this-whole-time/",
+      "image": "https://cdn.mos.cms.futurecdn.net/LvcFS2B5ahNkFX4RAFybia-1280-80.jpg",
+      "category": "PC Gaming",
+      "mainCategory": "Gaming",
+      "source": "PCGamer latest",
+      "published": "2026-08-17T06:16:36+00:00"
+    },
+    {
+      "id": "techpulse-bd98371ffcc3361430d5",
+      "title": "A half-price Galaxy Watch 8 headlines Samsung's August Secret Sale, and there's tempting reductions on phones and TVs too",
+      "description": "Samsung’s Secret Sale is here for a limited time, and the brand is handing out bargains on some of its top-rated tech — but hurry, these deals end soon.",
+      "url": "https://www.techradar.com/health-fitness/smartwatches/a-half-price-galaxy-watch-8-headlines-samsungs-august-secret-sale-and-theres-tempting-reductions-on-phones-and-tvs-too",
+      "image": "https://cdn.mos.cms.futurecdn.net/VMZcBwprFw9K4JXHiHr9NB-1280-80.jpg",
+      "category": "Hardware & Devices",
+      "mainCategory": "Technology",
+      "source": "Latest from TechRadar",
+      "published": "2026-08-17T05:58:45+00:00"
     },
     {
       "id": "techpulse-847064a3df141dce0ed1",
@@ -24,127 +266,6 @@
       "mainCategory": "Gaming",
       "source": "Destructoid",
       "published": "2026-08-17T05:10:38+00:00"
-    },
-    {
-      "id": "techpulse-18d9a9956ad233600b2e",
-      "title": "A Bad Prompt Will Waste Your Free Model Calls. Lint the Contract First.",
-      "description": "Last Tuesday, my pipeline called a free model three times on the same commit. The output looked confident every time. It was wrong every time. The model did not fail. My prompt did. I almost blamed the model. Then I looked at the job log. The same ambiguous instruction went out again and again. Every retry was a fresh...",
-      "url": "https://dev.to/gitlab_3188/a-bad-prompt-will-waste-your-free-model-calls-lint-the-contract-first-16ln",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:10:36+00:00"
-    },
-    {
-      "id": "techpulse-691cb1ecdb89f159d9b4",
-      "title": "Spring proxies: JDK dynamic vs CGLIB",
-      "description": "You put @Transactional on a method and a database transaction opens before it runs and commits when it returns — yet you never wrote a line to start or end one. You add @Cacheable , and the second call with the same arguments skips your method body entirely. You didn't touch the code inside those methods. So where...",
-      "url": "https://dev.to/ankit_verma_e2fa7fb2aa95d/spring-proxies-jdk-dynamic-vs-cglib-1fg1",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:08:46+00:00"
-    },
-    {
-      "id": "techpulse-1c99c801ecb8256d4031",
-      "title": "\"I built a lying MCP server on purpose — here's how you catch it\"",
-      "description": "TL;DR — A server's README can say anything. Its tools/list response either backs that up or it doesn't. I built mcp-worse — a second binary, sharing two of mcp-better 's tool names, that deliberately omits the list-cache stamps and serves tools in the wrong order — so a test could prove the difference. That test is...",
-      "url": "https://dev.to/wolfejam/i-built-a-lying-mcp-server-on-purpose-heres-how-you-catch-it-102g",
-      "image": "",
-      "category": "Cloud & Infrastructure",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:06:18+00:00"
-    },
-    {
-      "id": "techpulse-b7dc41c00725a3f6a022",
-      "title": "Next.js project scope: what to define before you write a line of code",
-      "description": "Scoping a Next.js project before development starts is the single fastest way to avoid mid-build surprises on budget and timeline. Most project overruns I see aren't caused by hard engineering problems — they're caused by vague scope that everyone interpreted differently. This post walks through the five things I pin...",
-      "url": "https://dev.to/nayankyada/nextjs-project-scope-what-to-define-before-you-write-a-line-of-code-id2",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:05:50+00:00"
-    },
-    {
-      "id": "techpulse-24631ad3e8bf6fc3217a",
-      "title": "Using PixelRAG with Claude Code (August 2026) — Visual RAG for Documents with Tables and Diagrams",
-      "description": "PixelRAG is a visual RAG tool that treats web pages, PDFs, and images as screenshots rather than text — preserving the layout of tables and charts so you can search and reference them as-is. This post covers installing it as a plugin, actual usage, how it differs from traditional text-based RAG, and the gotchas you're...",
-      "url": "https://dev.to/_02121fbe984480fd65fc/using-pixelrag-with-claude-code-august-2026-visual-rag-for-documents-with-tables-and-diagrams-82c",
-      "image": "",
-      "category": "Internet & Web",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:01:56+00:00"
-    },
-    {
-      "id": "techpulse-e5786cc20bfd7c984b88",
-      "title": "The outbox pattern is four sentences in a blog post. Here are three incidents from running it.",
-      "description": "Write the event into the same transaction as the row. Poll the table. Send to Kafka. Mark it sent. That's the whole pattern, and every version of it you'll find online stops right there, because at that level of description it's obviously correct — one commit, so a published fact can never disagree with the row that...",
-      "url": "https://dev.to/danzizhangdev/the-outbox-pattern-is-four-sentences-in-a-blog-post-here-are-three-incidents-from-running-it-4iek",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:01:42+00:00"
-    },
-    {
-      "id": "techpulse-b5c4af47c6600c5f8854",
-      "title": "Model-Generated GitHub Actions Need a Permission Gate",
-      "description": "A model can write a valid GitHub Actions workflow that still leaks a secret. Lint the syntax, then gate the permissions. The failure mode Most checks on model-generated YAML stop at syntax. A workflow can parse cleanly, pass actionlint , and still: request id-token: write or contents: write read repository secrets in...",
-      "url": "https://dev.to/hackrs_6393/model-generated-github-actions-need-a-permission-gate-5570",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:00:47+00:00"
-    },
-    {
-      "id": "techpulse-2e6d4ea5a6c48cb12667",
-      "title": "Your Cron Job Exits 0 and Does Nothing: Reading Chrome's Cookie SQLite to Know If a Session Is Actually Alive",
-      "description": "An automation job can fail for days without making a single sound. Mine did: one Instagram lane ran twelve times a day, logged \"done\" every time, raised zero errors — and liked exactly nothing. This post is about that failure mode and how I fixed the detection, in a series where I share the holes I've actually fallen...",
-      "url": "https://dev.to/bokuwalily/your-cron-job-exits-0-and-does-nothing-reading-chromes-cookie-sqlite-to-know-if-a-session-is-3c55",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:00:06+00:00"
-    },
-    {
-      "id": "techpulse-b9ebedf5a7b752ba5d0f",
-      "title": "This week in AI + Indian markets: a safety pause, a price war, and a pullback that isn't what it looks like",
-      "description": "Three stories from the past week worth more than a scroll-past — one about how close AI safety came to a real test, one about what's happening to the economics of building with AI, and one about what's actually driving the Nifty right now. 1. OpenAI paused a model — not for what it said, but for what it could do...",
-      "url": "https://dev.to/abhishek_sharma_a9792aee8/this-week-in-ai-indian-markets-a-safety-pause-a-price-war-and-a-pullback-that-isnt-what-it-3p57",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:00:06+00:00"
-    },
-    {
-      "id": "techpulse-937433bbb32615927114",
-      "title": "re: Has the Audience for Technical Articles Dropped?",
-      "description": "In past weeks, Dumebi Okolo asked in this post : Has the audience for technical articles dropped? AI tools reshaping technical reading habits Dumebi Okolo Dumebi Okolo Dumebi Okolo Follow Jul 8 Has the audience for technical articles dropped? # discuss 72 reactions 24 comments 1 min read \"Is it just me, or has anyone...",
-      "url": "https://dev.to/canro91/re-has-the-audience-for-technical-articles-dropped-2o4",
-      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F941720%2Ff316bf93-ef0b-4bc5-aee2-5e062255d5f0.jpg",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T05:00:00+00:00"
-    },
-    {
-      "id": "techpulse-f2e3fc18da6c961593c1",
-      "title": "A top-10 list was the wrong answer, so I used greedy set cover instead",
-      "description": "I had a ranking problem that looked trivial and turned out to have the wrong shape. Contexto is a daily word game that scores your guess by semantic distance to a hidden answer, reporting a rank from 1 to whatever. Players want good opening words. The obvious approach is to take an archive, count how often each word...",
-      "url": "https://dev.to/horushe/a-top-10-list-was-the-wrong-answer-so-i-used-greedy-set-cover-instead-1lbm",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Gaming",
-      "source": "DEV Community",
-      "published": "2026-08-17T04:59:38+00:00"
     },
     {
       "id": "techpulse-2de77be8579b4334ef20",
@@ -334,28 +455,6 @@
       "published": "2026-08-16T19:04:47+00:00"
     },
     {
-      "id": "techpulse-42827a0406735517f055",
-      "title": "'Fatal Fury: City of the Wolves Revenge Edition' Makes It Easy To Get All Of The Street Fighter Rival's DLC",
-      "description": "Fatal Fury: City of the Wolves Revenge Edition nets you the first 34 fighters released for SNK's latest Street Fighter 6-rivaling fighting game",
-      "url": "https://www.polygon.com/fatal-fury-revenge-edition/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/fatal-fury-duck-king.jpg",
-      "category": "Game Releases",
-      "mainCategory": "Gaming",
-      "source": "Polygon.com",
-      "published": "2026-08-16T19:00:12+00:00"
-    },
-    {
-      "id": "techpulse-836fe53485d8a983d897",
-      "title": "Gerard Butler's 109-Minute Sci-Fi Disaster Movie Masterpiece Officially Arrives on Free Streaming",
-      "description": "While it may be one of the dumbest disaster sci-fi movies, Geostorm is still a rare distillation of everything that makes Gerard Butler great.",
-      "url": "https://www.polygon.com/gerard-butler-geostorm-streaming-tubi/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/mcdgeos_ec021.jpg",
-      "category": "Gaming",
-      "mainCategory": "Gaming",
-      "source": "Polygon.com",
-      "published": "2026-08-16T19:00:12+00:00"
-    },
-    {
       "id": "techpulse-0cdc0f60a897f3005c51",
       "title": "4 of the most detailed and sonically stellar elite hi-fi speakers I heard Audio at Audio Advice Live",
       "description": "This year's Audio Advice Live has brought with it some of the best new stereo speakers from Bowers & Wilkins, Focal, Klipsch, and JBL, redefining what a great HiFi speaker is.",
@@ -398,17 +497,6 @@
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
       "published": "2026-08-16T18:05:00+00:00"
-    },
-    {
-      "id": "techpulse-7d641d07f17dfdb99155",
-      "title": "After 52 Years, Wolverine's Best Quote Is Still One Of The Greatest Lines In X-Men History",
-      "description": "He's short, angry, hairy, and murderous, but Wolverine has got some wisdom to share",
-      "url": "https://www.polygon.com/wolverine-best-quote-x-men/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/7836425/wolverine.jpg",
-      "category": "Gaming",
-      "mainCategory": "Gaming",
-      "source": "Polygon.com",
-      "published": "2026-08-16T18:00:12+00:00"
     },
     {
       "id": "techpulse-f701d39c639bf5f900b8",
@@ -477,17 +565,6 @@
       "published": "2026-08-16T17:29:52+00:00"
     },
     {
-      "id": "techpulse-111dbbec801d20a5e093",
-      "title": "Resonance: A Plague Tale Legacy’s Developer Walked an Unexpected Path to Success",
-      "description": "Before it established itself as an awards-darling with A Plague Tale, Asobo Studio cut its teeth in the wild west of licensed games.",
-      "url": "https://www.polygon.com/asobo-studio-plague-tale-ratatouille/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/ratatouille-holding-cheese.jpg",
-      "category": "Gaming",
-      "mainCategory": "Gaming",
-      "source": "Polygon.com",
-      "published": "2026-08-16T17:00:12+00:00"
-    },
-    {
       "id": "techpulse-cbeeb71a93ac672b98bd",
       "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
       "description": "The legendary game designer guides us through the games on his PC.",
@@ -532,17 +609,6 @@
       "published": "2026-08-16T16:52:07+00:00"
     },
     {
-      "id": "techpulse-f07df37a9f63c2f2ca2a",
-      "title": "'Persona 5' And More Iconic Games Will Dominate The Next Season Of Fortnite",
-      "description": "Fortnite Chapter 7 Season 4: Override begins on August 20 and is full of gaming crossovers with Sonic, Persona 5, Crash Bandicoot, Spyro, and more",
-      "url": "https://www.polygon.com/fortnite-override-season-trailer/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/fortnite-persona-5-sonic.jpg",
-      "category": "Gaming",
-      "mainCategory": "Gaming",
-      "source": "Polygon.com",
-      "published": "2026-08-16T16:35:50+00:00"
-    },
-    {
       "id": "techpulse-09cdfd3672e0f720af29",
       "title": "Kingdom Hearts creator Tetsuya Nomura teases his role in the new anime series, tells fans to \"let your imagination run wild\"",
       "description": "Kingdom Hearts creator Tetsuya Nomura has addressed the newly announced Kingdom Hearts anime series directly for the first time, though he's giving away very little. Read more",
@@ -585,17 +651,6 @@
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
       "published": "2026-08-16T16:00:41+00:00"
-    },
-    {
-      "id": "techpulse-5994426e6c5d9a5956aa",
-      "title": "Netflix Games’ Latest Pivot Is a Reminder of Its Messy Past",
-      "description": "Netflix’s decision to shut down two video game studios continues its messy five-year attempt to find its niche in a crowded industry.",
-      "url": "https://www.polygon.com/netflix-night-school-studio-closure-analysis/",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/08/netflix-games-minigolf.jpg",
-      "category": "Gaming Industry",
-      "mainCategory": "Gaming",
-      "source": "Polygon.com",
-      "published": "2026-08-16T16:00:12+00:00"
     },
     {
       "id": "techpulse-3863b1f7964f5cad86c8",
@@ -730,17 +785,6 @@
       "published": "2026-08-16T13:00:00+00:00"
     },
     {
-      "id": "techpulse-3c17c34fedbe87e80541",
-      "title": "How to watch Burnley vs West Ham: Live streams and TV channels for the EFL Championship 2026/27 game",
-      "description": "All the ways to watch Burnley vs West Ham live streams from anywhere, with the EFL Championship favourites set for a blockbuster encounter at Turf Moor.",
-      "url": "https://www.techradar.com/how-to-watch/football/burnley-vs-west-ham-efl-championship-2026-27",
-      "image": "https://cdn.mos.cms.futurecdn.net/5Q97LpCC4JHTPm3WJn5PtJ-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Gaming",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T13:00:00+00:00"
-    },
-    {
       "id": "techpulse-7d51b6cc64e9d0c1c729",
       "title": "Is the new Water Cyber Shield Act too little, too late, and can a cyber group do it better? The experts weigh in",
       "description": "Numerous recent attacks are prompting Congress to do something",
@@ -748,6 +792,17 @@
       "image": "https://cdn.mos.cms.futurecdn.net/ZtdYh6C8PhDP5njg8EtK6M-1280-80.jpg",
       "category": "Hardware & Devices",
       "mainCategory": "Technology",
+      "source": "Latest from TechRadar",
+      "published": "2026-08-16T13:00:00+00:00"
+    },
+    {
+      "id": "techpulse-3c17c34fedbe87e80541",
+      "title": "How to watch Burnley vs West Ham: Live streams and TV channels for the EFL Championship 2026/27 game",
+      "description": "All the ways to watch Burnley vs West Ham live streams from anywhere, with the EFL Championship favourites set for a blockbuster encounter at Turf Moor.",
+      "url": "https://www.techradar.com/how-to-watch/football/burnley-vs-west-ham-efl-championship-2026-27",
+      "image": "https://cdn.mos.cms.futurecdn.net/5Q97LpCC4JHTPm3WJn5PtJ-1280-80.jpg",
+      "category": "Hardware & Devices",
+      "mainCategory": "Gaming",
       "source": "Latest from TechRadar",
       "published": "2026-08-16T13:00:00+00:00"
     },
@@ -796,23 +851,23 @@
       "published": "2026-08-16T11:49:24+00:00"
     },
     {
-      "id": "techpulse-135ee12679bd53a2531f",
-      "title": "Samsung Galaxy Z Fold8 and Galaxy Z Fold8 Ultra Review: The Right Shape",
-      "description": "Nearly a decade after its debut, Samsung’s Galaxy Fold finally comes into its own.",
-      "url": "https://www.wired.com/review/samsung-galaxy-z-fold8-and-z-fold8-ultra/",
-      "image": "https://media.wired.com/photos/6a7fe9a3cf7e32811238974b/master/pass/Samsung-Galaxy-Z-Fold8-Ultra-(left)-and-Z-Fold8-(right)-SOURCE-Julian-Chokkattu.jpg",
-      "category": "Reviews & Features",
-      "mainCategory": "Technology",
-      "source": "WIRED",
-      "published": "2026-08-16T11:00:00+00:00"
-    },
-    {
       "id": "techpulse-36352a816f2222625acc",
       "title": "Astronomers Discover the Existence of a Black Hole Star",
       "description": "An object observed by the James Webb Space Telescope lends credence to a strange explanation for the mysterious red spots in the early universe.",
       "url": "https://www.wired.com/story/black-hole-stars-are-becoming-less-hypothetical/",
       "image": "https://media.wired.com/photos/6a7f4c716a3123db993a937f/master/pass/MIT-BlackHoleStar-01-press_0.jpg",
       "category": "Internet & Web",
+      "mainCategory": "Technology",
+      "source": "WIRED",
+      "published": "2026-08-16T11:00:00+00:00"
+    },
+    {
+      "id": "techpulse-135ee12679bd53a2531f",
+      "title": "Samsung Galaxy Z Fold8 and Galaxy Z Fold8 Ultra Review: The Right Shape",
+      "description": "Nearly a decade after its debut, Samsung’s Galaxy Fold finally comes into its own.",
+      "url": "https://www.wired.com/review/samsung-galaxy-z-fold8-and-z-fold8-ultra/",
+      "image": "https://media.wired.com/photos/6a7fe9a3cf7e32811238974b/master/pass/Samsung-Galaxy-Z-Fold8-Ultra-(left)-and-Z-Fold8-(right)-SOURCE-Julian-Chokkattu.jpg",
+      "category": "Reviews & Features",
       "mainCategory": "Technology",
       "source": "WIRED",
       "published": "2026-08-16T11:00:00+00:00"
@@ -950,28 +1005,6 @@
       "published": "2026-08-16T09:33:00+00:00"
     },
     {
-      "id": "techpulse-d2c11804564296ff4503",
-      "title": "‘Groundbreaking technology often enters the market at a premium before scaling’: Touch-sensitive e-skin could soon be commonplace in robotics",
-      "description": "Ultra-thin, highly sensitive electronic skin could plug this major robotics gap – edge processing could improve latency.",
-      "url": "https://www.techradar.com/pro/groundbreaking-technology-often-enters-the-market-at-a-premium-before-scaling-touch-sensitive-e-skin-could-soon-be-commonplace-in-robotics",
-      "image": "https://cdn.mos.cms.futurecdn.net/oKL6AAKzCE6tNmSqKv7ZoM-1280-80.jpg",
-      "category": "Emerging Technology",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T09:00:00+00:00"
-    },
-    {
-      "id": "techpulse-d03209c6c383864f09ff",
-      "title": "Why do so many AI chatbots call themselves Nova? I asked ChatGPT, Claude, Gemini and more to name themselves",
-      "description": "Users and alignment researchers have found that there’s a common name that most chatbots pick, guess which one went for it straight away?",
-      "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/why-do-so-many-ai-chatbots-call-themselves-nova-i-asked-chatgpt-claude-gemini-and-more-to-name-themselves",
-      "image": "https://cdn.mos.cms.futurecdn.net/kuMR2FNSXDyiofPwuFqJoE-1280-80.jpg",
-      "category": "Artificial Intelligence",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T09:00:00+00:00"
-    },
-    {
       "id": "techpulse-8f15bfea8d6c57461192",
       "title": "Best teams in JoJo’s Bizarre Adventure: Golden Spirit",
       "description": "Teamwork is ultimate! The post Best teams in JoJo’s Bizarre Adventure: Golden Spirit appeared first on Destructoid .",
@@ -981,17 +1014,6 @@
       "mainCategory": "Gaming",
       "source": "Destructoid",
       "published": "2026-08-16T08:05:32+00:00"
-    },
-    {
-      "id": "techpulse-b3491a514d474c61042f",
-      "title": "3 places you can't install plug-in solar panels — the new planning rules that could ruin your grand designs for your balcony",
-      "description": "If your planned location doesn't qualify as \"permitted development\" then you'll need to apply for planning permission before getting started.",
-      "url": "https://www.techradar.com/home/3-places-you-cant-install-plug-in-solar-panels-the-new-planning-rules-that-could-ruin-your-grand-designs-for-your-balcony",
-      "image": "https://cdn.mos.cms.futurecdn.net/K8N6WcQTEVfbFoGB4dfhVK-1280-80.jpg",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "Latest from TechRadar",
-      "published": "2026-08-16T08:00:00+00:00"
     },
     {
       "id": "techpulse-69c8304e0c392e9269f3",
@@ -1379,17 +1401,6 @@
       "published": "2026-08-15T10:42:49+00:00"
     },
     {
-      "id": "techpulse-c9aecd7ec6aecf3cc60b",
-      "title": "Stalker 2's imminent free update aims to make the sequel more atmospheric and less relentlessly hostile: 'The Zone isn't one constant gunfight'",
-      "description": "The patch releases next week alongside the sequel's first story expansion.",
-      "url": "https://www.pcgamer.com/games/fps/stalker-2s-imminent-free-update-aims-to-make-the-sequel-more-atmospheric-and-less-relentlessly-hostile-the-zone-isnt-one-constant-gunfight/",
-      "image": "https://cdn.mos.cms.futurecdn.net/qRDzyoDARaw6mviL7T22YQ-1280-80.jpg",
-      "category": "PC Gaming",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-15T10:35:01+00:00"
-    },
-    {
       "id": "techpulse-2d212e6caccf03df281c",
       "title": "Instapaper, the Original Read-It-Later App, Just Got a Huge Upgrade",
       "description": "New fonts, better customization, and a whole new layout all make it worth dusting off your Instapaper account.",
@@ -1575,17 +1586,6 @@
       "mainCategory": "Gaming",
       "source": "Destructoid",
       "published": "2026-08-14T20:18:03+00:00"
-    },
-    {
-      "id": "techpulse-109aa7c61825c2b91dbd",
-      "title": "Best team to use in Path of Idle: Old Gods Rising",
-      "description": "Teamwork is dreamwork! The post Best team to use in Path of Idle: Old Gods Rising appeared first on Destructoid .",
-      "url": "https://www.destructoid.com/best-team-to-use-in-path-of-idle-old-gods-rising/",
-      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/4243990_20260815005659_1.png?quality=75&#038;w=840&#038;resize=1024%2C576",
-      "category": "Gaming",
-      "mainCategory": "Gaming",
-      "source": "Destructoid",
-      "published": "2026-08-14T19:50:43+00:00"
     },
     {
       "id": "techpulse-dbf321e18829f6add332",
