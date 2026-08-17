@@ -322,16 +322,12 @@ const response =
     {
       method: 'GET',
 
-      mode: 'cors',
 
       cache: 'no-store',
 
       redirect: 'follow',
 
-      headers: {
-        'Accept':
-          'application/json'
-      }
+    
     }
   );
 
