@@ -26,12 +26,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    timeout-minutes: 10
-
     steps:
 
       # =====================================================
-      # CHECKOUT
+      # 1. CHECKOUT
       # =====================================================
 
       - name: Checkout repository
@@ -41,7 +39,7 @@ jobs:
 
 
       # =====================================================
-      # PYTHON
+      # 2. SETUP PYTHON
       # =====================================================
 
       - name: Setup Python
@@ -52,17 +50,17 @@ jobs:
 
 
       # =====================================================
-      # PYTHON VERSION
+      # 3. PYTHON VERSION
       # =====================================================
 
       - name: Show Python version
         run: |
           python --version
-          python -m pip --version
+          pip --version
 
 
       # =====================================================
-      # INSTALL DEPENDENCIES
+      # 4. INSTALL DEPENDENCIES
       # =====================================================
 
       - name: Install dependencies
@@ -72,7 +70,7 @@ jobs:
 
 
       # =====================================================
-      # VERIFY DEPENDENCIES
+      # 5. VERIFY DEPENDENCIES
       # =====================================================
 
       - name: Verify dependencies
@@ -82,7 +80,7 @@ jobs:
           import requests
           import bs4
 
-          print("feedparser:", getattr(feedparser, "__version__", "installed"))
+          print("feedparser:", feedparser.__version__)
           print("requests:", requests.__version__)
           print("BeautifulSoup: OK")
           print("All dependencies loaded successfully.")
@@ -90,18 +88,17 @@ jobs:
 
 
       # =====================================================
-      # VERIFY SCRIPT
+      # 6. VERIFY FETCHER
       # =====================================================
 
-      - name: Verify fetch script
+      - name: Verify fetcher
         run: |
           test -f scripts/fetch_news.py
-          python -m py_compile scripts/fetch_news.py
-          echo "fetch_news.py syntax check passed."
+          echo "fetch_news.py found."
 
 
       # =====================================================
-      # RUN NEWS FETCHER
+      # 7. RUN FETCHER
       # =====================================================
 
       - name: Fetch latest news
@@ -110,47 +107,37 @@ jobs:
 
 
       # =====================================================
-      # VALIDATE NEWS JSON
+      # 8. VALIDATE JSON
       # =====================================================
 
       - name: Validate news.json
         run: |
+
           test -f news.json
 
           python - <<'PY'
+
           import json
-          from pathlib import Path
+          from datetime import datetime
 
-          path = Path("news.json")
-
-          with path.open(
+          with open(
+              "news.json",
               "r",
               encoding="utf-8"
           ) as f:
+
               data = json.load(f)
 
-          if data.get("success") is not True:
-              raise SystemExit(
-                  "ERROR: news.json success is not true."
-              )
+          assert data.get("success") is True
 
-          articles = data.get(
-              "articles",
-              []
-          )
+          articles = data.get("articles")
 
-          if not isinstance(
+          assert isinstance(
               articles,
               list
-          ):
-              raise SystemExit(
-                  "ERROR: articles is not a list."
-              )
+          )
 
-          if len(articles) == 0:
-              raise SystemExit(
-                  "ERROR: news.json contains zero articles."
-              )
+          assert len(articles) > 0
 
           required = [
               "id",
@@ -159,83 +146,61 @@ jobs:
               "url",
               "category",
               "mainCategory",
+              "source",
               "published"
           ]
 
-          for number, article in enumerate(
-              articles,
-              start=1
+          for index, article in enumerate(
+              articles
           ):
+
               for field in required:
-                  if field not in article:
-                      raise SystemExit(
-                          f"ERROR: Article {number} missing {field}"
-                      )
 
-          print("========================================")
-          print("news.json validation successful")
-          print("Updated:", data.get("updatedAt"))
-          print("Total:", data.get("total"))
-          print("Articles:", len(articles))
-          print("Feeds configured:", data.get("feedsConfigured"))
-          print("Feeds successful:", data.get("feedsSuccessful"))
-          print("Feeds failed:", data.get("feedsFailed"))
-          print("========================================")
-          PY
+                  assert field in article, (
+                      f"Article {index} missing {field}"
+                  )
 
-
-      # =====================================================
-      # SHOW NEWS SUMMARY
-      # =====================================================
-
-      - name: Show news summary
-        run: |
-          python - <<'PY'
-          import json
-
-          with open(
-              "news.json",
-              "r",
-              encoding="utf-8"
-          ) as f:
-              data = json.load(f)
-
-          print("")
-          print("LATEST ARTICLES")
-          print("---------------")
-
-          for number, article in enumerate(
-              data.get("articles", [])[:10],
-              start=1
-          ):
-              print(
-                  f"{number}. "
-                  f"[{article.get('mainCategory')}] "
-                  f"{article.get('title')}"
+              assert article["url"].startswith(
+                  ("http://", "https://")
               )
 
-          print("")
+              assert article["title"].strip()
+
+              assert article["source"].strip()
+
+          print("JSON validation successful.")
+          print("Updated:", data.get("updatedAt"))
+          print("Total:", data.get("total"))
+          print("Technology:", data.get("technologyCount"))
+          print("Gaming:", data.get("gamingCount"))
+
           PY
 
 
       # =====================================================
-      # GIT STATUS
+      # 9. SHOW STATUS
       # =====================================================
 
-      - name: Check Git status
+      - name: Show generated news status
         run: |
+
+          echo "Git status:"
           git status --short
+
+          echo ""
+          echo "news.json:"
           ls -lh news.json
 
 
       # =====================================================
-      # COMMIT NEWS
+      # 10. COMMIT ONLY NEWS JSON
       # =====================================================
 
       - name: Commit updated news
         run: |
 
-          git config user.name "TechPulse News Bot"
+          git config user.name \
+            "TechPulse News Bot"
 
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
@@ -244,7 +209,7 @@ jobs:
 
           if git diff --cached --quiet; then
 
-            echo "No changes detected in news.json."
+            echo "No changes detected."
 
           else
 
