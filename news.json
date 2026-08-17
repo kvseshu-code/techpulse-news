@@ -1,18 +1,161 @@
 {
   "success": true,
-  "updatedAt": "2026-08-17T00:00:50.256122+00:00",
+  "updatedAt": "2026-08-17T03:29:55.558173+00:00",
   "total": 180,
   "articles": [
     {
-      "id": "techpulse-3ad2758076a5ddd9f35a",
-      "title": "😸Catbot Integration, AI Office, Cat Mode (AI Avatar v17: VS Code and Chrome Extension)",
-      "description": "Intro AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its might .🤗 It lives in your VS Code sidebar (reacts to Claude Code / GitHub Copilot) or browser side panel (reacts to ChatGPT / Claude). Animations and speech bubbles all run without AI too. This time I have three main topics. 🤝Catbot...",
-      "url": "https://dev.to/webdeveloperhyper/catbot-integration-ai-office-cat-mode-ai-avatar-v17-vs-code-and-chrome-extension-2f26",
-      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fd6l89zu0h1te9euoyydn.png",
+      "id": "techpulse-03dfcb6df7499e46e004",
+      "title": "I found code in my repo I'd never seen. All 82 tests passed. I quarantined it for three days anyway.",
+      "description": "During a routine morning triage of my open-source project, git status showed a modified file I had no memory of touching: extension/background.js , last modified 24 hours earlier, sitting next to a fresh background.js.bak someone had thoughtfully left behind. Nobody broke in. I run several AI coding sessions in...",
+      "url": "https://dev.to/achiya-automation/i-found-code-in-my-repo-id-never-seen-all-82-tests-passed-i-quarantined-it-for-three-days-anyway-33go",
+      "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-16T23:49:02+00:00"
+      "published": "2026-08-17T03:22:43+00:00"
+    },
+    {
+      "id": "techpulse-7e43467d7e3d829fcbe8",
+      "title": "MCP Is Going Stateless: What Changed and How I Migrated My Currency Converter Server",
+      "description": "The Model Context Protocol (MCP) has been evolving quickly. One of the most interesting changes in the latest MCP specification is the move toward a stateless protocol model . I recently updated my MCP currency converter server to work with the newer stateless behavior and the new split TypeScript SDK packages...",
+      "url": "https://dev.to/dilumdarshana/mcp-is-going-stateless-what-changed-and-how-i-migrated-my-currency-converter-server-olm",
+      "image": "",
+      "category": "Cloud & Infrastructure",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T03:21:38+00:00"
+    },
+    {
+      "id": "techpulse-703d63d06a118a6ccba2",
+      "title": "Caninography",
+      "description": "This is a submission for Weekend Challenge: Dog Days Edition I built Caninography, a small digital archive for exploring dog breeds from around the world. I wanted it to feel more like a digital museum than a normal dog website. You can explore breeds, their origins, history, countries, characteristics and connections...",
+      "url": "https://dev.to/maisamabbas0323/caninography-36g5",
+      "image": "",
+      "category": "Internet & Web",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T03:13:42+00:00"
+    },
+    {
+      "id": "techpulse-66afd018fd220e3e0f60",
+      "title": "Building a Production-Ready Chat Application: From Zero to Live",
+      "description": "Building a Production-Ready Chat Application: A Full-Stack Journey Introduction I just built and deployed a production-ready chat application from scratch. Here's everything I learned about real-time messaging, authentication, and deployment. Live App: https://chat-app-backend-floq.onrender.com GitHub...",
+      "url": "https://dev.to/engineersabir/building-a-production-ready-chat-application-from-zero-to-live-55dl",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:59:28+00:00"
+    },
+    {
+      "id": "techpulse-7f9a1f0cffaf830db46f",
+      "title": "PawServe: AI Symptom Help, Breed Finder & Real Vet Care in One Place",
+      "description": "This is a submission for Weekend Challenge: Dog Days Edition What I Built PawServe is a full dog-care platform built for one simple idea: everything your dog needs should live in one place. Not just a cute landing page. A real working app where you can: Find the right breed — search and filter 20+ breeds by category...",
+      "url": "https://dev.to/m1raclescr1pt/pawserve-ai-symptom-help-breed-finder-real-vet-care-in-one-place-5b1g",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:50:51+00:00"
+    },
+    {
+      "id": "techpulse-e896ec72225e2a8a663e",
+      "title": "Running three AI models on one local server when your VRAM doesn't cover all of them",
+      "description": "The first time I tried loading Whisper, bge-m3, and gemma at the same time on my local box, it OOMâ€™d immediately. Iâ€™d known this was going to happen, but I tried anyway to see where the ceiling actually was. The machine is a workstation I already had, enough VRAM for any single model but not three simultaneously...",
+      "url": "https://dev.to/hannune/running-three-ai-models-on-one-local-server-when-your-vram-doesnt-cover-all-of-them-b7g",
+      "image": "",
+      "category": "Artificial Intelligence",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:49:37+00:00"
+    },
+    {
+      "id": "techpulse-c019273b3b5634afacf9",
+      "title": "I thought backing up Supabase was just pg_dump + rclone. It wasn't.",
+      "description": "A few days ago somebody on Reddit asked how to make proper backups of a Supabase project. My first answer was pretty straightforward. Dump the database with the Supabase CLI. Copy the actual Storage objects somewhere else. Put both jobs in cron or GitHub Actions. Done. Or at least that's what I thought. Then people...",
+      "url": "https://dev.to/mkpdigital/i-thought-backing-up-supabase-was-just-pgdump-rclone-it-wasnt-1lbl",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:48:59+00:00"
+    },
+    {
+      "id": "techpulse-1ba3c076d9b9febafd09",
+      "title": "Evooo1Bot: A Multi-Functional Linux Botnet That Turns Compromised Gateways into SOCKS5 Relays, SSH Spreaders, and DDoS Tools",
+      "description": "Evooo1Bot: A Multi-Functional Linux Botnet That Turns Compromised Gateways into SOCKS5 Relays, SSH Spreaders, and DDoS Tools 1. Basic Information Severity: High Title: Multi-Functional Linux Botnet “Evooo1Bot” Publisher: FortiGuard Labs Release Date: 2026-08-13 Update Date: None Original Source: FortiGuard Labs...",
+      "url": "https://dev.to/anoymask/evooo1bot-a-multi-functional-linux-botnet-that-turns-compromised-gateways-into-socks5-relays-ssh-27kg",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:42:51+00:00"
+    },
+    {
+      "id": "techpulse-c790cdf589aee5b2f681",
+      "title": "PawPrints — Helping Dogs Find Friends, Adventures, and a Life Beyond the Feed",
+      "description": "This is a submission for Weekend Challenge: Dog Days Edition What I Built I built PawPrints , a dog-first social community connected to PawPark , a dog-aware adventure planner. The idea came from a problem I think many dog parents experience. Life is busy. Sometimes maintaining our own social life is difficult, and...",
+      "url": "https://dev.to/rashmishivakumar/pawprints-helping-dogs-find-friends-adventures-and-a-life-beyond-the-feed-5bih",
+      "image": "https://assets.dev.to/assets/github-logo-5a155e1f9a670af7944dd5e12375bc76ed542ea80224905ecaf878b9157cdefc.svg",
+      "category": "Game Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:39:23+00:00"
+    },
+    {
+      "id": "techpulse-ce9978fe72dccd512064",
+      "title": "subdomain enumerator",
+      "description": "Finding Hidden Subdomains: Building a Subdomain Enumerator in Python I recently built my third cybersecurity tool — a subdomain enumerator that finds hidden subdomains of a target domain. Here's how I built it. What Is a Subdomain Enumerator? A subdomain enumerator finds all the subdomains of a domain. For example...",
+      "url": "https://dev.to/cyber_preston/subdomain-enumerator-4ic6",
+      "image": "https://assets.dev.to/assets/github-logo-5a155e1f9a670af7944dd5e12375bc76ed542ea80224905ecaf878b9157cdefc.svg",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:39:01+00:00"
+    },
+    {
+      "id": "techpulse-b43a96b17b3c3a183fa5",
+      "title": "React useSessionStorage Hook: Per-Tab State That Survives Reloads (2026)",
+      "description": "Here's a checkout flow that loses the customer at step three: function Checkout () { const [ step , setStep ] = useState ( 0 ); const [ form , setForm ] = useState < CheckoutForm > ( EMPTY_FORM ); // step 1: address, step 2: shipping, step 3: payment… } The customer fills in their address, picks a shipping option, and...",
+      "url": "https://dev.to/childrentime/react-usesessionstorage-hook-per-tab-state-that-survives-reloads-2026-1nd3",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:35:15+00:00"
+    },
+    {
+      "id": "techpulse-8815d052a80ff76b9ac6",
+      "title": "I built a forum where rooms die when people stop talking",
+      "description": "I got tired of two things about online communities. The first is that they don't die well. A subreddit or a Discord channel that was alive for a week keeps existing for years, and the emptiness is louder than silence — you open it, see the last post is from 2023, and leave. The second is that everything you say is...",
+      "url": "https://dev.to/seongjinkang/i-built-a-forum-where-rooms-die-when-people-stop-talking-30mc",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T02:32:27+00:00"
+    },
+    {
+      "id": "techpulse-2de77be8579b4334ef20",
+      "title": "Steam Week in Review: Here are the 32 Steam games brave enough to release on GTA 6 day",
+      "description": "All the interesting Steam facts for the week ending August 16.",
+      "url": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-here-are-the-32-steam-games-brave-enough-to-release-on-gta-6-day/",
+      "image": "https://cdn.mos.cms.futurecdn.net/7PESSCnbnt4gYY5DhsgzZR-1280-80.png",
+      "category": "PC Gaming",
+      "mainCategory": "Gaming",
+      "source": "PCGamer latest",
+      "published": "2026-08-17T01:43:59+00:00"
+    },
+    {
+      "id": "techpulse-2cdb23ed1a657f13cee9",
+      "title": "Request for comment: Which way did you go when you reached the controversial ending of Mass Effect 3?",
+      "description": "When it was time to decide the fate of the galaxy, did you pick red, blue, green, or other?",
+      "url": "https://www.pcgamer.com/games/rpg/request-for-comment-which-way-did-you-go-when-you-reached-the-controversial-ending-of-mass-effect-3/",
+      "image": "https://cdn.mos.cms.futurecdn.net/7hPyXU4WZqddhg63NktJXV-1280-80.jpg",
+      "category": "PC Gaming",
+      "mainCategory": "Gaming",
+      "source": "PCGamer latest",
+      "published": "2026-08-17T01:01:49+00:00"
     },
     {
       "id": "techpulse-4fca96b10bfad5f81fc3",
@@ -26,39 +169,6 @@
       "published": "2026-08-16T23:47:06+00:00"
     },
     {
-      "id": "techpulse-bb5d736779b6cbee68c8",
-      "title": "I built a production-ready Shopify Hydrogen theme and open-sourced it",
-      "description": "Every Hydrogen project I've worked on started the same way — wire up a cart, build a PDP, add filters, then spend weeks on the \"extras\" that aren't really extras: wishlist, compare, quick view, proper i18n, RTL. After doing this enough times I decided to build it once and properly. ada ÉLAN is a Hydrogen storefront...",
-      "url": "https://dev.to/ozgursagiroglu/i-built-a-production-ready-shopify-hydrogen-theme-and-open-sourced-it-1891",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:40:54+00:00"
-    },
-    {
-      "id": "techpulse-60e3e166c65a412f93cb",
-      "title": "Nintendo Hotline – What can Product Managers learn?",
-      "description": "Nintendo had a hotline where gamers could, at the time, call and speak with 'Game Counsellors' who provided them with tips and walkthroughs. It operated for quite sometime before Nintendo sunset it. There are a few (Product) lessons from this that I am sure will be of value to Product Leaders. 1- Necessity...",
-      "url": "https://dev.to/h-j/nintendo-hotline-what-can-product-managers-learn-2gmj",
-      "image": "",
-      "category": "Console Gaming",
-      "mainCategory": "Gaming",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:38:44+00:00"
-    },
-    {
-      "id": "techpulse-0dcaf5ad5b5c4f541de1",
-      "title": "Banx Walk Safe: same sidewalk, two heat loads",
-      "description": "This is a submission for the DEV Weekend Challenge: Dog Days Edition . What I Built Same sidewalk. Two bodies. Two completely different heat loads. Banx is my French Bulldog. Born October 5, 2022. He weighs 35 pounds — seven above the 28-pound ceiling in the French Bull Dog Club of America conformation standard. I...",
-      "url": "https://dev.to/kenielzep97/banx-walk-safe-same-sidewalk-two-heat-loads-51ib",
-      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkfehbiuom7nqwsd9e399.jpg",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:38:37+00:00"
-    },
-    {
       "id": "techpulse-7680f4863cdd5c2b74d4",
       "title": "The US Army is opening up its training centers for private firms to test out new drones",
       "description": "The US Army is opening military ranges to private drone companies, allowing them to test systems under realistic battlefield conditions.",
@@ -68,39 +178,6 @@
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
       "published": "2026-08-16T23:25:00+00:00"
-    },
-    {
-      "id": "techpulse-f511481ee76b5e5ee1ef",
-      "title": "Building AI Prompt Lab with Java 21, Spring Boot and React 19",
-      "description": "AI Prompt Lab is a full-stack application I built around a simple idea: managing reusable AI prompts should feel like working with any other structured application asset, rather than keeping them scattered across notes, text files or chat histories. The project combines Java 21, Spring Boot, React 19, TypeScript...",
-      "url": "https://dev.to/certosinolab/building-ai-prompt-lab-with-java-21-spring-boot-and-react-19-46p8",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:20:00+00:00"
-    },
-    {
-      "id": "techpulse-d19d5cc04573a6423212",
-      "title": "What Actually Happens When You UPDATE a Row in PostgreSQL?",
-      "description": "Most developers think of a PostgreSQL table like this: users id | age 1 | 25 2 | 31 3 | 42 Then we run: UPDATE users SET age = 30 WHERE id = 1; The obvious mental model is: 25 → 30 But PostgreSQL doesn't simply overwrite the old value. To understand what actually happens, we need to look at how PostgreSQL stores rows...",
-      "url": "https://dev.to/ujjwal_011/what-actually-happens-when-you-update-a-row-in-postgresql-2nbk",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:15:49+00:00"
-    },
-    {
-      "id": "techpulse-31a34911f7890b2684e8",
-      "title": "AI Can Find the Failure. Who Decides What the Fix Should Be?",
-      "description": "AI is changing accessibility remediation fast. It can find common accessibility failures, explain them, and increasingly write the fix. That's real, and it's useful. But finding a failure is not the same as deciding what the fix should be. The gap is easy to miss because it doesn't always produce an obviously wrong...",
-      "url": "https://dev.to/praiztech/ai-can-find-the-failure-who-decides-what-the-fix-should-be-18o5",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:14:58+00:00"
     },
     {
       "id": "techpulse-fe73979ab4c07d5981ce",
@@ -114,50 +191,6 @@
       "published": "2026-08-16T23:04:44+00:00"
     },
     {
-      "id": "techpulse-cbb58edcf954c79fcdd9",
-      "title": "How VIDRAFT Hit 510.58 TPS on Gemma-4: A Deep Dive into \"The First Gemma Challenge\" Win",
-      "description": "How VIDRAFT Hit 510.58 TPS on Gemma-4: A Deep Dive into \"The First Gemma Challenge\" Win TL;DR: VIDRAFT topped \"The First Gemma Challenge\" leaderboard with a verified 510.58 tokens-per-second (TPS) score on google/gemma-4-E4B-it using a single NVIDIA A10G GPU — while a rival submission posted a faster raw number but...",
-      "url": "https://dev.to/ai_openfree_b23025ef075cf/how-vidraft-hit-51058-tps-on-gemma-4-a-deep-dive-into-the-first-gemma-challenge-win-15j6",
-      "image": "",
-      "category": "Hardware & Devices",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:01:27+00:00"
-    },
-    {
-      "id": "techpulse-03cf4d3fe8e6296acee1",
-      "title": "I built a content recommender as a graph, and it found similarities I wasn't looking for",
-      "description": "Most beginner recommendation projects are a dictionary lookup. You type \"comedy\", it returns the comedy list. That works, and it is also the reason those projects are forgettable: a dictionary can tell you what is similar, but it can never tell you what is interestingly different . I wanted the second thing. So I...",
-      "url": "https://dev.to/mbadr3227sys/i-built-a-content-recommender-as-a-graph-and-it-found-similarities-i-wasnt-looking-for-3kj7",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:01:05+00:00"
-    },
-    {
-      "id": "techpulse-f7345e3fcfdc0aed89fb",
-      "title": "Frontend Challenge: Comfort Food Edition - Lumina Dining",
-      "description": "This is a submission for Frontend Challenge - Comfort Food Edition, Perfect Landing What I Built I built a landing page with a restaurant theme showing menu, reservation and about the restaurant Demo Here's the live demo: https://lumina-dining-mocha.vercel.app/ Journey I used Stitch to create a design for the landing...",
-      "url": "https://dev.to/tomivan/frontend-challenge-comfort-food-edition-lumina-dining-4e6n",
-      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fsj3m4lcf8uaa05h9clwh.png",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:00:48+00:00"
-    },
-    {
-      "id": "techpulse-e7ed574da15b1a2b4430",
-      "title": "I built PulseVault to monitor websites. Looking for feedback.",
-      "description": "Hi everyone, I've been building PulseVault, a website monitoring platform that helps website owners detect downtime, SSL issues, broken forms, and performance problems. I recently finished the landing page and I'm looking for honest feedback. What would make a tool like this useful to you? What features would you...",
-      "url": "https://dev.to/official_emi_59409f16fdec/i-built-pulsevault-to-monitor-websites-looking-for-feedback-30id",
-      "image": "",
-      "category": "Internet & Web",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T23:00:32+00:00"
-    },
-    {
       "id": "techpulse-cce5c8b362e130aa8439",
       "title": "After 10 Years, Tom Cruise's Forgotten 118-Minute Mystery-Thriller Is Back on Free Streaming",
       "description": "Prime Video's Reacher owes everything to this underrated Tom Cruise thriller",
@@ -167,17 +200,6 @@
       "mainCategory": "Gaming",
       "source": "Polygon.com",
       "published": "2026-08-16T23:00:12+00:00"
-    },
-    {
-      "id": "techpulse-18775854182bd15caee8",
-      "title": "Sitemaps Are Free SEO — Here's the Vite Plugin That Generates Yours",
-      "description": "The Problem Every static site I've shipped has gone through the same ritual: build the site, then manually write a sitemap.xml, forget to update it when a route changes, and discover a month later that Google indexed half my pages. Sitemaps are boring, so they get done wrong. The Solution @3ni8ma/vite-plugin-sitemap...",
-      "url": "https://dev.to/3ni8ma/sitemaps-are-free-seo-heres-the-vite-plugin-that-generates-yours-3lg4",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:59:14+00:00"
     },
     {
       "id": "techpulse-32a5cb39d854881a27f3",
@@ -1489,28 +1511,6 @@
       "published": "2026-08-14T23:24:17+00:00"
     },
     {
-      "id": "techpulse-ad13a9ef3ae3ef1d7308",
-      "title": "Before Grand Theft Auto Online, GTA 4's multiplayer added 'glorious chaos' to the open world sandbox",
-      "description": "Liberty City, Liberty City: so big they reviewed it twice. This time: multiplayer.",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/before-grand-theft-auto-online-gta-4s-multiplayer-added-glorious-chaos-to-the-open-world-sandbox/",
-      "image": "https://cdn.mos.cms.futurecdn.net/VHsCh9gyFNLCGkCCevaFXT-1280-80.jpg",
-      "category": "Reviews & Features",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-14T23:11:11+00:00"
-    },
-    {
-      "id": "techpulse-c6784e27adf834f3dc40",
-      "title": "Disney says that Kingdom Hearts is now a 'billion dollar franchise'",
-      "description": "Sora can finally afford normal person shoes.",
-      "url": "https://www.pcgamer.com/games/rpg/disney-says-that-kingdom-hearts-is-now-a-billion-dollar-franchise/",
-      "image": "https://cdn.mos.cms.futurecdn.net/XWS8doThLS4C3Mj2u6kyaR-1280-80.jpg",
-      "category": "PC Gaming",
-      "mainCategory": "Gaming",
-      "source": "PCGamer latest",
-      "published": "2026-08-14T22:45:13+00:00"
-    },
-    {
       "id": "techpulse-e222a5126b0786c9f851",
       "title": "New York City Lawmakers Push to ‘Ban the Scan’ at MSG",
       "description": "At a press conference outside Madison Square Garden, politicians, musicians, and privacy advocates argued for tighter restrictions on how public venues deploy biometric surveillance.",
@@ -1929,17 +1929,6 @@
       "published": "2026-08-14T13:31:58+00:00"
     },
     {
-      "id": "techpulse-14d0a8bddd2c86437603",
-      "title": "Samsung health AI models analyse wearable biosignal data",
-      "description": "Samsung Research America’s Digital Health Team has presented two AI foundation models designed to learn from wearable biosignals. The work centres on data captured by smartwatches, including heart activity, sleep, and physical activity. The company discussed its Connected Care vision at the Health Forum during Galaxy...",
-      "url": "https://www.artificialintelligence-news.com/news/samsung-health-ai-models-analyse-wearable-biosignal-data/",
-      "image": "https://www.artificialintelligence-news.com/wp-content/uploads/2025/08/ai-expo-banner-2025.png",
-      "category": "Artificial Intelligence",
-      "mainCategory": "Technology",
-      "source": "AI News",
-      "published": "2026-08-14T13:30:10+00:00"
-    },
-    {
       "id": "techpulse-77e2223dbf6704ffc8e9",
       "title": "Nintendo announces Pokémon Pokopia has sold over 5m copies, meaning that roughly one in four Switch 2 users now owns the game",
       "description": "It looks like we've got another massive Pokémon-flavoured hit on our hands. Nintendo and The Pokémon Company have confirmed that Pokémon Pokopia has sold more than five million units globally - a pretty impressive number given the game has been out for \"just over four months\". These sales include both physical and...",
@@ -1982,6 +1971,17 @@
       "mainCategory": "Technology",
       "source": "MachineLearningMastery.com",
       "published": "2026-08-14T12:00:23+00:00"
+    },
+    {
+      "id": "techpulse-6e395c55eaca9e380d98",
+      "title": "Best Wireless Chargers (2026): My Picks After Testing 100+",
+      "description": "Stop fumbling for cables in the dark. These WIRED-tested stands and pads will take the hassle out of refueling your phone, wireless earbuds, and watch.",
+      "url": "https://www.wired.com/gallery/best-wireless-chargers/",
+      "image": "https://media.wired.com/photos/6a0f6f4c9c4f912eb7592888/master/pass/Best%20Wireless%20Chargers%20top%20art%20052026%20SOURCE%20Amazon-Nomad%20Goods.jpg",
+      "category": "Emerging Technology",
+      "mainCategory": "Technology",
+      "source": "WIRED",
+      "published": "2026-08-14T12:00:00+00:00"
     }
   ]
 }
