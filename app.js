@@ -1,553 +1,444 @@
-'use strict';
+/* TechPulse Master Application Logic — Phase 3 */
 
-/*
-=========================================================
- TECHPULSE FRONTEND — PHASE 1 RESILIENCE UPGRADE
- Preserves all filtering, dark mode, subcategories, 
- and hero features while adding conditional HTTP caching 
- and offline local storage fallback.
-=========================================================
-*/
-
-const NEWS_FILE = './news.json';
-const AUTO_REFRESH_INTERVAL = 2 * 60 * 1000;
-const NEW_ARTICLE_WINDOW = 2 * 60 * 60 * 1000;
-const LOCAL_STORAGE_KEY = 'techpulse_news_cache';
-
-let allArticles = [];
-let currentMainCategory = 'All';
-let currentSubcategory = 'All';
-let lastUpdatedAt = null;
-let lastModifiedHeader = null;
-let firstLoad = true;
-
-const SUBCATEGORIES = {
-  Technology: [
-    'All Topics', 'Artificial Intelligence', 'Smartphones & Mobile', 
-    'Cybersecurity', 'Cloud & Infrastructure', 'Software & Applications', 
-    'Hardware & Devices', 'Internet & Web', 'Emerging Technology', 
-    'Science & Innovation', 'Business & Technology'
-  ],
-  Gaming: [
-    'All Topics', 'PC Gaming', 'Console Gaming', 'Mobile Gaming', 
-    'Game Releases', 'Gaming Hardware', 'Esports', 'Game Development', 
-    'Gaming Industry', 'Gaming Updates', 'Reviews & Features'
-  ],
-  All: ['All Topics']
+const CONFIG = {
+  DATA_URL: './news.json',
+  CACHE_KEY: 'techpulse_news_cache',
+  THEME_KEY: 'techpulse_theme',
+  DEBOUNCE_MS: 250
 };
 
-document.addEventListener('DOMContentLoaded', initializePage);
+// Application State
+let state = {
+  articles: [],
+  filtered: [],
+  mainCategory: 'All',
+  subCategory: 'All',
+  searchQuery: '',
+  trendingFilter: null,
+  language: 'en',
+  speakingArticleId: null
+};
 
-function initializePage() {
-  const year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
+// Subcategories Mapping
+const SUBCATEGORIES = {
+  All: ['All', 'Artificial Intelligence', 'Cybersecurity', 'Cloud & Infrastructure', 'Software & Applications', 'Hardware & Devices', 'Console Gaming', 'Game Releases', 'PC Gaming'],
+  Technology: ['All', 'Artificial Intelligence', 'Cybersecurity', 'Cloud & Infrastructure', 'Software & Applications', 'Hardware & Devices'],
+  Gaming: ['All', 'Console Gaming', 'Game Releases', 'PC Gaming']
+};
 
-  loadSavedTheme();
-  buildSubcategoryNav();
-  buildTopicChips();
+document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   setupEventListeners();
-
-  loadNews(true);
-
-  setInterval(() => loadNews(false), AUTO_REFRESH_INTERVAL);
-  setInterval(refreshVisibleTimes, 60 * 1000);
-}
-
-function setupEventListeners() {
-  const refreshButton = document.getElementById('refreshButton');
-  if (refreshButton) refreshButton.addEventListener('click', manualRefresh);
-
-  const themeButton = document.getElementById('themeButton');
-  if (themeButton) themeButton.addEventListener('click', toggleTheme);
-
-  const search = document.getElementById('search');
-  if (search) search.addEventListener('input', applyFilters);
-
-  document.querySelectorAll('[data-main-category]').forEach(button => {
-    button.addEventListener('click', () => selectMainCategory(button.dataset.mainCategory, button));
-  });
-}
+  initSubcategoryNav();
+  loadNewsData();
+  document.getElementById('year').textContent = new Date().getFullYear();
+});
 
 /* =====================================================
-   RESILIENT FETCH WITH IF-MODIFIED-SINCE & CACHE FALLBACK
+   DATA FETCHING & CACHING
    ===================================================== */
 
-async function loadNews(forceRefresh = false) {
-  const status = document.getElementById('statusText');
-  if (status) {
-    status.textContent = forceRefresh ? 'Loading latest stories...' : 'Checking for new stories...';
-  }
-
+async function loadNewsData() {
+  renderLoadingState();
   try {
-    const headers = { 'Accept': 'application/json' };
-    if (!forceRefresh && lastModifiedHeader) {
-      headers['If-Modified-Since'] = lastModifiedHeader;
-    }
-
-    const cacheBust = '?t=' + Date.now();
-    const response = await fetch(NEWS_FILE + cacheBust, {
-      method: 'GET',
-      headers: headers
-    });
-
-    // 304 Not Modified — Payload unchanged
-    if (response.status === 304) {
-      if (status) status.textContent = 'News feed is up to date';
-      return;
-    }
-
-    if (!response.ok) {
-      throw new Error(`HTTP Error ${response.status}`);
-    }
-
-    if (response.headers.get('Last-Modified')) {
-      lastModifiedHeader = response.headers.get('Last-Modified');
-    }
-
+    const response = await fetch(`${CONFIG.DATA_URL}?t=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
     const data = await response.json();
-    if (!data || !Array.isArray(data.articles)) {
-      throw new Error('Invalid JSON schema format received.');
-    }
-
-    // Save to local storage for offline resilience
-    try {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
-    } catch (e) {
-      console.warn('LocalStorage payload quota exceeded.');
-    }
-
-    processNewsData(data);
-
-  } catch (error) {
-    console.error('TechPulse fetch notice:', error.message);
     
-    // Attempt fallback to cached local storage data
-    const cachedData = localStorage.getItem(LOCAL_STORAGE_KEY);
-    if (cachedData && allArticles.length === 0) {
-      try {
-        const parsed = JSON.parse(cachedData);
-        processNewsData(parsed);
-        if (status) status.textContent = 'Loaded from offline storage';
-        return;
-      } catch (e) {
-        // Fall through to error handler
-      }
+    // Cache payload for offline capability
+    localStorage.setItem(CONFIG.CACHE_KEY, JSON.stringify(data));
+    processNewsData(data);
+  } catch (error) {
+    console.warn('Network fetch failed. Loading local cache fallback:', error);
+    const cached = localStorage.getItem(CONFIG.CACHE_KEY);
+    if (cached) {
+      processNewsData(JSON.parse(cached));
+      updateStatus('Loaded from local cache (Offline)', true);
+    } else {
+      renderErrorState('Unable to load news. Please check your internet connection.');
     }
-
-    showError(error.message || 'Unable to load news.');
   }
 }
 
 function processNewsData(data) {
-  const oldIds = new Set(allArticles.map(a => a.id));
-  allArticles = normalizeArticles(data.articles);
-  allArticles = removeDuplicates(allArticles);
+  state.articles = data.articles || [];
+  updateStatus(`Updated live • ${data.articles ? data.articles.length : 0} articles available`);
+  renderTrendingTopics(data.trendingTopics || []);
+  applyFilters();
+}
 
-  allArticles.sort((a, b) => getDateValue(b.published) - getDateValue(a.published));
-  lastUpdatedAt = data.updatedAt || new Date().toISOString();
-
-  let newCount = 0;
-  if (!firstLoad) {
-    newCount = allArticles.filter(a => !oldIds.has(a.id)).length;
+function updateStatus(text, isWarning = false) {
+  const statusEl = document.getElementById('statusText');
+  const countEl = document.getElementById('articleCount');
+  if (statusEl) {
+    statusEl.textContent = text;
+    statusEl.style.color = isWarning ? 'var(--danger)' : 'var(--muted)';
   }
-  firstLoad = false;
-
-  renderHero();
-  buildTopicChips();
-  applyFilters();
-  renderTrending();
-  updateStatus(newCount);
+  if (countEl) countEl.textContent = `${state.filtered.length} articles`;
 }
 
-function normalizeArticles(articles) {
-  return articles.map((article, index) => {
-    const title = cleanText(article.title || 'Untitled story');
-    const description = cleanText(article.description || 'Read the full story from publisher.');
-    const url = String(article.url || article.link || '').trim();
-    const published = article.published || new Date().toISOString();
-    const category = cleanText(article.category || 'Technology');
-    const mainCategory = cleanText(article.mainCategory || detectMainCategory(category));
-    const source = cleanText(article.source || 'TechPulse');
-    const image = String(article.image || '').trim();
-    const id = article.id || createArticleId(title, url, published, index);
+/* =====================================================
+   FILTERING & RENDERING PIPELINE
+   ===================================================== */
 
-    return { id: String(id), title, description, url, image, category, mainCategory, source, published };
-  });
-}
+function applyFilters() {
+  let list = [...state.articles];
 
-function removeDuplicates(articles) {
-  const seenIds = new Set(), seenUrls = new Set(), seenTitles = new Set();
-  return articles.filter(article => {
-    const id = article.id;
-    const url = normalizeUrl(article.url);
-    const title = normalizeTitle(article.title);
-
-    if (seenIds.has(id) || (url && seenUrls.has(url)) || (title && seenTitles.has(title))) {
-      return false;
-    }
-
-    seenIds.add(id);
-    if (url) seenUrls.add(url);
-    if (title) seenTitles.add(title);
-    return true;
-  });
-}
-
-function createArticleId(title, url, published, index) {
-  const raw = title + '|' + url + '|' + published + '|' + index;
-  let hash = 0;
-  for (let i = 0; i < raw.length; i++) {
-    hash = ((hash << 5) - hash) + raw.charCodeAt(i);
-    hash |= 0;
+  // Main Category
+  if (state.mainCategory !== 'All') {
+    list = list.filter(a => a.mainCategory === state.mainCategory);
   }
-  return 'article-' + Math.abs(hash);
+
+  // Subcategory
+  if (state.subCategory !== 'All') {
+    list = list.filter(a => a.category === state.subCategory);
+  }
+
+  // Trending Chip Filter
+  if (state.trendingFilter) {
+    const term = state.trendingFilter.toLowerCase();
+    list = list.filter(a => 
+      (a.keywords && a.keywords.some(k => k.toLowerCase() === term)) ||
+      a.title.toLowerCase().includes(term)
+    );
+  }
+
+  // Live Search Query
+  if (state.searchQuery) {
+    const q = state.searchQuery.toLowerCase();
+    list = list.filter(a => 
+      a.title.toLowerCase().includes(q) || 
+      a.description.toLowerCase().includes(q) ||
+      (a.source && a.source.toLowerCase().includes(q))
+    );
+  }
+
+  state.filtered = list;
+  updateStatus(`Displaying ${list.length} stories`);
+  renderHeroSection(list);
+  renderNewsGrid(list.slice(3)); // Top 3 populate the Hero section
 }
 
-function detectMainCategory(category) {
-  const val = String(category || '').toLowerCase();
-  const keywords = ['gaming', 'game', 'games', 'esports', 'console', 'pc gaming', 'mobile gaming'];
-  return keywords.some(k => val.includes(k)) ? 'Gaming' : 'Technology';
+/* =====================================================
+   UI COMPONENT RENDERING
+   ===================================================== */
+
+function renderHeroSection(articles) {
+  const heroMain = document.getElementById('heroMain');
+  const heroSide = document.getElementById('heroSide');
+  if (!heroMain || !heroSide) return;
+
+  if (!articles.length) {
+    heroMain.style.display = 'none';
+    heroSide.style.display = 'none';
+    return;
+  }
+
+  heroMain.style.display = 'flex';
+  heroSide.style.display = 'grid';
+
+  // Hero Article 1 (Primary Highlight)
+  const topArticle = articles[0];
+  heroMain.onclick = () => window.open(topArticle.url, '_blank', 'noopener,noreferrer');
+  heroMain.querySelector('.hero-label').textContent = topArticle.category || 'Featured';
+  heroMain.querySelector('.hero-title').textContent = topArticle.title;
+  heroMain.querySelector('.hero-summary').textContent = topArticle.description;
+  heroMain.querySelector('.hero-meta').textContent = `${topArticle.source} • ${formatDate(topArticle.published)}`;
+
+  // Hero Side Articles (Positions 2 & 3)
+  const sideArticles = articles.slice(1, 3);
+  heroSide.innerHTML = sideArticles.map(a => `
+    <div class="quick-card" onclick="window.open('${escapeHtml(a.url)}', '_blank', 'noopener,noreferrer')">
+      <div class="quick-label">${escapeHtml(a.category)}</div>
+      <div class="quick-title">${escapeHtml(a.title)}</div>
+    </div>
+  `).join('');
 }
 
-function selectMainCategory(category, button) {
-  currentMainCategory = category;
-  currentSubcategory = 'All';
-
-  document.querySelectorAll('.main-nav button').forEach(btn => btn.classList.remove('active'));
-  if (button) button.classList.add('active');
-
-  buildSubcategoryNav();
-  buildTopicChips();
-  updateSectionTitle();
-  applyFilters();
-}
-
-function selectSubcategory(category, button) {
-  currentSubcategory = category === 'All Topics' ? 'All' : category;
-
-  document.querySelectorAll('.subnav button').forEach(btn => btn.classList.remove('active'));
-  if (button) button.classList.add('active');
-
-  updateSectionTitle();
-  applyFilters();
-}
-
-function buildSubcategoryNav() {
-  const nav = document.getElementById('subcategoryNav');
-  if (!nav) return;
-
-  const categories = SUBCATEGORIES[currentMainCategory] || SUBCATEGORIES.All;
-  nav.innerHTML = categories.map((cat, idx) => {
-    const val = cat === 'All Topics' ? 'All' : cat;
-    const active = (idx === 0 && currentSubcategory === 'All') || currentSubcategory === val;
-    return `<button class="${active ? 'active' : ''}" data-subcategory="${escapeHtml(val)}">${escapeHtml(cat)}</button>`;
-  }).join('');
-
-  nav.querySelectorAll('[data-subcategory]').forEach(btn => {
-    btn.addEventListener('click', () => selectSubcategory(btn.dataset.subcategory, btn));
-  });
-}
-
-function buildTopicChips() {
-  const container = document.getElementById('topicChips');
+function renderNewsGrid(articles) {
+  const container = document.getElementById('newsContainer');
   if (!container) return;
 
-  const categories = currentMainCategory === 'All' 
-    ? ['All Topics', 'Artificial Intelligence', 'Cybersecurity', 'Cloud & Infrastructure', 'Smartphones & Mobile', 'Software & Applications', 'Hardware & Devices', 'PC Gaming', 'Console Gaming', 'Mobile Gaming', 'Game Releases', 'Gaming Hardware', 'Esports']
-    : (SUBCATEGORIES[currentMainCategory] || []);
+  if (!articles.length && state.filtered.length <= 3) {
+    if (!state.filtered.length) {
+      container.innerHTML = `
+        <div class="empty">
+          <div class="empty-icon">🔍</div>
+          <h3>No articles found</h3>
+          <p>Try adjusting your search query or selecting a different category.</p>
+        </div>
+      `;
+    } else {
+      container.innerHTML = ''; // Hero handles the top articles
+    }
+    return;
+  }
 
-  container.innerHTML = categories.map(cat => {
-    const val = cat === 'All Topics' ? 'All' : cat;
-    const active = currentSubcategory === val;
-    return `<button class="topic-chip ${active ? 'active' : ''}" data-topic="${escapeHtml(val)}">${escapeHtml(cat)}</button>`;
-  }).join('');
+  container.innerHTML = `
+    <div class="news-grid">
+      ${articles.map(createArticleCard).join('')}
+    </div>
+  `;
 
-  container.querySelectorAll('[data-topic]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      currentSubcategory = btn.dataset.topic;
-      buildSubcategoryNav();
-      buildTopicChips();
-      updateSectionTitle();
+  setupAudioListeners();
+}
+
+function createArticleCard(article) {
+  const isSpeaking = state.speakingArticleId === article.id;
+  const keywordBadges = (article.keywords || [])
+    .slice(0, 2)
+    .map(kw => `<span class="category-badge" style="background:var(--bg);color:var(--text);border:1px solid var(--border);">${escapeHtml(kw)}</span>`)
+    .join(' ');
+
+  return `
+    <article class="article">
+      <div class="article-body">
+        <div class="article-top">
+          <span class="category-badge">${escapeHtml(article.category)}</span>
+          ${article.trending ? '<span class="trending-badge">🔥 Trending</span>' : ''}
+        </div>
+        <h3 class="article-title">
+          <a href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">
+            ${escapeHtml(article.title)}
+          </a>
+        </h3>
+        <p class="article-summary">${escapeHtml(article.description)}</p>
+        <div style="margin-bottom: 10px;">${keywordBadges}</div>
+        <div class="article-meta">
+          <span class="source">${escapeHtml(article.source)}</span>
+          <span class="time">${formatDate(article.published)}</span>
+        </div>
+        <div class="listen-row">
+          <button class="listen-btn speak-btn" data-id="${article.id}" data-title="${escapeHtml(article.title)}" data-desc="${escapeHtml(article.description)}">
+            ${isSpeaking ? '⏹ Stop' : '🔊 Listen'}
+          </button>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderTrendingTopics(topics) {
+  const container = document.getElementById('trendingStrip');
+  if (!container || !topics.length) return;
+
+  container.innerHTML = topics.map(topic => `
+    <button class="trending-chip ${state.trendingFilter === topic ? 'active' : ''}" data-topic="${escapeHtml(topic)}">
+      #${escapeHtml(topic)}
+    </button>
+  `).join('');
+
+  container.querySelectorAll('.trending-chip').forEach(chip => {
+    chip.addEventListener('click', (e) => {
+      const topic = e.target.getAttribute('data-topic');
+      if (state.trendingFilter === topic) {
+        state.trendingFilter = null;
+      } else {
+        state.trendingFilter = topic;
+      }
+      renderTrendingTopics(topics);
       applyFilters();
     });
   });
 }
 
-function applyFilters() {
-  const searchEl = document.getElementById('search');
-  const search = searchEl ? searchEl.value.toLowerCase().trim() : '';
+/* =====================================================
+   NAVIGATION & THEME CONTROLS
+   ===================================================== */
 
-  const filtered = allArticles.filter(article => {
-    const mainMatch = currentMainCategory === 'All' || article.mainCategory === currentMainCategory;
-    const subMatch = currentSubcategory === 'All' || article.category === currentSubcategory;
-    const searchText = (article.title + ' ' + article.description + ' ' + article.category + ' ' + article.mainCategory + ' ' + article.source).toLowerCase();
-    const searchMatch = !search || searchText.includes(search);
-    return mainMatch && subMatch && searchMatch;
-  });
-
-  renderNews(filtered);
-  updateArticleCount(filtered.length);
-}
-
-function renderNews(articles) {
-  const container = document.getElementById('newsContainer');
+function initSubcategoryNav() {
+  const container = document.getElementById('subcategoryNav');
   if (!container) return;
 
-  if (!articles.length) {
-    container.innerHTML = `
-      <div class="empty">
-        <div class="empty-icon">🔎</div>
-        <h3>No stories found</h3>
-        <p>Try selecting another category or typing a different search term.</p>
-      </div>`;
-    return;
-  }
+  const currentList = SUBCATEGORIES[state.mainCategory] || SUBCATEGORIES.All;
+  container.innerHTML = currentList.map(sub => `
+    <button class="${state.subCategory === sub ? 'active' : ''}" data-sub="${escapeHtml(sub)}">
+      ${escapeHtml(sub)}
+    </button>
+  `).join('');
 
-  container.innerHTML = `<div class="news-grid">${articles.map(createArticleCard).join('')}</div>`;
-}
-
-function createArticleCard(article) {
-  const isNew = isRecentlyPublished(article.published);
-  const placeholder = article.mainCategory === 'Gaming' ? '🎮' : '⚡';
-  
-  let imageHtml = `<div class="image-placeholder"><div class="placeholder-icon">${placeholder}</div><div class="placeholder-text">TechPulse</div></div>`;
-
-  if (isValidHttpUrl(article.image)) {
-    imageHtml = `
-      <img class="article-image" src="${escapeHtml(article.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-      <div class="image-placeholder" style="display:none;"><div class="placeholder-icon">${placeholder}</div><div class="placeholder-text">TechPulse</div></div>`;
-  }
-
-  const safeUrl = isValidHttpUrl(article.url) ? article.url : '#';
-
-  return `
-    <article class="article">
-      <div class="article-image-wrap">${imageHtml}${isNew ? '<span class="new-badge">NEW</span>' : ''}</div>
-      <div class="article-body">
-        <div class="article-category"><span class="category-badge">${escapeHtml(article.category)}</span></div>
-        <h3 class="article-title"><a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.title)}</a></h3>
-        <p class="article-description">${escapeHtml(article.description)}</p>
-        <a class="read-link" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">Read Story →</a>
-        <div class="article-footer">
-          <span class="article-source">${escapeHtml(article.source)}</span>
-          <span class="article-time" data-time="${escapeHtml(article.published)}">${formatRelativeTime(article.published)}</span>
-        </div>
-      </div>
-    </article>`;
-}
-
-function renderHero() {
-  if (!allArticles.length) return;
-
-  const latest = allArticles[0];
-  const technology = allArticles.find(a => a.mainCategory === 'Technology');
-  const gaming = allArticles.find(a => a.mainCategory === 'Gaming');
-
-  const hero = document.getElementById('heroMain');
-  if (hero) {
-    const heroUrl = isValidHttpUrl(latest.url) ? latest.url : '';
-    hero.innerHTML = `
-      <div class="hero-content">
-        <div class="hero-label">${isRecentlyPublished(latest.published) ? 'Breaking / Fresh' : 'Latest Story'}</div>
-        <div class="hero-title">${escapeHtml(latest.title)}</div>
-        <div class="hero-description">${escapeHtml(latest.description)}</div>
-        <div class="hero-meta">${escapeHtml(latest.category)} • ${escapeHtml(latest.source)} • ${formatRelativeTime(latest.published)}</div>
-      </div>
-      ${heroUrl ? `<a class="hero-link" href="${escapeHtml(heroUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Read story">Read story</a>` : ''}`;
-  }
-
-  const side = document.getElementById('heroSide');
-  if (side) {
-    side.innerHTML = `${createQuickHeroCard('Technology', technology)}${createQuickHeroCard('Gaming', gaming)}`;
-  }
-}
-
-function createQuickHeroCard(label, article) {
-  if (!article) {
-    return `<div class="quick-card"><div class="quick-label">${escapeHtml(label)}</div><div class="quick-title">No current story available.</div></div>`;
-  }
-  const safeUrl = isValidHttpUrl(article.url) ? article.url : '';
-  return `
-    <div class="quick-card">
-      <div class="quick-label">${escapeHtml(label)}</div>
-      <div class="quick-title">${escapeHtml(article.title)}</div>
-      <div class="quick-meta">${escapeHtml(article.source)} • ${formatRelativeTime(article.published)}</div>
-      ${safeUrl ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer" style="position:absolute;inset:0;z-index:5;text-indent:-9999px;" aria-label="Read story">Read story</a>` : ''}
-    </div>`;
-}
-
-function renderTrending() {
-  const container = document.getElementById('trendingStrip') || document.getElementById('trendingGrid');
-  if (!container) return;
-
-  const trending = allArticles.slice().sort((a, b) => getTrendingScore(b) - getTrendingScore(a)).slice(0, 6);
-  if (!trending.length) {
-    container.innerHTML = '';
-    return;
-  }
-
-  container.innerHTML = trending.map((article, idx) => `
-    <div class="trending-chip" onclick="window.open('${escapeHtml(article.url)}', '_blank')">
-      <strong>#${idx + 1}</strong> ${escapeHtml(article.title)}
-    </div>`).join('');
-}
-
-function getTrendingScore(article) {
-  const published = getDateValue(article.published);
-  if (!published) return 0;
-  const ageHours = Math.max(0, (Date.now() - published) / 3600000);
-  let score = Math.max(0, 100 - (ageHours * 4));
-  if (article.mainCategory === 'Technology' || article.mainCategory === 'Gaming') score += 3;
-  return score;
-}
-
-function updateSectionTitle() {
-  let title = currentMainCategory !== 'All' ? currentMainCategory : 'Latest News';
-  if (currentSubcategory !== 'All') title = currentSubcategory;
-
-  const titleEl = document.getElementById('sectionTitle');
-  const subtitleEl = document.getElementById('sectionSubtitle');
-
-  if (titleEl) titleEl.textContent = title;
-  if (subtitleEl) {
-    subtitleEl.textContent = currentMainCategory === 'All' ? 'Fresh technology and gaming stories' : 'Fresh stories from this section';
-  }
-}
-
-function updateArticleCount(count) {
-  const element = document.getElementById('articleCount');
-  if (element) element.textContent = `${count} ${count === 1 ? 'article' : 'articles'}`;
-}
-
-function updateStatus(newCount) {
-  const status = document.getElementById('statusText');
-  if (status) {
-    status.textContent = newCount > 0 ? `${newCount} ${newCount === 1 ? 'new story' : 'new stories'} detected` : 'News feed active';
-  }
-}
-
-function formatRelativeTime(value) {
-  const date = new Date(value);
-  if (isNaN(date.getTime())) return 'Recently';
-  const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
-
-  if (seconds < 60) return 'Just now';
-  const minutes = Math.floor(seconds / 60);
-  if (minutes < 60) return `${minutes} min ago`;
-  const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours} hr ago`;
-  const days = Math.floor(hours / 24);
-  return days === 1 ? 'Yesterday' : `${days} days ago`;
-}
-
-function refreshVisibleTimes() {
-  document.querySelectorAll('.article-time').forEach(el => {
-    if (el.dataset.time) el.textContent = formatRelativeTime(el.dataset.time);
+  container.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      container.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      state.subCategory = e.target.getAttribute('data-sub');
+      applyFilters();
+    });
   });
-  if (allArticles.length) {
-    renderHero();
-    renderTrending();
+}
+
+function setupEventListeners() {
+  // Main Category Navigation
+  document.querySelectorAll('.main-nav button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.main-nav button').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      state.mainCategory = e.target.getAttribute('data-main-category');
+      state.subCategory = 'All';
+      initSubcategoryNav();
+      applyFilters();
+    });
+  });
+
+  // Debounced Search Input
+  const searchInput = document.getElementById('search');
+  if (searchInput) {
+    let timer;
+    searchInput.addEventListener('input', (e) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        state.searchQuery = e.target.value.trim();
+        applyFilters();
+      }, CONFIG.DEBOUNCE_MS);
+    });
+  }
+
+  // Refresh Button
+  const refreshBtn = document.getElementById('refreshButton');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', async () => {
+      refreshBtn.disabled = true;
+      refreshBtn.textContent = '⏳ Fetching...';
+      await loadNewsData();
+      refreshBtn.disabled = false;
+      refreshBtn.textContent = '↻ Refresh';
+    });
+  }
+
+  // Theme Toggle
+  const themeBtn = document.getElementById('themeButton');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', toggleTheme);
+  }
+
+  // Language Selector
+  const langSelect = document.getElementById('languageSelect');
+  if (langSelect) {
+    langSelect.addEventListener('change', (e) => {
+      state.language = e.target.value;
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    });
   }
 }
 
-async function manualRefresh() {
-  const button = document.getElementById('refreshButton');
-  if (button) {
-    button.disabled = true;
-    button.textContent = 'Refreshing...';
-  }
-  try {
-    await loadNews(true);
-  } finally {
-    if (button) {
-      button.disabled = false;
-      button.textContent = '↻ Refresh';
-    }
+function initTheme() {
+  const savedTheme = localStorage.getItem(CONFIG.THEME_KEY);
+  const themeBtn = document.getElementById('themeButton');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+    if (themeBtn) themeBtn.textContent = '☀️';
+  } else {
+    document.body.classList.remove('dark');
+    if (themeBtn) themeBtn.textContent = '☾';
   }
 }
 
 function toggleTheme() {
-  document.body.classList.toggle('dark');
-  const isDark = document.body.classList.contains('dark');
-  try {
-    localStorage.setItem('techpulse-theme', isDark ? 'dark' : 'light');
-  } catch (e) {}
-  updateThemeButton();
+  const isDark = document.body.classList.toggle('dark');
+  const themeBtn = document.getElementById('themeButton');
+  localStorage.setItem(CONFIG.THEME_KEY, isDark ? 'dark' : 'light');
+  if (themeBtn) themeBtn.textContent = isDark ? '☀️' : '☾';
 }
 
-function loadSavedTheme() {
-  let saved = null;
-  try {
-    saved = localStorage.getItem('techpulse-theme');
-  } catch (e) {}
-  if (saved === 'dark') document.body.classList.add('dark');
-  updateThemeButton();
+/* =====================================================
+   ACCESSIBILITY & TEXT-TO-SPEECH
+   ===================================================== */
+
+function setupAudioListeners() {
+  document.querySelectorAll('.speak-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const articleId = btn.getAttribute('data-id');
+      const title = btn.getAttribute('data-title');
+      const desc = btn.getAttribute('data-desc');
+
+      if (state.speakingArticleId === articleId) {
+        stopSpeech();
+      } else {
+        speakText(articleId, `${title}. ${desc}`);
+      }
+    });
+  });
 }
 
-function updateThemeButton() {
-  const button = document.getElementById('themeButton');
-  if (!button) return;
-  const isDark = document.body.classList.contains('dark');
-  button.textContent = isDark ? '☀' : '☾';
-  button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-}
-
-function showError(message) {
-  const status = document.getElementById('statusText');
-  if (status) status.textContent = 'News service temporarily unavailable';
-
-  const container = document.getElementById('newsContainer');
-  if (!container || allArticles.length) return;
-
-  container.innerHTML = `
-    <div class="empty">
-      <div class="empty-icon">⚠️</div>
-      <h3>Unable to load news</h3>
-      <p>${escapeHtml(message)}</p>
-      <br>
-      <button class="refresh-btn" onclick="manualRefresh()">Try Again</button>
-    </div>`;
-}
-
-function isValidHttpUrl(val) {
-  return /^https?:\/\//i.test(String(val || '').trim());
-}
-
-function getDateValue(val) {
-  const time = new Date(val).getTime();
-  return isNaN(time) ? 0 : time;
-}
-
-function isRecentlyPublished(val) {
-  const time = getDateValue(val);
-  if (!time) return false;
-  const age = Date.now() - time;
-  return age >= 0 && age <= NEW_ARTICLE_WINDOW;
-}
-
-function normalizeUrl(val) {
-  try {
-    const url = new URL(val);
-    url.hash = '';
-    return url.href.replace(/\/$/, '').toLowerCase();
-  } catch (e) {
-    return String(val || '').trim().toLowerCase();
+function speakText(id, text) {
+  if (!('speechSynthesis' in window)) {
+    alert('Speech synthesis is not supported in your browser.');
+    return;
   }
+
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = state.language || 'en';
+
+  utterance.onend = () => {
+    state.speakingArticleId = null;
+    applyFilters();
+  };
+
+  utterance.onerror = () => {
+    state.speakingArticleId = null;
+    applyFilters();
+  };
+
+  state.speakingArticleId = id;
+  window.speechSynthesis.speak(utterance);
+  applyFilters();
 }
 
-function normalizeTitle(val) {
-  return String(val || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+function stopSpeech() {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+  state.speakingArticleId = null;
+  applyFilters();
 }
 
-function cleanText(val) {
-  return String(val == null ? '' : val).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+/* =====================================================
+   HELPER UTILITIES
+   ===================================================== */
+
+function formatDate(isoStr) {
+  if (!isoStr) return '';
+  const date = new Date(isoStr);
+  const diffMs = Date.now() - date.getTime();
+  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+
+  if (diffHours < 1) return 'Just now';
+  if (diffHours < 24) return `${diffHours}h ago`;
+  return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
 }
 
-function escapeHtml(val) {
-  return String(val == null ? '' : val)
+function escapeHtml(str) {
+  return String(str || '')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+function renderLoadingState() {
+  const container = document.getElementById('newsContainer');
+  if (container) {
+    container.innerHTML = `
+      <div class="loading">
+        <div class="spinner"></div>
+        Loading latest stories...
+      </div>
+    `;
+  }
+}
+
+function renderErrorState(msg) {
+  const container = document.getElementById('newsContainer');
+  if (container) {
+    container.innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">⚠️</div>
+        <h3>Something went wrong</h3>
+        <p>${escapeHtml(msg)}</p>
+      </div>
+    `;
+  }
 }
