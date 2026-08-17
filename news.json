@@ -1,139 +1,150 @@
 {
   "success": true,
-  "updatedAt": "2026-08-17T03:29:55.558173+00:00",
+  "updatedAt": "2026-08-17T05:23:12.209492+00:00",
   "total": 180,
   "articles": [
     {
-      "id": "techpulse-03dfcb6df7499e46e004",
-      "title": "I found code in my repo I'd never seen. All 82 tests passed. I quarantined it for three days anyway.",
-      "description": "During a routine morning triage of my open-source project, git status showed a modified file I had no memory of touching: extension/background.js , last modified 24 hours earlier, sitting next to a fresh background.js.bak someone had thoughtfully left behind. Nobody broke in. I run several AI coding sessions in...",
-      "url": "https://dev.to/achiya-automation/i-found-code-in-my-repo-id-never-seen-all-82-tests-passed-i-quarantined-it-for-three-days-anyway-33go",
+      "id": "techpulse-365ad893adb89894cb5b",
+      "title": "Your agent's \"not done\" lies as often as its \"done\"",
+      "description": "There is a well-worn rule for running agents: don't trust the agent when it says it finished. Go look at the artifact. Good rule. We follow it. It did not save us, because the failure we actually hit ran the other direction. Our records said a thing was not done. It had been done four hours and twenty minutes earlier...",
+      "url": "https://dev.to/unmannedops/your-agents-not-done-lies-as-often-as-its-done-1ea2",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T03:22:43+00:00"
+      "published": "2026-08-17T05:16:16+00:00"
     },
     {
-      "id": "techpulse-7e43467d7e3d829fcbe8",
-      "title": "MCP Is Going Stateless: What Changed and How I Migrated My Currency Converter Server",
-      "description": "The Model Context Protocol (MCP) has been evolving quickly. One of the most interesting changes in the latest MCP specification is the move toward a stateless protocol model . I recently updated my MCP currency converter server to work with the newer stateless behavior and the new split TypeScript SDK packages...",
-      "url": "https://dev.to/dilumdarshana/mcp-is-going-stateless-what-changed-and-how-i-migrated-my-currency-converter-server-olm",
+      "id": "techpulse-847064a3df141dce0ed1",
+      "title": "Best Warrior build in Path of Idle: Old Gods Rising",
+      "description": "Path of a warrior ain't easy! The post Best Warrior build in Path of Idle: Old Gods Rising appeared first on Destructoid .",
+      "url": "https://www.destructoid.com/best-warrior-build-in-path-of-idle-old-gods-rising/",
+      "image": "https://www.destructoid.com/wp-content/uploads/2026/08/4243990_20260817015641_1.jpg?quality=75&#038;w=840&#038;resize=1024%2C576",
+      "category": "Gaming",
+      "mainCategory": "Gaming",
+      "source": "Destructoid",
+      "published": "2026-08-17T05:10:38+00:00"
+    },
+    {
+      "id": "techpulse-18d9a9956ad233600b2e",
+      "title": "A Bad Prompt Will Waste Your Free Model Calls. Lint the Contract First.",
+      "description": "Last Tuesday, my pipeline called a free model three times on the same commit. The output looked confident every time. It was wrong every time. The model did not fail. My prompt did. I almost blamed the model. Then I looked at the job log. The same ambiguous instruction went out again and again. Every retry was a fresh...",
+      "url": "https://dev.to/gitlab_3188/a-bad-prompt-will-waste-your-free-model-calls-lint-the-contract-first-16ln",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T05:10:36+00:00"
+    },
+    {
+      "id": "techpulse-691cb1ecdb89f159d9b4",
+      "title": "Spring proxies: JDK dynamic vs CGLIB",
+      "description": "You put @Transactional on a method and a database transaction opens before it runs and commits when it returns — yet you never wrote a line to start or end one. You add @Cacheable , and the second call with the same arguments skips your method body entirely. You didn't touch the code inside those methods. So where...",
+      "url": "https://dev.to/ankit_verma_e2fa7fb2aa95d/spring-proxies-jdk-dynamic-vs-cglib-1fg1",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T05:08:46+00:00"
+    },
+    {
+      "id": "techpulse-1c99c801ecb8256d4031",
+      "title": "\"I built a lying MCP server on purpose — here's how you catch it\"",
+      "description": "TL;DR — A server's README can say anything. Its tools/list response either backs that up or it doesn't. I built mcp-worse — a second binary, sharing two of mcp-better 's tool names, that deliberately omits the list-cache stamps and serves tools in the wrong order — so a test could prove the difference. That test is...",
+      "url": "https://dev.to/wolfejam/i-built-a-lying-mcp-server-on-purpose-heres-how-you-catch-it-102g",
       "image": "",
       "category": "Cloud & Infrastructure",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T03:21:38+00:00"
+      "published": "2026-08-17T05:06:18+00:00"
     },
     {
-      "id": "techpulse-703d63d06a118a6ccba2",
-      "title": "Caninography",
-      "description": "This is a submission for Weekend Challenge: Dog Days Edition I built Caninography, a small digital archive for exploring dog breeds from around the world. I wanted it to feel more like a digital museum than a normal dog website. You can explore breeds, their origins, history, countries, characteristics and connections...",
-      "url": "https://dev.to/maisamabbas0323/caninography-36g5",
+      "id": "techpulse-b7dc41c00725a3f6a022",
+      "title": "Next.js project scope: what to define before you write a line of code",
+      "description": "Scoping a Next.js project before development starts is the single fastest way to avoid mid-build surprises on budget and timeline. Most project overruns I see aren't caused by hard engineering problems — they're caused by vague scope that everyone interpreted differently. This post walks through the five things I pin...",
+      "url": "https://dev.to/nayankyada/nextjs-project-scope-what-to-define-before-you-write-a-line-of-code-id2",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-17T05:05:50+00:00"
+    },
+    {
+      "id": "techpulse-24631ad3e8bf6fc3217a",
+      "title": "Using PixelRAG with Claude Code (August 2026) — Visual RAG for Documents with Tables and Diagrams",
+      "description": "PixelRAG is a visual RAG tool that treats web pages, PDFs, and images as screenshots rather than text — preserving the layout of tables and charts so you can search and reference them as-is. This post covers installing it as a plugin, actual usage, how it differs from traditional text-based RAG, and the gotchas you're...",
+      "url": "https://dev.to/_02121fbe984480fd65fc/using-pixelrag-with-claude-code-august-2026-visual-rag-for-documents-with-tables-and-diagrams-82c",
       "image": "",
       "category": "Internet & Web",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T03:13:42+00:00"
+      "published": "2026-08-17T05:01:56+00:00"
     },
     {
-      "id": "techpulse-66afd018fd220e3e0f60",
-      "title": "Building a Production-Ready Chat Application: From Zero to Live",
-      "description": "Building a Production-Ready Chat Application: A Full-Stack Journey Introduction I just built and deployed a production-ready chat application from scratch. Here's everything I learned about real-time messaging, authentication, and deployment. Live App: https://chat-app-backend-floq.onrender.com GitHub...",
-      "url": "https://dev.to/engineersabir/building-a-production-ready-chat-application-from-zero-to-live-55dl",
+      "id": "techpulse-e5786cc20bfd7c984b88",
+      "title": "The outbox pattern is four sentences in a blog post. Here are three incidents from running it.",
+      "description": "Write the event into the same transaction as the row. Poll the table. Send to Kafka. Mark it sent. That's the whole pattern, and every version of it you'll find online stops right there, because at that level of description it's obviously correct — one commit, so a published fact can never disagree with the row that...",
+      "url": "https://dev.to/danzizhangdev/the-outbox-pattern-is-four-sentences-in-a-blog-post-here-are-three-incidents-from-running-it-4iek",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T02:59:28+00:00"
+      "published": "2026-08-17T05:01:42+00:00"
     },
     {
-      "id": "techpulse-7f9a1f0cffaf830db46f",
-      "title": "PawServe: AI Symptom Help, Breed Finder & Real Vet Care in One Place",
-      "description": "This is a submission for Weekend Challenge: Dog Days Edition What I Built PawServe is a full dog-care platform built for one simple idea: everything your dog needs should live in one place. Not just a cute landing page. A real working app where you can: Find the right breed — search and filter 20+ breeds by category...",
-      "url": "https://dev.to/m1raclescr1pt/pawserve-ai-symptom-help-breed-finder-real-vet-care-in-one-place-5b1g",
+      "id": "techpulse-b5c4af47c6600c5f8854",
+      "title": "Model-Generated GitHub Actions Need a Permission Gate",
+      "description": "A model can write a valid GitHub Actions workflow that still leaks a secret. Lint the syntax, then gate the permissions. The failure mode Most checks on model-generated YAML stop at syntax. A workflow can parse cleanly, pass actionlint , and still: request id-token: write or contents: write read repository secrets in...",
+      "url": "https://dev.to/hackrs_6393/model-generated-github-actions-need-a-permission-gate-5570",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T02:50:51+00:00"
+      "published": "2026-08-17T05:00:47+00:00"
     },
     {
-      "id": "techpulse-e896ec72225e2a8a663e",
-      "title": "Running three AI models on one local server when your VRAM doesn't cover all of them",
-      "description": "The first time I tried loading Whisper, bge-m3, and gemma at the same time on my local box, it OOMâ€™d immediately. Iâ€™d known this was going to happen, but I tried anyway to see where the ceiling actually was. The machine is a workstation I already had, enough VRAM for any single model but not three simultaneously...",
-      "url": "https://dev.to/hannune/running-three-ai-models-on-one-local-server-when-your-vram-doesnt-cover-all-of-them-b7g",
-      "image": "",
-      "category": "Artificial Intelligence",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T02:49:37+00:00"
-    },
-    {
-      "id": "techpulse-c019273b3b5634afacf9",
-      "title": "I thought backing up Supabase was just pg_dump + rclone. It wasn't.",
-      "description": "A few days ago somebody on Reddit asked how to make proper backups of a Supabase project. My first answer was pretty straightforward. Dump the database with the Supabase CLI. Copy the actual Storage objects somewhere else. Put both jobs in cron or GitHub Actions. Done. Or at least that's what I thought. Then people...",
-      "url": "https://dev.to/mkpdigital/i-thought-backing-up-supabase-was-just-pgdump-rclone-it-wasnt-1lbl",
+      "id": "techpulse-2e6d4ea5a6c48cb12667",
+      "title": "Your Cron Job Exits 0 and Does Nothing: Reading Chrome's Cookie SQLite to Know If a Session Is Actually Alive",
+      "description": "An automation job can fail for days without making a single sound. Mine did: one Instagram lane ran twelve times a day, logged \"done\" every time, raised zero errors — and liked exactly nothing. This post is about that failure mode and how I fixed the detection, in a series where I share the holes I've actually fallen...",
+      "url": "https://dev.to/bokuwalily/your-cron-job-exits-0-and-does-nothing-reading-chromes-cookie-sqlite-to-know-if-a-session-is-3c55",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T02:48:59+00:00"
+      "published": "2026-08-17T05:00:06+00:00"
     },
     {
-      "id": "techpulse-1ba3c076d9b9febafd09",
-      "title": "Evooo1Bot: A Multi-Functional Linux Botnet That Turns Compromised Gateways into SOCKS5 Relays, SSH Spreaders, and DDoS Tools",
-      "description": "Evooo1Bot: A Multi-Functional Linux Botnet That Turns Compromised Gateways into SOCKS5 Relays, SSH Spreaders, and DDoS Tools 1. Basic Information Severity: High Title: Multi-Functional Linux Botnet “Evooo1Bot” Publisher: FortiGuard Labs Release Date: 2026-08-13 Update Date: None Original Source: FortiGuard Labs...",
-      "url": "https://dev.to/anoymask/evooo1bot-a-multi-functional-linux-botnet-that-turns-compromised-gateways-into-socks5-relays-ssh-27kg",
-      "image": "",
-      "category": "Cybersecurity",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T02:42:51+00:00"
-    },
-    {
-      "id": "techpulse-c790cdf589aee5b2f681",
-      "title": "PawPrints — Helping Dogs Find Friends, Adventures, and a Life Beyond the Feed",
-      "description": "This is a submission for Weekend Challenge: Dog Days Edition What I Built I built PawPrints , a dog-first social community connected to PawPark , a dog-aware adventure planner. The idea came from a problem I think many dog parents experience. Life is busy. Sometimes maintaining our own social life is difficult, and...",
-      "url": "https://dev.to/rashmishivakumar/pawprints-helping-dogs-find-friends-adventures-and-a-life-beyond-the-feed-5bih",
-      "image": "https://assets.dev.to/assets/github-logo-5a155e1f9a670af7944dd5e12375bc76ed542ea80224905ecaf878b9157cdefc.svg",
-      "category": "Game Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T02:39:23+00:00"
-    },
-    {
-      "id": "techpulse-ce9978fe72dccd512064",
-      "title": "subdomain enumerator",
-      "description": "Finding Hidden Subdomains: Building a Subdomain Enumerator in Python I recently built my third cybersecurity tool — a subdomain enumerator that finds hidden subdomains of a target domain. Here's how I built it. What Is a Subdomain Enumerator? A subdomain enumerator finds all the subdomains of a domain. For example...",
-      "url": "https://dev.to/cyber_preston/subdomain-enumerator-4ic6",
-      "image": "https://assets.dev.to/assets/github-logo-5a155e1f9a670af7944dd5e12375bc76ed542ea80224905ecaf878b9157cdefc.svg",
-      "category": "Cybersecurity",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-17T02:39:01+00:00"
-    },
-    {
-      "id": "techpulse-b43a96b17b3c3a183fa5",
-      "title": "React useSessionStorage Hook: Per-Tab State That Survives Reloads (2026)",
-      "description": "Here's a checkout flow that loses the customer at step three: function Checkout () { const [ step , setStep ] = useState ( 0 ); const [ form , setForm ] = useState < CheckoutForm > ( EMPTY_FORM ); // step 1: address, step 2: shipping, step 3: payment… } The customer fills in their address, picks a shipping option, and...",
-      "url": "https://dev.to/childrentime/react-usesessionstorage-hook-per-tab-state-that-survives-reloads-2026-1nd3",
+      "id": "techpulse-b9ebedf5a7b752ba5d0f",
+      "title": "This week in AI + Indian markets: a safety pause, a price war, and a pullback that isn't what it looks like",
+      "description": "Three stories from the past week worth more than a scroll-past — one about how close AI safety came to a real test, one about what's happening to the economics of building with AI, and one about what's actually driving the Nifty right now. 1. OpenAI paused a model — not for what it said, but for what it could do...",
+      "url": "https://dev.to/abhishek_sharma_a9792aee8/this-week-in-ai-indian-markets-a-safety-pause-a-price-war-and-a-pullback-that-isnt-what-it-3p57",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T02:35:15+00:00"
+      "published": "2026-08-17T05:00:06+00:00"
     },
     {
-      "id": "techpulse-8815d052a80ff76b9ac6",
-      "title": "I built a forum where rooms die when people stop talking",
-      "description": "I got tired of two things about online communities. The first is that they don't die well. A subreddit or a Discord channel that was alive for a week keeps existing for years, and the emptiness is louder than silence — you open it, see the last post is from 2023, and leave. The second is that everything you say is...",
-      "url": "https://dev.to/seongjinkang/i-built-a-forum-where-rooms-die-when-people-stop-talking-30mc",
-      "image": "",
+      "id": "techpulse-937433bbb32615927114",
+      "title": "re: Has the Audience for Technical Articles Dropped?",
+      "description": "In past weeks, Dumebi Okolo asked in this post : Has the audience for technical articles dropped? AI tools reshaping technical reading habits Dumebi Okolo Dumebi Okolo Dumebi Okolo Follow Jul 8 Has the audience for technical articles dropped? # discuss 72 reactions 24 comments 1 min read \"Is it just me, or has anyone...",
+      "url": "https://dev.to/canro91/re-has-the-audience-for-technical-articles-dropped-2o4",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F941720%2Ff316bf93-ef0b-4bc5-aee2-5e062255d5f0.jpg",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-17T02:32:27+00:00"
+      "published": "2026-08-17T05:00:00+00:00"
+    },
+    {
+      "id": "techpulse-f2e3fc18da6c961593c1",
+      "title": "A top-10 list was the wrong answer, so I used greedy set cover instead",
+      "description": "I had a ranking problem that looked trivial and turned out to have the wrong shape. Contexto is a daily word game that scores your guess by semantic distance to a hidden answer, reporting a rank from 1 to whatever. Players want good opening words. The obvious approach is to take an archive, count how often each word...",
+      "url": "https://dev.to/horushe/a-top-10-list-was-the-wrong-answer-so-i-used-greedy-set-cover-instead-1lbm",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Gaming",
+      "source": "DEV Community",
+      "published": "2026-08-17T04:59:38+00:00"
     },
     {
       "id": "techpulse-2de77be8579b4334ef20",
@@ -1575,17 +1586,6 @@
       "mainCategory": "Gaming",
       "source": "Destructoid",
       "published": "2026-08-14T19:50:43+00:00"
-    },
-    {
-      "id": "techpulse-ac577e7436b272e98696",
-      "title": "The world’s most technical shooter is back from the dead, and it feels like a fever dream",
-      "description": "Here we go againz. The post The world’s most technical shooter is back from the dead, and it feels like a fever dream appeared first on Destructoid .",
-      "url": "https://www.destructoid.com/the-worlds-most-technical-shooter-is-back-from-the-dead-and-it-feels-like-a-fever-dream/",
-      "image": "",
-      "category": "Gaming",
-      "mainCategory": "Gaming",
-      "source": "Destructoid",
-      "published": "2026-08-14T19:40:23+00:00"
     },
     {
       "id": "techpulse-dbf321e18829f6add332",
