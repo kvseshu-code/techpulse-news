@@ -1,8 +1,63 @@
 {
   "success": true,
-  "updatedAt": "2026-08-16T23:36:23.930220+00:00",
+  "updatedAt": "2026-08-17T00:00:50.256122+00:00",
   "total": 180,
   "articles": [
+    {
+      "id": "techpulse-3ad2758076a5ddd9f35a",
+      "title": "😸Catbot Integration, AI Office, Cat Mode (AI Avatar v17: VS Code and Chrome Extension)",
+      "description": "Intro AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its might .🤗 It lives in your VS Code sidebar (reacts to Claude Code / GitHub Copilot) or browser side panel (reacts to ChatGPT / Claude). Animations and speech bubbles all run without AI too. This time I have three main topics. 🤝Catbot...",
+      "url": "https://dev.to/webdeveloperhyper/catbot-integration-ai-office-cat-mode-ai-avatar-v17-vs-code-and-chrome-extension-2f26",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fd6l89zu0h1te9euoyydn.png",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:49:02+00:00"
+    },
+    {
+      "id": "techpulse-4fca96b10bfad5f81fc3",
+      "title": "SafePal data breach impacts 39,798 customers, stolen info for sale",
+      "description": "Cryptocurrency hardware wallet provider SafePal is warning of a data breach affecting about 39,798 customers after a flaw was exploited to steal customer order information, and a threat actor is now claiming to be selling the stolen data. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/",
+      "image": "",
+      "category": "Cybersecurity",
+      "mainCategory": "Technology",
+      "source": "BleepingComputer",
+      "published": "2026-08-16T23:47:06+00:00"
+    },
+    {
+      "id": "techpulse-bb5d736779b6cbee68c8",
+      "title": "I built a production-ready Shopify Hydrogen theme and open-sourced it",
+      "description": "Every Hydrogen project I've worked on started the same way — wire up a cart, build a PDP, add filters, then spend weeks on the \"extras\" that aren't really extras: wishlist, compare, quick view, proper i18n, RTL. After doing this enough times I decided to build it once and properly. ada ÉLAN is a Hydrogen storefront...",
+      "url": "https://dev.to/ozgursagiroglu/i-built-a-production-ready-shopify-hydrogen-theme-and-open-sourced-it-1891",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:40:54+00:00"
+    },
+    {
+      "id": "techpulse-60e3e166c65a412f93cb",
+      "title": "Nintendo Hotline – What can Product Managers learn?",
+      "description": "Nintendo had a hotline where gamers could, at the time, call and speak with 'Game Counsellors' who provided them with tips and walkthroughs. It operated for quite sometime before Nintendo sunset it. There are a few (Product) lessons from this that I am sure will be of value to Product Leaders. 1- Necessity...",
+      "url": "https://dev.to/h-j/nintendo-hotline-what-can-product-managers-learn-2gmj",
+      "image": "",
+      "category": "Console Gaming",
+      "mainCategory": "Gaming",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:38:44+00:00"
+    },
+    {
+      "id": "techpulse-0dcaf5ad5b5c4f541de1",
+      "title": "Banx Walk Safe: same sidewalk, two heat loads",
+      "description": "This is a submission for the DEV Weekend Challenge: Dog Days Edition . What I Built Same sidewalk. Two bodies. Two completely different heat loads. Banx is my French Bulldog. Born October 5, 2022. He weighs 35 pounds — seven above the 28-pound ceiling in the French Bull Dog Club of America conformation standard. I...",
+      "url": "https://dev.to/kenielzep97/banx-walk-safe-same-sidewalk-two-heat-loads-51ib",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fkfehbiuom7nqwsd9e399.jpg",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:38:37+00:00"
+    },
     {
       "id": "techpulse-7680f4863cdd5c2b74d4",
       "title": "The US Army is opening up its training centers for private firms to test out new drones",
@@ -26,9 +81,20 @@
       "published": "2026-08-16T23:20:00+00:00"
     },
     {
+      "id": "techpulse-d19d5cc04573a6423212",
+      "title": "What Actually Happens When You UPDATE a Row in PostgreSQL?",
+      "description": "Most developers think of a PostgreSQL table like this: users id | age 1 | 25 2 | 31 3 | 42 Then we run: UPDATE users SET age = 30 WHERE id = 1; The obvious mental model is: 25 → 30 But PostgreSQL doesn't simply overwrite the old value. To understand what actually happens, we need to look at how PostgreSQL stores rows...",
+      "url": "https://dev.to/ujjwal_011/what-actually-happens-when-you-update-a-row-in-postgresql-2nbk",
+      "image": "",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:15:49+00:00"
+    },
+    {
       "id": "techpulse-31a34911f7890b2684e8",
       "title": "AI Can Find the Failure. Who Decides What the Fix Should Be?",
-      "description": "AI is changing accessibility remediation fast. It can find common WCAG failures, explain them, and increasingly write the fix. That's real, and it's useful. But finding a failure is not the same as deciding what the fix should be. The gap is easy to miss because it doesn't always produce an obviously wrong answer...",
+      "description": "AI is changing accessibility remediation fast. It can find common accessibility failures, explain them, and increasingly write the fix. That's real, and it's useful. But finding a failure is not the same as deciding what the fix should be. The gap is easy to miss because it doesn't always produce an obviously wrong...",
       "url": "https://dev.to/praiztech/ai-can-find-the-failure-who-decides-what-the-fix-should-be-18o5",
       "image": "",
       "category": "Programming & Development",
@@ -70,6 +136,28 @@
       "published": "2026-08-16T23:01:05+00:00"
     },
     {
+      "id": "techpulse-f7345e3fcfdc0aed89fb",
+      "title": "Frontend Challenge: Comfort Food Edition - Lumina Dining",
+      "description": "This is a submission for Frontend Challenge - Comfort Food Edition, Perfect Landing What I Built I built a landing page with a restaurant theme showing menu, reservation and about the restaurant Demo Here's the live demo: https://lumina-dining-mocha.vercel.app/ Journey I used Stitch to create a design for the landing...",
+      "url": "https://dev.to/tomivan/frontend-challenge-comfort-food-edition-lumina-dining-4e6n",
+      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fsj3m4lcf8uaa05h9clwh.png",
+      "category": "Programming & Development",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:00:48+00:00"
+    },
+    {
+      "id": "techpulse-e7ed574da15b1a2b4430",
+      "title": "I built PulseVault to monitor websites. Looking for feedback.",
+      "description": "Hi everyone, I've been building PulseVault, a website monitoring platform that helps website owners detect downtime, SSL issues, broken forms, and performance problems. I recently finished the landing page and I'm looking for honest feedback. What would make a tool like this useful to you? What features would you...",
+      "url": "https://dev.to/official_emi_59409f16fdec/i-built-pulsevault-to-monitor-websites-looking-for-feedback-30id",
+      "image": "",
+      "category": "Internet & Web",
+      "mainCategory": "Technology",
+      "source": "DEV Community",
+      "published": "2026-08-16T23:00:32+00:00"
+    },
+    {
       "id": "techpulse-cce5c8b362e130aa8439",
       "title": "After 10 Years, Tom Cruise's Forgotten 118-Minute Mystery-Thriller Is Back on Free Streaming",
       "description": "Prime Video's Reacher owes everything to this underrated Tom Cruise thriller",
@@ -81,26 +169,15 @@
       "published": "2026-08-16T23:00:12+00:00"
     },
     {
-      "id": "techpulse-a39db70838c3f8a52b4e",
-      "title": "Shipping Assumptions: A Reliability Stack for AI-Generated Code",
-      "description": "The code looked good. It linted cleanly. The shallow tests passed. Everyone felt— vibed —that we had built the right thing. Then the edge case appeared in production. The developer treated it as normal operating procedure: bugs happen, tickets arrive, patches ship. QA was asked why they had not caught it. But QA never...",
-      "url": "https://dev.to/copyleftdev/shipping-assumptions-a-reliability-stack-for-ai-generated-code-3p9f",
+      "id": "techpulse-18775854182bd15caee8",
+      "title": "Sitemaps Are Free SEO — Here's the Vite Plugin That Generates Yours",
+      "description": "The Problem Every static site I've shipped has gone through the same ritual: build the site, then manually write a sitemap.xml, forget to update it when a route changes, and discover a month later that Google indexed half my pages. Sitemaps are boring, so they get done wrong. The Solution @3ni8ma/vite-plugin-sitemap...",
+      "url": "https://dev.to/3ni8ma/sitemaps-are-free-seo-heres-the-vite-plugin-that-generates-yours-3lg4",
       "image": "",
       "category": "Programming & Development",
       "mainCategory": "Technology",
       "source": "DEV Community",
-      "published": "2026-08-16T22:56:25+00:00"
-    },
-    {
-      "id": "techpulse-7f4669b61238935251b3",
-      "title": "Designing an Honest “Unlimited” Generative AI Product: Credits, Queues, and Fair Use",
-      "description": "Disclosure: I am building Donatello.studio . This article describes the product and systems principles behind our access model; it is not an independent review. Generative AI products have an uncomfortable cost structure. A text request may be inexpensive, while a long video or a complete song can consume orders of...",
-      "url": "https://dev.to/abrahamaragon91/designing-an-honest-unlimited-generative-ai-product-credits-queues-and-fair-use-15li",
-      "image": "",
-      "category": "Artificial Intelligence",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:50:54+00:00"
+      "published": "2026-08-16T22:59:14+00:00"
     },
     {
       "id": "techpulse-32a5cb39d854881a27f3",
@@ -114,17 +191,6 @@
       "published": "2026-08-16T22:50:00+00:00"
     },
     {
-      "id": "techpulse-b3317c2c45c0cbc26549",
-      "title": "Why I'm Building an Engineering Publishing Platform",
-      "description": "Over the past several months, I've made a commitment to write more. Not because I want to become a content creator, but because I've come to appreciate how much engineering knowledge quietly disappears every day. Architecture discussions end when the meeting is over. Production incidents become stories that fade with...",
-      "url": "https://dev.to/mgmaster24/why-im-building-an-engineering-publishing-platform-2mj3",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:45:49+00:00"
-    },
-    {
       "id": "techpulse-6d0136658e9ce488478a",
       "title": "US Air Force wants AI help to keep its Minuteman III nukes ticking until they're 66, or maybe 80",
       "description": "The US Air Force wants AI to unify Minuteman III data as Sentinel delays could extend missile service toward 80 years.",
@@ -134,28 +200,6 @@
       "mainCategory": "Technology",
       "source": "Latest from TechRadar",
       "published": "2026-08-16T22:40:00+00:00"
-    },
-    {
-      "id": "techpulse-d49fecab7a32eeb7e278",
-      "title": "Unhandled Events, Not Broken States, Are What Kill Your State Machine",
-      "description": "You probably test a state machine by walking the paths you believe are legal: an order moves from pending to paid, then to shipped, and finally to delivered. That test passes and tells you very little, because the failures that actually freeze a service tend to come from the cells you never filled in. A missing...",
-      "url": "https://dev.to/codepy_1473/unhandled-events-not-broken-states-are-what-kill-your-state-machine-4dl6",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:39:50+00:00"
-    },
-    {
-      "id": "techpulse-034f7c9fde8faefc290c",
-      "title": "You can't trust assembly an AI wrote. Here's the 3-command gate.",
-      "description": "✨ Disclosure: this tutorial was drafted with AI assistance. Every technical claim is verified and source-traced in the linked repository. AI assistants are confident about assembly — and wrong in specific, repeatable ways. They invent mnemonics that do not exist, flip AT&T/Intel operand order, silently drop...",
-      "url": "https://dev.to/trothbyte/you-cant-trust-assembly-an-ai-wrote-heres-the-3-command-gate-4ige",
-      "image": "",
-      "category": "Artificial Intelligence",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:29:09+00:00"
     },
     {
       "id": "techpulse-c8bd92865ce95d26e3b8",
@@ -169,17 +213,6 @@
       "published": "2026-08-16T22:28:57+00:00"
     },
     {
-      "id": "techpulse-d5f206f632fa980d49eb",
-      "title": "We catalogued 55+ AI-agent failures in low-level code — and shipped 124 verified skills to fix them",
-      "description": "✨ Disclosure: this article was drafted with AI assistance. Every technical claim in it is source-traced in the linked repository ( registry/claims.yaml , 177 primary sources). The failure classes below come from real, documented incidents — not vibes. AI coding agents are excellent at boilerplate and unreliable at...",
-      "url": "https://dev.to/trothbyte/we-catalogued-55-ai-agent-failures-in-low-level-code-and-shipped-124-verified-skills-to-fix-them-369l",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:26:06+00:00"
-    },
-    {
       "id": "techpulse-6ed9a722fee34f524ef9",
       "title": "'Spider-Man: Brand New Day' Hits $2 Billion at the Box Office",
       "description": "Marvel's latest Spider-Man movie keeps breaking records, hitting $2 billion in less than 3 weeks. Could it be Marvel's first $3 billion movie?",
@@ -189,28 +222,6 @@
       "mainCategory": "Gaming",
       "source": "Polygon.com",
       "published": "2026-08-16T22:22:30+00:00"
-    },
-    {
-      "id": "techpulse-3ba76d222095988c8870",
-      "title": "So, I Vibe Coded A Way Out, Again.",
-      "description": "A while ago I wrote an article asking When Is 100% Vibe Coding OK? . My conclusion was that it works when the human already owns the invariants. If you know the problem is solvable, understand the constraints, and have a reliable way to verify the output, AI can be a fantastic accelerator. Apparently I decided to test...",
-      "url": "https://dev.to/realvorl/so-i-vibe-coded-a-way-out-again-heb",
-      "image": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fcqidw6vv9lvwl7yo5dhx.png",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:18:46+00:00"
-    },
-    {
-      "id": "techpulse-2357e74f2e5e3079ee44",
-      "title": "PawPal is your New Dog's AI Sidekick 🐶⭐",
-      "description": "What I Built Bringing a new dog home is exciting... and also confusing. Why are they crying? Why are they hiding? Why won't they eat? Why are they biting my feet? 😭 I built PawPal, a playful AI companion for new dog owners that helps turn those confusing moments into simple, reassuring guidance. I especially wanted...",
-      "url": "https://dev.to/ishikathakur7802/pawpal-is-your-new-dogs-ai-sidekick-3bc8",
-      "image": "",
-      "category": "Programming & Development",
-      "mainCategory": "Technology",
-      "source": "DEV Community",
-      "published": "2026-08-16T22:13:40+00:00"
     },
     {
       "id": "techpulse-8f7f8af87d448e81247b",
@@ -444,22 +455,22 @@
       "published": "2026-08-16T17:00:12+00:00"
     },
     {
-      "id": "techpulse-92e39ae5d2f75efbcad6",
-      "title": "Where's the weirdest place you've heard videogame music?",
-      "description": "Why does hearing it in public places feel so… wrong?",
-      "url": "https://www.pcgamer.com/games/wheres-the-weirdest-place-youve-heard-videogame-music/",
-      "image": "https://cdn.mos.cms.futurecdn.net/NUrc7GAqwBdawyXwPEtABH-1280-80.jpg",
+      "id": "techpulse-cbeeb71a93ac672b98bd",
+      "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
+      "description": "The legendary game designer guides us through the games on his PC.",
+      "url": "https://www.pcgamer.com/gaming-industry/david-brevik-creator-of-diablo-reveals-the-worst-ending-to-any-game-hes-played-but-i-really-love-the-game-its-amazing/",
+      "image": "https://cdn.mos.cms.futurecdn.net/uh26LEAoSbJah73QhMhjRH-1280-80.jpg",
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
       "published": "2026-08-16T17:00:00+00:00"
     },
     {
-      "id": "techpulse-cbeeb71a93ac672b98bd",
-      "title": "David Brevik, creator of Diablo, reveals the 'worst ending' to any game he's played: 'But I really love the game. It's amazing'",
-      "description": "The legendary game designer guides us through the games on his PC.",
-      "url": "https://www.pcgamer.com/gaming-industry/david-brevik-creator-of-diablo-reveals-the-worst-ending-to-any-game-hes-played-but-i-really-love-the-game-its-amazing/",
-      "image": "https://cdn.mos.cms.futurecdn.net/uh26LEAoSbJah73QhMhjRH-1280-80.jpg",
+      "id": "techpulse-92e39ae5d2f75efbcad6",
+      "title": "Where's the weirdest place you've heard videogame music?",
+      "description": "Why does hearing it in public places feel so… wrong?",
+      "url": "https://www.pcgamer.com/games/wheres-the-weirdest-place-youve-heard-videogame-music/",
+      "image": "https://cdn.mos.cms.futurecdn.net/NUrc7GAqwBdawyXwPEtABH-1280-80.jpg",
       "category": "PC Gaming",
       "mainCategory": "Gaming",
       "source": "PCGamer latest",
@@ -1918,6 +1929,17 @@
       "published": "2026-08-14T13:31:58+00:00"
     },
     {
+      "id": "techpulse-14d0a8bddd2c86437603",
+      "title": "Samsung health AI models analyse wearable biosignal data",
+      "description": "Samsung Research America’s Digital Health Team has presented two AI foundation models designed to learn from wearable biosignals. The work centres on data captured by smartwatches, including heart activity, sleep, and physical activity. The company discussed its Connected Care vision at the Health Forum during Galaxy...",
+      "url": "https://www.artificialintelligence-news.com/news/samsung-health-ai-models-analyse-wearable-biosignal-data/",
+      "image": "https://www.artificialintelligence-news.com/wp-content/uploads/2025/08/ai-expo-banner-2025.png",
+      "category": "Artificial Intelligence",
+      "mainCategory": "Technology",
+      "source": "AI News",
+      "published": "2026-08-14T13:30:10+00:00"
+    },
+    {
       "id": "techpulse-77e2223dbf6704ffc8e9",
       "title": "Nintendo announces Pokémon Pokopia has sold over 5m copies, meaning that roughly one in four Switch 2 users now owns the game",
       "description": "It looks like we've got another massive Pokémon-flavoured hit on our hands. Nintendo and The Pokémon Company have confirmed that Pokémon Pokopia has sold more than five million units globally - a pretty impressive number given the game has been out for \"just over four months\". These sales include both physical and...",
@@ -1960,28 +1982,6 @@
       "mainCategory": "Technology",
       "source": "MachineLearningMastery.com",
       "published": "2026-08-14T12:00:23+00:00"
-    },
-    {
-      "id": "techpulse-6e395c55eaca9e380d98",
-      "title": "Best Wireless Chargers (2026): My Picks After Testing 100+",
-      "description": "Stop fumbling for cables in the dark. These WIRED-tested stands and pads will take the hassle out of refueling your phone, wireless earbuds, and watch.",
-      "url": "https://www.wired.com/gallery/best-wireless-chargers/",
-      "image": "https://media.wired.com/photos/6a0f6f4c9c4f912eb7592888/master/pass/Best%20Wireless%20Chargers%20top%20art%20052026%20SOURCE%20Amazon-Nomad%20Goods.jpg",
-      "category": "Emerging Technology",
-      "mainCategory": "Technology",
-      "source": "WIRED",
-      "published": "2026-08-14T12:00:00+00:00"
-    },
-    {
-      "id": "techpulse-82b2cece2bc793b99246",
-      "title": "Shell investigates 'potential incident' after Clop data theft claims",
-      "description": "Oil giant Shell has confirmed it is investigating a potential security incident after the Clop ransomware gang claimed it stole 89GB of data. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/shell-investigates-potential-incident-after-clop-data-theft-claims/",
-      "image": "",
-      "category": "Cybersecurity",
-      "mainCategory": "Technology",
-      "source": "BleepingComputer",
-      "published": "2026-08-14T11:55:45+00:00"
     }
   ]
 }
