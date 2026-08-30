@@ -36,3 +36,5 @@ Top 10, continuous issue ticker, category intelligence, radar, trending, saved s
 ## Deliberate future items
 
 Server-side AI claim verification, persistent accounts/roles, true multi-source fact verification, PWA installation, push notifications and voice conversation require additional infrastructure and are not faked in this static build.
+  
+## Latest Update 
