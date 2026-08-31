@@ -1,1 +1,21 @@
-{"version":1,"default":"dark","available":["dark","light"],"future":["system","midnight","glass","cyber","aurora","terminal","high-contrast","minimal","jarvis"]}
+{
+  "version": 2,
+  "default": "dark",
+  "themes": [
+    {
+      "id": "dark",
+      "name": "Dark",
+      "description": "Default high-contrast intelligence console"
+    },
+    {
+      "id": "light",
+      "name": "Light",
+      "description": "Bright accessibility-oriented interface"
+    },
+    {
+      "id": "glass",
+      "name": "Glass",
+      "description": "Translucent panels, blur and layered transparency"
+    }
+  ]
+}

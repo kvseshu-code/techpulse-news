@@ -1,1 +1,53 @@
-{"version":1,"top_stories":10,"issue_ticker":true,"technology_radar":true,"daily_briefing":true,"audio_narration":true,"ask_techpulse":false,"bookmarks":true,"local_preferences":true,"source_transparency":true,"story_popup":true,"pwa":false,"voice_conversation":false,"server_side_ai_verification":false}
+{
+  "version": 2,
+  "features": {
+    "localization": {
+      "enabled": true,
+      "supported": [
+        "en",
+        "hi",
+        "te",
+        "ta",
+        "kn",
+        "mr"
+      ]
+    },
+    "themes": {
+      "enabled": true,
+      "supported": [
+        "dark",
+        "light",
+        "glass"
+      ]
+    },
+    "daily_brief": {
+      "enabled": true,
+      "max_stories": 15,
+      "narrate_all": true,
+      "controls": [
+        "play",
+        "pause",
+        "previous",
+        "next",
+        "stop"
+      ]
+    },
+    "ask_techpulse": {
+      "enabled": true,
+      "mode": "dataset_search"
+    },
+    "global_search": {
+      "enabled": true
+    },
+    "saved_stories": {
+      "enabled": true,
+      "storage": "localStorage"
+    },
+    "browser_speech": {
+      "enabled": true
+    },
+    "reduced_motion": {
+      "enabled": true
+    }
+  }
+}
