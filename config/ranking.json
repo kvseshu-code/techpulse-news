@@ -1,0 +1,1 @@
+{"version":1,"top_stories":10,"max_articles":100,"max_article_age_hours":96,"weights":{"importance":0.30,"freshness":0.25,"source_trust":0.20,"confirmation":0.15,"momentum":0.10},"deduplication_similarity_threshold":0.58,"source_diversity":{"enabled":true,"max_same_source_in_top10":4}}
