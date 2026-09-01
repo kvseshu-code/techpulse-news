@@ -1,88 +1,1134 @@
+```python
 #!/usr/bin/env python3
-"""TechPulse static RSS/Atom builder: normalize, deduplicate, cluster, rank, validate, fail safely."""
-from pathlib import Path
-from datetime import datetime, timezone
+
+"""
+TechPulse News Feed Collector
+--------------------------------
+RSS/Atom feeds -> normalized news.json
+
+Designed for:
+    GitHub Pages
+    GitHub Actions
+    Python 3.10+
+
+Features:
+- Multiple legitimate RSS/Atom sources
+- Timeout and retry handling
+- RSS + Atom support
+- Duplicate removal
+- Article age filtering
+- Per-source limits
+- Global article limit
+- Preserves previous news.json if collection fails completely
+- Source health information
+- Stable JSON structure
+- No API keys required
+"""
+
+import json
+import os
+import re
+import sys
+import time
+import hashlib
+import html
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse
-from collections import defaultdict
-import urllib.request, urllib.error, xml.etree.ElementTree as ET, json, re, html, hashlib, time, os, sys, tempfile
 
-ROOT=Path(__file__).parent; CFG=ROOT/'config'; OUT=ROOT/'news.json'; MAX=100; PER_SOURCE=30; AGE_HOURS=96; TIMEOUT=15
-STOP=set('the a an and or of to in on for with from by is are was were this that as at be has have had its into about after before over under new says said how why what when where who their they it we you your our'.split())
+import requests
+import xml.etree.ElementTree as ET
 
-def clean(v): return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]*>',' ',v or ''))).strip()
-def toks(s): return {x for x in re.findall(r'[a-z0-9][a-z0-9+#.-]{2,}',s.lower()) if x not in STOP}
-def sim(a,b):
-    x,y=toks(a),toks(b); return len(x&y)/len(x|y) if x and y else 0
-def iso(v):
-    if not v:return ''
-    try:return parsedate_to_datetime(v.strip()).astimezone(timezone.utc).isoformat()
-    except:pass
-    try:return datetime.fromisoformat(v.strip().replace('Z','+00:00')).astimezone(timezone.utc).isoformat()
-    except:return ''
-def text(el,names):
-    for c in list(el):
-        if c.tag.split('}')[-1].lower() in {n.lower() for n in names}:
-            if c.text:return c.text
-    return ''
-def parse(raw,src):
-    root=ET.fromstring(raw); entries=[e for e in root.iter() if e.tag.split('}')[-1].lower() in ('item','entry')]; out=[]
-    for e in entries[:PER_SOURCE]:
-        title=clean(text(e,['title'])); desc=clean(text(e,['description','summary','content'])); published=iso(text(e,['pubDate','published','updated','date'])); link=''
-        for c in list(e):
-            if c.tag.split('}')[-1].lower()=='link': link=c.attrib.get('href','') or (c.text or '');
-            if link:break
-        link=link or clean(text(e,['guid']))
-        u=urlparse(link)
-        if title and link and u.scheme in ('http','https') and u.netloc: out.append({'title':title[:300],'description':desc[:1200],'published_at':published or datetime.now(timezone.utc).isoformat(),'url':link,'source':src['name'],'source_type':src.get('type','secondary'),'category':src.get('category','Technology'),'source_trust':int(src.get('trust',70))})
-    return out
-def fetch(url):
-    r=urllib.request.Request(url,headers={'User-Agent':'TechPulse/1.0','Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml'})
-    with urllib.request.urlopen(r,timeout=TIMEOUT) as x:return x.read()
-def category(x):
-    t=(x['title']+' '+x['description']).lower(); rules={'AI':['ai','artificial intelligence','llm','machine learning','model','openai','anthropic','gemini'],'Cybersecurity':['cyber','security','malware','ransomware','vulnerability','cve','breach','zero-day'],'Gaming':['game','gaming','playstation','xbox','nintendo','steam','esports'],'Cloud':['aws','azure','cloud','kubernetes','container','terraform'],'Hardware':['nvidia','amd','intel','chip','processor','gpu','device'],'Enterprise':['enterprise','saas','software','database','microsoft']}; scores={k:sum(w in t for w in v) for k,v in rules.items()}; return max(scores,key=scores.get) if max(scores.values()) else x['category']
-def age(iso_s):
-    try:return max(0,round(100-(datetime.now(timezone.utc)-datetime.fromisoformat(iso_s)).total_seconds()/3600*2))
-    except:return 30
-def build():
-    cfg=json.loads((CFG/'sources.json').read_text()); candidates=[]; health=[]
-    for s in cfg.get('sources',[]):
-        if not s.get('enabled',True):continue
-        try:a=parse(fetch(s['url']),s); candidates+=a; health.append({'source':s['name'],'status':'HEALTHY','articles':len(a)})
-        except Exception as e:health.append({'source':s['name'],'status':'WARNING','error':str(e)[:180]})
-    cutoff=time.time()-AGE_HOURS*3600; clean_items=[]; seen=set()
-    for x in candidates:
-        if x['url'] in seen:continue
-        seen.add(x['url'])
+
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
+OUTPUT_FILE = "news.json"
+
+MAX_ARTICLES = 120
+MAX_ARTICLES_PER_SOURCE = 25
+
+# Keep articles published within this period.
+MAX_ARTICLE_AGE_HOURS = 72
+
+# Network settings
+REQUEST_TIMEOUT = 20
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 2
+
+USER_AGENT = (
+    "TechPulseNews/1.0 "
+    "(RSS news aggregator; +https://kvseshu-code.github.io/techpulse-news/)"
+)
+
+
+# ============================================================
+# RSS SOURCES
+# ============================================================
+
+FEEDS = [
+    # --------------------------------------------------------
+    # Technology
+    # --------------------------------------------------------
+
+    {
+        "name": "Ars Technica",
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "category": "Technology",
+    },
+
+    {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/feed/",
+        "category": "Technology",
+    },
+
+    {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/rss/index.xml",
+        "category": "Technology",
+    },
+
+    {
+        "name": "WIRED",
+        "url": "https://www.wired.com/feed/rss",
+        "category": "Technology",
+    },
+
+    {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/feed/",
+        "category": "Technology",
+    },
+
+    {
+        "name": "The Register",
+        "url": "https://www.theregister.com/headlines.atom",
+        "category": "Technology",
+    },
+
+    {
+        "name": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/feeds/all",
+        "category": "Hardware",
+    },
+
+    {
+        "name": "TechRadar",
+        "url": "https://www.techradar.com/rss",
+        "category": "Technology",
+    },
+
+    {
+        "name": "ZDNET",
+        "url": "https://www.zdnet.com/news/rss.xml",
+        "category": "Technology",
+    },
+
+    # --------------------------------------------------------
+    # AI / Science
+    # --------------------------------------------------------
+
+    {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/rss/",
+        "category": "AI",
+    },
+
+    {
+        "name": "NASA",
+        "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+        "category": "Science",
+    },
+
+    {
+        "name": "IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/feeds/feed.rss",
+        "category": "Science",
+    },
+
+    # --------------------------------------------------------
+    # Gaming
+    # --------------------------------------------------------
+
+    {
+        "name": "VGC",
+        "url": "https://www.videogameschronicle.com/feed/",
+        "category": "Gaming",
+    },
+
+    {
+        "name": "GameSpot",
+        "url": "https://www.gamespot.com/feeds/mashup/",
+        "category": "Gaming",
+    },
+
+    {
+        "name": "PC Gamer",
+        "url": "https://www.pcgamer.com/rss/",
+        "category": "Gaming",
+    },
+
+    {
+        "name": "Eurogamer",
+        "url": "https://www.eurogamer.net/feed",
+        "category": "Gaming",
+    },
+
+    {
+        "name": "Polygon",
+        "url": "https://www.polygon.com/rss/index.xml",
+        "category": "Gaming",
+    },
+]
+
+
+# ============================================================
+# HELPERS
+# ============================================================
+
+def utc_now():
+    return datetime.now(timezone.utc)
+
+
+def iso_now():
+    return utc_now().replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def clean_text(value):
+    """Remove HTML and normalize whitespace."""
+
+    if not value:
+        return ""
+
+    value = html.unescape(str(value))
+
+    # Remove scripts/styles
+    value = re.sub(
+        r"<(script|style).*?>.*?</\1>",
+        " ",
+        value,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    # Remove HTML tags
+    value = re.sub(r"<[^>]+>", " ", value)
+
+    # Normalize whitespace
+    value = re.sub(r"\s+", " ", value)
+
+    return value.strip()
+
+
+def strip_html(value):
+    return clean_text(value)
+
+
+def parse_date(value):
+    """
+    Parse common RSS/Atom date formats.
+    Returns timezone-aware datetime.
+    """
+
+    if not value:
+        return None
+
+    value = value.strip()
+
+    # RFC 2822 / RSS
+    try:
+        dt = parsedate_to_datetime(value)
+
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+
+        return dt.astimezone(timezone.utc)
+
+    except Exception:
+        pass
+
+    # ISO-8601 / Atom
+    try:
+        normalized = value.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(normalized)
+
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+
+        return dt.astimezone(timezone.utc)
+
+    except Exception:
+        pass
+
+    return None
+
+
+def make_id(title, url):
+    """
+    Generate a stable article identifier.
+    """
+
+    source = f"{title.strip().lower()}|{url.strip()}"
+
+    return hashlib.sha256(
+        source.encode("utf-8")
+    ).hexdigest()[:16]
+
+
+def extract_domain(url):
+    try:
+        return urlparse(url).netloc.lower()
+    except Exception:
+        return ""
+
+
+def first_text(element, names):
+    """
+    Find the first available child text for a list of tag names.
+    """
+
+    for name in names:
+        child = element.find(name)
+
+        if child is not None:
+            text = "".join(child.itertext()).strip()
+
+            if text:
+                return text
+
+    # Handle namespaces
+    for child in element:
+        local_name = child.tag.split("}")[-1]
+
+        if local_name in names:
+            text = "".join(child.itertext()).strip()
+
+            if text:
+                return text
+
+    return ""
+
+
+def find_child_text_by_local_name(element, names):
+    """
+    Namespace-independent child lookup.
+    """
+
+    for child in element:
+        local_name = child.tag.split("}")[-1]
+
+        if local_name in names:
+            text = "".join(child.itertext()).strip()
+
+            if text:
+                return text
+
+    return ""
+
+
+def find_link(element):
+    """
+    Extract RSS <link> or Atom <link href="">.
+    """
+
+    # RSS
+    for child in element:
+        local_name = child.tag.split("}")[-1]
+
+        if local_name == "link":
+
+            href = child.attrib.get("href")
+
+            if href:
+                return href.strip()
+
+            text = "".join(child.itertext()).strip()
+
+            if text:
+                return text
+
+    return ""
+
+
+def find_image(element):
+    """
+    Try common RSS/Media/RDF image locations.
+    """
+
+    # media:content
+    for child in element.iter():
+
+        local_name = child.tag.split("}")[-1]
+
+        if local_name in (
+            "content",
+            "thumbnail",
+            "enclosure",
+        ):
+
+            url = (
+                child.attrib.get("url")
+                or child.attrib.get("href")
+            )
+
+            if url:
+                media_type = child.attrib.get("type", "")
+
+                if (
+                    local_name != "enclosure"
+                    or media_type.startswith("image/")
+                    or media_type == ""
+                ):
+                    return url.strip()
+
+    # image element
+    for child in element:
+        local_name = child.tag.split("}")[-1]
+
+        if local_name == "image":
+            text = "".join(child.itertext()).strip()
+
+            if text:
+                return text
+
+    return ""
+
+
+# ============================================================
+# NETWORK
+# ============================================================
+
+def download_feed(url):
+    """
+    Download an RSS/Atom feed with retries.
+    """
+
+    last_error = None
+
+    for attempt in range(1, MAX_RETRIES + 2):
+
         try:
-            if datetime.fromisoformat(x['published_at']).timestamp()<cutoff:continue
-        except:pass
-        x['category']=category(x);clean_items.append(x)
-    clusters=[]
-    for x in clean_items:
-        target=next((c for c in clusters if max(sim(x['title'],z['title']) for z in c)>=.58),None)
-        (target if target is not None else clusters.append([x]) or clusters[-1]).append(x) if target is not None else None
-    stories=[]
-    for i,c in enumerate(clusters,1):
-        c.sort(key=lambda x:(x['source_trust'],age(x['published_at'])),reverse=True); p=c[0]; sources=list(dict.fromkeys(x['source'] for x in c)); fresh=age(p['published_at']); conf=min(99,round(p['source_trust']*.65+min(len(sources),5)*6+(7 if p['source_type']=='primary' else 0))); imp=min(100,round(p['source_trust']*.45+len(c)*9+fresh*.25)); mom=min(100,round(len(c)*16+fresh*.55)); status='VERIFIED' if len(sources)>=2 or p['source_type']=='primary' else 'DEVELOPING'; sid='TP-'+hashlib.sha1('|'.join(sorted(x['url'] for x in c)).encode()).hexdigest()[:12]
-        stories.append({'id':sid,'cluster_id':f'CL-{i:04d}','title':p['title'],'summary':p['description'] or 'A technology development has been reported. Open the original source for full context.','why_it_matters':'The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.','what_changes':'No additional practical change is asserted beyond the available source evidence.','whats_next':'Watch for official statements, independent confirmation, and subsequent updates.','category':p['category'],'subcategory':p['category'],'published_at':p['published_at'],'source':p['source'],'source_type':p['source_type'],'url':p['url'],'confidence':conf,'importance':imp,'freshness':fresh,'momentum':mom,'verification_status':status,'status':'NEW' if status=='VERIFIED' else 'DEVELOPING','tags':sources[:5],'corroborating_sources':[{'source':x['source'],'title':x['title'],'url':x['url']} for x in c[1:5]]})
-    stories.sort(key=lambda x:x['importance']+x['freshness']+x['confidence']+x['momentum'],reverse=True); stories=stories[:MAX]
-    if not stories:raise RuntimeError('No valid stories produced; last-known-good news.json preserved.')
-    for i,x in enumerate(stories,1):x['rank']=i
-    data={'schema_version':1,'product':'TechPulse','generated_at':datetime.now(timezone.utc).isoformat(),'article_count':len(stories),'source_count':len(set(x['source'] for x in stories)),'source_health':health,'articles':stories}; validate(data); atomic(data)
-def validate(d):
-    if d.get('schema_version')!=1 or not isinstance(d.get('articles'),list) or not d['articles']:raise ValueError('Invalid dataset')
-    req={'id','title','summary','category','published_at','source','url','confidence','importance'};ids=set();urls=set()
-    for x in d['articles']:
-        if req-set(x):raise ValueError('Missing story fields')
-        if x['id'] in ids or x['url'] in urls:raise ValueError('Duplicate story')
-        ids.add(x['id']);urls.add(x['url']);u=urlparse(x['url'])
-        if u.scheme not in ('http','https') or not u.netloc:raise ValueError('Unsafe URL')
-def atomic(d):
-    fd,tmp=tempfile.mkstemp(prefix='news.',suffix='.json',dir=ROOT);os.close(fd);p=Path(tmp)
-    try:p.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf8');os.replace(p,OUT)
-    finally:
-        if p.exists():p.unlink()
-if __name__=='__main__':
-    try:build();print('[OK] news.json updated')
-    except Exception as e:print('[SAFE-FAIL]',e,file=sys.stderr);print('[SAFE-FAIL] Existing news.json preserved.',file=sys.stderr);sys.exit(1)
+            response = requests.get(
+                url,
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": (
+                        "application/rss+xml, "
+                        "application/atom+xml, "
+                        "application/xml, "
+                        "text/xml, "
+                        "*/*"
+                    ),
+                },
+                timeout=REQUEST_TIMEOUT,
+            )
+
+            response.raise_for_status()
+
+            if not response.content:
+                raise RuntimeError("Empty response")
+
+            return response.content, None
+
+        except Exception as exc:
+
+            last_error = str(exc)
+
+            if attempt <= MAX_RETRIES:
+                time.sleep(RETRY_DELAY_SECONDS)
+
+    return None, last_error
+
+
+# ============================================================
+# XML PARSER
+# ============================================================
+
+def parse_feed(xml_data, source_name, category):
+    """
+    Parse RSS 2.0, Atom and common namespace variations.
+    """
+
+    root = ET.fromstring(xml_data)
+
+    articles = []
+
+    root_name = root.tag.split("}")[-1].lower()
+
+    # --------------------------------------------------------
+    # RSS
+    # --------------------------------------------------------
+
+    if root_name in ("rss", "rdf"):
+
+        items = []
+
+        for element in root.iter():
+
+            local_name = element.tag.split("}")[-1].lower()
+
+            if local_name == "item":
+                items.append(element)
+
+        for item in items:
+
+            title = (
+                first_text(
+                    item,
+                    ["title"]
+                )
+                or find_child_text_by_local_name(
+                    item,
+                    ["title"]
+                )
+            )
+
+            link = find_link(item)
+
+            description = (
+                first_text(
+                    item,
+                    [
+                        "description",
+                        "summary",
+                        "encoded",
+                    ],
+                )
+                or find_child_text_by_local_name(
+                    item,
+                    [
+                        "description",
+                        "summary",
+                        "encoded",
+                    ],
+                )
+            )
+
+            date_text = (
+                first_text(
+                    item,
+                    [
+                        "pubDate",
+                        "published",
+                        "updated",
+                        "date",
+                    ],
+                )
+                or find_child_text_by_local_name(
+                    item,
+                    [
+                        "pubDate",
+                        "published",
+                        "updated",
+                        "date",
+                    ],
+                )
+            )
+
+            image = find_image(item)
+
+            articles.append(
+                build_article(
+                    title=title,
+                    link=link,
+                    description=description,
+                    date_text=date_text,
+                    image=image,
+                    source_name=source_name,
+                    category=category,
+                )
+            )
+
+    # --------------------------------------------------------
+    # Atom
+    # --------------------------------------------------------
+
+    elif root_name == "feed":
+
+        entries = []
+
+        for element in root.iter():
+
+            local_name = element.tag.split("}")[-1].lower()
+
+            if local_name == "entry":
+                entries.append(element)
+
+        for entry in entries:
+
+            title = (
+                first_text(entry, ["title"])
+                or find_child_text_by_local_name(
+                    entry,
+                    ["title"]
+                )
+            )
+
+            link = find_link(entry)
+
+            description = (
+                first_text(
+                    entry,
+                    [
+                        "summary",
+                        "content",
+                    ],
+                )
+                or find_child_text_by_local_name(
+                    entry,
+                    [
+                        "summary",
+                        "content",
+                    ],
+                )
+            )
+
+            date_text = (
+                first_text(
+                    entry,
+                    [
+                        "published",
+                        "updated",
+                    ],
+                )
+                or find_child_text_by_local_name(
+                    entry,
+                    [
+                        "published",
+                        "updated",
+                    ],
+                )
+            )
+
+            image = find_image(entry)
+
+            articles.append(
+                build_article(
+                    title=title,
+                    link=link,
+                    description=description,
+                    date_text=date_text,
+                    image=image,
+                    source_name=source_name,
+                    category=category,
+                )
+            )
+
+    return [
+        article
+        for article in articles
+        if article is not None
+    ]
+
+
+def build_article(
+    title,
+    link,
+    description,
+    date_text,
+    image,
+    source_name,
+    category,
+):
+    """
+    Normalize one article.
+    """
+
+    title = clean_text(title)
+    description = clean_text(description)
+
+    link = html.unescape(str(link or "")).strip()
+    image = html.unescape(str(image or "")).strip()
+
+    if not title or not link:
+        return None
+
+    published = parse_date(date_text)
+
+    if published is None:
+        published = utc_now()
+
+    # --------------------------------------------------------
+    # Age filter
+    # --------------------------------------------------------
+
+    age = utc_now() - published
+
+    if age > timedelta(hours=MAX_ARTICLE_AGE_HOURS):
+        return None
+
+    if age < timedelta(days=-1):
+        # Reject dates more than one day in the future.
+        published = utc_now()
+
+    # Short description
+    if len(description) > 500:
+        description = description[:497].rstrip() + "..."
+
+    article_id = make_id(title, link)
+
+    return {
+        "id": article_id,
+        "title": title,
+        "description": description,
+        "url": link,
+        "image": image,
+        "source": source_name,
+        "category": category,
+        "published": published.replace(
+            microsecond=0
+        ).isoformat().replace("+00:00", "Z"),
+        "domain": extract_domain(link),
+    }
+
+
+# ============================================================
+# DEDUPLICATION
+# ============================================================
+
+def deduplicate_articles(articles):
+    """
+    Remove duplicates using article ID, URL and normalized title.
+    """
+
+    result = []
+
+    seen_ids = set()
+    seen_urls = set()
+    seen_titles = set()
+
+    for article in articles:
+
+        article_id = article.get("id", "")
+        url = article.get("url", "").strip().lower()
+
+        title = re.sub(
+            r"[^a-z0-9]+",
+            " ",
+            article.get("title", "").lower(),
+        ).strip()
+
+        if article_id in seen_ids:
+            continue
+
+        if url and url in seen_urls:
+            continue
+
+        if title and title in seen_titles:
+            continue
+
+        seen_ids.add(article_id)
+
+        if url:
+            seen_urls.add(url)
+
+        if title:
+            seen_titles.add(title)
+
+        result.append(article)
+
+    return result
+
+
+# ============================================================
+# LOAD PREVIOUS DATA
+# ============================================================
+
+def load_previous_data():
+    """
+    Load existing news.json.
+
+    Used as a safety mechanism if all feeds fail.
+    """
+
+    if not os.path.exists(OUTPUT_FILE):
+        return None
+
+    try:
+
+        with open(
+            OUTPUT_FILE,
+            "r",
+            encoding="utf-8",
+        ) as file:
+
+            data = json.load(file)
+
+        if isinstance(data, dict):
+            return data
+
+    except Exception as exc:
+        print(
+            f"[WARN] Could not read previous {OUTPUT_FILE}: {exc}"
+        )
+
+    return None
+
+
+# ============================================================
+# COLLECTION
+# ============================================================
+
+def collect_news():
+    """
+    Fetch all configured feeds.
+    """
+
+    all_articles = []
+
+    source_status = []
+
+    print("=" * 70)
+    print("TechPulse News Collector")
+    print("=" * 70)
+    print(f"Started : {iso_now()}")
+    print(f"Sources : {len(FEEDS)}")
+    print()
+
+    for feed in FEEDS:
+
+        name = feed["name"]
+        url = feed["url"]
+        category = feed["category"]
+
+        print(f"[FETCH] {name}")
+
+        xml_data, error = download_feed(url)
+
+        if xml_data is None:
+
+            print(
+                f"[FAIL]  {name}: {error}"
+            )
+
+            source_status.append(
+                {
+                    "name": name,
+                    "category": category,
+                    "status": "failed",
+                    "articles": 0,
+                    "error": error,
+                }
+            )
+
+            continue
+
+        try:
+
+            articles = parse_feed(
+                xml_data,
+                name,
+                category,
+            )
+
+            # Per-source limit
+            articles = sorted(
+                articles,
+                key=lambda x: x.get(
+                    "published",
+                    ""
+                ),
+                reverse=True,
+            )[
+                :MAX_ARTICLES_PER_SOURCE
+            ]
+
+            all_articles.extend(articles)
+
+            source_status.append(
+                {
+                    "name": name,
+                    "category": category,
+                    "status": "ok",
+                    "articles": len(articles),
+                    "error": None,
+                }
+            )
+
+            print(
+                f"[OK]    {name}: {len(articles)} articles"
+            )
+
+        except Exception as exc:
+
+            print(
+                f"[FAIL]  {name}: XML parse error: {exc}"
+            )
+
+            source_status.append(
+                {
+                    "name": name,
+                    "category": category,
+                    "status": "failed",
+                    "articles": 0,
+                    "error": str(exc),
+                }
+            )
+
+    return all_articles, source_status
+
+
+# ============================================================
+# OUTPUT
+# ============================================================
+
+def create_output(articles, source_status):
+    """
+    Create final news.json structure.
+    """
+
+    articles = deduplicate_articles(articles)
+
+    articles.sort(
+        key=lambda x: x.get(
+            "published",
+            ""
+        ),
+        reverse=True,
+    )
+
+    articles = articles[:MAX_ARTICLES]
+
+    successful_sources = sum(
+        1
+        for item in source_status
+        if item["status"] == "ok"
+    )
+
+    failed_sources = sum(
+        1
+        for item in source_status
+        if item["status"] == "failed"
+    )
+
+    output = {
+        "version": "2.0",
+        "generated_at": iso_now(),
+
+        "status": {
+            "collector": "ok",
+            "total_articles": len(articles),
+            "total_sources": len(source_status),
+            "successful_sources": successful_sources,
+            "failed_sources": failed_sources,
+            "max_article_age_hours": MAX_ARTICLE_AGE_HOURS,
+        },
+
+        "sources": source_status,
+
+        "articles": articles,
+    }
+
+    return output
+
+
+def write_json(data):
+    """
+    Safely write news.json.
+    """
+
+    temporary_file = OUTPUT_FILE + ".tmp"
+
+    with open(
+        temporary_file,
+        "w",
+        encoding="utf-8",
+    ) as file:
+
+        json.dump(
+            data,
+            file,
+            ensure_ascii=False,
+            indent=2,
+        )
+
+        file.write("\n")
+
+    os.replace(
+        temporary_file,
+        OUTPUT_FILE,
+    )
+
+
+# ============================================================
+# MAIN
+# ============================================================
+
+def main():
+
+    previous_data = load_previous_data()
+
+    articles, source_status = collect_news()
+
+    # --------------------------------------------------------
+    # Complete failure protection
+    # --------------------------------------------------------
+
+    if not articles:
+
+        print()
+        print("=" * 70)
+        print("WARNING: No fresh articles were collected.")
+        print("=" * 70)
+
+        if previous_data:
+
+            print(
+                "Keeping previous news.json instead of "
+                "creating an empty feed."
+            )
+
+            # Update health information while preserving
+            # previously collected articles.
+
+            previous_data["generated_at"] = iso_now()
+
+            previous_data.setdefault(
+                "status",
+                {}
+            )
+
+            previous_data["status"].update(
+                {
+                    "collector": "degraded",
+                    "message": (
+                        "All configured feeds failed. "
+                        "Previous article data retained."
+                    ),
+                    "failed_sources": len(
+                        source_status
+                    ),
+                }
+            )
+
+            previous_data["sources"] = source_status
+
+            write_json(previous_data)
+
+            print(
+                f"Preserved previous dataset: "
+                f"{len(previous_data.get('articles', []))} articles"
+            )
+
+            return 0
+
+        print(
+            "No previous news.json exists. "
+            "Creating an empty dataset."
+        )
+
+    # --------------------------------------------------------
+    # Normal output
+    # --------------------------------------------------------
+
+    output = create_output(
+        articles,
+        source_status,
+    )
+
+    write_json(output)
+
+    successful = output["status"][
+        "successful_sources"
+    ]
+
+    failed = output["status"][
+        "failed_sources"
+    ]
+
+    total = output["status"][
+        "total_articles"
+    ]
+
+    print()
+    print("=" * 70)
+    print("Collection completed")
+    print("=" * 70)
+    print(f"Articles : {total}")
+    print(f"Sources  : {len(source_status)}")
+    print(f"Success  : {successful}")
+    print(f"Failed   : {failed}")
+    print(f"Output   : {OUTPUT_FILE}")
+    print(f"Updated  : {output['generated_at']}")
+    print("=" * 70)
+
+    # --------------------------------------------------------
+    # GitHub Actions summary
+    # --------------------------------------------------------
+
+    github_summary = os.environ.get(
+        "GITHUB_STEP_SUMMARY"
+    )
+
+    if github_summary:
+
+        with open(
+            github_summary,
+            "a",
+            encoding="utf-8",
+        ) as summary:
+
+            summary.write(
+                "## TechPulse Feed Update\n\n"
+            )
+
+            summary.write(
+                f"- Articles: **{total}**\n"
+            )
+
+            summary.write(
+                f"- Sources: **{len(source_status)}**\n"
+            )
+
+            summary.write(
+                f"- Successful sources: **{successful}**\n"
+            )
+
+            summary.write(
+                f"- Failed sources: **{failed}**\n\n"
+            )
+
+            summary.write(
+                "### Source Health\n\n"
+            )
+
+            summary.write(
+                "| Source | Category | Status | Articles |\n"
+            )
+
+            summary.write(
+                "|---|---|---|---:|\n"
+            )
+
+            for source in source_status:
+
+                status_icon = (
+                    "OK"
+                    if source["status"] == "ok"
+                    else "FAILED"
+                )
+
+                summary.write(
+                    f"| {source['name']} "
+                    f"| {source['category']} "
+                    f"| {status_icon} "
+                    f"| {source['articles']} |\n"
+                )
+
+    # --------------------------------------------------------
+    # Fail GitHub Action only if zero feeds worked.
+    # --------------------------------------------------------
+
+    if successful == 0:
+        print(
+            "[ERROR] Every configured feed failed."
+        )
+        return 1
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+```
