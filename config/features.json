@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "features": {
     "localization": {
       "enabled": true,
@@ -23,14 +23,7 @@
     "daily_brief": {
       "enabled": true,
       "max_stories": 15,
-      "narrate_all": true,
-      "controls": [
-        "play",
-        "pause",
-        "previous",
-        "next",
-        "stop"
-      ]
+      "narrate_all": true
     },
     "ask_techpulse": {
       "enabled": true,
@@ -48,6 +41,35 @@
     },
     "reduced_motion": {
       "enabled": true
+    },
+    "tp_score": {
+      "enabled": true,
+      "range": [
+        0,
+        100
+      ],
+      "weights": {
+        "importance": 30,
+        "confidence": 25,
+        "freshness": 20,
+        "momentum": 15,
+        "source_quality": 10
+      }
+    },
+    "source_health": {
+      "enabled": true,
+      "mode": "dataset-derived"
+    },
+    "developing_story_tracker": {
+      "enabled": true
+    },
+    "static_scale": {
+      "enabled": true,
+      "cache_first": true
+    },
+    "edge_security_headers": {
+      "enabled": true,
+      "required_for_production": true
     }
   }
 }

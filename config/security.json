@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "architecture": "Static frontend + GitHub Actions collector + CDN/WAF for production traffic",
+  "required_controls": [
+    "CDN/WAF",
+    "DDoS protection",
+    "HTTPS",
+    "CSP",
+    "HSTS after HTTPS validation",
+    "X-Content-Type-Options",
+    "Referrer-Policy",
+    "Permissions-Policy",
+    "No frontend secrets",
+    "Least-privilege GitHub Actions",
+    "Pinned production Actions",
+    "Dependency and secret scanning",
+    "Known-good dataset rollback",
+    "Monitoring",
+    "Load testing"
+  ],
+  "recommended_headers": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Content-Security-Policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data: https:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self' data:; upgrade-insecure-requests"
+  },
+  "limitation": "No public system can honestly guarantee immunity from every future attack, zero-day, upstream outage or compromised account."
+}

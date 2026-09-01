@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "platform": "TechPulse",
+  "policies": {
+    "about": {
+      "title": "About TechPulse",
+      "sections": [
+        [
+          "Purpose",
+          "TechPulse is a technology and gaming intelligence platform designed to help readers discover important developments, understand why they matter, and navigate to original reporting."
+        ],
+        [
+          "How it works",
+          "TechPulse collects configured RSS/Atom feeds, normalizes and validates items, removes duplicates, categorizes stories and calculates prioritization signals before publishing a static dataset."
+        ],
+        [
+          "What TechPulse provides",
+          "TechPulse provides original summaries, source attribution, ranking signals, daily briefings, story intelligence and links to original publishers."
+        ],
+        [
+          "What TechPulse does not claim",
+          "A TP Score, confidence value or status label is not a guarantee that a claim has been independently fact-checked."
+        ],
+        [
+          "Editorial independence",
+          "Ranking and presentation should not be altered to favor a publisher, advertiser, sponsor or commercial interest."
+        ]
+      ]
+    },
+    "editorial": {
+      "title": "Editorial Policy",
+      "sections": [
+        [
+          "Accuracy",
+          "TechPulse prioritizes accurate attribution, clear timestamps, source identity and separation between reported facts, analysis, forecasts and developing information."
+        ],
+        [
+          "Source selection",
+          "Sources are selected for relevance, reporting quality, expertise, freshness, feed reliability and usefulness."
+        ],
+        [
+          "Original summaries",
+          "TechPulse summaries are independently worded and intended to help readers understand why a report matters. TechPulse does not intentionally reproduce complete third-party articles."
+        ],
+        [
+          "Ranking",
+          "Stories are prioritized using importance, confidence, freshness, momentum and source-quality signals. Ranking is a navigation aid, not a statement of truth."
+        ],
+        [
+          "Developing stories",
+          "Information that is incomplete, changing or insufficiently corroborated should be presented with appropriate uncertainty."
+        ],
+        [
+          "Corrections",
+          "Known material errors should be corrected promptly."
+        ],
+        [
+          "Automation",
+          "Automated collection and scoring are used for scale and consistency and are not represented as human fact-checking."
+        ]
+      ]
+    },
+    "copyright": {
+      "title": "Copyright & Content Policy",
+      "sections": [
+        [
+          "Third-party rights",
+          "Copyright in original articles, trademarks, logos, photographs and other publisher materials remains with their respective rights holders."
+        ],
+        [
+          "TechPulse summaries",
+          "TechPulse aims to publish concise, independently worded summaries rather than reproduce complete third-party articles."
+        ],
+        [
+          "Publisher links",
+          "External links direct readers to original reporting. Availability and licensing conditions are controlled by the respective publisher."
+        ],
+        [
+          "Rights concerns",
+          "Rights holders should use the designated TechPulse contact channel for copyright or content concerns."
+        ]
+      ]
+    },
+    "source": {
+      "title": "Source Policy",
+      "sections": [
+        [
+          "Source quality",
+          "Source quality is a prioritization signal based on configured source metadata and observed feed characteristics; it is not a universal rating of a publisher."
+        ],
+        [
+          "Source transparency",
+          "Where available, TechPulse displays publisher, source type, publication time and original article link."
+        ],
+        [
+          "Corroboration",
+          "Multiple reports may strengthen context but do not automatically prove a claim true."
+        ],
+        [
+          "Feed failures",
+          "A failed feed should not erase the last valid dataset. The collector should retain known-good data and retry failed sources."
+        ]
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "sections": [
+        [
+          "Core experience",
+          "The GitHub Pages edition does not require an account. Saved stories and interface preferences are stored locally in the browser."
+        ],
+        [
+          "Local storage",
+          "The site may store saved story IDs, language, theme, font size and reduced-motion preference in browser local storage."
+        ],
+        [
+          "External publishers",
+          "When a reader opens an original article, the browser connects directly to the external publisher and that publisher's privacy practices apply."
+        ],
+        [
+          "Future services",
+          "If analytics, accounts, subscriptions, advertising or server-side AI are introduced, this policy should be updated before those services are enabled."
+        ]
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "sections": [
+        [
+          "Informational service",
+          "TechPulse is provided for general information and discovery. It is not professional, legal, financial, medical, investment or security advice."
+        ],
+        [
+          "External content",
+          "TechPulse links to third-party publishers and does not control external availability, accuracy, licensing or editorial decisions."
+        ],
+        [
+          "No guarantee",
+          "Reasonable engineering controls are used, but no online service can guarantee uninterrupted availability, complete accuracy or immunity from attack."
+        ],
+        [
+          "Acceptable use",
+          "Users must not intentionally abuse the service, bypass security controls, distribute malicious traffic, scrape at harmful rates or interfere with availability."
+        ]
+      ]
+    },
+    "corrections": {
+      "title": "Corrections Policy",
+      "sections": [
+        [
+          "What qualifies",
+          "Corrections may be required for materially inaccurate summaries, incorrect attribution, wrong timestamps, misleading status labels or other significant errors."
+        ],
+        [
+          "How corrections are handled",
+          "A correction may update, reclassify, suppress or remove affected information."
+        ],
+        [
+          "Reporting",
+          "Production deployment should provide a monitored correction channel."
+        ]
+      ]
+    },
+    "contact": {
+      "title": "Contact & Security Reporting",
+      "sections": [
+        [
+          "Production contact",
+          "Before public launch, replace the contact placeholder with a monitored company-owned email address or support portal."
+        ],
+        [
+          "Security reports",
+          "Security vulnerabilities should be reported privately through the designated security contact rather than posted publicly."
+        ]
+      ]
+    },
+    "methodology": {
+      "title": "TP Score Methodology",
+      "sections": [
+        [
+          "Definition",
+          "TP Score is a 0–100 prioritization score designed to help readers identify stories that deserve attention."
+        ],
+        [
+          "Components",
+          "Importance 30%; Confidence 25%; Freshness 20%; Momentum 15%; Source Quality 10%."
+        ],
+        [
+          "Interpretation",
+          "85–100: High Impact. 70–84: Significant. 50–69: Watch. Below 50: Low Signal."
+        ],
+        [
+          "Limitation",
+          "TP Score is not a truth score, fact-check score or guarantee of independent verification."
+        ]
+      ]
+    }
+  }
+}
