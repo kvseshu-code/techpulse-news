@@ -61,7 +61,10 @@ def build():
     clusters=[]
     for x in clean_items:
         target=next((c for c in clusters if max(sim(x['title'],z['title']) for z in c)>=.58),None)
-        (target if target is not None else clusters.append([x]) or clusters[-1]).append(x) if target is not None else None
+        if target is not None:
+            target.append(x)
+        else:
+            clusters.append([x])
     stories=[]
     for i,c in enumerate(clusters,1):
         c.sort(key=lambda x:(x['source_trust'],age(x['published_at'])),reverse=True); p=c[0]; sources=list(dict.fromkeys(x['source'] for x in c)); fresh=age(p['published_at']); conf=min(99,round(p['source_trust']*.65+min(len(sources),5)*6+(7 if p['source_type']=='primary' else 0))); imp=min(100,round(p['source_trust']*.45+len(c)*9+fresh*.25)); mom=min(100,round(len(c)*16+fresh*.55)); status='VERIFIED' if len(sources)>=2 or p['source_type']=='primary' else 'DEVELOPING'; sid='TP-'+hashlib.sha1('|'.join(sorted(x['url'] for x in c)).encode()).hexdigest()[:12]
