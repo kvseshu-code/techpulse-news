@@ -2,7 +2,7 @@ name: Update TechPulse dataset
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '*/30 * * * *'
 permissions:
   contents: write
 jobs:
