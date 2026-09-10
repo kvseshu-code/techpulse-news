@@ -98,11 +98,15 @@ function render(){
  applyI18n();
 }
 
+let lastDatasetGeneratedAt=null;
+let autoRefreshStarted=false;
+
 async function load(){
  try{
   const r=await fetch("news.json?ts="+Date.now(),{cache:"no-store"});
   if(!r.ok)throw Error(r.status);
   const d=await r.json();
+  lastDatasetGeneratedAt=d.generated_at||null;
   S.a=(Array.isArray(d)?d:d.articles||[]).map(n).filter(x=>x.url!=="#");
   S.a.forEach(x=>x.tpScore=tpScore(x)); S.a.sort((a,b)=>b.tpScore-a.tpScore);
   $("#feedStatus").textContent=tr("feedsOperational");
@@ -115,6 +119,26 @@ async function load(){
   $("#feedStatus").textContent=tr("datasetUnavailable");$("#feedMeta").textContent=tr("publishDataset");console.error(e);
  }
 }
+
+async function checkForUpdates(){
+ try{
+  const r=await fetch("news.json?ts="+Date.now(),{cache:"no-store"});
+  if(!r.ok)return;
+  const d=await r.json();
+  const generatedAt=d.generated_at||null;
+  if(generatedAt && generatedAt!==lastDatasetGeneratedAt) await load();
+ }catch(e){
+  console.warn("TechPulse update check failed:",e);
+ }
+}
+
+function startAutoRefresh(){
+ if(autoRefreshStarted)return;
+ autoRefreshStarted=true;
+ setInterval(checkForUpdates,300000);
+}
+
+startAutoRefresh();
 
 function openStory(id){
  const x=S.a.find(a=>a.id===id);if(!x)return;
