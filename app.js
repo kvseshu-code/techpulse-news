@@ -174,7 +174,20 @@ function speakBrief(index=S.briefIndex){
 function stopBrief(){speechSynthesis.cancel();S.speaking=false;updateBriefProgress()}
 function save(id){S.saved.has(id)?S.saved.delete(id):S.saved.add(id);localStorage.tp_saved=JSON.stringify([...S.saved]);render()}
 function view(v){$$(".nav").forEach(b=>b.classList.toggle("active",b.dataset.view===v));$$(".view").forEach(x=>x.classList.toggle("active",x.id==="view-"+v));scrollTo({top:0,behavior:S.reduced?"auto":"smooth"})}
-function settings(){document.documentElement.dataset.theme=S.theme;document.documentElement.style.setProperty("--font",S.font+"px");document.documentElement.classList.toggle("reduce-motion",S.reduced)}
+function settings(){
+ document.documentElement.dataset.theme=S.theme;
+ document.documentElement.style.setProperty("--font",S.font+"px");
+ document.documentElement.classList.toggle("reduce-motion",S.reduced);
+
+ const themeButton=$("#theme");
+ if(themeButton){
+  const labels={dark:"Dark mode",light:"Light mode",glass:"Glass mode",hud:"HUD mode"};
+  const icons={dark:"◐",light:"☼",glass:"◒",hud:"◈"};
+  themeButton.textContent=icons[S.theme]||"◐";
+  themeButton.title=labels[S.theme]||"Theme";
+  themeButton.setAttribute("aria-label",labels[S.theme]||"Theme");
+ }
+}
 function askTechPulse(){
  const q=prompt(tr("askPrompt")+" "+tr("askExample"));if(!q)return;
  const terms=q.toLowerCase().split(/\W+/).filter(w=>w.length>2);
@@ -196,7 +209,11 @@ document.addEventListener("click",e=>{
 });
 $("#search").oninput=e=>{const q=e.target.value.toLowerCase();const a=S.a.filter(x=>(x.title+" "+x.summary+" "+x.category+" "+x.source+" "+x.tags.join(" ")).toLowerCase().includes(q));$("#top").innerHTML=(q?a:S.a.slice(0,10)).map(card).join("")||`<div class="panel">${tr("noMatch")}</div>`};
 $("#language").onchange=e=>{S.language=e.target.value;localStorage.tp_lang=S.language;render()};
-$("#theme").onclick=()=>{S.theme=S.theme==="dark"?"light":S.theme==="light"?"glass":"dark";localStorage.tp_theme=S.theme;settings()};
+$("#theme").onclick=()=>{
+ S.theme=S.theme==="dark"?"light":S.theme==="light"?"glass":S.theme==="glass"?"hud":"dark";
+ localStorage.tp_theme=S.theme;
+ settings();
+};
 $("#fontPlus").onclick=()=>{S.font=Math.min(19,S.font+1);localStorage.tp_font=S.font;settings()};
 $("#fontMinus").onclick=()=>{S.font=Math.max(13,S.font-1);localStorage.tp_font=S.font;settings()};
 $("#motion").onclick=()=>{S.reduced=!S.reduced;localStorage.tp_motion=S.reduced?"reduced":"normal";settings()};
