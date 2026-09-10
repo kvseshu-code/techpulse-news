@@ -43,10 +43,10 @@ function applyI18n(){
  $("#language").value=S.language;
 }
 
-function card(x,i=0){
+function tpScore(x){const importance=Number(x.importance)||0;const freshness=Number(x.freshness)||0;const confidence=Number(x.confidence)||0;const momentum=Number(x.momentum)||0;return Math.max(0,Math.min(100,Math.round((importance+freshness+confidence+momentum)/4)));} function card(x,i=0){
  const sv=S.saved.has(x.id);
  return `<article class="card">
- <div class="cardtop"><span class="rank">${i<10?"#"+(i+1):"SIGNAL"}</span><span class="tag">${esc(x.category)}</span></div>
+ <div class="cardtop"><span class="rank">${i<10?"#"+(i+1):"SIGNAL"}</span><span class="tag">${esc(x.category)}</span><span class="tp-score">TP ${tpScore(x)}</span></div>
  <h3>${esc(x.title)}</h3><p>${esc(x.summary)}</p>
  <div class="meta"><span>${esc(x.source)} · ${ago(x.published_at)}</span><span class="confidence">${Math.round(x.confidence)}%</span></div>
  <div class="buttons"><button data-open="${esc(x.id)}">${esc(tr("intelligence"))}</button>
@@ -104,7 +104,7 @@ async function load(){
   if(!r.ok)throw Error(r.status);
   const d=await r.json();
   S.a=(Array.isArray(d)?d:d.articles||[]).map(n).filter(x=>x.url!=="#");
-  S.a.sort((a,b)=>(b.importance+b.freshness+b.confidence+b.momentum)-(a.importance+a.freshness+a.confidence+a.momentum));
+  S.a.forEach(x=>x.tpScore=tpScore(x)); S.a.sort((a,b)=>b.tpScore-a.tpScore);
   $("#feedStatus").textContent=tr("feedsOperational");
   $("#feedMeta").textContent=d.generated_at?tr("dataset")+" "+new Date(d.generated_at).toLocaleString(S.language):tr("dataset");
   $("#count").textContent=S.a.length;
@@ -123,7 +123,7 @@ function openStory(id){
  <h2>${esc(x.title)}</h2><p>${esc(x.summary)}</p><div class="intel">
  <div><b>${tr("whatHappened")}</b>${esc(x.summary)}</div><div><b>${tr("whyMatters")}</b>${esc(x.why)}</div>
  <div><b>${tr("whatChanges")}</b>${esc(x.changes)}</div><div><b>${tr("whatsNext")}</b>${esc(x.next)}</div>
- <div><b>${tr("confidence")}</b>${Math.round(x.confidence)}%</div><div><b>${tr("ranking")}</b>Impact ${Math.round(x.importance)} · Momentum ${Math.round(x.momentum)} · Freshness ${Math.round(x.freshness)}</div></div>
+ <div><b>TP Score</b>${tpScore(x)}/100</div><div><b>${tr("confidence")}</b>${Math.round(x.confidence)}%</div><div><b>${tr("ranking")}</b>Impact ${Math.round(x.importance)} · Momentum ${Math.round(x.momentum)} · Freshness ${Math.round(x.freshness)}</div></div>
  <div class="buttons"><button data-speak="${esc(x.id)}">${tr("playSummary")}</button><button data-save="${esc(x.id)}">${S.saved.has(x.id)?tr("removeSaved"):tr("saveStory")}</button>
  <a href="${x.url}" target="_blank" rel="noopener noreferrer">${tr("readOriginal")}</a></div>
  <h3>${tr("evidence")}</h3><p>${tr("publisher")}: ${esc(x.source)} · ${tr("sourceType")}: ${esc(x.source_type)} · ${tr("published")}: ${esc(x.published_at||"unknown")}</p>

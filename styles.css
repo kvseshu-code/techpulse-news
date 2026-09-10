@@ -25,3 +25,6 @@ html[data-theme=glass] .card,html[data-theme=glass] .panel,html[data-theme=glass
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.orb{display:none}}
 @media(max-width:700px){.shell{padding:0 14px}.grid,.two{grid-template-columns:1fr}.status{grid-template-columns:1fr 1fr}.status>div:nth-child(2n){border-right:0}.heading{align-items:stretch;flex-direction:column}.search{min-width:0}.tools{flex-wrap:wrap}.language select{max-width:95px}.hero{padding:45px 0 30px}.hero h1{font-size:52px}.intel{grid-template-columns:1fr}.brief-controls{width:100%}}
+
+
+.tp-score{font-size:.72rem;font-weight:800;letter-spacing:.08em;padding:.28rem .5rem;border:1px solid currentColor;border-radius:999px;white-space:nowrap;opacity:.9}.cardtop{align-items:center;gap:.5rem}.cardtop .tag{margin-left:auto}.cardtop .tp-score{margin-left:0}
