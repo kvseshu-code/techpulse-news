@@ -101,6 +101,196 @@ function render(){
 let lastDatasetGeneratedAt=null;
 let autoRefreshStarted=false;
 
+/* TECHPULSE HUD2 ENGINE */
+let hudInitialized=false;
+let nextCheckAt=Date.now()+300000;
+
+function formatHudAge(value){
+ const t=Date.parse(value);
+ if(!isFinite(t))return "\u2014";
+ const seconds=Math.max(0,Math.floor((Date.now()-t)/1000));
+ if(seconds<60)return seconds+"s";
+ if(seconds<3600)return Math.floor(seconds/60)+"m";
+ if(seconds<86400)return Math.floor(seconds/3600)+"h";
+ return Math.floor(seconds/86400)+"d";
+}
+
+function formatHudCountdown(){
+ const seconds=Math.max(0,Math.ceil((nextCheckAt-Date.now())/1000));
+ const m=Math.floor(seconds/60);
+ const s=seconds%60;
+ return String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+}
+
+function hudGreeting(){
+ if(!S.a.length)return;
+
+ const top=S.a[0];
+ const score=tpScore(top);
+ const sources=new Set(S.a.map(x=>x.source)).size;
+
+ const message=
+  `TechPulse intelligence console online. `+
+  `${S.a.length} stories detected from ${sources} sources. `+
+  `Highest ranked signal: ${top.title}. `+
+  `TP Score ${score} out of 100. `+
+  `Source verification and intelligence ranking are active.`;
+
+ if(!("speechSynthesis" in window)){
+  alert("Browser narration is unavailable.");
+  return;
+ }
+
+ speechSynthesis.cancel();
+
+ const u=new SpeechSynthesisUtterance(message);
+ u.rate=.94;
+ u.pitch=.92;
+ u.onstart=()=>S.speaking=true;
+ u.onend=()=>S.speaking=false;
+ speechSynthesis.speak(u);
+}
+
+function initHud(){
+ if(hudInitialized)return;
+
+ const status=$(".status");
+ if(!status)return;
+
+ hudInitialized=true;
+
+ const hud=document.createElement("section");
+ hud.id="hudConsole";
+ hud.className="hud-console";
+ hud.innerHTML=`
+  <div class="hud-head">
+   <div>
+    <span class="eyebrow">TECHPULSE HUD</span>
+    <h2>INTELLIGENCE CONSOLE</h2>
+   </div>
+   <button id="hudVoice" class="hud-voice" type="button">VOICE</button>
+  </div>
+
+  <div class="hud-grid">
+
+   <div class="hud-scanner-panel">
+    <div class="hud-scanner">
+     <div class="hud-ring hud-ring-a"></div>
+     <div class="hud-ring hud-ring-b"></div>
+     <div class="hud-ring hud-ring-c"></div>
+     <div class="hud-scanline"></div>
+     <div class="hud-score" id="hudScore">TP 00</div>
+     <small>TP SCORE</small>
+    </div>
+
+    <div class="hud-state-row">
+     <span class="hud-state online">\u25CF SYSTEM ONLINE</span>
+     <span class="hud-state verified">\u25CF DATA VERIFIED</span>
+     <span class="hud-state linked">\u25CF SOURCE LINKED</span>
+    </div>
+   </div>
+
+   <div class="hud-stream-panel">
+    <div class="hud-panel-title">
+     <span>LIVE INTELLIGENCE STREAM</span>
+     <b id="hudStreamState">ACTIVE</b>
+    </div>
+
+    <div class="hud-stream">
+     <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+    <div id="hudStreamText" class="hud-stream-text">
+     Awaiting intelligence telemetry...
+    </div>
+
+    <div class="hud-metrics">
+     <div><span>DATA AGE</span><b id="hudAge">\u2014</b></div>
+     <div><span>NEXT REFRESH</span><b id="hudNext">05:00</b></div>
+     <div><span>SOURCES</span><b id="hudSources">0</b></div>
+     <div><span>STORIES</span><b id="hudStories">0</b></div>
+    </div>
+   </div>
+
+   <div class="hud-sources-panel">
+    <div class="hud-panel-title">
+     <span>SOURCE SIGNALS</span>
+     <b id="hudSourceCount">0</b>
+    </div>
+    <div id="hudSourceNodes" class="hud-source-nodes"></div>
+   </div>
+
+  </div>
+ `;
+
+ status.insertAdjacentElement("afterend",hud);
+
+ const voice=$("#hudVoice");
+ if(voice)voice.onclick=hudGreeting;
+
+ updateHud();
+}
+
+function updateHud(){
+ if(!hudInitialized)return;
+
+ const stories=S.a.length;
+ const sourceList=[...new Set(S.a.map(x=>x.source).filter(Boolean))];
+ const sources=sourceList.length;
+ const top=S.a[0];
+ const score=top?tpScore(top):0;
+
+ const age=lastDatasetGeneratedAt?
+  formatHudAge(lastDatasetGeneratedAt):
+  "â€”";
+
+ const scoreEl=$("#hudScore");
+ const ageEl=$("#hudAge");
+ const nextEl=$("#hudNext");
+ const sourcesEl=$("#hudSources");
+ const storiesEl=$("#hudStories");
+ const sourceCountEl=$("#hudSourceCount");
+ const streamText=$("#hudStreamText");
+ const streamState=$("#hudStreamState");
+ const nodes=$("#hudSourceNodes");
+
+ if(scoreEl)scoreEl.textContent="TP "+String(score).padStart(2,"0");
+ if(ageEl)ageEl.textContent=age;
+ if(nextEl)nextEl.textContent=formatHudCountdown();
+ if(sourcesEl)sourcesEl.textContent=sources;
+ if(storiesEl)storiesEl.textContent=stories;
+ if(sourceCountEl)sourceCountEl.textContent=sources;
+
+ if(streamState){
+  streamState.textContent=stories?"ACTIVE":"STANDBY";
+ }
+
+ if(streamText){
+  if(top){
+   streamText.textContent=
+    "SIGNAL: "+top.title+
+    " \u2022 TP "+score+
+    " \u2022 "+top.source;
+  }else{
+   streamText.textContent="Awaiting intelligence telemetry...";
+  }
+ }
+
+ if(nodes){
+  nodes.innerHTML=sourceList.slice(0,12).map((source,i)=>{
+   const count=S.a.filter(x=>x.source===source).length;
+   const intensity=Math.min(100,35+count*8);
+   return `
+    <span class="hud-node" style="--node-intensity:${intensity}%">
+     <i></i>
+     <b>${esc(source)}</b>
+     <small>${count} signal${count===1?"":"s"}</small>
+    </span>`;
+  }).join("");
+ }
+}
+
+
 async function load(){
  try{
   const r=await fetch("news.json?ts="+Date.now(),{cache:"no-store"});
@@ -114,7 +304,9 @@ async function load(){
   $("#count").textContent=S.a.length;
   $("#sources").textContent=new Set(S.a.map(x=>x.source)).size;
   $("#updated").textContent=d.generated_at?new Date(d.generated_at).toLocaleTimeString(S.language,{hour:"2-digit",minute:"2-digit"}):"—";
+  initHud();
   render();
+  updateHud();
  }catch(e){
   $("#feedStatus").textContent=tr("datasetUnavailable");$("#feedMeta").textContent=tr("publishDataset");console.error(e);
  }
@@ -122,6 +314,7 @@ async function load(){
 
 async function checkForUpdates(){
  try{
+  nextCheckAt=Date.now()+300000;
   const r=await fetch("news.json?ts="+Date.now(),{cache:"no-store"});
   if(!r.ok)return;
   const d=await r.json();
@@ -135,7 +328,14 @@ async function checkForUpdates(){
 function startAutoRefresh(){
  if(autoRefreshStarted)return;
  autoRefreshStarted=true;
+
+ nextCheckAt=Date.now()+300000;
+
  setInterval(checkForUpdates,300000);
+
+ setInterval(()=>{
+  updateHud();
+ },1000);
 }
 
 startAutoRefresh();
@@ -187,6 +387,7 @@ function settings(){
   themeButton.title=labels[S.theme]||"Theme";
   themeButton.setAttribute("aria-label",labels[S.theme]||"Theme");
  }
+ updateHud();
 }
 function askTechPulse(){
  const q=prompt(tr("askPrompt")+" "+tr("askExample"));if(!q)return;
