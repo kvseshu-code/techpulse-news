@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "TechPulse",
-  "generated_at": "2026-09-12T10:36:36.357426+00:00",
+  "generated_at": "2026-09-12T11:06:45.085913+00:00",
   "article_count": 100,
   "source_count": 11,
   "source_health": [
@@ -73,19 +73,19 @@
   ],
   "articles": [
     {
-      "id": "TP-2caa28d2a8d5",
+      "id": "TP-f779e5bb5c7d",
       "cluster_id": "CL-0051",
-      "title": "The Best 3-in-1 Apple Charging Stations After Testing 30+ Models",
-      "summary": "I tried all the top models to find the best 3-in-1 Apple charging stations, pads, and more. Keep your iPhone, Apple Watch, and AirPods topped up with these WIRED-tested docking systems.",
+      "title": "The Anti-Woke Right Can’t Figure Out How to Stop ‘Grand Theft Auto VI’",
+      "summary": "A subset of male gamers have spent years warning that the transgressive series has been neutered by progressive developers, but the backlash isn’t taking hold.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
       "what_changes": "No additional practical change is asserted beyond the available source evidence.",
       "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-12T10:30:00+00:00",
+      "category": "Gaming",
+      "subcategory": "Gaming",
+      "published_at": "2026-09-12T11:00:00+00:00",
       "source": "WIRED",
       "source_type": "secondary",
-      "url": "https://www.wired.com/gallery/best-apple-3-in-1-wireless-chargers/",
+      "url": "https://www.wired.com/story/the-anti-woke-right-cant-figure-out-how-to-stop-grand-theft-auto-vi/",
       "confidence": 61,
       "importance": 72,
       "freshness": 100,
@@ -99,8 +99,34 @@
       "rank": 1
     },
     {
-      "id": "TP-9d12233ef30f",
+      "id": "TP-2caa28d2a8d5",
       "cluster_id": "CL-0052",
+      "title": "The Best 3-in-1 Apple Charging Stations After Testing 30+ Models",
+      "summary": "I tried all the top models to find the best 3-in-1 Apple charging stations, pads, and more. Keep your iPhone, Apple Watch, and AirPods topped up with these WIRED-tested docking systems.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-12T10:30:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/gallery/best-apple-3-in-1-wireless-chargers/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 2
+    },
+    {
+      "id": "TP-9d12233ef30f",
+      "cluster_id": "CL-0053",
       "title": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
       "summary": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -114,19 +140,19 @@
       "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
       "confidence": 61,
       "importance": 72,
-      "freshness": 100,
-      "momentum": 71,
+      "freshness": 99,
+      "momentum": 70,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 2
+      "rank": 3
     },
     {
       "id": "TP-44140b17ff89",
-      "cluster_id": "CL-0053",
+      "cluster_id": "CL-0054",
       "title": "‘I’m Really Terrified’: A Mathematician Grapples With AI’s Recent Breakthroughs",
       "summary": "Steven Strogatz coauthored a book about how math is moving beyond human understanding. He spoke with WIRED about the seismic impact artificial intelligence has had on his life’s work.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -140,7 +166,7 @@
       "url": "https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/",
       "confidence": 61,
       "importance": 72,
-      "freshness": 99,
+      "freshness": 98,
       "momentum": 70,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -148,11 +174,11 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 3
+      "rank": 4
     },
     {
       "id": "TP-3156033ee50d",
-      "cluster_id": "CL-0054",
+      "cluster_id": "CL-0055",
       "title": "Branch Ergonomic Chair Pro (Sega Edition) Review: Comfy, Not Boring",
       "summary": "Turns out that the best office chair is also the best gaming chair, now with aesthetics to match.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -166,7 +192,7 @@
       "url": "https://www.wired.com/review/branch-ergonomic-chair-pro-sega-edition/",
       "confidence": 61,
       "importance": 72,
-      "freshness": 99,
+      "freshness": 98,
       "momentum": 70,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -174,7 +200,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 4
+      "rank": 5
     },
     {
       "id": "TP-7a6324f0690f",
@@ -192,7 +218,7 @@
       "url": "https://www.space.com/astronomy/moon/nasa-ibm-launch-new-ai-model-for-studying-the-moon",
       "confidence": 61,
       "importance": 72,
-      "freshness": 99,
+      "freshness": 98,
       "momentum": 70,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -200,11 +226,11 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 5
+      "rank": 6
     },
     {
       "id": "TP-cc38ffd0a6b7",
-      "cluster_id": "CL-0055",
+      "cluster_id": "CL-0056",
       "title": "You Don’t Have a Right to Safe Drinking Water, Trump-Appointed Judge Rules",
       "summary": "And if your tap water is undrinkable, you have no “constitutional right to truthful information” about it.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -218,15 +244,15 @@
       "url": "https://www.wired.com/story/you-dont-have-right-to-safe-drinking-water-trump-appointed-judge-rules/",
       "confidence": 61,
       "importance": 72,
-      "freshness": 98,
-      "momentum": 70,
+      "freshness": 97,
+      "momentum": 69,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 6
+      "rank": 7
     },
     {
       "id": "TP-7e3f63f9a30a",
@@ -244,7 +270,7 @@
       "url": "https://www.polygon.com/zelda-ocarina-of-time-horror-game/",
       "confidence": 58,
       "importance": 70,
-      "freshness": 99,
+      "freshness": 98,
       "momentum": 70,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -252,11 +278,11 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 7
+      "rank": 8
     },
     {
       "id": "TP-314e613ffd02",
-      "cluster_id": "CL-0071",
+      "cluster_id": "CL-0072",
       "title": "30% Off Canon Promo Codes | September 2026",
       "summary": "Save an extra 10% or 30% with Canon coupon codes, plus up to $1,600 on cameras, printers, and more this September 2026.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -269,8 +295,8 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/canon-promo-code/",
       "confidence": 61,
-      "importance": 94,
-      "freshness": 41,
+      "importance": 93,
+      "freshness": 40,
       "momentum": 100,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -299,7 +325,7 @@
           "url": "https://www.wired.com/story/home-depot-promo-code/"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "id": "TP-38a4eb578268",
@@ -317,7 +343,7 @@
       "url": "https://www.polygon.com/shaun-the-sheep-beast-of-mossy-bottom-preview-image/",
       "confidence": 58,
       "importance": 69,
-      "freshness": 97,
+      "freshness": 96,
       "momentum": 69,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -325,7 +351,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 9
+      "rank": 10
     },
     {
       "id": "TP-c997befd17df",
@@ -343,15 +369,15 @@
       "url": "https://www.polygon.com/star-trek-reboot-trilogy-franchise-future/",
       "confidence": 58,
       "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "freshness": 95,
+      "momentum": 68,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 10
+      "rank": 11
     },
     {
       "id": "TP-87ca1840de5e",
@@ -368,8 +394,8 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/steps-netflix-interview/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 95,
+      "importance": 68,
+      "freshness": 94,
       "momentum": 68,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -377,7 +403,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 11
+      "rank": 12
     },
     {
       "id": "TP-adca452348b6",
@@ -395,7 +421,7 @@
       "url": "https://www.polygon.com/best-nintendo-nes-games/",
       "confidence": 58,
       "importance": 68,
-      "freshness": 93,
+      "freshness": 92,
       "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -403,7 +429,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 12
+      "rank": 13
     },
     {
       "id": "TP-c9a01fa9d2b6",
@@ -421,15 +447,15 @@
       "url": "https://www.polygon.com/stephen-king-talisman-3-trilogy/",
       "confidence": 58,
       "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
+      "freshness": 88,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 13
+      "rank": 14
     },
     {
       "id": "TP-ffec4eea9c74",
@@ -447,7 +473,7 @@
       "url": "https://www.polygon.com/calvin-and-hobbes-best-quote-meaning-of-life/",
       "confidence": 58,
       "importance": 67,
-      "freshness": 88,
+      "freshness": 87,
       "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -455,7 +481,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 14
+      "rank": 15
     },
     {
       "id": "TP-e17f914c2207",
@@ -472,16 +498,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/a-fistful-of-dollars-clint-eastwood-free-to-stream/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 15
+      "rank": 16
     },
     {
       "id": "TP-4fb7c0b8bdda",
@@ -499,15 +525,15 @@
       "url": "https://arstechnica.com/space/2026/09/some-satellite-companies-still-have-an-appetite-for-boutique-launch-services/",
       "confidence": 64,
       "importance": 69,
-      "freshness": 78,
-      "momentum": 59,
+      "freshness": 77,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 16
+      "rank": 17
     },
     {
       "id": "TP-0d444d4e751e",
@@ -525,7 +551,7 @@
       "url": "https://science.nasa.gov/get-involved/citizen-science/help-refine-data-from-space-telescopes-with-artifact-inspector/",
       "confidence": 75,
       "importance": 69,
-      "freshness": 70,
+      "freshness": 69,
       "momentum": 54,
       "verification_status": "VERIFIED",
       "status": "NEW",
@@ -533,7 +559,7 @@
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 17
+      "rank": 18
     },
     {
       "id": "TP-82e7c70e3d1f",
@@ -551,15 +577,15 @@
       "url": "https://www.polygon.com/new-fallout-games-remasters-bethesda-softworks/",
       "confidence": 58,
       "importance": 65,
-      "freshness": 81,
-      "momentum": 61,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 18
+      "rank": 19
     },
     {
       "id": "TP-0e3533e0f3a5",
@@ -577,38 +603,12 @@
       "url": "https://www.polygon.com/pokemon-go-gible-community-day-classic-shiny-garchomp-moveset/",
       "confidence": 58,
       "importance": 65,
-      "freshness": 81,
-      "momentum": 61,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 19
-    },
-    {
-      "id": "TP-d7b2f7525c3f",
-      "cluster_id": "CL-0032",
-      "title": "Random rewards enrich classic game-theory insights",
-      "summary": "Simple games gain rich strategies in the face of noise.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T21:41:16+00:00",
-      "source": "Ars Technica",
-      "source_type": "secondary",
-      "url": "https://arstechnica.com/science/2026/09/random-rewards-enrich-classic-game-theory-contests/",
-      "confidence": 64,
-      "importance": 68,
-      "freshness": 74,
-      "momentum": 57,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Ars Technica"
       ],
       "corroborating_sources": [],
       "rank": 20
@@ -629,7 +629,7 @@
       "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
       "confidence": 61,
       "importance": 66,
-      "freshness": 77,
+      "freshness": 76,
       "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -638,6 +638,32 @@
       ],
       "corroborating_sources": [],
       "rank": 21
+    },
+    {
+      "id": "TP-d7b2f7525c3f",
+      "cluster_id": "CL-0032",
+      "title": "Random rewards enrich classic game-theory insights",
+      "summary": "Simple games gain rich strategies in the face of noise.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T21:41:16+00:00",
+      "source": "Ars Technica",
+      "source_type": "secondary",
+      "url": "https://arstechnica.com/science/2026/09/random-rewards-enrich-classic-game-theory-contests/",
+      "confidence": 64,
+      "importance": 68,
+      "freshness": 73,
+      "momentum": 56,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Ars Technica"
+      ],
+      "corroborating_sources": [],
+      "rank": 22
     },
     {
       "id": "TP-23758e513507",
@@ -653,32 +679,6 @@
       "source": "Ars Technica",
       "source_type": "secondary",
       "url": "https://arstechnica.com/health/2026/09/bouncy-castle-launches-horrifying-mrsa-outbreak-striking-48-kids-in-ireland/",
-      "confidence": 64,
-      "importance": 68,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Ars Technica"
-      ],
-      "corroborating_sources": [],
-      "rank": 22
-    },
-    {
-      "id": "TP-c9ae2a448b44",
-      "cluster_id": "CL-0034",
-      "title": "Trump's forced coal plant extensions thrown out by judge",
-      "summary": "The Department of Energy declared an \"emergency\" when none existed.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-11T20:32:59+00:00",
-      "source": "Ars Technica",
-      "source_type": "secondary",
-      "url": "https://arstechnica.com/science/2026/09/court-rejects-governments-energy-emergency-that-kept-coal-plant-open/",
       "confidence": 64,
       "importance": 68,
       "freshness": 72,
@@ -707,8 +707,8 @@
       "url": "https://www.nasa.gov/image-article/nasas-chandra-spots-galactic-gem/",
       "confidence": 75,
       "importance": 68,
-      "freshness": 65,
-      "momentum": 52,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
@@ -733,7 +733,7 @@
       "url": "https://www.space.com/space-exploration/missions/rocket-lab-protests-nasas-decision-to-award-blue-origin-usd700-million-mars-orbiter-contract",
       "confidence": 61,
       "importance": 66,
-      "freshness": 75,
+      "freshness": 74,
       "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -742,6 +742,32 @@
       ],
       "corroborating_sources": [],
       "rank": 25
+    },
+    {
+      "id": "TP-c9ae2a448b44",
+      "cluster_id": "CL-0034",
+      "title": "Trump's forced coal plant extensions thrown out by judge",
+      "summary": "The Department of Energy declared an \"emergency\" when none existed.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-11T20:32:59+00:00",
+      "source": "Ars Technica",
+      "source_type": "secondary",
+      "url": "https://arstechnica.com/science/2026/09/court-rejects-governments-energy-emergency-that-kept-coal-plant-open/",
+      "confidence": 64,
+      "importance": 67,
+      "freshness": 71,
+      "momentum": 55,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Ars Technica"
+      ],
+      "corroborating_sources": [],
+      "rank": 26
     },
     {
       "id": "TP-bc7fdc500a76",
@@ -759,15 +785,15 @@
       "url": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
       "confidence": 64,
       "importance": 67,
-      "freshness": 71,
-      "momentum": 55,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 26
+      "rank": 27
     },
     {
       "id": "TP-c22ddbfe304e",
@@ -785,15 +811,15 @@
       "url": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
       "confidence": 64,
       "importance": 67,
-      "freshness": 71,
-      "momentum": 55,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 27
+      "rank": 28
     },
     {
       "id": "TP-ccfd05f69c6f",
@@ -810,8 +836,8 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/11/khosla-ventures-is-opening-a-new-york-office-this-fall-its-first-outpost-outside-sand-hill-road/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
+      "importance": 65,
+      "freshness": 72,
       "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -819,7 +845,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 28
+      "rank": 29
     },
     {
       "id": "TP-2619d8ade240",
@@ -836,8 +862,8 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
+      "importance": 65,
+      "freshness": 72,
       "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -845,7 +871,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 29
+      "rank": 30
     },
     {
       "id": "TP-b3b4818aa362",
@@ -862,39 +888,13 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
+      "importance": 65,
+      "freshness": 72,
       "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 30
-    },
-    {
-      "id": "TP-87a38f268c96",
-      "cluster_id": "CL-0152",
-      "title": "I've chased the 'false dawn' for years — this is the week to find and photograph it",
-      "summary": "Some stargazing feels like you know exactly what you are looking for, but you're still slightly unsure whether you are actually seeing it. Zodiacal light — meaning \"light from the circle of animals\" — is often like that. I have chased this so-called \"false dawn\" for years, and the first few minutes are always the same. I stare toward the horizon and wonder whether the sky is genuinely brighter there, or whether I am simply seeing distant light pollution, the first hint of morning twilight, or something my eyes have invented because I badly want to see it. However, under a genuinely dark sky — and particularly in a long-exposure image — its cone shape becomes obvious. Zodiacal light is enormous. It appears as a broad, softly glowing pyramid rising from the horizon. It can be fainter than the Milky Way and has no hard edges, which is precisely why it is so easy to overlook. This week is a particularly good time to try because the new moon occurs on Sept. 10-11. With no moonlight interfering with the predawn sky, the main problems become familiar ones to any skywatcher: clouds, haze and artificial light. The phenomenon itself could hardly be more epic. Zodiacal light is sunlight scatt",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T21:00:00+00:00",
-      "source": "Space.com",
-      "source_type": "secondary",
-      "url": "https://www.space.com/stargazing/ive-chased-the-false-dawn-for-years-this-is-the-week-to-find-and-photograph-it",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Space.com"
       ],
       "corroborating_sources": [],
       "rank": 31
@@ -915,7 +915,7 @@
       "url": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
       "confidence": 64,
       "importance": 67,
-      "freshness": 70,
+      "freshness": 69,
       "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -926,19 +926,19 @@
       "rank": 32
     },
     {
-      "id": "TP-c9bc20e4988d",
-      "cluster_id": "CL-0005",
-      "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
-      "summary": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
+      "id": "TP-87a38f268c96",
+      "cluster_id": "CL-0152",
+      "title": "I've chased the 'false dawn' for years — this is the week to find and photograph it",
+      "summary": "Some stargazing feels like you know exactly what you are looking for, but you're still slightly unsure whether you are actually seeing it. Zodiacal light — meaning \"light from the circle of animals\" — is often like that. I have chased this so-called \"false dawn\" for years, and the first few minutes are always the same. I stare toward the horizon and wonder whether the sky is genuinely brighter there, or whether I am simply seeing distant light pollution, the first hint of morning twilight, or something my eyes have invented because I badly want to see it. However, under a genuinely dark sky — and particularly in a long-exposure image — its cone shape becomes obvious. Zodiacal light is enormous. It appears as a broad, softly glowing pyramid rising from the horizon. It can be fainter than the Milky Way and has no hard edges, which is precisely why it is so easy to overlook. This week is a particularly good time to try because the new moon occurs on Sept. 10-11. With no moonlight interfering with the predawn sky, the main problems become familiar ones to any skywatcher: clouds, haze and artificial light. The phenomenon itself could hardly be more epic. Zodiacal light is sunlight scatt",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
       "what_changes": "No additional practical change is asserted beyond the available source evidence.",
       "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-11T20:33:18+00:00",
-      "source": "TechCrunch",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T21:00:00+00:00",
+      "source": "Space.com",
       "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+      "url": "https://www.space.com/stargazing/ive-chased-the-false-dawn-for-years-this-is-the-week-to-find-and-photograph-it",
       "confidence": 61,
       "importance": 65,
       "freshness": 72,
@@ -946,114 +946,10 @@
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
-        "TechCrunch"
+        "Space.com"
       ],
       "corroborating_sources": [],
       "rank": 33
-    },
-    {
-      "id": "TP-54bc95a279e4",
-      "cluster_id": "CL-0006",
-      "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
-      "summary": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-11T20:30:17+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 34
-    },
-    {
-      "id": "TP-eb3fa8e52380",
-      "cluster_id": "CL-0021",
-      "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
-      "summary": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in contempt for failing to \"verify the factual claims and legal […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T20:44:25+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 35
-    },
-    {
-      "id": "TP-0a00ea86dc7f",
-      "cluster_id": "CL-0022",
-      "title": "Matt Mullenweg returns as Automattic CEO two days after getting booted",
-      "summary": "Two days after being placed on a paid leave of absence, Matt Mullenweg says he has been reinstated as CEO of Automattic, according to a Slack message seen by TechCrunch. WordPress Executive Director Mary Hubbard confirmed Mullenweg's return to the CEO role in a Friday post on X, which the official WordPress account shared and […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T20:24:12+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/tech/994087/matt-mullenweg-automattic-ceo-return",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 36
-    },
-    {
-      "id": "TP-04399cd0c727",
-      "cluster_id": "CL-0023",
-      "title": "We unfolded the iPhone Duo",
-      "summary": "You only get one chance at a first impression, and getting to introduce Apple's first folding phone is certainly a strong way to start things off as Apple's CEO. On The Vergecast today, we're talking all about Apple's launch event: how John Ternus did in his first appearance as CEO, what we make of the […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T20:29:34+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/podcast/994016/iphone-duo-vergecast-apple-watch-mac-llms",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 37
     },
     {
       "id": "TP-b3f62b0fbc7a",
@@ -1071,7 +967,7 @@
       "url": "https://www.engadget.com/2256562/moss-developer-polyarc-has-closed/",
       "confidence": 58,
       "importance": 64,
-      "freshness": 75,
+      "freshness": 74,
       "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1079,7 +975,137 @@
         "Engadget"
       ],
       "corroborating_sources": [],
+      "rank": 34
+    },
+    {
+      "id": "TP-c9bc20e4988d",
+      "cluster_id": "CL-0005",
+      "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
+      "summary": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-11T20:33:18+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+      "confidence": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 35
+    },
+    {
+      "id": "TP-54bc95a279e4",
+      "cluster_id": "CL-0006",
+      "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
+      "summary": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-11T20:30:17+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+      "confidence": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 36
+    },
+    {
+      "id": "TP-eb3fa8e52380",
+      "cluster_id": "CL-0021",
+      "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+      "summary": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in contempt for failing to \"verify the factual claims and legal […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T20:44:25+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+      "confidence": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
+      "rank": 37
+    },
+    {
+      "id": "TP-0a00ea86dc7f",
+      "cluster_id": "CL-0022",
+      "title": "Matt Mullenweg returns as Automattic CEO two days after getting booted",
+      "summary": "Two days after being placed on a paid leave of absence, Matt Mullenweg says he has been reinstated as CEO of Automattic, according to a Slack message seen by TechCrunch. WordPress Executive Director Mary Hubbard confirmed Mullenweg's return to the CEO role in a Friday post on X, which the official WordPress account shared and […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T20:24:12+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/tech/994087/matt-mullenweg-automattic-ceo-return",
+      "confidence": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
       "rank": 38
+    },
+    {
+      "id": "TP-04399cd0c727",
+      "cluster_id": "CL-0023",
+      "title": "We unfolded the iPhone Duo",
+      "summary": "You only get one chance at a first impression, and getting to introduce Apple's first folding phone is certainly a strong way to start things off as Apple's CEO. On The Vergecast today, we're talking all about Apple's launch event: how John Ternus did in his first appearance as CEO, what we make of the […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T20:29:34+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/podcast/994016/iphone-duo-vergecast-apple-watch-mac-llms",
+      "confidence": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
+      "rank": 39
     },
     {
       "id": "TP-2d3040feefdb",
@@ -1096,16 +1122,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
       "confidence": 64,
-      "importance": 67,
-      "freshness": 69,
-      "momentum": 54,
+      "importance": 66,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 39
+      "rank": 40
     },
     {
       "id": "TP-61abb4d7ced8",
@@ -1123,15 +1149,15 @@
       "url": "https://www.nasa.gov/news-release/nasas-spacex-crew-12-to-discuss-station-mission-upcoming-return/",
       "confidence": 75,
       "importance": 67,
-      "freshness": 61,
-      "momentum": 50,
+      "freshness": 60,
+      "momentum": 49,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 40
+      "rank": 41
     },
     {
       "id": "TP-730942a6039b",
@@ -1149,38 +1175,12 @@
       "url": "https://www.nasa.gov/organizations/oiir/artemis-accords/nasa-boosts-open-science-data-sharing-with-artemis-accords/",
       "confidence": 75,
       "importance": 67,
-      "freshness": 61,
-      "momentum": 50,
+      "freshness": 60,
+      "momentum": 49,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
-      ],
-      "corroborating_sources": [],
-      "rank": 41
-    },
-    {
-      "id": "TP-7c9d6a6bcf7d",
-      "cluster_id": "CL-0153",
-      "title": "A star is exploding 45 million light-years away — here's how you can see it",
-      "summary": "An extraordinary exploding star has been spotted in a distant galaxy, and astrophotographers are racing to capture it before it fades from view. The supernova, called SN 2026aaiv, was first seen by the ATLAS survey on Sept. 1 in NGC 7331 (also known as Caldwell 30), a spiral galaxy about 45 million light-years away in the constellation Pegasus, visible in the Northern Hemisphere and at mid-latitudes in the Southern Hemisphere. That makes this supernova a prime target for amateur astrophotographers and astronomers worldwide to capture an image of this rare event. Hundreds of astrophotographers have already captured it, including Andrew McCarthy, who posted his image on Instagram on Sept. 7 with the message, \"As luck would have it, I happened to be in the middle of a massive project with this galaxy, and caught the supernova.\" He shot four hours of data, two before and two after the supernova, as part of a 100-hour project. \"The final image will be EPIC!\" he said. A post shared by Andrew McCarthy (@cosmic_background) A photo posted by Tom Masterson, Mountain Operations Manager at the Mount Wilson Observatory, also captured it on Sept. 10 using a 60-inch telescope. A post shared by Lo",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T20:00:00+00:00",
-      "source": "Space.com",
-      "source_type": "secondary",
-      "url": "https://www.space.com/stargazing/a-star-is-exploding-45-million-light-years-away-heres-how-you-can-see-it",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 71,
-      "momentum": 55,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Space.com"
       ],
       "corroborating_sources": [],
       "rank": 42
@@ -1201,7 +1201,7 @@
       "url": "https://arstechnica.com/science/2026/09/scientists-unlock-secrets-of-ancient-egyptian-materials-with-proteomics/",
       "confidence": 64,
       "importance": 66,
-      "freshness": 68,
+      "freshness": 67,
       "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1227,7 +1227,7 @@
       "url": "https://arstechnica.com/gadgets/2026/09/oracle-promises-2-gw-of-renewables-to-match-stargate-data-center-emissions/",
       "confidence": 64,
       "importance": 66,
-      "freshness": 68,
+      "freshness": 67,
       "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1236,6 +1236,32 @@
       ],
       "corroborating_sources": [],
       "rank": 44
+    },
+    {
+      "id": "TP-7c9d6a6bcf7d",
+      "cluster_id": "CL-0153",
+      "title": "A star is exploding 45 million light-years away — here's how you can see it",
+      "summary": "An extraordinary exploding star has been spotted in a distant galaxy, and astrophotographers are racing to capture it before it fades from view. The supernova, called SN 2026aaiv, was first seen by the ATLAS survey on Sept. 1 in NGC 7331 (also known as Caldwell 30), a spiral galaxy about 45 million light-years away in the constellation Pegasus, visible in the Northern Hemisphere and at mid-latitudes in the Southern Hemisphere. That makes this supernova a prime target for amateur astrophotographers and astronomers worldwide to capture an image of this rare event. Hundreds of astrophotographers have already captured it, including Andrew McCarthy, who posted his image on Instagram on Sept. 7 with the message, \"As luck would have it, I happened to be in the middle of a massive project with this galaxy, and caught the supernova.\" He shot four hours of data, two before and two after the supernova, as part of a 100-hour project. \"The final image will be EPIC!\" he said. A post shared by Andrew McCarthy (@cosmic_background) A photo posted by Tom Masterson, Mountain Operations Manager at the Mount Wilson Observatory, also captured it on Sept. 10 using a 60-inch telescope. A post shared by Lo",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T20:00:00+00:00",
+      "source": "Space.com",
+      "source_type": "secondary",
+      "url": "https://www.space.com/stargazing/a-star-is-exploding-45-million-light-years-away-heres-how-you-can-see-it",
+      "confidence": 61,
+      "importance": 65,
+      "freshness": 70,
+      "momentum": 54,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Space.com"
+      ],
+      "corroborating_sources": [],
+      "rank": 45
     },
     {
       "id": "TP-83e605502ca5",
@@ -1252,8 +1278,8 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
       "confidence": 61,
-      "importance": 65,
-      "freshness": 70,
+      "importance": 64,
+      "freshness": 69,
       "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1261,11 +1287,11 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 45
+      "rank": 46
     },
     {
       "id": "TP-6cbe44c13af0",
-      "cluster_id": "CL-0056",
+      "cluster_id": "CL-0057",
       "title": "The 9 Best TV Shows to Stream This Month (September 2026)",
       "summary": "South Park, Slow Horses, Neon Genesis Evangelion, and a Lego-fied Mandalorian are just a few of the things you should be watching right now.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1278,120 +1304,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/the-9-best-shows-to-stream-right-now/",
       "confidence": 61,
-      "importance": 65,
-      "freshness": 70,
-      "momentum": 54,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 46
-    },
-    {
-      "id": "TP-e6be10aaed13",
-      "cluster_id": "CL-0008",
-      "title": "Roblox is making it easier to build games with AI — and play them outside Roblox",
-      "summary": "At its annual Roblox Developer Conference (RDC), the company announced several new features, including new game-creation tools, expanded NPC capabilities, and the ability to make games available across platforms, including the web.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T19:00:00+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/",
-      "confidence": 61,
       "importance": 64,
       "freshness": 69,
       "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
-        "TechCrunch"
+        "WIRED"
       ],
       "corroborating_sources": [],
       "rank": 47
-    },
-    {
-      "id": "TP-e1545db42b16",
-      "cluster_id": "CL-0009",
-      "title": "Central Eurasia names its 2026 Road to Battlefield winners: Cerberus, WeGlobal AI, and LOOQ",
-      "summary": "Cerberus, WeGlobal AI, and LOOQ took the top three spots at the regional final of Road to TechCrunch Startup Battlefield 2026 and will represent Central Eurasia in the Startup Battlefield 200 at TechCrunch Disrupt in San Francisco this October.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T18:58:01+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/11/central-eurasia-names-its-2026-road-to-battlefield-winners-cerberus-weglobal-ai-and-looq/",
-      "confidence": 61,
-      "importance": 64,
-      "freshness": 69,
-      "momentum": 54,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 48
-    },
-    {
-      "id": "TP-bad43621f65f",
-      "cluster_id": "CL-0057",
-      "title": "The US Government Launched 3 Previously Unreported Investigations of Polymarket Trades",
-      "summary": "The agency that oversees prediction markets has investigated Polymarket trades on Biden pardons and the Iran war—and even more potential insider trading at Google, documents obtained by WIRED show.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T19:21:34+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/polymarket-investigations-iran-biden-google-foia/",
-      "confidence": 61,
-      "importance": 64,
-      "freshness": 69,
-      "momentum": 54,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 49
-    },
-    {
-      "id": "TP-7a2125b6bc93",
-      "cluster_id": "CL-0058",
-      "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-      "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T18:59:25+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
-      "confidence": 61,
-      "importance": 64,
-      "freshness": 69,
-      "momentum": 54,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 50
     },
     {
       "id": "TP-8f5f50198141",
@@ -1409,7 +1331,7 @@
       "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
       "confidence": 64,
       "importance": 66,
-      "freshness": 66,
+      "freshness": 65,
       "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1417,7 +1339,111 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
+      "rank": 48
+    },
+    {
+      "id": "TP-e6be10aaed13",
+      "cluster_id": "CL-0008",
+      "title": "Roblox is making it easier to build games with AI — and play them outside Roblox",
+      "summary": "At its annual Roblox Developer Conference (RDC), the company announced several new features, including new game-creation tools, expanded NPC capabilities, and the ability to make games available across platforms, including the web.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T19:00:00+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/",
+      "confidence": 61,
+      "importance": 64,
+      "freshness": 68,
+      "momentum": 53,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 49
+    },
+    {
+      "id": "TP-e1545db42b16",
+      "cluster_id": "CL-0009",
+      "title": "Central Eurasia names its 2026 Road to Battlefield winners: Cerberus, WeGlobal AI, and LOOQ",
+      "summary": "Cerberus, WeGlobal AI, and LOOQ took the top three spots at the regional final of Road to TechCrunch Startup Battlefield 2026 and will represent Central Eurasia in the Startup Battlefield 200 at TechCrunch Disrupt in San Francisco this October.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T18:58:01+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/11/central-eurasia-names-its-2026-road-to-battlefield-winners-cerberus-weglobal-ai-and-looq/",
+      "confidence": 61,
+      "importance": 64,
+      "freshness": 68,
+      "momentum": 53,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 50
+    },
+    {
+      "id": "TP-bad43621f65f",
+      "cluster_id": "CL-0058",
+      "title": "The US Government Launched 3 Previously Unreported Investigations of Polymarket Trades",
+      "summary": "The agency that oversees prediction markets has investigated Polymarket trades on Biden pardons and the Iran war—and even more potential insider trading at Google, documents obtained by WIRED show.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T19:21:34+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/polymarket-investigations-iran-biden-google-foia/",
+      "confidence": 61,
+      "importance": 64,
+      "freshness": 68,
+      "momentum": 53,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
       "rank": 51
+    },
+    {
+      "id": "TP-7a2125b6bc93",
+      "cluster_id": "CL-0059",
+      "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
+      "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T18:59:25+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
+      "confidence": 61,
+      "importance": 64,
+      "freshness": 68,
+      "momentum": 53,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 52
     },
     {
       "id": "TP-8fa80bf670d9",
@@ -1435,15 +1461,15 @@
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
       "confidence": 61,
       "importance": 64,
-      "freshness": 69,
-      "momentum": 54,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 52
+      "rank": 53
     },
     {
       "id": "TP-e1adc3fef6fb",
@@ -1461,38 +1487,12 @@
       "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-launches-mystery-satellite-to-orbit-for-secret-customer-photo",
       "confidence": 61,
       "importance": 64,
-      "freshness": 69,
-      "momentum": 54,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
-      ],
-      "corroborating_sources": [],
-      "rank": 53
-    },
-    {
-      "id": "TP-a5a011de93f1",
-      "cluster_id": "CL-0078",
-      "title": "Lenovo's Googlebook 15 seems decidedly premium based on a new leak",
-      "summary": "The Lenovo Googlebook 15 will reportedly have a high-resolution, high-refresh rate display and an Intel Core Ultra 5 chip.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Hardware",
-      "subcategory": "Hardware",
-      "published_at": "2026-09-11T20:01:58+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2256453/lenovo-googlebook-15-seems-decidedly-premium-based-on-a-new-leak/",
-      "confidence": 58,
-      "importance": 63,
-      "freshness": 71,
-      "momentum": 55,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
       ],
       "corroborating_sources": [],
       "rank": 54
@@ -1513,7 +1513,7 @@
       "url": "https://www.darkreading.com/cyber-risk/cisa-calls-for-more-guidance-less-spin-as-cyber-outages-escalate",
       "confidence": 61,
       "importance": 64,
-      "freshness": 68,
+      "freshness": 67,
       "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1522,6 +1522,32 @@
       ],
       "corroborating_sources": [],
       "rank": 55
+    },
+    {
+      "id": "TP-a5a011de93f1",
+      "cluster_id": "CL-0078",
+      "title": "Lenovo's Googlebook 15 seems decidedly premium based on a new leak",
+      "summary": "The Lenovo Googlebook 15 will reportedly have a high-resolution, high-refresh rate display and an Intel Core Ultra 5 chip.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "published_at": "2026-09-11T20:01:58+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2256453/lenovo-googlebook-15-seems-decidedly-premium-based-on-a-new-leak/",
+      "confidence": 58,
+      "importance": 62,
+      "freshness": 70,
+      "momentum": 54,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 56
     },
     {
       "id": "TP-3055121a8599",
@@ -1538,8 +1564,8 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/",
       "confidence": 64,
-      "importance": 66,
-      "freshness": 64,
+      "importance": 65,
+      "freshness": 63,
       "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1547,7 +1573,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 56
+      "rank": 57
     },
     {
       "id": "TP-965fe78ce34f",
@@ -1565,15 +1591,15 @@
       "url": "https://www.darkreading.com/cyber-risk/ai-scamming-humans",
       "confidence": 61,
       "importance": 64,
-      "freshness": 67,
-      "momentum": 53,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 57
+      "rank": 58
     },
     {
       "id": "TP-5fbfe689ad00",
@@ -1591,15 +1617,15 @@
       "url": "https://www.space.com/entertainment/space-movies-shows/stream-every-single-star-trek-show-from-anywhere-and-save-up-to-75-percent-with-this-vpn-deal",
       "confidence": 61,
       "importance": 64,
-      "freshness": 67,
-      "momentum": 53,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 58
+      "rank": 59
     },
     {
       "id": "TP-807d17a05b69",
@@ -1617,7 +1643,7 @@
       "url": "https://www.theverge.com/policy/994072/white-house-truth-social-popular-powerful",
       "confidence": 61,
       "importance": 64,
-      "freshness": 66,
+      "freshness": 65,
       "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1625,7 +1651,7 @@
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 59
+      "rank": 60
     },
     {
       "id": "TP-af40d725e2ce",
@@ -1643,15 +1669,15 @@
       "url": "https://arstechnica.com/space/2026/09/nasa-moving-at-warp-speed-to-set-up-us-space-academy/",
       "confidence": 64,
       "importance": 65,
-      "freshness": 63,
-      "momentum": 51,
+      "freshness": 62,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 60
+      "rank": 61
     },
     {
       "id": "TP-4207a188e131",
@@ -1669,15 +1695,15 @@
       "url": "https://www.engadget.com/2256364/iphone-18-pro-vs-pixel-11-pro/",
       "confidence": 58,
       "importance": 62,
-      "freshness": 69,
-      "momentum": 54,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 61
+      "rank": 62
     },
     {
       "id": "TP-0f70e9f0b6aa",
@@ -1695,15 +1721,15 @@
       "url": "https://www.engadget.com/2255734/roblox-bringing-offline-browser-based-play/",
       "confidence": 58,
       "importance": 62,
-      "freshness": 69,
-      "momentum": 54,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 62
+      "rank": 63
     },
     {
       "id": "TP-c18234270271",
@@ -1720,16 +1746,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
       "confidence": 61,
-      "importance": 64,
-      "freshness": 65,
-      "momentum": 52,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 63
+      "rank": 64
     },
     {
       "id": "TP-e4183ab8302b",
@@ -1746,16 +1772,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/tech/993898/nicholaslighttv-remove-your-media-youtube-crunchyroll-viz-media",
       "confidence": 61,
-      "importance": 64,
-      "freshness": 65,
-      "momentum": 52,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 64
+      "rank": 65
     },
     {
       "id": "TP-36a0e7fdf454",
@@ -1772,16 +1798,16 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/cyber-risk/ai-governance-cannot-wait",
       "confidence": 61,
-      "importance": 64,
-      "freshness": 65,
-      "momentum": 52,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 65
+      "rank": 66
     },
     {
       "id": "TP-b8f06fc0f836",
@@ -1799,7 +1825,7 @@
       "url": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
       "confidence": 61,
       "importance": 63,
-      "freshness": 64,
+      "freshness": 63,
       "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1807,7 +1833,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 66
+      "rank": 67
     },
     {
       "id": "TP-b1c3ef60a7d9",
@@ -1825,19 +1851,19 @@
       "url": "https://www.theverge.com/news/993791/microsoft-frank-shaw-leaving-head-of-comms",
       "confidence": 61,
       "importance": 63,
-      "freshness": 63,
-      "momentum": 51,
+      "freshness": 62,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 67
+      "rank": 68
     },
     {
       "id": "TP-5a5b080add62",
-      "cluster_id": "CL-0059",
+      "cluster_id": "CL-0060",
       "title": "Petlibro Offers: 30% Off in September 2026",
       "summary": "Save on Petlibro essentials, including automatic feeders, water fountains, and accessories to keep cats and dogs fed, hydrated, and comfortable every day.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1851,15 +1877,15 @@
       "url": "https://www.wired.com/story/petlibro-discount-code/",
       "confidence": 61,
       "importance": 63,
-      "freshness": 63,
-      "momentum": 51,
+      "freshness": 62,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 68
+      "rank": 69
     },
     {
       "id": "TP-d41b4be226ab",
@@ -1876,8 +1902,8 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2256177/new-images-show-a-detailed-view-of-metas-upcoming-mixed-reality-headset/",
       "confidence": 58,
-      "importance": 62,
-      "freshness": 66,
+      "importance": 61,
+      "freshness": 65,
       "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1885,7 +1911,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 69
+      "rank": 70
     },
     {
       "id": "TP-110e13e91a81",
@@ -1903,15 +1929,15 @@
       "url": "https://www.space.com/astronomy/sun/the-sun-may-once-have-swallowed-a-super-earth-planet-and-could-still-be-hiding-the-evidence",
       "confidence": 61,
       "importance": 63,
-      "freshness": 63,
-      "momentum": 51,
+      "freshness": 62,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 70
+      "rank": 71
     },
     {
       "id": "TP-419def7ceab9",
@@ -1928,8 +1954,8 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/tech/994055/meta-project-phoenix-headset-leak",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 62,
+      "importance": 62,
+      "freshness": 61,
       "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1937,7 +1963,7 @@
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 71
+      "rank": 72
     },
     {
       "id": "TP-f4742f30da76",
@@ -1954,39 +1980,13 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/gadgets/993637/apple-airpods-5-anc-wireless-charging-preorder-buy",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 62,
+      "importance": 62,
+      "freshness": 61,
       "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 72
-    },
-    {
-      "id": "TP-88dd12e21e13",
-      "cluster_id": "CL-0127",
-      "title": "Papercut AI Swarm Attack Heralds Changes for Cyber Kill Chain",
-      "summary": "From creating lab environments for staging and testing agentic attacks to reconnaissance to lateral movement and exfiltration, the most innovative attackers are widely incorporating AI.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T15:48:27+00:00",
-      "source": "Dark Reading",
-      "source_type": "secondary",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain",
-      "confidence": 61,
-      "importance": 63,
-      "freshness": 62,
-      "momentum": 50,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Dark Reading"
       ],
       "corroborating_sources": [],
       "rank": 73
@@ -2007,7 +2007,7 @@
       "url": "https://www.bleepingcomputer.com/news/security/how-threat-actors-are-turning-trusted-ai-platforms-into-an-attack-surface/",
       "confidence": 64,
       "importance": 64,
-      "freshness": 59,
+      "freshness": 58,
       "momentum": 48,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2016,6 +2016,32 @@
       ],
       "corroborating_sources": [],
       "rank": 74
+    },
+    {
+      "id": "TP-88dd12e21e13",
+      "cluster_id": "CL-0127",
+      "title": "Papercut AI Swarm Attack Heralds Changes for Cyber Kill Chain",
+      "summary": "From creating lab environments for staging and testing agentic attacks to reconnaissance to lateral movement and exfiltration, the most innovative attackers are widely incorporating AI.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T15:48:27+00:00",
+      "source": "Dark Reading",
+      "source_type": "secondary",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain",
+      "confidence": 61,
+      "importance": 62,
+      "freshness": 61,
+      "momentum": 50,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Dark Reading"
+      ],
+      "corroborating_sources": [],
+      "rank": 75
     },
     {
       "id": "TP-32dab8dab57e",
@@ -2033,19 +2059,19 @@
       "url": "https://techcrunch.com/2026/09/11/matt-mullenweg-tells-automattic-staff-in-slack-hes-back-in-control-after-ceo-ouster/",
       "confidence": 61,
       "importance": 62,
-      "freshness": 61,
-      "momentum": 50,
+      "freshness": 60,
+      "momentum": 49,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 75
+      "rank": 76
     },
     {
       "id": "TP-7f9aec9fc823",
-      "cluster_id": "CL-0060",
+      "cluster_id": "CL-0061",
       "title": "One of AI’s Fiercest Critics Says All the Doom Talk Is ‘Meant to Distract Us’",
       "summary": "Timnit Gebru argues that AI companies are stoking fears of extinction to avoid discussing actual harms, like autonomous weapons.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2059,15 +2085,15 @@
       "url": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
       "confidence": 61,
       "importance": 62,
-      "freshness": 61,
-      "momentum": 50,
+      "freshness": 60,
+      "momentum": 49,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 76
+      "rank": 77
     },
     {
       "id": "TP-c3fe5602de81",
@@ -2085,38 +2111,12 @@
       "url": "https://www.space.com/entertainment/space-movies-shows/60-years-of-star-trek-uniforms-looking-back-at-the-everchanging-wardrobe-of-starfleet",
       "confidence": 61,
       "importance": 62,
-      "freshness": 61,
-      "momentum": 50,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Space.com"
-      ],
-      "corroborating_sources": [],
-      "rank": 77
-    },
-    {
-      "id": "TP-70f5f578bcdd",
-      "cluster_id": "CL-0030",
-      "title": "The wireless earbuds with unbeatable call quality got their first discount",
-      "summary": "Anker’s Soundcore Liberty 5 Pro came out swinging in May with incredible call quality, something that competing ear buds have struggled to get right. They’ve become part of our reviewer John Higgins’ rotation of earbuds for more than just taking calls; The Liberty 5 Pro have fantastic audio once you make some tweaks in their […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-11T14:43:26+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/gadgets/993929/soundcore-liberty-5-pro-earbuds-control-resonant-ring-doorbell-deal-sale",
-      "confidence": 61,
-      "importance": 62,
       "freshness": 60,
       "momentum": 49,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
-        "The Verge"
+        "Space.com"
       ],
       "corroborating_sources": [],
       "rank": 78
@@ -2137,7 +2137,7 @@
       "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
       "confidence": 64,
       "importance": 64,
-      "freshness": 57,
+      "freshness": 56,
       "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2146,6 +2146,32 @@
       ],
       "corroborating_sources": [],
       "rank": 79
+    },
+    {
+      "id": "TP-70f5f578bcdd",
+      "cluster_id": "CL-0030",
+      "title": "The wireless earbuds with unbeatable call quality got their first discount",
+      "summary": "Anker’s Soundcore Liberty 5 Pro came out swinging in May with incredible call quality, something that competing ear buds have struggled to get right. They’ve become part of our reviewer John Higgins’ rotation of earbuds for more than just taking calls; The Liberty 5 Pro have fantastic audio once you make some tweaks in their […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-11T14:43:26+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/gadgets/993929/soundcore-liberty-5-pro-earbuds-control-resonant-ring-doorbell-deal-sale",
+      "confidence": 61,
+      "importance": 62,
+      "freshness": 59,
+      "momentum": 48,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
+      "rank": 80
     },
     {
       "id": "TP-5222517e014b",
@@ -2163,7 +2189,7 @@
       "url": "https://www.engadget.com/2255941/where-should-apple-go-after-the-iphone-duo/",
       "confidence": 58,
       "importance": 60,
-      "freshness": 62,
+      "freshness": 61,
       "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2171,7 +2197,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 80
+      "rank": 81
     },
     {
       "id": "TP-28612e6f5b31",
@@ -2189,7 +2215,7 @@
       "url": "https://www.space.com/space-exploration/on-this-day-in-space-sept-11-1985-the-international-cometary-explorer-makes-1st-comet-flyby-in-history-for-nasa-and-europe",
       "confidence": 61,
       "importance": 62,
-      "freshness": 59,
+      "freshness": 58,
       "momentum": 48,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2197,7 +2223,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 81
+      "rank": 82
     },
     {
       "id": "TP-caceb5857939",
@@ -2215,7 +2241,7 @@
       "url": "https://www.space.com/astronomy/mars/wavy-alien-dune-fields-stretch-across-mars-space-photo-of-the-day-for-sept-11-2026",
       "confidence": 61,
       "importance": 62,
-      "freshness": 59,
+      "freshness": 58,
       "momentum": 48,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2223,7 +2249,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 82
+      "rank": 83
     },
     {
       "id": "TP-a0079c3c1040",
@@ -2241,15 +2267,15 @@
       "url": "https://techcrunch.com/2026/09/11/scammers-target-hundreds-of-thousands-of-crypto-owners-after-trezor-confirms-data-breach-of-email-provider/",
       "confidence": 61,
       "importance": 62,
-      "freshness": 58,
-      "momentum": 48,
+      "freshness": 57,
+      "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 83
+      "rank": 84
     },
     {
       "id": "TP-7c828a9290f7",
@@ -2267,7 +2293,7 @@
       "url": "https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/",
       "confidence": 64,
       "importance": 63,
-      "freshness": 55,
+      "freshness": 54,
       "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2275,7 +2301,7 @@
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 84
+      "rank": 85
     },
     {
       "id": "TP-adc6888365e3",
@@ -2293,15 +2319,15 @@
       "url": "https://arstechnica.com/security/2026/09/clickfix-attacks-infecting-pcs-and-macs-are-going-viral/",
       "confidence": 64,
       "importance": 63,
-      "freshness": 54,
-      "momentum": 46,
+      "freshness": 53,
+      "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 85
+      "rank": 86
     },
     {
       "id": "TP-54723734e6ee",
@@ -2318,8 +2344,8 @@
       "source_type": "secondary",
       "url": "https://www.space.com/space-exploration/satellites/2-private-spacecraft-zoom-within-650-feet-of-each-other-to-showcase-advanced-capabilities-in-orbit-photos",
       "confidence": 61,
-      "importance": 62,
-      "freshness": 57,
+      "importance": 61,
+      "freshness": 56,
       "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2327,7 +2353,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 86
+      "rank": 87
     },
     {
       "id": "TP-e399e87723a0",
@@ -2344,8 +2370,8 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/science/2026/09/what-happens-when-quantum-mechanics-and-relativity-meet/",
       "confidence": 64,
-      "importance": 63,
-      "freshness": 53,
+      "importance": 62,
+      "freshness": 52,
       "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2353,7 +2379,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 87
+      "rank": 88
     },
     {
       "id": "TP-93b35ee610e3",
@@ -2370,8 +2396,8 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/space/2026/09/could-united-launch-alliances-money-problems-finally-force-its-owners-to-sell/",
       "confidence": 64,
-      "importance": 63,
-      "freshness": 53,
+      "importance": 62,
+      "freshness": 52,
       "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2379,7 +2405,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 88
+      "rank": 89
     },
     {
       "id": "TP-685e0a836bb0",
@@ -2396,8 +2422,8 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/space/2026/09/rocket-report-europe-joins-the-commercial-launch-club-a-ravn-x-sighting/",
       "confidence": 64,
-      "importance": 63,
-      "freshness": 53,
+      "importance": 62,
+      "freshness": 52,
       "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2405,7 +2431,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 89
+      "rank": 90
     },
     {
       "id": "TP-4e654ce0e06f",
@@ -2422,8 +2448,8 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/",
       "confidence": 64,
-      "importance": 63,
-      "freshness": 53,
+      "importance": 62,
+      "freshness": 52,
       "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2431,7 +2457,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 90
+      "rank": 91
     },
     {
       "id": "TP-4af13d5a1676",
@@ -2449,7 +2475,7 @@
       "url": "https://www.space.com/space-exploration/human-spaceflight/25-years-ago-a-nasa-astronaut-witnessed-the-tragic-9-11-attacks-from-space-heres-what-he-saw",
       "confidence": 61,
       "importance": 61,
-      "freshness": 55,
+      "freshness": 54,
       "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2457,7 +2483,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 91
+      "rank": 92
     },
     {
       "id": "TP-da935985f313",
@@ -2475,7 +2501,7 @@
       "url": "https://www.engadget.com/2253293/bose-quietcomfort-headphones-2nd-gen-review/",
       "confidence": 58,
       "importance": 59,
-      "freshness": 57,
+      "freshness": 56,
       "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2483,7 +2509,59 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 92
+      "rank": 93
+    },
+    {
+      "id": "TP-95ffd0749145",
+      "cluster_id": "CL-0062",
+      "title": "This Man Has a Cult Internet Following Over His Olive Garden Lifetime Pasta Pass",
+      "summary": "Braden Sinclair is one of just 50 people in the world who can have unlimited pasta at the chain for life. Now, fans are deciding what he should eat next.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T11:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/this-man-has-a-cult-internet-following-over-his-olive-garden-lifetime-pasta-pass/",
+      "confidence": 61,
+      "importance": 60,
+      "freshness": 52,
+      "momentum": 45,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 94
+    },
+    {
+      "id": "TP-76f4feb05807",
+      "cluster_id": "CL-0063",
+      "title": "8 Best Travel Adapters (2026): 20+ Models Tested",
+      "summary": "When going abroad, the right plugs are essential to keep your gadgets charged. These are my favorite travel adapters and chargers that I’ve tested myself.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-11T11:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/gallery/best-travel-adapters/",
+      "confidence": 61,
+      "importance": 60,
+      "freshness": 52,
+      "momentum": 45,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 95
     },
     {
       "id": "TP-bbf674a022ce",
@@ -2501,67 +2579,15 @@
       "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-teams-outlook-launch-failures-on-arm-windows-pcs/",
       "confidence": 64,
       "importance": 62,
-      "freshness": 50,
-      "momentum": 44,
+      "freshness": 49,
+      "momentum": 43,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 93
-    },
-    {
-      "id": "TP-95ffd0749145",
-      "cluster_id": "CL-0061",
-      "title": "This Man Has a Cult Internet Following Over His Olive Garden Lifetime Pasta Pass",
-      "summary": "Braden Sinclair is one of just 50 people in the world who can have unlimited pasta at the chain for life. Now, fans are deciding what he should eat next.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T11:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/this-man-has-a-cult-internet-following-over-his-olive-garden-lifetime-pasta-pass/",
-      "confidence": 61,
-      "importance": 60,
-      "freshness": 53,
-      "momentum": 45,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 94
-    },
-    {
-      "id": "TP-76f4feb05807",
-      "cluster_id": "CL-0062",
-      "title": "8 Best Travel Adapters (2026): 20+ Models Tested",
-      "summary": "When going abroad, the right plugs are essential to keep your gadgets charged. These are my favorite travel adapters and chargers that I’ve tested myself.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-11T11:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/gallery/best-travel-adapters/",
-      "confidence": 61,
-      "importance": 60,
-      "freshness": 53,
-      "momentum": 45,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 95
+      "rank": 96
     },
     {
       "id": "TP-b87fce415f2c",
@@ -2579,7 +2605,7 @@
       "url": "https://www.space.com/technology/i-take-the-compact-nikon-stabilized-12x25-binoculars-with-me-everywhere-they-now-have-usd73-off-the-best-weve-seen-this-year",
       "confidence": 61,
       "importance": 60,
-      "freshness": 53,
+      "freshness": 52,
       "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2587,11 +2613,11 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 96
+      "rank": 97
     },
     {
       "id": "TP-d096f8536f71",
-      "cluster_id": "CL-0063",
+      "cluster_id": "CL-0064",
       "title": "I Fixed a Tractor Using John Deere’s Self-Repair Service. Farmers Aren’t Sold on It",
       "summary": "The agricultural machine manufacturer has a subscription service that lets owners repair their own equipment. Why is barely anybody using it?",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2605,19 +2631,19 @@
       "url": "https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/",
       "confidence": 61,
       "importance": 60,
-      "freshness": 52,
-      "momentum": 45,
+      "freshness": 51,
+      "momentum": 44,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 97
+      "rank": 98
     },
     {
       "id": "TP-dbf301b4f947",
-      "cluster_id": "CL-0064",
+      "cluster_id": "CL-0065",
       "title": "We Tried the Most Popular Mushroom Coffees. These Are the Best (2026)",
       "summary": "“Coffee” made with functional mushrooms like lion’s mane and chaga is all the rage. We tried the most popular brands to find which were the most palatable.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2631,19 +2657,19 @@
       "url": "https://www.wired.com/gallery/best-mushroom-coffee/",
       "confidence": 61,
       "importance": 60,
-      "freshness": 52,
-      "momentum": 45,
+      "freshness": 51,
+      "momentum": 44,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 98
+      "rank": 99
     },
     {
       "id": "TP-b54f1e481c3c",
-      "cluster_id": "CL-0065",
+      "cluster_id": "CL-0066",
       "title": "The Trump Alien ‘Disclosure Speech’ Rumors Are Reaching a Fever Pitch",
       "summary": "The US government has been sharing more information about UFOs. That's fueling excitement over the possibility of the president announcing that humans are not alone.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2657,38 +2683,12 @@
       "url": "https://www.wired.com/story/the-trump-alien-disclosure-speech-rumors-are-reaching-a-fever-pitch/",
       "confidence": 61,
       "importance": 60,
-      "freshness": 52,
-      "momentum": 45,
+      "freshness": 51,
+      "momentum": 44,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 99
-    },
-    {
-      "id": "TP-d47138229743",
-      "cluster_id": "CL-0084",
-      "title": "Packard Bell is back, but there's a catch",
-      "summary": "If the name Packard Bell sends you back to beige desktop towers, chunky CRT monitors, floppy disks and dial-up modem screeches, Acer has a surprise for you.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-11T12:00:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2252026/packard-bell-acer-back-only-available-europe/",
-      "confidence": 58,
-      "importance": 59,
-      "freshness": 55,
-      "momentum": 46,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
       ],
       "corroborating_sources": [],
       "rank": 100
