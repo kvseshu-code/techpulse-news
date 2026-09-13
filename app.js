@@ -96,200 +96,13 @@ function render(){
  $("#saved").innerHTML=sv.length?sv.map(card).join(""):`<div class="panel"><b>${tr("noSaved")}</b><p>${tr("noSavedText")}</p></div>`;
  buildBrief();
  applyI18n();
+
+ updateIntelligenceConsole();
 }
 
 let lastDatasetGeneratedAt=null;
+let nextCheckAt=0;
 let autoRefreshStarted=false;
-
-/* TECHPULSE HUD2 ENGINE */
-let hudInitialized=false;
-let nextCheckAt=Date.now()+300000;
-
-function formatHudAge(value){
- const t=Date.parse(value);
- if(!isFinite(t))return "\u2014";
- const seconds=Math.max(0,Math.floor((Date.now()-t)/1000));
- if(seconds<60)return seconds+"s";
- if(seconds<3600)return Math.floor(seconds/60)+"m";
- if(seconds<86400)return Math.floor(seconds/3600)+"h";
- return Math.floor(seconds/86400)+"d";
-}
-
-function formatHudCountdown(){
- const seconds=Math.max(0,Math.ceil((nextCheckAt-Date.now())/1000));
- const m=Math.floor(seconds/60);
- const s=seconds%60;
- return String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
-}
-
-function hudGreeting(){
- if(!S.a.length)return;
-
- const top=S.a[0];
- const score=tpScore(top);
- const sources=new Set(S.a.map(x=>x.source)).size;
-
- const message=
-  `TechPulse intelligence console online. `+
-  `${S.a.length} stories detected from ${sources} sources. `+
-  `Highest ranked signal: ${top.title}. `+
-  `TP Score ${score} out of 100. `+
-  `Source verification and intelligence ranking are active.`;
-
- if(!("speechSynthesis" in window)){
-  alert("Browser narration is unavailable.");
-  return;
- }
-
- speechSynthesis.cancel();
-
- const u=new SpeechSynthesisUtterance(message);
- u.rate=.94;
- u.pitch=.92;
- u.onstart=()=>S.speaking=true;
- u.onend=()=>S.speaking=false;
- speechSynthesis.speak(u);
-}
-
-function initHud(){
- if(hudInitialized)return;
-
- const status=$(".status");
- if(!status)return;
-
- hudInitialized=true;
-
- const hud=document.createElement("section");
- hud.id="hudConsole";
- hud.className="hud-console";
- hud.innerHTML=`
-  <div class="hud-head">
-   <div>
-    <span class="eyebrow">TECHPULSE HUD</span>
-    <h2>INTELLIGENCE CONSOLE</h2>
-   </div>
-   <button id="hudVoice" class="hud-voice" type="button">VOICE</button>
-  </div>
-
-  <div class="hud-grid">
-
-   <div class="hud-scanner-panel">
-    <div class="hud-scanner">
-     <div class="hud-ring hud-ring-a"></div>
-     <div class="hud-ring hud-ring-b"></div>
-     <div class="hud-ring hud-ring-c"></div>
-     <div class="hud-scanline"></div>
-     <div class="hud-score" id="hudScore">TP 00</div>
-     <small>TP SCORE</small>
-    </div>
-
-    <div class="hud-state-row">
-     <span class="hud-state online">\u25CF SYSTEM ONLINE</span>
-     <span class="hud-state verified">\u25CF DATA VERIFIED</span>
-     <span class="hud-state linked">\u25CF SOURCE LINKED</span>
-    </div>
-   </div>
-
-   <div class="hud-stream-panel">
-    <div class="hud-panel-title">
-     <span>LIVE INTELLIGENCE STREAM</span>
-     <b id="hudStreamState">ACTIVE</b>
-    </div>
-
-    <div class="hud-stream">
-     <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-    </div>
-
-    <div id="hudStreamText" class="hud-stream-text">
-     Awaiting intelligence telemetry...
-    </div>
-
-    <div class="hud-metrics">
-     <div><span>DATA AGE</span><b id="hudAge">\u2014</b></div>
-     <div><span>NEXT REFRESH</span><b id="hudNext">05:00</b></div>
-     <div><span>SOURCES</span><b id="hudSources">0</b></div>
-     <div><span>STORIES</span><b id="hudStories">0</b></div>
-    </div>
-   </div>
-
-   <div class="hud-sources-panel">
-    <div class="hud-panel-title">
-     <span>SOURCE SIGNALS</span>
-     <b id="hudSourceCount">0</b>
-    </div>
-    <div id="hudSourceNodes" class="hud-source-nodes"></div>
-   </div>
-
-  </div>
- `;
-
- status.insertAdjacentElement("afterend",hud);
-
- const voice=$("#hudVoice");
- if(voice)voice.onclick=hudGreeting;
-
- updateHud();
-}
-
-function updateHud(){
- if(!hudInitialized)return;
-
- const stories=S.a.length;
- const sourceList=[...new Set(S.a.map(x=>x.source).filter(Boolean))];
- const sources=sourceList.length;
- const top=S.a[0];
- const score=top?tpScore(top):0;
-
- const age=lastDatasetGeneratedAt?
-  formatHudAge(lastDatasetGeneratedAt):
-  "â€”";
-
- const scoreEl=$("#hudScore");
- const ageEl=$("#hudAge");
- const nextEl=$("#hudNext");
- const sourcesEl=$("#hudSources");
- const storiesEl=$("#hudStories");
- const sourceCountEl=$("#hudSourceCount");
- const streamText=$("#hudStreamText");
- const streamState=$("#hudStreamState");
- const nodes=$("#hudSourceNodes");
-
- if(scoreEl)scoreEl.textContent="TP "+String(score).padStart(2,"0");
- if(ageEl)ageEl.textContent=age;
- if(nextEl)nextEl.textContent=formatHudCountdown();
- if(sourcesEl)sourcesEl.textContent=sources;
- if(storiesEl)storiesEl.textContent=stories;
- if(sourceCountEl)sourceCountEl.textContent=sources;
-
- if(streamState){
-  streamState.textContent=stories?"ACTIVE":"STANDBY";
- }
-
- if(streamText){
-  if(top){
-   streamText.textContent=
-    "SIGNAL: "+top.title+
-    " \u2022 TP "+score+
-    " \u2022 "+top.source;
-  }else{
-   streamText.textContent="Awaiting intelligence telemetry...";
-  }
- }
-
- if(nodes){
-  nodes.innerHTML=sourceList.slice(0,12).map((source,i)=>{
-   const count=S.a.filter(x=>x.source===source).length;
-   const intensity=Math.min(100,35+count*8);
-   return `
-    <span class="hud-node" style="--node-intensity:${intensity}%">
-     <i></i>
-     <b>${esc(source)}</b>
-     <small>${count} signal${count===1?"":"s"}</small>
-    </span>`;
-  }).join("");
- }
-}
-
 
 async function load(){
  try{
@@ -304,9 +117,7 @@ async function load(){
   $("#count").textContent=S.a.length;
   $("#sources").textContent=new Set(S.a.map(x=>x.source)).size;
   $("#updated").textContent=d.generated_at?new Date(d.generated_at).toLocaleTimeString(S.language,{hour:"2-digit",minute:"2-digit"}):"—";
-  initHud();
   render();
-  updateHud();
  }catch(e){
   $("#feedStatus").textContent=tr("datasetUnavailable");$("#feedMeta").textContent=tr("publishDataset");console.error(e);
  }
@@ -334,11 +145,184 @@ function startAutoRefresh(){
  setInterval(checkForUpdates,300000);
 
  setInterval(()=>{
-  updateHud();
  },1000);
 }
 
 startAutoRefresh();
+
+
+function updateIntelligenceConsole(){
+ const old=document.getElementById("intelligenceConsole");
+ if(old)old.remove();
+
+ const latest=S.a[0];
+ if(!latest)return;
+
+ const score=tpScore(latest);
+
+ const published=latest.published_at
+  ? new Date(latest.published_at).getTime()
+  : NaN;
+
+ const ageMinutes=Number.isFinite(published)
+  ? Math.max(0,Math.floor((Date.now()-published)/60000))
+  : null;
+
+ const ageText=ageMinutes===null
+  ? "—"
+  : ageMinutes<60
+   ? ageMinutes+"m"
+   : ageMinutes<1440
+    ? Math.floor(ageMinutes/60)+"h"
+    : Math.floor(ageMinutes/1440)+"d";
+
+ const refreshSeconds=Math.max(
+  0,
+  Math.ceil((nextCheckAt-Date.now())/1000)
+ );
+
+ const refreshMinutes=Math.floor(refreshSeconds/60);
+ const refreshRemainder=refreshSeconds%60;
+
+ const refreshText=nextCheckAt>0
+  ? String(refreshMinutes).padStart(2,"0")+":"+String(refreshRemainder).padStart(2,"0")
+  : "05:00";
+
+ const sourceCounts={};
+
+ S.a.forEach(x=>{
+  const source=String(x.source||"Source").trim()||"Source";
+  sourceCounts[source]=(sourceCounts[source]||0)+1;
+ });
+
+ const sourceList=Object.entries(sourceCounts)
+  .sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
+  .map(([source,count])=>`
+   <div class="console-source">
+    <span>${esc(source)}</span>
+    <strong>${count}</strong>
+   </div>
+  `).join("");
+
+ const sourceTotal=Object.keys(sourceCounts).length;
+
+ const el=document.createElement("section");
+ el.id="intelligenceConsole";
+ el.className="intelligence-console";
+
+ el.innerHTML=`
+  <div class="console-head">
+   <div>
+    <span class="eyebrow">TECHPULSE CONSOLE</span>
+    <h3>Intelligence Status</h3>
+   </div>
+   <span class="console-live"><i></i> LIVE</span>
+  </div>
+
+  <div class="console-panels">
+
+   <section class="console-panel console-score-panel">
+
+    <div class="console-score-ring" style="--score:${score}">
+     <div>
+      <strong>${score}</strong>
+      <span>TP</span>
+     </div>
+    </div>
+
+    <div class="console-label">TP SCORE</div>
+
+    <div class="console-status-list">
+     <div>
+      <i></i>
+      <span>SYSTEM</span>
+      <strong>ONLINE</strong>
+     </div>
+
+     <div>
+      <i></i>
+      <span>DATA</span>
+      <strong>VERIFIED</strong>
+     </div>
+
+     <div>
+      <i></i>
+      <span>SOURCE</span>
+      <strong>LINKED</strong>
+     </div>
+    </div>
+
+   </section>
+
+   <section class="console-panel console-stream-panel">
+
+    <div class="console-panel-head">
+     <span>LIVE INTELLIGENCE STREAM</span>
+     <b><i></i> ACTIVE</b>
+    </div>
+
+    <div class="console-signal-bars" aria-hidden="true">
+     <i></i><i></i><i></i><i></i><i></i>
+     <i></i><i></i><i></i><i></i><i></i>
+     <i></i><i></i>
+    </div>
+
+    <div class="console-headline">
+     ${esc(latest.title||"Intelligence stream active")}
+    </div>
+
+    <div class="console-source-meta">
+     ${esc(latest.source||"Source")} <span>·</span> TP ${score}
+    </div>
+
+    <div class="console-metrics">
+
+     <div>
+      <span>DATA AGE</span>
+      <strong>${ageText}</strong>
+     </div>
+
+     <div>
+      <span>NEXT REFRESH</span>
+      <strong>${refreshText}</strong>
+     </div>
+
+     <div>
+      <span>SOURCES</span>
+      <strong>${sourceTotal}</strong>
+     </div>
+
+     <div>
+      <span>STORIES</span>
+      <strong>${S.a.length}</strong>
+     </div>
+
+    </div>
+
+   </section>
+
+   <section class="console-panel console-sources-panel">
+
+    <div class="console-panel-head">
+     <span>SOURCE SIGNALS</span>
+     <b>${sourceTotal} SOURCES</b>
+    </div>
+
+    <div class="console-source-list">
+     ${sourceList||`<div class="console-source-empty">No source signals available.</div>`}
+    </div>
+
+   </section>
+
+  </div>
+ `;
+
+ const hero=document.querySelector(".hero");
+
+ if(hero){
+  hero.insertAdjacentElement("afterend",el);
+ }
+}
 
 function openStory(id){
  const x=S.a.find(a=>a.id===id);if(!x)return;
@@ -381,14 +365,13 @@ function settings(){
 
  const themeButton=$("#theme");
  if(themeButton){
-  const labels={dark:"Dark mode",light:"Light mode",glass:"Glass mode",hud:"HUD mode"};
-  const icons={dark:"◐",light:"☼",glass:"◒",hud:"◈"};
+  const labels={dark:"Dark mode",light:"Light mode"};
+  const icons={dark:"◐",light:"☼"};
   themeButton.textContent=icons[S.theme]||"◐";
   themeButton.title=labels[S.theme]||"Theme";
   themeButton.setAttribute("aria-label",labels[S.theme]||"Theme");
  }
- updateHud();
-}
+ }
 function askTechPulse(){
  const q=prompt(tr("askPrompt")+" "+tr("askExample"));if(!q)return;
  const terms=q.toLowerCase().split(/\W+/).filter(w=>w.length>2);
@@ -411,7 +394,7 @@ document.addEventListener("click",e=>{
 $("#search").oninput=e=>{const q=e.target.value.toLowerCase();const a=S.a.filter(x=>(x.title+" "+x.summary+" "+x.category+" "+x.source+" "+x.tags.join(" ")).toLowerCase().includes(q));$("#top").innerHTML=(q?a:S.a.slice(0,10)).map(card).join("")||`<div class="panel">${tr("noMatch")}</div>`};
 $("#language").onchange=e=>{S.language=e.target.value;localStorage.tp_lang=S.language;render()};
 $("#theme").onclick=()=>{
- S.theme=S.theme==="dark"?"light":S.theme==="light"?"glass":S.theme==="glass"?"hud":"dark";
+ S.theme=S.theme==="dark"?"light":"dark";
  localStorage.tp_theme=S.theme;
  settings();
 };
@@ -427,3 +410,6 @@ $("#ask").onclick=askTechPulse;
 document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
 applyI18n();settings();load();
 })();
+
+
+
