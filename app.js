@@ -111,7 +111,13 @@ async function load(){
   const d=await r.json();
   lastDatasetGeneratedAt=d.generated_at||null;
   S.a=(Array.isArray(d)?d:d.articles||[]).map(n).filter(x=>x.url!=="#");
-  S.a.forEach(x=>x.tpScore=tpScore(x)); S.a.sort((a,b)=>b.tpScore-a.tpScore);
+  S.a.forEach(x=>x.tpScore=tpScore(x));
+  const newestFirst=(a,b)=>{
+   const ta=Date.parse(a.published_at),tb=Date.parse(b.published_at);
+   const va=Number.isFinite(ta)?ta:0,vb=Number.isFinite(tb)?tb:0;
+   return vb-va||tpScore(b)-tpScore(a);
+  };
+  S.a.sort(newestFirst);
   $("#feedStatus").textContent=tr("feedsOperational");
   $("#feedMeta").textContent=d.generated_at?tr("dataset")+" "+new Date(d.generated_at).toLocaleString(S.language):tr("dataset");
   $("#count").textContent=S.a.length;

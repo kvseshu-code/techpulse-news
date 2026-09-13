@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from collections import defaultdict
 import urllib.request, urllib.error, xml.etree.ElementTree as ET, json, re, html, hashlib, time, os, sys, tempfile
 
-ROOT=Path(__file__).parent; CFG=ROOT/'config'; OUT=ROOT/'news.json'; MAX=100; PER_SOURCE=30; AGE_HOURS=96; TIMEOUT=15
+ROOT=Path(__file__).parent; CFG=ROOT/'config'; OUT=ROOT/'news.json'; MAX=100; PER_SOURCE=30; AGE_HOURS=168; TIMEOUT=15
 STOP=set('the a an and or of to in on for with from by is are was were this that as at be has have had its into about after before over under new says said how why what when where who their they it we you your our'.split())
 
 def clean(v): return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]*>',' ',v or ''))).strip()
@@ -69,7 +69,13 @@ def build():
     for i,c in enumerate(clusters,1):
         c.sort(key=lambda x:(x['source_trust'],age(x['published_at'])),reverse=True); p=c[0]; sources=list(dict.fromkeys(x['source'] for x in c)); fresh=age(p['published_at']); conf=min(99,round(p['source_trust']*.65+min(len(sources),5)*6+(7 if p['source_type']=='primary' else 0))); imp=min(100,round(p['source_trust']*.45+len(c)*9+fresh*.25)); mom=min(100,round(len(c)*16+fresh*.55)); status='VERIFIED' if len(sources)>=2 or p['source_type']=='primary' else 'DEVELOPING'; sid='TP-'+hashlib.sha1('|'.join(sorted(x['url'] for x in c)).encode()).hexdigest()[:12]
         stories.append({'id':sid,'cluster_id':f'CL-{i:04d}','title':p['title'],'summary':p['description'] or 'A technology development has been reported. Open the original source for full context.','why_it_matters':'The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.','what_changes':'No additional practical change is asserted beyond the available source evidence.','whats_next':'Watch for official statements, independent confirmation, and subsequent updates.','category':p['category'],'subcategory':p['category'],'published_at':p['published_at'],'source':p['source'],'source_type':p['source_type'],'url':p['url'],'confidence':conf,'importance':imp,'freshness':fresh,'momentum':mom,'verification_status':status,'status':'NEW' if status=='VERIFIED' else 'DEVELOPING','tags':sources[:5],'corroborating_sources':[{'source':x['source'],'title':x['title'],'url':x['url']} for x in c[1:5]]})
-    stories.sort(key=lambda x:x['importance']+x['freshness']+x['confidence']+x['momentum'],reverse=True); stories=stories[:MAX]
+    stories.sort(
+        key=lambda x: (
+            x.get('published_at', ''),
+            x.get('importance', 0) + x.get('freshness', 0) + x.get('confidence', 0) + x.get('momentum', 0)
+        ),
+        reverse=True
+    ); stories=stories[:MAX]
     if not stories:raise RuntimeError('No valid stories produced; last-known-good news.json preserved.')
     for i,x in enumerate(stories,1):x['rank']=i
     data={'schema_version':1,'product':'TechPulse','generated_at':datetime.now(timezone.utc).isoformat(),'article_count':len(stories),'source_count':len(set(x['source'] for x in stories)),'source_health':health,'articles':stories}; validate(data); atomic(data)
