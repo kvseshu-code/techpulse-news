@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "TechPulse",
-  "generated_at": "2026-09-14T08:08:33.168858+00:00",
+  "generated_at": "2026-09-14T08:40:46.827129+00:00",
   "article_count": 100,
   "source_count": 10,
   "source_health": [
@@ -73,8 +73,34 @@
   ],
   "articles": [
     {
-      "id": "TP-9cc2276fbce4",
+      "id": "TP-77e7cf6ec44a",
       "cluster_id": "CL-0108",
+      "title": "Microsoft: September updates break audio on some Windows PCs",
+      "summary": "Microsoft has confirmed that USB audio devices may fail on some Windows systems after installing the KB5124008and KB5124012 September 2026 security updates. [...]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-14T08:08:16+00:00",
+      "source": "BleepingComputer",
+      "source_type": "secondary",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-september-updates-break-audio-on-some-windows-pcs/",
+      "confidence": 64,
+      "importance": 74,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "BleepingComputer"
+      ],
+      "corroborating_sources": [],
+      "rank": 1
+    },
+    {
+      "id": "TP-9cc2276fbce4",
+      "cluster_id": "CL-0109",
       "title": "CISA: Hackers now exploit max severity GitLab flaw in attacks",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned that hackers are now exploiting a maximum-severity GitLab vulnerability in attacks. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -88,15 +114,15 @@
       "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-max-severity-gitlab-flaw-in-attacks/",
       "confidence": 64,
       "importance": 74,
-      "freshness": 98,
-      "momentum": 70,
+      "freshness": 97,
+      "momentum": 69,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 1
+      "rank": 2
     },
     {
       "id": "TP-2eea03440cf2",
@@ -113,16 +139,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/marvels-wolverine-liam-mcintyre-performance-inspirations/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 98,
-      "momentum": 70,
+      "importance": 69,
+      "freshness": 97,
+      "momentum": 69,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 2
+      "rank": 3
     },
     {
       "id": "TP-b6f2c06c3dbb",
@@ -140,15 +166,15 @@
       "url": "https://www.polygon.com/clair-obscur-expedition-33-developer-next-game/",
       "confidence": 58,
       "importance": 68,
-      "freshness": 94,
-      "momentum": 68,
+      "freshness": 93,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 3
+      "rank": 4
     },
     {
       "id": "TP-1f182ad771e8",
@@ -166,15 +192,15 @@
       "url": "https://www.polygon.com/alan-ritchson-best-movies-tv-shows-ranked/",
       "confidence": 58,
       "importance": 68,
-      "freshness": 94,
-      "momentum": 68,
+      "freshness": 93,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 4
+      "rank": 5
     },
     {
       "id": "TP-e96799de4203",
@@ -192,7 +218,7 @@
       "url": "https://www.polygon.com/best-sci-fi-shows-netflix-perfect/",
       "confidence": 58,
       "importance": 68,
-      "freshness": 93,
+      "freshness": 92,
       "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -200,7 +226,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 5
+      "rank": 6
     },
     {
       "id": "TP-c4f5f74478e0",
@@ -217,16 +243,16 @@
       "source_type": "primary",
       "url": "https://science.nasa.gov/image-article/apod-2026-september-14-where-your-elements-came-from/",
       "confidence": 75,
-      "importance": 75,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 74,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 6
+      "rank": 7
     },
     {
       "id": "TP-617ff457e284",
@@ -244,15 +270,15 @@
       "url": "https://www.polygon.com/president-curtis-dan-harmon-leprechauns-interview/",
       "confidence": 58,
       "importance": 68,
-      "freshness": 92,
-      "momentum": 67,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 7
+      "rank": 8
     },
     {
       "id": "TP-bf65630cb95f",
@@ -270,15 +296,15 @@
       "url": "https://www.polygon.com/batman-the-dark-knight-returns-free-on-youtube/",
       "confidence": 58,
       "importance": 68,
-      "freshness": 92,
-      "momentum": 67,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 8
+      "rank": 9
     },
     {
       "id": "TP-42b2e0b1ccd4",
@@ -295,16 +321,16 @@
       "source_type": "primary",
       "url": "https://science.nasa.gov/earth/earth-observatory/an-early-look-at-fall-color-in-canada/",
       "confidence": 75,
-      "importance": 75,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 74,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 9
+      "rank": 10
     },
     {
       "id": "TP-6664a772d287",
@@ -322,15 +348,15 @@
       "url": "https://www.polygon.com/lanterns-episode-5-manhunter-interview/",
       "confidence": 58,
       "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
+      "freshness": 88,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 10
+      "rank": 11
     },
     {
       "id": "TP-8a531904c85d",
@@ -347,16 +373,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/world-of-warcraft-forever-gamepad-support-blizzcon-2026/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 11
+      "rank": 12
     },
     {
       "id": "TP-031de9e3e57c",
@@ -374,7 +400,7 @@
       "url": "https://www.polygon.com/blizzcon-interview-battle-net/",
       "confidence": 58,
       "importance": 66,
-      "freshness": 86,
+      "freshness": 85,
       "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -382,7 +408,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 12
+      "rank": 13
     },
     {
       "id": "TP-2c3fe76ff99e",
@@ -400,7 +426,7 @@
       "url": "https://www.polygon.com/leverage-free-youtube/",
       "confidence": 58,
       "importance": 66,
-      "freshness": 86,
+      "freshness": 85,
       "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -408,7 +434,7 @@
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 13
+      "rank": 14
     },
     {
       "id": "TP-fff5416b1421",
@@ -426,15 +452,15 @@
       "url": "https://www.engadget.com/2252867/usb-c-vs-magsafe-best-macbook-charging-option/",
       "confidence": 58,
       "importance": 66,
-      "freshness": 85,
-      "momentum": 63,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 14
+      "rank": 15
     },
     {
       "id": "TP-ef6d8d2cdb3c",
@@ -452,7 +478,7 @@
       "url": "https://www.engadget.com/2252864/ethernet-cable-length-drops-lower-speeds/",
       "confidence": 58,
       "importance": 66,
-      "freshness": 84,
+      "freshness": 83,
       "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -460,7 +486,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 15
+      "rank": 16
     },
     {
       "id": "TP-784702d65933",
@@ -478,15 +504,15 @@
       "url": "https://www.engadget.com/2252861/android-auto-feature-easier-long-drive/",
       "confidence": 58,
       "importance": 66,
-      "freshness": 83,
-      "momentum": 62,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 16
+      "rank": 17
     },
     {
       "id": "TP-5d62ce4e3ceb",
@@ -503,8 +529,8 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2252859/how-to-use-gpt-6-astra-rollout-schedule/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 82,
+      "importance": 65,
+      "freshness": 81,
       "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -512,7 +538,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 17
+      "rank": 18
     },
     {
       "id": "TP-4f8fec024a9b",
@@ -530,15 +556,15 @@
       "url": "https://www.engadget.com/2252858/how-to-fix-imessage-not-delivered-on-iphone/",
       "confidence": 58,
       "importance": 65,
-      "freshness": 81,
-      "momentum": 61,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 18
+      "rank": 19
     },
     {
       "id": "TP-e2923b31e2df",
@@ -556,15 +582,15 @@
       "url": "https://www.engadget.com/2252857/why-are-imax-cameras-so-loud-explained/",
       "confidence": 58,
       "importance": 65,
-      "freshness": 80,
-      "momentum": 60,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 19
+      "rank": 20
     },
     {
       "id": "TP-8dd937f03eb9",
@@ -581,16 +607,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/health/2026/09/unvaccinated-pennsylvania-woman-died-of-measles-complications-coroner-says/",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 69,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 20
+      "rank": 21
     },
     {
       "id": "TP-6146e1aeb620",
@@ -608,7 +634,7 @@
       "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-3-telecom-satellites-to-orbit-on-700th-falcon-mission-of-all-time-video",
       "confidence": 61,
       "importance": 67,
-      "freshness": 79,
+      "freshness": 78,
       "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -616,7 +642,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 21
+      "rank": 22
     },
     {
       "id": "TP-6fd9e5216d21",
@@ -634,7 +660,7 @@
       "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
       "confidence": 61,
       "importance": 67,
-      "freshness": 79,
+      "freshness": 78,
       "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -642,7 +668,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 22
+      "rank": 23
     },
     {
       "id": "TP-4022c7a7f9b5",
@@ -659,16 +685,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 66,
+      "freshness": 76,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 23
+      "rank": 24
     },
     {
       "id": "TP-d781644f77d3",
@@ -686,7 +712,7 @@
       "url": "https://www.engadget.com/2256984/sam-altman-says-openai-wont-file-for-ipo-this-year/",
       "confidence": 58,
       "importance": 64,
-      "freshness": 77,
+      "freshness": 76,
       "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -694,7 +720,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 24
+      "rank": 25
     },
     {
       "id": "TP-57910f71290d",
@@ -712,7 +738,7 @@
       "url": "https://techcrunch.com/2026/09/13/larry-ellison-cancels-7-5-billion-sale-of-oracle-stock/",
       "confidence": 61,
       "importance": 66,
-      "freshness": 77,
+      "freshness": 76,
       "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -720,7 +746,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 25
+      "rank": 26
     },
     {
       "id": "TP-79a6f0393900",
@@ -738,7 +764,7 @@
       "url": "https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-latest-demo-day-according-to-vcs/",
       "confidence": 61,
       "importance": 66,
-      "freshness": 77,
+      "freshness": 76,
       "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -746,7 +772,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 26
+      "rank": 27
     },
     {
       "id": "TP-df4590fd8bbc",
@@ -764,15 +790,15 @@
       "url": "https://www.engadget.com/2252856/how-to-adjust-liquid-glass-effect-ios-27/",
       "confidence": 58,
       "importance": 64,
-      "freshness": 76,
-      "momentum": 58,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 27
+      "rank": 28
     },
     {
       "id": "TP-76cfee61f91f",
@@ -790,7 +816,7 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
       "confidence": 61,
       "importance": 66,
-      "freshness": 75,
+      "freshness": 74,
       "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -798,7 +824,7 @@
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 28
+      "rank": 29
     },
     {
       "id": "TP-89769e5f1d2d",
@@ -816,7 +842,7 @@
       "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
       "confidence": 61,
       "importance": 66,
-      "freshness": 75,
+      "freshness": 74,
       "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -824,7 +850,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 29
+      "rank": 30
     },
     {
       "id": "TP-4a65e419762a",
@@ -841,16 +867,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2256966/teslas-second-gen-roadster-is-finally-getting-a-debut-nearly-a-decade-later/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 74,
-      "momentum": 57,
+      "importance": 63,
+      "freshness": 73,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 30
+      "rank": 31
     },
     {
       "id": "TP-8b6c5a92da63",
@@ -867,8 +893,8 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/tech/994426/apple-iphone-game-controllers",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
+      "importance": 65,
+      "freshness": 72,
       "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -876,7 +902,7 @@
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 31
+      "rank": 32
     },
     {
       "id": "TP-93d5e348e815",
@@ -894,7 +920,7 @@
       "url": "https://www.engadget.com/2252855/applecare-plus-vs-applecare-one-differences/",
       "confidence": 58,
       "importance": 63,
-      "freshness": 73,
+      "freshness": 72,
       "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -902,7 +928,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 32
+      "rank": 33
     },
     {
       "id": "TP-815369d4e419",
@@ -920,15 +946,15 @@
       "url": "https://www.engadget.com/2256955/apples-rumored-gaming-controller-for-iphone-could-feature-beats-branding/",
       "confidence": 58,
       "importance": 63,
-      "freshness": 72,
-      "momentum": 56,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 33
+      "rank": 34
     },
     {
       "id": "TP-50d6a25b9c6b",
@@ -946,15 +972,15 @@
       "url": "https://www.engadget.com/2252851/wifi-router-usb-port-explained/",
       "confidence": 58,
       "importance": 63,
-      "freshness": 72,
-      "momentum": 56,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 34
+      "rank": 35
     },
     {
       "id": "TP-041f0bc1d5ed",
@@ -972,15 +998,15 @@
       "url": "https://www.space.com/space-exploration/on-this-day-in-space-september-13-2026",
       "confidence": 61,
       "importance": 65,
-      "freshness": 71,
-      "momentum": 55,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 35
+      "rank": 36
     },
     {
       "id": "TP-b5ed0a654b07",
@@ -998,15 +1024,15 @@
       "url": "https://www.theverge.com/entertainment/994415/the-units-digital-stimulation-synthpunk-review",
       "confidence": 61,
       "importance": 65,
-      "freshness": 71,
-      "momentum": 55,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 36
+      "rank": 37
     },
     {
       "id": "TP-8782ef3fe0d9",
@@ -1023,16 +1049,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2252850/why-car-manufacturers-ditching-carplay-explained/",
       "confidence": 58,
-      "importance": 63,
-      "freshness": 71,
-      "momentum": 55,
+      "importance": 62,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 37
+      "rank": 38
     },
     {
       "id": "TP-7e363c87d8ff",
@@ -1050,15 +1076,15 @@
       "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
       "confidence": 61,
       "importance": 64,
-      "freshness": 69,
-      "momentum": 54,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 38
+      "rank": 39
     },
     {
       "id": "TP-84368f904a80",
@@ -1076,15 +1102,15 @@
       "url": "https://www.engadget.com/2251471/useful-accessories-help-extend-hdmi-on-a-budget/",
       "confidence": 58,
       "importance": 62,
-      "freshness": 69,
-      "momentum": 54,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 39
+      "rank": 40
     },
     {
       "id": "TP-8dd5fbf0fb91",
@@ -1102,7 +1128,7 @@
       "url": "https://techcrunch.com/2026/09/13/techcrunch-mobility-lyft-has-entered-the-robotaxi-chat/",
       "confidence": 61,
       "importance": 64,
-      "freshness": 68,
+      "freshness": 67,
       "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1110,7 +1136,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 40
+      "rank": 41
     },
     {
       "id": "TP-00e28d8e61b2",
@@ -1128,7 +1154,7 @@
       "url": "https://www.engadget.com/2252840/psx-ps2-console-history-rarely-sold-outside-japan/",
       "confidence": 58,
       "importance": 62,
-      "freshness": 68,
+      "freshness": 67,
       "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1136,7 +1162,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 41
+      "rank": 42
     },
     {
       "id": "TP-40eab0ad9468",
@@ -1154,15 +1180,15 @@
       "url": "https://www.engadget.com/2252834/laptop-trackpad-popping-out-stop-using-immediately-battery-swelling/",
       "confidence": 58,
       "importance": 62,
-      "freshness": 67,
-      "momentum": 53,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 42
+      "rank": 43
     },
     {
       "id": "TP-ab8f11d943e3",
@@ -1180,7 +1206,7 @@
       "url": "https://www.space.com/entertainment/best-underground-sci-fi-movies",
       "confidence": 61,
       "importance": 64,
-      "freshness": 66,
+      "freshness": 65,
       "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1188,7 +1214,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 43
+      "rank": 44
     },
     {
       "id": "TP-3d8e62048c7e",
@@ -1205,8 +1231,8 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2251050/apple-wired-earpods-still-worth-buying/",
       "confidence": 58,
-      "importance": 62,
-      "freshness": 66,
+      "importance": 61,
+      "freshness": 65,
       "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1214,7 +1240,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 44
+      "rank": 45
     },
     {
       "id": "TP-08e734e81a0e",
@@ -1232,15 +1258,15 @@
       "url": "https://www.engadget.com/2252831/what-use-instead-of-docking-station/",
       "confidence": 58,
       "importance": 61,
-      "freshness": 65,
-      "momentum": 52,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 45
+      "rank": 46
     },
     {
       "id": "TP-a195e107fc6a",
@@ -1257,20 +1283,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/transportation/994405/waymo-pulls-over-calls-cops-on-riders-with-a-ghost-gun",
       "confidence": 61,
-      "importance": 64,
-      "freshness": 65,
-      "momentum": 52,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 46
+      "rank": 47
     },
     {
       "id": "TP-d26b4c1b12e7",
-      "cluster_id": "CL-0109",
+      "cluster_id": "CL-0110",
       "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
       "summary": "Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1284,15 +1310,15 @@
       "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
       "confidence": 64,
       "importance": 66,
-      "freshness": 65,
-      "momentum": 52,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 47
+      "rank": 48
     },
     {
       "id": "TP-cb490fbdc0da",
@@ -1310,7 +1336,7 @@
       "url": "https://www.space.com/space-exploration/international-space-station/nasa-astronaut-jessica-meir-shares-zero-g-curly-hair-tips-from-the-iss-video",
       "confidence": 61,
       "importance": 63,
-      "freshness": 64,
+      "freshness": 63,
       "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1318,7 +1344,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 48
+      "rank": 49
     },
     {
       "id": "TP-2d3313f6b738",
@@ -1336,7 +1362,7 @@
       "url": "https://www.engadget.com/2252825/how-to-set-up-hdmi-cec-samsung-tv/",
       "confidence": 58,
       "importance": 61,
-      "freshness": 64,
+      "freshness": 63,
       "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1344,7 +1370,7 @@
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 49
+      "rank": 50
     },
     {
       "id": "TP-0843fa3c4c22",
@@ -1361,16 +1387,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2252829/never-use-harsh-cleaning-products-clean-smartphone/",
       "confidence": 58,
-      "importance": 61,
-      "freshness": 63,
-      "momentum": 51,
+      "importance": 60,
+      "freshness": 62,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 50
+      "rank": 51
     },
     {
       "id": "TP-f107b633a8cb",
@@ -1387,8 +1413,8 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/13/fusion-power-startups-find-new-partners-in-the-defense-world/",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 62,
+      "importance": 62,
+      "freshness": 61,
       "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1396,7 +1422,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 51
+      "rank": 52
     },
     {
       "id": "TP-8b3e9b480435",
@@ -1413,8 +1439,8 @@
       "source_type": "secondary",
       "url": "https://www.space.com/astronomy/james-webb-space-telescope/james-webb-space-telescope-discovers-the-rings-of-tiny-solar-system-body-chariklo-are-changing",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 62,
+      "importance": 62,
+      "freshness": 61,
       "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1422,7 +1448,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 52
+      "rank": 53
     },
     {
       "id": "TP-412b3ff5ad98",
@@ -1440,15 +1466,15 @@
       "url": "https://www.theverge.com/entertainment/994393/your-mother-your-mother-your-mother-review-tiff-2026",
       "confidence": 61,
       "importance": 62,
-      "freshness": 58,
-      "momentum": 48,
+      "freshness": 57,
+      "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 53
+      "rank": 54
     },
     {
       "id": "TP-8e54f164b9f3",
@@ -1466,8 +1492,8 @@
       "url": "https://arstechnica.com/gadgets/2026/09/i-fixed-a-tractor-using-john-deeres-self-repair-service-farmers-arent-sold-on-it/",
       "confidence": 70,
       "importance": 73,
-      "freshness": 58,
-      "momentum": 64,
+      "freshness": 57,
+      "momentum": 63,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
@@ -1481,7 +1507,7 @@
           "url": "https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "id": "TP-60fab3839a09",
@@ -1499,15 +1525,15 @@
       "url": "https://www.wired.com/story/best-smart-bird-feeders/",
       "confidence": 61,
       "importance": 62,
-      "freshness": 58,
-      "momentum": 48,
+      "freshness": 57,
+      "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 55
+      "rank": 56
     },
     {
       "id": "TP-88c924d36d8a",
@@ -1524,8 +1550,8 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/iphone-settings-ios-27-safari-browser/",
       "confidence": 61,
-      "importance": 62,
-      "freshness": 57,
+      "importance": 61,
+      "freshness": 56,
       "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1533,7 +1559,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 56
+      "rank": 57
     },
     {
       "id": "TP-306314741cd5",
@@ -1550,8 +1576,8 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/gallery/best-indoor-gardening-systems/",
       "confidence": 61,
-      "importance": 62,
-      "freshness": 57,
+      "importance": 61,
+      "freshness": 56,
       "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1559,7 +1585,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 57
+      "rank": 58
     },
     {
       "id": "TP-9ad6daa4420a",
@@ -1577,15 +1603,15 @@
       "url": "https://www.wired.com/review/coway-airmega-halo/",
       "confidence": 61,
       "importance": 61,
-      "freshness": 56,
-      "momentum": 47,
+      "freshness": 55,
+      "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 58
+      "rank": 59
     },
     {
       "id": "TP-208f51d1dc28",
@@ -1603,15 +1629,15 @@
       "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
       "confidence": 61,
       "importance": 61,
-      "freshness": 56,
-      "momentum": 47,
+      "freshness": 55,
+      "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 59
+      "rank": 60
     },
     {
       "id": "TP-2a1f7670c751",
@@ -1629,15 +1655,15 @@
       "url": "https://www.space.com/stargazing/dont-miss-venus-shine-beside-the-crescent-moon-at-sunset-tonight",
       "confidence": 61,
       "importance": 61,
-      "freshness": 56,
-      "momentum": 47,
+      "freshness": 55,
+      "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 60
+      "rank": 61
     },
     {
       "id": "TP-4981e9e9eb88",
@@ -1655,7 +1681,7 @@
       "url": "https://www.wired.com/story/physics-predict-volcanic-eruptions/",
       "confidence": 61,
       "importance": 61,
-      "freshness": 55,
+      "freshness": 54,
       "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1663,7 +1689,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 61
+      "rank": 62
     },
     {
       "id": "TP-cedfaa2baa38",
@@ -1680,8 +1706,8 @@
       "source_type": "primary",
       "url": "https://science.nasa.gov/image-article/apod-2026-september-13-comet-neowise-rising-over-the-adriatic-sea/",
       "confidence": 75,
-      "importance": 63,
-      "freshness": 44,
+      "importance": 62,
+      "freshness": 43,
       "momentum": 40,
       "verification_status": "VERIFIED",
       "status": "NEW",
@@ -1689,7 +1715,7 @@
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 62
+      "rank": 63
     },
     {
       "id": "TP-014b0fffb815",
@@ -1707,15 +1733,15 @@
       "url": "https://techcrunch.com/2026/09/12/automattic-confirms-mullenweg-has-returned-as-ceo-after-attempted-ouster-by-board/",
       "confidence": 61,
       "importance": 56,
-      "freshness": 35,
-      "momentum": 35,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 63
+      "rank": 64
     },
     {
       "id": "TP-921d214a1027",
@@ -1733,7 +1759,7 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
       "confidence": 67,
       "importance": 64,
-      "freshness": 30,
+      "freshness": 29,
       "momentum": 48,
       "verification_status": "VERIFIED",
       "status": "NEW",
@@ -1748,7 +1774,7 @@
           "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/"
         }
       ],
-      "rank": 64
+      "rank": 65
     },
     {
       "id": "TP-92390331b970",
@@ -1766,7 +1792,7 @@
       "url": "https://www.theverge.com/games/994371/starcraft-returns-in-2030-as-an-open-world-shooter",
       "confidence": 61,
       "importance": 54,
-      "freshness": 28,
+      "freshness": 27,
       "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1774,7 +1800,7 @@
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 65
+      "rank": 66
     },
     {
       "id": "TP-7658eb64cf66",
@@ -1792,15 +1818,15 @@
       "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
       "confidence": 61,
       "importance": 54,
-      "freshness": 27,
-      "momentum": 31,
+      "freshness": 26,
+      "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 66
+      "rank": 67
     },
     {
       "id": "TP-94903067997a",
@@ -1818,7 +1844,7 @@
       "url": "https://techcrunch.com/2026/09/12/tesla-says-it-will-finally-unveil-the-second-generation-roadster-on-october-1/",
       "confidence": 61,
       "importance": 54,
-      "freshness": 26,
+      "freshness": 25,
       "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1826,7 +1852,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 67
+      "rank": 68
     },
     {
       "id": "TP-07e30d1ae0c5",
@@ -1843,8 +1869,8 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 17,
+      "importance": 51,
+      "freshness": 16,
       "momentum": 25,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -1852,11 +1878,11 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 68
+      "rank": 69
     },
     {
       "id": "TP-b2afa0cac99b",
-      "cluster_id": "CL-0110",
+      "cluster_id": "CL-0111",
       "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
       "summary": "The Dutch Nationaal Cyber Security Centrum (NCSC) is warning of imminent exploitation of two critical flaws in Check Point VPN tracked as CVE-2026-85102 and CVE-2026-85103. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1869,16 +1895,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
       "confidence": 64,
-      "importance": 54,
-      "freshness": 16,
-      "momentum": 25,
+      "importance": 53,
+      "freshness": 15,
+      "momentum": 24,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 69
+      "rank": 70
     },
     {
       "id": "TP-76def113f7c3",
@@ -1896,15 +1922,15 @@
       "url": "https://www.space.com/space-exploration/trump-is-proposing-a-us-space-academy-if-created-it-could-blur-the-lines-between-nasa-and-the-military-op-ed",
       "confidence": 61,
       "importance": 51,
-      "freshness": 16,
-      "momentum": 25,
+      "freshness": 15,
+      "momentum": 24,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 70
+      "rank": 71
     },
     {
       "id": "TP-5a1c6c0ca1e6",
@@ -1922,15 +1948,15 @@
       "url": "https://www.space.com/space-exploration/on-this-day-in-space-september-12-2026",
       "confidence": 61,
       "importance": 51,
-      "freshness": 16,
-      "momentum": 25,
+      "freshness": 15,
+      "momentum": 24,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 71
+      "rank": 72
     },
     {
       "id": "TP-81a40d5d3847",
@@ -1947,16 +1973,16 @@
       "source_type": "secondary",
       "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-227-trekmania",
       "confidence": 61,
-      "importance": 51,
-      "freshness": 14,
-      "momentum": 24,
+      "importance": 50,
+      "freshness": 13,
+      "momentum": 23,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 72
+      "rank": 73
     },
     {
       "id": "TP-13d1593918ea",
@@ -1973,16 +1999,16 @@
       "source_type": "secondary",
       "url": "https://www.space.com/entertainment/space-movies-shows/the-best-star-trek-spaceships-14-classic-vessels-from-the-federation-and-beyond",
       "confidence": 61,
-      "importance": 51,
-      "freshness": 14,
-      "momentum": 24,
+      "importance": 50,
+      "freshness": 13,
+      "momentum": 23,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 73
+      "rank": 74
     },
     {
       "id": "TP-28ae2b4a6133",
@@ -2000,15 +2026,15 @@
       "url": "https://www.space.com/stargazing/astrophotography/perseid-meteors-meet-mesmerizing-star-trails-over-egypts-western-desert",
       "confidence": 61,
       "importance": 50,
-      "freshness": 12,
-      "momentum": 23,
+      "freshness": 11,
+      "momentum": 22,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 74
+      "rank": 75
     },
     {
       "id": "TP-9059847c35ec",
@@ -2026,15 +2052,15 @@
       "url": "https://www.wired.com/gallery/best-standing-desks/",
       "confidence": 61,
       "importance": 50,
-      "freshness": 10,
-      "momentum": 22,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 75
+      "rank": 76
     },
     {
       "id": "TP-55f997459685",
@@ -2052,15 +2078,15 @@
       "url": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
       "confidence": 64,
       "importance": 52,
-      "freshness": 10,
-      "momentum": 22,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 76
+      "rank": 77
     },
     {
       "id": "TP-f779e5bb5c7d",
@@ -2078,15 +2104,15 @@
       "url": "https://www.wired.com/story/the-anti-woke-right-cant-figure-out-how-to-stop-grand-theft-auto-vi/",
       "confidence": 61,
       "importance": 50,
-      "freshness": 10,
-      "momentum": 22,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 77
+      "rank": 78
     },
     {
       "id": "TP-2caa28d2a8d5",
@@ -2103,16 +2129,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/gallery/best-apple-3-in-1-wireless-chargers/",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 9,
-      "momentum": 21,
+      "importance": 49,
+      "freshness": 8,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 78
+      "rank": 79
     },
     {
       "id": "TP-9d12233ef30f",
@@ -2129,16 +2155,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 9,
-      "momentum": 21,
+      "importance": 49,
+      "freshness": 8,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 79
+      "rank": 80
     },
     {
       "id": "TP-44140b17ff89",
@@ -2156,7 +2182,7 @@
       "url": "https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/",
       "confidence": 61,
       "importance": 49,
-      "freshness": 8,
+      "freshness": 7,
       "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2164,7 +2190,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 80
+      "rank": 81
     },
     {
       "id": "TP-3156033ee50d",
@@ -2182,7 +2208,7 @@
       "url": "https://www.wired.com/review/branch-ergonomic-chair-pro-sega-edition/",
       "confidence": 61,
       "importance": 49,
-      "freshness": 8,
+      "freshness": 7,
       "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2190,7 +2216,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 81
+      "rank": 82
     },
     {
       "id": "TP-7a6324f0690f",
@@ -2208,7 +2234,7 @@
       "url": "https://www.space.com/astronomy/moon/nasa-ibm-launch-new-ai-model-for-studying-the-moon",
       "confidence": 61,
       "importance": 49,
-      "freshness": 8,
+      "freshness": 7,
       "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -2216,7 +2242,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 82
+      "rank": 83
     },
     {
       "id": "TP-cc38ffd0a6b7",
@@ -2234,15 +2260,15 @@
       "url": "https://www.wired.com/story/you-dont-have-right-to-safe-drinking-water-trump-appointed-judge-rules/",
       "confidence": 61,
       "importance": 49,
-      "freshness": 7,
-      "momentum": 20,
+      "freshness": 6,
+      "momentum": 19,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 83
+      "rank": 84
     },
     {
       "id": "TP-4fb7c0b8bdda",
@@ -2268,7 +2294,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 84
+      "rank": 85
     },
     {
       "id": "TP-fad5f970d050",
@@ -2294,7 +2320,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 85
+      "rank": 86
     },
     {
       "id": "TP-c4d5b05bf085",
@@ -2320,7 +2346,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 86
+      "rank": 87
     },
     {
       "id": "TP-d7b2f7525c3f",
@@ -2346,7 +2372,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 87
+      "rank": 88
     },
     {
       "id": "TP-ccfd05f69c6f",
@@ -2372,7 +2398,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 88
+      "rank": 89
     },
     {
       "id": "TP-23758e513507",
@@ -2398,7 +2424,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 89
+      "rank": 90
     },
     {
       "id": "TP-87a38f268c96",
@@ -2424,7 +2450,7 @@
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 90
+      "rank": 91
     },
     {
       "id": "TP-2619d8ade240",
@@ -2450,7 +2476,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 91
+      "rank": 92
     },
     {
       "id": "TP-b3b4818aa362",
@@ -2476,7 +2502,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 92
+      "rank": 93
     },
     {
       "id": "TP-fcee508a52c7",
@@ -2502,7 +2528,7 @@
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 93
+      "rank": 94
     },
     {
       "id": "TP-c9bc20e4988d",
@@ -2528,7 +2554,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 94
+      "rank": 95
     },
     {
       "id": "TP-c9ae2a448b44",
@@ -2554,7 +2580,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 95
+      "rank": 96
     },
     {
       "id": "TP-54bc95a279e4",
@@ -2580,11 +2606,11 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 96
+      "rank": 97
     },
     {
       "id": "TP-c22ddbfe304e",
-      "cluster_id": "CL-0111",
+      "cluster_id": "CL-0112",
       "title": "Hackers abused Claude to extract secrets from 1.8M Android apps",
       "summary": "Anthropic says multiple threat groups, including the financially motivated and state-sponsored espionage groups linked to Russia and China, tried to abuse its Claude AI model for malicious purposes. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2606,7 +2632,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 97
+      "rank": 98
     },
     {
       "id": "TP-bc7fdc500a76",
@@ -2632,7 +2658,7 @@
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 98
+      "rank": 99
     },
     {
       "id": "TP-7c9d6a6bcf7d",
@@ -2656,32 +2682,6 @@
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
-      ],
-      "corroborating_sources": [],
-      "rank": 99
-    },
-    {
-      "id": "TP-0d444d4e751e",
-      "cluster_id": "CL-0144",
-      "title": "Help Refine Data from Space Telescopes with Artifact InSPECtor",
-      "summary": "How do scientists studying space with data from a telescope hundreds of thousands of miles away know that what they are seeing is real? A new NASA project, Artifact InSPECtor, invites you to find out – and by doing so, to help missions like Euclid and NASA’s new Nancy Grace Roman Space Telescope answer fundamental […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Space",
-      "subcategory": "Space",
-      "published_at": "2026-09-11T19:48:09+00:00",
-      "source": "NASA News",
-      "source_type": "primary",
-      "url": "https://science.nasa.gov/get-involved/citizen-science/help-refine-data-from-space-telescopes-with-artifact-inspector/",
-      "confidence": 75,
-      "importance": 52,
-      "freshness": 0,
-      "momentum": 16,
-      "verification_status": "VERIFIED",
-      "status": "NEW",
-      "tags": [
-        "NASA News"
       ],
       "corroborating_sources": [],
       "rank": 100
