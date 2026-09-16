@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "product": "TechPulse",
-  "generated_at": "2026-09-16T05:35:23.180517+00:00",
+  "generated_at": "2026-09-16T10:44:22.979514+00:00",
   "article_count": 100,
-  "source_count": 12,
+  "source_count": 11,
   "source_health": [
     {
       "source": "TechCrunch",
@@ -52,8 +52,8 @@
     },
     {
       "source": "NASA News",
-      "status": "HEALTHY",
-      "articles": 10
+      "status": "WARNING",
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "source": "Space.com",
@@ -73,8 +73,528 @@
   ],
   "articles": [
     {
+      "id": "TP-9ec52daee72f",
+      "cluster_id": "CL-0001",
+      "title": "Amazon launches Alexa+ in India with Hindi support",
+      "summary": "Amazon is letting all customers use Alexa+ assistant in early access period",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T10:34:47+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 100,
+      "momentum": 71,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 1
+    },
+    {
+      "id": "TP-9baa2ad6905f",
+      "cluster_id": "CL-0051",
+      "title": "Introducing the WIRED App",
+      "summary": "The app is the best way to read, watch, and listen to WIRED’s journalism.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T10:30:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/introducing-the-wired-app/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 100,
+      "momentum": 71,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 2
+    },
+    {
+      "id": "TP-5b40dc3d0a54",
+      "cluster_id": "CL-0052",
+      "title": "Hackers Got Inside a Flock Camera. Its Data Shows How the System Really Works",
+      "summary": "A hacker collective pulled down a Flock camera and dumped its data. The files included thousands of videos and logs showing that the device captured 1.6 million images of 50,000 vehicles in 21 days.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "published_at": "2026-09-16T10:30:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 100,
+      "momentum": 71,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 3
+    },
+    {
+      "id": "TP-fd06f740006a",
+      "cluster_id": "CL-0053",
+      "title": "The EU Bans Social Media For Under-13s",
+      "summary": "The bloc wants to curb Big Tech’s grip on children with its new EU KIDS ACTS, but age checks, parental oversight, and privacy concerns could make its plan difficult to implement.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T10:19:46+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/the-eu-bans-social-media-for-under-13s/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 4
+    },
+    {
+      "id": "TP-449d0fc05141",
+      "cluster_id": "CL-0170",
+      "title": "John Lithgow's High Fantasy Masterpiece Is Officially a Global Streaming Sensation",
+      "summary": "John Lithgow's great performance in Shrek is one of the several reasons why it's such a beloved film, even 25 years later.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Gaming",
+      "subcategory": "Gaming",
+      "published_at": "2026-09-16T10:08:12+00:00",
+      "source": "Polygon",
+      "source_type": "secondary",
+      "url": "https://www.polygon.com/shrek-netflix-top-streaming-worldwide/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Polygon"
+      ],
+      "corroborating_sources": [],
+      "rank": 5
+    },
+    {
+      "id": "TP-160baaef120b",
+      "cluster_id": "CL-0054",
+      "title": "Best Robot Vacuum of 2026: Shark, Eufy, Roborock",
+      "summary": "My hands-on tests reveal which models can scrub stains, reach difficult corners, and navigate a chaotic home.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T10:06:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/best-robot-vacuum/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 6
+    },
+    {
+      "id": "TP-4c1735b51aef",
+      "cluster_id": "CL-0055",
+      "title": "How Self-Driving Cars Might Change Crash Testing Forever",
+      "summary": "Lie down in a car, and you’re more likely to get seriously hurt in a crash. But a driverless future is forcing governments to revisit long-standing safety issues.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T10:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/how-self-driving-cars-might-change-crash-testing-forever/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 7
+    },
+    {
+      "id": "TP-4d7d37407252",
+      "cluster_id": "CL-0140",
+      "title": "Russia launching 3 tons of cargo to the space station today: Watch it live",
+      "summary": "Russia plans to launch a cargo mission to the International Space Station today (Sept. 16), and you can watch the action live. The robotic Progress 96 spacecraft is scheduled to lift off atop a Soyuz rocket from the Russian-run Baikonur Cosmodrome in Kazakhstan today at 9:33 a.m. EDT (1333 GMT). You can watch it live here at Space.com courtesy of NASA, or directly via the agency, beginning at 9:15 a.m. EDT (1315 GMT). Roscosmos' Progress 92 cargo spacecraft is photographed in March 2026 from the International Space Station as it flies into an orbital sunset 267 miles above Earth’s surface. (Image credit: NASA) Progress 96 is loaded with about 3 tons of food, propellant and other supplies for the astronauts aboard the International Space Station (ISS). The freighter will deliver this cargo two days after launch, if all goes according to plan. You'll be able to watch rendezvous and docking activities when the time comes. The freighter will remain docked to the orbiting lab for about five months. It will then be loaded up with trash and sent down to a fiery death in Earth's atmosphere over the Pacific Ocean. The Progress 94 spacecraft met this fate on Sept. 7, departing from ISS' Pois",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T10:00:00+00:00",
+      "source": "Space.com",
+      "source_type": "secondary",
+      "url": "https://www.space.com/space-exploration/international-space-station/russia-progress-96-cargo-launch-international-space-station",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Space.com"
+      ],
+      "corroborating_sources": [],
+      "rank": 8
+    },
+    {
+      "id": "TP-9f36f75abf86",
+      "cluster_id": "CL-0056",
+      "title": "Boox Launches the Palma 3 E-Reader",
+      "summary": "The e-paper device maker also launched two new color digital notebooks last night, the Note Air6 C and Mini C.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T09:36:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/boox-palma-3-announced/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 98,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 9
+    },
+    {
+      "id": "TP-784ab7c1a01f",
+      "cluster_id": "CL-0057",
+      "title": "China Isn’t Buying Silicon Valley’s Call for an AI Slowdown",
+      "summary": "The US and China agree that advanced AI poses serious risks. But Beijing is deeply skeptical of a deal that prioritizes keeping US companies ahead.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T09:30:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/china-isnt-buying-silicon-valley-call-for-ai-slowdown/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 98,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 10
+    },
+    {
+      "id": "TP-c8af836a3521",
+      "cluster_id": "CL-0058",
+      "title": "Why It Seems Like Great White Sharks Are Overrunning Maine",
+      "summary": "While a bunch of sharks cruising the Maine coast may seem ominous, it’s actually a sign of a conservation success story.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T09:15:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/why-great-white-sharks-are-overrunning-maine/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 11
+    },
+    {
+      "id": "TP-f62631f5ca2b",
+      "cluster_id": "CL-0105",
+      "title": "Windows Server 2022 reaches end of mainstream support next month",
+      "summary": "Microsoft has reminded customers that Windows Server 2022 will reach the end of mainstream support next month and enter extended support until October 2031. [...]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T09:10:20+00:00",
+      "source": "BleepingComputer",
+      "source_type": "secondary",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-next-month/",
+      "confidence": 64,
+      "importance": 74,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "BleepingComputer"
+      ],
+      "corroborating_sources": [],
+      "rank": 12
+    },
+    {
+      "id": "TP-90caebba2c88",
+      "cluster_id": "CL-0059",
+      "title": "Best 2-in-1 Laptops (2026): Microsoft, Lenovo, and the iPad",
+      "summary": "These portable computers balance tablet and laptop functionality, whether you want a screen that detaches or spins.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Enterprise",
+      "subcategory": "Enterprise",
+      "published_at": "2026-09-16T09:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/best-2-in-1-laptops/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 13
+    },
+    {
+      "id": "TP-25d05a7a2b53",
+      "cluster_id": "CL-0060",
+      "title": "Polymarket’s Next Bet? It Can Also Be a Media Company",
+      "summary": "The legal battle over whether prediction markets are a form of gambling has overshadowed something else entirely: They’re already a new form of media.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T09:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/prediction-markets-polymarket-media-company-kalshi/",
+      "confidence": 61,
+      "importance": 72,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 14
+    },
+    {
+      "id": "TP-d7f0ca5ac682",
+      "cluster_id": "CL-0021",
+      "title": "Meta is reportedly ready to launch less pervy smart glasses",
+      "summary": "Meta may be ready to reveal a new pair of smart glasses with no camera at all, amid a PR crisis for the company caused by the video recording capabilities of its flagship smart glasses. A new report from The Information claims the camera-free glasses, codenamed Luna, could be revealed as soon as the Meta […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T08:54:46+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect",
+      "confidence": 61,
+      "importance": 71,
+      "freshness": 96,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
+      "rank": 15
+    },
+    {
+      "id": "TP-63b193dabff0",
+      "cluster_id": "CL-0075",
+      "title": "The new Boox Palma 3 comes with stylus support and an aluminum build",
+      "summary": "Boox has unveiled three new E Ink devices, including the Palma 3.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "published_at": "2026-09-16T08:35:49+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2259862/boox-palma-3-note-air6-c-mini-c/",
+      "confidence": 58,
+      "importance": 69,
+      "freshness": 96,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 16
+    },
+    {
+      "id": "TP-b08bbe6d5110",
+      "cluster_id": "CL-0061",
+      "title": "‘Smart’ Nanoparticles Deliver mRNA Directly to Tumors in New Cancer Therapy",
+      "summary": "The treatment can reprogram immune cells that have been corrupted by the cancer, strengthening the body’s ability to attack.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T08:30:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/smart-nanoparticles-deliver-mrna-directly-to-tumors-in-new-cancer-therapy/",
+      "confidence": 61,
+      "importance": 71,
+      "freshness": 96,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 17
+    },
+    {
+      "id": "TP-505f7aaf2b3e",
+      "cluster_id": "CL-0171",
+      "title": "10 BG3 Characters Fans Still Want as Companions",
+      "summary": "A new mod finally makes Mizora a real companion. Here are 9 more BG3 NPCs who deserve the same treatment.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Gaming",
+      "subcategory": "Gaming",
+      "published_at": "2026-09-16T08:00:15+00:00",
+      "source": "Polygon",
+      "source_type": "secondary",
+      "url": "https://www.polygon.com/bg3-best-non-companion-npcs/",
+      "confidence": 58,
+      "importance": 69,
+      "freshness": 95,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Polygon"
+      ],
+      "corroborating_sources": [],
+      "rank": 18
+    },
+    {
+      "id": "TP-706b05ecb86e",
+      "cluster_id": "CL-0106",
+      "title": "Google fixes actively exploited Android zero-day on Pixel devices",
+      "summary": "Google has released the September 2026 security patches to address 110 vulnerabilities affecting its Pixel devices, including one zero-day flaw actively exploited in targeted attacks. [...]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Cybersecurity",
+      "subcategory": "Cybersecurity",
+      "published_at": "2026-09-16T07:00:19+00:00",
+      "source": "BleepingComputer",
+      "source_type": "secondary",
+      "url": "https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-zero-day-on-pixel-devices/",
+      "confidence": 64,
+      "importance": 73,
+      "freshness": 93,
+      "momentum": 67,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "BleepingComputer"
+      ],
+      "corroborating_sources": [],
+      "rank": 19
+    },
+    {
+      "id": "TP-cc26d2086e12",
+      "cluster_id": "CL-0076",
+      "title": "Meta is reportedly gearing up to launch new smart glasses without a camera",
+      "summary": "Meta will soon unveil new camera-free smart glasses, according to The Information.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T06:49:32+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2259838/meta-smart-glasses-without-a-camera/",
+      "confidence": 58,
+      "importance": 68,
+      "freshness": 92,
+      "momentum": 67,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 20
+    },
+    {
       "id": "TP-86c26bdf0dbe",
-      "cluster_id": "CL-0178",
+      "cluster_id": "CL-0172",
       "title": "5 Best LitRPG Books to Read After 'Dungeon Crawler Carl'",
       "summary": "Level up with stories of innkeepers, dark lords, and aliens",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -87,20 +607,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/5-litrpg-books-to-read-after-dungeon-crawler-carl/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 1
+      "rank": 21
     },
     {
-      "id": "TP-604657864c0e",
-      "cluster_id": "CL-0051",
+      "id": "TP-057fef7b8bbd",
+      "cluster_id": "CL-0066",
       "title": "Walmart Promo Codes: 20% Off for September 2026",
       "summary": "Score $10 off with our Walmart promo codes and coupon, and shop flash deals up to 65% off today.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -114,7 +634,7 @@
       "url": "https://www.wired.com/story/top-walmart-promo-codes/",
       "confidence": 61,
       "importance": 100,
-      "freshness": 99,
+      "freshness": 89,
       "momentum": 100,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
@@ -143,11 +663,11 @@
           "url": "https://www.wired.com/story/casetify-promo-code/"
         }
       ],
-      "rank": 2
+      "rank": 22
     },
     {
       "id": "TP-fec08c2f151e",
-      "cluster_id": "CL-0054",
+      "cluster_id": "CL-0062",
       "title": "Bose Promo Code: 40% Off for September 2026",
       "summary": "Get at least 40% off headphones, speakers, soundbars, and other audio products from Bose.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -160,9 +680,9 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/bose-coupon-code/",
       "confidence": 61,
-      "importance": 90,
-      "freshness": 99,
-      "momentum": 100,
+      "importance": 88,
+      "freshness": 89,
+      "momentum": 97,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
@@ -171,72 +691,20 @@
       "corroborating_sources": [
         {
           "source": "WIRED",
-          "title": "Babbel Promo Code: Up to 65% Off in September 2026",
-          "url": "https://www.wired.com/story/babbel-promo-code/"
+          "title": "Breville Promo Code: $700 Off | September 2026",
+          "url": "https://www.wired.com/story/breville-promo-code/"
         },
         {
           "source": "WIRED",
-          "title": "Breville Promo Code: $700 Off | September 2026",
-          "url": "https://www.wired.com/story/breville-promo-code/"
+          "title": "Babbel Promo Code: Up to 65% Off in September 2026",
+          "url": "https://www.wired.com/story/babbel-promo-code/"
         }
       ],
-      "rank": 3
-    },
-    {
-      "id": "TP-d4a57f0a68ad",
-      "cluster_id": "CL-0052",
-      "title": "Sam's Club Promo Codes and Membership Deals for September 2026",
-      "summary": "Save on bulk groceries, household essentials, and electronics with a verified Sam's Club promo code or membership discount.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-16T05:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/sams-club-coupon/",
-      "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 4
-    },
-    {
-      "id": "TP-d5a5fb5e4d20",
-      "cluster_id": "CL-0053",
-      "title": "Rover Promo Codes and Referral Deals for 2026",
-      "summary": "Score your Rover promo code for 2026.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-16T05:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/rover-promo-code/",
-      "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 5
+      "rank": 23
     },
     {
       "id": "TP-d3052761b0a4",
-      "cluster_id": "CL-0055",
+      "cluster_id": "CL-0063",
       "title": "Office Depot Coupons: $20 Off September 2026",
       "summary": "From furniture and ink to professional printing services, use an Office Depot discount code to maximize your savings on every workspace essential.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -249,20 +717,20 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/office-depot-promo-codes/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 6
+      "rank": 24
     },
     {
       "id": "TP-7b2bd90ddde5",
-      "cluster_id": "CL-0056",
+      "cluster_id": "CL-0064",
       "title": "Naturepedic Promo Codes: Get 20% Off Plus Free Pillows",
       "summary": "Shop the Naturepedic sale this September 2026.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -275,20 +743,20 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/naturepedic-promo-code/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 7
+      "rank": 25
     },
     {
       "id": "TP-afd04ec842fb",
-      "cluster_id": "CL-0057",
+      "cluster_id": "CL-0065",
       "title": "Chegg Coupon Codes September 2026: Save on Study, Textbooks, & More",
       "summary": "Unlock Chegg promo codes, student discounts, and free trials for Chegg Study and Chegg Writing.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -301,48 +769,22 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/chegg-coupon-code/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 8
+      "rank": 26
     },
     {
-      "id": "TP-81d642c5f65d",
-      "cluster_id": "CL-0058",
-      "title": "HostGator Coupon Codes: 76% Off Hosting in September 2026",
-      "summary": "Unlock massive savings on HostGator web hosting, WordPress, VPS, and business email plans with our exclusive HostGator promo codes and deals.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-16T05:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/hostgator-coupon/",
-      "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 9
-    },
-    {
-      "id": "TP-6662f5bbb2bf",
-      "cluster_id": "CL-0059",
-      "title": "Visible Promo Codes and Coupons for September 2026",
-      "summary": "Find great deals and promo codes for Visible at WIRED and save big, whether you're a long-time customer or a newbie.",
+      "id": "TP-d4a57f0a68ad",
+      "cluster_id": "CL-0067",
+      "title": "Sam's Club Promo Codes and Membership Deals for September 2026",
+      "summary": "Save on bulk groceries, household essentials, and electronics with a verified Sam's Club promo code or membership discount.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
       "what_changes": "No additional practical change is asserted beyond the available source evidence.",
       "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
@@ -351,24 +793,24 @@
       "published_at": "2026-09-16T05:00:00+00:00",
       "source": "WIRED",
       "source_type": "secondary",
-      "url": "https://www.wired.com/story/visible-promo-code/",
+      "url": "https://www.wired.com/story/sams-club-coupon/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 10
+      "rank": 27
     },
     {
-      "id": "TP-7f4ff98756ca",
-      "cluster_id": "CL-0060",
-      "title": "Factor Promo Code: 50% Off Off Meal Prep",
-      "summary": "Make meal prep easier for any dietary need while enjoying great savings with our hand-picked Factor discount codes this September.",
+      "id": "TP-d5a5fb5e4d20",
+      "cluster_id": "CL-0068",
+      "title": "Rover Promo Codes and Referral Deals for 2026",
+      "summary": "Score your Rover promo code for 2026.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
       "what_changes": "No additional practical change is asserted beyond the available source evidence.",
       "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
@@ -377,48 +819,22 @@
       "published_at": "2026-09-16T05:00:00+00:00",
       "source": "WIRED",
       "source_type": "secondary",
-      "url": "https://www.wired.com/story/factor-promo-code/",
+      "url": "https://www.wired.com/story/rover-promo-code/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 11
-    },
-    {
-      "id": "TP-51198a4414ac",
-      "cluster_id": "CL-0061",
-      "title": "Barkbox Promo Codes and Discounts: Up to 50% Off",
-      "summary": "Save on Barkbox subscriptions, including monthly themed collections of plush toys, tough chews, and healthy snacks designed to keep your pup’s tail wagging.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-16T05:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/barkbox-promo-code/",
-      "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 12
+      "rank": 28
     },
     {
       "id": "TP-773fa11cabd9",
-      "cluster_id": "CL-0062",
+      "cluster_id": "CL-0069",
       "title": "Chirp Discount Codes: 67% Off",
       "summary": "Use these verified Chirp coupon codes and shopping tips to score up to 67% off wheels, up to 50% off refurbished products, and more.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -431,20 +847,20 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/chirp-discount-code/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 13
+      "rank": 29
     },
     {
       "id": "TP-cb219c1ef6e2",
-      "cluster_id": "CL-0063",
+      "cluster_id": "CL-0070",
       "title": "Jabra Promo Codes: 30% Off Headphones, Headsets & More",
       "summary": "Unlock significant savings on Jabra headphones, headsets, and speakers with our verified promo codes, exclusive coupons, and limited-time deals.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -457,68 +873,120 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/jabra-promo-codes-coupons/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 14
+      "rank": 30
     },
     {
-      "id": "TP-83ffca78cbad",
-      "cluster_id": "CL-0064",
-      "title": "Shark Promo Codes for September 2026",
-      "summary": "Shark makes some seriously powerful vacuums, from handheld vacs to steam mops. Don’t miss $100 off, 10% off, and more limited-time coupons from WIRED.",
+      "id": "TP-81d642c5f65d",
+      "cluster_id": "CL-0071",
+      "title": "HostGator Coupon Codes: 76% Off Hosting in September 2026",
+      "summary": "Unlock massive savings on HostGator web hosting, WordPress, VPS, and business email plans with our exclusive HostGator promo codes and deals.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
       "what_changes": "No additional practical change is asserted beyond the available source evidence.",
       "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
+      "category": "AI",
+      "subcategory": "AI",
       "published_at": "2026-09-16T05:00:00+00:00",
       "source": "WIRED",
       "source_type": "secondary",
-      "url": "https://www.wired.com/story/shark-promo-code/",
+      "url": "https://www.wired.com/story/hostgator-coupon/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 15
+      "rank": 31
     },
     {
-      "id": "TP-87d7cbab3b87",
-      "cluster_id": "CL-0139",
-      "title": "APOD: 2026 September 16 – Webb’s View of M64",
-      "summary": "APOD Science APOD APOD: 2026 September 16 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Hubble + WebbHubble […]",
+      "id": "TP-6662f5bbb2bf",
+      "cluster_id": "CL-0072",
+      "title": "Visible Promo Codes and Coupons for September 2026",
+      "summary": "Find great deals and promo codes for Visible at WIRED and save big, whether you're a long-time customer or a newbie.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
       "what_changes": "No additional practical change is asserted beyond the available source evidence.",
       "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Space",
-      "subcategory": "Space",
-      "published_at": "2026-09-16T04:05:00+00:00",
-      "source": "NASA News",
-      "source_type": "primary",
-      "url": "https://science.nasa.gov/image-article/apod-2026-september-16-webbs-view-of-m64/",
-      "confidence": 75,
-      "importance": 76,
-      "freshness": 97,
-      "momentum": 69,
-      "verification_status": "VERIFIED",
-      "status": "NEW",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T05:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/visible-promo-code/",
+      "confidence": 61,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
       "tags": [
-        "NASA News"
+        "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 16
+      "rank": 32
+    },
+    {
+      "id": "TP-7f4ff98756ca",
+      "cluster_id": "CL-0073",
+      "title": "Factor Promo Code: 50% Off Off Meal Prep",
+      "summary": "Make meal prep easier for any dietary need while enjoying great savings with our hand-picked Factor discount codes this September.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "published_at": "2026-09-16T05:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/factor-promo-code/",
+      "confidence": 61,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 33
+    },
+    {
+      "id": "TP-51198a4414ac",
+      "cluster_id": "CL-0074",
+      "title": "Barkbox Promo Codes and Discounts: Up to 50% Off",
+      "summary": "Save on Barkbox subscriptions, including monthly themed collections of plush toys, tough chews, and healthy snacks designed to keep your pup’s tail wagging.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "published_at": "2026-09-16T05:00:00+00:00",
+      "source": "WIRED",
+      "source_type": "secondary",
+      "url": "https://www.wired.com/story/barkbox-promo-code/",
+      "confidence": 61,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "WIRED"
+      ],
+      "corroborating_sources": [],
+      "rank": 34
     },
     {
       "id": "TP-ea18852fc544",
@@ -535,20 +1003,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/science/2026/09/how-chimps-teach-their-kids-tool-tricks/",
       "confidence": 64,
-      "importance": 74,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 71,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 17
+      "rank": 35
     },
     {
       "id": "TP-6cbe436b4384",
-      "cluster_id": "CL-0179",
+      "cluster_id": "CL-0173",
       "title": "10 Darkest 'Calvin and Hobbes' Snowman Jokes That Reveal Bill Watterson's Twisted Genius",
       "summary": "Bill Watterson's Calvin and Hobbes comic strip featured a recurring series where Calvin made disturbing snowman scultures. These are the best ones.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -561,20 +1029,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/10-darkest-calvin-and-hobbes-snowman-jokes-that-reveal-bill-wattersons-twisted-genius/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 67,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 18
+      "rank": 36
     },
     {
       "id": "TP-840e3d529d38",
-      "cluster_id": "CL-0024",
+      "cluster_id": "CL-0025",
       "title": "Microsoft announces Windows and Surface event for October 7th",
       "summary": "It's been more than two years since the last major Windows event, so Microsoft is heading to San Francisco next month to outline the future of Windows and Surface devices. At an event on October 7th, the company says it will host a \"conversation on how local AI will shape the next chapter of the […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -587,20 +1055,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/news/994714/microsoft-windows-surface-event-october-7-san-francisco",
       "confidence": 61,
-      "importance": 71,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 68,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 19
+      "rank": 37
     },
     {
       "id": "TP-8afc1b1450f0",
-      "cluster_id": "CL-0180",
+      "cluster_id": "CL-0174",
       "title": "The 25 Best Nintendo Switch 2 Games in 2026",
       "summary": "What are the best Nintendo Switch 2 games? From Mario Kart World to Resident Evil Rebirth, here are our favorites",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -613,20 +1081,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/best-nintendo-switch-2-games/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 65,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 20
+      "rank": 38
     },
     {
       "id": "TP-eca7935e8d01",
-      "cluster_id": "CL-0119",
+      "cluster_id": "CL-0120",
       "title": "Cyber Op Targets South Korean Media & Automotive Sectors",
       "summary": "A likely North Korean advanced persistent threat (APT) group used a previously undocumented Linux espionage toolkit to compromise load balancers, gain access to communications, and further exploit networks.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -639,20 +1107,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/cyber-south-korean-media-automotive",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 68,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 21
+      "rank": 39
     },
     {
       "id": "TP-c4efac71b657",
-      "cluster_id": "CL-0074",
+      "cluster_id": "CL-0077",
       "title": "Canon's R8 II camera borrowed its styling from a classic SLR film camera",
       "summary": "Though preoccupied with vlogging lately, Canon hasn't forgotten its full-frame photography market.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -665,20 +1133,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2259755/canon-r8-ii-camera-borrowed-styling-from-a-classic-slr-film-camera/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 65,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 22
+      "rank": 40
     },
     {
       "id": "TP-3808e2aaf93d",
-      "cluster_id": "CL-0001",
+      "cluster_id": "CL-0002",
       "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
       "summary": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -691,20 +1159,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 90,
-      "momentum": 66,
+      "importance": 67,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 23
+      "rank": 41
     },
     {
       "id": "TP-63b9407a67d2",
-      "cluster_id": "CL-0023",
+      "cluster_id": "CL-0024",
       "title": "AI and data centers are incredibly unpopular in every poll",
       "summary": "Poll data released Tuesday by the New York Times and Siena University confirms what we've already been seeing, and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -717,20 +1185,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 67,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 24
+      "rank": 42
     },
     {
       "id": "TP-15f295cb0241",
-      "cluster_id": "CL-0075",
+      "cluster_id": "CL-0078",
       "title": "Considering a Level 2 EV charger? How to know if you need one",
       "summary": "Charging your EV from home is cheap and convenient, but knowing which type of charger will get the most out of your electric car can often be confusing.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -743,46 +1211,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2257144/level-2-ev-charger-how-to-know-if-you-need-one/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 65,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 25
-    },
-    {
-      "id": "TP-3cb6eaec43f7",
-      "cluster_id": "CL-0140",
-      "title": "NASA Ames Stars of the Month: September 2026",
-      "summary": "The NASA Ames Science Directorate recognizes the outstanding contributions of (pictured left to right) Steve Ormsby, Aphrodite Kostakis, Alejando Borlaff, Sarah Nickerson, Martina Caussi, Keiko Nomura, and Stephen Broccardo. Their commitment to the NASA mission represents the entrepreneurial spirit, technical expertise, and collaborative disposition needed to explore this world and beyond. Space Biosciences Star: Steve […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Space",
-      "subcategory": "Space",
-      "published_at": "2026-09-15T23:46:11+00:00",
-      "source": "NASA News",
-      "source_type": "primary",
-      "url": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-september-2026/",
-      "confidence": 75,
-      "importance": 74,
-      "freshness": 88,
-      "momentum": 64,
-      "verification_status": "VERIFIED",
-      "status": "NEW",
-      "tags": [
-        "NASA News"
-      ],
-      "corroborating_sources": [],
-      "rank": 26
+      "rank": 43
     },
     {
       "id": "TP-9a0234f80353",
-      "cluster_id": "CL-0076",
+      "cluster_id": "CL-0079",
       "title": "How to get Spotify's best audio quality",
       "summary": "Spotify's default audio settings let you enjoy music wherever you go, but you're not always getting the best quality. A few tweaks can make all the difference.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -795,20 +1237,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2257125/how-to-get-spotify-best-audio-quality/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 88,
-      "momentum": 64,
+      "importance": 64,
+      "freshness": 78,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 27
+      "rank": 44
     },
     {
       "id": "TP-1bed67b83281",
-      "cluster_id": "CL-0077",
+      "cluster_id": "CL-0080",
       "title": "How to manually update Android Auto (and what it might mean if you can't)",
       "summary": "The Android Auto app lives in the Play Store, so start there if you want to update.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -821,20 +1263,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2252764/how-to-manually-update-android-auto/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 64,
+      "freshness": 77,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 28
+      "rank": 45
     },
     {
       "id": "TP-3e0aacf60de6",
-      "cluster_id": "CL-0078",
+      "cluster_id": "CL-0081",
       "title": "Are USB-C flash drives better than USB-A ones?",
       "summary": "USB-A and USB-C flash drives both have their purposes. USB-C is increasingly common, but USB-A isn't going anywhere yet.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -847,16 +1289,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2256491/usb-c-flash-drive-better-usb-a-comparison/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 86,
-      "momentum": 63,
+      "importance": 64,
+      "freshness": 76,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 29
+      "rank": 46
     },
     {
       "id": "TP-ecaae448f6f4",
@@ -873,20 +1315,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/space/2026/09/the-roman-telescope-has-enough-gas-for-22-years-double-nasas-expectations/",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 86,
-      "momentum": 63,
+      "importance": 68,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 30
+      "rank": 47
     },
     {
       "id": "TP-2699fb2a13db",
-      "cluster_id": "CL-0079",
+      "cluster_id": "CL-0082",
       "title": "Microsoft will hold a Windows and Surface event on October 7",
       "summary": "The event is focused on \"Windows, NVIDIA RTX Spark, Surface, and the broader PC ecosystem,\" with Satya Nadella and Jensen Huang among the speakers.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -899,20 +1341,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2259695/microsoft-will-hold-a-windows-event-on-october-7/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 85,
-      "momentum": 63,
+      "importance": 64,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 31
+      "rank": 48
     },
     {
       "id": "TP-e20f09e883d7",
-      "cluster_id": "CL-0080",
+      "cluster_id": "CL-0083",
       "title": "Wired vs wireless speakers: What are the pros and cons?",
       "summary": "Wired and wireless speakers each offer different trade-offs, advantages and disadvantages. Plus, what audio you put through them has a big effect.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -925,20 +1367,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2256380/wired-vs-wireless-speakers-pros-cons/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 85,
-      "momentum": 63,
+      "importance": 64,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 32
+      "rank": 49
     },
     {
       "id": "TP-75fb899a420d",
-      "cluster_id": "CL-0002",
+      "cluster_id": "CL-0003",
       "title": "The AI data center boom is colliding with cities scarred by big industry",
       "summary": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -951,20 +1393,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 66,
+      "freshness": 74,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 33
+      "rank": 50
     },
     {
       "id": "TP-f3463d1e1610",
-      "cluster_id": "CL-0104",
+      "cluster_id": "CL-0107",
       "title": "Acronis warns of actively exploited flaw in its cPanel backup plugin",
       "summary": "Acronis disclosed a high-severity Linux local privilege escalation vulnerability in its backup plugin for cPanel, WebHost Manager (WHM), and Plesk that may be exploited in the wild. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -977,20 +1419,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 68,
+      "freshness": 74,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 34
+      "rank": 51
     },
     {
       "id": "TP-d59bedf0f07a",
-      "cluster_id": "CL-0181",
+      "cluster_id": "CL-0175",
       "title": "7 Major GTA 6 Questions the Previews Haven't Answered",
       "summary": "Who's in the cast? What's happening with GTA Online? We have questions after Rockstar's Netflix Grand Theft Auto 6 extended look.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1003,20 +1445,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/gta-6-major-questions/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 64,
+      "freshness": 74,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 35
+      "rank": 52
     },
     {
       "id": "TP-3a41fc21e23f",
-      "cluster_id": "CL-0148",
+      "cluster_id": "CL-0141",
       "title": "22 years of science! NASA's Roman Space Telescope doubles its lifetime with super-precise engine burn",
       "summary": "NASA's newly launched Nancy Grace Roman Space Telescope is set to extend its lifespan and double its exciting potential for discovery thanks to an efficient use of fuel on its way to its final orbit. \"As a result of exquisite planning by our orbital dynamics team, brilliant execution by the operations team, and a precise launch from SpaceX, Roman has fuel for at least 22 years of potential science operations,\" said Jamie Dunn, the center director at NASA's Goddard Space Flight Center, in a statement . The space telescope, which launched from Cape Canaveral on Aug. 30 on a mission to measure dark energy and search for exoplanets , is headed to the L2 Lagrange point . There, it will join the likes of the James Webb Space Telescope on the opposite side of Earth to the sun . Its primary mission will last five years, and scientists were hoping for an additional five years if funding allowed.. Now, however, that potential extended mission could go on for a lot longer — and it's all thanks to the spacecraft coming in less massive than the original design had projected. The Lagrange points depicted in a diagram. (Image credit: NASA Goddard Space Flight Center Scientific Visualization Studi",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1029,20 +1471,20 @@
       "source_type": "secondary",
       "url": "https://www.space.com/astronomy/22-years-of-science-nasas-roman-space-telescope-doubles-its-lifetime-with-super-precise-engine-burn",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 66,
+      "freshness": 73,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 36
+      "rank": 53
     },
     {
       "id": "TP-919e1a357902",
-      "cluster_id": "CL-0182",
+      "cluster_id": "CL-0176",
       "title": "Diablo 4 Season 15 release time in your time zone",
       "summary": "In this guide, you can check when Diablo 4 Season 15 releases in your time zone and what to expect from the Season of Hell's Legacy.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1055,20 +1497,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/diablo-4-d4-season-15-hells-legacy-release-time-edt-pdt/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 63,
+      "freshness": 73,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 37
+      "rank": 54
     },
     {
       "id": "TP-d97cf7bf1f89",
-      "cluster_id": "CL-0105",
+      "cluster_id": "CL-0108",
       "title": "Malcious Admin Menu Editor Pro plugin backdoors 1,500 WordPress sites",
       "summary": "Malicious versions of the Admin Menu Editor Pro plugin for WordPress have been distributed to more than 200 customers after a threat actor compromised the maintainer's website and pushed updates that created a hidden user account. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1081,16 +1523,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/malcious-admin-menu-editor-pro-plugin-backdoors-1-500-wordpress-sites/",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 82,
-      "momentum": 61,
+      "importance": 68,
+      "freshness": 72,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 38
+      "rank": 55
     },
     {
       "id": "TP-7f3629cfa6b1",
@@ -1107,20 +1549,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/tech-policy/2026/09/filmmaker-suing-passthepopcorn-may-be-banned-user-out-for-revenge/",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 67,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 39
+      "rank": 56
     },
     {
       "id": "TP-693dfdf4ac9e",
-      "cluster_id": "CL-0120",
+      "cluster_id": "CL-0121",
       "title": "Microsoft Issues Emergency Fixes After Massive Patch Tuesday",
       "summary": "You can't make an omelet without breaking a few eggs, and you can't patch nearly 1,000 CVEs without a few glitches.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1133,20 +1575,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/application-security/microsoft-emergency-fixes-patch-tuesday",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 40
+      "rank": 57
     },
     {
       "id": "TP-c8412b9ffa40",
-      "cluster_id": "CL-0025",
+      "cluster_id": "CL-0026",
       "title": "What if social media isn’t hurting kids?",
       "summary": "Two years ago, social psychologist Jonathan Haidt released his New York Times bestseller The Anxious Generation. The book posits that the rise of social media and smartphone use is largely to blame for the prominent decline in teen mental health since 2010. It quickly became a central rallying cry of the social media backlash. Haidt […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1159,20 +1601,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/policy/995704/peter-gray-restoring-childhood-jonathan-haidt",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 41
+      "rank": 58
     },
     {
       "id": "TP-4a8be412f345",
-      "cluster_id": "CL-0003",
+      "cluster_id": "CL-0004",
       "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
       "summary": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1185,20 +1627,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 42
+      "rank": 59
     },
     {
       "id": "TP-52ce70cd1e47",
-      "cluster_id": "CL-0149",
+      "cluster_id": "CL-0142",
       "title": "New 'StarCraft' game announced, but it's a grim open-world shooter and it's not coming until 2030",
       "summary": "BlizzCon 2026 delivered big gaming news over the weekend, including Diablo 5 and a new Warcraft 3 expansion announcement, but sci-fi lovers were the ones with the most cause to celebrate, as we learned that StarCraft will return in 2030. It's not coming back as a sci-fi strategy game this time, though. 16 years after StarCraft 2 's initial launch and after months of rumors, Blizzard Entertainment has unveiled StarCraft, the next chapter in the franchise. Provisional title or not ('Dominion' is just the trailer's moniker), we know that it's set roughly 70 years after the events of the SC2 trilogy and that it's been envisioned as a \" narrative-driven open world shooter \" without seasonal or live-service elements, at least at the time of writing. Creative director Dan Hay's (known for his work on the modern Far Cry games) teased a game that's quite different from what's shown in the first CG trailer above. Humans are still fighting against the Zerg, a ruthless hive-like species infesting the stars, and we get to see thousands (if not millions) of marines being thrown into the meat grinder... literally. We've seen this story before, but the trailer's condensed tale of an eager young ma",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1211,20 +1653,20 @@
       "source_type": "secondary",
       "url": "https://www.space.com/entertainment/space-games/new-starcraft-game-announced-but-its-a-grim-open-world-shooter-and-its-not-coming-until-2030",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 43
+      "rank": 60
     },
     {
       "id": "TP-7fed37ad00d3",
-      "cluster_id": "CL-0081",
+      "cluster_id": "CL-0084",
       "title": "How to improve the audio quality on your iPhone",
       "summary": "You can improve your iPhone's audio quality whether you're using the built-in speakers, headphones, or a speaker.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1237,20 +1679,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2256208/how-to-improve-audio-quality-iphone/",
       "confidence": 58,
-      "importance": 65,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 63,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 44
+      "rank": 61
     },
     {
       "id": "TP-506042be0e1a",
-      "cluster_id": "CL-0021",
+      "cluster_id": "CL-0022",
       "title": "The Boox Palma 3 gets stylus support and a sleek redesign",
       "summary": "Nearly two years after the last update to Boox's smartphone-sized black-and-white e-reader, the company announced the Palma 3 with a sleek redesign, new functionality, and a handful of other small updates that may justify its significant price bump depending on how you plan to use it. While the Palma 2 launched in 2024 for $279.99, […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1263,20 +1705,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/tech/995826/boox-palma-3-e-ink-reader-pocket-smartphone-android-16",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 65,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 45
+      "rank": 62
     },
     {
       "id": "TP-7848acd5454f",
-      "cluster_id": "CL-0150",
+      "cluster_id": "CL-0143",
       "title": "US Space Force says it operates weapons in orbit: 'Our aim is deterrence'",
       "summary": "The U.S. Space Force is opening up about its operation of orbital weapons, but not much beyond admitting that they exist. During a \"State of the Space Force\" address at the Air & Space Forces Association’s Air, Space & Cyber Conference in National Harbor, Maryland, on Tuesday (Sept. 15), Chief of Space Operations Gen. Douglas Schiess stated unequivocally that the Space Force uses active space -based weaponry to support United States national defense. “Let me be crystal clear: Today, Guardians operate on-orbit weapons that can defend the joint force against space-enabled attacks,” Schiess said, referring to the official name for Space Force personnel. Space is central to national security infrastructure and warfighting efforts, and serves a critical role in how the military communicates, navigates, conducts operations and tracks threats globally. It’s become an increasingly contested domain, with adversaries developing technologies designed to disrupt or destroy satellites in orbit as well as hypersonic weapons that challenge ground-based-only defenses. Schiess didn’t specify what kind of weapons the U.S. operates in orbit, how many there are, or what exactly they do. But the revela",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1289,20 +1731,20 @@
       "source_type": "secondary",
       "url": "https://www.space.com/space-exploration/satellites/us-space-force-says-it-operates-weapons-in-orbit-our-aim-is-deterrence",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 65,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 46
+      "rank": 63
     },
     {
       "id": "TP-53cea3ad810c",
-      "cluster_id": "CL-0022",
+      "cluster_id": "CL-0023",
       "title": "The EOS R8 Mark II is Canon’s lightest full-frame camera with stabilization",
       "summary": "Canon announced the second-generation of its EOS R8 with a new retro-inspired redesign and the addition of in-body stabilization. That feature was one of the most notable omissions from the original R8 that launched in 2023 as a smaller, cheaper, and more accessible alternative to the Canon R6 Mark II for photographers wanting a larger […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1315,20 +1757,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/tech/995430/canon-eos-r8-mark-11-full-frame-digital-camera-pricing-availability",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 65,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 47
+      "rank": 64
     },
     {
       "id": "TP-31737a0477ee",
-      "cluster_id": "CL-0183",
+      "cluster_id": "CL-0177",
       "title": "God of War Laufey Now Has a Lot To Prove After Wolverine’s Messy Launch",
       "summary": "After Marvel's Wolverine launched to mixed reviews, God of War Laufey is set to be a high-stakes test for Sony's reputation.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1341,20 +1783,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/god-of-war-laufey-marvels-wolverine-analysis/",
       "confidence": 58,
-      "importance": 65,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 62,
+      "freshness": 70,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 48
+      "rank": 65
     },
     {
       "id": "TP-3f06b0b07219",
-      "cluster_id": "CL-0121",
+      "cluster_id": "CL-0122",
       "title": "Black Hat USA 2026 | The 'Breaking' News: The OpenAI–Hugging Face Incident",
       "summary": "The 'Breaking' News: The OpenAI–Hugging Face Incident - A Technical Reconstruction and Its Implications for AI At this Black Hat USA 2026 talk, OpenAI security engineers and researchers will reconstruct the OpenAI-Hugging Face incident and examine its implications for AI security, cyber resilience, and alignment. Throughout the session, they will share insights that address key topics raised by the Black Hat Review Board, including model safeguards, evaluation and containment practices, defensive use cases for AI, and the broader implications of increasingly autonomous systems for the cybersecurity community. The session will trace the models' attack path, including how frontier models are sandboxed during evaluations, how the models exploited a zero-day vulnerability to gain internet access, and how they identified and leveraged a remote code execution path on Hugging Face infrastructure. Drawing on the joint investigation, the speakers will explain how the activity was detected, contained, and investigated. They will also discuss the changes OpenAI is making to strengthen evaluation environments, containment controls, and monitoring capabilities, as well as the role AI systems pl",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1367,20 +1809,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/vulnerabilities-threats/bhusa26huggingfacetalk",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 64,
+      "freshness": 69,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 49
+      "rank": 66
     },
     {
       "id": "TP-f9e95ef14676",
-      "cluster_id": "CL-0184",
+      "cluster_id": "CL-0178",
       "title": "Say Goodbye to Fallout's Best Replacement Before it Leaves Game Pass Forever",
       "summary": "Atomfall is the best Fallout replacement in years — an extremely British amalgamation of BioShock and Bethesda. Read our rec for more.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1393,20 +1835,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/atomfall-game-pass-recommendation/",
       "confidence": 58,
-      "importance": 65,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 62,
+      "freshness": 69,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 50
+      "rank": 67
     },
     {
       "id": "TP-34fe49b40428",
-      "cluster_id": "CL-0004",
+      "cluster_id": "CL-0005",
       "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
       "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1419,16 +1861,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 79,
-      "momentum": 59,
+      "importance": 64,
+      "freshness": 69,
+      "momentum": 54,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 51
+      "rank": 68
     },
     {
       "id": "TP-b948f185a799",
@@ -1445,52 +1887,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/health/2026/09/measles-kills-18-year-old-in-pa-fourth-death-as-state-outbreak-nears-700-cases/",
       "confidence": 64,
-      "importance": 69,
-      "freshness": 79,
-      "momentum": 59,
+      "importance": 66,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 52
-    },
-    {
-      "id": "TP-d1dedeb75371",
-      "cluster_id": "CL-0141",
-      "title": "NASA Invites Media to International Observe the Moon Night",
-      "summary": "NASA will host an International Observe the Moon Night celebration from 5:30 to 8 p.m. CST on Saturday, Sept. 19, at the U.S. Space & Rocket Center, the official visitor center for NASA’s Marshall Space Flight Center in Huntsville, Alabama. International Observe the Moon Night celebrates the Moon, the science behind it, and its connection […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Space",
-      "subcategory": "Space",
-      "published_at": "2026-09-15T18:55:33+00:00",
-      "source": "NASA News",
-      "source_type": "primary",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-international-observe-the-moon-night/",
-      "confidence": 75,
-      "importance": 80,
-      "freshness": 79,
-      "momentum": 75,
-      "verification_status": "VERIFIED",
-      "status": "NEW",
-      "tags": [
-        "NASA News"
-      ],
-      "corroborating_sources": [
-        {
-          "source": "NASA News",
-          "title": "Celebrate International Observe the Moon Night with NASA",
-          "url": "https://www.nasa.gov/centers-and-facilities/goddard/celebrate-international-observe-the-moon-night-with-nasa/"
-        }
-      ],
-      "rank": 53
+      "rank": 69
     },
     {
       "id": "TP-e2e296fd48de",
-      "cluster_id": "CL-0026",
+      "cluster_id": "CL-0027",
       "title": "Kia’s electric van lineup is getting more interesting with reveal of PV7",
       "summary": "You may not know it, but minivans are making a comeback in the US. Look around, and you'll start to notice an uptick in these breadboxes on wheels. Sales were up 21 percent in 2025, suggesting that the humble minivan is shaking off its \"uncool\" stigma and finding new fans among an SUV-weary public. I'm […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1503,16 +1913,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/transportation/995608/kia-pv7-electric-van-specs-sale",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 79,
-      "momentum": 59,
+      "importance": 64,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 54
+      "rank": 70
     },
     {
       "id": "TP-75a28c3dcafa",
@@ -1529,20 +1939,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/space/2026/09/spacex-sets-launch-date-for-first-starship-orbital-flight/",
       "confidence": 64,
-      "importance": 69,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 66,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 55
+      "rank": 71
     },
     {
       "id": "TP-dc45671543c1",
-      "cluster_id": "CL-0185",
+      "cluster_id": "CL-0179",
       "title": "Target Will Be Unusually Strict For Pokémon's 30th Anniversary TCG Set Release",
       "summary": "The popular retailer will enforce new rules for how customers buy Pokémon products, including measures for lines, security, and purchasing limits",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1555,20 +1965,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/target-pokemon-30th-anniversary-tcg-drop-limits-etb-new-rules/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 62,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 56
+      "rank": 72
     },
     {
       "id": "TP-c7d7e299097d",
-      "cluster_id": "CL-0151",
+      "cluster_id": "CL-0144",
       "title": "SpaceX's next Starship launch will lift off on Sept. 22 and aim to reach orbit for 1st time",
       "summary": "We now have a launch date for Starship's most ambitious mission to date. SpaceX announced today (Sept. 15) that it's targeting Sept. 22 for the first orbital flight of Starship , the fully reusable megarocket that the company is developing to help humanity settle the moon, Mars and more. Liftoff, from SpaceX's Starbase site in South Texas, will occur during a 75-minute window that opens at 8:15 a.m. EDT (1215 GMT and 7:15 a.m. local Texas time). You can watch it live here at Space.com when the time comes. SpaceX is targeting Sept. 22 for Starship's first-ever orbital launch, a landmark flight that will deploy 26 Starlink satellites and last about 10 hours. (Image credit: SpaceX) Starship Die Cast Rocket Model Was $47.99 Now $39.99 on Amazon . Even if you can't see SpaceX's Starship in person, you can score a model of your own. Standing at 13.77 inches (35 cm), this is a 1:375 ratio of SpaceX's Starship as a desktop model. The materials here are alloy steel and it weighs just 225g. View Deal The upcoming flight will be the 14th overall for Starship, which debuted in April 2023 and has flown twice so far in 2026. But the 408-foot-tall (124-meter-tall) vehicle's first 13 jaunts were a",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1581,16 +1991,16 @@
       "source_type": "secondary",
       "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-next-starship-launch-will-lift-off-on-sept-22-and-aim-to-reach-orbit-for-1st-time",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 64,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 57
+      "rank": 73
     },
     {
       "id": "TP-f557dac5230f",
@@ -1607,20 +2017,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
       "confidence": 64,
-      "importance": 69,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 66,
+      "freshness": 68,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 58
+      "rank": 74
     },
     {
       "id": "TP-b6484e13d52c",
-      "cluster_id": "CL-0005",
+      "cluster_id": "CL-0006",
       "title": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
       "summary": "The AI frenzy could push U.S. data centers to become one of the largest consumers of natural gas in the world.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1633,46 +2043,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 64,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 59
-    },
-    {
-      "id": "TP-029c097d02bf",
-      "cluster_id": "CL-0186",
-      "title": "Marvel’s Wolverine’s Cartoon Suits Are a Crime Against Humanity",
-      "summary": "The animated and cartoon-themed suits for Logan in Marvel's Wolverine are totally at odds with the theme of the game.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T18:20:52+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/marvels-wolverine-cartoon-suits-crime-against-humanity/",
-      "confidence": 58,
-      "importance": 64,
-      "freshness": 78,
-      "momentum": 59,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 60
+      "rank": 75
     },
     {
       "id": "TP-0ac1235a7b57",
-      "cluster_id": "CL-0006",
+      "cluster_id": "CL-0007",
       "title": "SpaceX will try to put Starship in orbit for the first time on September 22",
       "summary": "Elon Musk's company will also attempt to deploy the first V3 Starlink satellites into its orbital internet constellation.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1685,16 +2069,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/spacex-will-try-to-put-starship-in-orbit-for-the-first-time-on-september-22/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 64,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 61
+      "rank": 76
     },
     {
       "id": "TP-74370992a106",
@@ -1711,20 +2095,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/tech-policy/2026/09/boston-dumps-flock-says-it-shared-data-nationwide-in-violation-of-contract/",
       "confidence": 64,
-      "importance": 69,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 66,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 62
+      "rank": 77
     },
     {
       "id": "TP-663d55b6ffce",
-      "cluster_id": "CL-0027",
+      "cluster_id": "CL-0028",
       "title": "One of the best 3D printers for beginners is almost $100 off",
       "summary": "If the high price tag of premium 3D printers have kept you from exploring the hobby, this deal is a great entry point. Elegoo has its Centauri Carbon 2 Combo on sale for $369, almost $100 off its usual price of $449. This capable 3D printer can handle four filament rolls at once, with a […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1737,72 +2121,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/gadgets/995518/elegoo-3d-printer-switch-joy-con-deal-sale",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 64,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 63
-    },
-    {
-      "id": "TP-0ec120759f1c",
-      "cluster_id": "CL-0187",
-      "title": "'Apex Legends' Is Officially Crossing Over With Fall’s Most-Anticipated Action Movie",
-      "summary": "Capcom's fighting game series Street Fighter crosses over with battle royale shooter Apex Legends in new event",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "published_at": "2026-09-15T18:01:02+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/street-fighter-6-apex-legends-crossover-release-date-skins/",
-      "confidence": 58,
-      "importance": 64,
-      "freshness": 77,
-      "momentum": 58,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 64
-    },
-    {
-      "id": "TP-aa3b8d5b9aad",
-      "cluster_id": "CL-0065",
-      "title": "AI ‘Actor’ Tilly Norwood Told Me That ‘All Lives Matter’",
-      "summary": "The virtual character, which is promoting its upcoming movie Misaligned, tries to evade politics by repetitively commenting on the clothes you’re wearing.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T18:00:09+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/ai-actor-tilly-norwood-told-me-that-all-lives-matter/",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 65
+      "rank": 78
     },
     {
       "id": "TP-bcbec5aafe25",
-      "cluster_id": "CL-0152",
+      "cluster_id": "CL-0145",
       "title": "Microscopic alien technology may be hidden in moon dust, scientists say",
       "summary": "Could we find alien technology embedded in moon dust? The bold idea, not yet peer-reviewed, suggests checking out the lunar surface for \"microscopic technosignatures.\" The SETI Institute — or the Search for Extraterrestrial Intelligence Institute — describes these technosignatures as \"tiny engineered particles\" that may have come from interstellar space before settling on the moon . The institute recently highlighted a paper on the topic, published on arxiv in August, and added the research is undergoing peer review for consideration in the International Journal of Astrobiology. The study is led by SETI Institute Affiliate Scientist Lewis Pinault. \"The moon has been quietly accumulating material from space for billions of years, much of it likely billions of years older than the moon itself,\" said Pinault in a statement . \"We're asking whether that ancient collection might contain microscopic traces of technologies that existed long before humans ever looked up at the sky.\" Even if no aliens turn out to be there, the search could help advance models of how dust goes through interstellar space, as well as effects on lunar geology or impact science, the institute added. \"The study re",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1815,20 +2147,20 @@
       "source_type": "secondary",
       "url": "https://www.space.com/space-exploration/search-for-life/microscopic-alien-technology-may-be-hidden-in-moon-dust-scientists-say",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 64,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 66
+      "rank": 79
     },
     {
       "id": "TP-0871769bfdd0",
-      "cluster_id": "CL-0082",
+      "cluster_id": "CL-0085",
       "title": "The safety and privacy concerns of storing your driver's license in a digital wallet",
       "summary": "A digital driver's license kept in Apple Wallet or Google Wallet is convenient, but you should be aware of its implications on your privacy.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1841,20 +2173,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2256059/safety-privacy-concerns-digital-wallet-storing-drivers-license/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 62,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 67
+      "rank": 80
     },
     {
       "id": "TP-bd0e2ed4e52b",
-      "cluster_id": "CL-0083",
+      "cluster_id": "CL-0086",
       "title": "Google's latest Pixel drop will keep you more connected to your VIPs",
       "summary": "Google has revealed the updates coming with the latest Pixel drop.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1867,16 +2199,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2258821/google-pixel-update-vip-contacts-scam-detection-gesture-controls/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 62,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 68
+      "rank": 81
     },
     {
       "id": "TP-32d1440d741e",
@@ -1893,20 +2225,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/cars/2026/09/ev-charging-infrastructure-is-still-lagging-adoption-report-says/",
       "confidence": 64,
-      "importance": 69,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 66,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 69
+      "rank": 82
     },
     {
       "id": "TP-dafbc1c11c81",
-      "cluster_id": "CL-0084",
+      "cluster_id": "CL-0087",
       "title": "DOJ says companies used Binance to funnel $1.5 billion in crypto to Iran",
       "summary": "Hardly the first time Binance has been a vector for illegal transfers of funds.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1919,46 +2251,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2259323/doj-says-companies-used-binance-to-funnel-dollar15-billion-in-crypto-to-iran/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 62,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 70
-    },
-    {
-      "id": "TP-3c4693f6576d",
-      "cluster_id": "CL-0066",
-      "title": "The FBI Doubles Down on Easing ‘Bestiality’ Hiring Standards",
-      "summary": "FBI director Kash Patel claimed to US senators that the removal of a bar on hiring people who had engaged in bestiality was aimed at protecting sexual assault survivors.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T17:50:40+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/the-fbi-doubles-down-on-easing-bestiality-hiring-standards/",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 71
+      "rank": 83
     },
     {
       "id": "TP-bfd9d501d143",
-      "cluster_id": "CL-0094",
+      "cluster_id": "CL-0095",
       "title": "Roundtables: Could AI really kill us all?",
       "summary": "Listen to the session or watch below Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Watch a conversation unpacking AI extinction fears: where they come from, whether they hold any water, and, if so,…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1971,20 +2277,20 @@
       "source_type": "secondary",
       "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
       "confidence": 64,
-      "importance": 68,
-      "freshness": 76,
-      "momentum": 58,
+      "importance": 66,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 72
+      "rank": 84
     },
     {
       "id": "TP-a55f785f4f8c",
-      "cluster_id": "CL-0085",
+      "cluster_id": "CL-0088",
       "title": "X-viewing services Nitter and XCancel shut down after threats of legal action",
       "summary": "Press X to pay respects.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1997,20 +2303,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2259317/x-viewing-services-nitter-and-xcancel-shut-down-after-threats-of-legal-action/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 76,
-      "momentum": 58,
+      "importance": 62,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 73
+      "rank": 85
     },
     {
       "id": "TP-38a2e092cf9a",
-      "cluster_id": "CL-0086",
+      "cluster_id": "CL-0089",
       "title": "A Googlebook 'celebration' event is set for October 5",
       "summary": "Preorders start September 21.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2023,20 +2329,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2259313/a-googlebook-celebration-event-is-set-for-october-5/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 76,
-      "momentum": 58,
+      "importance": 62,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 74
+      "rank": 86
     },
     {
       "id": "TP-14a829717309",
-      "cluster_id": "CL-0007",
+      "cluster_id": "CL-0008",
       "title": "AI agents now have a place to snitch",
       "summary": "The AI Contact Hotline is designed to be a discreet place where agents that have witnessed misbehavior can tip off authorities.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2049,20 +2355,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 76,
-      "momentum": 58,
+      "importance": 64,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 75
+      "rank": 87
     },
     {
       "id": "TP-568abef86059",
-      "cluster_id": "CL-0087",
+      "cluster_id": "CL-0090",
       "title": "What is IMAX Enhanced and do you really need it?",
       "summary": "IMAX has a certification for content you view at home as well as in the cinema.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2075,46 +2381,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2255987/what-is-imax-enhanced/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 76,
-      "momentum": 58,
+      "importance": 62,
+      "freshness": 66,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 76
-    },
-    {
-      "id": "TP-4442306cbc94",
-      "cluster_id": "CL-0067",
-      "title": "ZuckOff Is a Free App That Sees Meta Glasses Before They See You",
-      "summary": "You can’t always tell if someone is recording you with their smart glasses, but your phone can help.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-15T17:16:01+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/zuckoff-app-sees-meta-glasses-before-they-see-you/",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 75,
-      "momentum": 57,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 77
+      "rank": 88
     },
     {
       "id": "TP-578293c5b43f",
-      "cluster_id": "CL-0008",
+      "cluster_id": "CL-0009",
       "title": "US military says it has launched weapons into space",
       "summary": "This is the first public acknowledgment that the U.S. military put a space weapon in Earth's orbit.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2127,20 +2407,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/us-military-confirms-it-launched-space-weapons-into-earths-orbit/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 75,
-      "momentum": 57,
+      "importance": 64,
+      "freshness": 65,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 78
+      "rank": 89
     },
     {
       "id": "TP-f2ad97ad48d7",
-      "cluster_id": "CL-0009",
+      "cluster_id": "CL-0010",
       "title": "Meta expands subscription push with new AI-focused plans",
       "summary": "Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram, and WhatsApp.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2153,20 +2433,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 75,
-      "momentum": 57,
+      "importance": 64,
+      "freshness": 65,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 79
+      "rank": 90
     },
     {
       "id": "TP-6b6a9a4f10f0",
-      "cluster_id": "CL-0010",
+      "cluster_id": "CL-0011",
       "title": "Health benefits platform Thatch reaches $1B valuation as healthcare costs surge",
       "summary": "Thatch helps employers keep healthcare costs manageable by offering an individual plan marketplace through an Individual Coverage Health Reimbursement Arrangement — a model that lets companies fund employees' own individual insurance plans instead of enrolling everyone in one company-wide plan.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2179,20 +2459,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/15/health-benefits-platform-thatch-reaches-1b-valuation-as-healthcare-costs-surge/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 75,
-      "momentum": 57,
+      "importance": 64,
+      "freshness": 65,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 80
+      "rank": 91
     },
     {
       "id": "TP-2c0ad2fde1e9",
-      "cluster_id": "CL-0153",
+      "cluster_id": "CL-0146",
       "title": "'Captain EO' at 40: Michael Jackson's wild sci-fi movie that you could only watch at Disney theme parks",
       "summary": "40 years ago on Sept. 12, 1986, musical icon Michael Jackson debuted in \"Captain EO,\" a 17-minute long 3D sci-fi fantasy film. The catch? You could only see it at Walt Disney World's EPCOT Center in Florida, or — six days later — at Disneyland’s Magic Eye Theater over in Tomorrowland. Jackson had already been anointed the King of Pop in the ‘80s with the stellar multi-platinum album \"Thriller\" when the creative cosmic tumblers aligned, joining the immense talents of Jackson, George Lucas, Francis Ford Coppola and the wizards of Disney's Imagineering to create one of the most unique sci-fi entertainment offerings ever conceived. With impressive special effects, catchy songs, dynamic dance numbers and co-starring Academy Award-winning actress Anjelica Huston as the witch queen known as the Supreme Leader, \"Captain EO\" was a huge attraction seen by millions of Disney guests. It told the story of a rag-tag crew of space misfits led by Jackson's charismatic Captain EO (in a sweet white leather uniform) on a mission to a sinister industrial planet to deliver a mysterious gift to its despotic ruler. Plenty of hijinks ensue with EO's oddball companions: Major Domo, Hooter, Idy & Ody, and a",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2205,20 +2485,20 @@
       "source_type": "secondary",
       "url": "https://www.space.com/entertainment/space-movies-shows/captain-eo-at-40-michael-jacksons-wild-sci-fi-movie-that-you-could-only-watch-at-disney-theme-parks",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 75,
-      "momentum": 57,
+      "importance": 64,
+      "freshness": 65,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Space.com"
       ],
       "corroborating_sources": [],
-      "rank": 81
+      "rank": 92
     },
     {
       "id": "TP-44d4cd6479cb",
-      "cluster_id": "CL-0122",
+      "cluster_id": "CL-0123",
       "title": "VectraRAT Can Hack Windows Enterprises for $250 per Month",
       "summary": "The full-service malware-as-a-service (MaaS) platform offers a Windows implant, command-and-control (C2) infrastructure, and an operator panel for comprehensive remote access.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2231,20 +2511,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/endpoint-security/vectrarat-hack-windows-enterprises",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 74,
-      "momentum": 57,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 82
+      "rank": 93
     },
     {
       "id": "TP-e6a96bcd49c3",
-      "cluster_id": "CL-0106",
+      "cluster_id": "CL-0109",
       "title": "CenterPoint Energy confirms customer data stolen in cyberattack",
       "summary": "CenterPoint Energy disclosed a breach compromising some customers' personal information after an attacker leaked data allegedly stolen from the utility company. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2257,20 +2537,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/centerpoint-energy-confirms-customer-data-stolen-in-cyberattack/",
       "confidence": 64,
-      "importance": 68,
-      "freshness": 74,
-      "momentum": 57,
+      "importance": 66,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 83
+      "rank": 94
     },
     {
       "id": "TP-030e2d955167",
-      "cluster_id": "CL-0088",
+      "cluster_id": "CL-0091",
       "title": "Are older MacBooks still worth buying in 2026?",
       "summary": "You'll probably want to avoid Intel-powered MacBooks, but Apple Silicon models are solid.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2283,20 +2563,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2255893/older-macbook-still-worth-buying-2026/",
       "confidence": 58,
-      "importance": 64,
-      "freshness": 74,
-      "momentum": 57,
+      "importance": 61,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 84
+      "rank": 95
     },
     {
       "id": "TP-ab3f4d50c079",
-      "cluster_id": "CL-0028",
+      "cluster_id": "CL-0029",
       "title": "How The Oregon Trail became a generational icon",
       "summary": "Whether you played it in the back of your classroom or on your computer at home, if you were a kid in the last 30 years you almost certainly grew up playing The Oregon Trail. On the season 5 premiere of Version History, our fearless wagon leader David Pierce is joined by gaming journalist Chris […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2309,46 +2589,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/podcast/995432/how-the-oregon-trail-became-a-generational-icon",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
-      "momentum": 56,
+      "importance": 63,
+      "freshness": 63,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 85
-    },
-    {
-      "id": "TP-a387088486f4",
-      "cluster_id": "CL-0142",
-      "title": "Artemis III Crew Visits NASA Kennedy’s Vehicle Assembly Building",
-      "summary": "NASA astronaut Randy Bresnik (left) and ESA (European Space Agency) astronaut Luca Parmitano view progress on the solid rocket booster integration in High Bay 3 inside the Vehicle Assembly Building at NASA’s Kennedy Space Center in Florida on Wednesday, Sept. 2, 2026. Bresnik, Parmitano, and NASA astronauts Andre Douglas, Frank Rubio, and Bob Hines made […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Space",
-      "subcategory": "Space",
-      "published_at": "2026-09-15T16:14:24+00:00",
-      "source": "NASA News",
-      "source_type": "primary",
-      "url": "https://www.nasa.gov/image-article/artemis-iii-crew-visits-nasa-kennedys-vehicle-assembly-building/",
-      "confidence": 75,
-      "importance": 70,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "VERIFIED",
-      "status": "NEW",
-      "tags": [
-        "NASA News"
-      ],
-      "corroborating_sources": [],
-      "rank": 86
+      "rank": 96
     },
     {
       "id": "TP-703f3afd92d4",
-      "cluster_id": "CL-0089",
+      "cluster_id": "CL-0092",
       "title": "Amazon's Prime Big Deal Days sale returns in October",
       "summary": "Expect big discounts on Amazon's own products, of course.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2361,20 +2615,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2259124/amazons-prime-big-deal-days-sale-returns-in-october/",
       "confidence": 58,
-      "importance": 63,
-      "freshness": 73,
-      "momentum": 56,
+      "importance": 61,
+      "freshness": 63,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 87
+      "rank": 97
     },
     {
       "id": "TP-18592959ad29",
-      "cluster_id": "CL-0188",
+      "cluster_id": "CL-0180",
       "title": "AI for Societal Impact",
       "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2387,20 +2641,20 @@
       "source_type": "primary",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
       "confidence": 72,
-      "importance": 68,
-      "freshness": 73,
-      "momentum": 56,
+      "importance": 65,
+      "freshness": 63,
+      "momentum": 51,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "Google AI Blog"
       ],
       "corroborating_sources": [],
-      "rank": 88
+      "rank": 98
     },
     {
       "id": "TP-b86d9a766fb7",
-      "cluster_id": "CL-0189",
+      "cluster_id": "CL-0181",
       "title": "Building AI to accelerate science and improve lives",
       "summary": "B-roll showing diverse environments and people, including a teacher and students in a classroom and a patient with a doctor",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2413,20 +2667,20 @@
       "source_type": "primary",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
       "confidence": 72,
-      "importance": 68,
-      "freshness": 73,
-      "momentum": 56,
+      "importance": 65,
+      "freshness": 63,
+      "momentum": 51,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "Google AI Blog"
       ],
       "corroborating_sources": [],
-      "rank": 89
+      "rank": 99
     },
     {
       "id": "TP-a243976a4aef",
-      "cluster_id": "CL-0190",
+      "cluster_id": "CL-0182",
       "title": "AI for everyone in every language",
       "summary": "Animation of several words in different languages slowly zooming past",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2439,273 +2693,13 @@
       "source_type": "primary",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
       "confidence": 72,
-      "importance": 68,
-      "freshness": 73,
-      "momentum": 56,
+      "importance": 65,
+      "freshness": 63,
+      "momentum": 51,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "Google AI Blog"
-      ],
-      "corroborating_sources": [],
-      "rank": 90
-    },
-    {
-      "id": "TP-c3f9e6a02688",
-      "cluster_id": "CL-0011",
-      "title": "Leaks, data breaches, and ransom notes: The worst hacks of 2026 so far",
-      "summary": "From the massive DOGE data breach and the compromise of critical infrastructure to the hack of federal surveillance systems, here are the most damaging security incidents and data breaches of 2026 so far.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Cybersecurity",
-      "subcategory": "Cybersecurity",
-      "published_at": "2026-09-15T16:00:00+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/15/the-worst-hacks-and-breaches-of-2026-so-far/",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 91
-    },
-    {
-      "id": "TP-c1b5029cc39c",
-      "cluster_id": "CL-0068",
-      "title": "Join WIRED@Night for an Uncanny Valley Live Recording on Women, Tech, and Power",
-      "summary": "An evening of podcasting in San Francisco (with a discount for WIRED readers).",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-15T16:00:00+00:00",
-      "source": "WIRED",
-      "source_type": "secondary",
-      "url": "https://www.wired.com/story/come-see-uncanny-valley-live/",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "WIRED"
-      ],
-      "corroborating_sources": [],
-      "rank": 92
-    },
-    {
-      "id": "TP-2d337d1e0d3e",
-      "cluster_id": "CL-0154",
-      "title": "Making rocket fuel out of Mars' thin air: New breakthrough could make it happen",
-      "summary": "Astronauts could travel back to Earth from Mars using rocket fuel converted directly from the carbon dioxide in the Red Planet's atmosphere, using a technique known as electrochemical reduction, a recent study reports. It's an old method involving electrolysis, which is the application of an electrical current to drive a chemical reaction, but the new trick produces methane pure enough to be used as liquid propellant. (A number of rocket engines these days burn liquid oxygen and liquid methane — including the Raptors that power Starship , the rocket SpaceX is developing to help humanity get to Mars.) \"The work we're doing is basically taking CO2 and using electricity to convert it into carbon-containing fuels and chemicals,\" said Carter Racine in a statement . Racine is a Ph.D. student in mechanical engineering at Texas A&M University and a member of the study team, which was led by University of Mississippi chemical engineer Ahmed Badreldin. \"You can't bring up everything you need [on Mars] from Earth , because every additional kilogram adds enormous cost and complexity to launch and escape Earth's gravity,\" added Badreldin. \"So the question becomes, How do we make the fuels and c",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T16:00:00+00:00",
-      "source": "Space.com",
-      "source_type": "secondary",
-      "url": "https://www.space.com/astronomy/mars/making-rocket-fuel-out-of-mars-thin-air-new-breakthrough-could-make-it-happen",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Space.com"
-      ],
-      "corroborating_sources": [],
-      "rank": 93
-    },
-    {
-      "id": "TP-87b9be8e4bab",
-      "cluster_id": "CL-0090",
-      "title": "Refurbished vs. pre-owned phones: What's the difference and which is better?",
-      "summary": "Pre-owned and refurbished devices have various quality standards across marketplaces, so understanding what you're getting is critical.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Hardware",
-      "subcategory": "Hardware",
-      "published_at": "2026-09-15T16:00:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2255880/refurbished-vs-pre-owned-differences-which-is-better/",
-      "confidence": 58,
-      "importance": 63,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 94
-    },
-    {
-      "id": "TP-d8ccdce953aa",
-      "cluster_id": "CL-0029",
-      "title": "Vintage Violence is an absurdist crime thriller for phone addicts",
-      "summary": "There are a lot of movies that have tried to seamlessly integrate modern tech - text messages, livestreams, etc. - into their storytelling. Some of the most novel attempts have been in the genre space, like the Twitch-style horror flick Deadstream. But the most chaotic to date might just be Vintage Violence, an absurd crime […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-15T15:57:13+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/entertainment/995472/tiff-2026-vintage-violence-the-devils-gentle-monster",
-      "confidence": 61,
-      "importance": 66,
-      "freshness": 73,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 95
-    },
-    {
-      "id": "TP-0e14eedd53b6",
-      "cluster_id": "CL-0012",
-      "title": "Nitter and XCancel are dead (again) after X’s latest legal actions",
-      "summary": "The privacy-friendly services for viewing X posts without an account have gone dark again after X's escalated legal action.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T15:49:18+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/15/nitter-and-xcancel-are-dead-again-after-xs-latest-legal-actions/",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 96
-    },
-    {
-      "id": "TP-9b1c20e23292",
-      "cluster_id": "CL-0013",
-      "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
-      "summary": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T15:47:03+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 97
-    },
-    {
-      "id": "TP-affeec170e74",
-      "cluster_id": "CL-0091",
-      "title": "The biggest issues with delivery robots are exactly what you'd think",
-      "summary": "Too often, delivery robots just don't understand the rules of the road (or sidewalk).",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "published_at": "2026-09-15T15:30:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2255845/delivery-robots-biggest-issues/",
-      "confidence": 58,
-      "importance": 63,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 98
-    },
-    {
-      "id": "TP-effe80fc833c",
-      "cluster_id": "CL-0092",
-      "title": "GM finds splitscreen solution for CarPlay and Android Auto",
-      "summary": "That should keep these infotainment systems from hogging all the important screen real estate.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T15:29:26+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2259077/gm-finds-splitscreen-solution-for-carplay-and-android-auto/",
-      "confidence": 58,
-      "importance": 63,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 99
-    },
-    {
-      "id": "TP-292210b7e469",
-      "cluster_id": "CL-0014",
-      "title": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
-      "summary": "Profound has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "published_at": "2026-09-15T15:22:48+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
-      "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
       ],
       "corroborating_sources": [],
       "rank": 100
