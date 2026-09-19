@@ -1,0 +1,136 @@
+name: TechPulse Editorial Moderation
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  moderation:
+    if: >
+      contains(
+        fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
+        github.event.issue.author_association
+      ) &&
+      startsWith(github.event.issue.title, '[TP-MOD]')
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Apply moderation decision
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          title = os.environ.get("ISSUE_TITLE", "")
+          body = os.environ.get("ISSUE_BODY", "")
+          author = os.environ.get("ISSUE_AUTHOR", "")
+
+          match = re.match(
+              r"^\[TP-MOD\]\s+(HIDE|RESTORE|REVIEW)\s+([A-Za-z0-9._:-]+)\s*$",
+              title
+          )
+
+          if not match:
+              raise SystemExit("Invalid moderation issue title.")
+
+          decision = match.group(1)
+          article_id = match.group(2)
+
+          reason_match = re.search(
+              r"(?im)^Reason:\s*(.+?)\s*$",
+              body
+          )
+
+          reason = reason_match.group(1).strip() if reason_match else ""
+
+          path = Path("admin/moderation.json")
+
+          if path.exists():
+              data = json.loads(path.read_text(encoding="utf-8"))
+          else:
+              data = {
+                  "version": 1,
+                  "updated_at": None,
+                  "decisions": {}
+              }
+
+          data.setdefault("version", 1)
+          data.setdefault("decisions", {})
+
+          now = datetime.now(timezone.utc).isoformat()
+
+          if decision == "RESTORE":
+              data["decisions"].pop(article_id, None)
+          else:
+              data["decisions"][article_id] = {
+                  "action": decision.lower(),
+                  "reason": reason,
+                  "updated_at": now,
+                  "updated_by": author
+              }
+
+          data["updated_at"] = now
+
+          path.write_text(
+              json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8"
+          )
+
+          print(f"Article: {article_id}")
+          print(f"Decision: {decision}")
+          print(f"Updated by: {author}")
+          PY
+
+      - name: Validate moderation file
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path("admin/moderation.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+
+          if not isinstance(data.get("decisions"), dict):
+              raise SystemExit("Invalid moderation decisions.")
+
+          print("Moderation JSON: VALID")
+          print("Decisions:", len(data["decisions"]))
+          PY
+
+      - name: Commit moderation update
+        run: |
+          git config user.name "TechPulse Moderation Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add admin/moderation.json
+
+          if git diff --cached --quiet; then
+            echo "No moderation changes."
+          else
+            git commit -m "Apply TechPulse editorial moderation"
+            git push
+          fi
+
+      - name: Close moderation issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue close "$ISSUE_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --comment "TechPulse moderation decision applied successfully."

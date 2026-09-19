@@ -812,3 +812,42 @@ document.addEventListener(
         load();
     }
 );
+function showPublishPanel() {
+    const existing = document.getElementById('tp-publish-panel');
+    if (existing) { existing.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+    const panel = document.createElement('section');
+    panel.id = 'tp-publish-panel';
+    panel.style.cssText = 'margin:24px 0;padding:20px;border:1px solid rgba(127,127,127,.35);border-radius:12px;background:rgba(127,127,127,.06)';
+    panel.innerHTML = `
+        <h2 style="margin:0 0 8px">Publish Moderation Changes</h2>
+        <p style="margin:0 0 14px">Hide, Review, and Restore decisions are currently saved in this browser. Export the moderation file, replace <code>admin\\moderation.json</code> in your local TechPulse repository, then run the commands below.</p>
+        <ol style="margin:0 0 14px;padding-left:22px">
+            <li>Click <strong>Export Moderation</strong> above.</li>
+            <li>Replace <code>admin\\moderation.json</code> with the downloaded file.</li>
+            <li>Open Command Prompt in the TechPulse repository.</li>
+            <li>Run the commands below.</li>
+        </ol>
+        <pre style="padding:12px;overflow:auto;border-radius:8px;background:rgba(0,0,0,.08)">git add admin/moderation.json
+git diff --cached --check
+git commit -m "Apply editorial moderation"
+git push origin main</pre>
+        <p style="margin:12px 0 0;font-size:.92em">The public site applies the moderation decision after <code>admin/moderation.json</code> is pushed to GitHub.</p>
+    `;
+    const anchor = document.querySelector('main') || document.body.firstElementChild;
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(panel, anchor); else document.body.appendChild(panel);
+    panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function addPublishModerationButton() {
+    if (document.getElementById('tp-publish-button')) return;
+    const button = document.createElement('button');
+    button.id = 'tp-publish-button';
+    button.type = 'button';
+    button.textContent = 'Publish Moderation Changes';
+    button.onclick = showPublishPanel;
+    button.style.cssText = 'margin-left:8px;padding:10px 14px;border:1px solid currentColor;border-radius:8px;cursor:pointer;font:inherit';
+    const exportButton = document.querySelector('button[onclick*=\"exportModeration\"]');
+    if (exportButton && exportButton.parentNode) exportButton.parentNode.insertBefore(button, exportButton.nextSibling);
+}
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addPublishModerationButton); else addPublishModerationButton();

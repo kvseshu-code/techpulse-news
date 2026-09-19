@@ -110,7 +110,20 @@ async function load(){
   if(!r.ok)throw Error(r.status);
   const d=await r.json();
   lastDatasetGeneratedAt=d.generated_at||null;
-  S.a=(Array.isArray(d)?d:d.articles||[]).map(n).filter(x=>x.url!=="#");
+  let moderation={};
+  try{
+   const mr=await fetch("admin/moderation.json?ts="+Date.now(),{cache:"no-store"});
+   if(mr.ok){
+    const md=await mr.json();
+    moderation=md&&md.decisions?md.decisions:{};
+   }
+  }catch(e){
+   console.warn("TechPulse moderation data unavailable:",e);
+  }
+  S.a=(Array.isArray(d)?d:d.articles||[]).map(n).filter(x=>x.url!=="#").filter(x=>{
+   const decision=moderation[String(x.id)];
+   return !decision||decision.action!=="hide";
+  });
   S.a.forEach(x=>x.tpScore=tpScore(x));
   const newestFirst=(a,b)=>{
    const ta=Date.parse(a.published_at),tb=Date.parse(b.published_at);
