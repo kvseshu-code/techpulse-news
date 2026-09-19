@@ -104,6 +104,78 @@
       "type": "primary",
       "trust": 90,
       "enabled": true
+    },
+    {
+      "name": "LWN.net",
+      "url": "https://lwn.net/headlines/rss",
+      "category": "Linux",
+      "type": "secondary",
+      "trust": 95,
+      "enabled": true
+    },
+    {
+      "name": "Ubuntu Blog",
+      "url": "https://ubuntu.com/blog/feed",
+      "category": "Linux",
+      "type": "primary",
+      "trust": 90,
+      "enabled": true
+    },
+    {
+      "name": "The Register - Systems",
+      "url": "https://api.theregister.com/api/v1/article?limit=25&orderBy=published&query=tag%3Asystems&remapper=rss&site_id=2",
+      "category": "Hardware",
+      "type": "secondary",
+      "trust": 90,
+      "enabled": true
+    },
+    {
+      "name": "The Register - PaaS and IaaS",
+      "url": "https://api.theregister.com/api/v1/article?limit=25&orderBy=published&query=tag%3A%22paas%20and%20iaas%22&remapper=rss&site_id=2",
+      "category": "Cloud",
+      "type": "secondary",
+      "trust": 90,
+      "enabled": true
+    },
+    {
+      "name": "MIT News - Quantum Computing",
+      "url": "https://news.mit.edu/rss/topic/quantum-computing",
+      "category": "Quantum",
+      "type": "primary",
+      "trust": 95,
+      "enabled": true
+    },
+    {
+      "name": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/rss.xml",
+      "category": "Hardware",
+      "type": "primary",
+      "trust": 90,
+      "enabled": true
+    },
+    {
+      "name": "Cisco - Enterprise Networking",
+      "url": "https://newsroom.cisco.com/c/services/i/servlets/newsroom/rssfeed.json?feed=enterprise-networking",
+      "category": "Enterprise",
+      "type": "primary",
+      "trust": 90,
+      "enabled": true
+    },
+    {
+      "name": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/feeds.xml",
+      "category": "Hardware",
+      "type": "secondary",
+      "trust": 90,
+      "enabled": true
+    },
+    {
+      "name": "MIT News - Robotics",
+      "url": "https://news.mit.edu/topic/mitrobotics-rss.xml",
+      "category": "Robotics",
+      "type": "primary",
+      "trust": 95,
+      "enabled": true
     }
   ],
   "notes": [
