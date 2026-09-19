@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechPulse Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <strong>TechPulse Admin</strong>
+        <span>Editorial Console</span>
+    </div>
+    <a href="../">Public Site</a>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <div>
+            <h1>News Management</h1>
+            <p>Review and manage published TechPulse stories.</p>
+        </div>
+    </section>
+
+    <section class="toolbar">
+
+        <input
+            id="search"
+            type="search"
+            placeholder="Search title, source, summary or tags..."
+        >
+
+        <select id="category">
+            <option value="">All Categories</option>
+        </select>
+
+        <select id="source">
+            <option value="">All Sources</option>
+        </select>
+
+        <select id="status">
+            <option value="">All Statuses</option>
+        </select>
+
+        <select id="relevance">
+            <option value="">All Relevance</option>
+        </select>
+
+    </section>
+
+    <section class="summary-bar">
+
+        <div class="admin-actions">
+        <div id="stats" class="stats">
+           Loading...
+       </div>
+
+       <div class="admin-buttons">
+           <button
+               class="button"
+               type="button"
+               onclick="exportModeration()"
+           >
+               Export Moderation
+           </button>
+
+           <button
+               class="button danger"
+               type="button"
+               onclick="clearAllModeration()"
+           >
+               Clear Decisions
+           </button>
+       </div>
+
+       <div class="page-size">
+           <label for="pageSize">Per page</label>
+           <select id="pageSize">
+               <option value="25">25</option>
+               <option value="50" selected>50</option>
+               <option value="100">100</option>
+           </select>
+       </div>
+   </div>
+
+    </section>
+
+    <section id="articles" class="articles">
+        Loading articles...
+    </section>
+
+    <nav id="pagination" class="pagination"></nav>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>

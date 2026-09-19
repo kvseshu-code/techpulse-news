@@ -176,6 +176,38 @@
       "type": "primary",
       "trust": 95,
       "enabled": true
+    },
+    {
+      "name": "AWS News Blog",
+      "category": "Cloud",
+      "type": "primary",
+      "trust": 95,
+      "enabled": true,
+      "url": "https://aws.amazon.com/blogs/aws/feed/"
+    },
+    {
+      "name": "The New Stack",
+      "category": "Cloud",
+      "type": "secondary",
+      "trust": 85,
+      "enabled": true,
+      "url": "https://thenewstack.io/feed/"
+    },
+    {
+      "name": "IEEE Spectrum",
+      "category": "Robotics",
+      "type": "primary",
+      "trust": 95,
+      "enabled": true,
+      "url": "https://spectrum.ieee.org/feeds/feed.rss"
+    },
+    {
+      "name": "Nintendo Life",
+      "category": "Gaming",
+      "type": "secondary",
+      "trust": 85,
+      "enabled": true,
+      "url": "https://www.nintendolife.com/feeds/latest"
     }
   ],
   "notes": [

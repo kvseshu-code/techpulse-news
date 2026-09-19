@@ -1,0 +1,814 @@
+const state = {
+    articles: [],
+    filtered: [],
+    page: 1,
+    pageSize: 50,
+    decisions: {}
+};
+
+const STORAGE_KEY = 'techpulse_admin_moderation_v1';
+
+function load() {
+    loadDecisions();
+
+    fetch('../news.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Unable to load news.json');
+            }
+
+            return response.json();
+        })
+        .then(data => {
+            state.articles = Array.isArray(data.articles)
+                ? data.articles
+                : [];
+
+            populateFilters();
+            applyFilters();
+        })
+        .catch(error => {
+            document.getElementById('articles').innerHTML =
+                '<div class="card error-card">' +
+                '<h2>Unable to load news</h2>' +
+                '<p>' + escapeHtml(error.message) + '</p>' +
+                '</div>';
+        });
+}
+
+function loadDecisions() {
+    try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+
+        if (saved) {
+            const parsed = JSON.parse(saved);
+
+            state.decisions =
+                parsed && typeof parsed === 'object'
+                    ? parsed
+                    : {};
+        }
+    } catch (error) {
+        console.warn('Unable to load moderation data:', error);
+        state.decisions = {};
+    }
+}
+
+function saveDecisions() {
+    localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify(state.decisions)
+    );
+}
+
+function getDecision(id) {
+    return state.decisions[id] || null;
+}
+
+function setDecision(id, action, reason = '') {
+    state.decisions[id] = {
+        action: action,
+        reason: reason,
+        updated_at: new Date().toISOString()
+    };
+
+    saveDecisions();
+}
+
+function clearDecision(id) {
+    delete state.decisions[id];
+    saveDecisions();
+}
+
+function populateFilters() {
+    populateSelect(
+        'category',
+        state.articles.map(article => article.category)
+    );
+
+    populateSelect(
+        'source',
+        state.articles.map(article => article.source)
+    );
+
+    populateSelect(
+        'status',
+        state.articles.map(article => article.status)
+    );
+
+    populateSelect(
+        'relevance',
+        state.articles.map(article => article.relevance)
+    );
+}
+
+function populateSelect(id, values) {
+    const select = document.getElementById(id);
+
+    const uniqueValues = [...new Set(
+        values
+            .filter(Boolean)
+            .map(value => String(value).trim())
+    )].sort((a, b) => a.localeCompare(b));
+
+    uniqueValues.forEach(value => {
+        const option = document.createElement('option');
+
+        option.value = value;
+        option.textContent = value;
+
+        select.appendChild(option);
+    });
+}
+
+function applyFilters() {
+    const search = document
+        .getElementById('search')
+        .value
+        .trim()
+        .toLowerCase();
+
+    const category =
+        document.getElementById('category').value;
+
+    const source =
+        document.getElementById('source').value;
+
+    const status =
+        document.getElementById('status').value;
+
+    const relevance =
+        document.getElementById('relevance').value;
+
+    state.filtered = state.articles.filter(article => {
+
+        if (category && article.category !== category) {
+            return false;
+        }
+
+        if (source && article.source !== source) {
+            return false;
+        }
+
+        if (status && article.status !== status) {
+            return false;
+        }
+
+        if (relevance && article.relevance !== relevance) {
+            return false;
+        }
+
+        if (search) {
+            const searchable = [
+                article.title,
+                article.source,
+                article.category,
+                article.subcategory,
+                article.summary,
+                article.why_it_matters,
+                article.what_changes,
+                article.whats_next,
+                ...(article.tags || []),
+                ...(article.secondary_topics || [])
+            ]
+                .filter(Boolean)
+                .join(' ')
+                .toLowerCase();
+
+            if (!searchable.includes(search)) {
+                return false;
+            }
+        }
+
+        return true;
+    });
+
+    state.page = 1;
+
+    render();
+}
+
+function render() {
+    renderStats();
+    renderArticles();
+    renderPagination();
+}
+
+function renderStats() {
+    const stats = document.getElementById('stats');
+
+    const total = state.articles.length;
+    const visible = state.filtered.length;
+
+    const start = visible === 0
+        ? 0
+        : ((state.page - 1) * state.pageSize) + 1;
+
+    const end = Math.min(
+        state.page * state.pageSize,
+        visible
+    );
+
+    const hiddenCount = Object.values(state.decisions)
+        .filter(item => item.action === 'hide')
+        .length;
+
+    const reviewCount = Object.values(state.decisions)
+        .filter(item => item.action === 'review')
+        .length;
+
+    stats.textContent =
+        'Showing ' +
+        start +
+        '–' +
+        end +
+        ' of ' +
+        visible +
+        ' articles · ' +
+        total +
+        ' total · ' +
+        reviewCount +
+        ' review · ' +
+        hiddenCount +
+        ' hidden';
+}
+
+function renderArticles() {
+    const box = document.getElementById('articles');
+
+    if (state.filtered.length === 0) {
+        box.innerHTML =
+            '<div class="empty card">' +
+            '<h2>No articles found</h2>' +
+            '<p>Try changing your search or filters.</p>' +
+            '</div>';
+
+        return;
+    }
+
+    const start =
+        (state.page - 1) * state.pageSize;
+
+    const end =
+        start + state.pageSize;
+
+    const pageArticles =
+        state.filtered.slice(start, end);
+
+    box.innerHTML =
+        pageArticles
+            .map(renderArticle)
+            .join('');
+}
+
+function renderArticle(article) {
+    const decision = getDecision(article.id);
+
+    const title = escapeHtml(
+        article.title || 'Untitled'
+    );
+
+    const summary = escapeHtml(
+        article.summary ||
+        article.why_it_matters ||
+        'No summary available.'
+    );
+
+    const category = escapeHtml(
+        article.category || 'Technology'
+    );
+
+    const source = escapeHtml(
+        article.source || 'Unknown source'
+    );
+
+    const status = escapeHtml(
+        article.status ||
+        article.verification_status ||
+        'UNKNOWN'
+    );
+
+    const relevance = escapeHtml(
+        article.relevance || 'UNKNOWN'
+    );
+
+    const confidence =
+        article.confidence ?? '—';
+
+    const importance =
+        article.importance ?? '—';
+
+    const classification = escapeHtml(
+        article.classification_confidence || '—'
+    );
+
+    const published =
+        formatDate(article.published_at);
+
+    const qualityFlags =
+        Array.isArray(article.quality_flags)
+            ? article.quality_flags
+            : [];
+
+    const flagsHtml =
+        qualityFlags.length
+            ? '<div class="flags">' +
+              qualityFlags.map(flag =>
+                  '<span class="flag">' +
+                  escapeHtml(flag) +
+                  '</span>'
+              ).join('') +
+              '</div>'
+            : '';
+
+    const decisionHtml =
+        decision
+            ? `
+                <div class="editorial-decision ${escapeHtml(decision.action)}">
+                    <strong>Editorial:</strong>
+                    ${escapeHtml(decision.action.toUpperCase())}
+                    ${
+                        decision.reason
+                            ? ' · ' + escapeHtml(decision.reason)
+                            : ''
+                    }
+                </div>
+              `
+            : '';
+
+    const safeUrl =
+        safeArticleUrl(article.url);
+
+    return `
+        <article class="card article-card">
+
+            <div class="article-top">
+
+                <div class="meta">
+                    <span>${category}</span>
+                    <span>·</span>
+                    <span>${source}</span>
+
+                    ${
+                        published
+                            ? '<span>·</span><span>' +
+                              published +
+                              '</span>'
+                            : ''
+                    }
+                </div>
+
+                <div class="badges">
+                    <span class="badge status">
+                        ${status}
+                    </span>
+
+                    <span class="badge relevance">
+                        ${relevance}
+                    </span>
+                </div>
+
+            </div>
+
+            <h2>${title}</h2>
+
+            <p class="summary">
+                ${summary}
+            </p>
+
+            <div class="metrics">
+
+                <div>
+                    <span>Confidence</span>
+                    <strong>${confidence}</strong>
+                </div>
+
+                <div>
+                    <span>Importance</span>
+                    <strong>${importance}</strong>
+                </div>
+
+                <div>
+                    <span>Classification</span>
+                    <strong>${classification}</strong>
+                </div>
+
+            </div>
+
+            ${flagsHtml}
+
+            ${decisionHtml}
+
+            <div class="actions">
+
+                ${
+                    safeUrl
+                        ? `
+                            <a
+                                class="button primary"
+                                href="${safeUrl}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Open Article
+                            </a>
+                          `
+                        : ''
+                }
+
+                <button
+                    class="button"
+                    type="button"
+                    onclick="reviewArticle('${escapeJs(article.id)}')"
+                >
+                    Review
+                </button>
+
+                ${
+                    decision && decision.action === 'hide'
+                        ? `
+                            <button
+                                class="button restore"
+                                type="button"
+                                onclick="restoreArticle('${escapeJs(article.id)}')"
+                            >
+                                Restore
+                            </button>
+                          `
+                        : `
+                            <button
+                                class="button danger"
+                                type="button"
+                                onclick="hideArticle('${escapeJs(article.id)}')"
+                            >
+                                Hide
+                            </button>
+                          `
+                }
+
+            </div>
+
+        </article>
+    `;
+}
+
+function reviewArticle(id) {
+    const article =
+        state.articles.find(item => item.id === id);
+
+    if (!article) {
+        return;
+    }
+
+    const current =
+        getDecision(id);
+
+    const reason =
+        window.prompt(
+            'Enter an editorial review reason:',
+            current?.reason || ''
+        );
+
+    if (reason === null) {
+        return;
+    }
+
+    setDecision(
+        id,
+        'review',
+        reason.trim()
+    );
+
+    render();
+}
+
+function hideArticle(id) {
+    const article =
+        state.articles.find(item => item.id === id);
+
+    if (!article) {
+        return;
+    }
+
+    const confirmed =
+        window.confirm(
+            'Hide this article from the Admin editorial view?\n\n' +
+            (article.title || 'Untitled') +
+            '\n\n' +
+            'This does NOT modify news.json or the public site.'
+        );
+
+    if (!confirmed) {
+        return;
+    }
+
+    const reason =
+        window.prompt(
+            'Reason for hiding this article:',
+            ''
+        );
+
+    if (reason === null) {
+        return;
+    }
+
+    setDecision(
+        id,
+        'hide',
+        reason.trim()
+    );
+
+    render();
+}
+
+function restoreArticle(id) {
+    const confirmed =
+        window.confirm(
+            'Restore this article to the normal editorial view?'
+        );
+
+    if (!confirmed) {
+        return;
+    }
+
+    clearDecision(id);
+
+    render();
+}
+
+function exportModeration() {
+    const payload = {
+        version: 1,
+        updated_at: new Date().toISOString(),
+        decisions: state.decisions
+    };
+
+    const blob = new Blob(
+        [
+            JSON.stringify(
+                payload,
+                null,
+                2
+            )
+        ],
+        {
+            type: 'application/json'
+        }
+    );
+
+    const url =
+        URL.createObjectURL(blob);
+
+    const link =
+        document.createElement('a');
+
+    link.href = url;
+    link.download = 'moderation.json';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    link.remove();
+
+    URL.revokeObjectURL(url);
+}
+
+function clearAllModeration() {
+    const confirmed =
+        window.confirm(
+            'Clear ALL editorial decisions from this browser?\n\n' +
+            'This cannot be undone.'
+        );
+
+    if (!confirmed) {
+        return;
+    }
+
+    state.decisions = {};
+
+    localStorage.removeItem(STORAGE_KEY);
+
+    render();
+}
+
+function renderPagination() {
+    const box =
+        document.getElementById('pagination');
+
+    const totalPages =
+        Math.ceil(
+            state.filtered.length /
+            state.pageSize
+        );
+
+    if (totalPages <= 1) {
+        box.innerHTML = '';
+        return;
+    }
+
+    let html = '';
+
+    html += `
+        <button
+            class="page-button"
+            ${state.page === 1 ? 'disabled' : ''}
+            onclick="goToPage(${state.page - 1})"
+        >
+            ← Previous
+        </button>
+    `;
+
+    const maxButtons = 7;
+
+    let start =
+        Math.max(
+            1,
+            state.page -
+            Math.floor(maxButtons / 2)
+        );
+
+    let end =
+        Math.min(
+            totalPages,
+            start + maxButtons - 1
+        );
+
+    if (end - start + 1 < maxButtons) {
+        start =
+            Math.max(
+                1,
+                end - maxButtons + 1
+            );
+    }
+
+    for (
+        let page = start;
+        page <= end;
+        page++
+    ) {
+        html += `
+            <button
+                class="page-button ${
+                    page === state.page
+                        ? 'active'
+                        : ''
+                }"
+                onclick="goToPage(${page})"
+            >
+                ${page}
+            </button>
+        `;
+    }
+
+    html += `
+        <button
+            class="page-button"
+            ${
+                state.page === totalPages
+                    ? 'disabled'
+                    : ''
+            }
+            onclick="goToPage(${state.page + 1})"
+        >
+            Next →
+        </button>
+    `;
+
+    box.innerHTML = html;
+}
+
+function goToPage(page) {
+    const totalPages =
+        Math.ceil(
+            state.filtered.length /
+            state.pageSize
+        );
+
+    if (
+        page < 1 ||
+        page > totalPages
+    ) {
+        return;
+    }
+
+    state.page = page;
+
+    render();
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function formatDate(value) {
+    if (!value) {
+        return '';
+    }
+
+    const date =
+        new Date(value);
+
+    if (Number.isNaN(date.getTime())) {
+        return '';
+    }
+
+    return date.toLocaleString();
+}
+
+function safeArticleUrl(value) {
+    if (!value) {
+        return '';
+    }
+
+    try {
+        const url =
+            new URL(value);
+
+        if (
+            url.protocol !== 'http:' &&
+            url.protocol !== 'https:'
+        ) {
+            return '';
+        }
+
+        return escapeHtml(
+            url.href
+        );
+    } catch {
+        return '';
+    }
+}
+
+function escapeHtml(value) {
+    return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+}
+
+function escapeJs(value) {
+    return String(value)
+        .replaceAll('\\', '\\\\')
+        .replaceAll("'", "\\'");
+}
+
+document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+
+        document
+            .getElementById('search')
+            .addEventListener(
+                'input',
+                applyFilters
+            );
+
+        document
+            .getElementById('category')
+            .addEventListener(
+                'change',
+                applyFilters
+            );
+
+        document
+            .getElementById('source')
+            .addEventListener(
+                'change',
+                applyFilters
+            );
+
+        document
+            .getElementById('status')
+            .addEventListener(
+                'change',
+                applyFilters
+            );
+
+        document
+            .getElementById('relevance')
+            .addEventListener(
+                'change',
+                applyFilters
+            );
+
+        document
+            .getElementById('pageSize')
+            .addEventListener(
+                'change',
+                event => {
+                    state.pageSize =
+                        Number(event.target.value);
+
+                    state.page = 1;
+
+                    render();
+                }
+            );
+
+        load();
+    }
+);
