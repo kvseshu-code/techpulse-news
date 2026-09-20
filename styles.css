@@ -969,7 +969,7 @@ html.reduce-motion #intelligenceConsole .console-signal-bars i,
 /* === END TECHPULSE INTELLIGENCE CONSOLE: CLEAN 3-PANEL === */
 
 
-.nav-more{position:relative;display:inline-flex;align-items:center}.nav-more-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;min-width:170px;padding:8px;border:1px solid var(--border,#d9dee5);border-radius:12px;background:var(--surface,#fff);box-shadow:0 12px 30px rgba(0,0,0,.16);z-index:1000}.nav-more.open .nav-more-menu{display:flex;flex-direction:column;gap:4px}.nav-more-menu .nav{display:block;width:100%;text-align:left;white-space:nowrap}.nav-more-menu .nav.active{font-weight:700}@media(max-width:760px){.nav-more-menu{right:auto;left:0;max-width:calc(100vw - 32px);overflow:auto}.nav-more-menu .nav{font-size:.9rem}}
+.nav-more{position:relative;display:inline-flex;align-items:center;z-index:1001}.nav-more-menu{display:none;position:absolute;top:calc(100% + 8px);left:50%;right:auto;transform:translateX(-50%);min-width:190px;padding:8px;border:1px solid var(--border,#d9dee5);border-radius:12px;background:var(--surface,#fff);box-shadow:0 12px 30px rgba(0,0,0,.16);z-index:9999}.nav-more.open .nav-more-menu{display:flex;flex-direction:column;gap:4px}.nav-more-menu .nav{display:block;width:100%;text-align:left;white-space:nowrap}.nav-more-menu .nav.active{font-weight:700}@media(max-width:760px){.nav-more-menu{left:0;right:auto;transform:none;max-width:calc(100vw - 32px);overflow:auto}.nav-more-menu .nav{font-size:.9rem}}
 
 
 /* TechPulse Console - screen-fit layout */
