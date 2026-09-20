@@ -1,3 +1,105 @@
+// TECHPULSE ADMIN FRONTEND AUTHENTICATION
+const ADMIN_USERNAME = 'admin';
+const ADMIN_PASSWORD = 'TempTass_2026!';
+const ADMIN_SESSION_KEY = 'techpulse_admin_logged_in_v1';
+let adminInitialized = false;
+
+function isLoggedIn() {
+    return sessionStorage.getItem(ADMIN_SESSION_KEY) === 'true';
+}
+
+function showAdminConsole() {
+    const login = document.getElementById('adminLogin');
+    if (login) login.style.display = 'none';
+}
+
+function hideAdminConsole() {
+    const login = document.getElementById('adminLogin');
+    if (login) login.style.display = 'flex';
+}
+
+function showLoginError(message) {
+    const element = document.getElementById('loginError');
+    if (element) element.textContent = message;
+}
+
+function handleLogin() {
+    const username = document.getElementById('adminUsername').value.trim();
+    const password = document.getElementById('adminPassword').value;
+
+    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+        sessionStorage.setItem(ADMIN_SESSION_KEY, 'true');
+        showAdminConsole();
+        showLoginError('');
+        initializeAdminConsole();
+        return;
+    }
+
+    showLoginError('Invalid username or password.');
+}
+
+function refreshAdminNews() {
+    window.location.reload();
+}
+
+function logoutAdmin() {
+    sessionStorage.removeItem(ADMIN_SESSION_KEY);
+    hideAdminConsole();
+    window.scrollTo(0, 0);
+    const username = document.getElementById('adminUsername');
+    const password = document.getElementById('adminPassword');
+    if (username) username.value = '';
+    if (password) password.value = '';
+}
+
+function initializeAdminConsole() {
+    if (adminInitialized) return;
+    adminInitialized = true;
+
+    document.getElementById('search').addEventListener('input', applyFilters);
+    const themeToggle=document.getElementById('themeToggle');const themeIcon=document.getElementById('themeIcon');const themeText=document.getElementById('themeText');function applyAdminTheme(t){document.documentElement.setAttribute('data-theme',t);localStorage.setItem('techpulse_admin_theme',t);if(themeIcon)themeIcon.textContent=t==='dark'?'☀':'☾';if(themeText)themeText.textContent=t==='dark'?'Light':'Dark';}function initializeAdminTheme(){var t=localStorage.getItem('techpulse_admin_theme')||'light';applyAdminTheme(t);}if(themeToggle)themeToggle.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme')=== 'dark'?'light':'dark';applyAdminTheme(t);});initializeAdminTheme();const refreshButton = document.getElementById('refreshNews');
+    if (refreshButton) refreshButton.addEventListener('click', refreshAdminNews);
+    const logoutButton = document.getElementById('logoutAdmin');
+    if (logoutButton) logoutButton.addEventListener('click', logoutAdmin);
+    document.getElementById('category').addEventListener('change', applyFilters);
+    document.getElementById('source').addEventListener('change', applyFilters);
+    document.getElementById('status').addEventListener('change', applyFilters);
+    document.getElementById('relevance').addEventListener('change', applyFilters);
+
+    document.getElementById('pageSize').addEventListener('change', event => {
+        state.pageSize = Number(event.target.value);
+        state.page = 1;
+        render();
+    });
+
+    load();
+    addPublishModerationButton();
+}
+
+function setupAdminLogin() {
+    const button = document.getElementById('adminLoginButton');
+    const password = document.getElementById('adminPassword');
+
+    if (button) button.addEventListener('click', handleLogin);
+
+    if (password) {
+        password.addEventListener('keyup', event => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                handleLogin();
+            }
+        });
+    }
+
+    if (isLoggedIn()) {
+        showAdminConsole();
+        initializeAdminConsole();
+    } else {
+        hideAdminConsole();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setupAdminLogin);
 const state = {
     articles: [],
     filtered: [],
@@ -302,6 +404,24 @@ function renderArticle(article) {
         article.classification_confidence || '—'
     );
 
+    const visualMap = {
+        AI: 'AI',
+        Cloud: 'CL',
+        Cybersecurity: 'CY',
+        Enterprise: 'EN',
+        Gaming: 'GM',
+        Hardware: 'HW',
+        Linux: 'LX',
+        Quantum: 'QN',
+        Robotics: 'RB',
+        Space: 'SP',
+        Technology: 'TP'
+    };
+
+    const visualLabel = escapeHtml(
+        visualMap[article.category] || 'TP'
+    );
+
     const published =
         formatDate(article.published_at);
 
@@ -341,6 +461,14 @@ function renderArticle(article) {
 
     return `
         <article class="card article-card">
+
+            <div class="article-visual" aria-hidden="true">
+                <span>${visualLabel}</span>
+                <i></i>
+                <b></b>
+            </div>
+
+            <div class="article-content">
 
             <div class="article-top">
 
@@ -445,6 +573,8 @@ function renderArticle(article) {
                             </button>
                           `
                 }
+
+            </div>
 
             </div>
 
@@ -850,4 +980,4 @@ function addPublishModerationButton() {
     if (exportButton && exportButton.parentNode) exportButton.parentNode.insertBefore(button, exportButton.nextSibling);
 }
 
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addPublishModerationButton); else addPublishModerationButton();
+document.addEventListener('DOMContentLoaded', addPublishModerationButton);

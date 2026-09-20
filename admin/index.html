@@ -2,100 +2,79 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechPulse Admin</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TechPulse – Editorial Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" cross-origin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="admin.css">
 </head>
 <body>
+<div id="adminLogin" class="login-screen">
+  <div class="login-card">
+    <div class="login-brand">
+      <span class="brand-mark">TP</span>
+      <span>TechPulse</span>
+    </div>
+    <p class="login-eyebrow">EDITORIAL ACCESS</p>
+    <h1>Admin Login</h1>
+    <p class="login-subtitle">Sign in to continue to the TechPulse editorial console.</p>
+    <label for="adminUsername">Username</label>
+    <input id="adminUsername" type="text" autocomplete="username" autofocus placeholder="Enter username">
+    <label for="adminPassword">Password</label>
+    <input id="adminPassword" type="password" autocomplete="current-password" placeholder="Enter password">
+    <button id="adminLoginButton" type="button">Log in </button>
+    <p id="loginError" class="login-error" aria-live="polite"></p>
+    <p class="login-notice">Admin access requires login.</p>
+  </div>
+</div>
 
 <header class="topbar">
-    <div class="brand">
-        <strong>TechPulse Admin</strong>
-        <span>Editorial Console</span>
-    </div>
-    <a href="../">Public Site</a>
+  <div class="brand" aria-label="TechPulse Editorial Console">
+    <span class="brand-mark">TP</span>
+    <span class="brand-copy"><strong>TechPulse</strong><small>Editorial Console</small></span>
+  </div>
+  <div class="workspace-label"><span class="live-dot"></span>Editorial workspace</div>
+  <div class="top-actions">
+    <button class="top-action theme-toggle" id="themeToggle" type="button" aria-label="Switch theme"><span id="themeIcon">☾</span><span id="themeText">Dark</span></button>
+    <a class="top-link" href="../">Public Site ↑</a>
+    <button class="top-action" id="refreshNews" type="button">Refresh</button>
+    <button class="top-action logout-action" id="logoutAdmin" type="button">Logout</button>
+  </div>
 </header>
 
 <main class="container">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">01 / EDITORIAL CONTROL</span>
+      <h1>Editorial Control Center</h1>
+      <p>Review, validate and manage TechPulse intelligence from one editorial workspace.</p>
+    </div>
+    <div class="hero-grid" aria-hidden="true"><span>01</span><span>02</span><span>03</span></div>
+  </section>
 
-    <section class="hero">
-        <div>
-            <h1>News Management</h1>
-            <p>Review and manage published TechPulse stories.</p>
-        </div>
-    </section>
+<section class="dashboard" aria-label="Editorial overview">
+    <div class="stat-card"><div class="stat-icon"></div><span class="stat-label">Total Stories</span><strong id="totalState">0</strong><small>Current news index</small></div>
+    <div class="stat-card"><div class="stat-icon review-icon"></div><span class="stat-label">Review</span><strong id="reviewState">0</strong><small>Stories flagged for review</small></div>
+    <div class="stat-card"><div class="stat-icon hide-icon"></div><span class="stat-label">Hidden</span><strong id="hiddenState">0</strong><small>Stories not published</small></div>
+    <div class="stat-card accent-card"><div class="stat-icon"></div><span class="stat-label">Current Queue</span><strong id="queueState">0</strong><small>Filtered editorial workspace</small></div>
+  </section>
 
-    <section class="toolbar">
+<section class="filters">
+    <div class="filter-header"><div><span class="section-eye">STORY SEARCH</span><p>Search and filter stories by title, source, category or editorial relevance.</p></div><span class="filter-legend">INTELLIGENCE INDEX</span></div>
+    <div class="filter-grid">
+      <label class="search-field"><span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg></span><input id="search" type="search" placeholder="Search title, source, summary or tags..."></label>
+      <select id="category"><option value="">All Categories</option></select>
+      <select id="source"><option value="">All Sources</option></select>
+      <select id="status"><option value="">All Statuses</option></select>
+      <select id="relevance"><option value="">All Relevance</option></select>
+    </div>
+  </section>
 
-        <input
-            id="search"
-            type="search"
-            placeholder="Search title, source, summary or tags..."
-        >
+  <section class="list-bar"><div id="stats">Loading...</div><div class="list-actions"><div class="patch"><span class="patch-dot"></span>Local editorial console</div><div class="page-size"><label for="pageSize">Per page</label><select id="pageSize"><option value="25">25</option><option value="50" selected>50</option><option value="100">100</option></select></div></div></section>
 
-        <select id="category">
-            <option value="">All Categories</option>
-        </select>
-
-        <select id="source">
-            <option value="">All Sources</option>
-        </select>
-
-        <select id="status">
-            <option value="">All Statuses</option>
-        </select>
-
-        <select id="relevance">
-            <option value="">All Relevance</option>
-        </select>
-
-    </section>
-
-    <section class="summary-bar">
-
-        <div class="admin-actions">
-        <div id="stats" class="stats">
-           Loading...
-       </div>
-
-       <div class="admin-buttons">
-           <button
-               class="button"
-               type="button"
-               onclick="exportModeration()"
-           >
-               Export Moderation
-           </button>
-
-           <button
-               class="button danger"
-               type="button"
-               onclick="clearAllModeration()"
-           >
-               Clear Decisions
-           </button>
-       </div>
-
-       <div class="page-size">
-           <label for="pageSize">Per page</label>
-           <select id="pageSize">
-               <option value="25">25</option>
-               <option value="50" selected>50</option>
-               <option value="100">100</option>
-           </select>
-       </div>
-   </div>
-
-    </section>
-
-    <section id="articles" class="articles">
-        Loading articles...
-    </section>
-
-    <nav id="pagination" class="pagination"></nav>
-
+  <section id="articles" class="articles">Loading articles...</section>
+  <nav id="pagination" class="pagination"></nav>
 </main>
-
 <script src="admin.js"></script>
 </body>
 </html>

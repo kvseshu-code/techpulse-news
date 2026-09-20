@@ -84,7 +84,7 @@ function render(){
  $("#developing").innerHTML=dev.map(x=>`<div class="compact" data-open="${esc(x.id)}"><strong>${Math.round(x.importance)}</strong><span>${esc(x.title)}</span></div>`).join("")||"<p>No developing stories.</p>";
  const tx=S.a.slice(0,15).map(x=>`<span class="tick"><b>${esc(x.category)}</b> · ${esc(x.title)}</span>`).join("");
  $("#ticker").innerHTML=tx+tx;
- cat("#technology","technology");cat("#gaming","gaming");cat("#cybersecurity","cyber");cat("#ai","ai");
+ cat("#technology","technology");cat("#gaming","gaming");cat("#cybersecurity","cyber");cat("#ai","ai");cat("#cloud","cloud");cat("#enterprise","enterprise");cat("#hardware","hardware");cat("#linux","linux");cat("#quantum","quantum");cat("#robotics","robotics");cat("#space","space");
  const cats=["AI","Cybersecurity","Cloud","Hardware","Gaming","Robotics","Quantum","Space","Linux","Enterprise"];
  $("#radar").innerHTML=cats.map(c=>{const a=S.a.filter(x=>(x.category+" "+x.tags.join(" ")).toLowerCase().includes(c.toLowerCase()));
  const m=a.length?Math.round(a.reduce((z,x)=>z+x.momentum,0)/a.length):0;

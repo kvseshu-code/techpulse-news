@@ -1,0 +1,112 @@
+/* TECHPULSE LIGHT MODE READABILITY — FINAL CONTRAST PASS */
+html[data-theme="light"]{
+  --editorial-text:#20252b;
+  --editorial-muted:#56616d;
+  --editorial-line:#d8dde3;
+}
+
+html[data-theme="light"] body{
+  color:#20252b!important;
+}
+
+html[data-theme="light"] .hero h1{
+  color:#151a20!important;
+}
+
+html[data-theme="light"] .hero-copy p,
+html[data-theme="light"] .filter-header p{
+  color:#56616d!important;
+  font-weight:500!important;
+}
+
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .section-eye,
+html[data-theme="light"] .filter-legend{
+  color:#46515d!important;
+  font-weight:700!important;
+}
+
+html[data-theme="light"] .article-card{
+  color:#20252b!important;
+}
+
+html[data-theme="light"] .article-card h2{
+  color:#151a20!important;
+  font-weight:700!important;
+}
+
+html[data-theme="light"] .article-card .summary{
+  color:#424b55!important;
+  font-weight:500!important;
+}
+
+html[data-theme="light"] .article-card .meta{
+  color:#4f5b67!important;
+  font-weight:600!important;
+}
+
+html[data-theme="light"] .article-card .badge,
+html[data-theme="light"] .article-card .metrics span{
+  color:#4b5662!important;
+  font-weight:700!important;
+}
+
+html[data-theme="light"] .article-card .metrics strong{
+  color:#171c22!important;
+  font-weight:700!important;
+}
+
+html[data-theme="light"] .patch,
+html[data-theme="light"] #stats,
+html[data-theme="light"] .page-size label{
+  color:#4b5662!important;
+  font-weight:600!important;
+}
+
+html[data-theme="light"] .search-field input,
+html[data-theme="light"] .filter-grid select,
+html[data-theme="light"] .page-size select{
+  color:#252b32!important;
+  font-weight:600!important;
+}
+
+html[data-theme="light"] .search-field input::placeholder{
+  color:#68737e!important;
+  opacity:1!important;
+}
+
+html[data-theme="light"] .button,
+html[data-theme="light"] .top-action,
+html[data-theme="light"] .top-link,
+html[data-theme="light"] .pagination button,
+html[data-theme="light"] .pagination a{
+  color:#252b32!important;
+  font-weight:600!important;
+}
+
+html[data-theme="light"] .button.primary{
+  color:#fff!important;
+}
+
+html[data-theme="light"] .brand strong{
+  color:#171c22!important;
+  font-weight:750!important;
+}
+
+html[data-theme="light"] .brand-copy small,
+html[data-theme="light"] .workspace-label{
+  color:#59636e!important;
+  font-weight:650!important;
+}
+
+html[data-theme="light"] .pagination .active,
+html[data-theme="light"] .pagination button.active,
+html[data-theme="light"] .pagination a.active{
+  color:#fff!important;
+}
+
+html[data-theme="light"] .pagination .prev,
+html[data-theme="light"] .pagination .next{
+  color:#303842!important;
+  font-weight:650!important;
+}
