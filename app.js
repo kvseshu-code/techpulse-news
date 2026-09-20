@@ -402,7 +402,7 @@ function policy(k){
  $("#modalBody").innerHTML=`<span class="eyebrow">TECHPULSE POLICY</span><h2>${esc(d[k][0])}</h2><p>${esc(d[k][1])}</p>`;show();
 }
 
-document.addEventListener("click",e=>{
+document.addEventListener("click",e=>{const t=e.target.closest(".nav-more-toggle");const m=document.querySelector(".nav-more");if(t&&m){const open=m.classList.toggle("open");t.setAttribute("aria-expanded",String(open));return}if(!e.target.closest(".nav-more")){document.querySelectorAll(".nav-more.open").forEach(x=>{x.classList.remove("open");const b=x.querySelector(".nav-more-toggle");if(b)b.setAttribute("aria-expanded","false")})}});\ndocument.addEventListener("click",e=>{
  let b=e.target.closest("[data-view]");if(b)return view(b.dataset.view);
  let o=e.target.closest("[data-open]");if(o)return openStory(o.dataset.open);
  let s=e.target.closest("[data-save]");if(s)return save(s.dataset.save);
