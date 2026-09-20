@@ -582,88 +582,45 @@ function renderArticle(article) {
     `;
 }
 
+function openModerationIssue(id,action,reason, article) {
+    const repo = 'kvseshu-code/techpulse-news';
+    const title = `[TP-MOD] ${action.toUpperCase()} ${id}`;
+    const body = `[TECHPULSE |EDITORIAL MODERATION]
+
+Article: ${article.id}
+
+Title: ${article.title || 'Untitled'}
+
+Reason: ${reason || 'No reason provided'}`;
+    const url = 'https://github.com/' + repo + '/issues/new?title=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(body);
+    window.open(url, '_blank');
+}
+
 function reviewArticle(id) {
-    const article =
-        state.articles.find(item => item.id === id);
-
-    if (!article) {
-        return;
-    }
-
-    const current =
-        getDecision(id);
-
-    const reason =
-        window.prompt(
-            'Enter an editorial review reason:',
-            current?.reason || ''
-        );
-
-    if (reason === null) {
-        return;
-    }
-
-    setDecision(
-        id,
-        'review',
-        reason.trim()
-    );
-
-    render();
+    const article = state.articles.find(item => item.id === id);
+    if (!article) return;
+    const current = getDecision(id);
+    const reason = window.prompt('Enter an editorial review reason:', current?.reason || '');
+    if (reason === null) return;
+    openModerationIssue(id, 'review', reason.trim(), article);
 }
 
 function hideArticle(id) {
-    const article =
-        state.articles.find(item => item.id === id);
-
-    if (!article) {
-        return;
-    }
-
-    const confirmed =
-        window.confirm(
-            'Hide this article from the Admin editorial view?\n\n' +
-            (article.title || 'Untitled') +
-            '\n\n' +
-            'This does NOT modify news.json or the public site.'
-        );
-
-    if (!confirmed) {
-        return;
-    }
-
-    const reason =
-        window.prompt(
-            'Reason for hiding this article:',
-            ''
-        );
-
-    if (reason === null) {
-        return;
-    }
-
-    setDecision(
-        id,
-        'hide',
-        reason.trim()
-    );
-
-    render();
+    const article = state.articles.find(item => item.id === id);
+    if (!article) return;
+    const confirmed = window.confirm('Hide this article via the TechPulse Editorial Moderation workflow?"\n\n' + (article.title || 'Untitled') + '\n\nA window will be opened to submit the moderation request.');
+    if (!confirmed) return;
+    const reason = window.prompt('Reason for hiding this article:', '');
+    if (reason === null) return;
+    openModerationIssue(id, 'hide', reason.trim(), article);
 }
 
 function restoreArticle(id) {
-    const confirmed =
-        window.confirm(
-            'Restore this article to the normal editorial view?'
-        );
-
-    if (!confirmed) {
-        return;
-    }
-
-    clearDecision(id);
-
-    render();
+    const article = state.articles.find(item => item.id === id);
+    if (!article) return;
+    const confirmed = window.confirm('Restore this article through the TechPulse Editorial Moderation workflow?');
+    if (!confirmed) return;
+    openModerationIssue(id, 'restore', 'Restore article to the normal editorial view.', article);
 }
 
 function exportModeration() {
