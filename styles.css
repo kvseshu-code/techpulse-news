@@ -974,7 +974,7 @@ html.reduce-motion #intelligenceConsole .console-signal-bars i,
 
 /* TechPulse Console - screen-fit layout */
 #intelligenceConsole{width:min(1200px,calc(100% - 32px))!important;margin:12px auto 18px!important}
-#intelligenceConsole .console-head{margin-bottom:7px!important}
+#intelligenceConsole .console-head{margin-bottom:7px!important}#intelligenceConsole .console-head>div{flex:1 1 0!important;min-width:0!important}#intelligenceConsole .console-head>.console-live{flex:1 1 0!important;justify-content:flex-end!important;min-width:0!important}
 #intelligenceConsole .console-panels{grid-template-columns:minmax(165px,.7fr) minmax(300px,1.7fr) minmax(210px,.9fr)!important;gap:8px!important}
 #intelligenceConsole .console-panel{padding:12px!important;border-radius:10px!important}
 #intelligenceConsole .console-score-ring{width:82px!important;height:82px!important;margin:0 auto 7px!important}
