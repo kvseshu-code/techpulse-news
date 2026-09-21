@@ -110,8 +110,8 @@ const state = {
 
 const STORAGE_KEY = 'techpulse_admin_moderation_v1';
 
-function load() {
-    loadDecisions();
+async function load() {
+    await loadDecisions();
 
     fetch('../news.json')
         .then(response => {
@@ -138,18 +138,12 @@ function load() {
         });
 }
 
-function loadDecisions() {
+async function loadDecisions() {
     try {
-        const saved = localStorage.getItem(STORAGE_KEY);
-
-        if (saved) {
-            const parsed = JSON.parse(saved);
-
-            state.decisions =
-                parsed && typeof parsed === 'object'
-                    ? parsed
-                    : {};
-        }
+        const response = await fetch('../admin/moderation.json?ts=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('Unable to load moderation.json');
+        const parsed = await response.json();
+        state.decisions = parsed && parsed.decisions && typeof parsed.decisions === 'object' ? parsed.decisions : {};
     } catch (error) {
         console.warn('Unable to load moderation data:', error);
         state.decisions = {};
