@@ -357,8 +357,8 @@ function openStory(id){
  <div class="sources">${cs.length?cs.map(s=>{const u=typeof s==="string"?s:s.url;return `<a href="${url(u)}" target="_blank" rel="noopener noreferrer"><span>${esc(typeof s==="string"?s:s.title||s.source||"Corroborating source")}</span><small>↗</small></a>`}).join(""):`<p>${tr("noCorroborating")}</p>`}</div>`;
  show();
 }
-function show(){$("#modal").hidden=false;document.body.style.overflow="hidden"}
-function close(){$("#modal").hidden=true;document.body.style.overflow="";window.speechSynthesis?.cancel();S.speaking=false}
+let readingLastScroll=0;let readingScrollBound=false;function updateReadingNav(){const d=document.querySelector(".dialog");if(!d)return;const y=d.scrollTop;if(y<=8){document.body.classList.remove("tp-reading-nav-hidden");readingLastScroll=y;return}if(y>readingLastScroll+4)document.body.classList.add("tp-reading-nav-hidden");else if(y<readingLastScroll-4)document.body.classList.remove("tp-reading-nav-hidden");readingLastScroll=y}function enableReadingMode(){document.body.classList.add("tp-reading-autohide");document.body.classList.remove("tp-reading-nav-hidden");const d=document.querySelector(".dialog");if(d&&!readingScrollBound){d.addEventListener("scroll",updateReadingNav,{passive:true});readingScrollBound=true}readingLastScroll=d?d.scrollTop:0}function disableReadingMode(){document.body.classList.remove("tp-reading-autohide","tp-reading-nav-hidden");readingScrollBound=false;readingLastScroll=0}function show(){$("#modal").hidden=false;document.body.style.overflow="hidden";requestAnimationFrame(enableReadingMode)}
+function close(){$("#modal").hidden=true;document.body.style.overflow="";disableReadingMode();window.speechSynthesis?.cancel();S.speaking=false}
 function speak(id){
  const x=S.a.find(a=>a.id===id);if(!x)return;
  if(!("speechSynthesis"in window))return alert("Browser narration is unavailable.");
