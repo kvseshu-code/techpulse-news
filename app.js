@@ -46,7 +46,7 @@ function applyI18n(){
 function tpScore(x){const importance=Number(x.importance)||0;const freshness=Number(x.freshness)||0;const confidence=Number(x.confidence)||0;const momentum=Number(x.momentum)||0;return Math.max(0,Math.min(100,Math.round((importance+freshness+confidence+momentum)/4)));} function card(x,i=0){
  const sv=S.saved.has(x.id);
  return `<article class="card">
- <div class="cardtop"><span class="rank">${i<10?"#"+(i+1):"SIGNAL"}</span><span class="tag">${esc(x.category)}</span><span class="tp-score">TP ${tpScore(x)}</span></div>
+ <div class="cardtop"><span class="rank">${"#"+(i+1)}</span><span class="tag">${esc(x.category)}</span><span class="tp-score">TP ${tpScore(x)}</span></div>
  <h3>${esc(x.title)}</h3><p>${esc(x.summary)}</p>
  <div class="meta"><span>${esc(x.source)} · ${ago(x.published_at)}</span><span class="confidence">${Math.round(x.confidence)}%</span></div>
  <div class="buttons"><button data-open="${esc(x.id)}">${esc(tr("intelligence"))}</button>
@@ -391,11 +391,141 @@ function settings(){
   themeButton.setAttribute("aria-label",labels[S.theme]||"Theme");
  }
  }
-function askTechPulse(){
- const q=prompt(tr("askPrompt")+" "+tr("askExample"));if(!q)return;
- const terms=q.toLowerCase().split(/\W+/).filter(w=>w.length>2);
- const hits=S.a.map(x=>({x,score:terms.reduce((n,t)=>n+((x.title+" "+x.summary+" "+x.category+" "+x.tags.join(" ")).toLowerCase().includes(t)?1:0),0)})).filter(o=>o.score).sort((a,b)=>b.score-a.score).slice(0,8);
- $("#modalBody").innerHTML=`<span class="eyebrow">${tr("askTitle")}</span><h2>${esc(q)}</h2><p>${tr("askNote")}</p>${hits.length?`<div class="ask-results">${hits.map((h,i)=>`<div class="ask-result"><b>#${i+1}</b><button data-open="${esc(h.x.id)}">${esc(h.x.title)}</button><small>${esc(h.x.category)} · ${esc(h.x.source)}</small></div>`).join("")}</div>`:`<p>${tr("noMatch")}</p>`}`;show();
+function askTechPulse(query=''){
+ const q=typeof query==='string'?query.trim():'';
+ if(!q){
+  $("#modalBody").innerHTML=`<span class="eyebrow">ASK TECHPULSE</span><h2>Intelligence search</h2><p>Ask a question about the TechPulse dataset.</p><div class="ask-input-wrap"><button class="secondary ask-voice" id="askVoice" type="button" title="Ask by voice" aria-label="Ask by voice">🎙️</button><input id="askInput" type="text" placeholder="What do you want to know?" autocomplete="off"><button class="primary" id="askSend" type="button">ASK</button></div><span class="eyebrow">QUICK INTELLIGENCE</span><div class="ask-quick"><button class="secondary ask-quick-btn" data-ask-text="What is trending today?">What's trending?</button><button class="secondary ask-quick-btn" data-ask-text="What is new in AI?">AI today</button><button class="secondary ask-quick-btn" data-ask-text="Latest cybersecurity developments">Cybersecurity</button><button class="secondary ask-quick-btn" data-ask-text="Latest gaming news">Gaming</button><button class="secondary ask-quick-btn" data-ask-text="Cloud developments">Cloud</button><button class="secondary ask-quick-btn" data-ask-text="Latest space news">Space</button></div>`;
+  show();
+  const input=$("#askInput");input.focus();
+  const run=()=>{const v=input.value.trim();if(v)renderAskResults(v)};
+  $("#askSend").onclick=run;
+  input.addEventListener("keydown",e=>{if(e.key==='Enter'){e.preventDefault();run()}});
+
+  const voice=$("#askVoice");
+  if(voice){
+   const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;
+   if(!SpeechRecognition){
+    voice.disabled=true;
+    voice.title="Voice input is not supported by this browser";
+    voice.setAttribute("aria-label","Voice input is not supported by this browser");
+   }else{
+    const recognition=new SpeechRecognition();
+    recognition.lang="en-US";
+    recognition.interimResults=false;
+    recognition.continuous=false;
+
+    recognition.onstart=()=>{
+     voice.classList.add("active");
+     voice.textContent="⏺️";
+     voice.title="Listening...";
+    };
+
+    recognition.onresult=e=>{
+     const text=e.results?.[0]?.[0]?.transcript?.trim()||"";
+     if(text){
+      input.value=text;
+      run();
+     }
+    };
+
+    recognition.onerror=()=>{
+     voice.classList.remove("active");
+     voice.textContent="🎙️";
+     voice.title="Ask by voice";
+    };
+
+    recognition.onend=()=>{
+     voice.classList.remove("active");
+     voice.textContent="🎙️";
+     voice.title="Ask by voice";
+    };
+
+    voice.onclick=()=>{
+     try{
+      recognition.start();
+     }catch(e){}
+    };
+   }
+  }
+
+  document.querySelectorAll('.ask-quick-btn').forEach(btn=>btn.onclick=()=>{input.value=btn.dataset.askText;run()});
+  return;
+ }
+ renderAskResults(q);
+}
+
+
+function renderAskResults(q){
+ const qs=String(q||"").trim(),low=qs.toLowerCase();
+ const stop=new Set(["what","is","the","in","on","of","and","for","to","a","an","about","new","latest","today","news","developments","development","current","whats","show","me","tell","trending","hot","popular","important","significant","key","major","recent"]);
+ const trending=/\b(trending|hot|popular|whats? happening)\b/i.test(low);
+ const latest=/\b(latest|new|today|recent)\b/i.test(low);
+ const important=/\b(important|significant|key|major)\b/i.test(low);
+ const aliases={tech:"technology",technology:"technology",ai:"ai",cyber:"cybersecurity",cybersecurity:"cybersecurity",gaming:"gaming",cloud:"cloud",linux:"linux",space:"space",robotics:"robotics",hardware:"hardware",enterprise:"enterprise"};
+ const words=low.split(/\W+/).filter(w=>w.length>1&&!stop.has(w));
+ const terms=words.map(w=>aliases[w]||w);
+ const now=Date.now();
+ const categories=new Set(["technology","ai","cybersecurity","gaming","cloud","linux","space","robotics","hardware","enterprise"]);
+ const requestedCategory=terms.find(t=>categories.has(t))||"";
+ const pool=requestedCategory?S.a.filter(x=>String(x.category||"").toLowerCase()===requestedCategory):S.a;
+
+ const hits=pool.map(x=>{
+  const title=String(x.title||"").toLowerCase();
+  const summary=String(x.summary||"").toLowerCase();
+  const category=String(x.category||"").toLowerCase();
+  const tags=(x.tags||[]).join(" ").toLowerCase();
+  const source=String(x.source||"").toLowerCase();
+
+  let match=0;
+  terms.forEach(t=>{
+   if(category===t)match+=40;
+   else if(category.includes(t))match+=18;
+   if(title.includes(t))match+=8;
+   if(tags.includes(t))match+=4;
+   if(summary.includes(t))match+=2;
+   if(source.includes(t))match+=1;
+  });
+
+  const age=Math.max(0,(now-(Date.parse(x.published_at)||now))/3600000);
+  const recency=Math.max(0,Math.min(100,100-age*8));
+
+  let score;
+  if(trending)
+   score=(+x.momentum||0)*.40+(+x.importance||0)*.20+(+x.freshness||0)*.10+(+x.confidence||0)*.05+recency*.25+match*.20;
+  else if(latest)
+   score=match+(+x.freshness||0)*.20+recency*.15+(+x.momentum||0)*.10+(+x.importance||0)*.05;
+  else if(important)
+   score=match+(+x.importance||0)*.25+(+x.momentum||0)*.12+(+x.freshness||0)*.08;
+  else
+   score=match+(+x.importance||0)*.12+(+x.momentum||0)*.10+(+x.freshness||0)*.08+recency*.05;
+
+  return {x,score:Math.round(Math.min(100,score))};
+ }).filter(o=>o.score>0)
+ .sort((a,b)=>b.score-a.score||new Date(b.x.published_at||0)-new Date(a.x.published_at||0))
+ .slice(0,8);
+
+ const desc=trending
+  ?"Ranked using momentum, recency, importance, freshness and confidence."
+  :latest
+  ?"Recent stories are prioritized using freshness and publication time."
+  :important
+  ?"Importance and intelligence signals are prioritized."
+  :"Ranked by topic relevance plus existing TechPulse intelligence signals.";
+
+ let insight="";
+ if(hits.length){
+  const top=hits.slice(0,3).map(h=>h.x.title).join(" • ");
+  const categories=[...new Set(hits.map(h=>h.x.category).filter(Boolean))];
+  const categoryText=categories.length===1?categories[0]:"multiple technology areas";
+  insight=`<div class="ask-insight"><span class="eyebrow">TECHPULSE INTELLIGENCE</span><p>Based on ${hits.length} matching stories in the current dataset, the strongest ${categoryText} signals include: ${esc(top)}.</p></div>`;
+ }
+
+ $("#modalBody").innerHTML=`<span class="eyebrow">ASK TECHPULSE</span><h2>${esc(qs)}</h2><p>${desc}</p>${insight}${hits.length?`<div class="ask-results">${hits.map((h,i)=>`<div class="ask-result"><b>#${i+1}</b><button data-open="${esc(h.x.id)}">${esc(h.x.title)}</button><small>${esc(h.x.category)} | ${esc(h.x.source)} | Relevance ${h.score}</small></div>`).join("")}</div>`:`<p class="ask-empty"><b>No strong matches found.</b><br>Try asking about AI, cybersecurity, gaming, cloud, Linux, robotics, quantum or space.</p>`}<button class="secondary ask-back" id="askBack" type="button">← Back to Ask</button>`;
+
+ show();
+
+ const back=$("#askBack");
+ if(back)back.onclick=()=>askTechPulse();
 }
 function policy(k){
  const d={about:["About TechPulse","TechPulse is an independent technology intelligence and news discovery platform focused on helping readers understand important developments across technology, artificial intelligence, cybersecurity, gaming, cloud computing, enterprise technology, space, hardware and emerging fields.\n\nTechPulse organizes publicly available information into concise, independently written summaries designed to help readers understand what happened, why it matters and where to find the original reporting. Our goal is to make technology information easier to discover, compare and understand while maintaining a strong emphasis on source transparency, responsible presentation and clear separation between reported information and interpretation.\n\nTechPulse does not replace the original publisher or source. Readers are encouraged to review original source material for complete reporting, context and additional details."],editorial:["Editorial Policy","TechPulse aims to provide useful, accurate, transparent and responsibly presented technology information. Our editorial approach emphasizes factual accuracy, source transparency, independent wording, appropriate attribution and sufficient context. Reported facts, analysis, forecasts and unconfirmed information should not be presented as interchangeable.\n\nSignificant developments are reviewed against available evidence, and material errors should be corrected when identified. Headlines and summaries should avoid intentionally misleading readers.\n\nBecause technology reporting can change rapidly, TechPulse may update, correct, review or remove a summary when appropriate."],copyright:["Content & Copyright","TechPulse respects the intellectual property rights of publishers, authors, developers, researchers, companies and other content creators. TechPulse primarily provides independently written summaries, categorization, analysis and links to publicly available third-party information. We do not intend to reproduce complete third-party articles or substitute for the original publication.\n\nThird-party names, trademarks, logos, articles, images, research and other materials remain the property of their respective owners unless otherwise stated. Where applicable, readers are directed to the original source for the complete article, announcement, research paper, documentation or other underlying material.\n\nIf you believe material displayed or referenced by TechPulse raises a copyright or intellectual-property concern, please use the Contact or Corrections channel so the matter can be reviewed."],source:["Sources and Source Transparency","TechPulse uses publicly available information from technology publishers, companies, research organizations, official announcements, technical documentation and other relevant sources. Sources may be evaluated based on relevance, reliability, editorial standards, originality of reporting, publication freshness, subject-matter expertise, supporting evidence and primary versus secondary status.\n\nOfficial company announcements, regulatory information, research publications, technical documentation and other primary materials may provide important evidence for specific stories. A source appearing on TechPulse does not automatically mean that every statement made by that source has been independently verified by TechPulse.\n\nReaders should consult the original material for complete context. When multiple credible sources report the same development, TechPulse may use corroborating sources to provide additional context."],privacy:["Privacy Policy","TechPulse is designed primarily as a static technology information and discovery platform. The core experience does not require users to create an account.\n\nCore preferences, such as display settings and saved stories where supported, may be stored locally in the user’s browser.\n\nTechPulse does not represent locally stored browser data as a server-side account or personal profile. Browser storage may be cleared or removed by the user or by browser settings.\n\nExternal websites, publishers and services linked from TechPulse may have their own privacy practices, cookies, analytics systems and data policies. Readers should review the privacy information provided by those external services when visiting them."],terms:["Terms of Use","TechPulse provides technology information, summaries, categorization and navigation to publicly available sources. The service is intended for general informational and discovery purposes.\n\nTechPulse does not guarantee that every third-party source, article, service or external link will remain available, accurate or unchanged. External content remains under the control and responsibility of its respective publisher or provider.\n\nReaders should review original sources when making decisions based on reported information. TechPulse may update, correct, remove or change content and site functionality when appropriate.\n\nUse of external websites linked through TechPulse is subject to the terms and policies of those external websites."],corrections:["Corrections Policy","TechPulse aims to correct material factual errors when they are identified. Corrections may include updating a summary, changing an attribution, removing unsupported information or suppressing a story when appropriate.\n\nCorrections should be based on reliable evidence. Original source material, official announcements, documentation and other credible evidence may be considered when reviewing a reported error.\n\nWhen appropriate, corrected information may remain available with the relevant context rather than being silently replaced. Content that cannot be adequately supported may be removed or marked accordingly.\n\nReaders who identify a possible factual error are encouraged to use the TechPulse contact channel and provide the story title, relevant claim and supporting evidence."],contact:["Contact / Content Concern","TechPulse welcomes reports concerning factual corrections, source attribution, copyright or licensing questions, security issues and other content concerns.\n\nWhen reporting a concern, please include the relevant story or page, the specific issue and supporting information where available. This helps the matter be reviewed efficiently.\n\nFor security-related concerns, avoid including sensitive credentials, private keys or other confidential information in a public report.\n\nThe production version of this page should contain the official TechPulse contact channel before publication."]};
