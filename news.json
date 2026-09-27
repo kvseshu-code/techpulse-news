@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "TechPulse",
-  "generated_at": "2026-09-27T15:43:36.973403+00:00",
+  "generated_at": "2026-09-27T19:28:38.711740+00:00",
   "article_count": 325,
   "source_count": 23,
   "source_health": [
@@ -138,8 +138,496 @@
   ],
   "articles": [
     {
+      "id": "TP-0a8c1e8b7be6",
+      "cluster_id": "CL-0085",
+      "title": "Bill Gates says it's 'completely irresponsible' for AI to not have safeguards",
+      "summary": "The Microsoft co-founder said that the more present danger is bad actors with access to AI tools.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T19:12:29+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2270166/bill-gates-says-that-its-completely-irresponsible-for-ai-to-not-have-safeguards/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 1
+    },
+    {
+      "id": "TP-d80a6abe0855",
+      "cluster_id": "CL-0167",
+      "title": "13 Years Ago, One Dark JRPG Proved Atlus Could Still Be Hardcore",
+      "summary": "Atlus might have gone a few directions after the Persona 3's breakout success, and chose to double down on the dark territory that made it great.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Gaming",
+      "subcategory": "Gaming",
+      "secondary_topics": [],
+      "content_type": "analysis",
+      "relevance": "KEEP",
+      "classification_confidence": "High",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE",
+        "GAMING_SUBJECT_PRIORITY"
+      ],
+      "published_at": "2026-09-27T19:00:17+00:00",
+      "source": "Polygon",
+      "source_type": "secondary",
+      "url": "https://www.polygon.com/shin-megami-tensei-4-3ds-jrpg-retrospective/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Polygon"
+      ],
+      "corroborating_sources": [],
+      "rank": 2
+    },
+    {
+      "id": "TP-57ed764d92cd",
+      "cluster_id": "CL-0086",
+      "title": "Should you ditch your tablet for a foldable phone?",
+      "summary": "Foldables expand to almost the size of an iPad Mini.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [],
+      "published_at": "2026-09-27T18:45:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2267889/ditch-tablet-for-foldable-phone/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 3
+    },
+    {
+      "id": "TP-8f867fd5157c",
+      "cluster_id": "CL-0087",
+      "title": "BYD says its new solid-state EV battery tech is nearly ready for the open road",
+      "summary": "The Chinese company is one of several car makers expected to adopt solid-state batteries in the next few years.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T18:30:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2265495/byd-new-solid-state-battery-ev-almost-ready-2027/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 98,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 4
+    },
+    {
+      "id": "TP-1d065e8b3398",
+      "cluster_id": "CL-0088",
+      "title": "The pros and cons of using a foldable phone",
+      "summary": "Foldable phones are gaining momentum, but have they been refined enough to make it to the mainstream? Here are some things to consider.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "review",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T18:00:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2266434/foldable-phone-pros-cons/",
+      "confidence": 58,
+      "importance": 69,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 5
+    },
+    {
+      "id": "TP-ed2cbcca51ab",
+      "cluster_id": "CL-0020",
+      "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
+      "summary": "Security researcher Rowan Howard-Jones says that OpenAI agents scanned the UN Conference on Trade and Development's (UNCTAD) statistics site over 16,000 times between April and June. While the incident doesn't quite rise to the level of the Hugging Face hack, or the recent attacks on US government sites, it's yet another concerning example of AI […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-09-27T17:21:07+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+      "confidence": 61,
+      "importance": 71,
+      "freshness": 96,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
+      "rank": 6
+    },
+    {
+      "id": "TP-2a3b7c825b38",
+      "cluster_id": "CL-0168",
+      "title": "Control Resonant's Completely Ignores The Most Interesting Character",
+      "summary": "Control Resonant takes the next big step in the series, but it leaves the Oldest House behind — and along with it, the first game's scary aura.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T17:00:15+00:00",
+      "source": "Polygon",
+      "source_type": "secondary",
+      "url": "https://www.polygon.com/control-resonant-biggest-issue-oldest-house/",
+      "confidence": 58,
+      "importance": 69,
+      "freshness": 95,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Polygon"
+      ],
+      "corroborating_sources": [],
+      "rank": 7
+    },
+    {
+      "id": "TP-9a818e211aa1",
+      "cluster_id": "CL-0089",
+      "title": "Why the iPhone Duo could be beneficial for Samsung's Galaxy Z Fold 8",
+      "summary": "Apple's iPhone Duo is far from the first foldable phone, but it could upset the foldable market in all-new ways.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "secondary_topics": [],
+      "content_type": "analysis",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-09-27T16:45:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2267585/why-iphone-duo-benefitcial-for-samsung-galaxy-fold-8/",
+      "confidence": 58,
+      "importance": 69,
+      "freshness": 95,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 8
+    },
+    {
+      "id": "TP-64a14095906f",
+      "cluster_id": "CL-0169",
+      "title": "Witcher Dev Reveals Why CD Projekt Red Doesn't Do Crossovers In Its Own Games",
+      "summary": "A CD Projekt Red dev told Polygon that while a Geralt-inspired skin is coming to Diablo 4, don't expect Diablo characters in The Witcher 3 Remastered",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "analysis",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T16:31:42+00:00",
+      "source": "Polygon",
+      "source_type": "secondary",
+      "url": "https://www.polygon.com/the-witcher-cyberpunk-no-crossover-content/",
+      "confidence": 58,
+      "importance": 68,
+      "freshness": 94,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Polygon"
+      ],
+      "corroborating_sources": [],
+      "rank": 9
+    },
+    {
+      "id": "TP-8884274c1b64",
+      "cluster_id": "CL-0001",
+      "title": "Anthropic’s Dario Amodei gets the SNL treatment",
+      "summary": "\"AI is the devil and I its maker.\"",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "AI",
+      "subcategory": "AI",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-09-27T16:30:00+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
+      "confidence": 61,
+      "importance": 71,
+      "freshness": 94,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 10
+    },
+    {
+      "id": "TP-dab5b52e7566",
+      "cluster_id": "CL-0090",
+      "title": "How to use Android's Desktop mode to turn your phone into a tiny PC",
+      "summary": "You can plug recent Pixel phones into a monitor to get a desktop-style interface.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "secondary_topics": [],
+      "content_type": "tutorial",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [],
+      "published_at": "2026-09-27T16:15:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2267572/how-to-use-desktop-mode-android-phone/",
+      "confidence": 58,
+      "importance": 68,
+      "freshness": 94,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 11
+    },
+    {
+      "id": "TP-44db897d4935",
+      "cluster_id": "CL-0115",
+      "title": "Citrix confirms two NetScaler RCE zero-days exploited in attacks",
+      "summary": "Citrix has confirmed that two critical NetScaler remote code execution vulnerabilities, tracked as CVE-2026-88771 and CVE-2026-88772, are being exploited in attacks and that it has released security updates to fix the flaws. [...]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Cybersecurity",
+      "subcategory": "Cybersecurity",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "High",
+      "quality_flags": [
+        "CYBER_EVENT_PRIORITY"
+      ],
+      "published_at": "2026-09-27T16:02:37+00:00",
+      "source": "BleepingComputer",
+      "source_type": "secondary",
+      "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+      "confidence": 64,
+      "importance": 73,
+      "freshness": 93,
+      "momentum": 67,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "BleepingComputer"
+      ],
+      "corroborating_sources": [],
+      "rank": 12
+    },
+    {
+      "id": "TP-f42a84a71530",
+      "cluster_id": "CL-0002",
+      "title": "TechCrunch Mobility: AV companies pick their lanes",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T16:02:00+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/",
+      "confidence": 61,
+      "importance": 70,
+      "freshness": 93,
+      "momentum": 67,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 13
+    },
+    {
+      "id": "TP-72acab79fb88",
+      "cluster_id": "CL-0170",
+      "title": "Xbox Almost Spoiled the Best Time of Year for Games",
+      "summary": "The Xbox layoffs and Halo move to Activision sounded a bum note, but fall game season always brings joy",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Gaming",
+      "subcategory": "Gaming",
+      "secondary_topics": [
+        "Gaming"
+      ],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "High",
+      "quality_flags": [
+        "GAMING_SUBJECT_PRIORITY"
+      ],
+      "published_at": "2026-09-27T16:00:18+00:00",
+      "source": "Polygon",
+      "source_type": "secondary",
+      "url": "https://www.polygon.com/patch-notes-xbox-layoffs-restructuring-fall-good-games/",
+      "confidence": 58,
+      "importance": 68,
+      "freshness": 93,
+      "momentum": 67,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Polygon"
+      ],
+      "corroborating_sources": [],
+      "rank": 14
+    },
+    {
+      "id": "TP-541ad243a1bf",
+      "cluster_id": "CL-0091",
+      "title": "How to use Spotify's Running Mode on iOS and Android",
+      "summary": "Maximize your stride with Spotify's AI-powered running features.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "tutorial",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-09-27T15:45:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2267524/how-to-use-spotify-running-mode-ios-android-guide/",
+      "confidence": 58,
+      "importance": 68,
+      "freshness": 93,
+      "momentum": 67,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 15
+    },
+    {
       "id": "TP-3d10bdaa1747",
-      "cluster_id": "CL-0166",
+      "cluster_id": "CL-0171",
       "title": "Avengers: Endgame Encore's Success Sets The Stage For Doomsday",
       "summary": "Avengers: Endgame Encore beat Resident Evil, Primetime, and Heart of the Beast in theaters this weekend",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -157,16 +645,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/avengers-endgame-encore-box-office/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 100,
-      "momentum": 71,
+      "importance": 68,
+      "freshness": 92,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 1
+      "rank": 16
     },
     {
       "id": "TP-3e32d3767bbc",
@@ -193,20 +681,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/laptops/gaming-laptops/grab-this-14-inch-compact-gaming-laptop-powerhouse-for-usd1000-off-hp-omen-transcend-14-with-rtx-5070-and-3k-oled-display-drops-to-usd1-999-99-at-best-buy",
       "confidence": 64,
-      "importance": 74,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 72,
+      "freshness": 92,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 2
+      "rank": 17
     },
     {
       "id": "TP-5ff7e157cf6e",
-      "cluster_id": "CL-0085",
+      "cluster_id": "CL-0092",
       "title": "How to improve your router's security in 10 minutes",
       "summary": "Most internet routers are solid out of the box, but that doesn't mean they can't be made more secure. Often, all you need to do is tweak a few settings.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -224,20 +712,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2267401/how-to-improve-router-security-10-minutes/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 68,
+      "freshness": 92,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 3
+      "rank": 18
     },
     {
       "id": "TP-fb1db54334dc",
-      "cluster_id": "CL-0001",
+      "cluster_id": "CL-0003",
       "title": "Sennheiser Momentum 5 review: Great sound, incredible battery life, and few compromises",
       "summary": "I spent the last few weeks with the Sennheiser Momentum 5 to determine if this pair actually stands out, testing everything from sound quality and noise cancellation to comfort and battery life.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -257,16 +745,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incredible-battery-life-and-few-compromises/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 4
+      "rank": 19
     },
     {
       "id": "TP-16dc9fd12a52",
@@ -290,16 +778,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/cockcroft-performance-engineering-ai/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 5
+      "rank": 20
     },
     {
       "id": "TP-caf9b9f94888",
@@ -323,20 +811,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/opinion-i-played-mario-kart-tour-every-day-for-seven-years-and-what-am-i-left-with",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 6
+      "rank": 21
     },
     {
       "id": "TP-3246f794c1f1",
-      "cluster_id": "CL-0086",
+      "cluster_id": "CL-0093",
       "title": "Why you should avoid holding down your PC's power button",
       "summary": "There are often times when your PC hangs and you need to perform a hard shutdown, but there are a number of reasons why doing it regularly could cause issues.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -356,20 +844,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2267392/why-important-reboot-pc-menu-not-power-button/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 98,
-      "momentum": 70,
+      "importance": 68,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 7
+      "rank": 22
     },
     {
       "id": "TP-522664bb7c68",
-      "cluster_id": "CL-0167",
+      "cluster_id": "CL-0172",
       "title": "The Real Budget Of Hideo Kojima's Physint Remains A Mystery",
       "summary": "It's unlikely that Kojima Productions' Physint has a budget of $400 million after Xbox decided to publsih it",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -389,16 +877,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/physint-budget-controversy/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 98,
-      "momentum": 70,
+      "importance": 68,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 8
+      "rank": 23
     },
     {
       "id": "TP-0e34cfee5b29",
@@ -420,20 +908,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/desktops/mini-pcs/custom-24-carat-gold-mini-pc-costs-around-usd1-7-million-weighs-nearly-29-pounds-for-up-to-50-percent-faster-heat-transfer-copper-would-have-been-far-cheaper-and-offers-even-better-thermal-conductivity",
       "confidence": 64,
-      "importance": 74,
-      "freshness": 98,
-      "momentum": 70,
+      "importance": 72,
+      "freshness": 90,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 9
+      "rank": 24
     },
     {
       "id": "TP-e67b66eaae67",
-      "cluster_id": "CL-0087",
+      "cluster_id": "CL-0094",
       "title": "Why letting Claude clean your TV's bloatware isn't the best idea",
       "summary": "Don't let an AI bot potentially crash your TV.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -451,16 +939,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2267074/why-claude-cleaning-tv-bloatware-not-best-idea/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 68,
+      "freshness": 90,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 10
+      "rank": 25
     },
     {
       "id": "TP-162c03291b71",
@@ -482,20 +970,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/gpus/thieves-steal-nvidia-labeled-trailers-expecting-massive-ai-gpu-payday-but-score-40-000-pounds-of-sand-instead-crooks-duped-by-20-tons-of-ballast-sand",
       "confidence": 64,
-      "importance": 74,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 72,
+      "freshness": 90,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 11
+      "rank": 26
     },
     {
       "id": "TP-150c2b68e8ba",
-      "cluster_id": "CL-0114",
+      "cluster_id": "CL-0116",
       "title": "Cloudflare fixes Containers cross-tenant flaw exposing customer data",
       "summary": "Cloudflare has fixed a vulnerability in Containers and Sandboxes that allowed customers with a Workers Paid account to recover residual data from other customers' containers on the same physical host. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -513,20 +1001,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
       "confidence": 64,
-      "importance": 74,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 72,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 12
+      "rank": 27
     },
     {
       "id": "TP-7ad73e1fec18",
-      "cluster_id": "CL-0168",
+      "cluster_id": "CL-0173",
       "title": "Flying a Helicopter Is 2026’s Most Stressful Gaming Experience",
       "summary": "Being a helicopter pilot in Wardogs is ridiculously anxiety-inducing, and here's why.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -548,16 +1036,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/wardogs-helicopter-flying-most-stressful-gaming-experience/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 13
+      "rank": 28
     },
     {
       "id": "TP-1bcdb48390fc",
@@ -581,20 +1069,20 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/agentic-ai-kubernetes-management/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 14
+      "rank": 29
     },
     {
       "id": "TP-c5e4959df3b1",
-      "cluster_id": "CL-0088",
+      "cluster_id": "CL-0095",
       "title": "Gemini Live vs. ChatGPT Voice: Which AI offers a more natural conversation?",
       "summary": "Speaking with an AI chatbot can be a little awkward, but companies like Google and OpenAI are working on fixing that.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -612,20 +1100,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266889/gemini-live-vs-gpt-live-which-offers-more-natural-conversation/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 15
+      "rank": 30
     },
     {
       "id": "TP-72d2ddfc687a",
-      "cluster_id": "CL-0169",
+      "cluster_id": "CL-0174",
       "title": "Star Wars Episode 10 Has Found Its Director",
       "summary": "Jon Watts has come on board to direct Simon Kinberg's Star Wars movie, which is expected to be Star Wars: Episode 10",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -645,20 +1133,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/star-wars-episode-10-director/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 16
+      "rank": 31
     },
     {
       "id": "TP-c56cfa0ca04b",
-      "cluster_id": "CL-0115",
+      "cluster_id": "CL-0117",
       "title": "Anthropic turns Claude into an AI marketplace with 2,000+ plugins and connectors",
       "summary": "Anthropic has just announced a new Claude Marketplace, and it brings all AI-related tools into one place, including plugins, connectors, agents, and more. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -676,20 +1164,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/",
       "confidence": 64,
-      "importance": 74,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 72,
+      "freshness": 88,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 17
+      "rank": 32
     },
     {
       "id": "TP-964b7c524607",
-      "cluster_id": "CL-0089",
+      "cluster_id": "CL-0096",
       "title": "Why it's important to not put your PC on the floor",
       "summary": "If you're not going to put it on your desk, at least do these things.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -709,20 +1197,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2267888/why-its-important-to-not-put-pc-floor/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 67,
+      "freshness": 88,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 18
+      "rank": 33
     },
     {
       "id": "TP-46c4adec8720",
-      "cluster_id": "CL-0090",
+      "cluster_id": "CL-0097",
       "title": "Humanoid robots are getting even creepier (this one can cry on command)",
       "summary": "Humanoid robots have improved emotional mimicry to the point of being able to cry during an emotional conversation.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -740,20 +1228,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266933/humanoid-robot-cries-on-command/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 67,
+      "freshness": 88,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 19
+      "rank": 34
     },
     {
       "id": "TP-f9a18332b268",
-      "cluster_id": "CL-0170",
+      "cluster_id": "CL-0175",
       "title": "Control Resonant Has a Secret Weapon in the GOTY Race",
       "summary": "Remedy Entertainment has a good chance of a Game of the Year nomination at The Game Awards thanks to its underdog status",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -773,16 +1261,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/control-resonant-goty-game-of-the-year-game-awards/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 67,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 20
+      "rank": 35
     },
     {
       "id": "TP-d6359c6d9de4",
@@ -804,16 +1292,16 @@
       "source_type": "primary",
       "url": "https://spectrum.ieee.org/poetry-user-interface-design",
       "confidence": 75,
-      "importance": 76,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 74,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "IEEE Spectrum"
       ],
       "corroborating_sources": [],
-      "rank": 21
+      "rank": 36
     },
     {
       "id": "TP-477f81d2948b",
@@ -837,20 +1325,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/power-supplies/gigabyte-1000gm-pg5-1000w-power-supply-review",
       "confidence": 64,
-      "importance": 73,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 71,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 22
+      "rank": 37
     },
     {
       "id": "TP-05c3ee25c6d5",
-      "cluster_id": "CL-0091",
+      "cluster_id": "CL-0098",
       "title": "How to use the Live Text feature on your iPhone",
       "summary": "There's no need to manually type text into your iPhone that you see in the real world. Use Live Text to copy it, call phone numbers and much more.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -868,16 +1356,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266810/how-to-use-live-text-feature-iphone/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 94,
-      "momentum": 68,
+      "importance": 67,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 23
+      "rank": 38
     },
     {
       "id": "TP-b02666adfcfc",
@@ -903,20 +1391,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/desktops/gaming-pcs/ps5-emulator-successfully-runs-six-titles-at-a-playable-60-fps-ps5-emulation-continues-to-gather-momentum-as-developers-improve-shader-translation-and-vulkan-support",
       "confidence": 64,
-      "importance": 73,
-      "freshness": 94,
-      "momentum": 68,
+      "importance": 71,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 24
+      "rank": 39
     },
     {
       "id": "TP-2d7e1d6d7c1e",
-      "cluster_id": "CL-0092",
+      "cluster_id": "CL-0099",
       "title": "iPhone Duo vs Microsoft Surface Duo: One name, two very different devices",
       "summary": "A brief history of \"Duo\" foldables.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -934,20 +1422,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2267884/apple-iphone-duo-vs-microsoft-surface-duo-comparison/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 94,
-      "momentum": 68,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 25
+      "rank": 40
     },
     {
       "id": "TP-7734754f80ad",
-      "cluster_id": "CL-0020",
+      "cluster_id": "CL-0021",
       "title": "Why OLPC’s $100 laptop never stood a chance",
       "summary": "The idea was big, exciting, and inspiring: What if we could get every kid in the world access to a computer? For a bunch of thinkers and executives in Silicon Valley, it felt like the way to fix everything. But the One Laptop Per Child initiative, and the XO-1 laptop designed to be given away, […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -965,16 +1453,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/podcast/1000517/why-olpcs-100-laptop-never-stood-a-chance",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 69,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 26
+      "rank": 41
     },
     {
       "id": "TP-49c48f4b712e",
@@ -996,20 +1484,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/software/linux/linux-enthusiasts-see-10-second-kernel-compilation-times-on-the-horizon-ai-assisted-patches-cut-build-times-by-nearly-a-third-without-a-ramdisk",
       "confidence": 64,
-      "importance": 73,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 71,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 27
+      "rank": 42
     },
     {
       "id": "TP-d5f8a7a4a38e",
-      "cluster_id": "CL-0093",
+      "cluster_id": "CL-0100",
       "title": "How to use Android apps on your Windows PC (and why you might want to)",
       "summary": "With the right software, you can run Android apps on your Windows PC. Here's why you may want to and how to get it set up on your own computer.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1027,49 +1515,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266521/how-to-use-android-apps-on-windows-pc/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 28
-    },
-    {
-      "id": "TP-bb7d55d766b7",
-      "cluster_id": "CL-0171",
-      "title": "The GTA Series is a Game Preservation Nightmare",
-      "summary": "Rockstar Games doesn't seem to care about making classic Grand Theft Auto games available to play on PS5 and other current platforms",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-09-27T12:00:17+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/gta-game-preservation-classic-games-availability/",
-      "confidence": 58,
-      "importance": 68,
-      "freshness": 93,
-      "momentum": 67,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 29
+      "rank": 43
     },
     {
       "id": "TP-d3a40f7134f9",
@@ -1091,16 +1546,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/cyber-security/flock-seeks-to-have-security-researchers-map-of-flock-cameras-taken-down-unauthenticated-flaw-exposed-335-701-camera-locations-nationwide",
       "confidence": 64,
-      "importance": 73,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 71,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 30
+      "rank": 44
     },
     {
       "id": "TP-df586e8a2cde",
@@ -1127,20 +1582,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/reviews/voidjoy-ga-10-elite-extender-for-switch-pro-controller-the-pros-dont-outweigh-the-mod-cons",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 68,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 31
+      "rank": 45
     },
     {
       "id": "TP-fb3c4d44a650",
-      "cluster_id": "CL-0021",
+      "cluster_id": "CL-0022",
       "title": "The smart home graveyard is getting crowded",
       "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the fragile state of your connected devices, follow Jennifer Pattison Tuohy. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started A decade ago, a […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1158,16 +1613,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/column/1000778/smart-home-june-oven-graveyard",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 68,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 32
+      "rank": 46
     },
     {
       "id": "TP-3bd625619e9b",
@@ -1191,16 +1646,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/developer-says-jev-decision-model-beat-pokemon-red-in-under-a-week-non-llm-engine-succeeds-where-traditional-chatbots-stalled-for-months-but-claude-opus-5-coached-the-model-through-its-dead-ends",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 70,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 33
+      "rank": 47
     },
     {
       "id": "TP-38b897db5493",
@@ -1224,16 +1679,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/best-party-speaker/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 68,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 34
+      "rank": 48
     },
     {
       "id": "TP-9125e890da04",
@@ -1257,50 +1712,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/best-pet-dna-test-kits/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 68,
+      "freshness": 83,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 35
-    },
-    {
-      "id": "TP-d716bff3a255",
-      "cluster_id": "CL-0172",
-      "title": "58 Years Ago, Star Trek Officially Switched Genres With an All-Time Classic Episode",
-      "summary": "“The Enterprise Incident” turned Kirk and Spock into spies and helped lay the groundwork for decades of Star Trek espionage.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE",
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-09-27T11:00:15+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/star-trek-enterprise-incident-espionage/",
-      "confidence": 58,
-      "importance": 68,
-      "freshness": 91,
-      "momentum": 66,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 36
+      "rank": 49
     },
     {
       "id": "TP-44b4d18a9ef3",
@@ -1324,16 +1745,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/tech-policy/2026/09/how-the-smithsonian-became-the-latest-front-in-trumps-culture-war/",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 70,
+      "freshness": 83,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 37
+      "rank": 50
     },
     {
       "id": "TP-798a1b155f0a",
@@ -1355,16 +1776,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/u-s-and-uk-navies-successfully-launch-3-700-pound-submarine-sinking-torpedo-from-robotic-drone-submarine-in-historic-first-project-broadsword-proves-weapon-interchangeability-in-just-seven-months",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 90,
-      "momentum": 66,
+      "importance": 70,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 38
+      "rank": 51
     },
     {
       "id": "TP-6f2c0ee78c8d",
@@ -1386,82 +1807,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/you-dont-need-to-pay-for-distraction-blocking-software/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 68,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 39
-    },
-    {
-      "id": "TP-3764fefc271a",
-      "cluster_id": "CL-0173",
-      "title": "The Witcher 3 Remastered release time in your time zone",
-      "summary": "Here's when The Witcher 3 Remastered will be released in your time zone and what to expect from the RPG's enhanced edition",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-09-27T10:01:14+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/the-witcher-3-remastered-release-time-when-edt-pdt/",
-      "confidence": 58,
-      "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 40
-    },
-    {
-      "id": "TP-36b902d0837c",
-      "cluster_id": "CL-0174",
-      "title": "63 Years Later, 'The Twilight Zone’s Most Emotional Episode is Still a Bold Masterpiece",
-      "summary": "The Twilight Zone's season 5 epsiode \"In Praise of Pip,\" written by Rod Serling, is the most emotional epsidoie of the whole series",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-09-27T10:00:15+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/the-twilight-zone-in-praise-of-pip/",
-      "confidence": 58,
-      "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 41
+      "rank": 52
     },
     {
       "id": "TP-96adf734bfe2",
@@ -1485,16 +1840,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/counterfeit-vinyl-record-maker-sentenced-to-three-years-in-the-slammer-police-bust-largest-fake-vinyl-operation-in-uk-history-raid-uncovers-four-70-year-old-presses-and-3-000-metal-stampers",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 70,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 42
+      "rank": 53
     },
     {
       "id": "TP-17771b209b2d",
@@ -1516,16 +1871,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/data-center-backlash-climate-reckoning/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 68,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 43
+      "rank": 54
     },
     {
       "id": "TP-535a545dbaf6",
@@ -1547,16 +1902,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/taiwans-chip-talisman-snack-faces-production-halt-after-94-percent-strike-vote-workers-demand-share-of-usd176-million-factory-sale-to-ase",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 88,
-      "momentum": 64,
+      "importance": 70,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 44
+      "rank": 55
     },
     {
       "id": "TP-d4c1b95ff9ba",
@@ -1578,49 +1933,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/nicotine-is-mounting-a-comeback-in-the-wellness-movement/",
       "confidence": 61,
-      "importance": 69,
-      "freshness": 88,
-      "momentum": 64,
+      "importance": 67,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 45
-    },
-    {
-      "id": "TP-38d61637663e",
-      "cluster_id": "CL-0175",
-      "title": "3 Must-Play September Games You Missed Between Fire Emblem and Wolverine",
-      "summary": "September was full of exciting new video games, including some hidden gems that you might have missed.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [
-        "Gaming"
-      ],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [],
-      "published_at": "2026-09-27T09:00:15+00:00",
-      "source": "Polygon",
-      "source_type": "secondary",
-      "url": "https://www.polygon.com/september-2026-hidden-gems/",
-      "confidence": 58,
-      "importance": 67,
-      "freshness": 87,
-      "momentum": 64,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Polygon"
-      ],
-      "corroborating_sources": [],
-      "rank": 46
+      "rank": 56
     },
     {
       "id": "TP-e65867069db7",
@@ -1644,16 +1966,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/pancreatic-cells-just-one-genetic-tweak-away-from-treating-diabetes/",
       "confidence": 61,
-      "importance": 69,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 67,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 47
+      "rank": 57
     },
     {
       "id": "TP-dc74c2db3ec0",
@@ -1679,20 +2001,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/box-art-brawl-duel-dragon-quest-ii-nes",
       "confidence": 61,
-      "importance": 69,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 67,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 48
+      "rank": 58
     },
     {
       "id": "TP-4a72796aa1ab",
-      "cluster_id": "CL-0156",
+      "cluster_id": "CL-0157",
       "title": "APOD: 2026 September 27 – Andromeda Before and After Photoshop",
       "summary": "APOD Science APOD APOD: 2026 September 27 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. BeforeAfter Andromeda Before […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1712,16 +2034,16 @@
       "source_type": "primary",
       "url": "https://science.nasa.gov/image-article/apod-2026-september-27-andromeda-before-photoshop/",
       "confidence": 75,
-      "importance": 71,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 69,
+      "freshness": 69,
+      "momentum": 54,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 49
+      "rank": 59
     },
     {
       "id": "TP-b50d3e094155",
@@ -1747,20 +2069,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/poll-so-how-many-hours-have-you-spent-in-fire-emblem-fortunes-weave",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 75,
-      "momentum": 57,
+      "importance": 64,
+      "freshness": 67,
+      "momentum": 53,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 50
+      "rank": 60
     },
     {
       "id": "TP-21c7b9203bd2",
-      "cluster_id": "CL-0002",
+      "cluster_id": "CL-0004",
       "title": "PNOE’s new face mask wants to make lab-grade breath testing a self-serve affair",
       "summary": "PNOĒ, the Malden, Mass.-based startup whose breath-analyzing mask used to bear an unfortunate resemblance to Bane's, is launching a sleeker self-serve version on October 1 that lets gym-goers measure their VO₂ max and other metabolic markers in eight minutes without a trained operator.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1780,20 +2102,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/pnoes-new-face-mask-wants-to-make-lab-grade-breath-testing-a-self-serve-affair/",
       "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 51
+      "rank": 61
     },
     {
       "id": "TP-b09c672e4408",
-      "cluster_id": "CL-0003",
+      "cluster_id": "CL-0005",
       "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
       "summary": "The limited test covers select products and users, with a broader rollout planned for later in October.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1811,16 +2133,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
       "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
+      "importance": 63,
+      "freshness": 64,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 52
+      "rank": 62
     },
     {
       "id": "TP-a0ff1e8ac1f9",
@@ -1846,20 +2168,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/icymi-heres-a-look-at-the-rayman-legends-retold-launch-edition",
       "confidence": 61,
-      "importance": 65,
-      "freshness": 71,
-      "momentum": 55,
+      "importance": 63,
+      "freshness": 63,
+      "momentum": 51,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 53
+      "rank": 63
     },
     {
       "id": "TP-509bdb11596e",
-      "cluster_id": "CL-0094",
+      "cluster_id": "CL-0101",
       "title": "Why we won't know how visible the iPhone Duo's crease is for a long time",
       "summary": "The iPhone Duo has an impressively minimal crease, but that's only how it looks at the start. We'll have to wait a while to see what develops over time.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1877,20 +2199,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266671/iphone-duo-wont-know-how-visible-crease-for-long-time/",
       "confidence": 58,
-      "importance": 62,
-      "freshness": 70,
-      "momentum": 54,
+      "importance": 60,
+      "freshness": 62,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 54
+      "rank": 64
     },
     {
       "id": "TP-63cb8d8bb9cc",
-      "cluster_id": "CL-0095",
+      "cluster_id": "CL-0102",
       "title": "How powerful of a power bank do you need to safely charge a laptop?",
       "summary": "A power bank is more than its capacity. You also need to know how fast it can deliver power so your laptop doesn't drain while it's connected.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1908,20 +2230,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266595/how-powerful-power-bank-needs-to-be-charge-laptop/",
       "confidence": 58,
-      "importance": 62,
-      "freshness": 69,
-      "momentum": 54,
+      "importance": 60,
+      "freshness": 61,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 55
+      "rank": 65
     },
     {
       "id": "TP-613090987f68",
-      "cluster_id": "CL-0096",
+      "cluster_id": "CL-0103",
       "title": "Your old GPU could be worth more than you think",
       "summary": "Your old GPU could be a goldmine thanks to the RAMaggedon.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1939,20 +2261,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2267877/your-old-gpu-worth-more-than-you-think/",
       "confidence": 58,
-      "importance": 62,
-      "freshness": 68,
-      "momentum": 53,
+      "importance": 60,
+      "freshness": 61,
+      "momentum": 50,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 56
+      "rank": 66
     },
     {
       "id": "TP-4eee1bddac19",
-      "cluster_id": "CL-0097",
+      "cluster_id": "CL-0104",
       "title": "Why your iPhone hates printer cables",
       "summary": "AirPrint is the easiest path to printing on iPhone; other apps enable this, but printing with a cable isn't supported.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1970,16 +2292,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2266565/why-iphone-hates-printer-cables/",
       "confidence": 58,
-      "importance": 62,
-      "freshness": 68,
-      "momentum": 53,
+      "importance": 60,
+      "freshness": 60,
+      "momentum": 49,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 57
+      "rank": 67
     },
     {
       "id": "TP-d9a30a48c0d9",
@@ -2006,119 +2328,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/surprise-minecraft-is-getting-its-first-new-dimension-in-over-14-years",
       "confidence": 61,
-      "importance": 64,
-      "freshness": 67,
-      "momentum": 53,
+      "importance": 62,
+      "freshness": 59,
+      "momentum": 48,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 58
-    },
-    {
-      "id": "TP-65e6b25a8c9e",
-      "cluster_id": "CL-0098",
-      "title": "iPhone 18 Pro vs. iPhone 17 Pro: What's new?",
-      "summary": "The iPhone 18 Pro iterates on the iPhone 17 Pro while making some minor improvements, but what exactly is different?",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Hardware",
-      "subcategory": "Hardware",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "Medium",
-      "quality_flags": [],
-      "published_at": "2026-09-26T22:45:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2267863/iphone-18-pro-vs-17-pro-comparison-explained/",
-      "confidence": 58,
-      "importance": 62,
-      "freshness": 66,
-      "momentum": 52,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 59
-    },
-    {
-      "id": "TP-411dd6310337",
-      "cluster_id": "CL-0099",
-      "title": "How high is too high for speakers in your home sound system?",
-      "summary": "Too much height makes dialogue and fine details sound less direct.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-09-26T22:30:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2266518/how-high-too-high-speakers-home-sound-system/",
-      "confidence": 58,
-      "importance": 62,
-      "freshness": 66,
-      "momentum": 52,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 60
-    },
-    {
-      "id": "TP-cdfab2fbd2e8",
-      "cluster_id": "CL-0100",
-      "title": "Stop bringing your phone in the shower: How steam can ruin 'waterproof' phones",
-      "summary": "Phone manufacturers are pretty direct in their guidance on this one.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [
-        "Gaming"
-      ],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-09-26T22:00:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2266522/why-steam-ruins-phone-more-than-water/",
-      "confidence": 58,
-      "importance": 61,
-      "freshness": 65,
-      "momentum": 52,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 61
+      "rank": 68
     },
     {
       "id": "TP-7597176acd00",
-      "cluster_id": "CL-0022",
+      "cluster_id": "CL-0023",
       "title": "Apple hit with $5.7 billion in damages over haptic patents",
       "summary": "Haptics tech company Taction sued Apple in 2021, alleging it infringed two of its patents. Now a federal jury in San Diego has awarded Taction over $5.7 billion in damages. According to CNBC, \"The lawsuit centered around U.S. Patent Nos. 10,659,885 and 10,820,117, which both involve vibration-based, tactile transducer technology that helps users feel a […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2136,20 +2359,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/tech/1001118/apple-hit-with-5-7-billion-in-damages-over-haptic-patents",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 64,
-      "momentum": 51,
+      "importance": 61,
+      "freshness": 56,
+      "momentum": 47,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 62
+      "rank": 69
     },
     {
       "id": "TP-d70ce2b78b06",
-      "cluster_id": "CL-0004",
+      "cluster_id": "CL-0006",
       "title": "Insurers claim AI is already increasing healthcare costs",
       "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2169,20 +2392,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 63,
-      "momentum": 51,
+      "importance": 61,
+      "freshness": 55,
+      "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 63
+      "rank": 70
     },
     {
       "id": "TP-31b997b1e97a",
-      "cluster_id": "CL-0005",
+      "cluster_id": "CL-0007",
       "title": "TikTok agrees to pay at least $100M in Alabama settlement",
       "summary": "TikTok will pay Alabama at least $100 million in a settlement tied to allegations that the short-form video platform misled users about safety and was designed to addict children.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2200,55 +2423,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
       "confidence": 61,
-      "importance": 62,
-      "freshness": 61,
-      "momentum": 50,
+      "importance": 61,
+      "freshness": 54,
+      "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 64
-    },
-    {
-      "id": "TP-8b4a62bef97f",
-      "cluster_id": "CL-0101",
-      "title": "This external GPU uses Wi-Fi to transform any device into a gaming rig",
-      "summary": "The WiCi One is available for preorders starting at $1,999.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [
-        "Gaming"
-      ],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-09-26T19:45:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2269877/this-external-gpu-uses-wi-fi-to-transform-any-device-into-a-gaming-rig/",
-      "confidence": 58,
-      "importance": 60,
-      "freshness": 60,
-      "momentum": 49,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 65
+      "rank": 71
     },
     {
       "id": "TP-6d6114d2a176",
-      "cluster_id": "CL-0023",
+      "cluster_id": "CL-0024",
       "title": "Decap is the man behind the drums behind your favorite song",
       "summary": "I don't think I'm going to hurt anyone's feelings by pointing out that Decap doesn't have the name recognition of Kendrick Lamar, Olivia Rodrigo, or Charli XCX. But his fingerprints are all over tracks from them, as well as many other artists, including Freddie Gibbs, Bad Bunny, Mac Miller, BTS, and even Ludwig Göransson's score […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2268,54 +2456,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/report/1000994/decap-drums-that-knock-interview",
       "confidence": 61,
-      "importance": 62,
-      "freshness": 59,
-      "momentum": 48,
+      "importance": 60,
+      "freshness": 52,
+      "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 66
-    },
-    {
-      "id": "TP-95c55ee63f93",
-      "cluster_id": "CL-0102",
-      "title": "Minecraft is getting a new dimension called The Sift in 2027",
-      "summary": "The Sift will first be released with Minecraft Dungeons 2 later this month before arriving in the base game.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE",
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-09-26T19:19:53+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2269867/minecraft-is-getting-a-new-dimension-called-the-sift-in-2027/",
-      "confidence": 58,
-      "importance": 60,
-      "freshness": 59,
-      "momentum": 48,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 67
+      "rank": 72
     },
     {
       "id": "TP-d8143f817f62",
-      "cluster_id": "CL-0116",
+      "cluster_id": "CL-0118",
       "title": "ShinyHunters uses WAF bypass trick in Oracle PeopleSoft attacks",
       "summary": "The ShinyHunters extortion gang is using a URL-encoding trick to bypass web application firewall rules that mitigate the Oracle PeopleSoft CVE-2026-35273 flaw, allowing the threat actors to resume widespread exploitation of a flaw on vulnerable servers. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2333,55 +2487,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
       "confidence": 64,
-      "importance": 64,
-      "freshness": 59,
-      "momentum": 48,
+      "importance": 62,
+      "freshness": 51,
+      "momentum": 44,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 68
-    },
-    {
-      "id": "TP-cadf9a613602",
-      "cluster_id": "CL-0103",
-      "title": "What type of power cord does a PS5 use?",
-      "summary": "You probably don't think much about your PlayStation's power cord unless it needs to be replaced. If that time comes, here's what to know.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [
-        "Gaming"
-      ],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-09-26T18:45:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2265348/playstation-power-cord-what-type/",
-      "confidence": 58,
-      "importance": 60,
-      "freshness": 58,
-      "momentum": 48,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 69
+      "rank": 73
     },
     {
       "id": "TP-fcf88b0cd278",
-      "cluster_id": "CL-0006",
+      "cluster_id": "CL-0008",
       "title": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
       "summary": "Two companies now say they will accept advertising for director Alex Gibney’s upcoming documentary about Elon Musk, following earlier reporting that a number of social media platforms had rejected the ads.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2401,20 +2520,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/",
       "confidence": 61,
-      "importance": 61,
-      "freshness": 56,
-      "momentum": 47,
+      "importance": 60,
+      "freshness": 49,
+      "momentum": 43,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 70
+      "rank": 74
     },
     {
       "id": "TP-3d8c5d848800",
-      "cluster_id": "CL-0024",
+      "cluster_id": "CL-0025",
       "title": "Kids turned the comment section of an NPR podcast into a group chat",
       "summary": "Middle schoolers, likely blocked from other apps and social networks, apparently turned the Spotify comment section under an episode of NPR's Wild Card into an impromptu group chat. In a new episode of This American Life, host Ira Glass digs into how the kids landed there and why. But it mostly boils down to kids […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2432,20 +2551,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/entertainment/1001056/this-american-life-npr-kids-group-chat-comment-section",
       "confidence": 61,
-      "importance": 61,
-      "freshness": 56,
-      "momentum": 47,
+      "importance": 59,
+      "freshness": 48,
+      "momentum": 42,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 71
+      "rank": 75
     },
     {
       "id": "TP-4cf9058c82d3",
-      "cluster_id": "CL-0007",
+      "cluster_id": "CL-0009",
       "title": "Levoit’s new air purifier is for the pet odors that have taken over your apartment",
       "summary": "This $189.99 air purifier is specifically designed to tackle pet odors, removing up to 70% in one hour.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2465,16 +2584,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/levoits-new-air-purifier-is-for-the-pet-odors-that-have-taken-over-your-apartment/",
       "confidence": 61,
-      "importance": 61,
-      "freshness": 55,
-      "momentum": 46,
+      "importance": 59,
+      "freshness": 47,
+      "momentum": 42,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 72
+      "rank": 76
     },
     {
       "id": "TP-008dcdda217e",
@@ -2500,20 +2619,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/countdown-zelda-ocarina-of-time-dungeon-crawl-2-a-sophomore-slump",
       "confidence": 61,
-      "importance": 61,
-      "freshness": 55,
-      "momentum": 46,
+      "importance": 59,
+      "freshness": 47,
+      "momentum": 42,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 73
+      "rank": 77
     },
     {
       "id": "TP-819e92326da0",
-      "cluster_id": "CL-0025",
+      "cluster_id": "CL-0026",
       "title": "OpenAI pauses training of its ‘most capable models’",
       "summary": "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The decision was made after a model being tested within a sandbox exploited a loophole to gain internet access. The incident happened on September […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2531,20 +2650,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
       "confidence": 61,
-      "importance": 61,
-      "freshness": 54,
-      "momentum": 46,
+      "importance": 59,
+      "freshness": 46,
+      "momentum": 41,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 74
+      "rank": 78
     },
     {
       "id": "TP-7843e0df2888",
-      "cluster_id": "CL-0117",
+      "cluster_id": "CL-0119",
       "title": "Claude Opus 5.5 uses 95% fewer em dashes, but its answers are getting longer",
       "summary": "Anthropic's Claude Opus 5.5 appears to be changing how it writes, with new analysis showing fewer obvious AI writing patterns, shorter sentences, and simpler wording compared with Opus 5. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2562,20 +2681,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/",
       "confidence": 64,
-      "importance": 63,
-      "freshness": 53,
-      "momentum": 45,
+      "importance": 61,
+      "freshness": 46,
+      "momentum": 41,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 75
+      "rank": 79
     },
     {
       "id": "TP-5fe3eb589717",
-      "cluster_id": "CL-0118",
+      "cluster_id": "CL-0120",
       "title": "Microsoft pauses KB5002907 update after Office license deactivations",
       "summary": "Microsoft has paused the rollout of the KB5002907 Microsoft 365 update after users report that it deactivated, or in some cases completely removed, perpetual Office 2016 and Office 2019 installations. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2593,16 +2712,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 52,
-      "momentum": 45,
+      "importance": 61,
+      "freshness": 45,
+      "momentum": 41,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 76
+      "rank": 80
     },
     {
       "id": "TP-802773718eb3",
@@ -2629,16 +2748,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/pc-gaming/27-year-old-gta-2-gets-full-path-tracing-and-60-fps-frame-generation-via-rtx-remix-custom-direct3d-9-wrapper-modernizes-classic-with-custom-direct3d-9-bridge-unlocks-dynamic-lighting",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 51,
-      "momentum": 44,
+      "importance": 60,
+      "freshness": 43,
+      "momentum": 40,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 77
+      "rank": 81
     },
     {
       "id": "TP-25407baec3bf",
@@ -2660,16 +2779,16 @@
       "source_type": "secondary",
       "url": "https://lwn.net/Articles/1096897/",
       "confidence": 68,
-      "importance": 64,
-      "freshness": 51,
-      "momentum": 44,
+      "importance": 62,
+      "freshness": 43,
+      "momentum": 40,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 78
+      "rank": 82
     },
     {
       "id": "TP-9b67f38db70b",
@@ -2691,16 +2810,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/avoiding-vendor-lock-in/",
       "confidence": 61,
-      "importance": 60,
-      "freshness": 51,
-      "momentum": 44,
+      "importance": 58,
+      "freshness": 43,
+      "momentum": 40,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 79
+      "rank": 83
     },
     {
       "id": "TP-cee8e2df328f",
@@ -2722,20 +2841,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/russia-bombs-ukrainian-data-centers-in-latest-escalation-100-000-households-lose-connectivity-as-firms-migrate-data-abroad-zelensky-says-ordinary-life-is-simply-a-target",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 50,
-      "momentum": 44,
+      "importance": 60,
+      "freshness": 42,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 80
+      "rank": 84
     },
     {
       "id": "TP-7cfbf8cc3081",
-      "cluster_id": "CL-0119",
+      "cluster_id": "CL-0121",
       "title": "GitHub Actions re-enabled with Mini Shai-Hulud payload still active",
       "summary": "Two third-party GitHub Actions previously compromised in a Mini Shai-Hulud campaign were re-enabled by their maintainer and remained accessible for more than a week despite still pointing to malicious code. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2753,16 +2872,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 60,
+      "freshness": 42,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 81
+      "rank": 85
     },
     {
       "id": "TP-129414cb4735",
@@ -2786,20 +2905,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-quietly-drops-copilot-branding-from-its-new-laptops-surface-cvp-confirms-new-devices-meet-hardware-requirements-but-lack-controversial-branding",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 60,
+      "freshness": 41,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 82
+      "rank": 86
     },
     {
       "id": "TP-c6fb97f6187a",
-      "cluster_id": "CL-0008",
+      "cluster_id": "CL-0010",
       "title": "I created an interactive digital avatar of myself — and you can talk to it",
       "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2817,16 +2936,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
       "confidence": 61,
-      "importance": 60,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 58,
+      "freshness": 41,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 83
+      "rank": 87
     },
     {
       "id": "TP-246532d46b61",
@@ -2850,16 +2969,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/inside-out-agent-security/",
       "confidence": 61,
-      "importance": 60,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 58,
+      "freshness": 41,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 84
+      "rank": 88
     },
     {
       "id": "TP-9abb4d634ab3",
@@ -2883,16 +3002,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/interview-were-not-making-a-party-game-now-its-more-of-an-evening-thing-ghost-town-is-moving-on-from-overcooked",
       "confidence": 61,
-      "importance": 60,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 58,
+      "freshness": 41,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 85
+      "rank": 89
     },
     {
       "id": "TP-b6eaa5b95662",
@@ -2918,16 +3037,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/playstation/open-source-anyps5-dumps-emulation-to-run-playstation-5-console-games-natively-on-pc-amd-zen-2-architecture-enables-proton-like-binary-translation-for-windows-and-linux",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 60,
+      "freshness": 41,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 86
+      "rank": 90
     },
     {
       "id": "TP-5dc98326e191",
@@ -2951,16 +3070,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/pc-gaming/an-nvidia-chatbot-could-one-day-help-developers-better-optimize-their-games-patent-filing-show-requests-can-be-made-in-plain-english",
       "confidence": 64,
-      "importance": 61,
-      "freshness": 47,
-      "momentum": 42,
+      "importance": 59,
+      "freshness": 39,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 87
+      "rank": 91
     },
     {
       "id": "TP-482b0e5da129",
@@ -2986,16 +3105,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/ssds/sandisk-optimus-gx-pro-850p-2tb-ssd-review",
       "confidence": 64,
-      "importance": 61,
-      "freshness": 47,
-      "momentum": 42,
+      "importance": 59,
+      "freshness": 39,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 88
+      "rank": 92
     },
     {
       "id": "TP-89ff49ea301a",
@@ -3017,16 +3136,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/claude-opus-5-5-vs-opus-5/",
       "confidence": 61,
-      "importance": 59,
-      "freshness": 47,
-      "momentum": 42,
+      "importance": 57,
+      "freshness": 39,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 89
+      "rank": 93
     },
     {
       "id": "TP-7429fc70b084",
@@ -3048,20 +3167,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-mega-geometry-2-0-streams-ray-tracing-geometry-into-vram-on-demand-nanite-inspired-design-drops-detail-instead-of-dropping-out",
       "confidence": 64,
-      "importance": 61,
-      "freshness": 46,
-      "momentum": 41,
+      "importance": 59,
+      "freshness": 38,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 90
+      "rank": 94
     },
     {
       "id": "TP-8f8f3ea9305c",
-      "cluster_id": "CL-0120",
+      "cluster_id": "CL-0122",
       "title": "OpenAI's AI agents accidentally uploaded user-provided images to third-party sites",
       "summary": "OpenAI says its AI agents uploaded user-provided images to third-party image-hosting services while carrying out research and evaluation tasks. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3079,16 +3198,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
       "confidence": 64,
-      "importance": 61,
-      "freshness": 46,
-      "momentum": 41,
+      "importance": 59,
+      "freshness": 38,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 91
+      "rank": 95
     },
     {
       "id": "TP-ccf72894c648",
@@ -3110,16 +3229,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/cyber-security/novel-attack-on-rsa-cryptography-might-bring-computation-requirements-for-cracking-down-to-manageable-levels",
       "confidence": 64,
-      "importance": 61,
-      "freshness": 45,
-      "momentum": 41,
+      "importance": 59,
+      "freshness": 37,
+      "momentum": 36,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 92
+      "rank": 96
     },
     {
       "id": "TP-13b36f07f633",
@@ -3143,16 +3262,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 45,
-      "momentum": 41,
+      "importance": 56,
+      "freshness": 37,
+      "momentum": 36,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 93
+      "rank": 97
     },
     {
       "id": "TP-0bfe7fe56734",
@@ -3176,16 +3295,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/gallery/best-white-elephant-gifts-2026/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 44,
-      "momentum": 40,
+      "importance": 56,
+      "freshness": 36,
+      "momentum": 36,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 94
+      "rank": 98
     },
     {
       "id": "TP-19d0428190b3",
@@ -3207,16 +3326,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/gpus/pny-allegedly-refuses-to-cover-melted-rtx-5090-powered-by-native-power-supply-cable-company-closes-users-ticket-when-questioned-on-policy",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 44,
-      "momentum": 40,
+      "importance": 58,
+      "freshness": 36,
+      "momentum": 36,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 95
+      "rank": 99
     },
     {
       "id": "TP-14b28404daf4",
@@ -3242,16 +3361,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/guides/best-castlevania-games-ranked-switch-and-nintendo-consoles",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 43,
-      "momentum": 40,
+      "importance": 56,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 96
+      "rank": 100
     },
     {
       "id": "TP-cf294c8bfe6e",
@@ -3273,16 +3392,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/liquid-cooling/enthusiast-cooled-iphone-18-pro-with-cold-can-of-la-croix-sparkling-water-benchmarks-show-25-percent-higher-sustained-performance-liquid-cooling-surprisingly-reduced-thermal-throttling",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 43,
-      "momentum": 40,
+      "importance": 58,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 97
+      "rank": 101
     },
     {
       "id": "TP-5ad3f05c6029",
@@ -3304,16 +3423,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/best-mesh-wifi-routers/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 43,
-      "momentum": 40,
+      "importance": 56,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 98
+      "rank": 102
     },
     {
       "id": "TP-eb28e19794c3",
@@ -3339,16 +3458,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/anniversary-castlevania-changed-the-shape-of-gaming-40-years-ago",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 43,
-      "momentum": 40,
+      "importance": 56,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 99
+      "rank": 103
     },
     {
       "id": "TP-e899f09f9f93",
@@ -3372,16 +3491,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/cars/2026/09/teslas-big-electric-truck-faces-an-even-bigger-infrastructure-challenge/",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 42,
-      "momentum": 39,
+      "importance": 58,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 100
+      "rank": 104
     },
     {
       "id": "TP-53bbc10d0936",
@@ -3403,16 +3522,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/software/vpn/federal-bill-would-force-vpn-providers-isps-and-dns-services-to-block-foreign-piracy-sites-yet-fuzzy-location-rules-could-trigger-heavy-handed-bans",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 42,
-      "momentum": 39,
+      "importance": 58,
+      "freshness": 34,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 101
+      "rank": 105
     },
     {
       "id": "TP-b65d1a2bb490",
@@ -3436,16 +3555,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 42,
-      "momentum": 39,
+      "importance": 56,
+      "freshness": 34,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 102
+      "rank": 106
     },
     {
       "id": "TP-45c4a7cf9755",
@@ -3467,16 +3586,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-1941-enigma-coded-message-in-two-days-autonomous-ai-coded-its-own-simulator-to-crack-code-that-was-unsolved-since-it-was-shared-online-back-in-2005",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 58,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 103
+      "rank": 107
     },
     {
       "id": "TP-d2e89d0d222a",
@@ -3498,16 +3617,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/tuck-browser-extension-lets-you-snooze-open-tabs-until-later/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 56,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 104
+      "rank": 108
     },
     {
       "id": "TP-1f7f10efa0f2",
@@ -3531,16 +3650,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/gravitational-struggle-deep-in-earth-is-changing-length-of-days/",
       "confidence": 61,
-      "importance": 57,
-      "freshness": 40,
-      "momentum": 38,
+      "importance": 55,
+      "freshness": 32,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 105
+      "rank": 109
     },
     {
       "id": "TP-8a1fea29f3f9",
@@ -3566,20 +3685,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/talking-point-what-are-you-playing-this-weekend-26th-september",
       "confidence": 61,
-      "importance": 57,
-      "freshness": 39,
-      "momentum": 37,
+      "importance": 55,
+      "freshness": 31,
+      "momentum": 33,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 106
+      "rank": 110
     },
     {
       "id": "TP-b163499b7471",
-      "cluster_id": "CL-0157",
+      "cluster_id": "CL-0158",
       "title": "APOD: 2026 September 26 – Mirrored Meteor and Milky Way",
       "summary": "APOD Science APOD APOD: 2026 September 26 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Mirrored Meteor and […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3599,16 +3718,16 @@
       "source_type": "primary",
       "url": "https://science.nasa.gov/image-article/apod-2026-september-26-mirrored-meteor-and-milky-way/",
       "confidence": 75,
-      "importance": 59,
-      "freshness": 29,
-      "momentum": 32,
+      "importance": 57,
+      "freshness": 21,
+      "momentum": 28,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 107
+      "rank": 111
     },
     {
       "id": "TP-cb3cfa9c5ee3",
@@ -3634,20 +3753,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/and-now-an-evil-has-appeared-nintendo-releases-extended-zelda-ocarina-of-time-switch-2-clip",
       "confidence": 61,
-      "importance": 53,
-      "freshness": 24,
-      "momentum": 29,
+      "importance": 52,
+      "freshness": 17,
+      "momentum": 25,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 108
+      "rank": 112
     },
     {
       "id": "TP-1fe1b6ab723e",
-      "cluster_id": "CL-0009",
+      "cluster_id": "CL-0011",
       "title": "At Meta Connect, the company’s smart glasses were everywhere",
       "summary": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3665,16 +3784,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
       "confidence": 61,
-      "importance": 53,
-      "freshness": 23,
-      "momentum": 29,
+      "importance": 51,
+      "freshness": 15,
+      "momentum": 24,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 109
+      "rank": 113
     },
     {
       "id": "TP-1d0519490f7b",
@@ -3698,16 +3817,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/video-digital-foundry-delivers-its-tech-analysis-of-fire-emblem-fortunes-weave",
       "confidence": 61,
-      "importance": 53,
-      "freshness": 22,
-      "momentum": 28,
+      "importance": 51,
+      "freshness": 15,
+      "momentum": 24,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 110
+      "rank": 114
     },
     {
       "id": "TP-a8bad2a04046",
@@ -3731,20 +3850,20 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/quince-wants-to-be-your-new-away-luggage/",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 21,
-      "momentum": 28,
+      "importance": 50,
+      "freshness": 13,
+      "momentum": 23,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 111
+      "rank": 115
     },
     {
       "id": "TP-303ad555831b",
-      "cluster_id": "CL-0010",
+      "cluster_id": "CL-0012",
       "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
       "summary": "Boom Supersonic CEO Blake Scholl said the company's new stationary power plants were no longer in Crusoe's near-term plans.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3762,20 +3881,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 19,
-      "momentum": 26,
+      "importance": 50,
+      "freshness": 11,
+      "momentum": 22,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 112
+      "rank": 116
     },
     {
       "id": "TP-54c4b4a4bd13",
-      "cluster_id": "CL-0011",
+      "cluster_id": "CL-0013",
       "title": "Automattic has a new board after failed attempt to put CEO on leave",
       "summary": "After days of upheaval at Automattic, following a failed attempt to remove CEO Matt Mullenweg, the company has a new board.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3795,16 +3914,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/automattic-has-a-new-board-after-failed-attempt-to-put-ceo-on-leave/",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 19,
-      "momentum": 26,
+      "importance": 50,
+      "freshness": 11,
+      "momentum": 22,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 113
+      "rank": 117
     },
     {
       "id": "TP-13df8a7ee8b3",
@@ -3828,16 +3947,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/health/2026/09/can-trump-ever-be-wrong-his-pick-to-lead-fda-refused-to-say/",
       "confidence": 64,
-      "importance": 54,
-      "freshness": 19,
-      "momentum": 26,
+      "importance": 52,
+      "freshness": 11,
+      "momentum": 22,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 114
+      "rank": 118
     },
     {
       "id": "TP-025ecf70e5c3",
@@ -3863,53 +3982,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/hell-is-us-shifts-switch-2-launch-due-to-very-busy-september-release-window",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 19,
-      "momentum": 26,
+      "importance": 50,
+      "freshness": 11,
+      "momentum": 22,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 115
-    },
-    {
-      "id": "TP-5543d4f90a19",
-      "cluster_id": "CL-0028",
-      "title": "Pokémon card resellers have turned collecting into an online blood sport",
-      "summary": "Earlier this month, Pokémon card content creator Natalie Roush posted a video to her YouTube and Instagram pages that enraged the larger collection community. In the now-deleted video, Roush shows off two premium boxes of cards that had not yet been officially released, and implores viewers not to be mad. But they were; other creators […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-09-25T22:32:28+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/games/1001002/pokemon-30th-celebration-scalping-resellers",
-      "confidence": 61,
-      "importance": 52,
-      "freshness": 18,
-      "momentum": 26,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 116
+      "rank": 119
     },
     {
       "id": "TP-df19e6663c5f",
-      "cluster_id": "CL-0012",
+      "cluster_id": "CL-0014",
       "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
       "summary": "AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3929,20 +4015,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 17,
-      "momentum": 25,
+      "importance": 50,
+      "freshness": 10,
+      "momentum": 22,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 117
+      "rank": 120
     },
     {
       "id": "TP-344d41dcb1d6",
-      "cluster_id": "CL-0026",
+      "cluster_id": "CL-0027",
       "title": "Can Cloudflare CEO Matthew Prince save the web from AI?",
       "summary": "Today, I’m talking with Matthew Prince, who is CEO of Cloudflare. This episode is part of a two-part series on the future of business. Matthew last joined us on the show about two and a half years ago, at what we thought then was a wild pivot point for the internet — and now it […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3960,20 +4046,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 17,
-      "momentum": 25,
+      "importance": 50,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 118
+      "rank": 121
     },
     {
       "id": "TP-c981d2ba16d0",
-      "cluster_id": "CL-0027",
+      "cluster_id": "CL-0028",
       "title": "Control Resonant is a great game — it’s even better when you read everything",
       "summary": "In Control Resonant, the entire world is at stake. But that didn't stop the diligent employees of the Federal Bureau of Control from filing reams of paperwork, and it didn't stop me from reading everything I could find, either. Reading is often optional in Resonant, but it's where some of the game's best details - […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3993,20 +4079,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/games/1000818/control-resonant-reading-collectibles-documents-logs",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 17,
-      "momentum": 25,
+      "importance": 50,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 119
+      "rank": 122
     },
     {
       "id": "TP-921a6132650e",
-      "cluster_id": "CL-0158",
+      "cluster_id": "CL-0159",
       "title": "NASA, Boeing to Provide Update on Starliner Development",
       "summary": "During a news conference at 3 p.m. EDT on Monday, Sept. 28, NASA and Boeing leadership will discuss Starliner’s development and plans for regular crew flights to and from the International Space Station. Learn where to watch online: https://www.nasa.gov/live The briefing participants include: Media already credentialed for Crew-13 may participate in person at NASA’s Kennedy […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4024,20 +4110,20 @@
       "source_type": "primary",
       "url": "https://www.nasa.gov/news-release/nasa-boeing-to-provide-update-on-starliner-development/",
       "confidence": 75,
-      "importance": 56,
-      "freshness": 17,
-      "momentum": 25,
+      "importance": 54,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 120
+      "rank": 123
     },
     {
       "id": "TP-42d7d50a9109",
-      "cluster_id": "CL-0129",
+      "cluster_id": "CL-0130",
       "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
       "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4055,20 +4141,20 @@
       "source_type": "primary",
       "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
       "confidence": 75,
-      "importance": 56,
-      "freshness": 16,
-      "momentum": 25,
+      "importance": 54,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "KrebsOnSecurity"
       ],
       "corroborating_sources": [],
-      "rank": 121
+      "rank": 124
     },
     {
       "id": "TP-bdcdb2d24781",
-      "cluster_id": "CL-0121",
+      "cluster_id": "CL-0123",
       "title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
       "summary": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent cyberattack. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4088,16 +4174,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
       "confidence": 64,
-      "importance": 54,
-      "freshness": 16,
-      "momentum": 25,
+      "importance": 52,
+      "freshness": 8,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 122
+      "rank": 125
     },
     {
       "id": "TP-4a19c9abdcc1",
@@ -4119,16 +4205,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
       "confidence": 64,
-      "importance": 54,
-      "freshness": 16,
-      "momentum": 25,
+      "importance": 52,
+      "freshness": 8,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 123
+      "rank": 126
     },
     {
       "id": "TP-de7583d0d2e5",
@@ -4150,20 +4236,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
       "confidence": 64,
-      "importance": 53,
-      "freshness": 15,
-      "momentum": 24,
+      "importance": 51,
+      "freshness": 7,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 124
+      "rank": 127
     },
     {
       "id": "TP-82e9a8b128c3",
-      "cluster_id": "CL-0122",
+      "cluster_id": "CL-0124",
       "title": "ShinyHunters hacked Clop leak site using Grav CMS path traversal flaw",
       "summary": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unauthenticated path traversal vulnerability. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4183,20 +4269,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
       "confidence": 64,
-      "importance": 53,
-      "freshness": 14,
-      "momentum": 24,
+      "importance": 51,
+      "freshness": 7,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 125
+      "rank": 128
     },
     {
       "id": "TP-28eff29135c5",
-      "cluster_id": "CL-0013",
+      "cluster_id": "CL-0015",
       "title": "Meta opens early access program for new Muse features",
       "summary": "Anyone interested in joining has to ask Muse to put them on the list.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4216,20 +4302,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
       "confidence": 61,
-      "importance": 51,
-      "freshness": 14,
-      "momentum": 24,
+      "importance": 49,
+      "freshness": 6,
+      "momentum": 19,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 126
+      "rank": 129
     },
     {
       "id": "TP-f164ba27b8e4",
-      "cluster_id": "CL-0014",
+      "cluster_id": "CL-0016",
       "title": "The hottest new hangout for middle schoolers is NPR’s comment section?",
       "summary": "When NPR staffers flagged strange comments under their podcasts on Spotify as bots, it took a Gen Z colleague to (immediately) figure out the mystery.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4249,16 +4335,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/the-hottest-new-hangout-for-middle-schoolers-is-nprs-comment-section/",
       "confidence": 61,
-      "importance": 51,
-      "freshness": 14,
-      "momentum": 24,
+      "importance": 49,
+      "freshness": 6,
+      "momentum": 19,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 127
+      "rank": 130
     },
     {
       "id": "TP-cfaa791365ad",
@@ -4280,20 +4366,20 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/thieves-stole-nvidia-trailers-they-got-20-tons-of-sand/",
       "confidence": 61,
-      "importance": 51,
-      "freshness": 14,
-      "momentum": 24,
+      "importance": 49,
+      "freshness": 6,
+      "momentum": 19,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 128
+      "rank": 131
     },
     {
       "id": "TP-96c79d5a5b20",
-      "cluster_id": "CL-0159",
+      "cluster_id": "CL-0160",
       "title": "NASA Welcomes San Marino Signing the Artemis Accords",
       "summary": "The Republic of San Marino became the 76th signatory to the Artemis Accords during a ceremony in the city of Rimini on Friday with NASA and U.S. Department of State officials present. “San Marino joins a growing coalition of like-minded nations committed to the peaceful, transparent, and responsible exploration of space,” said NASA Deputy Administrator […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4311,16 +4397,16 @@
       "source_type": "primary",
       "url": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-san-marino-signing-the-artemis-accords/",
       "confidence": 75,
-      "importance": 55,
-      "freshness": 12,
-      "momentum": 23,
+      "importance": 53,
+      "freshness": 5,
+      "momentum": 19,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 129
+      "rank": 132
     },
     {
       "id": "TP-b56e7f94adf4",
@@ -4344,20 +4430,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 12,
-      "momentum": 23,
+      "importance": 50,
+      "freshness": 4,
+      "momentum": 18,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 130
+      "rank": 133
     },
     {
       "id": "TP-780c6143b0af",
-      "cluster_id": "CL-0160",
+      "cluster_id": "CL-0161",
       "title": "NASA Tests Dual Mode Propulsion CubeSat Ahead of Launch",
       "summary": "Spacecraft propulsion traditionally relies on volatile fuels and separate, bulky systems for different types of maneuvering in space. NASA is working to change that paradigm. Engineers at NASA’s Marshall Space Flight Center in Huntsville, Alabama, recently completed a rigorous series of environmental and physical tests on a new small satellite designed to make spaceflight safer […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4375,16 +4461,16 @@
       "source_type": "primary",
       "url": "https://www.nasa.gov/directorates/rtmd/nasa-tests-dual-mode-propulsion-cubesat-ahead-of-launch/",
       "confidence": 75,
-      "importance": 55,
-      "freshness": 12,
-      "momentum": 23,
+      "importance": 53,
+      "freshness": 4,
+      "momentum": 18,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 131
+      "rank": 134
     },
     {
       "id": "TP-1d7ffbbb06c8",
@@ -4406,16 +4492,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 12,
-      "momentum": 23,
+      "importance": 50,
+      "freshness": 4,
+      "momentum": 18,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 132
+      "rank": 135
     },
     {
       "id": "TP-ea1636a8ab6d",
@@ -4439,16 +4525,16 @@
       "source_type": "secondary",
       "url": "https://www.theregister.com/systems/2026/09/25/uncle-sam-coughs-up-19b-for-grid-upgrades-as-datacenters-hit-a-power-wall/5299276",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 11,
-      "momentum": 22,
+      "importance": 50,
+      "freshness": 4,
+      "momentum": 18,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Register - Systems"
       ],
       "corroborating_sources": [],
-      "rank": 133
+      "rank": 136
     },
     {
       "id": "TP-ff8bda4a60f0",
@@ -4472,20 +4558,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 11,
-      "momentum": 22,
+      "importance": 50,
+      "freshness": 3,
+      "momentum": 18,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 134
+      "rank": 137
     },
     {
       "id": "TP-b97518582a39",
-      "cluster_id": "CL-0015",
+      "cluster_id": "CL-0017",
       "title": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
       "summary": "Mark Wahlberg joins Bruce K. Lee at Disrupt to discuss investing, entrepreneurship, healthcare, wellness, and building businesses.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4505,16 +4591,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 10,
-      "momentum": 22,
+      "importance": 48,
+      "freshness": 3,
+      "momentum": 18,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 135
+      "rank": 138
     },
     {
       "id": "TP-6a29efdf307d",
@@ -4538,20 +4624,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/tech-policy/2026/09/paramount-wbd-merger-conditions-give-the-public-virtually-nothing-judge-is-told/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 10,
-      "momentum": 22,
+      "importance": 50,
+      "freshness": 2,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 136
+      "rank": 139
     },
     {
       "id": "TP-4e93802753c2",
-      "cluster_id": "CL-0130",
+      "cluster_id": "CL-0131",
       "title": "AI Sandbox Escapes: Why Forensic Readiness Matters More Than Containment",
       "summary": "When autonomous AI agents \"escape the sandbox,\" the real story isn't rogue machines — it's the same access-control failures we've seen for decades.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4569,20 +4655,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-sandbox-escapes-forensic-readiness",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 10,
-      "momentum": 22,
+      "importance": 48,
+      "freshness": 2,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 137
+      "rank": 140
     },
     {
       "id": "TP-e3ed29775d07",
-      "cluster_id": "CL-0016",
+      "cluster_id": "CL-0018",
       "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
       "summary": "The funding, which comes from Third Point, Nvidia, and others, will fuel the company's massive AI data center buildout.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4600,16 +4686,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 10,
-      "momentum": 22,
+      "importance": 48,
+      "freshness": 2,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 138
+      "rank": 141
     },
     {
       "id": "TP-bc9575a458f6",
@@ -4633,20 +4719,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/science/2026/09/is-solars-growth-finally-slowing-in-the-us/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 9,
-      "momentum": 21,
+      "importance": 50,
+      "freshness": 2,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 139
+      "rank": 142
     },
     {
       "id": "TP-407121c5fd68",
-      "cluster_id": "CL-0123",
+      "cluster_id": "CL-0125",
       "title": "Elementor WordPress flaw lets attackers create admin accounts",
       "summary": "A cross-site request forgery (CSRF) vulnerability in the Elementor plugin for WordPress could allow an unauthenticated attacker to create administrator accounts. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4666,16 +4752,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/elementor-wordpress-flaw-lets-attackers-create-admin-accounts/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 9,
-      "momentum": 21,
+      "importance": 50,
+      "freshness": 1,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 140
+      "rank": 143
     },
     {
       "id": "TP-559cb21aa3d4",
@@ -4699,16 +4785,16 @@
       "source_type": "secondary",
       "url": "https://www.theregister.com/systems/2026/09/25/google-backed-energy-outfit-brings-33-mw-of-4-gw-geothermal-potential-online-in-utah/5299243",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 9,
-      "momentum": 21,
+      "importance": 50,
+      "freshness": 1,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Register - Systems"
       ],
       "corroborating_sources": [],
-      "rank": 141
+      "rank": 144
     },
     {
       "id": "TP-469d8da91a36",
@@ -4730,20 +4816,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 8,
-      "momentum": 20,
+      "importance": 50,
+      "freshness": 1,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 142
+      "rank": 145
     },
     {
       "id": "TP-3e0e6523ebd6",
-      "cluster_id": "CL-0131",
+      "cluster_id": "CL-0132",
       "title": "What We Missed: Google Gemini Joins the AI Escape Party",
       "summary": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from Google Gemini models breaking containment to ShinyHunters ratting on TeamPCP hackers.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4761,20 +4847,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 8,
-      "momentum": 20,
+      "importance": 48,
+      "freshness": 1,
+      "momentum": 17,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 143
+      "rank": 146
     },
     {
       "id": "TP-483f16612c3d",
-      "cluster_id": "CL-0017",
+      "cluster_id": "CL-0019",
       "title": "The Aeropod automates soil aeration without robotics — see it at TechCrunch Disrupt",
       "summary": "Muju Earth Technologies has developed a deceptively simply pod that can save farmers money while improving crop yields.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4792,82 +4878,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/09/25/the-aeropod-automates-soil-aeration-without-robotics-see-it-at-techcrunch-disrupt/",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 8,
-      "momentum": 20,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 144
-    },
-    {
-      "id": "TP-b043d9d03d29",
-      "cluster_id": "CL-0018",
-      "title": "Some Supabase customers are publicly exposing reams of people’s data to the web",
-      "summary": "The findings highlight how AI-generated and vibe-coded apps can spill and expose users' data when not configured or secured properly.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [],
-      "published_at": "2026-09-25T17:29:46+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-      "confidence": 61,
-      "importance": 49,
-      "freshness": 8,
-      "momentum": 20,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 145
-    },
-    {
-      "id": "TP-68c0d1315425",
-      "cluster_id": "CL-0019",
-      "title": "Astra and Opus just passed Turing’s other test",
-      "summary": "Frontier AI models are finishing Alan Turing's World War II codebreaking work.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "AI",
-      "subcategory": "AI",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [],
-      "published_at": "2026-09-25T17:24:36+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
-      "confidence": 61,
-      "importance": 49,
-      "freshness": 7,
-      "momentum": 20,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 146
+      "rank": 147
     },
     {
       "id": "TP-b9e09eb7f6ca",
-      "cluster_id": "CL-0124",
+      "cluster_id": "CL-0126",
       "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
       "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) warns that hackers are exploiting a critical authentication bypass vulnerability (CVE-2026-5430) affecting multiple products from enterprise software provider WSO2. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4887,20 +4911,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
       "confidence": 64,
-      "importance": 51,
-      "freshness": 7,
-      "momentum": 20,
+      "importance": 50,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 147
+      "rank": 148
     },
     {
       "id": "TP-5b718edb1fe5",
-      "cluster_id": "CL-0161",
+      "cluster_id": "CL-0162",
       "title": "2026-2027 DWU: Middle School Design Challenge",
       "summary": "2026-2027 DWU: Middle School Design Challenge Overview The 2026-2027 challenge theme is, “Fueling Flight Design Challenge: New Energy Systems.” As more and more aircraft are a part of the US’ National Airspace System (NAS), NASA and partners at the FAA, at universities, and in the aviation industry are searching for ways to increase safety, make […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4918,20 +4942,20 @@
       "source_type": "primary",
       "url": "https://www.nasa.gov/aeronautics/aeronautics-stem/2026-2027-dwu-middle-school-design-challenge/",
       "confidence": 75,
-      "importance": 54,
-      "freshness": 7,
-      "momentum": 20,
+      "importance": 52,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 148
+      "rank": 149
     },
     {
       "id": "TP-21d3cdd3bb26",
-      "cluster_id": "CL-0162",
+      "cluster_id": "CL-0163",
       "title": "2026-2027 DWU: High School Engineering Challenge",
       "summary": "2026-2027 DWU: High School Engineering Challenge Challenge Materials Overview The 2026-2027 challenge theme is, “Fueling Flight Design Challenge: New Energy Systems.” As more and more aircraft are a part of the US’ National Airspace System (NAS), NASA and partners at the FAA, at universities, and in the aviation industry are searching for ways to increase safety, […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4949,16 +4973,16 @@
       "source_type": "primary",
       "url": "https://www.nasa.gov/aeronautics/aeronautics-stem/2026-2027-dwu-high-school-engineering-challenge/",
       "confidence": 75,
-      "importance": 54,
-      "freshness": 7,
-      "momentum": 20,
+      "importance": 52,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 149
+      "rank": 150
     },
     {
       "id": "TP-62a5df344938",
@@ -4980,16 +5004,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/copilot-agents-identity-runtime/",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 7,
-      "momentum": 20,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 150
+      "rank": 151
     },
     {
       "id": "TP-0fa6c977ec27",
@@ -5011,16 +5035,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 6,
-      "momentum": 19,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 151
+      "rank": 152
     },
     {
       "id": "TP-e907a9f48e3d",
@@ -5042,16 +5066,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 6,
-      "momentum": 19,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 152
+      "rank": 153
     },
     {
       "id": "TP-7a0595cd2565",
@@ -5077,20 +5101,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/soulslike-fountains-gets-a-free-switch-2-upgrade-pack-one-week-after-launch",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 6,
-      "momentum": 19,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 153
+      "rank": 154
     },
     {
       "id": "TP-f62c609b7248",
-      "cluster_id": "CL-0125",
+      "cluster_id": "CL-0127",
       "title": "Anthropic rolls out up to $250 in free Claude Code credits, but only for cloud sessions",
       "summary": "Anthropic now allows you to run Claude Code via cloud sessions without signing up for the research preview, and it's offering up to $250 in free usage credits, so more users can give it a try. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5108,16 +5132,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/",
       "confidence": 64,
-      "importance": 51,
-      "freshness": 5,
-      "momentum": 19,
+      "importance": 50,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 154
+      "rank": 155
     },
     {
       "id": "TP-cdd03cf682cf",
@@ -5141,20 +5165,20 @@
       "source_type": "secondary",
       "url": "https://lwn.net/Articles/1096245/",
       "confidence": 68,
-      "importance": 53,
-      "freshness": 5,
-      "momentum": 19,
+      "importance": 52,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 155
+      "rank": 156
     },
     {
       "id": "TP-246bdcaf4824",
-      "cluster_id": "CL-0163",
+      "cluster_id": "CL-0164",
       "title": "Hubble Spots Chaotic Secret in Galaxy",
       "summary": "A chaotic secret hides within this seemingly serene image of spiral galaxy NGC 4698 taken by NASA’s Hubble Space Telescope and released on Sept. 18, 2026. As a spiral galaxy like our own Milky Way galaxy, NGC 4698 has spiral arms that curl around within a thin disk of stars, gas, and dust. These arms […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5172,16 +5196,16 @@
       "source_type": "primary",
       "url": "https://www.nasa.gov/image-article/hubble-spots-chaotic-secret-in-galaxy/",
       "confidence": 75,
-      "importance": 53,
-      "freshness": 4,
-      "momentum": 18,
+      "importance": 52,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 156
+      "rank": 157
     },
     {
       "id": "TP-67dadadd9ace",
@@ -5205,16 +5229,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/09/four-years-after-release-splatoon-3s-player-numbers-are-on-the-up-in-2026",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 4,
-      "momentum": 18,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 157
+      "rank": 158
     },
     {
       "id": "TP-3f11cbf9dd45",
@@ -5237,15 +5261,15 @@
       "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-to-add-another-660-000-ai-gpus-this-year-nearing-a-total-of-1-44-million-in-operation-firm-is-building-1-2-gigawatt-power-plant-to-bring-systems-fully-online",
       "confidence": 64,
       "importance": 50,
-      "freshness": 4,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 158
+      "rank": 159
     },
     {
       "id": "TP-a4cc95cb9f27",
@@ -5268,15 +5292,15 @@
       "url": "https://arstechnica.com/space/2026/09/after-seven-years-a-spacecraft-company-is-releasing-its-otters-into-the-wild/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 4,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 159
+      "rank": 160
     },
     {
       "id": "TP-ad2dde791cc2",
@@ -5301,15 +5325,15 @@
       "url": "https://arstechnica.com/cars/2026/09/us-being-left-behind-in-ev-charging-speeds-as-china-goes-sub-5-min-to-70/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 3,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 160
+      "rank": 161
     },
     {
       "id": "TP-e6447a329fc6",
@@ -5334,15 +5358,15 @@
       "url": "https://lwn.net/Articles/1096818/",
       "confidence": 68,
       "importance": 52,
-      "freshness": 3,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 161
+      "rank": 162
     },
     {
       "id": "TP-dfd8e074980f",
@@ -5365,15 +5389,15 @@
       "url": "https://lwn.net/Articles/1096819/",
       "confidence": 68,
       "importance": 52,
-      "freshness": 3,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 162
+      "rank": 163
     },
     {
       "id": "TP-7e7424e2462c",
@@ -5396,15 +5420,15 @@
       "url": "https://www.tomshardware.com/tech-industry/photonics/tower-semiconductor-to-invest-usd4-billion-in-japanese-ops-to-set-up-massive-optical-connectivity-hub-dual-track-expansion-aims-to-increase-output-by-40-times-by-2029",
       "confidence": 64,
       "importance": 50,
-      "freshness": 3,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 163
+      "rank": 164
     },
     {
       "id": "TP-add4c068355a",
@@ -5428,16 +5452,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/war-bros-didnt-always-rule-silicon-valley/",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 3,
-      "momentum": 18,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 164
+      "rank": 165
     },
     {
       "id": "TP-35e4de49034f",
@@ -5463,16 +5487,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/poll-what-review-score-would-you-give-fire-emblem-fortunes-weave",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 3,
-      "momentum": 18,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 165
+      "rank": 166
     },
     {
       "id": "TP-c94d5e0ccaf8",
@@ -5495,19 +5519,19 @@
       "url": "https://www.tomshardware.com/pc-components/cpus/meta-muse-runs-agents-on-amd-epyc-turin-hosts-with-two-cores-and-8gb-of-memory-ai-agent-can-pass-terminal-commands-to-ubuntu-host-system",
       "confidence": 64,
       "importance": 50,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 166
+      "rank": 167
     },
     {
       "id": "TP-c67ba87648f8",
-      "cluster_id": "CL-0126",
+      "cluster_id": "CL-0128",
       "title": "OpenAI is preparing a $500 ChatGPT Pro Max plan with faster Codex",
       "summary": "OpenAI appears to be preparing a new ChatGPT Pro Max subscription that could cost $500 per month, but it's unclear when it'll begin rolling out. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5526,19 +5550,19 @@
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-preparing-a-500-chatgpt-pro-max-plan-with-faster-codex/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 167
+      "rank": 168
     },
     {
       "id": "TP-15ab194c4f55",
-      "cluster_id": "CL-0127",
+      "cluster_id": "CL-0129",
       "title": "With the Rise of AI Agents, SOC 2 Should Adapt or Risk Irrelevance",
       "summary": "AI agents can operate through human credentials and take actions that existing SOC 2 controls may not distinguish from human activity. Token Security explains why SOC 2 needs to adapt to address the security gaps created by agent identities. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5559,19 +5583,19 @@
       "url": "https://www.bleepingcomputer.com/news/security/with-the-rise-of-ai-agents-soc-2-should-adapt-or-risk-irrelevance/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 168
+      "rank": 169
     },
     {
       "id": "TP-469b9b8e2756",
-      "cluster_id": "CL-0132",
+      "cluster_id": "CL-0133",
       "title": "Stopping IT Worker Scams Requires Revamped HR Process",
       "summary": "Training human-resource managers in the latest tactics and warning signs goes a long way toward blunting the threat, but automated analysis can help even more.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5591,20 +5615,20 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/cyber-risk/stopping-it-worker-scams-revamped-hr-process",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 2,
-      "momentum": 17,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 169
+      "rank": 170
     },
     {
       "id": "TP-4a60af6378b8",
-      "cluster_id": "CL-0164",
+      "cluster_id": "CL-0165",
       "title": "TB 26-07 Aluminum Alloy 2219 Material Guidance",
       "summary": "For more information, contact Donald S. Parker, Kennedy Space Center, donald.s.parker@nasa.gov Download the PDF version Improper casting and forging processes in the manufacture of aluminum alloy 2219 can lead to microstructural defects that result in a sub-optimal response to anodic surface treatments and an increase in corrosion susceptibility. This Technical Bulletin communicates the risks of […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5623,15 +5647,15 @@
       "url": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-07-aluminum-alloy-2219-material-guidance/",
       "confidence": 75,
       "importance": 52,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "NASA News"
       ],
       "corroborating_sources": [],
-      "rank": 170
+      "rank": 171
     },
     {
       "id": "TP-da9a0dbbb40b",
@@ -5654,15 +5678,15 @@
       "url": "https://www.tomshardware.com/pc-components/air-cooling/noctua-explores-2-000w-micro-channel-air-cooling-partners-with-forced-physics-to-develop-vacuum-pump-level-airflow-for-desktop-pcs",
       "confidence": 64,
       "importance": 50,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 171
+      "rank": 172
     },
     {
       "id": "TP-dac2c0379fa6",
@@ -5685,15 +5709,15 @@
       "url": "https://arstechnica.com/space/2026/09/nasa-green-lights-billion-dollar-infrared-observatory-for-launch-in-early-2030s/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 1,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 172
+      "rank": 173
     },
     {
       "id": "TP-d69a4fb8620f",
@@ -5726,7 +5750,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 173
+      "rank": 174
     },
     {
       "id": "TP-819b3ebff337",
@@ -5757,7 +5781,7 @@
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 174
+      "rank": 175
     },
     {
       "id": "TP-5a63cb763d9d",
@@ -5790,7 +5814,7 @@
         "IEEE Spectrum"
       ],
       "corroborating_sources": [],
-      "rank": 175
+      "rank": 176
     },
     {
       "id": "TP-305d92486f07",
@@ -5824,7 +5848,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 176
+      "rank": 177
     },
     {
       "id": "TP-970cb0f09e72",
@@ -5855,7 +5879,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 177
+      "rank": 178
     },
     {
       "id": "TP-bfced5f73820",
@@ -5886,39 +5910,6 @@
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
-      ],
-      "corroborating_sources": [],
-      "rank": 178
-    },
-    {
-      "id": "TP-4fb8f48ad4de",
-      "cluster_id": "CL-0128",
-      "title": "Microsoft plans to deprecate Windows Deployment Services",
-      "summary": "Microsoft announced it will deprecate the Windows Deployment Services (WDS) server role starting with the next Windows Server release. [...]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-09-25T12:40:59+00:00",
-      "source": "BleepingComputer",
-      "source_type": "secondary",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-deprecate-windows-deployment-services-after-windows-server-2025/",
-      "confidence": 64,
-      "importance": 50,
-      "freshness": 0,
-      "momentum": 16,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "BleepingComputer"
       ],
       "corroborating_sources": [],
       "rank": 179
@@ -5961,7 +5952,7 @@
     },
     {
       "id": "TP-f65d03898c69",
-      "cluster_id": "CL-0104",
+      "cluster_id": "CL-0105",
       "title": "The Download: the Pentagon’s AI-powered lie detector and young organ limits",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The Pentagon wants $30 million to build an AI-powered lie detector The US government wants to spend $30.3 million over the next five years on an improved lie detector, according to…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6642,7 +6633,7 @@
     },
     {
       "id": "TP-93b91a44c537",
-      "cluster_id": "CL-0105",
+      "cluster_id": "CL-0106",
       "title": "The Pentagon wants $30 million to build an AI-powered lie detector",
       "summary": "The US government wants to spend $30.3 million over the next five years on an improved form of lie detector, according to a Department of Defense budget request. The program, called Polygraph+ or Polygraph Next, will focus on scoring algorithms that use artificial intelligence and machine learning and on a technique called “standoff sensing,” which…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6739,7 +6730,7 @@
     },
     {
       "id": "TP-8ad8b6573769",
-      "cluster_id": "CL-0106",
+      "cluster_id": "CL-0107",
       "title": "Young organs may not be a fountain of youth for recipients",
       "summary": "Around this time last year I was attending an aging conference in Manchester, listening to a talk about fly aging, when my phone started pinging. News outlets were reporting that a hot mic had caught Russia’s and China’s leaders discussing the possibility of living forever. “With the developments of biotechnology, human organs can be continuously…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6808,7 +6799,7 @@
     },
     {
       "id": "TP-75ab585d2754",
-      "cluster_id": "CL-0133",
+      "cluster_id": "CL-0134",
       "title": "Russia's Hybrid Cyber-Physical War in Europe Heats Up",
       "summary": "A storm is raging in the form of cyber sabotage, disinformation, and drone attacks on European nations, particularly those that provide material support to Ukraine.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6943,7 +6934,7 @@
     },
     {
       "id": "TP-0b49e014d267",
-      "cluster_id": "CL-0165",
+      "cluster_id": "CL-0166",
       "title": "APOD: 2026 September 25 – Globular Star Cluster Omega Centauri",
       "summary": "APOD Science APOD APOD: 2026 September 25 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Globular Cluster Omega […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -7108,7 +7099,7 @@
     },
     {
       "id": "TP-84fafbac5110",
-      "cluster_id": "CL-0134",
+      "cluster_id": "CL-0135",
       "title": "'Salesbleed' Exploits Salesforce Agents to Enable Slack Phishing",
       "summary": "Agentic AI can smuggle arbitrary instructions from the Web, across multiple apps, into trusted internal communications channels.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -7239,7 +7230,7 @@
     },
     {
       "id": "TP-29307ba54f72",
-      "cluster_id": "CL-0135",
+      "cluster_id": "CL-0136",
       "title": "SectopRAT Returns, Hiding Inside a Legitimate Application",
       "summary": "The latest activity from the remote access Trojan (RAT) shows why organizations should monitor the behavior of applications rather than blindly trusting them, experts say.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -7652,7 +7643,7 @@
     },
     {
       "id": "TP-f6b5e79f4ed9",
-      "cluster_id": "CL-0136",
+      "cluster_id": "CL-0137",
       "title": "3 Cyber Threats That Defined the Summer of 2026",
       "summary": "This installment of the Reporters' Notebook video series discusses the impact of AI agents breaching Hugging Face, Fairlife's ransomware attack, and Iranian-linked threat actors compromising a dozen US water systems. It was a busy summer.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -7745,7 +7736,7 @@
     },
     {
       "id": "TP-30aaeec28b11",
-      "cluster_id": "CL-0137",
+      "cluster_id": "CL-0138",
       "title": "How to Build a SASE Framework for Modern Cybersecurity",
       "summary": "Securing edge computing requires organizations to fundamentally rethink security governance. This step-by-step guide to building a SASE framework provides the path forward. (Third in a three-part series.)",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -7906,7 +7897,7 @@
     },
     {
       "id": "TP-8e4e4844f4e5",
-      "cluster_id": "CL-0138",
+      "cluster_id": "CL-0139",
       "title": "Ghost Service Accounts Enable M365 Data Theft in Chile",
       "summary": "Even if the organization locks down employee accounts, forgotten and lost service accounts can still undo the organization's entire M365 environment.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8129,7 +8120,7 @@
     },
     {
       "id": "TP-ac73c3920c33",
-      "cluster_id": "CL-0139",
+      "cluster_id": "CL-0140",
       "title": "Prompt-Injection Bug Hits $4B Agentic AI App 'Manus'",
       "summary": "AI apps that interpret external data (read: most AI apps) need exceptionally rigorous security filters, or attackers can take advantage.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8263,7 +8254,7 @@
     },
     {
       "id": "TP-6c593700a3c1",
-      "cluster_id": "CL-0107",
+      "cluster_id": "CL-0108",
       "title": "The Download: a bid to scrap the virtual wall and AI hits Climate Week",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A congressional representative just proposed killing America’s border tower program Delia Ramirez, a Democratic US representative from Illinois, has announced plans to introduce legislation to terminate the surveillance tower program along…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8591,7 +8582,7 @@
     },
     {
       "id": "TP-411c6636b84e",
-      "cluster_id": "CL-0108",
+      "cluster_id": "CL-0109",
       "title": "AI is dominating the conversation at Climate Week",
       "summary": "This week, world leaders descended on Manhattan for the UN General Assembly. It’s also New York Climate Week—investors, policymakers, advocates, and journalists are colliding at panels, talks, and fancy dinners. With so many climate voices in one place, the discourse can feel a little louder than usual. This year, the unavoidable topic is artificial intelligence.…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8686,7 +8677,7 @@
     },
     {
       "id": "TP-f16ecfe7d162",
-      "cluster_id": "CL-0140",
+      "cluster_id": "CL-0141",
       "title": "SASE Converges Network & Security Into One Cloud Solution",
       "summary": "Enterprise computing is moving to the edge. Keeping it secure requires tactics far beyond putting up firewalls. (Second in a three-part series.)",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8750,7 +8741,7 @@
     },
     {
       "id": "TP-3b13360f9708",
-      "cluster_id": "CL-0141",
+      "cluster_id": "CL-0142",
       "title": "EDR Evasion Stack Helps Process Injection Slip Past Defenses",
       "summary": "A process parameter-poisoning technique evades EDR by injecting code into process initialization structures without using the Windows APIs that EDR tools typically watch out for.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8783,7 +8774,7 @@
     },
     {
       "id": "TP-3a5e2fec5352",
-      "cluster_id": "CL-0142",
+      "cluster_id": "CL-0143",
       "title": "GitLab Email Addresses Can Be Weaponized for Supply Chain Attacks",
       "summary": "Incoming email addresses automatically assigned to each user on the platform contain highly privileged access tokens that attackers can use.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -8944,7 +8935,7 @@
     },
     {
       "id": "TP-104ada09ca55",
-      "cluster_id": "CL-0109",
+      "cluster_id": "CL-0110",
       "title": "A congressional representative just proposed killing America’s border tower program",
       "summary": "Delia Ramirez, a Democratic US representative from Illinois, has announced a plan to introduce new legislation to terminate the surveillance tower program along the US southern border. The announcement comes just days after publication of an MIT Technology Review investigation, “Dying on Camera,” in which we looked at deaths along the border that took place…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9070,7 +9061,7 @@
     },
     {
       "id": "TP-affa11854209",
-      "cluster_id": "CL-0143",
+      "cluster_id": "CL-0144",
       "title": "UAE, Saudi Arabia Face Onslaught of Increasingly Complex Cyberattacks",
       "summary": "The United Arab Emirates and Kingdom of Saudi Arabia together absorbed 50% of all cyberattacks recorded across the Gulf region in the first half of 2026.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9323,7 +9314,7 @@
     },
     {
       "id": "TP-7bde49b556ca",
-      "cluster_id": "CL-0144",
+      "cluster_id": "CL-0145",
       "title": "Attackers Manipulate AI Chatbots in Mass Disinformation, Phishing Campaign",
       "summary": "Threat actors are poisoning ChatGPT, Gemini, and Google AI Overview answers by seeding the Web with malicious links and data and then optimizing the content.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9552,7 +9543,7 @@
     },
     {
       "id": "TP-c0d8a07c44ad",
-      "cluster_id": "CL-0110",
+      "cluster_id": "CL-0111",
       "title": "The Download: India’s smart glasses menace and AI’s trillion-dollar gamble",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Smart glasses are already causing havoc in India When Shubnam saw an Instagram video of a Delhi protest they had attended, they realized a content creator wearing Meta smart glasses had…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9583,7 +9574,7 @@
     },
     {
       "id": "TP-d736c96f97b6",
-      "cluster_id": "CL-0111",
+      "cluster_id": "CL-0112",
       "title": "The AI Hype Index: AI loves cheating",
       "summary": "Brace yourself: It turns out AI is being optimized for cheating. OpenAI’s agents hacked into Hugging Face to get the answers to a cybersecurity test. Next, they solved a prestigious math problem (or just stole from two top mathematicians’ answer sheets). Anthropic’s models have also hacked into other companies’ systems four times already. And that’s…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9614,7 +9605,7 @@
     },
     {
       "id": "TP-885c43a5d5fc",
-      "cluster_id": "CL-0112",
+      "cluster_id": "CL-0113",
       "title": "Smart glasses are already causing havoc in India",
       "summary": "Shubnam was packing boxes for a move into a new home when their friend sent them an Instagram video. The footage had only been up for a few hours, but it was days old, recorded at a Delhi protest this spring against a bill that would have narrowed the legal recognition for transgender people in…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9773,7 +9764,7 @@
     },
     {
       "id": "TP-f75ef52960e1",
-      "cluster_id": "CL-0145",
+      "cluster_id": "CL-0146",
       "title": "Relays Are Masking Chinese Access to Frontier AI Models in the US",
       "summary": "More than 80,000 AI relay servers are helping users in China mask their identities while they access cutting-edge large language models (LLMs), probably to clone them.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9804,7 +9795,7 @@
     },
     {
       "id": "TP-dbbc7e7de225",
-      "cluster_id": "CL-0146",
+      "cluster_id": "CL-0147",
       "title": "How the CISO-CMO Alliance Builds Trust Before Crisis Strikes",
       "summary": "Cybersecurity and brand reputation are inextricably linked. Security and marketing leaders who establish regular touchpoints, develop joint crisis communications plans, and translate security risks into their brand impact position their organizations to significantly outperform those treating security as an operational IT concern.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9835,7 +9826,7 @@
     },
     {
       "id": "TP-da2613f7ae84",
-      "cluster_id": "CL-0147",
+      "cluster_id": "CL-0148",
       "title": "Microsoft Disrupts EvilTokens Device Code Phishing Service",
       "summary": "Microsoft seized 50 websites and disabled more than 150 domains as part of a coordinated disruption effort against a phishing-as-a-service platform targeting Microsoft 365 accounts.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9868,7 +9859,7 @@
     },
     {
       "id": "TP-3a533d2b5ffe",
-      "cluster_id": "CL-0148",
+      "cluster_id": "CL-0149",
       "title": "Deception by Design: CISA's Guide to Tricking Cybercriminals",
       "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) is going old school to help organizations with limited resources set traps for hackers.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9930,7 +9921,7 @@
     },
     {
       "id": "TP-a089dce24e36",
-      "cluster_id": "CL-0149",
+      "cluster_id": "CL-0150",
       "title": "Amid Ongoing Rogue Incidents, Debate Over AI Safety Gets Real",
       "summary": "As more reports of misalignment incidents underscore AI risks, large AI labs, regular businesses, and even nations are searching for better ways to keep control and be secure.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -9992,7 +9983,7 @@
     },
     {
       "id": "TP-5f3b2680ef21",
-      "cluster_id": "CL-0113",
+      "cluster_id": "CL-0114",
       "title": "Roundtables: The Deadly Failures of The Virtual Border Wall",
       "summary": "The US has spent billions building a “virtual wall” of surveillance towers along its southern border over the past 25 years, promising they will help detect and apprehend border crossers and save lives. But a groundbreaking investigation by MIT Technology Review has documented over a thousand people who moved through areas watched by these towers…",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -10120,7 +10111,7 @@
     },
     {
       "id": "TP-ce85fbcadf91",
-      "cluster_id": "CL-0150",
+      "cluster_id": "CL-0151",
       "title": "More Than a Third of Industrial Orgs See Cybersecurity Risk as a Top Obstacle to Growth, Study Finds",
       "summary": "Industrial companies are increasing cybersecurity investment as connected operations, AI adoption, and IT/OT convergence expand operational risk.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -10151,7 +10142,7 @@
     },
     {
       "id": "TP-8c4e4ffe7f8c",
-      "cluster_id": "CL-0151",
+      "cluster_id": "CL-0152",
       "title": "Shai-Hulud Attack Nips Cyber-Firm CrowdSec's GitHub Data",
       "summary": "Threat actors stole the contents of 170 private repositories using an OAuth token stolen from a former employee's computer through the TanStack npm supply chain attack.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -10182,7 +10173,7 @@
     },
     {
       "id": "TP-961e3a5a473d",
-      "cluster_id": "CL-0152",
+      "cluster_id": "CL-0153",
       "title": "How AI Agents Can Trigger Runaway Costs for Enterprises",
       "summary": "Unbounded consumption is an issue that OWASP currently ranks sixth in its Top 10 for LLM Applications, and it could be an extremely costly one.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -10244,7 +10235,7 @@
     },
     {
       "id": "TP-556946de78a2",
-      "cluster_id": "CL-0153",
+      "cluster_id": "CL-0154",
       "title": "ShinyHunters Hacked Cl0p. Now What About Cl0p's Victims?",
       "summary": "ShinyHunters defaced Cl0p's Dark Web site and claims to have stolen victim data, potentially exposing organizations that paid ransoms to renewed extortion attempts.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -10277,7 +10268,7 @@
     },
     {
       "id": "TP-f7abe72a6af7",
-      "cluster_id": "CL-0154",
+      "cluster_id": "CL-0155",
       "title": "Cybercriminals Are Hiding New Malware in Torrents for Popular Films",
       "summary": "Victims have been identified in Africa, including in Kenya and Uganda.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -10469,7 +10460,7 @@
     },
     {
       "id": "TP-7ad1c982803a",
-      "cluster_id": "CL-0155",
+      "cluster_id": "CL-0156",
       "title": "Rogue Behavior: OpenAI Reveals More Model Misalignment Incidents",
       "summary": "The AI giant disclosed six examples of concerning model activity and published a new framework for investigating and disclosing such incidents.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
