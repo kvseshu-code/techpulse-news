@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "product": "TechPulse",
-  "generated_at": "2026-10-04T20:18:41.286182+00:00",
+  "generated_at": "2026-10-04T23:25:07.024283+00:00",
   "article_count": 300,
   "source_count": 22,
   "source_health": [
@@ -138,8 +138,262 @@
   ],
   "articles": [
     {
-      "id": "TP-bbc50510cd13",
+      "id": "TP-4137304a6e94",
+      "cluster_id": "CL-0074",
+      "title": "Every Starlink Dish Available: How To Know Which Setup May Be Right For You",
+      "summary": "Everyone has different needs when it comes to internet connectivity, and Starlink's dish selection caters to a many applications, from stationary to mobile.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Space",
+      "subcategory": "Space",
+      "secondary_topics": [],
+      "content_type": "tutorial",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-10-04T23:15:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2276417/every-starlink-dish-available-which-setup-right/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 100,
+      "momentum": 71,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 1
+    },
+    {
+      "id": "TP-95ee7490d6c7",
+      "cluster_id": "CL-0075",
+      "title": "When is it worth getting a sound card for your PC?",
+      "summary": "Whether or not adding a sound card makes sense really depends on how you're regularly using your PC.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-10-04T23:00:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2274701/when-worth-getting-sound-card-for-pc/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 2
+    },
+    {
+      "id": "TP-4ead23db9676",
+      "cluster_id": "CL-0076",
+      "title": "The popular Apple features you won't be getting with the iPhone Duo",
+      "summary": "The iPhone Duo lacks a few features we're used to seeing on other iPhones.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-10-04T22:45:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2274700/iphone-duo-apple-popular-features-wont-come-with/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 99,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 3
+    },
+    {
+      "id": "TP-06a307296a28",
+      "cluster_id": "CL-0077",
+      "title": "How the iPhone Duo will improve your group selfies",
+      "summary": "The iPhone Duo's foldable form factor allows for more placement options, but there are also new camera features you should know about.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-10-04T22:30:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2274699/iphone-duo-smart-take-ai-photo-capturing-feature-improve-group-selfies/",
+      "confidence": 58,
+      "importance": 70,
+      "freshness": 98,
+      "momentum": 70,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 4
+    },
+    {
+      "id": "TP-6a9d1ca7a134",
+      "cluster_id": "CL-0078",
+      "title": "How to improve your iPhone's call quality",
+      "summary": "Your iPhone should handle calls reliably, but if you can't hear the other person or calls aren't stable, it's time to run through a few fixes.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Hardware",
+      "subcategory": "Hardware",
+      "secondary_topics": [],
+      "content_type": "tutorial",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-10-04T22:00:00+00:00",
+      "source": "Engadget",
+      "source_type": "secondary",
+      "url": "https://www.engadget.com/2274693/how-to-improve-iphone-call-quality-voice-isolation/",
+      "confidence": 58,
+      "importance": 69,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "Engadget"
+      ],
+      "corroborating_sources": [],
+      "rank": 5
+    },
+    {
+      "id": "TP-5058e2f27caa",
+      "cluster_id": "CL-0104",
+      "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
+      "summary": "Citrix has released emergency updates for a new NetScaler denial-of-service vulnerability tracked as CVE-2026-88779 that has been exploited in zero-day attacks, with researchers investigating whether it can also be exploited for remote code execution. [...]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Cybersecurity",
+      "subcategory": "Cybersecurity",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "High",
+      "quality_flags": [
+        "CYBER_EVENT_PRIORITY"
+      ],
+      "published_at": "2026-10-04T21:58:01+00:00",
+      "source": "BleepingComputer",
+      "source_type": "secondary",
+      "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+      "confidence": 64,
+      "importance": 74,
+      "freshness": 97,
+      "momentum": 69,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "BleepingComputer"
+      ],
+      "corroborating_sources": [],
+      "rank": 6
+    },
+    {
+      "id": "TP-07ce6b550ecf",
+      "cluster_id": "CL-0019",
+      "title": "The new Fitbit Edge leaks",
+      "summary": "We don't know a ton about the Fitbit Edge, but it appears to be a successor to the midrange Charge line. It had leaked previously, but we can clearly see in these images posted by Android Headlines, you can see that Google's rumored fitness tracker sort of splits the difference between the Pixel Watch and […]",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "REVIEW",
+      "classification_confidence": "Low",
+      "quality_flags": [
+        "WEAK_TOPIC_EVIDENCE"
+      ],
+      "published_at": "2026-10-04T21:02:09+00:00",
+      "source": "The Verge",
+      "source_type": "secondary",
+      "url": "https://www.theverge.com/gadgets/1004616/the-new-fitbit-edge-leaks",
+      "confidence": 61,
+      "importance": 71,
+      "freshness": 95,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "The Verge"
+      ],
+      "corroborating_sources": [],
+      "rank": 7
+    },
+    {
+      "id": "TP-00aaae6618c7",
       "cluster_id": "CL-0001",
+      "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+      "summary": "AI slop seems to be overwhelming bug bounty programs.",
+      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
+      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
+      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
+      "category": "Technology",
+      "subcategory": "Technology",
+      "secondary_topics": [],
+      "content_type": "news",
+      "relevance": "KEEP",
+      "classification_confidence": "Medium",
+      "quality_flags": [],
+      "published_at": "2026-10-04T20:31:07+00:00",
+      "source": "TechCrunch",
+      "source_type": "secondary",
+      "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "confidence": 61,
+      "importance": 71,
+      "freshness": 94,
+      "momentum": 68,
+      "verification_status": "DEVELOPING",
+      "status": "DEVELOPING",
+      "tags": [
+        "TechCrunch"
+      ],
+      "corroborating_sources": [],
+      "rank": 8
+    },
+    {
+      "id": "TP-bbc50510cd13",
+      "cluster_id": "CL-0002",
       "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
       "summary": "On Equity, we discussed the Trump administration's attempts to rebrand AI.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -159,16 +413,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 100,
-      "momentum": 71,
+      "importance": 70,
+      "freshness": 93,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 1
+      "rank": 9
     },
     {
       "id": "TP-ba89bdfbfb1d",
@@ -194,20 +448,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/video-game-villains-who-were-right/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 68,
+      "freshness": 93,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 2
+      "rank": 10
     },
     {
       "id": "TP-1f1d4b9a4112",
-      "cluster_id": "CL-0019",
+      "cluster_id": "CL-0020",
       "title": "Prick’s theatrical industrial punk is perfect for spooky season",
       "summary": "While deep in the recording process for The Downward Spiral, Trent Reznor lent some of his production talents to old friend Kevin McMahon, from the new wave band Lucky Pierre (which Reznor was briefly a member of). While Reznor is only credited as the producer on four tracks off Prick's self-titled debut record, his fingerprints […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -227,20 +481,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/entertainment/1004595/prick-industrial-glam-punk-album-review",
       "confidence": 61,
-      "importance": 72,
-      "freshness": 99,
-      "momentum": 70,
+      "importance": 70,
+      "freshness": 93,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 3
+      "rank": 11
     },
     {
       "id": "TP-873359c503c6",
-      "cluster_id": "CL-0074",
+      "cluster_id": "CL-0079",
       "title": "The upcoming touchscreen OLED MacBook Pro is reportedly 'significantly lighter'",
       "summary": "The high-end laptop is still expected to make its debut by next month.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -258,16 +512,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2276786/the-upcoming-touchscreen-oled-macbook-pro-is-reportedly-significantly-lighter/",
       "confidence": 58,
-      "importance": 70,
-      "freshness": 98,
-      "momentum": 70,
+      "importance": 68,
+      "freshness": 92,
+      "momentum": 67,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 4
+      "rank": 12
     },
     {
       "id": "TP-a94f28cac607",
@@ -291,20 +545,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/ridley-scott-hannibal-2001-controversy/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 68,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 5
+      "rank": 13
     },
     {
       "id": "TP-8d79547844fb",
-      "cluster_id": "CL-0075",
+      "cluster_id": "CL-0080",
       "title": "Five iPhone 18 Pro features you'll want to try the second you unbox it",
       "summary": "The iPhone 18 Pro doesn't have a super long list of improvements, but these upgrades are still worth a try.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -322,20 +576,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2274578/iphone-18-pro-feature-try-when-unboxed/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 97,
-      "momentum": 69,
+      "importance": 68,
+      "freshness": 91,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 6
+      "rank": 14
     },
     {
       "id": "TP-b64d5f96351f",
-      "cluster_id": "CL-0076",
+      "cluster_id": "CL-0081",
       "title": "What does V-Sync actually do to your PC's frames per second?",
       "summary": "It can fix some problems, but create others.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -355,16 +609,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2273753/what-v-sync-does-pc-frames-per-second/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 68,
+      "freshness": 90,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 7
+      "rank": 15
     },
     {
       "id": "TP-c5ccaa825d31",
@@ -390,20 +644,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/zelda-ocarina-of-time-remake-new-features-notes-app-nintendo/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 68,
+      "freshness": 90,
+      "momentum": 66,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 8
+      "rank": 16
     },
     {
       "id": "TP-f041d5aba915",
-      "cluster_id": "CL-0077",
+      "cluster_id": "CL-0082",
       "title": "A fourth RuneScape game is under development using Unreal Engine",
       "summary": "Jagex says it will reveal more details about the game, tentatively named RS4, next year.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -423,16 +677,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2276772/a-fourth-runescape-game-is-under-development-using-unreal-engine/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 96,
-      "momentum": 69,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 9
+      "rank": 17
     },
     {
       "id": "TP-ebfa880297e0",
@@ -456,20 +710,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/star-wars-video-games-coming-for-movies-lunch/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 10
+      "rank": 18
     },
     {
       "id": "TP-cb4cee0e9eb9",
-      "cluster_id": "CL-0020",
+      "cluster_id": "CL-0021",
       "title": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
       "summary": "New Jersey's lieutenant governor Dale Caldwell was forced to resign on September 25th after an investigation found he had sexually harassed a staffer and repeatedly violated ethics rules. The now-former Lt. governor has been making the media rounds trying to clear his name. But he took a particularly odd tactic during an interview on NJ […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -489,20 +743,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
       "confidence": 61,
-      "importance": 71,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 70,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 11
+      "rank": 19
     },
     {
       "id": "TP-811fe0ac4b8c",
-      "cluster_id": "CL-0078",
+      "cluster_id": "CL-0083",
       "title": "What causes screen tearing and how can you fix it?",
       "summary": "Screen tearing is a distracting and ugly problem, but you have several ways to combat it to keep your games running smoothly.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -522,16 +776,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2274514/screen-tear-causes-how-to-fix/",
       "confidence": 58,
-      "importance": 69,
-      "freshness": 95,
-      "momentum": 68,
+      "importance": 67,
+      "freshness": 89,
+      "momentum": 65,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 12
+      "rank": 20
     },
     {
       "id": "TP-5aa8e8b530d5",
@@ -555,16 +809,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/buffy-season-5-hot-take/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 67,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 13
+      "rank": 21
     },
     {
       "id": "TP-7f693c876ac8",
@@ -591,20 +845,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/minecraft-dungeons-ii",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 69,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 14
+      "rank": 22
     },
     {
       "id": "TP-d5a8ffd2dd50",
-      "cluster_id": "CL-0021",
+      "cluster_id": "CL-0022",
       "title": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
       "summary": "StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made bots, but they couldn't top Stardust, the top-rated human-made bot. On Friday, GPT was facing off against Claude and the human-created bot Pluto, but according to Kotaku, […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -622,20 +876,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 69,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 15
+      "rank": 23
     },
     {
       "id": "TP-f45c56c8aaaa",
-      "cluster_id": "CL-0079",
+      "cluster_id": "CL-0084",
       "title": "Sony digital camera model numbers explained: Bigger isn't always better",
       "summary": "Everything you need to know about Sony's alphanumeric naming schemes.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -653,20 +907,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2274354/sony-digital-camera-model-numbers-explained/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 93,
-      "momentum": 67,
+      "importance": 67,
+      "freshness": 87,
+      "momentum": 64,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 16
+      "rank": 24
     },
     {
       "id": "TP-d55a75f3f113",
-      "cluster_id": "CL-0080",
+      "cluster_id": "CL-0085",
       "title": "Trump announces an AI czar for his newly created 'Super Intelligence Force'",
       "summary": "That's really what it's called and there's actually someone in charge of it.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -686,16 +940,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2276762/trump-announces-an-ai-czar-for-his-newly-created-super-intelligence-force/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 17
+      "rank": 25
     },
     {
       "id": "TP-75a9713e004a",
@@ -719,20 +973,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/digger-tom-cruise-box-office/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 18
+      "rank": 26
     },
     {
       "id": "TP-968a51f5095d",
-      "cluster_id": "CL-0081",
+      "cluster_id": "CL-0086",
       "title": "How to disable or restrict your iPhone's Apple Intelligence features",
       "summary": "You have a lot of control over AI on your iPhone.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -750,20 +1004,20 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2274326/how-to-disable-restrict-iphone-apple-intelligence-features/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 66,
+      "freshness": 86,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 19
+      "rank": 27
     },
     {
       "id": "TP-cafdfc2c960e",
-      "cluster_id": "CL-0002",
+      "cluster_id": "CL-0003",
       "title": "TechCrunch Mobility: Reining in robotaxis",
       "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -781,16 +1035,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/04/techcrunch-mobility-reining-in-robotaxis/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 92,
-      "momentum": 67,
+      "importance": 68,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 20
+      "rank": 28
     },
     {
       "id": "TP-42de4ca96f91",
@@ -814,16 +1068,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/saturday-night-live-zelda-vs-gta-6/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 66,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 21
+      "rank": 29
     },
     {
       "id": "TP-7554ada715d8",
@@ -847,20 +1101,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/fire-emblem-fortunes-weaves-ending-explained/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 66,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 22
+      "rank": 30
     },
     {
       "id": "TP-bd196b2cb6cc",
-      "cluster_id": "CL-0082",
+      "cluster_id": "CL-0087",
       "title": "Here's what you should do if only one of your AirPods is working",
       "summary": "If only one AirPod isn't working, you have several options for troubleshooting and getting your audio back.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -878,16 +1132,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2274084/what-should-do-only-one-airpod-working/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 66,
+      "freshness": 85,
+      "momentum": 63,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 23
+      "rank": 31
     },
     {
       "id": "TP-3116e977cb80",
@@ -911,16 +1165,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/science/2026/10/lions-and-cheetahs-and-chimps-oh-my-a-spotlight-on-africas-diverse-wildlife/",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 91,
-      "momentum": 66,
+      "importance": 70,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 24
+      "rank": 32
     },
     {
       "id": "TP-466144347e96",
@@ -944,20 +1198,20 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/man-of-tomorrow-assembly-cut/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 90,
-      "momentum": 66,
+      "importance": 66,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 25
+      "rank": 33
     },
     {
       "id": "TP-8aaa4b741173",
-      "cluster_id": "CL-0003",
+      "cluster_id": "CL-0004",
       "title": "Trump unveils his new Super Intelligence Force",
       "summary": "This new task force is Trump's latest response to the debate over AI safety.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -975,20 +1229,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 90,
-      "momentum": 66,
+      "importance": 68,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 26
+      "rank": 34
     },
     {
       "id": "TP-26763ceb35d0",
-      "cluster_id": "CL-0083",
+      "cluster_id": "CL-0088",
       "title": "Do gaming routers really make a difference?",
       "summary": "Gaming routers have fancy designs and a few special features, but they can't fix every problem with your network setup.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1010,16 +1264,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2274051/do-gaming-routers-make-difference/",
       "confidence": 58,
-      "importance": 68,
-      "freshness": 90,
-      "momentum": 66,
+      "importance": 66,
+      "freshness": 84,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 27
+      "rank": 35
     },
     {
       "id": "TP-f362fbeb5f56",
@@ -1043,16 +1297,16 @@
       "source_type": "secondary",
       "url": "https://www.polygon.com/ghost-of-yotei-echoes-of-sekigahara-best-boss-fight/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 66,
+      "freshness": 83,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Polygon"
       ],
       "corroborating_sources": [],
-      "rank": 28
+      "rank": 36
     },
     {
       "id": "TP-cb7b3b73b397",
@@ -1074,16 +1328,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/ci-bottleneck-agent-verification/",
       "confidence": 61,
-      "importance": 70,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 68,
+      "freshness": 83,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 29
+      "rank": 37
     },
     {
       "id": "TP-90687e67977b",
@@ -1105,20 +1359,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/gpus/modder-fixes-melting-rtx-5090-power-connectors-with-custom-distributor-dual-8-pin-mod-peaks-at-just-40c-during-a-48-hour-550w-stress-test",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 70,
+      "freshness": 83,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 30
+      "rank": 38
     },
     {
       "id": "TP-6cebceae7732",
-      "cluster_id": "CL-0084",
+      "cluster_id": "CL-0089",
       "title": "The pros and cons of enabling Wi-Fi calling",
       "summary": "Wi-Fi calling can help a lot if you're in an area with a weak cellular connection, but you should know the drawbacks before jumping in.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1138,16 +1392,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2273956/wifi-calling-pros-cons/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 66,
+      "freshness": 83,
+      "momentum": 62,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 31
+      "rank": 39
     },
     {
       "id": "TP-704b6f9f908d",
@@ -1169,16 +1423,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/robotics/robotics-startup-has-real-human-vs-robot-cage-match-california-responds-with-cease-and-desist-order-regulator-threatens-misdemeanor-charges-after-youtuber-fights-three-robotic-humanoids",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 89,
-      "momentum": 65,
+      "importance": 70,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 32
+      "rank": 40
     },
     {
       "id": "TP-77f34102a492",
@@ -1200,16 +1454,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/gpu-drivers/modder-brings-nvidia-pascal-gpu-support-to-windows-xp-32-bit-modded-drivers-unlock-better-displayport-and-hdmi-support-for-modern-monitors",
       "confidence": 64,
-      "importance": 72,
-      "freshness": 88,
-      "momentum": 64,
+      "importance": 70,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 33
+      "rank": 41
     },
     {
       "id": "TP-3e429cdc924c",
@@ -1235,20 +1489,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/sonic-is-getting-an-extremely-expensive-and-rare-porcelain-statue",
       "confidence": 61,
-      "importance": 69,
-      "freshness": 88,
-      "momentum": 64,
+      "importance": 68,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 34
+      "rank": 42
     },
     {
       "id": "TP-829da3b87aa2",
-      "cluster_id": "CL-0085",
+      "cluster_id": "CL-0090",
       "title": "How getting rid of some USB gadgets can improve your bad Wi-Fi",
       "summary": "A bit of decluttering can go a long way toward improving your Wi-Fi.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1268,16 +1522,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2273916/removing-some-usb-gadgets-improve-wifi/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 88,
-      "momentum": 64,
+      "importance": 66,
+      "freshness": 82,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 35
+      "rank": 43
     },
     {
       "id": "TP-7418636b3c8d",
@@ -1301,20 +1555,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/pc-gaming/database-expert-runs-doom-in-sql-with-just-5-900-lines-of-code-1-300-line-graphical-renderer-spans-89-different-tables-full-featured-sqldoom-is-the-sequel-to-embryonic-doomql",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 70,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 36
+      "rank": 44
     },
     {
       "id": "TP-490a83696913",
-      "cluster_id": "CL-0086",
+      "cluster_id": "CL-0091",
       "title": "Why you shouldn't sync your phone to a rental car",
       "summary": "Unless you pay attention, your contacts could end up forever stored in the car.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1334,16 +1588,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2273912/why-shouldnt-sync-phone-to-rental-car/",
       "confidence": 58,
-      "importance": 67,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 65,
+      "freshness": 81,
+      "momentum": 61,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 37
+      "rank": 45
     },
     {
       "id": "TP-205fb1bc8110",
@@ -1365,20 +1619,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/drones/us-army-unit-deploys-drone-assembled-completely-in-house-uses-3d-printed-dragoon-bombs-with-ball-bearing-shrapnel-device-has-a-range-of-up-to-12-miles-and-can-be-configured-for-anti-personnel-and-anti-light-armor-missions",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 87,
-      "momentum": 64,
+      "importance": 70,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 38
+      "rank": 46
     },
     {
       "id": "TP-390ba8db6ea8",
-      "cluster_id": "CL-0087",
+      "cluster_id": "CL-0092",
       "title": "Internet speeds vs. bandwidth: What's the difference?",
       "summary": "Knowing your internet speed is important, but bandwidth is another important metric that many people overlook.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1396,16 +1650,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2273852/internet-speeds-vs-bandwidth-differences/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 86,
-      "momentum": 63,
+      "importance": 65,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 39
+      "rank": 47
     },
     {
       "id": "TP-d19e8d29fa44",
@@ -1427,20 +1681,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/robotics/ai-robot-company-decommissioned-its-robots-terminator-style-in-a-75-ton-vat-of-molten-steel-arnold-schwarzenegger-suggested-melting-them-one-robot-held-up-a-thumbs-up-sign-as-it-sank-into-molten-metal",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 86,
-      "momentum": 63,
+      "importance": 70,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 40
+      "rank": 48
     },
     {
       "id": "TP-a6c85e4639e8",
-      "cluster_id": "CL-0088",
+      "cluster_id": "CL-0093",
       "title": "What is infill in 3D printing and is it necessary?",
       "summary": "The infill settings you use for your 3D prints can make or break them - literally. Let's talk about what infill does and how you should use it.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1460,16 +1714,16 @@
       "source_type": "secondary",
       "url": "https://www.engadget.com/2273797/what-is-infill-3d-printing/",
       "confidence": 58,
-      "importance": 66,
-      "freshness": 86,
-      "momentum": 63,
+      "importance": 65,
+      "freshness": 80,
+      "momentum": 60,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Engadget"
       ],
       "corroborating_sources": [],
-      "rank": 41
+      "rank": 49
     },
     {
       "id": "TP-357e2fd922bb",
@@ -1491,16 +1745,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-217-year-old-napoleonic-code-in-just-six-hours-single-prompt-ai-run-solves-24-rows-of-custom-symbols-from-a-single-image-reveals-lost-troop-orders",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 86,
-      "momentum": 63,
+      "importance": 69,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 42
+      "rank": 50
     },
     {
       "id": "TP-be3687de1c0f",
@@ -1524,16 +1778,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/cyber-security/iranian-national-extradited-to-us-over-alleged-usd3-4-billion-state-backed-hacking-campaign-in-rare-legal-win-for-law-enforcement-operative-helped-steal-31-terabytes-of-data-from-over-300-universities",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 85,
-      "momentum": 63,
+      "importance": 69,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 43
+      "rank": 51
     },
     {
       "id": "TP-039dd01e7dc1",
@@ -1560,53 +1814,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/desktops/gaming-pcs/german-utility-provider-introduces-gaming-electricity-plan-targeting-high-consumption-households-like-those-running-multiple-high-end-gaming-pcs-plan-requires-2-500-kwh-per-year-to-offset-a-higher-base-price-claims-to-use-renewable-energy",
       "confidence": 64,
-      "importance": 71,
-      "freshness": 85,
-      "momentum": 63,
+      "importance": 69,
+      "freshness": 79,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 44
-    },
-    {
-      "id": "TP-ecd2f6e8395e",
-      "cluster_id": "CL-0089",
-      "title": "Customizing your Samsung Galaxy phone is a bit easier with One UI 9",
-      "summary": "Lots of new options just became available to Samsung phones with the latest update. Customize your Quick Panel, Edge Panel and much more.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-10-04T12:45:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2273796/samsung-galaxy-one-ui-9-customization-updates/",
-      "confidence": 58,
-      "importance": 66,
-      "freshness": 85,
-      "momentum": 63,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 45
+      "rank": 52
     },
     {
       "id": "TP-9025532b34a0",
-      "cluster_id": "CL-0023",
+      "cluster_id": "CL-0024",
       "title": "The MacBook Air M5 is $200 off for the first time in months",
       "summary": "Amazon’s October Prime Day has effectively chopped off Apple’s June price increases. Usually $1,299, the 13-inch MacBook Air with the M5 chip and 512GB of storage is on sale for $1,099 at Amazon. That’s a more palatable price for a machine that’s significantly faster than Apple’s $699 MacBook Neo. The 15-inch version, also with 512GB […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1624,53 +1845,20 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/gadgets/1000832/macbook-air-m5-amazon-prime-big-deal-sale",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 85,
-      "momentum": 63,
+      "importance": 67,
+      "freshness": 78,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 46
-    },
-    {
-      "id": "TP-ca0a0a2d4eaf",
-      "cluster_id": "CL-0090",
-      "title": "How to use Android's Motion Assist feature to help with motion sickness",
-      "summary": "Google's Motion Assist uses moving shapes on your Android's screen to help combat motion sickness. Here's how it works and how to enable it.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "tutorial",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-10-04T12:30:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2273792/how-to-use-android-motion-assist-feature-help-with-sickness/",
-      "confidence": 58,
-      "importance": 66,
-      "freshness": 84,
-      "momentum": 62,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 47
+      "rank": 53
     },
     {
       "id": "TP-a493c4e6a21f",
-      "cluster_id": "CL-0022",
+      "cluster_id": "CL-0023",
       "title": "This toolless modular lever-action wallet is the coolest I’ve stuck to my phone",
       "summary": "This toolless modular lever-action wallet is the coolest I've stuck to my phone. Remember when I tested the ultra-thin and convenient OhSnap Snap Grip Stand and liked it so much I bought my own? Now, OhSnap has a magnetic lever-action card wallet that can stack with that stand. It's the coolest wallet I've ever stuck […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -1690,52 +1878,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/gadgets/1004360/this-toolless-modular-lever-action-wallet-is-the-coolest-ive-stuck-to-my-phone",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 67,
+      "freshness": 78,
+      "momentum": 59,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 48
-    },
-    {
-      "id": "TP-320f04bac40e",
-      "cluster_id": "CL-0091",
-      "title": "How much does DDR5 RAM speed matter for gaming?",
-      "summary": "Wondering whether DDR5 speed impacts your gaming performance? Dive into how memory bandwidth and latency influence frame rates and overall gameplay.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Gaming",
-      "subcategory": "Gaming",
-      "secondary_topics": [
-        "Gaming",
-        "Hardware"
-      ],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "GAMING_SUBJECT_PRIORITY"
-      ],
-      "published_at": "2026-10-04T12:15:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2273791/how-much-ddr5-ram-speed-matters-for-gaming/",
-      "confidence": 58,
-      "importance": 66,
-      "freshness": 84,
-      "momentum": 62,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 49
+      "rank": 54
     },
     {
       "id": "TP-ff1fa1e41a08",
@@ -1757,16 +1909,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-torture-chamber-triggers-massive-backlash-for-putting-chatbots-in-simulated-pain-critics-issue-death-threats-while-anthropomorphizing-text-predictors-demand-github-remove-the-repository-over-unethical-treatment",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 84,
-      "momentum": 62,
+      "importance": 69,
+      "freshness": 77,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 50
+      "rank": 55
     },
     {
       "id": "TP-5d74d5460067",
@@ -1790,16 +1942,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/platinumgames-comments-on-the-future-of-bayonetta",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 83,
-      "momentum": 62,
+      "importance": 66,
+      "freshness": 77,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 51
+      "rank": 56
     },
     {
       "id": "TP-af5d2a2b268f",
@@ -1821,16 +1973,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/peripherals/keyboards/google-japan-shows-off-wild-conveyor-belt-keyboard-with-keys-that-move-to-your-fingers-3d-printable-gboard-features-four-belts-with-29-keys-each-built-to-make-one-hand-typing-easier",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 83,
-      "momentum": 62,
+      "importance": 68,
+      "freshness": 76,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 52
+      "rank": 57
     },
     {
       "id": "TP-e683ea8b061d",
@@ -1857,16 +2009,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/peripherals/controllers-gamepads/us-navy-uses-xbox-style-controllers-to-fire-anti-drone-lasers-deployed-on-ships-usd13-per-shot-laser-weapon-deployed-in-the-strait-of-hormuz-uses-a-familiar-interface-instead-of-a-custom-control-system",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 82,
-      "momentum": 61,
+      "importance": 68,
+      "freshness": 76,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 53
+      "rank": 58
     },
     {
       "id": "TP-a306a6e51310",
@@ -1892,16 +2044,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/capcom-is-looking-to-evolve-its-re-engine-into-an-ai-era-game-engine",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 82,
-      "momentum": 61,
+      "importance": 66,
+      "freshness": 76,
+      "momentum": 58,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 54
+      "rank": 59
     },
     {
       "id": "TP-4594e1656659",
@@ -1925,16 +2077,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/science/2026/10/all-hail-electrification-but-lets-talk-about-the-hard-part/",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 82,
-      "momentum": 61,
+      "importance": 68,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 55
+      "rank": 60
     },
     {
       "id": "TP-87d999a4b982",
@@ -1958,16 +2110,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/gallery/best-office-chairs/",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 66,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 56
+      "rank": 61
     },
     {
       "id": "TP-4f7f4716409b",
@@ -1991,20 +2143,20 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/best-gifts-under-25-2026/",
       "confidence": 61,
-      "importance": 68,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 66,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 57
+      "rank": 62
     },
     {
       "id": "TP-9c966f73f01b",
-      "cluster_id": "CL-0104",
+      "cluster_id": "CL-0105",
       "title": "Anthropic asks Claude users to share voice data for AI model training",
       "summary": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2022,16 +2174,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 68,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 58
+      "rank": 63
     },
     {
       "id": "TP-3f1473a50150",
@@ -2053,16 +2205,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/open-source-tool-designs-lego-builds-with-more-than-2-000-real-pieces-their-programs-output-detailed-cad-files-but-no-models-have-been-built-yet",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 81,
-      "momentum": 61,
+      "importance": 68,
+      "freshness": 75,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 59
+      "rank": 64
     },
     {
       "id": "TP-09c04a400138",
@@ -2086,16 +2238,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/review/meta-glasses-gen-3/",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 66,
+      "freshness": 74,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 60
+      "rank": 65
     },
     {
       "id": "TP-a4580a564973",
@@ -2121,16 +2273,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/a-colossal-upgrade-digital-foundry-delivers-its-tech-verdict-for-the-witcher-3-remastered-on-switch-2",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 66,
+      "freshness": 74,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 61
+      "rank": 66
     },
     {
       "id": "TP-89fd6e23229e",
@@ -2154,16 +2306,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/peripherals/portable-bluetooth-cd-player-has-a-glow-in-the-dark-transparent-green-finish-modern-features-new-limited-edition-has-usb-c-bluetooth-5-3-rechargeable-li-ion-and-wont-get-lost-in-your-dimly-lit-den",
       "confidence": 64,
-      "importance": 70,
-      "freshness": 80,
-      "momentum": 60,
+      "importance": 68,
+      "freshness": 74,
+      "momentum": 57,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 62
+      "rank": 67
     },
     {
       "id": "TP-99078181a38e",
@@ -2189,16 +2341,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/pc-gaming/free-browser-based-ai-generated-taipei-gta-clone-hits-1-2-million-concurrent-players-in-three-days-vibe-coded-game-cost-usd10-000-in-ai-tokens-to-build-is-set-on-the-streets-of-taipei",
       "confidence": 64,
-      "importance": 69,
-      "freshness": 79,
-      "momentum": 59,
+      "importance": 68,
+      "freshness": 73,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 63
+      "rank": 68
     },
     {
       "id": "TP-5021eb4ecd13",
@@ -2220,16 +2372,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 79,
-      "momentum": 59,
+      "importance": 66,
+      "freshness": 73,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 64
+      "rank": 69
     },
     {
       "id": "TP-0af6a69ae804",
@@ -2253,16 +2405,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/keurig-alta-coffee-brewer/",
       "confidence": 61,
-      "importance": 67,
-      "freshness": 78,
-      "momentum": 59,
+      "importance": 65,
+      "freshness": 72,
+      "momentum": 56,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 65
+      "rank": 70
     },
     {
       "id": "TP-7ad22207f57a",
@@ -2286,16 +2438,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/elusive-geoneutrinos-are-building-a-new-map-of-earths-volatile-interior/",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 66
+      "rank": 71
     },
     {
       "id": "TP-192a661be704",
@@ -2321,16 +2473,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/box-art-brawl-zone-of-the-enders-the-fist-of-mars-gba",
       "confidence": 61,
-      "importance": 66,
-      "freshness": 77,
-      "momentum": 58,
+      "importance": 65,
+      "freshness": 71,
+      "momentum": 55,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 67
+      "rank": 72
     },
     {
       "id": "TP-06d81a530eb0",
@@ -2354,16 +2506,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/runescape-dragonwilds-reveals-multi-year-roadmap",
       "confidence": 61,
-      "importance": 65,
-      "freshness": 72,
-      "momentum": 56,
+      "importance": 64,
+      "freshness": 65,
+      "momentum": 52,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 68
+      "rank": 73
     },
     {
       "id": "TP-3c7a584b4c22",
@@ -2389,86 +2541,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/video-15-exciting-new-games-coming-to-switch-1-and-2-in-october-2026",
       "confidence": 61,
-      "importance": 63,
-      "freshness": 62,
-      "momentum": 50,
+      "importance": 61,
+      "freshness": 55,
+      "momentum": 46,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 69
-    },
-    {
-      "id": "TP-0bda0d673217",
-      "cluster_id": "CL-0092",
-      "title": "What are amplifiers for and how important are they to your sound system's quality?",
-      "summary": "If you're looking into a new sound system, you may be wondering if you need an amplifier as well. Here's how to tell and why amps even matter.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-10-04T00:30:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2273783/amplifier-what-for-how-important-for-sound-system-quality/",
-      "confidence": 58,
-      "importance": 60,
-      "freshness": 60,
-      "momentum": 49,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 70
-    },
-    {
-      "id": "TP-20b33043f1b9",
-      "cluster_id": "CL-0093",
-      "title": "How has Apple's Mac Studio changed over the years?",
-      "summary": "Explore how Apple's Mac Studio has evolved, with internal upgrades, performance gains, and subtle design changes shaping each new generation of the desktop.",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-10-04T00:00:00+00:00",
-      "source": "Engadget",
-      "source_type": "secondary",
-      "url": "https://www.engadget.com/2273779/apple-mac-studio-how-changed-over-years/",
-      "confidence": 58,
-      "importance": 60,
-      "freshness": 59,
-      "momentum": 48,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "Engadget"
-      ],
-      "corroborating_sources": [],
-      "rank": 71
+      "rank": 74
     },
     {
       "id": "TP-71f68485047e",
-      "cluster_id": "CL-0105",
+      "cluster_id": "CL-0106",
       "title": "Google Gemini could soon get full access to your Mac’s files, apps and the web",
       "summary": "Google's Gemini could soon access any file on your macOS device, open apps, browse the web, and perform actions without asking for permission every time. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2488,16 +2574,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
       "confidence": 64,
-      "importance": 64,
-      "freshness": 58,
-      "momentum": 48,
+      "importance": 62,
+      "freshness": 52,
+      "momentum": 45,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 72
+      "rank": 75
     },
     {
       "id": "TP-8e9e87a9e351",
@@ -2519,20 +2605,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/space/2026/10/milt-windler-nasa-flight-director-who-helped-save-apollo-13-dies-at-94/",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 51,
-      "momentum": 44,
+      "importance": 61,
+      "freshness": 45,
+      "momentum": 41,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 73
+      "rank": 76
     },
     {
       "id": "TP-7d68a08898b4",
-      "cluster_id": "CL-0004",
+      "cluster_id": "CL-0005",
       "title": "Federal judge calls Flock ‘indiscriminate mass surveillance’",
       "summary": "A federal judge ruled that a sheriff’s deputy violated a woman’s Fourth Amendment rights when using Flock to search for her license plate without a warrant.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2552,20 +2638,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
       "confidence": 61,
-      "importance": 60,
-      "freshness": 50,
-      "momentum": 44,
+      "importance": 58,
+      "freshness": 44,
+      "momentum": 40,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 74
+      "rank": 77
     },
     {
       "id": "TP-1b56ecca67bf",
-      "cluster_id": "CL-0106",
+      "cluster_id": "CL-0107",
       "title": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
       "summary": "A suspected ShinyHunters hacking group member known online as \"Rey\" has reportedly been detained in Jordan and is cooperating with the FBI to help locate other members of the extortion group. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2587,20 +2673,20 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
       "confidence": 64,
-      "importance": 62,
-      "freshness": 50,
-      "momentum": 44,
+      "importance": 60,
+      "freshness": 43,
+      "momentum": 40,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 75
+      "rank": 78
     },
     {
       "id": "TP-f8ba7ef56487",
-      "cluster_id": "CL-0005",
+      "cluster_id": "CL-0006",
       "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
       "summary": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2618,16 +2704,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
       "confidence": 61,
-      "importance": 60,
-      "freshness": 49,
-      "momentum": 43,
+      "importance": 58,
+      "freshness": 43,
+      "momentum": 40,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 76
+      "rank": 79
     },
     {
       "id": "TP-c8ca51977d25",
@@ -2649,16 +2735,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/",
       "confidence": 61,
-      "importance": 59,
-      "freshness": 47,
-      "momentum": 42,
+      "importance": 58,
+      "freshness": 41,
+      "momentum": 39,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 77
+      "rank": 80
     },
     {
       "id": "TP-9f1ecdc42572",
@@ -2680,20 +2766,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/service-providers/streaming/7-year-old-nvidia-shield-tv-pro-gets-shocking-50-percent-price-hike-driven-by-ai-memory-shortage-chipmaker-axes-entry-level-shield-tv-as-component-prices-soar",
       "confidence": 64,
-      "importance": 61,
-      "freshness": 45,
-      "momentum": 41,
+      "importance": 59,
+      "freshness": 39,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 78
+      "rank": 81
     },
     {
       "id": "TP-a17db24aed38",
-      "cluster_id": "CL-0006",
+      "cluster_id": "CL-0007",
       "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
       "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2711,20 +2797,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 44,
-      "momentum": 40,
+      "importance": 57,
+      "freshness": 38,
+      "momentum": 37,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 79
+      "rank": 82
     },
     {
       "id": "TP-7c974d415cd4",
-      "cluster_id": "CL-0007",
+      "cluster_id": "CL-0008",
       "title": "Jack Dorsey’s Bitchat disappears from app stores in India after government order",
       "summary": "Bitchat has become largely unavailable in India as a result of the restrictions.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2742,16 +2828,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 56,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 80
+      "rank": 83
     },
     {
       "id": "TP-6d8c8fb2834a",
@@ -2777,16 +2863,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/the-results-of-our-2026-switch-2-summer-survey-are-in",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 56,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 81
+      "rank": 84
     },
     {
       "id": "TP-03007b66c005",
@@ -2808,20 +2894,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-confirms-discussions-with-tsmc-about-terafab-chipmaking-collaboration-intel-is-the-only-other-named-partner-terafab-to-exclusively-supply-tesla-spacex-and-xai",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 58,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 82
+      "rank": 85
     },
     {
       "id": "TP-559aae7bd25c",
-      "cluster_id": "CL-0008",
+      "cluster_id": "CL-0009",
       "title": "Vessev built an electric ferry that almost flies",
       "summary": "Vessev hopes its electric hydrofoil ferry will change the way people and cities think about boats.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2841,20 +2927,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/vessev-built-an-electric-ferry-that-almost-flies/",
       "confidence": 61,
-      "importance": 58,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 56,
+      "freshness": 35,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 83
+      "rank": 86
     },
     {
       "id": "TP-335aeeb6b421",
-      "cluster_id": "CL-0107",
+      "cluster_id": "CL-0108",
       "title": "Danish university DTU breach exposes data of up to 200,000 people",
       "summary": "The Technical University of Denmark (DTU) says information belonging to up to 200,000 users may have been exposed after hackers accessed its identity and access management system and downloaded a large amount of data. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2874,16 +2960,16 @@
       "source_type": "secondary",
       "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 41,
-      "momentum": 39,
+      "importance": 58,
+      "freshness": 34,
+      "momentum": 35,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 84
+      "rank": 87
     },
     {
       "id": "TP-1fe96af5fa04",
@@ -2907,16 +2993,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/pc-gaming/buying-used-cpus-can-expose-users-to-existing-bans-from-anti-cheat-engines-some-anti-cheat-engines-enforce-permanent-bans-while-others-have-an-expiration-date",
       "confidence": 64,
-      "importance": 60,
-      "freshness": 40,
-      "momentum": 38,
+      "importance": 58,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 85
+      "rank": 88
     },
     {
       "id": "TP-819c0468b7bf",
@@ -2938,20 +3024,20 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/this-week-on-toms-hardware-premium-october-3-2026-ai-chip-design-week-openai-interview-and-ai-agent-safety",
       "confidence": 64,
-      "importance": 59,
-      "freshness": 39,
-      "momentum": 37,
+      "importance": 58,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 86
+      "rank": 89
     },
     {
       "id": "TP-41a7e440548d",
-      "cluster_id": "CL-0009",
+      "cluster_id": "CL-0010",
       "title": "All the AI agents that can live in your text messages",
       "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -2969,20 +3055,20 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
       "confidence": 61,
-      "importance": 57,
-      "freshness": 39,
-      "momentum": 37,
+      "importance": 56,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 87
+      "rank": 90
     },
     {
       "id": "TP-59559acddc47",
-      "cluster_id": "CL-0010",
+      "cluster_id": "CL-0011",
       "title": "Spotify billionaire’s body scan startup has come to America",
       "summary": "Farooq Abbasi, an investor in Neko Health, talked to Equity about the hot health tech company and what's next for it.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3002,16 +3088,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/03/spotify-billionaires-body-scan-startup-has-come-to-america/",
       "confidence": 61,
-      "importance": 57,
-      "freshness": 39,
-      "momentum": 37,
+      "importance": 56,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 88
+      "rank": 91
     },
     {
       "id": "TP-69b265355cd0",
@@ -3037,16 +3123,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/cve-vulnerability-risk-management/",
       "confidence": 61,
-      "importance": 57,
-      "freshness": 39,
-      "momentum": 37,
+      "importance": 56,
+      "freshness": 33,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 89
+      "rank": 92
     },
     {
       "id": "TP-baaac6cbe15a",
@@ -3073,16 +3159,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/video-games/pc-gaming/steam-revenue-hit-usd1-7-billion-in-september-2026-pc-gaming-spending-grows-despite-skyrocketing-hardware-costs",
       "confidence": 64,
-      "importance": 59,
-      "freshness": 39,
-      "momentum": 37,
+      "importance": 58,
+      "freshness": 32,
+      "momentum": 34,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 90
+      "rank": 93
     },
     {
       "id": "TP-15756fbbb401",
@@ -3104,16 +3190,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/futurum-ceo-says-agents-use-ai-5x-more-than-humans-number-will-eventually-hit-10x-but-agents-are-mostly-rereading-what-theyve-already-seen",
       "confidence": 64,
-      "importance": 59,
-      "freshness": 38,
-      "momentum": 37,
+      "importance": 57,
+      "freshness": 31,
+      "momentum": 33,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 91
+      "rank": 94
     },
     {
       "id": "TP-8cc734f6c9ab",
@@ -3137,16 +3223,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/cyber-security/malicious-vpn-config-files-can-let-attackers-run-commands-on-asus-routers-companys-patch-also-fixes-a-bug-that-lets-a-logged-in-attacker-switch-on-telnet-with-root-access",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 36,
-      "momentum": 36,
+      "importance": 57,
+      "freshness": 30,
+      "momentum": 32,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 92
+      "rank": 95
     },
     {
       "id": "TP-ff19fb67c2fb",
@@ -3168,16 +3254,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 35,
-      "momentum": 35,
+      "importance": 57,
+      "freshness": 29,
+      "momentum": 32,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 93
+      "rank": 96
     },
     {
       "id": "TP-ff612af46aef",
@@ -3199,16 +3285,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
       "confidence": 61,
-      "importance": 56,
-      "freshness": 35,
-      "momentum": 35,
+      "importance": 54,
+      "freshness": 29,
+      "momentum": 32,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 94
+      "rank": 97
     },
     {
       "id": "TP-5ee9dea2a829",
@@ -3232,16 +3318,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/desktops/gaming-pcs/usd5-245-prebuilt-rtx-5090-pcs-connectors-melt-after-sitting-boxed-for-a-year-digital-storm-and-pny-deny-warranty-claims-over-expired-coverage-and-third-party-cables",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 35,
-      "momentum": 35,
+      "importance": 56,
+      "freshness": 28,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 95
+      "rank": 98
     },
     {
       "id": "TP-61fefaa1c213",
@@ -3263,16 +3349,16 @@
       "source_type": "secondary",
       "url": "https://lwn.net/Articles/1098412/",
       "confidence": 68,
-      "importance": 60,
-      "freshness": 34,
-      "momentum": 35,
+      "importance": 59,
+      "freshness": 28,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 96
+      "rank": 99
     },
     {
       "id": "TP-73fd89fd858d",
@@ -3296,16 +3382,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/how-to-collect-cds/",
       "confidence": 61,
-      "importance": 56,
-      "freshness": 34,
-      "momentum": 35,
+      "importance": 54,
+      "freshness": 28,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 97
+      "rank": 100
     },
     {
       "id": "TP-571127bdd8f7",
@@ -3329,16 +3415,16 @@
       "source_type": "secondary",
       "url": "https://lwn.net/Articles/1098404/",
       "confidence": 68,
-      "importance": 60,
-      "freshness": 34,
-      "momentum": 35,
+      "importance": 59,
+      "freshness": 28,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 98
+      "rank": 101
     },
     {
       "id": "TP-f42f54107540",
@@ -3362,16 +3448,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/science/2026/10/the-dawn-of-the-age-of-the-exoskeleton/",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 34,
-      "momentum": 35,
+      "importance": 56,
+      "freshness": 28,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 99
+      "rank": 102
     },
     {
       "id": "TP-813d53e38d52",
@@ -3397,16 +3483,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/california-subpoenas-openai-as-it-investigates-huggingface-breach-doj-wants-more-information-on-cybersecurity-incidents-to-determine-developer-responsibility",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 34,
-      "momentum": 35,
+      "importance": 56,
+      "freshness": 28,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 100
+      "rank": 103
     },
     {
       "id": "TP-c4352e38bf89",
@@ -3430,16 +3516,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/gallery/best-ereaders/",
       "confidence": 61,
-      "importance": 56,
-      "freshness": 34,
-      "momentum": 35,
+      "importance": 54,
+      "freshness": 27,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 101
+      "rank": 104
     },
     {
       "id": "TP-38fe30069467",
@@ -3461,16 +3547,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/amazon-promises-to-spend-usd1-billion-on-communities-close-to-its-data-centers-but-critics-push-back-planned-spend-accounts-for-just-0-1-percent-of-its-2026-ai-infrastructure-investments",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 33,
-      "momentum": 34,
+      "importance": 56,
+      "freshness": 27,
+      "momentum": 31,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 102
+      "rank": 105
     },
     {
       "id": "TP-fdee739af03e",
@@ -3496,16 +3582,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/pc-components/cpus/amds-secret-zen-3-gaming-cpu-had-128mb-of-l3-cache-but-never-saw-the-light-of-day-canceled-ryzen-9-5900x3d-breaks-free-from-the-chipmakers-vault",
       "confidence": 64,
-      "importance": 58,
-      "freshness": 32,
-      "momentum": 34,
+      "importance": 56,
+      "freshness": 26,
+      "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 103
+      "rank": 106
     },
     {
       "id": "TP-43ead5797ade",
@@ -3527,16 +3613,16 @@
       "source_type": "secondary",
       "url": "https://thenewstack.io/claude-answer-to-dots-muse/",
       "confidence": 61,
-      "importance": 55,
-      "freshness": 32,
-      "momentum": 34,
+      "importance": 54,
+      "freshness": 26,
+      "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 104
+      "rank": 107
     },
     {
       "id": "TP-7fe96a0bec94",
@@ -3560,16 +3646,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/best-mosquito-repellents/",
       "confidence": 61,
-      "importance": 55,
-      "freshness": 31,
-      "momentum": 33,
+      "importance": 54,
+      "freshness": 25,
+      "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 105
+      "rank": 108
     },
     {
       "id": "TP-508a9a35ba04",
@@ -3594,16 +3680,16 @@
       "source_type": "secondary",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/gpt-6-astra-plays-world-of-warcraft-blind-and-clears-the-orc-starting-zone-in-40-minutes-with-no-deaths-ai-agent-navigates-by-server-network-traffic-with-pulled-quest-data",
       "confidence": 64,
-      "importance": 57,
-      "freshness": 31,
-      "momentum": 33,
+      "importance": 56,
+      "freshness": 25,
+      "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 106
+      "rank": 109
     },
     {
       "id": "TP-5f5ddffe38e9",
@@ -3629,16 +3715,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/random-tough-week-grab-yourself-a-brew-and-get-these-immaculate-zelda-tunes-on-your-playlist-pronto",
       "confidence": 61,
-      "importance": 55,
-      "freshness": 31,
-      "momentum": 33,
+      "importance": 54,
+      "freshness": 25,
+      "momentum": 30,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 107
+      "rank": 110
     },
     {
       "id": "TP-24ba5ade6251",
@@ -3662,16 +3748,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/inside-decade-long-experiment-to-understand-oceans-mysterious-deep-reefs/",
       "confidence": 61,
-      "importance": 54,
-      "freshness": 29,
-      "momentum": 32,
+      "importance": 53,
+      "freshness": 23,
+      "momentum": 29,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 108
+      "rank": 111
     },
     {
       "id": "TP-53fe23937584",
@@ -3695,16 +3781,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/features/talking-point-what-are-you-playing-this-weekend-3rd-october",
       "confidence": 61,
-      "importance": 54,
-      "freshness": 29,
-      "momentum": 32,
+      "importance": 53,
+      "freshness": 23,
+      "momentum": 29,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 109
+      "rank": 112
     },
     {
       "id": "TP-6b5ce5c28a47",
@@ -3731,16 +3817,16 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/reminder-lies-of-p-switch-2-physical-release-now-available",
       "confidence": 61,
-      "importance": 52,
-      "freshness": 21,
-      "momentum": 28,
+      "importance": 51,
+      "freshness": 15,
+      "momentum": 24,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 110
+      "rank": 113
     },
     {
       "id": "TP-1cd08674513e",
@@ -3766,20 +3852,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/nintendo-has-renewed-multiple-game-trademarks",
       "confidence": 61,
-      "importance": 51,
-      "freshness": 15,
-      "momentum": 24,
+      "importance": 50,
+      "freshness": 9,
+      "momentum": 21,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 111
+      "rank": 114
     },
     {
       "id": "TP-83485a4ee257",
-      "cluster_id": "CL-0011",
+      "cluster_id": "CL-0012",
       "title": "Meta wants your next gadget to be Muse-infused",
       "summary": "Meta wants Muse in your TV and your toaster, so it's giving the code away for free.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3799,16 +3885,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 13,
-      "momentum": 23,
+      "importance": 49,
+      "freshness": 7,
+      "momentum": 20,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 112
+      "rank": 115
     },
     {
       "id": "TP-6582fb03edff",
@@ -3834,20 +3920,20 @@
       "source_type": "secondary",
       "url": "https://www.nintendolife.com/news/2026/10/sonic-racing-crossworlds-final-content-drop-of-year-one-arrives-this-month",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 12,
-      "momentum": 23,
+      "importance": 49,
+      "freshness": 6,
+      "momentum": 19,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 113
+      "rank": 116
     },
     {
       "id": "TP-a88bd58bf229",
-      "cluster_id": "CL-0012",
+      "cluster_id": "CL-0013",
       "title": "Sanders introduces bill to ban the federal government from using Flock",
       "summary": "The proposed legislation would extend to all automotica license plate readers.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3867,16 +3953,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/02/sanders-introduces-bill-to-ban-the-federal-government-from-using-flock/",
       "confidence": 61,
-      "importance": 50,
-      "freshness": 12,
-      "momentum": 23,
+      "importance": 49,
+      "freshness": 6,
+      "momentum": 19,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 114
+      "rank": 117
     },
     {
       "id": "TP-6ee8ae0821d3",
@@ -3898,16 +3984,16 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
       "confidence": 64,
-      "importance": 52,
-      "freshness": 9,
-      "momentum": 21,
+      "importance": 50,
+      "freshness": 3,
+      "momentum": 18,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 115
+      "rank": 118
     },
     {
       "id": "TP-58571d5add74",
@@ -3929,20 +4015,20 @@
       "source_type": "secondary",
       "url": "https://arstechnica.com/gaming/2026/10/can-it-run-doom-sql-database-edition/",
       "confidence": 64,
-      "importance": 51,
-      "freshness": 6,
-      "momentum": 19,
+      "importance": 50,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 116
+      "rank": 119
     },
     {
       "id": "TP-3cc6542c47eb",
-      "cluster_id": "CL-0013",
+      "cluster_id": "CL-0014",
       "title": "Sean Parker is rebuilding Stability AI around music",
       "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -3962,16 +4048,16 @@
       "source_type": "secondary",
       "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
       "confidence": 61,
-      "importance": 49,
-      "freshness": 6,
-      "momentum": 19,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 117
+      "rank": 120
     },
     {
       "id": "TP-f10ac2fa6ec2",
@@ -3994,15 +4080,15 @@
       "url": "https://arstechnica.com/tech-policy/2026/10/amazons-1b-plan-to-combat-data-center-backlash-draws-more-backlash/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 4,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 118
+      "rank": 121
     },
     {
       "id": "TP-1d9e3889e62c",
@@ -4026,16 +4112,16 @@
       "source_type": "secondary",
       "url": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 4,
-      "momentum": 18,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 119
+      "rank": 122
     },
     {
       "id": "TP-68dc190714d3",
@@ -4060,15 +4146,15 @@
       "url": "https://arstechnica.com/health/2026/10/patient-zero-drill-put-health-facilities-to-the-test-40-of-them-failed/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 4,
-      "momentum": 18,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 120
+      "rank": 123
     },
     {
       "id": "TP-c9d6ac4f02d5",
@@ -4090,16 +4176,16 @@
       "source_type": "secondary",
       "url": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 3,
-      "momentum": 18,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 121
+      "rank": 124
     },
     {
       "id": "TP-8b5fc497a822",
@@ -4124,15 +4210,15 @@
       "url": "https://www.theregister.com/systems/2026/10/02/shut-up-and-take-our-money-amazon-plows-1b-into-quashing-datacenter-dissent/5300914",
       "confidence": 64,
       "importance": 50,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Register - Systems"
       ],
       "corroborating_sources": [],
-      "rank": 122
+      "rank": 125
     },
     {
       "id": "TP-84b251b19cc1",
@@ -4157,15 +4243,15 @@
       "url": "https://news.mit.edu/2026/computational-tools-for-societys-most-complex-challenges-cathy-wu-1002",
       "confidence": 75,
       "importance": 52,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "VERIFIED",
       "status": "NEW",
       "tags": [
         "MIT News - Robotics"
       ],
       "corroborating_sources": [],
-      "rank": 123
+      "rank": 126
     },
     {
       "id": "TP-37af281425d0",
@@ -4190,19 +4276,19 @@
       "url": "https://arstechnica.com/tech-policy/2026/10/lyft-settles-landmark-driver-misclassification-lawsuit-for-272-5m/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 2,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 124
+      "rank": 127
     },
     {
       "id": "TP-377f396892b1",
-      "cluster_id": "CL-0108",
+      "cluster_id": "CL-0109",
       "title": "Frontline Education breach exposes school district employee data",
       "summary": "Frontline Education is notifying school districts of a data breach after attackers exploited a vulnerability in third-party software to gain unauthorized access to its systems and steal employee information, including Social Security numbers. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4223,15 +4309,15 @@
       "url": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 1,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 125
+      "rank": 128
     },
     {
       "id": "TP-b7597f7e3804",
@@ -4256,19 +4342,19 @@
       "url": "https://arstechnica.com/science/2026/10/the-2008-economic-crisis-changed-the-uss-relationship-to-energy/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 1,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 126
+      "rank": 129
     },
     {
       "id": "TP-9dbd12aff7f1",
-      "cluster_id": "CL-0024",
+      "cluster_id": "CL-0025",
       "title": "The forgotten Chromebook that started it all",
       "summary": "Google didn't even call the first Chromebook a \"Chromebook.\" The Cr-48 had no interesting design and no bright logos - it wasn't even designed to be a product you could buy. Instead, it was a portal to a big new idea about computers. In this week's episode of Version History, The Verge's Nilay Patel and […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4288,16 +4374,16 @@
       "source_type": "secondary",
       "url": "https://www.theverge.com/podcast/1001215/the-forgotten-chromebook-that-started-it-all",
       "confidence": 61,
-      "importance": 48,
-      "freshness": 1,
-      "momentum": 17,
+      "importance": 47,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "The Verge"
       ],
       "corroborating_sources": [],
-      "rank": 127
+      "rank": 130
     },
     {
       "id": "TP-d3db30efe56f",
@@ -4320,19 +4406,19 @@
       "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
       "confidence": 64,
       "importance": 50,
-      "freshness": 1,
-      "momentum": 17,
+      "freshness": 0,
+      "momentum": 16,
       "verification_status": "DEVELOPING",
       "status": "DEVELOPING",
       "tags": [
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 128
+      "rank": 131
     },
     {
       "id": "TP-2b92c4ceeda7",
-      "cluster_id": "CL-0109",
+      "cluster_id": "CL-0110",
       "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
       "summary": "The China-linked ransomware group Warlock targeted a water utility, a telecom provider, a regional government body, and a university by exploiting SharePoint vulnerabilities to gain initial access. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4361,7 +4447,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 129
+      "rank": 132
     },
     {
       "id": "TP-8219ae174cc9",
@@ -4394,7 +4480,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 130
+      "rank": 133
     },
     {
       "id": "TP-760933bcf25a",
@@ -4427,7 +4513,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 131
+      "rank": 134
     },
     {
       "id": "TP-355fa56a83b5",
@@ -4460,11 +4546,11 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 132
+      "rank": 135
     },
     {
       "id": "TP-8931b830d8dd",
-      "cluster_id": "CL-0014",
+      "cluster_id": "CL-0015",
       "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
       "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4491,11 +4577,11 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 133
+      "rank": 136
     },
     {
       "id": "TP-fcd1b322a9ec",
-      "cluster_id": "CL-0015",
+      "cluster_id": "CL-0016",
       "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
       "summary": "This week, the White House got nearly every major tech CEO in one room — Zuckerberg, Bezos, Musk, and Anthropic’s Dario Amodei among them — to sign an AI safety pledge that President Donald Trump called “morally binding.” Trump also signed an executive order officially rebranding AI as “super intelligence,” and meanwhile, Meta and OpenAI are putting friendlier faces on their AI products, even as the biggest money […]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4522,7 +4608,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 134
+      "rank": 137
     },
     {
       "id": "TP-85448cc0d75b",
@@ -4555,7 +4641,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 135
+      "rank": 138
     },
     {
       "id": "TP-002b559fd9cf",
@@ -4588,11 +4674,11 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 136
+      "rank": 139
     },
     {
       "id": "TP-2e0c293fdeeb",
-      "cluster_id": "CL-0016",
+      "cluster_id": "CL-0017",
       "title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
       "summary": "With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created \"crash-test dummies\" to solve that.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4621,7 +4707,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 137
+      "rank": 140
     },
     {
       "id": "TP-766883a4aa1f",
@@ -4654,7 +4740,7 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 138
+      "rank": 141
     },
     {
       "id": "TP-500eaffb88c2",
@@ -4687,7 +4773,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 139
+      "rank": 142
     },
     {
       "id": "TP-d8b68121a581",
@@ -4720,7 +4806,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 140
+      "rank": 143
     },
     {
       "id": "TP-59130545c940",
@@ -4751,11 +4837,11 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 141
+      "rank": 144
     },
     {
       "id": "TP-4da5a22bacf2",
-      "cluster_id": "CL-0110",
+      "cluster_id": "CL-0111",
       "title": "GitLab warns of critical RCE vulnerability in AI Gateway service",
       "summary": "GitLab warned customers today to immediately patch a critical AI Gateway vulnerability that could let attackers run arbitrary commands on vulnerable instances. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4786,7 +4872,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 142
+      "rank": 145
     },
     {
       "id": "TP-21d2d2046069",
@@ -4817,7 +4903,7 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 143
+      "rank": 146
     },
     {
       "id": "TP-ceedb54af14c",
@@ -4848,7 +4934,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 144
+      "rank": 147
     },
     {
       "id": "TP-79f54c6e9d52",
@@ -4881,11 +4967,11 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 145
+      "rank": 148
     },
     {
       "id": "TP-30a598ac2108",
-      "cluster_id": "CL-0017",
+      "cluster_id": "CL-0018",
       "title": "Paramount and Warner Bros. Discovery to become Skydance",
       "summary": "The roughly $110 billion deal is expected to close October 6.",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -4914,7 +5000,7 @@
         "TechCrunch"
       ],
       "corroborating_sources": [],
-      "rank": 146
+      "rank": 149
     },
     {
       "id": "TP-89cfb1b30e62",
@@ -4945,7 +5031,7 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 147
+      "rank": 150
     },
     {
       "id": "TP-063821072894",
@@ -4978,40 +5064,7 @@
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 148
-    },
-    {
-      "id": "TP-0a4d2fa92a2d",
-      "cluster_id": "CL-0018",
-      "title": "Pope Leo XIV is not a fan of AI-generated art",
-      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\"",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-10-02T15:39:41+00:00",
-      "source": "TechCrunch",
-      "source_type": "secondary",
-      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
-      "confidence": 61,
-      "importance": 47,
-      "freshness": 0,
-      "momentum": 16,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "TechCrunch"
-      ],
-      "corroborating_sources": [],
-      "rank": 149
+      "rank": 151
     },
     {
       "id": "TP-b2e4fa38c6bc",
@@ -5044,7 +5097,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 150
+      "rank": 152
     },
     {
       "id": "TP-4977b8f7fbd8",
@@ -5077,11 +5130,11 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 151
+      "rank": 153
     },
     {
       "id": "TP-7c0838df0304",
-      "cluster_id": "CL-0111",
+      "cluster_id": "CL-0112",
       "title": "US sanctions Tren de Aragua gang members in ATM hacks crackdown",
       "summary": "The U.S. Treasury Department has sanctioned eight members of the Venezuelan gang Tren de Aragua (TdA) for their role in the theft of millions of dollars in ATM jackpotting attacks across the United States. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5111,7 +5164,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 152
+      "rank": 154
     },
     {
       "id": "TP-192fc6adaa56",
@@ -5144,7 +5197,7 @@
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 153
+      "rank": 155
     },
     {
       "id": "TP-1122627a66df",
@@ -5177,7 +5230,7 @@
         "Google AI Blog"
       ],
       "corroborating_sources": [],
-      "rank": 154
+      "rank": 156
     },
     {
       "id": "TP-bb07669d3b3d",
@@ -5210,7 +5263,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 155
+      "rank": 157
     },
     {
       "id": "TP-c3375a0b6000",
@@ -5245,7 +5298,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 156
+      "rank": 158
     },
     {
       "id": "TP-81163c495634",
@@ -5276,7 +5329,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 157
+      "rank": 159
     },
     {
       "id": "TP-d3446779ff0f",
@@ -5307,7 +5360,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 158
+      "rank": 160
     },
     {
       "id": "TP-0ce76d3e0651",
@@ -5343,7 +5396,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 159
+      "rank": 161
     },
     {
       "id": "TP-8bc4a5a3f175",
@@ -5378,7 +5431,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 160
+      "rank": 162
     },
     {
       "id": "TP-868f312f4dba",
@@ -5409,11 +5462,11 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 161
+      "rank": 163
     },
     {
       "id": "TP-783d1621865f",
-      "cluster_id": "CL-0112",
+      "cluster_id": "CL-0113",
       "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
       "summary": "Browser-based attacks can steal sessions, abuse extensions, or manipulate users without creating the endpoint artifacts EDR is designed to detect. NordLayer explains three ways attacks can evade endpoint telemetry and why browser-level controls can help close the gap. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5440,7 +5493,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 162
+      "rank": 164
     },
     {
       "id": "TP-a04d7b79eec9",
@@ -5473,7 +5526,7 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 163
+      "rank": 165
     },
     {
       "id": "TP-579bac278695",
@@ -5506,7 +5559,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 164
+      "rank": 166
     },
     {
       "id": "TP-f5426fc3fd27",
@@ -5537,7 +5590,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 165
+      "rank": 167
     },
     {
       "id": "TP-0ce427d79590",
@@ -5568,7 +5621,7 @@
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 166
+      "rank": 168
     },
     {
       "id": "TP-b786794a407e",
@@ -5599,7 +5652,7 @@
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 167
+      "rank": 169
     },
     {
       "id": "TP-4e334d2519f0",
@@ -5630,7 +5683,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 168
+      "rank": 170
     },
     {
       "id": "TP-1f284fec3a90",
@@ -5663,7 +5716,7 @@
         "NVIDIA Newsroom"
       ],
       "corroborating_sources": [],
-      "rank": 169
+      "rank": 171
     },
     {
       "id": "TP-906343624e37",
@@ -5694,7 +5747,7 @@
         "The Register - Systems"
       ],
       "corroborating_sources": [],
-      "rank": 170
+      "rank": 172
     },
     {
       "id": "TP-60e0deabb9b1",
@@ -5725,7 +5778,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 171
+      "rank": 173
     },
     {
       "id": "TP-6e8ee024f3c2",
@@ -5756,7 +5809,7 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 172
+      "rank": 174
     },
     {
       "id": "TP-814dbbe2d714",
@@ -5787,7 +5840,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 173
+      "rank": 175
     },
     {
       "id": "TP-0af75e8c2230",
@@ -5820,11 +5873,11 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 174
+      "rank": 176
     },
     {
       "id": "TP-065e0fbeb403",
-      "cluster_id": "CL-0113",
+      "cluster_id": "CL-0114",
       "title": "Dell asks admins to patch max severity CSM flaws as soon as possible",
       "summary": "Dell has patched two maximum severity vulnerabilities in the Container Storage Modules (CSM) that connect Dell enterprise storage arrays to Kubernetes environments. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -5851,7 +5904,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 175
+      "rank": 177
     },
     {
       "id": "TP-77cfea6d70bb",
@@ -5882,7 +5935,7 @@
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 176
+      "rank": 178
     },
     {
       "id": "TP-f46fec459fb8",
@@ -5913,7 +5966,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 177
+      "rank": 179
     },
     {
       "id": "TP-9903491b3fa7",
@@ -5944,7 +5997,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 178
+      "rank": 180
     },
     {
       "id": "TP-845fec2dd1f0",
@@ -5977,7 +6030,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 179
+      "rank": 181
     },
     {
       "id": "TP-2a935ff3deec",
@@ -6012,7 +6065,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 180
+      "rank": 182
     },
     {
       "id": "TP-10b0dfb3a14a",
@@ -6043,7 +6096,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 181
+      "rank": 183
     },
     {
       "id": "TP-79727cd75e0e",
@@ -6076,7 +6129,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 182
+      "rank": 184
     },
     {
       "id": "TP-f5a4c6651fd3",
@@ -6107,7 +6160,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 183
+      "rank": 185
     },
     {
       "id": "TP-3264327288d2",
@@ -6138,7 +6191,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 184
+      "rank": 186
     },
     {
       "id": "TP-d6d8deb3c4e1",
@@ -6169,7 +6222,7 @@
         "IEEE Spectrum"
       ],
       "corroborating_sources": [],
-      "rank": 185
+      "rank": 187
     },
     {
       "id": "TP-aa6c921d4d57",
@@ -6200,7 +6253,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 186
+      "rank": 188
     },
     {
       "id": "TP-14a1a4ce0d23",
@@ -6233,7 +6286,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 187
+      "rank": 189
     },
     {
       "id": "TP-7a0ef1fbcb74",
@@ -6268,7 +6321,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 188
+      "rank": 190
     },
     {
       "id": "TP-c2c94c06b8ec",
@@ -6303,7 +6356,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 189
+      "rank": 191
     },
     {
       "id": "TP-932dc2df3404",
@@ -6334,7 +6387,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 190
+      "rank": 192
     },
     {
       "id": "TP-ea7ac7b485e8",
@@ -6367,11 +6420,11 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 191
+      "rank": 193
     },
     {
       "id": "TP-c2bc59a43e0e",
-      "cluster_id": "CL-0114",
+      "cluster_id": "CL-0115",
       "title": "Microsoft’s X account hacked in crypto pump-and-dump scheme",
       "summary": "On Thursday, unknown attackers hijacked the official Microsoft account on X, which has over 13 million followers, in what appeared to be a pump-and-dump scheme promoting a crypto token. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6400,7 +6453,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 192
+      "rank": 194
     },
     {
       "id": "TP-de82e9f2528d",
@@ -6433,7 +6486,7 @@
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 193
+      "rank": 195
     },
     {
       "id": "TP-1c435808300f",
@@ -6464,7 +6517,7 @@
         "MIT Technology Review"
       ],
       "corroborating_sources": [],
-      "rank": 194
+      "rank": 196
     },
     {
       "id": "TP-2acd5d287a83",
@@ -6499,7 +6552,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 195
+      "rank": 197
     },
     {
       "id": "TP-9b67726c8660",
@@ -6535,7 +6588,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 196
+      "rank": 198
     },
     {
       "id": "TP-ac22e54b1da0",
@@ -6570,7 +6623,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 197
+      "rank": 199
     },
     {
       "id": "TP-c7337c213fe3",
@@ -6601,7 +6654,7 @@
         "The Register - Systems"
       ],
       "corroborating_sources": [],
-      "rank": 198
+      "rank": 200
     },
     {
       "id": "TP-13c6bdcfbf89",
@@ -6634,7 +6687,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 199
+      "rank": 201
     },
     {
       "id": "TP-74fd4032ac21",
@@ -6669,7 +6722,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 200
+      "rank": 202
     },
     {
       "id": "TP-c68e4b407e02",
@@ -6702,11 +6755,11 @@
         "NVIDIA Newsroom"
       ],
       "corroborating_sources": [],
-      "rank": 201
+      "rank": 203
     },
     {
       "id": "TP-7f8ace82a4a3",
-      "cluster_id": "CL-0115",
+      "cluster_id": "CL-0116",
       "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
       "summary": "Fortinet is warning customers of a critical FortiMail vulnerability, tracked as CVE-2026-104286, that is being actively exploited in zero-day attacks to execute unauthorized code or commands on vulnerable devices. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6735,7 +6788,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 202
+      "rank": 204
     },
     {
       "id": "TP-cdd52eb3f6e4",
@@ -6768,7 +6821,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 203
+      "rank": 205
     },
     {
       "id": "TP-ca65586302d4",
@@ -6799,7 +6852,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 204
+      "rank": 206
     },
     {
       "id": "TP-b14278871de7",
@@ -6830,7 +6883,7 @@
         "Ars Technica"
       ],
       "corroborating_sources": [],
-      "rank": 205
+      "rank": 207
     },
     {
       "id": "TP-b6c741258339",
@@ -6861,7 +6914,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 206
+      "rank": 208
     },
     {
       "id": "TP-4561eea13d9a",
@@ -6894,11 +6947,11 @@
         "Dark Reading"
       ],
       "corroborating_sources": [],
-      "rank": 207
+      "rank": 209
     },
     {
       "id": "TP-afd4a8a66b7c",
-      "cluster_id": "CL-0116",
+      "cluster_id": "CL-0117",
       "title": "Autonomous AI agents tried to hack US, Canadian government websites",
       "summary": "Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -6929,40 +6982,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 208
-    },
-    {
-      "id": "TP-1fe32bb8deff",
-      "cluster_id": "CL-0025",
-      "title": "The rise, fall, and rise of portable MP3 players",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the collapse and the resurgence of the portable media player, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started We are […]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Technology",
-      "subcategory": "Technology",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "REVIEW",
-      "classification_confidence": "Low",
-      "quality_flags": [
-        "WEAK_TOPIC_EVIDENCE"
-      ],
-      "published_at": "2026-10-01T20:10:21+00:00",
-      "source": "The Verge",
-      "source_type": "secondary",
-      "url": "https://www.theverge.com/column/1003566/history-apple-ipod-mp3-music-player",
-      "confidence": 61,
-      "importance": 47,
-      "freshness": 0,
-      "momentum": 16,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "The Verge"
-      ],
-      "corroborating_sources": [],
-      "rank": 209
+      "rank": 210
     },
     {
       "id": "TP-5b7f35c06a06",
@@ -6993,7 +7013,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 210
+      "rank": 211
     },
     {
       "id": "TP-ebdea840a402",
@@ -7024,7 +7044,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 211
+      "rank": 212
     },
     {
       "id": "TP-52486f51b3c3",
@@ -7055,7 +7075,7 @@
         "AWS News Blog"
       ],
       "corroborating_sources": [],
-      "rank": 212
+      "rank": 213
     },
     {
       "id": "TP-2ca1ffbf27f9",
@@ -7086,11 +7106,11 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 213
+      "rank": 214
     },
     {
       "id": "TP-90b51a982946",
-      "cluster_id": "CL-0117",
+      "cluster_id": "CL-0118",
       "title": "Microsoft says threat actors are ahead in the early AI race",
       "summary": "Microsoft says cyberattackers are currently benefiting from artificial intelligence faster than defenders, allowing threat actors to speed up vulnerability discovery, malware development, and post-compromise activity while security teams struggle to keep pace. [...]",
       "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
@@ -7121,7 +7141,7 @@
         "BleepingComputer"
       ],
       "corroborating_sources": [],
-      "rank": 214
+      "rank": 215
     },
     {
       "id": "TP-10a127cc6588",
@@ -7152,7 +7172,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 215
+      "rank": 216
     },
     {
       "id": "TP-69f5406b7eae",
@@ -7183,7 +7203,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 216
+      "rank": 217
     },
     {
       "id": "TP-b5e68d50fa9b",
@@ -7218,7 +7238,7 @@
         "Nintendo Life"
       ],
       "corroborating_sources": [],
-      "rank": 217
+      "rank": 218
     },
     {
       "id": "TP-216590b4ab15",
@@ -7251,7 +7271,7 @@
         "WIRED"
       ],
       "corroborating_sources": [],
-      "rank": 218
+      "rank": 219
     },
     {
       "id": "TP-73e197b1bb7b",
@@ -7282,7 +7302,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 219
+      "rank": 220
     },
     {
       "id": "TP-5c3692a0b680",
@@ -7313,7 +7333,7 @@
         "The New Stack"
       ],
       "corroborating_sources": [],
-      "rank": 220
+      "rank": 221
     },
     {
       "id": "TP-7d0d98042a93",
@@ -7344,7 +7364,7 @@
         "Tom's Hardware"
       ],
       "corroborating_sources": [],
-      "rank": 221
+      "rank": 222
     },
     {
       "id": "TP-f472c181f609",
@@ -7375,7 +7395,7 @@
         "LWN.net"
       ],
       "corroborating_sources": [],
-      "rank": 222
+      "rank": 223
     },
     {
       "id": "TP-7cd7f5bf9e1b",
@@ -7406,39 +7426,6 @@
       "status": "DEVELOPING",
       "tags": [
         "Tom's Hardware"
-      ],
-      "corroborating_sources": [],
-      "rank": 223
-    },
-    {
-      "id": "TP-1127730e1ab9",
-      "cluster_id": "CL-0118",
-      "title": "Police dismantle KillSec ransomware gang allegedly led by 16-year-old",
-      "summary": "An international law enforcement operation dubbed \"Operation KillSwitch\" seized the KillSec ransomware gang's data leak site and servers, led to three arrests, and identified a 16-year-old as the group's alleged administrator. [...]",
-      "why_it_matters": "The development may affect the relevant technology, users, businesses, or industry direction. Review the evidence and original reporting for context.",
-      "what_changes": "No additional practical change is asserted beyond the available source evidence.",
-      "whats_next": "Watch for official statements, independent confirmation, and subsequent updates.",
-      "category": "Cybersecurity",
-      "subcategory": "Cybersecurity",
-      "secondary_topics": [],
-      "content_type": "news",
-      "relevance": "KEEP",
-      "classification_confidence": "High",
-      "quality_flags": [
-        "CYBER_EVENT_PRIORITY"
-      ],
-      "published_at": "2026-10-01T14:25:14+00:00",
-      "source": "BleepingComputer",
-      "source_type": "secondary",
-      "url": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
-      "confidence": 64,
-      "importance": 50,
-      "freshness": 0,
-      "momentum": 16,
-      "verification_status": "DEVELOPING",
-      "status": "DEVELOPING",
-      "tags": [
-        "BleepingComputer"
       ],
       "corroborating_sources": [],
       "rank": 224
